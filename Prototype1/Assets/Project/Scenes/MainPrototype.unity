@@ -2756,6 +2756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
   leftElytraPivot: {fileID: 680628102}
   rightElytraPivot: {fileID: 55358426}
+  leftElytraCollider: {fileID: 927318658}
+  rightElytraCollider: {fileID: 1550145028}
   liftAngle: 65
   outwardAngle: 12
   animationDuration: 0.8
