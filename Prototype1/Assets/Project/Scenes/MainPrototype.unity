@@ -2251,7 +2251,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1031175945}
+        m_TargetAssemblyTypeName: WingInteraction, Assembly-CSharp
+        m_MethodName: FlapWings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -2708,6 +2720,7 @@ GameObject:
   - component: {fileID: 1031175943}
   - component: {fileID: 1031175944}
   - component: {fileID: 1031175945}
+  - component: {fileID: 1031175946}
   m_Layer: 0
   m_Name: LadybirdBehaviour
   m_TagString: Untagged
@@ -2763,6 +2776,23 @@ MonoBehaviour:
   rightWingPivot: {fileID: 0}
   flapAngle: 18
   flapSpeed: 18
+  flapDuration: 1.5
+--- !u!114 &1031175946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031175942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0308194292c44d4bddb17a2abc133f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
+  leftWingPivot: {fileID: 254686039}
+  rightWingPivot: {fileID: 1044977412}
+  flapAngle: 20
+  flapSpeed: 20
   flapDuration: 1.5
 --- !u!1 &1044977411
 GameObject:
@@ -4897,7 +4927,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1031175945}
+        m_TargetAssemblyTypeName: WingInteraction, Assembly-CSharp
+        m_MethodName: FlapWings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []

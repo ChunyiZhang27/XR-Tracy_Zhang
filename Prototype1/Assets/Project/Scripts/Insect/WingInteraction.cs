@@ -10,10 +10,10 @@ public class WingInteraction : MonoBehaviour
     private Transform rightWingPivot;
 
     [SerializeField]
-    private float flapAngle = 18f;
+    private float flapAngle = 20f;
 
     [SerializeField]
-    private float flapSpeed = 18f;
+    private float flapSpeed = 20f;
 
     [SerializeField]
     private float flapDuration = 1.5f;
