@@ -106,7 +106,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RimAlpha: 0.5
+    - _RimAlpha: 1
     - _RimPower: 4
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
