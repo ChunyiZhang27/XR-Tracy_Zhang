@@ -9,6 +9,9 @@ public class AntennaInteraction : MonoBehaviour
     [SerializeField]
     private float swingSpeed = 4f;
 
+    [SerializeField]
+    private float swingDuration = 1.2f;
+
     private Quaternion originalRotation;
     private Coroutine swingCoroutine;
 
@@ -19,7 +22,6 @@ public class AntennaInteraction : MonoBehaviour
 
     public void ExploreAntenna()
     {
-        // 防止动画重复叠加
         if (swingCoroutine != null)
         {
             StopCoroutine(swingCoroutine);
@@ -30,19 +32,19 @@ public class AntennaInteraction : MonoBehaviour
 
     private IEnumerator SwingAntenna()
     {
-        float duration = 1.2f;
         float time = 0f;
 
-        while (time < duration)
+        while (time < swingDuration)
         {
             time += Time.deltaTime;
 
             float angle =
-                Mathf.Sin(time * swingSpeed * Mathf.PI) * swingAngle;
+                Mathf.Sin(time * swingSpeed * Mathf.PI)
+                * swingAngle;
 
             transform.localRotation =
                 originalRotation *
-                Quaternion.Euler(0f, angle, 0f);
+                Quaternion.Euler(0f, 0f, angle);
 
             yield return null;
         }

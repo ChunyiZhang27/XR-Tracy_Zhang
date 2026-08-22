@@ -554,6 +554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 276518213}
+  - component: {fileID: 276518214}
   m_Layer: 0
   m_Name: RightAntennaPivot
   m_TagString: Untagged
@@ -577,6 +578,21 @@ Transform:
   - {fileID: 1388435405}
   m_Father: {fileID: 1783907480}
   m_LocalEulerAnglesHint: {x: -55, y: 0, z: -20}
+--- !u!114 &276518214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276518212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
+  swingAngle: 20
+  swingSpeed: 4
+  swingDuration: 1.2
 --- !u!1001 &382680928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -643,6 +659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431553628}
+  - component: {fileID: 431553629}
   m_Layer: 0
   m_Name: LeftAntennaPivot
   m_TagString: Untagged
@@ -666,6 +683,21 @@ Transform:
   - {fileID: 1060457286}
   m_Father: {fileID: 1783907480}
   m_LocalEulerAnglesHint: {x: -55, y: 0, z: 20}
+--- !u!114 &431553629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431553627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
+  swingAngle: 20
+  swingSpeed: 4
+  swingDuration: 1.2
 --- !u!1 &496686569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1477,6 @@ GameObject:
   - component: {fileID: 1060457291}
   - component: {fileID: 1060457290}
   - component: {fileID: 1060457289}
-  - component: {fileID: 1060457288}
   - component: {fileID: 1060457287}
   m_Layer: 0
   m_Name: LeftAntenna
@@ -1505,7 +1536,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1060457288}
+      - m_Target: {fileID: 431553629}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: ExploreAntenna
         m_Mode: 1
@@ -1555,20 +1586,6 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
---- !u!114 &1060457288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060457285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
-  swingAngle: 20
-  swingSpeed: 4
 --- !u!136 &1060457289
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1803,7 +1820,6 @@ GameObject:
   - component: {fileID: 1388435410}
   - component: {fileID: 1388435409}
   - component: {fileID: 1388435408}
-  - component: {fileID: 1388435407}
   - component: {fileID: 1388435406}
   m_Layer: 0
   m_Name: RightAntenna
@@ -1863,7 +1879,7 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1388435407}
+      - m_Target: {fileID: 276518214}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: ExploreAntenna
         m_Mode: 1
@@ -1913,20 +1929,6 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
---- !u!114 &1388435407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388435404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
-  swingAngle: 20
-  swingSpeed: 4
 --- !u!136 &1388435408
 CapsuleCollider:
   m_ObjectHideFlags: 0
