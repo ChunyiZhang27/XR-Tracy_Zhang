@@ -3,12 +3,23 @@ using UnityEngine;
 
 public class ElytraInteraction : MonoBehaviour
 {
+    [Header("Elytra Pivots")]
     [SerializeField]
     private Transform leftElytraPivot;
 
     [SerializeField]
     private Transform rightElytraPivot;
 
+
+    [Header("Elytra Colliders")]
+    [SerializeField]
+    private Collider leftElytraCollider;
+
+    [SerializeField]
+    private Collider rightElytraCollider;
+
+
+    [Header("Animation Settings")]
     [SerializeField]
     private float liftAngle = 65f;
 
@@ -18,11 +29,13 @@ public class ElytraInteraction : MonoBehaviour
     [SerializeField]
     private float animationDuration = 0.8f;
 
+
     private Quaternion leftClosedRotation;
     private Quaternion rightClosedRotation;
 
     private bool isOpen = false;
     private bool isAnimating = false;
+
 
     private void Start()
     {
@@ -30,49 +43,44 @@ public class ElytraInteraction : MonoBehaviour
         rightClosedRotation = rightElytraPivot.localRotation;
     }
 
+
     public void ToggleElytra()
     {
-        if (isAnimating)
+        if (isAnimating || isOpen)
             return;
 
-        StartCoroutine(AnimateElytra(!isOpen));
+        StartCoroutine(OpenElytra());
     }
 
-    private IEnumerator AnimateElytra(bool open)
+
+    private IEnumerator OpenElytra()
     {
         isAnimating = true;
 
-        Quaternion leftStart = leftElytraPivot.localRotation;
-        Quaternion rightStart = rightElytraPivot.localRotation;
+        Quaternion leftStart =
+            leftElytraPivot.localRotation;
 
-        Quaternion leftTarget;
-        Quaternion rightTarget;
+        Quaternion rightStart =
+            rightElytraPivot.localRotation;
 
-        if (open)
-        {
-            // 主要绕 X 轴向上抬起
-            // 同时绕 Y 轴稍微向左右打开
-            leftTarget =
-                leftClosedRotation *
-                Quaternion.Euler(
-                    -liftAngle,
-                    -outwardAngle,
-                    0f
-                );
 
-            rightTarget =
-                rightClosedRotation *
-                Quaternion.Euler(
-                    -liftAngle,
-                    outwardAngle,
-                    0f
-                );
-        }
-        else
-        {
-            leftTarget = leftClosedRotation;
-            rightTarget = rightClosedRotation;
-        }
+        Quaternion leftTarget =
+            leftClosedRotation *
+            Quaternion.Euler(
+                -liftAngle,
+                -outwardAngle,
+                0f
+            );
+
+
+        Quaternion rightTarget =
+            rightClosedRotation *
+            Quaternion.Euler(
+                -liftAngle,
+                outwardAngle,
+                0f
+            );
+
 
         float time = 0f;
 
@@ -80,12 +88,13 @@ public class ElytraInteraction : MonoBehaviour
         {
             time += Time.deltaTime;
 
-            float t = Mathf.Clamp01(
-                time / animationDuration
-            );
+            float t =
+                Mathf.Clamp01(
+                    time / animationDuration
+                );
 
-            // 让动画稍微柔和一些
             t = Mathf.SmoothStep(0f, 1f, t);
+
 
             leftElytraPivot.localRotation =
                 Quaternion.Slerp(
@@ -94,6 +103,7 @@ public class ElytraInteraction : MonoBehaviour
                     t
                 );
 
+
             rightElytraPivot.localRotation =
                 Quaternion.Slerp(
                     rightStart,
@@ -101,13 +111,28 @@ public class ElytraInteraction : MonoBehaviour
                     t
                 );
 
+
             yield return null;
         }
 
-        leftElytraPivot.localRotation = leftTarget;
-        rightElytraPivot.localRotation = rightTarget;
 
-        isOpen = open;
+        leftElytraPivot.localRotation =
+            leftTarget;
+
+        rightElytraPivot.localRotation =
+            rightTarget;
+
+
+        isOpen = true;
         isAnimating = false;
+
+
+        // Elytra 打开以后，
+        // 禁止 Collider 继续挡住 Wing。
+        if (leftElytraCollider != null)
+            leftElytraCollider.enabled = false;
+
+        if (rightElytraCollider != null)
+            rightElytraCollider.enabled = false;
     }
 }
