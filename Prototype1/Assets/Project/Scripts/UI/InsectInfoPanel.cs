@@ -4,6 +4,7 @@ using TMPro;
 
 public class InsectInfoPanel : MonoBehaviour
 {
+    [Header("UI References")]
     [SerializeField]
     private GameObject infoPanel;
 

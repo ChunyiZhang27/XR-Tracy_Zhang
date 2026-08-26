@@ -16,6 +16,12 @@ public class SelectionUIController : MonoBehaviour
     private GameObject confirmButton;
 
 
+    private void Start()
+    {
+        ClearSelection();
+    }
+
+
     public void ShowSelection(
         string insectName,
         bool canExplore
