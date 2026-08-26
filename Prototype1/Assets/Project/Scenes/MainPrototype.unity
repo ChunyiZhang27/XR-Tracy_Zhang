@@ -582,6 +582,11 @@ Transform:
   - {fileID: 1417120084}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &211473859 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 382680928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &212674186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,6 +3441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266325864}
   - component: {fileID: 1266325865}
+  - component: {fileID: 1266325866}
   m_Layer: 0
   m_Name: InsectInfoManager
   m_TagString: Untagged
@@ -3473,6 +3479,25 @@ MonoBehaviour:
   infoPanel: {fileID: 451926165}
   titleText: {fileID: 1597904344}
   descriptionText: {fileID: 1661345804}
+--- !u!114 &1266325866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266325863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e25313b2b6904af4adbd5cb54fa3a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntennaProximityInfo
+  leftAntennaPoint: {fileID: 431553628}
+  rightAntennaPoint: {fileID: 276518213}
+  leftController: {fileID: 1828265335}
+  rightController: {fileID: 211473859}
+  infoPanel: {fileID: 1266325865}
+  showDistance: 0.35
+  hideDistance: 0.45
 --- !u!1 &1388435404
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,6 +5314,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799302719}
   m_CullTransparentMesh: 1
+--- !u!4 &1828265335 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 382680928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1830674274
 GameObject:
   m_ObjectHideFlags: 0
