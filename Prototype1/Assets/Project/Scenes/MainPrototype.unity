@@ -1525,6 +1525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Bee
+  availableInPrototype: 0
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!114 &496686572
@@ -1749,6 +1750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectionUIController
   selectedInsectName: {fileID: 1116479234}
+  selectionHint: {fileID: 1065051011}
   confirmButton: {fileID: 1414874343}
 --- !u!114 &661711022
 MonoBehaviour:
@@ -2275,6 +2277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Seven-spot Ladybird
+  availableInPrototype: 0
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!1 &913802198
@@ -4794,6 +4797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Beetle
+  availableInPrototype: 0
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!114 &1755657947
@@ -5387,6 +5391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Praying Mantis
+  availableInPrototype: 0
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!114 &1830674277
@@ -5853,6 +5858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Butterfly
+  availableInPrototype: 0
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!114 &2028799338
