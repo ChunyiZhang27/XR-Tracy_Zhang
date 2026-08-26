@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExperienceManager : MonoBehaviour
 {
@@ -25,5 +26,11 @@ public class ExperienceManager : MonoBehaviour
         insectExploreZone.SetActive(true);
 
         Debug.Log("Entering insect exploration mode.");
+    }
+
+    public void RestartPrototype()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }
