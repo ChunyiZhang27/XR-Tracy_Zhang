@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverScaleFeedback
   insectDisplayName: Seven-spot Ladybird
-  availableInPrototype: 0
+  availableInPrototype: 1
   hoverScaleMultiplier: 1.25
   selectedScaleMultiplier: 1.5
 --- !u!1 &913802198
@@ -3258,8 +3258,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
