@@ -3508,7 +3508,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1031175945}
         m_TargetAssemblyTypeName: WingInteraction, Assembly-CSharp
-        m_MethodName: FlapWings
+        m_MethodName: ToggleWings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7634,7 +7634,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1031175945}
         m_TargetAssemblyTypeName: WingInteraction, Assembly-CSharp
-        m_MethodName: FlapWings
+        m_MethodName: ToggleWings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
