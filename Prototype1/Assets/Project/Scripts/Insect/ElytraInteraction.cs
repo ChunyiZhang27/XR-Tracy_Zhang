@@ -11,12 +11,9 @@ public class ElytraInteraction : MonoBehaviour
     private Transform rightElytraPivot;
 
 
-    [Header("Elytra Colliders")]
+    [Header("Wing Interaction")]
     [SerializeField]
-    private Collider leftElytraCollider;
-
-    [SerializeField]
-    private Collider rightElytraCollider;
+    private WingInteraction wingInteraction;
 
 
     [Header("Animation Settings")]
@@ -33,29 +30,84 @@ public class ElytraInteraction : MonoBehaviour
     private Quaternion leftClosedRotation;
     private Quaternion rightClosedRotation;
 
+
     private bool isOpen = false;
     private bool isAnimating = false;
 
 
-    private void Start()
+    // WingInteraction 会查询这个状态
+    public bool IsOpen
     {
-        leftClosedRotation = leftElytraPivot.localRotation;
-        rightClosedRotation = rightElytraPivot.localRotation;
+        get
+        {
+            return isOpen;
+        }
     }
 
+
+    private void Start()
+    {
+        leftClosedRotation =
+            leftElytraPivot.localRotation;
+
+        rightClosedRotation =
+            rightElytraPivot.localRotation;
+    }
+
+
+    // ==========================================
+    // USER SELECT
+    // ==========================================
 
     public void ToggleElytra()
     {
-        if (isAnimating || isOpen)
+        if (isAnimating)
+        {
             return;
+        }
 
-        StartCoroutine(OpenElytra());
+
+        // --------------------------
+        // CLOSED → OPEN
+        // --------------------------
+
+        if (!isOpen)
+        {
+            StartCoroutine(
+                AnimateElytra(true)
+            );
+
+            return;
+        }
+
+
+        // --------------------------
+        // OPEN → CLOSED
+        // --------------------------
+
+        // 如果 Wing 现在打开，
+        // 同时让 Wing 开始收回。
+        if (wingInteraction != null)
+        {
+            wingInteraction.ForceCloseWings();
+        }
+
+
+        // Elytra 自己也同时开始关闭。
+        StartCoroutine(
+            AnimateElytra(false)
+        );
     }
 
 
-    private IEnumerator OpenElytra()
+    // ==========================================
+    // ELYTRA ANIMATION
+    // ==========================================
+
+    private IEnumerator AnimateElytra(bool open)
     {
         isAnimating = true;
+
 
         Quaternion leftStart =
             leftElytraPivot.localRotation;
@@ -64,36 +116,59 @@ public class ElytraInteraction : MonoBehaviour
             rightElytraPivot.localRotation;
 
 
-        Quaternion leftTarget =
-            leftClosedRotation *
-            Quaternion.Euler(
-                -liftAngle,
-                -outwardAngle,
-                0f
-            );
+        Quaternion leftTarget;
+        Quaternion rightTarget;
 
 
-        Quaternion rightTarget =
-            rightClosedRotation *
-            Quaternion.Euler(
-                -liftAngle,
-                outwardAngle,
-                0f
-            );
+        if (open)
+        {
+            leftTarget =
+                leftClosedRotation *
+                Quaternion.Euler(
+                    -liftAngle,
+                    -outwardAngle,
+                    0f
+                );
+
+
+            rightTarget =
+                rightClosedRotation *
+                Quaternion.Euler(
+                    -liftAngle,
+                    outwardAngle,
+                    0f
+                );
+        }
+        else
+        {
+            leftTarget =
+                leftClosedRotation;
+
+            rightTarget =
+                rightClosedRotation;
+        }
 
 
         float time = 0f;
 
+
         while (time < animationDuration)
         {
             time += Time.deltaTime;
+
 
             float t =
                 Mathf.Clamp01(
                     time / animationDuration
                 );
 
-            t = Mathf.SmoothStep(0f, 1f, t);
+
+            t =
+                Mathf.SmoothStep(
+                    0f,
+                    1f,
+                    t
+                );
 
 
             leftElytraPivot.localRotation =
@@ -123,16 +198,7 @@ public class ElytraInteraction : MonoBehaviour
             rightTarget;
 
 
-        isOpen = true;
+        isOpen = open;
         isAnimating = false;
-
-
-        // Elytra 打开以后，
-        // 禁止 Collider 继续挡住 Wing。
-        if (leftElytraCollider != null)
-            leftElytraCollider.enabled = false;
-
-        if (rightElytraCollider != null)
-            rightElytraCollider.enabled = false;
     }
 }
