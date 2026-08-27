@@ -4,98 +4,399 @@ using UnityEngine;
 public class WingInteraction : MonoBehaviour
 {
     [Header("Wing Pivots")]
-    [SerializeField] private Transform leftWingPivot;
-    [SerializeField] private Transform rightWingPivot;
+    [SerializeField]
+    private Transform leftWingPivot;
 
-    [Header("Wing Open Pose")]
-    [SerializeField] private float openLiftAngle = 55f;      // 像外壳一样抬起
-    [SerializeField] private float openOutwardAngle = 10f;   // 稍微向外展开
+    [SerializeField]
+    private Transform rightWingPivot;
 
-    [Header("Flap Settings")]
-    [SerializeField] private float flapAmplitude = 18f;      // 拍打幅度
-    [SerializeField] private float flapSpeed = 18f;          // 拍打速度
-    [SerializeField] private float flapDuration = 1.5f;      // 持续时间
 
-    private Quaternion leftOriginalRotation;
-    private Quaternion rightOriginalRotation;
+    [Header("Elytra")]
+    [SerializeField]
+    private ElytraInteraction elytraInteraction;
+
+
+    [Header("Open Pose")]
+    [SerializeField]
+    private float openLiftAngle = 25f;
+
+    [SerializeField]
+    private float openOutwardAngle = 25f;
+
+    [SerializeField]
+    private float transitionDuration = 0.35f;
+
+
+    [Header("Flap")]
+    [SerializeField]
+    private float flapAmplitude = 10f;
+
+    [SerializeField]
+    private float flapSpeed = 22f;
+
+    [SerializeField]
+    private float flapDuration = 1.2f;
+
+
+    private Quaternion leftClosedRotation;
+    private Quaternion rightClosedRotation;
 
     private Quaternion leftOpenRotation;
     private Quaternion rightOpenRotation;
 
-    private Coroutine flapCoroutine;
+
+    private Coroutine currentCoroutine;
+
+    private bool isAnimating = false;
+
+
+    private enum WingState
+    {
+        Closed,
+        OpenReady,
+        OpenFlapped
+    }
+
+
+    private WingState currentState =
+        WingState.Closed;
+
+
+    // 给 ElytraInteraction 查询
+    public bool IsClosed
+    {
+        get
+        {
+            return currentState == WingState.Closed
+                   && !isAnimating;
+        }
+    }
+
 
     private void Start()
     {
-        leftOriginalRotation = leftWingPivot.localRotation;
-        rightOriginalRotation = rightWingPivot.localRotation;
+        leftClosedRotation =
+            leftWingPivot.localRotation;
 
-        // 先定义“展开后的基础姿态”
-        leftOpenRotation = leftOriginalRotation *
-                           Quaternion.Euler(-openLiftAngle, -openOutwardAngle, 0f);
+        rightClosedRotation =
+            rightWingPivot.localRotation;
 
-        rightOpenRotation = rightOriginalRotation *
-                            Quaternion.Euler(-openLiftAngle, openOutwardAngle, 0f);
+
+        leftOpenRotation =
+            leftClosedRotation *
+            Quaternion.Euler(
+                -openLiftAngle,
+                -openOutwardAngle,
+                0f
+            );
+
+
+        rightOpenRotation =
+            rightClosedRotation *
+            Quaternion.Euler(
+                -openLiftAngle,
+                openOutwardAngle,
+                0f
+            );
     }
 
-    public void FlapWings()
+
+    // ==========================================
+    // 用户点击 Wing 时调用
+    // Closed → Open → Flap → Closed → Open...
+    // ==========================================
+
+    public void ToggleWings()
     {
-        if (leftWingPivot == null || rightWingPivot == null)
+        if (isAnimating)
         {
-            Debug.LogWarning("Wing pivots are not assigned.");
             return;
         }
 
-        if (flapCoroutine != null)
+
+        // Elytra 没打开时，
+        // Wing 不应该单独穿过 Elytra。
+        if (elytraInteraction != null &&
+            !elytraInteraction.IsOpen)
         {
-            StopCoroutine(flapCoroutine);
+            Debug.Log(
+                "Open the elytra before using the flight wings."
+            );
+
+            return;
         }
 
-        flapCoroutine = StartCoroutine(FlapRoutine());
+
+        // 第一次点击：
+        // CLOSED → OPEN
+        if (currentState == WingState.Closed)
+        {
+            currentCoroutine =
+                StartCoroutine(OpenWings());
+
+            return;
+        }
+
+
+        // 第二次点击：
+        // OPEN → FLAP
+        if (currentState == WingState.OpenReady)
+        {
+            currentCoroutine =
+                StartCoroutine(FlapWings());
+
+            return;
+        }
+
+
+        // 第三次点击：
+        // FLAPPED → CLOSED
+        if (currentState == WingState.OpenFlapped)
+        {
+            currentCoroutine =
+                StartCoroutine(CloseWings());
+
+            return;
+        }
     }
 
-    private IEnumerator FlapRoutine()
+
+    // ==========================================
+    // Elytra 关闭时调用
+    // 无论 Wing 当前什么状态，直接开始收回
+    // ==========================================
+
+    public void ForceCloseWings()
     {
-        float openTime = 0.25f;
-        float t = 0f;
-
-        // Step 1: 先展开到基础姿态
-        Quaternion leftStart = leftWingPivot.localRotation;
-        Quaternion rightStart = rightWingPivot.localRotation;
-
-        while (t < openTime)
+        if (currentState == WingState.Closed &&
+            !isAnimating)
         {
-            t += Time.deltaTime;
-            float lerp = Mathf.Clamp01(t / openTime);
-            lerp = Mathf.SmoothStep(0f, 1f, lerp);
-
-            leftWingPivot.localRotation = Quaternion.Slerp(leftStart, leftOpenRotation, lerp);
-            rightWingPivot.localRotation = Quaternion.Slerp(rightStart, rightOpenRotation, lerp);
-
-            yield return null;
+            return;
         }
 
-        // Step 2: 在展开姿态上快速拍打
-        float flapTime = 0f;
 
-        while (flapTime < flapDuration)
+        // 如果正在拍动或者正在展开，
+        // 先停止当前动画。
+        if (currentCoroutine != null)
         {
-            flapTime += Time.deltaTime;
+            StopCoroutine(currentCoroutine);
 
-            float flap = Mathf.Sin(flapTime * flapSpeed) * flapAmplitude;
+            currentCoroutine = null;
+        }
+
+
+        isAnimating = false;
+
+
+        currentCoroutine =
+            StartCoroutine(CloseWings());
+    }
+
+
+    // ==========================================
+    // OPEN
+    // ==========================================
+
+    private IEnumerator OpenWings()
+    {
+        isAnimating = true;
+
+
+        Quaternion leftStart =
+            leftWingPivot.localRotation;
+
+        Quaternion rightStart =
+            rightWingPivot.localRotation;
+
+
+        float time = 0f;
+
+
+        while (time < transitionDuration)
+        {
+            time += Time.deltaTime;
+
+
+            float t =
+                Mathf.Clamp01(
+                    time / transitionDuration
+                );
+
+
+            t =
+                Mathf.SmoothStep(
+                    0f,
+                    1f,
+                    t
+                );
+
 
             leftWingPivot.localRotation =
-                leftOpenRotation * Quaternion.Euler(flap, 0f, 0f);
+                Quaternion.Slerp(
+                    leftStart,
+                    leftOpenRotation,
+                    t
+                );
+
 
             rightWingPivot.localRotation =
-                rightOpenRotation * Quaternion.Euler(flap, 0f, 0f);
+                Quaternion.Slerp(
+                    rightStart,
+                    rightOpenRotation,
+                    t
+                );
+
 
             yield return null;
         }
 
-        // Step 3: 回到展开姿态（如果你想最后停在展开状态）
-        leftWingPivot.localRotation = leftOpenRotation;
-        rightWingPivot.localRotation = rightOpenRotation;
 
-        flapCoroutine = null;
+        leftWingPivot.localRotation =
+            leftOpenRotation;
+
+        rightWingPivot.localRotation =
+            rightOpenRotation;
+
+
+        currentState =
+            WingState.OpenReady;
+
+        isAnimating = false;
+        currentCoroutine = null;
+    }
+
+
+    // ==========================================
+    // FLAP
+    // ==========================================
+
+    private IEnumerator FlapWings()
+    {
+        isAnimating = true;
+
+
+        float time = 0f;
+
+
+        while (time < flapDuration)
+        {
+            time += Time.deltaTime;
+
+
+            float flap =
+                Mathf.Sin(
+                    time * flapSpeed
+                )
+                * flapAmplitude;
+
+
+            leftWingPivot.localRotation =
+                leftOpenRotation *
+                Quaternion.Euler(
+                    flap,
+                    0f,
+                    0f
+                );
+
+
+            rightWingPivot.localRotation =
+                rightOpenRotation *
+                Quaternion.Euler(
+                    flap,
+                    0f,
+                    0f
+                );
+
+
+            yield return null;
+        }
+
+
+        // 拍动结束后回到展开状态
+        leftWingPivot.localRotation =
+            leftOpenRotation;
+
+        rightWingPivot.localRotation =
+            rightOpenRotation;
+
+
+        currentState =
+            WingState.OpenFlapped;
+
+        isAnimating = false;
+        currentCoroutine = null;
+    }
+
+
+    // ==========================================
+    // CLOSE
+    // ==========================================
+
+    private IEnumerator CloseWings()
+    {
+        isAnimating = true;
+
+
+        Quaternion leftStart =
+            leftWingPivot.localRotation;
+
+        Quaternion rightStart =
+            rightWingPivot.localRotation;
+
+
+        float time = 0f;
+
+
+        while (time < transitionDuration)
+        {
+            time += Time.deltaTime;
+
+
+            float t =
+                Mathf.Clamp01(
+                    time / transitionDuration
+                );
+
+
+            t =
+                Mathf.SmoothStep(
+                    0f,
+                    1f,
+                    t
+                );
+
+
+            leftWingPivot.localRotation =
+                Quaternion.Slerp(
+                    leftStart,
+                    leftClosedRotation,
+                    t
+                );
+
+
+            rightWingPivot.localRotation =
+                Quaternion.Slerp(
+                    rightStart,
+                    rightClosedRotation,
+                    t
+                );
+
+
+            yield return null;
+        }
+
+
+        leftWingPivot.localRotation =
+            leftClosedRotation;
+
+        rightWingPivot.localRotation =
+            rightClosedRotation;
+
+
+        currentState =
+            WingState.Closed;
+
+        isAnimating = false;
+        currentCoroutine = null;
     }
 }
