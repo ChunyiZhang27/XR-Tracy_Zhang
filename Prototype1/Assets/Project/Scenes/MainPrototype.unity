@@ -527,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SIMULATOR\n\nW\n\u2191\n A \u2190 MOVE \u2192 D\n\u2193\nS\n\nQ = UP\nE
+  m_text: "SIMULATOR\n\nW\n\u2191\n A \u2190 MOVE \u2192 D\n\u2193\nS\n\nE = UP\nQ
     = DOWN\nG = SELECT / GRIP\nT = UI Button/ TRIGGER\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
