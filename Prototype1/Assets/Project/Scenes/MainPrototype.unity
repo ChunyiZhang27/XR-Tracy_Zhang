@@ -2082,7 +2082,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1407051859}
         m_TargetAssemblyTypeName: ExperienceManager, Assembly-CSharp
-        m_MethodName: RestartPrototype
+        m_MethodName: BackToSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5658,6 +5658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2bc771f0e374a8f910daf595764e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceManager
+  onboardingZone: {fileID: 2022270763}
   selectionZone: {fileID: 739848556}
   insectExploreZone: {fileID: 117779206}
 --- !u!4 &1407051860
@@ -8300,7 +8301,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962659265}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1407051859}
+        m_TargetAssemblyTypeName: ExperienceManager, Assembly-CSharp
+        m_MethodName: StartExperience
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962659265
 MonoBehaviour:
   m_ObjectHideFlags: 0
