@@ -1,0 +1,17 @@
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h

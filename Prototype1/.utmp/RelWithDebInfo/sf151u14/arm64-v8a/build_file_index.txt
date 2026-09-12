@@ -1,0 +1,2 @@
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
