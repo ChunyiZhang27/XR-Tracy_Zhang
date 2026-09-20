@@ -2579,8 +2579,11 @@ MonoBehaviour:
   leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
   rightOpenEuler: {x: 49.559, y: 54.47, z: 23.65}
   transitionDuration: 0.45
-  flapAngle: 12
-  flapSpeed: 18
+  leftFlapMinZ: -40
+  leftFlapMaxZ: -6
+  rightFlapMinZ: 6
+  rightFlapMaxZ: 40
+  flapSpeed: 24
   flapDuration: 1.2
 --- !u!1 &584078861
 GameObject:
@@ -4572,7 +4575,10 @@ MonoBehaviour:
   leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
   rightOpenEuler: {x: 49.559, y: 54.47, z: 23.65}
   transitionDuration: 0.35
-  flapAngle: 12
+  leftFlapMinZ: -40
+  leftFlapMaxZ: -6
+  rightFlapMinZ: 6
+  rightFlapMaxZ: 40
   flapSpeed: 18
   flapDuration: 1.2
 --- !u!1 &1044977411
