@@ -11,18 +11,17 @@ public class ElytraInteraction : MonoBehaviour
     private Transform rightElytraPivot;
 
 
-    [Header("Wing Interaction")]
+    [Header("Open Rotation")]
     [SerializeField]
-    private WingInteraction wingInteraction;
-
-
-    [Header("Animation Settings")]
-    [SerializeField]
-    private float liftAngle = 65f;
+    private Vector3 leftOpenEuler =
+        new Vector3(45.443f, 62.761f, 10f);
 
     [SerializeField]
-    private float outwardAngle = 12f;
+    private Vector3 rightOpenEuler =
+        new Vector3(45.443f, -62.761f, -10f);
 
+
+    [Header("Animation")]
     [SerializeField]
     private float animationDuration = 0.8f;
 
@@ -30,23 +29,19 @@ public class ElytraInteraction : MonoBehaviour
     private Quaternion leftClosedRotation;
     private Quaternion rightClosedRotation;
 
-
     private bool isOpen = false;
     private bool isAnimating = false;
 
 
-    // WingInteraction 会查询这个状态
     public bool IsOpen
     {
-        get
-        {
-            return isOpen;
-        }
+        get { return isOpen; }
     }
 
 
     private void Start()
     {
+        // 记录游戏开始时的关闭姿态
         leftClosedRotation =
             leftElytraPivot.localRotation;
 
@@ -55,54 +50,16 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
-    // ==========================================
-    // USER SELECT
-    // ==========================================
-
     public void ToggleElytra()
     {
         if (isAnimating)
-        {
             return;
-        }
 
-
-        // --------------------------
-        // CLOSED → OPEN
-        // --------------------------
-
-        if (!isOpen)
-        {
-            StartCoroutine(
-                AnimateElytra(true)
-            );
-
-            return;
-        }
-
-
-        // --------------------------
-        // OPEN → CLOSED
-        // --------------------------
-
-        // 如果 Wing 现在打开，
-        // 同时让 Wing 开始收回。
-        if (wingInteraction != null)
-        {
-            wingInteraction.ForceCloseWings();
-        }
-
-
-        // Elytra 自己也同时开始关闭。
         StartCoroutine(
-            AnimateElytra(false)
+            AnimateElytra(!isOpen)
         );
     }
 
-
-    // ==========================================
-    // ELYTRA ANIMATION
-    // ==========================================
 
     private IEnumerator AnimateElytra(bool open)
     {
@@ -122,25 +79,16 @@ public class ElytraInteraction : MonoBehaviour
 
         if (open)
         {
+            // 直接使用你手动调好的展开角度
             leftTarget =
-                leftClosedRotation *
-                Quaternion.Euler(
-                    -liftAngle,
-                    -outwardAngle,
-                    0f
-                );
-
+                Quaternion.Euler(leftOpenEuler);
 
             rightTarget =
-                rightClosedRotation *
-                Quaternion.Euler(
-                    -liftAngle,
-                    outwardAngle,
-                    0f
-                );
+                Quaternion.Euler(rightOpenEuler);
         }
         else
         {
+            // 回到游戏开始时记录的关闭姿态
             leftTarget =
                 leftClosedRotation;
 
@@ -156,13 +104,12 @@ public class ElytraInteraction : MonoBehaviour
         {
             time += Time.deltaTime;
 
-
             float t =
                 Mathf.Clamp01(
                     time / animationDuration
                 );
 
-
+            // 让动画起止更柔和
             t =
                 Mathf.SmoothStep(
                     0f,
