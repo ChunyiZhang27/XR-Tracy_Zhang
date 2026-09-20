@@ -2475,6 +2475,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499694620}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &503336396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503336397}
+  - component: {fileID: 503336398}
+  m_Layer: 0
+  m_Name: LadybirdBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503336397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503336396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6606117979619911688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503336398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503336396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d756600624f40b290f6b6fbdc429de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
+  leftElytraPivot: {fileID: 725335999}
+  rightElytraPivot: {fileID: 340638632}
+  wingInteraction: {fileID: 0}
+  liftAngle: 65
+  outwardAngle: 12
+  animationDuration: 0.8
 --- !u!1 &584078861
 GameObject:
   m_ObjectHideFlags: 0
@@ -11801,6 +11851,7 @@ Transform:
   - {fileID: 1164311891529342881}
   - {fileID: 725335999}
   - {fileID: 340638632}
+  - {fileID: 503336397}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0.459, z: 0}
 --- !u!23 &6664010874104245108
