@@ -2554,9 +2554,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
   leftElytraPivot: {fileID: 725335999}
   rightElytraPivot: {fileID: 340638632}
+  wingInteraction: {fileID: 503336399}
   leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
   rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
-  animationDuration: 0.8
+  elytraDuration: 0.8
+  wingOpenDelay: 0.15
+  wingCloseDelay: 0.2
 --- !u!114 &503336399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4541,9 +4544,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
   leftElytraPivot: {fileID: 680628102}
   rightElytraPivot: {fileID: 55358426}
+  wingInteraction: {fileID: 0}
   leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
   rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
-  animationDuration: 0.8
+  elytraDuration: 0.8
+  wingOpenDelay: 0.15
+  wingCloseDelay: 0.2
 --- !u!114 &1031175945
 MonoBehaviour:
   m_ObjectHideFlags: 0
