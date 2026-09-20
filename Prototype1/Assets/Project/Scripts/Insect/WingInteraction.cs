@@ -40,21 +40,48 @@ public class WingInteraction : MonoBehaviour
     private bool isAnimating = false;
 
 
+    // =========================
+    // PUBLIC STATE
+    // =========================
+
     public bool IsOpen
     {
-        get { return isOpen; }
+        get
+        {
+            return isOpen;
+        }
     }
 
 
-    // ========================================
-    // OPEN
-    // Elytra 打开时之后会调用这个函数
-    // ========================================
+    public bool IsAnimating
+    {
+        get
+        {
+            return isAnimating;
+        }
+    }
+
+
+    // =========================
+    // OPEN WINGS
+    // ElytraInteraction 会调用
+    // =========================
 
     public void OpenWings()
     {
-        if (isAnimating || isOpen)
+        // 正在动画时不要重复触发
+        if (isAnimating)
+        {
             return;
+        }
+
+
+        // 已经打开时不用再打开
+        if (isOpen)
+        {
+            return;
+        }
+
 
         StartCoroutine(
             AnimateWings(
@@ -66,15 +93,26 @@ public class WingInteraction : MonoBehaviour
     }
 
 
-    // ========================================
-    // CLOSE
-    // Elytra 关闭时之后会调用这个函数
-    // ========================================
+    // =========================
+    // CLOSE WINGS
+    // ElytraInteraction 会调用
+    // =========================
 
     public void CloseWings()
     {
-        if (isAnimating || !isOpen)
+        // 正在动画时不要重复触发
+        if (isAnimating)
+        {
             return;
+        }
+
+
+        // 已经关闭时不用重复关闭
+        if (!isOpen)
+        {
+            return;
+        }
+
 
         StartCoroutine(
             AnimateWings(
@@ -86,9 +124,9 @@ public class WingInteraction : MonoBehaviour
     }
 
 
-    // ========================================
-    // GENERAL ANIMATION
-    // ========================================
+    // =========================
+    // GENERAL WING ANIMATION
+    // =========================
 
     private IEnumerator AnimateWings(
         Vector3 leftTargetEuler,
@@ -99,6 +137,7 @@ public class WingInteraction : MonoBehaviour
         isAnimating = true;
 
 
+        // 记录动画开始时的位置
         Quaternion leftStart =
             leftWingPivot.localRotation;
 
@@ -106,11 +145,17 @@ public class WingInteraction : MonoBehaviour
             rightWingPivot.localRotation;
 
 
+        // 把我们手动调好的 Euler 数值
+        // 转成 Quaternion
         Quaternion leftTarget =
-            Quaternion.Euler(leftTargetEuler);
+            Quaternion.Euler(
+                leftTargetEuler
+            );
 
         Quaternion rightTarget =
-            Quaternion.Euler(rightTargetEuler);
+            Quaternion.Euler(
+                rightTargetEuler
+            );
 
 
         float time = 0f;
@@ -120,11 +165,14 @@ public class WingInteraction : MonoBehaviour
         {
             time += Time.deltaTime;
 
+
             float t =
                 Mathf.Clamp01(
                     time / transitionDuration
                 );
 
+
+            // 让动画开始和结束更柔和
             t =
                 Mathf.SmoothStep(
                     0f,
@@ -153,6 +201,7 @@ public class WingInteraction : MonoBehaviour
         }
 
 
+        // 确保最后准确到目标位置
         leftWingPivot.localRotation =
             leftTarget;
 
@@ -160,7 +209,9 @@ public class WingInteraction : MonoBehaviour
             rightTarget;
 
 
+        // 更新当前状态
         isOpen = opening;
+
         isAnimating = false;
     }
 }
