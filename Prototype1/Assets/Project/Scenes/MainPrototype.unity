@@ -2517,6 +2517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 503336397}
   - component: {fileID: 503336398}
+  - component: {fileID: 503336399}
   m_Layer: 0
   m_Name: LadybirdBehaviour
   m_TagString: Untagged
@@ -2556,6 +2557,25 @@ MonoBehaviour:
   leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
   rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
   animationDuration: 0.8
+--- !u!114 &503336399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503336396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0308194292c44d4bddb17a2abc133f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
+  leftWingPivot: {fileID: 298622996}
+  rightWingPivot: {fileID: 1458352990}
+  leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
+  rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
+  leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
+  rightOpenEuler: {x: 49.559, y: 54.47, z: 23.65}
+  transitionDuration: 0.45
 --- !u!1 &584078861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,13 +4558,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
   leftWingPivot: {fileID: 254686039}
   rightWingPivot: {fileID: 1044977412}
-  elytraInteraction: {fileID: 1031175944}
-  openLiftAngle: 55
-  openOutwardAngle: 10
+  leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
+  rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
+  leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
+  rightOpenEuler: {x: 49.559, y: 54.47, z: 23.65}
   transitionDuration: 0.35
-  flapAmplitude: 18
-  flapSpeed: 18
-  flapDuration: 1.5
 --- !u!1 &1044977411
 GameObject:
   m_ObjectHideFlags: 0
