@@ -31,9 +31,20 @@ public class WingInteraction : MonoBehaviour
         new Vector3(49.559f, 54.47f, 23.65f);
 
 
-    [Header("Animation")]
+    [Header("Open / Close Animation")]
     [SerializeField]
     private float transitionDuration = 0.45f;
+
+
+    [Header("Flap Animation")]
+    [SerializeField]
+    private float flapAngle = 12f;
+
+    [SerializeField]
+    private float flapSpeed = 18f;
+
+    [SerializeField]
+    private float flapDuration = 1.2f;
 
 
     private bool isOpen = false;
@@ -64,19 +75,16 @@ public class WingInteraction : MonoBehaviour
 
     // =========================
     // OPEN WINGS
-    // ElytraInteraction 会调用
+    // ElytraInteraction 调用
     // =========================
 
     public void OpenWings()
     {
-        // 正在动画时不要重复触发
         if (isAnimating)
         {
             return;
         }
 
-
-        // 已经打开时不用再打开
         if (isOpen)
         {
             return;
@@ -95,19 +103,16 @@ public class WingInteraction : MonoBehaviour
 
     // =========================
     // CLOSE WINGS
-    // ElytraInteraction 会调用
+    // ElytraInteraction 调用
     // =========================
 
     public void CloseWings()
     {
-        // 正在动画时不要重复触发
         if (isAnimating)
         {
             return;
         }
 
-
-        // 已经关闭时不用重复关闭
         if (!isOpen)
         {
             return;
@@ -125,7 +130,34 @@ public class WingInteraction : MonoBehaviour
 
 
     // =========================
-    // GENERAL WING ANIMATION
+    // FLAP WINGS
+    // 用户点击 Wing 时调用
+    // =========================
+
+    public void FlapWings()
+    {
+        // Wing 必须已经展开
+        if (!isOpen)
+        {
+            return;
+        }
+
+
+        // 正在执行其他动画时不要重复触发
+        if (isAnimating)
+        {
+            return;
+        }
+
+
+        StartCoroutine(
+            FlapRoutine()
+        );
+    }
+
+
+    // =========================
+    // OPEN / CLOSE ANIMATION
     // =========================
 
     private IEnumerator AnimateWings(
@@ -137,7 +169,6 @@ public class WingInteraction : MonoBehaviour
         isAnimating = true;
 
 
-        // 记录动画开始时的位置
         Quaternion leftStart =
             leftWingPivot.localRotation;
 
@@ -145,8 +176,6 @@ public class WingInteraction : MonoBehaviour
             rightWingPivot.localRotation;
 
 
-        // 把我们手动调好的 Euler 数值
-        // 转成 Quaternion
         Quaternion leftTarget =
             Quaternion.Euler(
                 leftTargetEuler
@@ -172,7 +201,6 @@ public class WingInteraction : MonoBehaviour
                 );
 
 
-            // 让动画开始和结束更柔和
             t =
                 Mathf.SmoothStep(
                     0f,
@@ -201,7 +229,6 @@ public class WingInteraction : MonoBehaviour
         }
 
 
-        // 确保最后准确到目标位置
         leftWingPivot.localRotation =
             leftTarget;
 
@@ -209,8 +236,76 @@ public class WingInteraction : MonoBehaviour
             rightTarget;
 
 
-        // 更新当前状态
         isOpen = opening;
+
+        isAnimating = false;
+    }
+
+
+    // =========================
+    // FLAP ANIMATION
+    // =========================
+
+    private IEnumerator FlapRoutine()
+    {
+        isAnimating = true;
+
+
+        Quaternion leftOpenRotation =
+            Quaternion.Euler(
+                leftOpenEuler
+            );
+
+        Quaternion rightOpenRotation =
+            Quaternion.Euler(
+                rightOpenEuler
+            );
+
+
+        float time = 0f;
+
+
+        while (time < flapDuration)
+        {
+            time += Time.deltaTime;
+
+
+            float angle =
+                Mathf.Sin(
+                    time * flapSpeed
+                ) * flapAngle;
+
+
+            // 暂时使用 Local X 轴进行拍动
+            leftWingPivot.localRotation =
+                leftOpenRotation *
+                Quaternion.Euler(
+                    angle,
+                    0f,
+                    0f
+                );
+
+
+            rightWingPivot.localRotation =
+                rightOpenRotation *
+                Quaternion.Euler(
+                    angle,
+                    0f,
+                    0f
+                );
+
+
+            yield return null;
+        }
+
+
+        // 拍完以后一定回到展开姿态
+        leftWingPivot.localRotation =
+            leftOpenRotation;
+
+        rightWingPivot.localRotation =
+            rightOpenRotation;
+
 
         isAnimating = false;
     }
