@@ -37,11 +37,25 @@ public class WingInteraction : MonoBehaviour
 
 
     [Header("Flap Animation")]
+
+    // Left wing Z range
     [SerializeField]
-    private float flapAngle = 12f;
+    private float leftFlapMinZ = -40f;
 
     [SerializeField]
-    private float flapSpeed = 18f;
+    private float leftFlapMaxZ = -6f;
+
+
+    // Right wing mirrored Z range
+    [SerializeField]
+    private float rightFlapMinZ = 6f;
+
+    [SerializeField]
+    private float rightFlapMaxZ = 40f;
+
+
+    [SerializeField]
+    private float flapSpeed = 28f;
 
     [SerializeField]
     private float flapDuration = 1.2f;
@@ -136,14 +150,14 @@ public class WingInteraction : MonoBehaviour
 
     public void FlapWings()
     {
-        // Wing 必须已经展开
+        // 必须先展开 Wings
         if (!isOpen)
         {
             return;
         }
 
 
-        // 正在执行其他动画时不要重复触发
+        // 正在执行其他动画时不能重复触发
         if (isAnimating)
         {
             return;
@@ -244,6 +258,7 @@ public class WingInteraction : MonoBehaviour
 
     // =========================
     // FLAP ANIMATION
+    // Wings 围绕 Z 轴拍动
     // =========================
 
     private IEnumerator FlapRoutine()
@@ -251,15 +266,20 @@ public class WingInteraction : MonoBehaviour
         isAnimating = true;
 
 
-        Quaternion leftOpenRotation =
-            Quaternion.Euler(
-                leftOpenEuler
-            );
+        // 计算 Left Wing 拍动中心与幅度
+        float leftCenterZ =
+            (leftFlapMinZ + leftFlapMaxZ) * 0.5f;
 
-        Quaternion rightOpenRotation =
-            Quaternion.Euler(
-                rightOpenEuler
-            );
+        float leftAmplitude =
+            (leftFlapMaxZ - leftFlapMinZ) * 0.5f;
+
+
+        // 计算 Right Wing 拍动中心与幅度
+        float rightCenterZ =
+            (rightFlapMinZ + rightFlapMaxZ) * 0.5f;
+
+        float rightAmplitude =
+            (rightFlapMaxZ - rightFlapMinZ) * 0.5f;
 
 
         float time = 0f;
@@ -270,28 +290,44 @@ public class WingInteraction : MonoBehaviour
             time += Time.deltaTime;
 
 
-            float angle =
+            // -1 到 +1 之间快速循环
+            float wave =
                 Mathf.Sin(
                     time * flapSpeed
-                ) * flapAngle;
+                );
 
 
-            // 暂时使用 Local X 轴进行拍动
+            // 保留 Open Pose 的 X / Y
+            Vector3 leftEuler =
+                leftOpenEuler;
+
+            Vector3 rightEuler =
+                rightOpenEuler;
+
+
+            // Left:
+            // -40 ～ -6
+            leftEuler.z =
+                leftCenterZ +
+                wave * leftAmplitude;
+
+
+            // Right 做镜像
+            // +40 ～ +6
+            rightEuler.z =
+                rightCenterZ -
+                wave * rightAmplitude;
+
+
             leftWingPivot.localRotation =
-                leftOpenRotation *
                 Quaternion.Euler(
-                    angle,
-                    0f,
-                    0f
+                    leftEuler
                 );
 
 
             rightWingPivot.localRotation =
-                rightOpenRotation *
                 Quaternion.Euler(
-                    angle,
-                    0f,
-                    0f
+                    rightEuler
                 );
 
 
@@ -299,12 +335,20 @@ public class WingInteraction : MonoBehaviour
         }
 
 
-        // 拍完以后一定回到展开姿态
+        // =========================
+        // 拍动结束
+        // 准确恢复 Open Pose
+        // =========================
+
         leftWingPivot.localRotation =
-            leftOpenRotation;
+            Quaternion.Euler(
+                leftOpenEuler
+            );
 
         rightWingPivot.localRotation =
-            rightOpenRotation;
+            Quaternion.Euler(
+                rightOpenEuler
+            );
 
 
         isAnimating = false;
