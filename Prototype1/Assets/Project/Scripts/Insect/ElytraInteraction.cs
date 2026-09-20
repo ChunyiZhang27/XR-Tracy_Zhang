@@ -11,6 +11,11 @@ public class ElytraInteraction : MonoBehaviour
     private Transform rightElytraPivot;
 
 
+    [Header("Wing Interaction")]
+    [SerializeField]
+    private WingInteraction wingInteraction;
+
+
     [Header("Open Rotation")]
     [SerializeField]
     private Vector3 leftOpenEuler =
@@ -21,9 +26,15 @@ public class ElytraInteraction : MonoBehaviour
         new Vector3(45.443f, -62.761f, -10f);
 
 
-    [Header("Animation")]
+    [Header("Timing")]
     [SerializeField]
-    private float animationDuration = 0.8f;
+    private float elytraDuration = 0.8f;
+
+    [SerializeField]
+    private float wingOpenDelay = 0.15f;
+
+    [SerializeField]
+    private float wingCloseDelay = 0.2f;
 
 
     private Quaternion leftClosedRotation;
@@ -41,7 +52,6 @@ public class ElytraInteraction : MonoBehaviour
 
     private void Start()
     {
-        // 记录游戏开始时的关闭姿态
         leftClosedRotation =
             leftElytraPivot.localRotation;
 
@@ -55,17 +65,114 @@ public class ElytraInteraction : MonoBehaviour
         if (isAnimating)
             return;
 
-        StartCoroutine(
-            AnimateElytra(!isOpen)
-        );
+
+        if (!isOpen)
+        {
+            StartCoroutine(OpenSequence());
+        }
+        else
+        {
+            StartCoroutine(CloseSequence());
+        }
     }
 
 
-    private IEnumerator AnimateElytra(bool open)
+    // ========================================
+    // OPEN
+    // Elytra starts first,
+    // then wings unfold shortly afterwards.
+    // ========================================
+
+    private IEnumerator OpenSequence()
     {
         isAnimating = true;
 
 
+        // Elytra starts opening.
+        StartCoroutine(
+            AnimateElytra(
+                leftOpenEuler,
+                rightOpenEuler
+            )
+        );
+
+
+        // Give the shell a small head start.
+        yield return new WaitForSeconds(
+            wingOpenDelay
+        );
+
+
+        if (wingInteraction != null)
+        {
+            wingInteraction.OpenWings();
+        }
+
+
+        // Wait for Elytra animation to finish.
+        yield return new WaitForSeconds(
+            Mathf.Max(
+                0f,
+                elytraDuration - wingOpenDelay
+            )
+        );
+
+
+        isOpen = true;
+        isAnimating = false;
+    }
+
+
+    // ========================================
+    // CLOSE
+    // Wings retract first,
+    // then Elytra closes over them.
+    // ========================================
+
+    private IEnumerator CloseSequence()
+    {
+        isAnimating = true;
+
+
+        if (wingInteraction != null)
+        {
+            // If the wings are currently flapping/opening,
+            // wait for that animation to finish first.
+            while (wingInteraction.IsAnimating)
+            {
+                yield return null;
+            }
+
+
+            wingInteraction.CloseWings();
+
+
+            // Give wings time to start retracting.
+            yield return new WaitForSeconds(
+                wingCloseDelay
+            );
+        }
+
+
+        yield return StartCoroutine(
+            AnimateElytraToClosed()
+        );
+
+
+        isOpen = false;
+        isAnimating = false;
+    }
+
+
+    // ========================================
+    // OPEN ELYTRA ANIMATION
+    // ========================================
+
+    private IEnumerator AnimateElytra(
+        Vector3 leftTargetEuler,
+        Vector3 rightTargetEuler
+    )
+    {
         Quaternion leftStart =
             leftElytraPivot.localRotation;
 
@@ -73,43 +180,25 @@ public class ElytraInteraction : MonoBehaviour
             rightElytraPivot.localRotation;
 
 
-        Quaternion leftTarget;
-        Quaternion rightTarget;
+        Quaternion leftTarget =
+            Quaternion.Euler(leftTargetEuler);
 
-
-        if (open)
-        {
-            // 直接使用你手动调好的展开角度
-            leftTarget =
-                Quaternion.Euler(leftOpenEuler);
-
-            rightTarget =
-                Quaternion.Euler(rightOpenEuler);
-        }
-        else
-        {
-            // 回到游戏开始时记录的关闭姿态
-            leftTarget =
-                leftClosedRotation;
-
-            rightTarget =
-                rightClosedRotation;
-        }
+        Quaternion rightTarget =
+            Quaternion.Euler(rightTargetEuler);
 
 
         float time = 0f;
 
 
-        while (time < animationDuration)
+        while (time < elytraDuration)
         {
             time += Time.deltaTime;
 
             float t =
                 Mathf.Clamp01(
-                    time / animationDuration
+                    time / elytraDuration
                 );
 
-            // 让动画起止更柔和
             t =
                 Mathf.SmoothStep(
                     0f,
@@ -143,9 +232,66 @@ public class ElytraInteraction : MonoBehaviour
 
         rightElytraPivot.localRotation =
             rightTarget;
+    }
 
 
-        isOpen = open;
-        isAnimating = false;
+    // ========================================
+    // CLOSE ELYTRA ANIMATION
+    // ========================================
+
+    private IEnumerator AnimateElytraToClosed()
+    {
+        Quaternion leftStart =
+            leftElytraPivot.localRotation;
+
+        Quaternion rightStart =
+            rightElytraPivot.localRotation;
+
+
+        float time = 0f;
+
+
+        while (time < elytraDuration)
+        {
+            time += Time.deltaTime;
+
+            float t =
+                Mathf.Clamp01(
+                    time / elytraDuration
+                );
+
+            t =
+                Mathf.SmoothStep(
+                    0f,
+                    1f,
+                    t
+                );
+
+
+            leftElytraPivot.localRotation =
+                Quaternion.Slerp(
+                    leftStart,
+                    leftClosedRotation,
+                    t
+                );
+
+
+            rightElytraPivot.localRotation =
+                Quaternion.Slerp(
+                    rightStart,
+                    rightClosedRotation,
+                    t
+                );
+
+
+            yield return null;
+        }
+
+
+        leftElytraPivot.localRotation =
+            leftClosedRotation;
+
+        rightElytraPivot.localRotation =
+            rightClosedRotation;
     }
 }
