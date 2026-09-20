@@ -1243,6 +1243,38 @@ MonoBehaviour:
   swingAngle: 20
   swingSpeed: 4
   swingDuration: 1.2
+--- !u!1 &298622995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298622996}
+  m_Layer: 0
+  m_Name: LeftWingPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298622996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298622995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0092, y: 0.0271, z: 0.009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 22217450217645781}
+  m_Father: {fileID: 6606117979619911688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307570561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,9 +2553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
   leftElytraPivot: {fileID: 725335999}
   rightElytraPivot: {fileID: 340638632}
-  wingInteraction: {fileID: 0}
-  liftAngle: 65
-  outwardAngle: 12
+  leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
+  rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
   animationDuration: 0.8
 --- !u!1 &584078861
 GameObject:
@@ -4490,9 +4521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
   leftElytraPivot: {fileID: 680628102}
   rightElytraPivot: {fileID: 55358426}
-  wingInteraction: {fileID: 1031175945}
-  liftAngle: 65
-  outwardAngle: 12
+  leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
+  rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
   animationDuration: 0.8
 --- !u!114 &1031175945
 MonoBehaviour:
@@ -6290,6 +6320,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452708398}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1458352989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1458352990}
+  m_Layer: 0
+  m_Name: RightWingPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1458352990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458352989}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6606117979619911688}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550145026
 GameObject:
   m_ObjectHideFlags: 0
@@ -9423,12 +9484,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5935800648013848334}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.035701748, y: 0.028117854, z: 0.012844632}
+  m_LocalRotation: {x: -0.000000037748947, y: -0, z: 4.4408916e-16, w: 1}
+  m_LocalPosition: {x: -0.026501756, y: 0.0010178536, z: 0.0038446411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6606117979619911688}
+  m_Father: {fileID: 298622996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45089114832304219
 GameObject:
@@ -9455,7 +9516,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5935800648013848334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11796,11 +11857,12 @@ Transform:
   - {fileID: 1071800510807876043}
   - {fileID: 815323519503614190}
   - {fileID: 1412522970474857742}
-  - {fileID: 22217450217645781}
   - {fileID: 1164311891529342881}
   - {fileID: 725335999}
   - {fileID: 340638632}
   - {fileID: 503336397}
+  - {fileID: 298622996}
+  - {fileID: 1458352990}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0.459, z: 0}
 --- !u!23 &6664010874104245108
@@ -11977,7 +12039,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8642272511255314731}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
