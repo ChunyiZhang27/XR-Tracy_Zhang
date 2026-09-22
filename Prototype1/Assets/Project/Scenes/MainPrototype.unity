@@ -1240,9 +1240,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
-  swingAngle: 20
-  swingSpeed: 4
-  swingDuration: 1.2
+  leftAntennaPivot: {fileID: 0}
+  rightAntennaPivot: {fileID: 0}
+  xMin: -1.2
+  xMax: 0.4
+  leftYMin: 0.4
+  leftYMax: 3
+  rightYMin: -3
+  rightYMax: -0.4
+  wiggleDuration: 1.4
+  wiggleSpeed: 7
 --- !u!1 &298622995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,9 +1903,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
-  swingAngle: 20
-  swingSpeed: 4
-  swingDuration: 1.2
+  leftAntennaPivot: {fileID: 0}
+  rightAntennaPivot: {fileID: 0}
+  xMin: -1.2
+  xMax: 0.4
+  leftYMin: 0.4
+  leftYMax: 3
+  rightYMin: -3
+  rightYMax: -0.4
+  wiggleDuration: 1.4
+  wiggleSpeed: 7
 --- !u!1 &451926165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,6 +2565,7 @@ GameObject:
   - component: {fileID: 503336397}
   - component: {fileID: 503336398}
   - component: {fileID: 503336399}
+  - component: {fileID: 503336400}
   m_Layer: 0
   m_Name: LadybirdBehaviour
   m_TagString: Untagged
@@ -2618,6 +2633,28 @@ MonoBehaviour:
   rightFlapMaxZ: 40
   flapSpeed: 24
   flapDuration: 1.2
+--- !u!114 &503336400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503336396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa8b13cd6c434036be5599ca2761ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntennaInteraction
+  leftAntennaPivot: {fileID: 614306240}
+  rightAntennaPivot: {fileID: 385761236}
+  xMin: -1.2
+  xMax: 0.4
+  leftYMin: 0.4
+  leftYMax: 3
+  rightYMin: -3
+  rightYMax: -0.4
+  wiggleDuration: 1.4
+  wiggleSpeed: 7
 --- !u!1 &584078861
 GameObject:
   m_ObjectHideFlags: 0
