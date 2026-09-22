@@ -11,7 +11,7 @@ public class AntennaInteraction : MonoBehaviour
     private Transform rightAntennaPivot;
 
 
-    [Header("X Range")]
+    [Header("X Movement Range")]
     [SerializeField]
     private float xMin = -1.2f;
 
@@ -19,20 +19,12 @@ public class AntennaInteraction : MonoBehaviour
     private float xMax = 0.4f;
 
 
-    [Header("Left Y Range")]
+    [Header("Fixed Y Rotation")]
     [SerializeField]
-    private float leftYMin = 0.4f;
+    private float leftFixedY = 0.4f;
 
     [SerializeField]
-    private float leftYMax = 3.0f;
-
-
-    [Header("Right Y Range")]
-    [SerializeField]
-    private float rightYMin = -3.0f;
-
-    [SerializeField]
-    private float rightYMax = -0.4f;
+    private float rightFixedY = -0.4f;
 
 
     [Header("Animation")]
@@ -46,6 +38,10 @@ public class AntennaInteraction : MonoBehaviour
     private bool isAnimating = false;
 
 
+    // =========================
+    // PUBLIC STATE
+    // =========================
+
     public bool IsAnimating
     {
         get
@@ -57,7 +53,7 @@ public class AntennaInteraction : MonoBehaviour
 
     // =========================
     // PUBLIC FUNCTION
-    // 后面 XR Select Entered 会调用
+    // XR Select Entered 调用
     // =========================
 
     public void WiggleAntennae()
@@ -75,6 +71,7 @@ public class AntennaInteraction : MonoBehaviour
 
     // =========================
     // ANTENNA ANIMATION
+    // 现在只有 X 轴运动
     // =========================
 
     private IEnumerator WiggleRoutine()
@@ -90,33 +87,20 @@ public class AntennaInteraction : MonoBehaviour
             time += Time.deltaTime;
 
 
-            // X 和 Y 使用不同相位
-            // 避免两个方向完全同步
-            float xWave =
+            // -1 ～ +1
+            float wave =
                 Mathf.Sin(
                     time * wiggleSpeed
                 );
 
-            float yWave =
-                Mathf.Sin(
-                    time * wiggleSpeed + 1.2f
-                );
 
-
-            // 从 -1 ~ 1 转成 0 ~ 1
+            // 转换成 0 ～ 1
             float xT =
-                (xWave + 1f) * 0.5f;
-
-            float yT =
-                (yWave + 1f) * 0.5f;
+                (wave + 1f) * 0.5f;
 
 
-            // -------------------------
-            // X
-            // 两边使用相同范围
-            // -1.2 ~ 0.4
-            // -------------------------
-
+            // X 始终限制在
+            // -1.2 ～ 0.4
             float currentX =
                 Mathf.Lerp(
                     xMin,
@@ -125,41 +109,18 @@ public class AntennaInteraction : MonoBehaviour
                 );
 
 
-            // -------------------------
-            // LEFT Y
-            // 0.4 ~ 3
-            // -------------------------
-
-            float leftY =
-                Mathf.Lerp(
-                    leftYMin,
-                    leftYMax,
-                    yT
-                );
-
-
-            // -------------------------
-            // RIGHT Y
-            // 镜像：-3 ~ -0.4
-            // -------------------------
-
-            float rightY =
-                Mathf.Lerp(
-                    rightYMax,
-                    rightYMin,
-                    yT
-                );
-
-
             // =========================
             // APPLY ROTATION
-            // Z 始终保持 0
+            //
+            // 只有 X 改变
+            // Y 固定
+            // Z 固定为 0
             // =========================
 
             leftAntennaPivot.localRotation =
                 Quaternion.Euler(
                     currentX,
-                    leftY,
+                    leftFixedY,
                     0f
                 );
 
@@ -167,7 +128,7 @@ public class AntennaInteraction : MonoBehaviour
             rightAntennaPivot.localRotation =
                 Quaternion.Euler(
                     currentX,
-                    rightY,
+                    rightFixedY,
                     0f
                 );
 
@@ -178,13 +139,13 @@ public class AntennaInteraction : MonoBehaviour
 
         // =========================
         // REST POSE
-        // 动画结束后回到安全范围内
+        // 回到安全的静止状态
         // =========================
 
         leftAntennaPivot.localRotation =
             Quaternion.Euler(
                 xMax,
-                leftYMin,
+                leftFixedY,
                 0f
             );
 
@@ -192,7 +153,7 @@ public class AntennaInteraction : MonoBehaviour
         rightAntennaPivot.localRotation =
             Quaternion.Euler(
                 xMax,
-                rightYMax,
+                rightFixedY,
                 0f
             );
 
