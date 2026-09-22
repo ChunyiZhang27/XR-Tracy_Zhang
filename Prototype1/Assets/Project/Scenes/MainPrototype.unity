@@ -1244,10 +1244,8 @@ MonoBehaviour:
   rightAntennaPivot: {fileID: 0}
   xMin: -1.2
   xMax: 0.4
-  leftYMin: 0.4
-  leftYMax: 3
-  rightYMin: -3
-  rightYMax: -0.4
+  leftFixedY: 0.4
+  rightFixedY: -0.4
   wiggleDuration: 1.4
   wiggleSpeed: 7
 --- !u!1 &298622995
@@ -1907,10 +1905,8 @@ MonoBehaviour:
   rightAntennaPivot: {fileID: 0}
   xMin: -1.2
   xMax: 0.4
-  leftYMin: 0.4
-  leftYMax: 3
-  rightYMin: -3
-  rightYMax: -0.4
+  leftFixedY: 0.4
+  rightFixedY: -0.4
   wiggleDuration: 1.4
   wiggleSpeed: 7
 --- !u!1 &451926165
@@ -2631,7 +2627,7 @@ MonoBehaviour:
   leftFlapMaxZ: -6
   rightFlapMinZ: 6
   rightFlapMaxZ: 40
-  flapSpeed: 24
+  flapSpeed: 30
   flapDuration: 1.2
 --- !u!114 &503336400
 MonoBehaviour:
@@ -2649,12 +2645,10 @@ MonoBehaviour:
   rightAntennaPivot: {fileID: 385761236}
   xMin: -1.2
   xMax: 0.4
-  leftYMin: 0.4
-  leftYMax: 3
-  rightYMin: -3
-  rightYMax: -0.4
+  leftFixedY: 0.4
+  rightFixedY: -0.4
   wiggleDuration: 1.4
-  wiggleSpeed: 7
+  wiggleSpeed: 25
 --- !u!1 &584078861
 GameObject:
   m_ObjectHideFlags: 0
