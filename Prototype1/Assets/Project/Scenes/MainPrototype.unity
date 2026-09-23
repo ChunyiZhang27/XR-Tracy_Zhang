@@ -10926,18 +10926,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1831991277}
-        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
-        m_MethodName: PlayAntennaNarration
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -10977,6 +10965,18 @@ MonoBehaviour:
       - m_Target: {fileID: 503336400}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: WiggleAntennae
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1831991277}
+        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
+        m_MethodName: PlayAntennaNarration
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11261,18 +11261,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1831991277}
-        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
-        m_MethodName: PlayAntennaNarration
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -11312,6 +11300,18 @@ MonoBehaviour:
       - m_Target: {fileID: 503336400}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: WiggleAntennae
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1831991277}
+        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
+        m_MethodName: PlayAntennaNarration
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11607,18 +11607,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1831991277}
-        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
-        m_MethodName: PlayAntennaNarration
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -11658,6 +11646,18 @@ MonoBehaviour:
       - m_Target: {fileID: 503336400}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: WiggleAntennae
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1831991277}
+        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
+        m_MethodName: PlayAntennaNarration
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11844,18 +11844,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1831991277}
-        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
-        m_MethodName: PlayAntennaNarration
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -11895,6 +11883,18 @@ MonoBehaviour:
       - m_Target: {fileID: 503336400}
         m_TargetAssemblyTypeName: AntennaInteraction, Assembly-CSharp
         m_MethodName: WiggleAntennae
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1831991277}
+        m_TargetAssemblyTypeName: NarrationManager, Assembly-CSharp
+        m_MethodName: PlayAntennaNarration
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
