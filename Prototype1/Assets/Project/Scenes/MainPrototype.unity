@@ -2261,6 +2261,7 @@ MonoBehaviour:
   leftElytraPivot: {fileID: 725335999}
   rightElytraPivot: {fileID: 340638632}
   wingInteraction: {fileID: 503336399}
+  sfxManager: {fileID: 1831991278}
   leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
   rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
   elytraDuration: 0.8
@@ -10895,9 +10896,9 @@ Transform:
   - {fileID: 1071800510807876043}
   - {fileID: 815323519503614190}
   - {fileID: 1412522970474857742}
+  - {fileID: 503336397}
   - {fileID: 725335999}
   - {fileID: 340638632}
-  - {fileID: 503336397}
   - {fileID: 298622996}
   - {fileID: 1458352990}
   - {fileID: 614306240}
