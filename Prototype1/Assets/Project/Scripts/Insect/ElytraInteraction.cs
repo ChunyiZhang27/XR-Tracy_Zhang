@@ -16,6 +16,11 @@ public class ElytraInteraction : MonoBehaviour
     private WingInteraction wingInteraction;
 
 
+    [Header("SFX")]
+    [SerializeField]
+    private SFXManager sfxManager;
+
+
     [Header("Open Rotation")]
     [SerializeField]
     private Vector3 leftOpenEuler =
@@ -46,7 +51,10 @@ public class ElytraInteraction : MonoBehaviour
 
     public bool IsOpen
     {
-        get { return isOpen; }
+        get
+        {
+            return isOpen;
+        }
     }
 
 
@@ -60,35 +68,55 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
+    // =========================
+    // TOGGLE ELYTRA
+    // =========================
+
     public void ToggleElytra()
     {
         if (isAnimating)
+        {
             return;
+        }
 
 
         if (!isOpen)
         {
-            StartCoroutine(OpenSequence());
+            StartCoroutine(
+                OpenSequence()
+            );
         }
         else
         {
-            StartCoroutine(CloseSequence());
+            StartCoroutine(
+                CloseSequence()
+            );
         }
     }
 
 
-    // ========================================
-    // OPEN
-    // Elytra starts first,
-    // then wings unfold shortly afterwards.
-    // ========================================
+    // =========================
+    // OPEN SEQUENCE
+    //
+    // 1. Elytra starts opening
+    // 2. Open SFX plays
+    // 3. Short delay
+    // 4. Wings unfold
+    // =========================
 
     private IEnumerator OpenSequence()
     {
         isAnimating = true;
 
 
-        // Elytra starts opening.
+        // Elytra 真正开始打开时播放音效
+        if (sfxManager != null)
+        {
+            sfxManager.PlayElytraOpen();
+        }
+
+
+        // 开始 Elytra 动画
         StartCoroutine(
             AnimateElytra(
                 leftOpenEuler,
@@ -97,7 +125,8 @@ public class ElytraInteraction : MonoBehaviour
         );
 
 
-        // Give the shell a small head start.
+        // 让 Elytra 先抬起来一点，
+        // 避免 Wings 穿模
         yield return new WaitForSeconds(
             wingOpenDelay
         );
@@ -109,7 +138,7 @@ public class ElytraInteraction : MonoBehaviour
         }
 
 
-        // Wait for Elytra animation to finish.
+        // 等待剩余 Elytra 动画完成
         yield return new WaitForSeconds(
             Mathf.Max(
                 0f,
@@ -123,11 +152,14 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
-    // ========================================
-    // CLOSE
-    // Wings retract first,
-    // then Elytra closes over them.
-    // ========================================
+    // =========================
+    // CLOSE SEQUENCE
+    //
+    // 1. Wait if Wing is animating
+    // 2. Wings retract
+    // 3. Short delay
+    // 4. Elytra close + Close SFX
+    // =========================
 
     private IEnumerator CloseSequence()
     {
@@ -136,24 +168,33 @@ public class ElytraInteraction : MonoBehaviour
 
         if (wingInteraction != null)
         {
-            // If the wings are currently flapping/opening,
-            // wait for that animation to finish first.
+            // 如果 Wings 正在拍动 / 动画中，
+            // 先等它结束
             while (wingInteraction.IsAnimating)
             {
                 yield return null;
             }
 
 
+            // 先收 Wings
             wingInteraction.CloseWings();
 
 
-            // Give wings time to start retracting.
+            // 给 Wings 一点时间先收回
             yield return new WaitForSeconds(
                 wingCloseDelay
             );
         }
 
 
+        // Elytra 真正开始关闭时播放音效
+        if (sfxManager != null)
+        {
+            sfxManager.PlayElytraClose();
+        }
+
+
+        // 然后关闭 Elytra
         yield return StartCoroutine(
             AnimateElytraToClosed()
         );
@@ -164,9 +205,9 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
-    // ========================================
+    // =========================
     // OPEN ELYTRA ANIMATION
-    // ========================================
+    // =========================
 
     private IEnumerator AnimateElytra(
         Vector3 leftTargetEuler,
@@ -181,10 +222,14 @@ public class ElytraInteraction : MonoBehaviour
 
 
         Quaternion leftTarget =
-            Quaternion.Euler(leftTargetEuler);
+            Quaternion.Euler(
+                leftTargetEuler
+            );
 
         Quaternion rightTarget =
-            Quaternion.Euler(rightTargetEuler);
+            Quaternion.Euler(
+                rightTargetEuler
+            );
 
 
         float time = 0f;
@@ -194,10 +239,12 @@ public class ElytraInteraction : MonoBehaviour
         {
             time += Time.deltaTime;
 
+
             float t =
                 Mathf.Clamp01(
                     time / elytraDuration
                 );
+
 
             t =
                 Mathf.SmoothStep(
@@ -235,9 +282,9 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
-    // ========================================
+    // =========================
     // CLOSE ELYTRA ANIMATION
-    // ========================================
+    // =========================
 
     private IEnumerator AnimateElytraToClosed()
     {
@@ -255,10 +302,12 @@ public class ElytraInteraction : MonoBehaviour
         {
             time += Time.deltaTime;
 
+
             float t =
                 Mathf.Clamp01(
                     time / elytraDuration
                 );
+
 
             t =
                 Mathf.SmoothStep(
