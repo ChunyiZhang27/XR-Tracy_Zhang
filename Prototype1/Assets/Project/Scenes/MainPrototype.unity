@@ -6661,6 +6661,7 @@ MonoBehaviour:
   antennaNarration: {fileID: 8300000, guid: 68c166a259cd84e55a2cb4d5a3423512, type: 3}
   elytraNarration: {fileID: 8300000, guid: db195b52e642c495ea6e856b93d43fab, type: 3}
   wingNarration: {fileID: 8300000, guid: 13b421954457b4e3fab1a55bff1f2b91, type: 3}
+  backToInsectsNarration: {fileID: 8300000, guid: 124432b6e6e1a4fe893857db3170e635, type: 3}
 --- !u!114 &1831991278
 MonoBehaviour:
   m_ObjectHideFlags: 0
