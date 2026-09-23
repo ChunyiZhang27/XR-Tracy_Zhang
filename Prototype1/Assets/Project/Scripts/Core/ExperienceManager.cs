@@ -14,6 +14,11 @@ public class ExperienceManager : MonoBehaviour
     private GameObject insectExploreZone;
 
 
+    [Header("Audio")]
+    [SerializeField]
+    private NarrationManager narrationManager;
+
+
     // 用于判断 Scene Reload 后
     // 是否应该跳过 Onboarding
     private static bool skipOnboardingAfterReload = false;
@@ -79,6 +84,17 @@ public class ExperienceManager : MonoBehaviour
         onboardingZone.SetActive(false);
         selectionZone.SetActive(false);
         insectExploreZone.SetActive(true);
+
+
+        // 每次真正进入 Explore 时：
+        // 1. 重置三个身体部位的 narration 状态
+        // 2. 播放一次 Explore 引导语音
+        if (narrationManager != null)
+        {
+            narrationManager.ResetNarrations();
+            narrationManager.PlayExploreIntro();
+        }
+
 
         Debug.Log(
             "Entering insect exploration mode."
