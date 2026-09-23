@@ -44,7 +44,16 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
-    // BACK TO INSECTS
+    // LADYBIRD COMPLETION
+    // =========================
+
+    [Header("Ladybird Completion")]
+    [SerializeField]
+    private AudioClip ladybirdCompleteNarration;
+
+
+    // =========================
+    // NAVIGATION
     // =========================
 
     [Header("Navigation Narration")]
@@ -63,8 +72,6 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // PUBLIC STATE
-    // 后面 ExperienceManager 会用它判断
-    // Back narration 是否已经播放结束
     // =========================
 
     public bool IsNarrationPlaying
@@ -201,6 +208,23 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
+    // LADYBIRD COMPLETE
+    // =========================
+
+    public void PlayLadybirdCompleteNarration()
+    {
+        if (ladybirdCompleteNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(
+            ladybirdCompleteNarration
+        );
+    }
+
+
+    // =========================
     // BACK TO INSECTS
     // =========================
 
@@ -229,6 +253,8 @@ public class NarrationManager : MonoBehaviour
         }
 
 
+        // 如果上一条 narration 还在播放，
+        // 停止它，再播放当前语音。
         if (narrationSource.isPlaying)
         {
             narrationSource.Stop();
@@ -243,6 +269,7 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // RESET BODY PART NARRATIONS
+    // 每次进入 Ladybird Explore 时调用
     // =========================
 
     public void ResetNarrations()
