@@ -34,7 +34,7 @@ public class InsectInfoPanel : MonoBehaviour
         titleText.text = "ANTENNA";
 
         descriptionText.text =
-            "Antennae help the ladybird sense smells, touch, and its surroundings.";
+            "Sense touch and smell.";
 
         infoPanel.SetActive(true);
     }
@@ -51,7 +51,7 @@ public class InsectInfoPanel : MonoBehaviour
         titleText.text = "ELYTRA";
 
         descriptionText.text =
-            "The hard elytra protect the delicate flight wings underneath.";
+            "Protect the flight wings.";
 
         infoPanel.SetActive(true);
     }
@@ -68,7 +68,7 @@ public class InsectInfoPanel : MonoBehaviour
         titleText.text = "FLIGHT WINGS";
 
         descriptionText.text =
-            "The thin flight wings unfold from beneath the elytra when the ladybird flies.";
+            "Used for flight.";
 
         infoPanel.SetActive(true);
     }
