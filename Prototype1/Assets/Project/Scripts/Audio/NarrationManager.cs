@@ -7,10 +7,30 @@ public class NarrationManager : MonoBehaviour
     private AudioSource narrationSource;
 
 
+    // =========================
+    // EXPERIENCE INTRO
+    // =========================
+
+    [Header("Experience Intro")]
+    [SerializeField]
+    private AudioClip openingIntroNarration;
+
+    [SerializeField]
+    private AudioClip selectionIntroNarration;
+
+
+    // =========================
+    // EXPLORE INTRO
+    // =========================
+
     [Header("Explore Intro")]
     [SerializeField]
     private AudioClip exploreIntroNarration;
 
+
+    // =========================
+    // BODY PART NARRATIONS
+    // =========================
 
     [Header("Body Part Narration Clips")]
     [SerializeField]
@@ -25,7 +45,7 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // PLAYED STATE
-    // 每个身体部位在一次 Explore 中只自动播放一次
+    // 身体部位在一次 Explore 中只播放一次
     // =========================
 
     private bool antennaPlayed = false;
@@ -34,8 +54,43 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
-    // EXPLORE INTRO
-    // 每次进入 Explore 时可以调用
+    // OPENING INTRO
+    // Tiny Worlds 一开始播放
+    // =========================
+
+    public void PlayOpeningIntro()
+    {
+        if (openingIntroNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(
+            openingIntroNarration
+        );
+    }
+
+
+    // =========================
+    // SELECTION INTRO
+    // 点击 START 进入 Selection 时播放
+    // =========================
+
+    public void PlaySelectionIntro()
+    {
+        if (selectionIntroNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(
+            selectionIntroNarration
+        );
+    }
+
+
+    // =========================
+    // LADYBIRD EXPLORE INTRO
     // =========================
 
     public void PlayExploreIntro()
@@ -45,7 +100,9 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-        PlayNarration(exploreIntroNarration);
+        PlayNarration(
+            exploreIntroNarration
+        );
     }
 
 
@@ -65,7 +122,9 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-        PlayNarration(antennaNarration);
+        PlayNarration(
+            antennaNarration
+        );
 
         antennaPlayed = true;
     }
@@ -87,7 +146,9 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-        PlayNarration(elytraNarration);
+        PlayNarration(
+            elytraNarration
+        );
 
         elytraPlayed = true;
     }
@@ -109,7 +170,9 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-        PlayNarration(wingNarration);
+        PlayNarration(
+            wingNarration
+        );
 
         wingPlayed = true;
     }
@@ -126,21 +189,24 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-        // 如果另一条 narration 还在播放，
-        // 当前交互优先，停止上一条。
+
+        // 如果上一条 narration 还在播放，
+        // 停止它，再播放当前语音。
         if (narrationSource.isPlaying)
         {
             narrationSource.Stop();
         }
 
+
         narrationSource.clip = clip;
+
         narrationSource.Play();
     }
 
 
     // =========================
-    // RESET
-    // 每次重新进入 Explore 时调用
+    // RESET BODY PART NARRATIONS
+    // 每次进入 Ladybird Explore 时调用
     // =========================
 
     public void ResetNarrations()
@@ -148,6 +214,7 @@ public class NarrationManager : MonoBehaviour
         antennaPlayed = false;
         elytraPlayed = false;
         wingPlayed = false;
+
 
         if (narrationSource != null &&
             narrationSource.isPlaying)
