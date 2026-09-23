@@ -19,6 +19,9 @@ public class ExperienceManager : MonoBehaviour
     [SerializeField]
     private NarrationManager narrationManager;
 
+    [SerializeField]
+    private float openingIntroDelay = 2f;
+
 
     // 用于判断 Scene Reload 后
     // 是否应该跳过 Onboarding
@@ -27,6 +30,11 @@ public class ExperienceManager : MonoBehaviour
 
     // 防止用户连续点击 Back
     private bool isReturningToSelection = false;
+
+
+    // 保存 Opening Intro 的等待 Coroutine
+    // 如果用户提前按 START，可以取消
+    private Coroutine openingIntroCoroutine;
 
 
     private void Start()
@@ -58,11 +66,42 @@ public class ExperienceManager : MonoBehaviour
         insectExploreZone.SetActive(false);
 
 
-        // 进入 Tiny Worlds 时播放欢迎介绍
+        // 如果之前有等待中的 Opening Intro，
+        // 先停止，避免重复启动。
+        if (openingIntroCoroutine != null)
+        {
+            StopCoroutine(
+                openingIntroCoroutine
+            );
+
+            openingIntroCoroutine = null;
+        }
+
+
+        // BGM 会因为 Play On Awake 立即开始。
+        // Opening narration 延迟播放。
+        openingIntroCoroutine =
+            StartCoroutine(
+                PlayOpeningIntroAfterDelay()
+            );
+    }
+
+
+    private IEnumerator PlayOpeningIntroAfterDelay()
+    {
+        // 先让 BGM 播放一小段时间
+        yield return new WaitForSeconds(
+            openingIntroDelay
+        );
+
+
         if (narrationManager != null)
         {
             narrationManager.PlayOpeningIntro();
         }
+
+
+        openingIntroCoroutine = null;
     }
 
 
@@ -73,6 +112,19 @@ public class ExperienceManager : MonoBehaviour
 
     public void StartExperience()
     {
+        // 如果用户在 Opening Intro 开始前
+        // 已经按下 START，
+        // 就取消等待中的 Opening Intro。
+        if (openingIntroCoroutine != null)
+        {
+            StopCoroutine(
+                openingIntroCoroutine
+            );
+
+            openingIntroCoroutine = null;
+        }
+
+
         onboardingZone.SetActive(false);
         selectionZone.SetActive(true);
         insectExploreZone.SetActive(false);
