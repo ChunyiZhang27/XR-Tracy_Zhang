@@ -7,9 +7,17 @@ public class SFXManager : MonoBehaviour
     private AudioSource sfxSource;
 
 
-    [Header("SFX Clips")]
+    [Header("Wing SFX")]
     [SerializeField]
     private AudioClip wingFlapSFX;
+
+
+    [Header("Elytra SFX")]
+    [SerializeField]
+    private AudioClip elytraOpenSFX;
+
+    [SerializeField]
+    private AudioClip elytraCloseSFX;
 
 
     // =========================
@@ -18,20 +26,47 @@ public class SFXManager : MonoBehaviour
 
     public void PlayWingFlap()
     {
-        if (sfxSource == null)
+        if (sfxSource == null || wingFlapSFX == null)
         {
             return;
         }
 
-        if (wingFlapSFX == null)
-        {
-            return;
-        }
-
-        // PlayOneShot 不会修改 AudioSource 当前 clip
-        // 很适合这种短暂动作音效
         sfxSource.PlayOneShot(
             wingFlapSFX
+        );
+    }
+
+
+    // =========================
+    // ELYTRA OPEN
+    // =========================
+
+    public void PlayElytraOpen()
+    {
+        if (sfxSource == null || elytraOpenSFX == null)
+        {
+            return;
+        }
+
+        sfxSource.PlayOneShot(
+            elytraOpenSFX
+        );
+    }
+
+
+    // =========================
+    // ELYTRA CLOSE
+    // =========================
+
+    public void PlayElytraClose()
+    {
+        if (sfxSource == null || elytraCloseSFX == null)
+        {
+            return;
+        }
+
+        sfxSource.PlayOneShot(
+            elytraCloseSFX
         );
     }
 }
