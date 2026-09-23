@@ -51,15 +51,34 @@ public class ExperienceManager : MonoBehaviour
         onboardingZone.SetActive(true);
         selectionZone.SetActive(false);
         insectExploreZone.SetActive(false);
+
+
+        // 进入 Tiny Worlds 时播放欢迎介绍
+        if (narrationManager != null)
+        {
+            narrationManager.PlayOpeningIntro();
+        }
     }
 
 
+    // =========================
+    // START EXPERIENCE
     // START Button 调用
+    // =========================
+
     public void StartExperience()
     {
         onboardingZone.SetActive(false);
         selectionZone.SetActive(true);
         insectExploreZone.SetActive(false);
+
+
+        // 点击 START 后，
+        // 播放昆虫选择页面的引导语音
+        if (narrationManager != null)
+        {
+            narrationManager.PlaySelectionIntro();
+        }
     }
 
 
@@ -88,7 +107,7 @@ public class ExperienceManager : MonoBehaviour
 
         // 每次真正进入 Explore 时：
         // 1. 重置三个身体部位的 narration 状态
-        // 2. 播放一次 Explore 引导语音
+        // 2. 播放 Ladybird Explore 引导语音
         if (narrationManager != null)
         {
             narrationManager.ResetNarrations();
