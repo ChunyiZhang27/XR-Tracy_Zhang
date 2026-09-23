@@ -7,7 +7,12 @@ public class NarrationManager : MonoBehaviour
     private AudioSource narrationSource;
 
 
-    [Header("Narration Clips")]
+    [Header("Explore Intro")]
+    [SerializeField]
+    private AudioClip exploreIntroNarration;
+
+
+    [Header("Body Part Narration Clips")]
     [SerializeField]
     private AudioClip antennaNarration;
 
@@ -20,12 +25,28 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // PLAYED STATE
-    // 每条 narration 每次运行只自动播放一次
+    // 每个身体部位在一次 Explore 中只自动播放一次
     // =========================
 
     private bool antennaPlayed = false;
     private bool elytraPlayed = false;
     private bool wingPlayed = false;
+
+
+    // =========================
+    // EXPLORE INTRO
+    // 每次进入 Explore 时可以调用
+    // =========================
+
+    public void PlayExploreIntro()
+    {
+        if (exploreIntroNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(exploreIntroNarration);
+    }
 
 
     // =========================
@@ -105,25 +126,21 @@ public class NarrationManager : MonoBehaviour
             return;
         }
 
-
-        // 如果上一条 narration 还在播放，
-        // 先停止，再播放当前知识点。
+        // 如果另一条 narration 还在播放，
+        // 当前交互优先，停止上一条。
         if (narrationSource.isPlaying)
         {
             narrationSource.Stop();
         }
 
-
         narrationSource.clip = clip;
-
         narrationSource.Play();
     }
 
 
     // =========================
     // RESET
-    // 之后如果我们想在重新进入 Explore 时
-    // 允许 narration 再播放一次，可以调用这个函数。
+    // 每次重新进入 Explore 时调用
     // =========================
 
     public void ResetNarrations()
@@ -131,7 +148,6 @@ public class NarrationManager : MonoBehaviour
         antennaPlayed = false;
         elytraPlayed = false;
         wingPlayed = false;
-
 
         if (narrationSource != null &&
             narrationSource.isPlaying)

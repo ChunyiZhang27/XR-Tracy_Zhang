@@ -4641,6 +4641,7 @@ GameObject:
   - component: {fileID: 1417120087}
   - component: {fileID: 1417120086}
   - component: {fileID: 1417120085}
+  - component: {fileID: 1417120089}
   m_Layer: 0
   m_Name: ExploreNavigationUI
   m_TagString: Untagged
@@ -4750,6 +4751,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1417120089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417120083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3587a8d9911430287e81e36ba52fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExploreGuidanceUI
+  guidanceText: {fileID: 1989477617}
 --- !u!1 &1458352989
 GameObject:
   m_ObjectHideFlags: 0
