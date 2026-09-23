@@ -1307,7 +1307,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1031175944}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ElytraInteraction, Assembly-CSharp
         m_MethodName: ToggleElytra
         m_Mode: 1
@@ -2280,7 +2280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
   leftWingPivot: {fileID: 298622996}
   rightWingPivot: {fileID: 1458352990}
-  sfxManager: {fileID: 0}
+  sfxManager: {fileID: 1831991278}
   leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
   rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
   leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
@@ -3555,85 +3555,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969870503}
   m_Mesh: {fileID: 5244617725668481378, guid: 24e3acee914114a2aadea27dc184ac86, type: 3}
---- !u!1 &1031175942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1031175943}
-  - component: {fileID: 1031175944}
-  - component: {fileID: 1031175945}
-  m_Layer: 0
-  m_Name: LadybirdBehaviour
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1031175943
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031175942}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1783907480}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1031175944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031175942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d756600624f40b290f6b6fbdc429de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ElytraInteraction
-  leftElytraPivot: {fileID: 0}
-  rightElytraPivot: {fileID: 0}
-  wingInteraction: {fileID: 0}
-  leftOpenEuler: {x: 45.443, y: 62.761, z: 10}
-  rightOpenEuler: {x: 45.443, y: -62.761, z: -10}
-  elytraDuration: 0.8
-  wingOpenDelay: 0.15
-  wingCloseDelay: 0.2
---- !u!114 &1031175945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031175942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0308194292c44d4bddb17a2abc133f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
-  leftWingPivot: {fileID: 298622996}
-  rightWingPivot: {fileID: 1458352990}
-  sfxManager: {fileID: 1831991278}
-  leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
-  rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
-  leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
-  rightOpenEuler: {x: 49.559, y: 54.47, z: 23.65}
-  transitionDuration: 0.35
-  leftFlapMinZ: -40
-  leftFlapMaxZ: -6
-  rightFlapMinZ: 6
-  rightFlapMaxZ: 40
-  flapSpeed: 18
-  flapDuration: 1.2
 --- !u!1 &1065051009
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,7 +6066,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 385770267}
-  - {fileID: 1031175943}
   - {fileID: 1378976803}
   - {fileID: 6606117979619911688}
   m_Father: {fileID: 117779207}
