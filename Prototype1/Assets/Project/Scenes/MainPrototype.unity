@@ -6542,6 +6542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SFXManager
   sfxSource: {fileID: 305792332}
   wingFlapSFX: {fileID: 8300000, guid: 0c31771ea4ba4462fac64abe5417934a, type: 3}
+  elytraOpenSFX: {fileID: 8300000, guid: a96b05c3758104070abc5060d9341e59, type: 3}
+  elytraCloseSFX: {fileID: 8300000, guid: 01350035b08a449f0808af05e1778d71, type: 3}
 --- !u!1 &1870919836
 GameObject:
   m_ObjectHideFlags: 0
