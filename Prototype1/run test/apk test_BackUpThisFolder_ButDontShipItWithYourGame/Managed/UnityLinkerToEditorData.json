@@ -996,9 +996,7 @@
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [
-              "Assets/Project/Scenes/MainPrototype.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
