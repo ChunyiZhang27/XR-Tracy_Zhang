@@ -2224,6 +2224,7 @@ GameObject:
   - component: {fileID: 503336398}
   - component: {fileID: 503336399}
   - component: {fileID: 503336400}
+  - component: {fileID: 503336401}
   m_Layer: 0
   m_Name: LadybirdBehaviour
   m_TagString: Untagged
@@ -2313,6 +2314,20 @@ MonoBehaviour:
   rightFixedY: -0.4
   wiggleDuration: 1.4
   wiggleSpeed: 25
+--- !u!114 &503336401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503336396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888d3504284ae4cedbe8d31b3c059934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadybirdExplorationProgress
+  narrationManager: {fileID: 1831991277}
+  completionDelay: 0.4
 --- !u!1 &584078861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4631,6 +4646,7 @@ MonoBehaviour:
   selectionZone: {fileID: 739848556}
   insectExploreZone: {fileID: 117779206}
   narrationManager: {fileID: 1831991277}
+  openingIntroDelay: 2
 --- !u!4 &1407051860
 Transform:
   m_ObjectHideFlags: 0
@@ -6661,6 +6677,7 @@ MonoBehaviour:
   antennaNarration: {fileID: 8300000, guid: 68c166a259cd84e55a2cb4d5a3423512, type: 3}
   elytraNarration: {fileID: 8300000, guid: db195b52e642c495ea6e856b93d43fab, type: 3}
   wingNarration: {fileID: 8300000, guid: 13b421954457b4e3fab1a55bff1f2b91, type: 3}
+  ladybirdCompleteNarration: {fileID: 8300000, guid: e5d57cc8ad23543f0a1ebbc374f3d678, type: 3}
   backToInsectsNarration: {fileID: 8300000, guid: 124432b6e6e1a4fe893857db3170e635, type: 3}
 --- !u!114 &1831991278
 MonoBehaviour:
