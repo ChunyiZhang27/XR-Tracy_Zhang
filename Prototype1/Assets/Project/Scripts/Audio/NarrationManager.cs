@@ -44,8 +44,16 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
+    // BACK TO INSECTS
+    // =========================
+
+    [Header("Navigation Narration")]
+    [SerializeField]
+    private AudioClip backToInsectsNarration;
+
+
+    // =========================
     // PLAYED STATE
-    // 身体部位在一次 Explore 中只播放一次
     // =========================
 
     private bool antennaPlayed = false;
@@ -54,8 +62,23 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
+    // PUBLIC STATE
+    // 后面 ExperienceManager 会用它判断
+    // Back narration 是否已经播放结束
+    // =========================
+
+    public bool IsNarrationPlaying
+    {
+        get
+        {
+            return narrationSource != null &&
+                   narrationSource.isPlaying;
+        }
+    }
+
+
+    // =========================
     // OPENING INTRO
-    // Tiny Worlds 一开始播放
     // =========================
 
     public void PlayOpeningIntro()
@@ -73,7 +96,6 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // SELECTION INTRO
-    // 点击 START 进入 Selection 时播放
     // =========================
 
     public void PlaySelectionIntro()
@@ -179,6 +201,23 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
+    // BACK TO INSECTS
+    // =========================
+
+    public void PlayBackToInsectsNarration()
+    {
+        if (backToInsectsNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(
+            backToInsectsNarration
+        );
+    }
+
+
+    // =========================
     // GENERAL PLAY FUNCTION
     // =========================
 
@@ -190,8 +229,6 @@ public class NarrationManager : MonoBehaviour
         }
 
 
-        // 如果上一条 narration 还在播放，
-        // 停止它，再播放当前语音。
         if (narrationSource.isPlaying)
         {
             narrationSource.Stop();
@@ -206,7 +243,6 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // RESET BODY PART NARRATIONS
-    // 每次进入 Ladybird Explore 时调用
     // =========================
 
     public void ResetNarrations()
