@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,6 +23,10 @@ public class ExperienceManager : MonoBehaviour
     // 用于判断 Scene Reload 后
     // 是否应该跳过 Onboarding
     private static bool skipOnboardingAfterReload = false;
+
+
+    // 防止用户连续点击 Back
+    private bool isReturningToSelection = false;
 
 
     private void Start()
@@ -74,7 +79,7 @@ public class ExperienceManager : MonoBehaviour
 
 
         // 点击 START 后，
-        // 播放昆虫选择页面的引导语音
+        // 播放昆虫选择页面引导语音
         if (narrationManager != null)
         {
             narrationManager.PlaySelectionIntro();
@@ -105,9 +110,9 @@ public class ExperienceManager : MonoBehaviour
         insectExploreZone.SetActive(true);
 
 
-        // 每次真正进入 Explore 时：
-        // 1. 重置三个身体部位的 narration 状态
-        // 2. 播放 Ladybird Explore 引导语音
+        // 每次进入 Ladybird Explore：
+        // 1. 重置身体部位 narration 状态
+        // 2. 播放 Explore 引导语音
         if (narrationManager != null)
         {
             narrationManager.ResetNarrations();
@@ -127,13 +132,53 @@ public class ExperienceManager : MonoBehaviour
 
     public void BackToSelection()
     {
-        // Scene Reload 可以确保：
-        // Elytra、Wing、Glow、Info Card 等状态全部重置。
-        //
-        // 但这次 Reload 后不显示 Onboarding，
-        // 而是直接返回 Selection。
+        // 防止连续点击 Back
+        if (isReturningToSelection)
+        {
+            return;
+        }
 
+
+        StartCoroutine(
+            BackToSelectionRoutine()
+        );
+    }
+
+
+    private IEnumerator BackToSelectionRoutine()
+    {
+        isReturningToSelection = true;
+
+
+        // =========================
+        // PLAY BACK NARRATION
+        // =========================
+
+        if (narrationManager != null)
+        {
+            narrationManager.PlayBackToInsectsNarration();
+
+
+            // 等一帧，让 AudioSource 真正开始播放
+            yield return null;
+
+
+            // 等 Back narration 完整播放结束
+            while (narrationManager.IsNarrationPlaying)
+            {
+                yield return null;
+            }
+        }
+
+
+        // =========================
+        // RETURN TO SELECTION
+        // =========================
+
+        // Reload 后跳过 Onboarding，
+        // 直接显示昆虫 Selection。
         skipOnboardingAfterReload = true;
+
 
         ReloadCurrentScene();
     }
@@ -162,6 +207,7 @@ public class ExperienceManager : MonoBehaviour
     {
         Scene currentScene =
             SceneManager.GetActiveScene();
+
 
         SceneManager.LoadScene(
             currentScene.name
