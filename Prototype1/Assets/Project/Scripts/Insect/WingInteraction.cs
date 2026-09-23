@@ -11,6 +11,11 @@ public class WingInteraction : MonoBehaviour
     private Transform rightWingPivot;
 
 
+    [Header("SFX")]
+    [SerializeField]
+    private SFXManager sfxManager;
+
+
     [Header("Closed Pose")]
     [SerializeField]
     private Vector3 leftClosedEuler =
@@ -38,21 +43,17 @@ public class WingInteraction : MonoBehaviour
 
     [Header("Flap Animation")]
 
-    // Left wing Z range
     [SerializeField]
     private float leftFlapMinZ = -40f;
 
     [SerializeField]
     private float leftFlapMaxZ = -6f;
 
-
-    // Right wing mirrored Z range
     [SerializeField]
     private float rightFlapMinZ = 6f;
 
     [SerializeField]
     private float rightFlapMaxZ = 40f;
-
 
     [SerializeField]
     private float flapSpeed = 28f;
@@ -150,7 +151,7 @@ public class WingInteraction : MonoBehaviour
 
     public void FlapWings()
     {
-        // 必须先展开 Wings
+        // Wings 必须已经展开
         if (!isOpen)
         {
             return;
@@ -161,6 +162,13 @@ public class WingInteraction : MonoBehaviour
         if (isAnimating)
         {
             return;
+        }
+
+
+        // 只有真正开始拍翅时才播放音效
+        if (sfxManager != null)
+        {
+            sfxManager.PlayWingFlap();
         }
 
 
@@ -266,7 +274,6 @@ public class WingInteraction : MonoBehaviour
         isAnimating = true;
 
 
-        // 计算 Left Wing 拍动中心与幅度
         float leftCenterZ =
             (leftFlapMinZ + leftFlapMaxZ) * 0.5f;
 
@@ -274,7 +281,6 @@ public class WingInteraction : MonoBehaviour
             (leftFlapMaxZ - leftFlapMinZ) * 0.5f;
 
 
-        // 计算 Right Wing 拍动中心与幅度
         float rightCenterZ =
             (rightFlapMinZ + rightFlapMaxZ) * 0.5f;
 
@@ -290,14 +296,12 @@ public class WingInteraction : MonoBehaviour
             time += Time.deltaTime;
 
 
-            // -1 到 +1 之间快速循环
             float wave =
                 Mathf.Sin(
                     time * flapSpeed
                 );
 
 
-            // 保留 Open Pose 的 X / Y
             Vector3 leftEuler =
                 leftOpenEuler;
 
@@ -305,15 +309,11 @@ public class WingInteraction : MonoBehaviour
                 rightOpenEuler;
 
 
-            // Left:
-            // -40 ～ -6
             leftEuler.z =
                 leftCenterZ +
                 wave * leftAmplitude;
 
 
-            // Right 做镜像
-            // +40 ～ +6
             rightEuler.z =
                 rightCenterZ -
                 wave * rightAmplitude;
@@ -335,11 +335,7 @@ public class WingInteraction : MonoBehaviour
         }
 
 
-        // =========================
-        // 拍动结束
-        // 准确恢复 Open Pose
-        // =========================
-
+        // 拍动结束后恢复 Open Pose
         leftWingPivot.localRotation =
             Quaternion.Euler(
                 leftOpenEuler

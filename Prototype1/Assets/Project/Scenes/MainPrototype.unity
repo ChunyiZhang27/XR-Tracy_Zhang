@@ -2280,6 +2280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
   leftWingPivot: {fileID: 298622996}
   rightWingPivot: {fileID: 1458352990}
+  sfxManager: {fileID: 0}
   leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
   rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
   leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
@@ -3621,6 +3622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WingInteraction
   leftWingPivot: {fileID: 0}
   rightWingPivot: {fileID: 0}
+  sfxManager: {fileID: 0}
   leftClosedEuler: {x: 29.413, y: -91.719, z: 15.575}
   rightClosedEuler: {x: 29.413, y: 91.719, z: -15.575}
   leftOpenEuler: {x: 49.559, y: -54.47, z: -23.65}
@@ -6619,7 +6621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXManager
   sfxSource: {fileID: 305792332}
-  wingFlapSFX: {fileID: 0}
+  wingFlapSFX: {fileID: 8300000, guid: 0c31771ea4ba4462fac64abe5417934a, type: 3}
 --- !u!1 &1870919836
 GameObject:
   m_ObjectHideFlags: 0
