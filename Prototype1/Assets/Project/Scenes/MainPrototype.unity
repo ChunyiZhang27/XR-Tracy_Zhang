@@ -6673,6 +6673,7 @@ MonoBehaviour:
   narrationSource: {fileID: 598744074}
   openingIntroNarration: {fileID: 8300000, guid: b3efbbf72cf0543d2b398516b30f2975, type: 3}
   selectionIntroNarration: {fileID: 8300000, guid: 71ffc3e9bab6741469a4a7a963ca40d6, type: 3}
+  comingSoonNarration: {fileID: 8300000, guid: 1013f7f06d98e4d9ebadba59494e0a2d, type: 3}
   exploreIntroNarration: {fileID: 8300000, guid: 65251009b14674cfaa2edc56aabf7f13, type: 3}
   antennaNarration: {fileID: 8300000, guid: 68c166a259cd84e55a2cb4d5a3423512, type: 3}
   elytraNarration: {fileID: 8300000, guid: db195b52e642c495ea6e856b93d43fab, type: 3}
@@ -6694,6 +6695,7 @@ MonoBehaviour:
   sfxSource: {fileID: 305792332}
   selectionHoverSFX: {fileID: 8300000, guid: df70a5dff92494a0fada7b63b3a215f7, type: 3}
   selectionSelectSFX: {fileID: 8300000, guid: bd9e69369280f43eb98cebf1975a1058, type: 3}
+  selectionUnavailableSFX: {fileID: 8300000, guid: fd57f31b90f7c451ab66cd594e593f22, type: 3}
   wingFlapSFX: {fileID: 8300000, guid: 0c31771ea4ba4462fac64abe5417934a, type: 3}
   elytraOpenSFX: {fileID: 8300000, guid: a96b05c3758104070abc5060d9341e59, type: 3}
   elytraCloseSFX: {fileID: 8300000, guid: 01350035b08a449f0808af05e1778d71, type: 3}
