@@ -7,10 +7,27 @@ public class SFXManager : MonoBehaviour
     private AudioSource sfxSource;
 
 
+    // =========================
+    // SELECTION SFX
+    // =========================
+
+    [Header("Selection SFX")]
+    [SerializeField]
+    private AudioClip selectionHoverSFX;
+
+
+    // =========================
+    // WING SFX
+    // =========================
+
     [Header("Wing SFX")]
     [SerializeField]
     private AudioClip wingFlapSFX;
 
+
+    // =========================
+    // ELYTRA SFX
+    // =========================
 
     [Header("Elytra SFX")]
     [SerializeField]
@@ -21,12 +38,31 @@ public class SFXManager : MonoBehaviour
 
 
     // =========================
+    // SELECTION HOVER
+    // =========================
+
+    public void PlaySelectionHover()
+    {
+        if (sfxSource == null ||
+            selectionHoverSFX == null)
+        {
+            return;
+        }
+
+        sfxSource.PlayOneShot(
+            selectionHoverSFX
+        );
+    }
+
+
+    // =========================
     // WING FLAP
     // =========================
 
     public void PlayWingFlap()
     {
-        if (sfxSource == null || wingFlapSFX == null)
+        if (sfxSource == null ||
+            wingFlapSFX == null)
         {
             return;
         }
@@ -43,7 +79,8 @@ public class SFXManager : MonoBehaviour
 
     public void PlayElytraOpen()
     {
-        if (sfxSource == null || elytraOpenSFX == null)
+        if (sfxSource == null ||
+            elytraOpenSFX == null)
         {
             return;
         }
@@ -60,7 +97,8 @@ public class SFXManager : MonoBehaviour
 
     public void PlayElytraClose()
     {
-        if (sfxSource == null || elytraCloseSFX == null)
+        if (sfxSource == null ||
+            elytraCloseSFX == null)
         {
             return;
         }
