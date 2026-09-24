@@ -24,6 +24,8 @@ public class HoverScaleFeedback : MonoBehaviour
 
     private InsectSelectionManager selectionManager;
 
+    private SFXManager sfxManager;
+
 
     // =========================
     // PUBLIC PROPERTIES
@@ -68,6 +70,19 @@ public class HoverScaleFeedback : MonoBehaviour
                 "InsectSelectionManager was not found in the scene."
             );
         }
+
+
+        // 自动寻找 SFX Manager
+        sfxManager =
+            FindFirstObjectByType<SFXManager>();
+
+
+        if (sfxManager == null)
+        {
+            Debug.LogWarning(
+                "SFXManager was not found in the scene."
+            );
+        }
     }
 
 
@@ -79,9 +94,17 @@ public class HoverScaleFeedback : MonoBehaviour
     {
         // 如果已经被正式选中了，
         // Hover 时不要改变它的 Selected 大小
+        // 也不需要重复播放 Hover 声音
         if (isSelected)
         {
             return;
+        }
+
+
+        // 播放 Selection Hover 提示音
+        if (sfxManager != null)
+        {
+            sfxManager.PlaySelectionHover();
         }
 
 
