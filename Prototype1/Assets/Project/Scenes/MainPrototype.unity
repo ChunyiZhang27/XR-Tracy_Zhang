@@ -6692,6 +6692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXManager
   sfxSource: {fileID: 305792332}
+  selectionHoverSFX: {fileID: 8300000, guid: df70a5dff92494a0fada7b63b3a215f7, type: 3}
+  selectionSelectSFX: {fileID: 8300000, guid: bd9e69369280f43eb98cebf1975a1058, type: 3}
   wingFlapSFX: {fileID: 8300000, guid: 0c31771ea4ba4462fac64abe5417934a, type: 3}
   elytraOpenSFX: {fileID: 8300000, guid: a96b05c3758104070abc5060d9341e59, type: 3}
   elytraCloseSFX: {fileID: 8300000, guid: 01350035b08a449f0808af05e1778d71, type: 3}

@@ -93,15 +93,15 @@ public class HoverScaleFeedback : MonoBehaviour
     public void OnHoverEntered()
     {
         // 如果已经被正式选中了，
-        // Hover 时不要改变它的 Selected 大小
-        // 也不需要重复播放 Hover 声音
+        // Hover 时不要改变 Selected 大小
+        // 也不重复播放 Hover 音效
         if (isSelected)
         {
             return;
         }
 
 
-        // 播放 Selection Hover 提示音
+        // 播放 Selection Hover 音效
         if (sfxManager != null)
         {
             sfxManager.PlaySelectionHover();
@@ -147,6 +147,19 @@ public class HoverScaleFeedback : MonoBehaviour
         }
 
 
+        // 只有当前 Prototype 中可探索的昆虫
+        // 才播放 Selection Confirm 音效。
+        //
+        // Coming Soon 的昆虫之后会使用
+        // 自己的 unavailable feedback。
+        if (availableInPrototype &&
+            sfxManager != null)
+        {
+            sfxManager.PlaySelectionSelect();
+        }
+
+
+        // 保留原来的 Selection 流程
         selectionManager.SelectInsect(this);
     }
 
