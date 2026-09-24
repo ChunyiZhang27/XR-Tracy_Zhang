@@ -20,6 +20,15 @@ public class NarrationManager : MonoBehaviour
 
 
     // =========================
+    // SELECTION FEEDBACK
+    // =========================
+
+    [Header("Selection Feedback")]
+    [SerializeField]
+    private AudioClip comingSoonNarration;
+
+
+    // =========================
     // EXPLORE INTRO
     // =========================
 
@@ -114,6 +123,24 @@ public class NarrationManager : MonoBehaviour
 
         PlayNarration(
             selectionIntroNarration
+        );
+    }
+
+
+    // =========================
+    // COMING SOON
+    // 未开放昆虫点击时调用
+    // =========================
+
+    public void PlayComingSoonNarration()
+    {
+        if (comingSoonNarration == null)
+        {
+            return;
+        }
+
+        PlayNarration(
+            comingSoonNarration
         );
     }
 
@@ -253,8 +280,8 @@ public class NarrationManager : MonoBehaviour
         }
 
 
-        // 如果上一条 narration 还在播放，
-        // 停止它，再播放当前语音。
+        // 如果其他 narration 正在播放，
+        // 用户当前主动触发的语音优先。
         if (narrationSource.isPlaying)
         {
             narrationSource.Stop();
@@ -269,7 +296,6 @@ public class NarrationManager : MonoBehaviour
 
     // =========================
     // RESET BODY PART NARRATIONS
-    // 每次进入 Ladybird Explore 时调用
     // =========================
 
     public void ResetNarrations()
