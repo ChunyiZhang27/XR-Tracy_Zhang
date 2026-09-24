@@ -26,6 +26,8 @@ public class HoverScaleFeedback : MonoBehaviour
 
     private SFXManager sfxManager;
 
+    private NarrationManager narrationManager;
+
 
     // =========================
     // PUBLIC PROPERTIES
@@ -83,6 +85,19 @@ public class HoverScaleFeedback : MonoBehaviour
                 "SFXManager was not found in the scene."
             );
         }
+
+
+        // 自动寻找 Narration Manager
+        narrationManager =
+            FindFirstObjectByType<NarrationManager>();
+
+
+        if (narrationManager == null)
+        {
+            Debug.LogWarning(
+                "NarrationManager was not found in the scene."
+            );
+        }
     }
 
 
@@ -101,7 +116,7 @@ public class HoverScaleFeedback : MonoBehaviour
         }
 
 
-        // 播放 Selection Hover 音效
+        // Selection Hover 音效
         if (sfxManager != null)
         {
             sfxManager.PlaySelectionHover();
@@ -147,19 +162,49 @@ public class HoverScaleFeedback : MonoBehaviour
         }
 
 
-        // 只有当前 Prototype 中可探索的昆虫
-        // 才播放 Selection Confirm 音效。
-        //
-        // Coming Soon 的昆虫之后会使用
-        // 自己的 unavailable feedback。
-        if (availableInPrototype &&
-            sfxManager != null)
+        // =========================
+        // AVAILABLE INSECT
+        // =========================
+
+        if (availableInPrototype)
         {
-            sfxManager.PlaySelectionSelect();
+            // 正常确认音
+            if (sfxManager != null)
+            {
+                sfxManager.PlaySelectionSelect();
+            }
         }
 
 
-        // 保留原来的 Selection 流程
+        // =========================
+        // COMING SOON INSECT
+        // =========================
+
+        else
+        {
+            // 不可用提示音
+            if (sfxManager != null)
+            {
+                sfxManager.PlaySelectionUnavailable();
+            }
+
+
+            // Coming Soon 语音
+            if (narrationManager != null)
+            {
+                narrationManager.PlayComingSoonNarration();
+            }
+        }
+
+
+        // 无论是否 Available，
+        // 都继续交给原来的 Selection Manager。
+        //
+        // Available:
+        // 正常选择。
+        //
+        // Unavailable:
+        // 保留原来的 Coming Soon UI 行为。
         selectionManager.SelectInsect(this);
     }
 
