@@ -15,6 +15,9 @@ public class SFXManager : MonoBehaviour
     [SerializeField]
     private AudioClip selectionHoverSFX;
 
+    [SerializeField]
+    private AudioClip selectionSelectSFX;
+
 
     // =========================
     // WING SFX
@@ -51,6 +54,24 @@ public class SFXManager : MonoBehaviour
 
         sfxSource.PlayOneShot(
             selectionHoverSFX
+        );
+    }
+
+
+    // =========================
+    // SELECTION CONFIRM
+    // =========================
+
+    public void PlaySelectionSelect()
+    {
+        if (sfxSource == null ||
+            selectionSelectSFX == null)
+        {
+            return;
+        }
+
+        sfxSource.PlayOneShot(
+            selectionSelectSFX
         );
     }
 
