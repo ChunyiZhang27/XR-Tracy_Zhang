@@ -30,18 +30,23 @@ public static class Prototype2bWalkingSetup
   if(!(bool)method("Build").Invoke(animator,null))throw new InvalidOperationException("Rig build failed.");
   method("ResetPose").Invoke(animator,null);
   var heading=controller.facingReference.forward;heading.y=0;heading.Normalize();
+  var moved=new System.Collections.Generic.HashSet<string>();
   for(int i=0;i<20;i++)
   {
    controller.transform.position+=heading*.035f;
    method("AnimateMotion").Invoke(animator,new object[]{heading*.35f,0f,.1f});
+   var controls=animator.visualModel.Find("LadybirdWalkingVisuals_Runtime");
+   foreach(var leg in animator.legs)
+    if(Quaternion.Angle(Quaternion.identity,controls.Find(leg.label+" Root/Hip").localRotation)>.1f)moved.Add(leg.label);
   }
+  if(moved.Count!=6)throw new InvalidOperationException("Not all six actual legs animated within clearance: "+moved.Count);
   foreach(var item in original)
    if(item.mesh.transform.localPosition!=item.position || item.mesh.transform.localRotation!=item.rotation || item.mesh.transform.localScale!=item.scale || item.mesh.transform.parent!=item.parent)
     throw new InvalidOperationException("An imported mesh transform was changed.");
   var rig=animator.visualModel.Find("LadybirdWalkingVisuals_Runtime");
   if(rig.GetComponentsInChildren<Collider>(true).Length!=0)throw new InvalidOperationException("Visual rig cannot contain colliders.");
   method("OnDisable").Invoke(animator,null);
-  Debug.Log("Actual-model Edit Mode verification: six legs/24 meshes valid, 20 deterministic gait steps evaluated, original local transforms and parents preserved, no authored animation conflict, no visual rig colliders. No scene saved and no Play Mode claim.");
+  Debug.Log("Actual-model Edit Mode verification: six legs/24 meshes valid, all six control chains moved during 20 deterministic gait steps, original local transforms and parents preserved, no authored animation conflict, no visual rig colliders. No scene saved and no Play Mode claim.");
  }
  public static void ConfigureBatch()
  {
