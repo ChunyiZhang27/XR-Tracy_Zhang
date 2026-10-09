@@ -1,0 +1,143 @@
+using System;
+using UnityEngine;
+
+namespace TinyWorlds
+{
+    /// <summary>Shared, fail-closed surface checks derived from the autonomous explorer.</summary>
+    [Serializable]
+    public sealed class LadybirdMovementSafety
+    {
+        [Min(0.01f)] public float bodyRadius = 0.35f;
+        [Min(0.01f)] public float explorationRadius = 1.25f;
+        [Min(0.01f)] public float probeHeight = 0.6f;
+        [Min(0.01f)] public float probeDepth = 0.6f;
+        [Min(0f)] public float maximumStepHeight = 0.06f;
+        [Min(0f)] public float maximumDrop = 0.06f;
+        [Range(0f, 60f)] public float maximumSlope = 30f;
+        [Min(0.01f)] public float obstacleClearance = 0.03f;
+        [Min(0.001f)] public float maximumMovementStep = 0.02f;
+        public LayerMask obstacleMask = ~0;
+
+        private readonly RaycastHit[] hits = new RaycastHit[64];
+        private readonly Collider[] overlaps = new Collider[64];
+
+        public static Vector2 ApplyDeadzone(Vector2 input, float deadzone)
+        {
+            deadzone = Mathf.Clamp(deadzone, 0f, 0.95f);
+            float length = input.magnitude;
+            if (length <= deadzone) return Vector2.zero;
+            return input.normalized * Mathf.Clamp01((length - deadzone) / (1f - deadzone));
+        }
+
+        public bool InsideBoundary(Vector3 point, Vector3 center)
+        {
+            float radius = explorationRadius - bodyRadius;
+            Vector3 delta = point - center;
+            delta.y = 0f;
+            return radius >= 0f && delta.sqrMagnitude <= radius * radius;
+        }
+
+        public bool TryPosition(Collider[] surfaces, Vector3 point, Vector3 center, float referenceHeight,
+            out Vector3 grounded, out string reason)
+        {
+            grounded = point;
+            if (!InsideBoundary(point, center)) { reason = "Exploration boundary"; return false; }
+            if (!TryGround(surfaces, point, referenceHeight, out RaycastHit ground, out reason)) return false;
+            // Centre, inner ring and outer ring protect the body rather than only the root pivot.
+            for (int ring = 1; ring <= 2; ring++)
+            {
+                float radius = bodyRadius * ring * 0.5f;
+                for (int i = 0; i < 16; i++)
+                {
+                    float angle = i * Mathf.PI * 2f / 16f;
+                    Vector3 sample = point + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * radius;
+                    if (!TryGround(surfaces, sample, ground.point.y, out _, out string sampleReason))
+                    {
+                        reason = "Unsafe footprint: " + sampleReason;
+                        return false;
+                    }
+                }
+            }
+            grounded.y = ground.point.y;
+            reason = "Ready";
+            return true;
+        }
+
+        private bool TryGround(Collider[] surfaces, Vector3 point, float referenceHeight,
+            out RaycastHit ground, out string reason)
+        {
+            ground = default;
+            float nearest = float.PositiveInfinity;
+            Ray ray = new Ray(new Vector3(point.x, referenceHeight + probeHeight, point.z), Vector3.down);
+            if (surfaces != null)
+            {
+                foreach (Collider surface in surfaces)
+                {
+                    if (surface == null || !surface.enabled || surface.isTrigger || !surface.gameObject.activeInHierarchy)
+                        continue;
+                    if (surface.Raycast(ray, out RaycastHit hit, probeHeight + probeDepth) && hit.distance < nearest)
+                    { nearest = hit.distance; ground = hit; }
+                }
+            }
+            if (float.IsPositiveInfinity(nearest)) { reason = "No configured ground under probe"; return false; }
+            float change = ground.point.y - referenceHeight;
+            if (change > maximumStepHeight) { reason = "Step too high"; return false; }
+            if (change < -maximumDrop) { reason = "Ground drop exceeds limit"; return false; }
+            if (Vector3.Angle(ground.normal, Vector3.up) > maximumSlope)
+            { reason = "Ground slope exceeds limit"; return false; }
+            reason = "Ready";
+            return true;
+        }
+
+        public bool PathIsClear(Transform owner, Vector3 contact, Vector3 direction, float distance, out string reason)
+        {
+            Vector3 origin = contact + Vector3.up * (bodyRadius + obstacleClearance);
+            int count = Physics.OverlapSphereNonAlloc(origin, bodyRadius, overlaps, obstacleMask, QueryTriggerInteraction.Ignore);
+            if (count == overlaps.Length) { reason = "Obstacle query buffer full"; return false; }
+            for (int i = 0; i < count; i++)
+                if (!IsOwn(owner, overlaps[i])) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
+            if (distance > 0f)
+            {
+                count = Physics.SphereCastNonAlloc(origin, bodyRadius, direction, hits, distance, obstacleMask, QueryTriggerInteraction.Ignore);
+                if (count == hits.Length) { reason = "Obstacle query buffer full"; return false; }
+                for (int i = 0; i < count; i++)
+                    if (!IsOwn(owner, hits[i].collider)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
+            }
+            reason = "Ready";
+            return true;
+        }
+
+        private static bool IsOwn(Transform owner, Collider collider) =>
+            owner != null && collider != null && collider.transform.IsChildOf(owner);
+
+        public bool TryFindStart(Transform owner, Collider[] surfaces, Vector3 preferred, Vector3 center,
+            out Vector3 start, out string reason)
+        {
+            start = preferred;
+            reason = "No safe start on the configured surface";
+            // Search only a bounded area, and validate the complete footprint and obstacle clearance.
+            for (int ring = 0; ring <= 8; ring++)
+            {
+                int samples = ring == 0 ? 1 : 16;
+                float radius = Mathf.Max(0f, explorationRadius - bodyRadius) * ring / 8f;
+                for (int i = 0; i < samples; i++)
+                {
+                    float angle = i * Mathf.PI * 2f / samples;
+                    Vector3 point = ring == 0 ? preferred : center + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * radius;
+                    if (surfaces == null) continue;
+                    foreach (Collider surface in surfaces)
+                    {
+                        if (surface == null || !surface.enabled || surface.isTrigger || !surface.gameObject.activeInHierarchy) continue;
+                        Ray ray = new Ray(new Vector3(point.x, surface.bounds.max.y + probeHeight, point.z), Vector3.down);
+                        if (!surface.Raycast(ray, out RaycastHit hit, surface.bounds.size.y + probeHeight + probeDepth)) continue;
+                        point.y = hit.point.y;
+                        if (TryPosition(surfaces, point, center, point.y, out Vector3 candidate, out reason) &&
+                            PathIsClear(owner, candidate, Vector3.forward, 0f, out reason))
+                        { start = candidate; reason = "Ready"; return true; }
+                    }
+                }
+            }
+            return false;
+        }
+    }
+}
