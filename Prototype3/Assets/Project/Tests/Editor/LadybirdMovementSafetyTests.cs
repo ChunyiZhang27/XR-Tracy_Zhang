@@ -24,6 +24,7 @@ public sealed class LadybirdMovementSafetyTests
     [TearDown]
     public void TearDown()
     {
+        safety.Dispose();
         foreach (GameObject item in objects) if (item != null) Object.DestroyImmediate(item);
         objects.Clear(); Physics.SyncTransforms();
     }

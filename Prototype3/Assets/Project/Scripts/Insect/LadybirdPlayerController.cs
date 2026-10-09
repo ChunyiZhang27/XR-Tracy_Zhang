@@ -47,6 +47,11 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private bool controlActive;
     private float currentSpeed;
     [SerializeField] private string movementStatus = "Inspect body parts first";
+    [SerializeField] private Vector2 lastMovementInput;
+    [SerializeField] private string recoveryStatus = "Input available; R reset in Editor test mode";
+    public Vector2 LastMovementInput => lastMovementInput;
+    public string RecoveryStatus => recoveryStatus;
+    private void OnDestroy() { safety?.Dispose(); }
     public bool ControlActive => controlActive;
     public string MovementStatus => movementStatus;
 
@@ -137,6 +142,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (BodyIsBusy(out string blocked)) { currentSpeed = 0f; SetStatus(blocked); return; }
 
         Vector2 input = ReadDriveInput(out bool stop, out bool reset);
+        lastMovementInput = input;
         if (reset) { ResetToStartingPoint(); return; }
         if (stop) { currentSpeed = 0f; SetStatus("Stopped (Space)"); return; }
         SimulateMovement(input, Mathf.Min(Time.deltaTime, 0.1f));
@@ -264,19 +270,19 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public void SimulateMovement(Vector2 input, float deltaTime)
     {
         if (!controlActive || !isActiveAndEnabled || deltaTime <= 0f) return;
+        lastMovementInput = input;
+        recoveryStatus = "Turning available on supported ground; reverse/slide checked per direction; R reset in Editor test mode";
         EnforceExclusiveMovement();
         if (BodyIsBusy(out string busy)) { currentSpeed = 0f; SetStatus(busy); return; }
         Physics.SyncTransforms();
         Vector3 contact = groundContact.position;
         if (!safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason))
-        { currentSpeed = 0f; SetStatus(reason); return; }
+        { currentSpeed = 0f; recoveryStatus = "Ground unsafe: movement and turning halted; R reset in Editor test mode"; SetStatus(reason); return; }
         transform.position += ground - contact;
         contact = groundContact.position;
         float targetSpeed = Mathf.Clamp(input.y, -1f, 1f) * movementSpeed;
         bool slowing = Mathf.Abs(targetSpeed) < Mathf.Abs(currentSpeed) || currentSpeed * targetSpeed < 0f;
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, (slowing ? deceleration : acceleration) * deltaTime);
-        if (!safety.PathIsClear(transform, contact, Vector3.forward, 0f, out reason))
-        { currentSpeed = 0f; SetStatus(reason); return; }
         // The footprint is a conservative circle, so yaw cannot expand it beyond a checked boundary.
         transform.RotateAround(contact, Vector3.up, Mathf.Clamp(input.x, -1f, 1f) * turningSpeed * deltaTime);
         Vector3 heading = facingReference.forward;
@@ -288,18 +294,36 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         float stepLimit = Mathf.Min(safety.maximumMovementStep, safety.bodyRadius * 0.25f);
         if (stepLimit <= 0f || distance > stepLimit * 128f)
         { currentSpeed = 0f; SetStatus("Movement sampling limit exceeded"); return; }
+        string motionStatus = "Moving";
         while (distance > 0.000001f)
         {
             float step = Mathf.Min(distance, stepLimit);
             contact = groundContact.position;
-            Vector3 target = contact + direction * step;
+            if (!safety.TryObstacleMotion(transform, contact, direction * step, groundSurfaces, out Vector3 motion, out reason))
+            { ReportObstacleBlock(reason); return; }
+            if (reason.StartsWith("Sliding")) motionStatus = reason;
+            Vector3 target = contact + motion;
             if (!safety.TryMovementPosition(groundSurfaces, contact, target, boundaryCenter, out Vector3 next, out reason) ||
-                !safety.PathIsClear(transform, contact, direction, step, out reason))
-            { currentSpeed = 0f; SetStatus(reason); return; }
+                !safety.TryObstacleMotion(transform, contact, next-contact, groundSurfaces, out Vector3 verified, out reason) ||
+                (verified-(next-contact)).sqrMagnitude > 0.00000001f)
+            { currentSpeed = 0f; SetStatus(reason == "Ready" ? "Obstacle at grounded destination" : reason); return; }
             transform.position += next - contact;
             distance -= step;
         }
-        SetStatus(Mathf.Abs(currentSpeed) > 0.0001f ? "Moving" : "Stopped");
+        SetStatus(Mathf.Abs(currentSpeed) > 0.0001f ? motionStatus : "Stopped (turning available)");
+    }
+
+    private void ReportObstacleBlock(string reason)
+    {
+        currentSpeed = 0f;
+        Vector3 backward = -facingReference.forward; backward.y = 0f;
+        bool reverse = backward.sqrMagnitude > 0.0001f &&
+            safety.TryObstacleMotion(transform, groundContact.position, backward.normalized * safety.maximumMovementStep,
+                groundSurfaces, out Vector3 escape, out _) &&
+            safety.TryMovementPosition(groundSurfaces, groundContact.position, groundContact.position + escape,
+                boundaryCenter, out _, out _);
+        recoveryStatus = "Turning available; reverse " + (reverse ? "available" : "blocked in this heading") + "; R reset in Editor test mode";
+        SetStatus(reason);
     }
 
     public bool ResetToStartingPoint()
@@ -310,7 +334,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         Vector3 resetContact = initialParentPosition + initialParentRotation *
             Quaternion.Inverse(transform.rotation) * (groundContact.position - transform.position);
         if (!safety.TryPosition(groundSurfaces, resetContact, boundaryCenter, resetContact.y, out Vector3 ground, out string reason) ||
-            !safety.PathIsClear(transform, ground, Vector3.forward, 0f, out reason))
+            !safety.PathIsClear(transform, ground, Vector3.forward, 0f, out reason, groundSurfaces))
         { SetStatus("Reset blocked: " + reason); return false; }
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;

@@ -5,7 +5,7 @@ namespace TinyWorlds
 {
     /// <summary>Shared, fail-closed surface checks derived from the autonomous explorer.</summary>
     [Serializable]
-    public sealed class LadybirdMovementSafety
+    public sealed class LadybirdMovementSafety : IDisposable
     {
         [Min(0.01f)] public float bodyRadius = 0.35f;
         [Min(0.01f)] public float explorationRadius = 1.25f;
@@ -24,8 +24,8 @@ namespace TinyWorlds
         [Tooltip("Explicit decorative colliders that should not act as solid obstacles. Ground checks remain independent.")]
         public Collider[] ignoredObstacles = new Collider[0];
 
-        private readonly RaycastHit[] hits = new RaycastHit[64];
-        private readonly Collider[] overlaps = new Collider[64];
+        private readonly RaycastHit[] hits = new RaycastHit[256];
+        private readonly Collider[] overlaps = new Collider[256];
 
         public static Vector2 ApplyDeadzone(Vector2 input, float deadzone)
         {
@@ -121,30 +121,123 @@ namespace TinyWorlds
             return true;
         }
 
-        public bool PathIsClear(Transform owner, Vector3 contact, Vector3 direction, float distance, out string reason)
+        public bool PathIsClear(Transform owner, Vector3 contact, Vector3 direction, float distance, out string reason, Collider[] groundSurfaces = null)
         {
             Vector3 origin = contact + Vector3.up * (bodyRadius + obstacleClearance);
             int count = Physics.OverlapSphereNonAlloc(origin, bodyRadius, overlaps, obstacleMask, QueryTriggerInteraction.Ignore);
             if (count == overlaps.Length) { reason = "Obstacle query buffer full"; return false; }
             for (int i = 0; i < count; i++)
-                if (!IgnoreObstacle(owner, overlaps[i])) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
+                if (!IgnoreObstacle(owner, overlaps[i], groundSurfaces)) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
             if (distance > 0f)
             {
                 count = Physics.SphereCastNonAlloc(origin, bodyRadius, direction, hits, distance, obstacleMask, QueryTriggerInteraction.Ignore);
                 if (count == hits.Length) { reason = "Obstacle query buffer full"; return false; }
                 for (int i = 0; i < count; i++)
-                    if (!IgnoreObstacle(owner, hits[i].collider)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
+                    if (!IgnoreObstacle(owner, hits[i].collider, groundSurfaces)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
             }
             reason = "Ready";
+            return true;
+        }
+
+        private SphereCollider penetrationProbe;
+        private SphereCollider Probe
+        {
+            get
+            {
+                if (penetrationProbe == null)
+                {
+                    var go = new GameObject("Ladybird collision query (not a scene asset)");
+                    go.hideFlags = HideFlags.HideAndDontSave;
+                    penetrationProbe = go.AddComponent<SphereCollider>();
+                    penetrationProbe.enabled = false;
+                }
+                penetrationProbe.radius = bodyRadius;
+                return penetrationProbe;
+            }
+        }
+        public void Dispose()
+        {
+            if (penetrationProbe == null) return;
+            if (Application.isPlaying) UnityEngine.Object.Destroy(penetrationProbe.gameObject);
+            else UnityEngine.Object.DestroyImmediate(penetrationProbe.gameObject);
+            penetrationProbe = null;
+        }
+        private bool Penetration(Collider other, Vector3 origin, out Vector3 normal, out float depth) =>
+            Physics.ComputePenetration(Probe, origin, Quaternion.identity, other, other.transform.position,
+                other.transform.rotation, out normal, out depth);
+
+        public bool TryObstacleMotion(Transform owner, Vector3 contact, Vector3 desired, Collider[] surfaces,
+            out Vector3 movement, out string reason)
+        {
+            movement = desired;
+            if (MotionClear(owner, contact, desired, surfaces, out Vector3 normal, out reason)) return true;
+            string blocked = reason;
+            normal.y = 0f;
+            if (normal.sqrMagnitude > 0.0001f)
+            {
+                normal.Normalize();
+                Vector3 slide = Vector3.ProjectOnPlane(desired, normal); slide.y = 0f;
+                // Never create motion from zero input, increase speed, or slide straight through a corner.
+                if (slide.sqrMagnitude > 0.00000001f && Vector3.Dot(slide, desired) > 0f &&
+                    MotionClear(owner, contact, slide, surfaces, out _, out _))
+                { movement = slide; reason = "Sliding along " + blocked; return true; }
+            }
+            movement = Vector3.zero; reason = blocked; return false;
+        }
+        private bool MotionClear(Transform owner, Vector3 contact, Vector3 movement, Collider[] surfaces,
+            out Vector3 blockingNormal, out string reason)
+        {
+            blockingNormal = Vector3.zero; reason = "Ready";
+            Vector3 origin = contact + Vector3.up * (bodyRadius + obstacleClearance);
+            int count = Physics.OverlapSphereNonAlloc(origin, bodyRadius, overlaps, obstacleMask, QueryTriggerInteraction.Ignore);
+            if (count == overlaps.Length) { reason = "Obstacle query buffer full"; return false; }
+            for (int i = 0; i < count; i++)
+            {
+                Collider item = overlaps[i]; if (IgnoreObstacle(owner,item,surfaces)) continue;
+                if (!Penetration(item,origin,out Vector3 normal,out float oldDepth)) continue;
+                bool remains = Penetration(item,origin+movement,out _,out float newDepth);
+                if (remains && (newDepth > oldDepth + 0.000001f || Vector3.Dot(movement,normal) < -0.000001f))
+                { blockingNormal=normal; reason="Obstacle overlap: "+item.name; return false; }
+                // The initial overlap is recoverable; continue checking all other colliders.
+            }
+            if (movement.sqrMagnitude > 0.000000001f)
+            {
+                count=Physics.SphereCastNonAlloc(origin,bodyRadius,movement.normalized,hits,movement.magnitude,obstacleMask,QueryTriggerInteraction.Ignore);
+                if(count==hits.Length){reason="Obstacle query buffer full";return false;}
+                float nearest=float.PositiveInfinity; Collider blocked=null;
+                for(int i=0;i<count;i++)
+                {
+                    Collider item=hits[i].collider;if(IgnoreObstacle(owner,item,surfaces))continue;
+                    if(Penetration(item,origin,out _,out _))continue; // Already verified non-deepening recovery above.
+                    Vector3 normal=hits[i].normal;
+                    // A contact tangent to/behind the direction must not stop moving away.
+                    if(Vector3.Dot(movement,normal)>=-0.000001f)continue;
+                    if(hits[i].distance<nearest){nearest=hits[i].distance;blocked=item;blockingNormal=normal;}
+                }
+                if(blocked!=null){reason="Obstacle ahead: "+blocked.name;return false;}
+            }
+            // Validate the endpoint against all obstacles, including new overlaps missed by a sweep at contact.
+            count=Physics.OverlapSphereNonAlloc(origin+movement,bodyRadius,overlaps,obstacleMask,QueryTriggerInteraction.Ignore);
+            if(count==overlaps.Length){reason="Obstacle query buffer full";return false;}
+            for(int i=0;i<count;i++)
+            {
+                var item=overlaps[i];if(IgnoreObstacle(owner,item,surfaces))continue;
+                if(!Penetration(item,origin+movement,out Vector3 normal,out float depth))continue;
+                bool wasOverlapping=Penetration(item,origin,out _,out float oldDepth);
+                if(!wasOverlapping || depth>oldDepth+0.000001f)
+                {blockingNormal=normal;reason="Obstacle overlap: "+item.name;return false;}
+            }
             return true;
         }
 
         private static bool IsOwn(Transform owner, Collider collider) =>
             owner != null && collider != null && collider.transform.IsChildOf(owner);
 
-        private bool IgnoreObstacle(Transform owner, Collider collider)
+        private bool IgnoreObstacle(Transform owner, Collider collider, Collider[] groundSurfaces = null)
         {
             if (IsOwn(owner, collider)) return true;
+            if (groundSurfaces != null)
+                foreach (Collider ground in groundSurfaces) if (ground != null && ground == collider) return true;
             if (ignoredObstacles != null)
                 foreach (Collider ignored in ignoredObstacles) if (ignored != null && ignored == collider) return true;
             return false;
@@ -175,7 +268,7 @@ namespace TinyWorlds
                         if (!surface.Raycast(ray, out RaycastHit hit, surface.bounds.size.y + probeHeight + probeDepth)) continue;
                         point.y = hit.point.y;
                         if (TryPosition(surfaces, point, center, point.y, out Vector3 candidate, out reason) &&
-                            PathIsClear(owner, candidate, Vector3.forward, 0f, out reason))
+                            PathIsClear(owner, candidate, Vector3.forward, 0f, out reason, surfaces))
                         { start = candidate; reason = "Ready"; return true; }
                         if (firstRejection == null) firstRejection = reason;
                     }

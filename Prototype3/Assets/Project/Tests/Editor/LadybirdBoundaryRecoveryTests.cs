@@ -46,4 +46,56 @@ public class LadybirdBoundaryRecoveryTests
         Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
         Assert.That(Quaternion.Angle(Quaternion.identity,owner.transform.rotation),Is.LessThan(.001f));
     }
+    GameObject Obstacle(float z, float x=0f)
+    {
+        var obstacle=new GameObject("Blocking test rock");obstacle.transform.SetParent(surface.transform,false);
+        obstacle.transform.position=start+new Vector3(x,.13f,z);
+        var box=obstacle.AddComponent<BoxCollider>();box.size=new Vector3(2f,.6f,.1f);Physics.SyncTransforms();return obstacle;
+    }
+    [Test] public void ForwardBlockedByRockStillAllowsReversing()
+    {
+        Obstacle(.3f);Move(Vector2.up,100);var blocked=owner.transform.position;
+        Assert.That(blocked.z-start.z,Is.GreaterThan(.05f).And.LessThan(.16f));
+        Move(Vector2.down,10);Assert.That(owner.transform.position.z,Is.LessThan(blocked.z-.1f));
+    }
+    [Test] public void TurningInAnOverlapDoesNotIncreaseCircularCollisionVolume()
+    {
+        Obstacle(.1f);Move(Vector2.up,10);var position=owner.transform.position;
+        Move(Vector2.right,5);Assert.That(Quaternion.Angle(Quaternion.identity,owner.transform.rotation),Is.GreaterThan(20f));
+        Assert.That(Vector3.Distance(position,owner.transform.position),Is.LessThan(.001f));
+    }
+    [Test] public void OverlapAllowsEscapeButRejectsDeeperMotion()
+    {
+        Obstacle(.1f);Move(Vector2.up,10);Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
+        Assert.IsTrue(safety.TryObstacleMotion(owner.transform,start,Vector3.back*.01f,new Collider[]{surface.GetComponent<BoxCollider>()},out _,out string detail),detail);
+        Move(Vector2.down,10);Assert.That(owner.transform.position.z,Is.LessThan(start.z-.1f),controller.GetType().GetProperty("MovementStatus").GetValue(controller).ToString());
+    }
+    [Test] public void DiagonalInputSlidesAlongWallWithoutCrossingIt()
+    {
+        Obstacle(.3f);Move(Vector2.up,100);
+        owner.transform.rotation=Quaternion.Euler(0,45,0);var before=owner.transform.position;
+        Move(Vector2.up,10);
+        Assert.That(owner.transform.position.x,Is.GreaterThan(before.x+.1f));
+        Assert.That(owner.transform.position.z-start.z,Is.LessThan(.16f));
+    }
+    [Test] public void ResetAfterRepeatedCollisionBlocksRestoresSafePose()
+    {
+        Obstacle(.3f);Move(Vector2.up,100);Move(Vector2.right,5);
+        Assert.IsTrue((bool)controller.GetType().GetMethod("ResetToStartingPoint").Invoke(controller,null));
+        Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
+    }
+    [Test] public void SlideCannotCrossUnsupportedEdge()
+    {
+        surface.GetComponent<BoxCollider>().size=new Vector3(.7f,.2f,8f);
+        Obstacle(.3f);Move(Vector2.up,100);owner.transform.rotation=Quaternion.Euler(0,45,0);Move(Vector2.up,100);
+        Assert.That(owner.transform.position.x-start.x,Is.LessThanOrEqualTo(.251f));
+    }
+    [Test] public void OwnAndConfiguredGroundCollidersAreNotObstacles()
+    {
+        var own=owner.AddComponent<BoxCollider>();own.size=Vector3.one;
+        // Deliberately large configured support overlaps the sphere: it remains ground, not an obstacle.
+        var ground=surface.GetComponent<BoxCollider>();ground.size=new Vector3(8f,1f,8f);
+        Physics.SyncTransforms();
+        Assert.IsTrue(safety.TryObstacleMotion(owner.transform,start,Vector3.forward*.02f,new Collider[]{ground},out _,out string reason),reason);
+    }
 }

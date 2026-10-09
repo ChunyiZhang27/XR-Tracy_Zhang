@@ -16,6 +16,25 @@ public static class Prototype2bMovementTuning
         if (!Application.isBatchMode) throw new InvalidOperationException("Batch Editor required.");
         EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single); Tune();
     }
+    public static void InspectObstaclesBatch()
+    {
+        if(!Application.isBatchMode)throw new InvalidOperationException("Batch only.");
+        var scene=EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
+        var explore=scene.GetRootGameObjects().Single(x=>x.name=="InsectExploreZone");
+        explore.SetActive(true);Physics.SyncTransforms();
+        var player=explore.GetComponentInChildren<LadybirdPlayerController>(true);
+        Debug.Log($"Collision inventory: mask={player.safety.obstacleMask.value}, radius={player.safety.bodyRadius}, clearance={player.safety.obstacleClearance}, configured grounds={player.groundSurfaces.Length}, ignored decoration colliders={player.safety.ignoredObstacles.Length}");
+        foreach(var collider in explore.GetComponentsInChildren<Collider>(true))
+        {
+            bool own=collider.transform.IsChildOf(player.transform);
+            bool ground=player.groundSurfaces.Contains(collider);
+            bool decorative=player.safety.ignoredObstacles.Contains(collider);
+            Debug.Log($"Collider: {collider.name}, {collider.GetType().Name}, layer={collider.gameObject.layer}, enabled={collider.enabled}, trigger={collider.isTrigger}, own={own}, ground={ground}, decoration={decorative}, world size={collider.bounds.size:F3}");
+        }
+        if(!player.safety.TryFindStart(player.transform,player.groundSurfaces,player.startingPoint.position,player.startingPoint.position,out _,out string reason))
+            throw new InvalidOperationException("Safe start failed: "+reason);
+        Debug.Log("Obstacle inventory and strict reset/start clearance verified; no scene save performed.");
+    }
     [MenuItem("Tools/Tiny Worlds/Tune Prototype2b Movement Area")]
     public static void Tune()
     {
