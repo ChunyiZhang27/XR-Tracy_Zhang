@@ -36,6 +36,7 @@ public class AntennaInteraction : MonoBehaviour
 
 
     private bool isAnimating = false;
+    public bool LastInteractionAccepted { get; private set; }
 
 
     // =========================
@@ -58,11 +59,13 @@ public class AntennaInteraction : MonoBehaviour
 
     public void WiggleAntennae()
     {
+        LastInteractionAccepted = false;
         if (isAnimating)
         {
             return;
         }
 
+        LastInteractionAccepted = true;
         StartCoroutine(
             WiggleRoutine()
         );

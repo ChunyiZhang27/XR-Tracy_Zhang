@@ -14,7 +14,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     public ElytraInteraction elytra;
     public NarrationManager narration;
     public InsectInfoPanel infoPanel;
-    public GameObject promptPanel, movementPanel;
+    public GameObject promptPanel, movementPanel, statusBackground;
     public TMP_Text statusText;
     public XRBaseInteractable[] bodyInteractables;
     public enum Mode { Body, Entering, Environment, Returning }
@@ -23,11 +23,11 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     private Coroutine transition;
     private Vector3 bodyPosition;
     private Quaternion bodyRotation;
-    private bool shellWasOpen, poseSaved;
+    private bool shellWasOpen, poseSaved, leavingSelection;
 
     private void OnEnable()
     {
-        CurrentMode = Mode.Body;
+        CurrentMode = Mode.Body; leavingSelection = false;
         if (progress != null) progress.environmentReady.AddListener(ShowPrompt);
         RefreshUI();
     }
@@ -40,10 +40,14 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     private bool DebugBypass => controller != null && controller.EditorTestActive;
     private void RefreshUI()
     {
-        if (promptPanel != null) promptPanel.SetActive(!DebugBypass && CurrentMode == Mode.Body && progress != null && progress.EnvironmentReady);
-        if (movementPanel != null) movementPanel.SetActive(!DebugBypass && CurrentMode == Mode.Environment);
+        if (promptPanel != null) promptPanel.SetActive(!leavingSelection && !DebugBypass && CurrentMode == Mode.Body && progress != null && progress.EnvironmentReady);
+        if (movementPanel != null) movementPanel.SetActive(!leavingSelection && !DebugBypass && CurrentMode == Mode.Environment);
     }
-    private void Status(string message) { if (statusText != null) statusText.text = message; }
+    private void Status(string message)
+    {
+        if (statusText != null) statusText.text = message;
+        if (statusBackground != null) statusBackground.SetActive(!string.IsNullOrEmpty(message));
+    }
     private bool Busy()
     {
         if ((antenna != null && antenna.IsAnimating) || (wings != null && wings.IsAnimating) || (elytra != null && elytra.IsAnimating)) return true;
@@ -53,7 +57,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     }
     public void ExploreEnvironment()
     {
-        if (DebugBypass || CurrentMode != Mode.Body || progress == null || !progress.EnvironmentReady) return;
+        if (leavingSelection || DebugBypass || CurrentMode != Mode.Body || progress == null || !progress.EnvironmentReady) return;
         CurrentMode = Mode.Entering;
         RefreshUI();
         transition = StartCoroutine(EnterRoutine());
@@ -113,6 +117,12 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         disabled.Clear();
     }
     // Called before the existing Back narration; also guarantees cleanup if the zone is disabled.
+    public void ExitForSelection()
+    {
+        ExitImmediately();
+        leavingSelection = true;
+        Status(""); RefreshUI();
+    }
     public void ExitImmediately()
     {
         if (transition != null) StopCoroutine(transition);

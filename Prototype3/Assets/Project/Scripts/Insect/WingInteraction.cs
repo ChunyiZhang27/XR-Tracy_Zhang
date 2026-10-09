@@ -64,6 +64,7 @@ public class WingInteraction : MonoBehaviour
 
     private bool isOpen = false;
     private bool isAnimating = false;
+    public bool LastInteractionAccepted { get; private set; }
 
 
     // =========================
@@ -151,6 +152,7 @@ public class WingInteraction : MonoBehaviour
 
     public void FlapWings()
     {
+        LastInteractionAccepted = false;
         // Wings 必须已经展开
         if (!isOpen)
         {
@@ -164,6 +166,8 @@ public class WingInteraction : MonoBehaviour
             return;
         }
 
+
+        LastInteractionAccepted = true;
 
         // 只有真正开始拍翅时才播放音效
         if (sfxManager != null)

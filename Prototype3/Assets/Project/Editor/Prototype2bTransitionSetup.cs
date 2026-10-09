@@ -18,6 +18,41 @@ public static class Prototype2bTransitionSetup
         EditorSceneManager.OpenScene(Path, OpenSceneMode.Single);
         Configure();
     }
+    public static void VerifyBatch()
+    {
+        if (!Application.isBatchMode) throw new InvalidOperationException("Batch only.");
+        var scene = EditorSceneManager.OpenScene(Path, OpenSceneMode.Single);
+        var all = scene.GetRootGameObjects().SelectMany(x => x.GetComponentsInChildren<Transform>(true)).ToArray();
+        var coordinator = all.Select(x=>x.GetComponent<LadybirdEnvironmentTransition>()).Single(x=>x!=null);
+        var manager = all.Select(x=>x.GetComponent<ExperienceManager>()).Single(x=>x!=null);
+        for (int i=manager.beforeBackToSelection.GetPersistentEventCount()-1;i>=0;i--)
+            if (manager.beforeBackToSelection.GetPersistentTarget(i)==coordinator)
+                UnityEventTools.RemovePersistentListener(manager.beforeBackToSelection,i);
+        UnityEventTools.AddPersistentListener(manager.beforeBackToSelection,coordinator.ExitForSelection);
+        if (coordinator.controller == null || !coordinator.controller.externalTransitionControl ||
+            coordinator.progress == null || !coordinator.progress.verifyTransitionReadiness ||
+            !coordinator.narration.verifyPlaybackCompletion || coordinator.bodyInteractables.Length == 0 ||
+            coordinator.promptPanel == null || coordinator.movementPanel == null || coordinator.statusText == null)
+            throw new InvalidOperationException("Incomplete transition configuration.");
+        if (coordinator.promptPanel.transform.IsChildOf(coordinator.controller.transform)) throw new InvalidOperationException("UI cannot move with Ladybird.");
+        var status=coordinator.statusText.rectTransform;
+        if(status.parent.Find("StatusBackground")==null)
+        {
+            var background=Rect("StatusBackground",status.parent,status.sizeDelta,status.anchoredPosition);
+            Background(background); background.SetSiblingIndex(status.GetSiblingIndex());
+        }
+        // Keep feedback below the existing Back button, clear of both button rows.
+        status.anchoredPosition = new Vector2(0,-360);
+        ((RectTransform)status.parent).sizeDelta = new Vector2(700,900);
+        coordinator.statusBackground=status.parent.Find("StatusBackground").gameObject;
+        ((RectTransform)coordinator.statusBackground.transform).anchoredPosition=status.anchoredPosition;
+        coordinator.statusBackground.SetActive(false); EditorUtility.SetDirty(coordinator);
+        foreach(var button in coordinator.promptPanel.GetComponentsInChildren<UnityEngine.UI.Button>(true).Concat(coordinator.movementPanel.GetComponentsInChildren<UnityEngine.UI.Button>(true)))
+            if(button.onClick.GetPersistentEventCount()!=1 || !button.targetGraphic.raycastTarget) throw new InvalidOperationException("Invalid XR button.");
+        EditorUtility.SetDirty(manager); EditorSceneManager.MarkSceneDirty(scene);
+        if(!EditorSceneManager.SaveScene(scene,Path)) throw new InvalidOperationException("Save failed.");
+        Debug.Log("Prototype2b transition references, UI buttons and Back cleanup verified through native Editor APIs.");
+    }
     [MenuItem("Tools/Tiny Worlds/Configure Prototype2b Environment Transition")]
     public static void Configure()
     {
@@ -49,8 +84,8 @@ public static class Prototype2bTransitionSetup
             coordinator.antenna = player.antennaInteraction; coordinator.wings = player.wingInteraction; coordinator.elytra = player.elytraInteraction;
             coordinator.bodyInteractables = owner.GetComponentsInChildren<XRBaseInteractable>(true);
             coordinator.infoPanel = all.Select(x => x.GetComponent<InsectInfoPanel>()).Single(x => x != null);
-            UnityEventTools.AddPersistentListener(manager.beforeBackToSelection, coordinator.ExitImmediately);
-            var container = Rect("EnvironmentTransitionUI", canvas, new Vector2(700,400), new Vector2(0,240));
+            UnityEventTools.AddPersistentListener(manager.beforeBackToSelection, coordinator.ExitForSelection);
+            var container = Rect("EnvironmentTransitionUI", canvas, new Vector2(700,900), new Vector2(0,240));
             var prompt = Rect("EnvironmentPrompt", container, new Vector2(700,290), Vector2.zero);
             Background(prompt);
             Text("PromptText", prompt, "You've explored the Ladybird! Ready to discover its environment?", new Vector2(660,130), new Vector2(0,60), 30);
@@ -59,7 +94,10 @@ public static class Prototype2bTransitionSetup
             Background(movement);
             Text("MovementInstructions", movement, "Left thumbstick: up/down to walk, left/right to turn.\nYour viewpoint stays in place.\nEditor: W/S walk · A/D turn · Space stop", new Vector2(660,140), new Vector2(0,55), 27);
             Button("ReturnToBodyButton", movement, "Return to Body Exploration", new Vector2(0,-80), coordinator.ReturnToBodyExploration);
-            coordinator.statusText = Text("TransitionStatus", container, "", new Vector2(700,90), new Vector2(0,-195), 25);
+            coordinator.statusText = Text("TransitionStatus", container, "", new Vector2(700,90), new Vector2(0,-360), 25);
+            var statusBackground = Rect("StatusBackground",container,new Vector2(700,90),new Vector2(0,-360));
+            Background(statusBackground); statusBackground.SetSiblingIndex(coordinator.statusText.transform.GetSiblingIndex());
+            coordinator.statusBackground=statusBackground.gameObject; statusBackground.gameObject.SetActive(false);
             coordinator.promptPanel = prompt.gameObject; coordinator.movementPanel = movement.gameObject;
             prompt.gameObject.SetActive(false); movement.gameObject.SetActive(false);
             var test = all.Select(x => x.GetComponent<Prototype2bEditorMovementTest>()).Single(x => x != null);

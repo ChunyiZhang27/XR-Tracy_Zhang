@@ -49,7 +49,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkAntennaExplored()
     {
-        if (verifyTransitionReadiness && (antennaInteraction == null || !antennaInteraction.IsAnimating)) return;
+        if (verifyTransitionReadiness && (antennaInteraction == null || !antennaInteraction.LastInteractionAccepted)) return;
         antennaExplored = true;
 
         CheckCompletion();
@@ -62,7 +62,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkElytraExplored()
     {
-        if (verifyTransitionReadiness && (elytraInteraction == null || !elytraInteraction.IsAnimating)) return;
+        if (verifyTransitionReadiness && (elytraInteraction == null || !elytraInteraction.LastInteractionAccepted)) return;
         elytraExplored = true;
 
         CheckCompletion();
@@ -75,7 +75,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkWingExplored()
     {
-        if (verifyTransitionReadiness && (wingInteraction == null || !wingInteraction.IsOpen || !wingInteraction.IsAnimating)) return;
+        if (verifyTransitionReadiness && (wingInteraction == null || !wingInteraction.LastInteractionAccepted)) return;
         wingExplored = true;
 
         CheckCompletion();

@@ -47,6 +47,7 @@ public class ElytraInteraction : MonoBehaviour
 
     private bool isOpen = false;
     private bool isAnimating = false;
+    public bool LastInteractionAccepted { get; private set; }
 
 
     public bool IsAnimating => isAnimating;
@@ -76,12 +77,14 @@ public class ElytraInteraction : MonoBehaviour
 
     public void ToggleElytra()
     {
+        LastInteractionAccepted = false;
         if (isAnimating)
         {
             return;
         }
 
 
+        LastInteractionAccepted = true;
         if (!isOpen)
         {
             StartCoroutine(
