@@ -60,9 +60,15 @@ public static class Prototype2bPlayerSetup
         int group = Undo.GetCurrentGroup();
         Undo.SetCurrentGroupName("Configure Prototype2b player movement");
         bool exploreWasActive = explore.gameObject.activeSelf;
+        bool onboardingWasActive = onboarding.activeSelf;
+        bool selectionWasActive = selection.activeSelf;
         try
         {
             Undo.RecordObject(explore.gameObject, "Temporarily enable leaf for ground verification");
+            Undo.RecordObject(onboarding, "Temporarily hide onboarding for exploration verification");
+            Undo.RecordObject(selection, "Temporarily hide selection for exploration verification");
+            onboarding.SetActive(false);
+            selection.SetActive(false);
             explore.gameObject.SetActive(true);
             MeshCollider ground = leaf.GetComponent<MeshCollider>();
             if (ground == null) ground = Undo.AddComponent<MeshCollider>(leaf.gameObject);
@@ -101,7 +107,7 @@ public static class Prototype2bPlayerSetup
             Transform start = environment.Find("LadybirdPlayerStart");
             if (start == null) start = CreateMarker("LadybirdPlayerStart", environment);
             Undo.RecordObject(start, "Configure stationary player start");
-            start.position = new Vector3(footCenter.x, ground.bounds.max.y, footCenter.z);
+            start.position = new Vector3(ground.bounds.center.x, ground.bounds.max.y, ground.bounds.center.z);
 
             LadybirdPlayerController controller = owner.GetComponent<LadybirdPlayerController>();
             if (controller == null) controller = Undo.AddComponent<LadybirdPlayerController>(owner.gameObject);
@@ -119,6 +125,8 @@ public static class Prototype2bPlayerSetup
             if (controller.autonomousExplorer != null)
             { Undo.RecordObject(controller.autonomousExplorer, "Disable autonomous test instance"); controller.autonomousExplorer.enabled = false; }
             Physics.SyncTransforms();
+            Debug.Log($"Prototype2b footprint measurement: centre={footCenter}, radius={bodyRadius:F3}m, " +
+                $"leaf bounds={ground.bounds}, exploration radius={areaRadius:F3}m.", controller);
             if (!controller.safety.TryFindStart(owner, controller.groundSurfaces, start.position, start.position,
                 out Vector3 safeStart, out string reason)) throw new InvalidOperationException("Safe-start verification failed: " + reason);
             start.position = safeStart;
@@ -134,6 +142,8 @@ public static class Prototype2bPlayerSetup
             // Opt-in: normal onboarding remains the default and the flag is absent in Quest builds.
             test.runMovementTestOnPlay = false;
             explore.gameObject.SetActive(exploreWasActive);
+            onboarding.SetActive(onboardingWasActive);
+            selection.SetActive(selectionWasActive);
             EditorUtility.SetDirty(controller); EditorUtility.SetDirty(test);
             EditorSceneManager.MarkSceneDirty(scene);
             if (!EditorSceneManager.SaveScene(scene, ScenePath)) throw new InvalidOperationException("Prototype2b scene could not be saved.");
@@ -149,7 +159,12 @@ public static class Prototype2bPlayerSetup
             Undo.RevertAllDownToGroup(group);
             Debug.LogError("Prototype2b configuration was rolled back: " + error.Message);
         }
-        finally { if (explore != null) explore.gameObject.SetActive(exploreWasActive); }
+        finally
+        {
+            if (explore != null) explore.gameObject.SetActive(exploreWasActive);
+            if (onboarding != null) onboarding.SetActive(onboardingWasActive);
+            if (selection != null) selection.SetActive(selectionWasActive);
+        }
     }
 
     private static Transform CreateMarker(string name, Transform parent)

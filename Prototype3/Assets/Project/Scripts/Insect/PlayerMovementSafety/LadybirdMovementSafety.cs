@@ -115,6 +115,7 @@ namespace TinyWorlds
         {
             start = preferred;
             reason = "No safe start on the configured surface";
+            string firstRejection = null;
             // Search only a bounded area, and validate the complete footprint and obstacle clearance.
             for (int ring = 0; ring <= 8; ring++)
             {
@@ -134,9 +135,11 @@ namespace TinyWorlds
                         if (TryPosition(surfaces, point, center, point.y, out Vector3 candidate, out reason) &&
                             PathIsClear(owner, candidate, Vector3.forward, 0f, out reason))
                         { start = candidate; reason = "Ready"; return true; }
+                        if (firstRejection == null) firstRejection = reason;
                     }
                 }
             }
+            reason = firstRejection ?? reason;
             return false;
         }
     }
