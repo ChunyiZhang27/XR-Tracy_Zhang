@@ -41,8 +41,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public NarrationManager narrationManager;
 
     [Header("Runtime diagnostics")]
-    [SerializeField] private bool controlActive;
-    [SerializeField] private float currentSpeed;
+    private bool controlActive;
+    private float currentSpeed;
     [SerializeField] private string movementStatus = "Inspect body parts first";
     public bool ControlActive => controlActive;
     public string MovementStatus => movementStatus;
@@ -122,7 +122,11 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             { readySince = -1f; SetStatus(busy == "Ready" ? "Narration playing" : busy); return; }
             if (readySince < 0f) readySince = Time.time;
             // Allow the existing completion coroutine to start its narration before taking control.
-            if (Time.time - readySince >= 0.8f && BeginPlayerControl()) readySince = -1f;
+            if (Time.time - readySince >= 0.8f)
+            {
+                if (BeginPlayerControl()) readySince = -1f;
+                else readySince = Time.time; // Do not retry the full safe-start search every frame.
+            }
             return;
         }
         EnforceExclusiveMovement();
@@ -206,6 +210,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
 
     private void CreateDriveAction()
     {
+        actionHasDeadzone = false;
         if (leftThumbstick != null && leftThumbstick.action != null)
         {
             driveAction = leftThumbstick.action.Clone();
@@ -251,6 +256,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public void SimulateMovement(Vector2 input, float deltaTime)
     {
         if (!controlActive || !isActiveAndEnabled || deltaTime <= 0f) return;
+        EnforceExclusiveMovement();
+        if (BodyIsBusy(out string busy)) { currentSpeed = 0f; SetStatus(busy); return; }
         Physics.SyncTransforms();
         Vector3 contact = groundContact.position;
         if (!safety.TryPosition(groundSurfaces, contact, boundaryCenter, contact.y, out Vector3 ground, out string reason))
@@ -317,6 +324,26 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         movementStatus = value;
         if (editorTest && Time.unscaledTime - lastDiagnosticTime >= 0.5f)
         { Debug.Log("Ladybird: " + value, this); lastDiagnosticTime = Time.unscaledTime; }
+    }
+
+    private void OnValidate()
+    {
+        movementSpeed = Mathf.Max(0f, movementSpeed);
+        turningSpeed = Mathf.Max(0f, turningSpeed);
+        acceleration = Mathf.Max(0.001f, acceleration);
+        deceleration = Mathf.Max(0.001f, deceleration);
+        inputDeadzone = Mathf.Clamp(inputDeadzone, 0f, 0.95f);
+        interactionPauseTime = Mathf.Max(0f, interactionPauseTime);
+        if (safety == null) safety = new LadybirdMovementSafety();
+        safety.bodyRadius = Mathf.Max(0.01f, safety.bodyRadius);
+        safety.explorationRadius = Mathf.Max(safety.bodyRadius + 0.01f, safety.explorationRadius);
+        safety.maximumStepHeight = Mathf.Max(0f, safety.maximumStepHeight);
+        safety.maximumDrop = Mathf.Max(0f, safety.maximumDrop);
+        safety.probeHeight = Mathf.Max(safety.maximumStepHeight + 0.01f, safety.probeHeight);
+        safety.probeDepth = Mathf.Max(safety.maximumDrop + 0.01f, safety.probeDepth);
+        safety.maximumSlope = Mathf.Clamp(safety.maximumSlope, 0f, 60f);
+        safety.obstacleClearance = Mathf.Max(0.01f, safety.obstacleClearance);
+        safety.maximumMovementStep = Mathf.Max(0.001f, safety.maximumMovementStep);
     }
 
     private void OnDrawGizmosSelected()

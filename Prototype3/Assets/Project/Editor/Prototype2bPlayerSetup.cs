@@ -13,10 +13,21 @@ public static class Prototype2bPlayerSetup
 {
     private const string ScenePath = "Assets/Project/Scenes/Prototype2b.unity";
     private const string ActionsPath = "Assets/Samples/XR Interaction Toolkit/3.4.1/Starter Assets/XRI Default Input Actions.inputactions";
+    private static bool configurationSucceeded;
+
+    /// <summary>Explicit CLI fallback: opens only the test scene in an isolated batch Editor.</summary>
+    public static void ConfigureBatch()
+    {
+        if (!Application.isBatchMode) throw new InvalidOperationException("ConfigureBatch requires a batch Editor; use the Tools menu in a GUI Editor.");
+        EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        Configure();
+        if (!configurationSucceeded) throw new InvalidOperationException("Prototype2b scene configuration failed; see the verification errors in the Editor log.");
+    }
 
     [MenuItem("Tools/Tiny Worlds/Configure Prototype2b Player Movement")]
     public static void Configure()
     {
+        configurationSucceeded = false;
         Scene scene = SceneManager.GetActiveScene();
         if (Application.isPlaying || scene.path != ScenePath || SceneManager.sceneCount != 1)
         { Debug.LogError("Open only Prototype2b.unity, outside Play mode, before configuring player movement."); return; }
@@ -125,6 +136,7 @@ public static class Prototype2bPlayerSetup
             EditorSceneManager.MarkSceneDirty(scene);
             if (!EditorSceneManager.SaveScene(scene, ScenePath)) throw new InvalidOperationException("Prototype2b scene could not be saved.");
             Undo.CollapseUndoOperations(group);
+            configurationSucceeded = true;
             Selection.activeGameObject = owner.gameObject;
             Debug.Log($"Prototype2b configured via Unity APIs. Measured body radius={bodyRadius:F3}m; area radius={areaRadius:F3}m; " +
                 $"verified start={safeStart}. No model transforms, interaction events, input assets or XR transforms were changed. " +
