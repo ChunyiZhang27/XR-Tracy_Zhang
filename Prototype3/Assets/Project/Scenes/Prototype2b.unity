@@ -1393,7 +1393,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5329,7 +5329,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.682, z: 2.2}
-  m_LocalScale: {x: 8.0195, y: 0.08, z: 5.0007}
+  m_LocalScale: {x: 11.183192, y: 0.08, z: 10.295827}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2036439557}
@@ -8798,15 +8798,17 @@ MonoBehaviour:
   xrOrigin: {fileID: 382680929}
   leftThumbstick: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   autonomousExplorer: {fileID: 1783907481}
-  movementSpeed: 0.15
+  movementSpeed: 0.35
   turningSpeed: 60
-  acceleration: 0.3
-  deceleration: 0.5
+  acceleration: 0.7
+  deceleration: 1.4
   inputDeadzone: 0.15
   editorKeyboardEnabled: 1
   safety:
     bodyRadius: 1.3907754
     explorationRadius: 1.7407755
+    boundaryShape: 1
+    boundaryHalfExtents: {x: 5.491596, y: 5.047913}
     probeHeight: 0.6
     probeDepth: 0.6
     maximumStepHeight: 0.06

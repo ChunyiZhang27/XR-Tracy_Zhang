@@ -268,7 +268,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (BodyIsBusy(out string busy)) { currentSpeed = 0f; SetStatus(busy); return; }
         Physics.SyncTransforms();
         Vector3 contact = groundContact.position;
-        if (!safety.TryPosition(groundSurfaces, contact, boundaryCenter, contact.y, out Vector3 ground, out string reason))
+        if (!safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason))
         { currentSpeed = 0f; SetStatus(reason); return; }
         transform.position += ground - contact;
         contact = groundContact.position;
@@ -293,7 +293,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             float step = Mathf.Min(distance, stepLimit);
             contact = groundContact.position;
             Vector3 target = contact + direction * step;
-            if (!safety.TryPosition(groundSurfaces, target, boundaryCenter, contact.y, out Vector3 next, out reason) ||
+            if (!safety.TryMovementPosition(groundSurfaces, contact, target, boundaryCenter, out Vector3 next, out reason) ||
                 !safety.PathIsClear(transform, contact, direction, step, out reason))
             { currentSpeed = 0f; SetStatus(reason); return; }
             transform.position += next - contact;
@@ -345,6 +345,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (safety == null) safety = new LadybirdMovementSafety();
         safety.bodyRadius = Mathf.Max(0.01f, safety.bodyRadius);
         safety.explorationRadius = Mathf.Max(safety.bodyRadius + 0.01f, safety.explorationRadius);
+        safety.boundaryHalfExtents = Vector2.Max(Vector2.one * 0.01f, safety.boundaryHalfExtents);
         safety.maximumStepHeight = Mathf.Max(0f, safety.maximumStepHeight);
         safety.maximumDrop = Mathf.Max(0f, safety.maximumDrop);
         safety.probeHeight = Mathf.Max(safety.maximumStepHeight + 0.01f, safety.probeHeight);
@@ -359,7 +360,15 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (groundContact == null || safety == null) return;
         Vector3 center = startingPoint != null ? startingPoint.position : groundContact.position;
         Gizmos.color = Color.cyan;
-        for (int i = 0; i < 64; i++)
+        if (safety.boundaryShape == LadybirdMovementSafety.BoundaryShape.WorldRectangle)
+        {
+            Vector3 outer = new Vector3(safety.boundaryHalfExtents.x * 2f, 0f, safety.boundaryHalfExtents.y * 2f);
+            Gizmos.DrawWireCube(center, outer);
+            Vector2 reach = Vector2.Max(Vector2.zero, safety.boundaryHalfExtents - Vector2.one * safety.bodyRadius);
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireCube(center, new Vector3(reach.x * 2f, 0f, reach.y * 2f));
+        }
+        else for (int i = 0; i < 64; i++)
         {
             float a = i * Mathf.PI * 2f / 64f, b = (i + 1) * Mathf.PI * 2f / 64f;
             Gizmos.DrawLine(center + new Vector3(Mathf.Cos(a), 0f, Mathf.Sin(a)) * safety.explorationRadius,

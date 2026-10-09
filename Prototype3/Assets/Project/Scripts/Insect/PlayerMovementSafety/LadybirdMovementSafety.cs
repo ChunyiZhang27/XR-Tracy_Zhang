@@ -9,6 +9,10 @@ namespace TinyWorlds
     {
         [Min(0.01f)] public float bodyRadius = 0.35f;
         [Min(0.01f)] public float explorationRadius = 1.25f;
+        public enum BoundaryShape { Circle, WorldRectangle }
+        public BoundaryShape boundaryShape = BoundaryShape.Circle;
+        [Tooltip("World X/Z outer half extents around the start marker. The body radius is subtracted; ground probes still determine actual support.")]
+        public Vector2 boundaryHalfExtents = new Vector2(1.25f, 1.25f);
         [Min(0.01f)] public float probeHeight = 0.6f;
         [Min(0.01f)] public float probeDepth = 0.6f;
         [Min(0f)] public float maximumStepHeight = 0.06f;
@@ -33,10 +37,20 @@ namespace TinyWorlds
 
         public bool InsideBoundary(Vector3 point, Vector3 center)
         {
+            return BoundaryExcess(point, center) <= 0f;
+        }
+
+        private float BoundaryExcess(Vector3 point, Vector3 center)
+        {
+            Vector3 delta = point - center; delta.y = 0f;
+            if (boundaryShape == BoundaryShape.WorldRectangle)
+            {
+                Vector2 allowed = boundaryHalfExtents - Vector2.one * bodyRadius;
+                if (allowed.x < 0f || allowed.y < 0f) return float.PositiveInfinity;
+                return Mathf.Max(Mathf.Abs(delta.x) - allowed.x, Mathf.Abs(delta.z) - allowed.y);
+            }
             float radius = explorationRadius - bodyRadius;
-            Vector3 delta = point - center;
-            delta.y = 0f;
-            return radius >= 0f && delta.sqrMagnitude <= radius * radius;
+            return radius < 0f ? float.PositiveInfinity : delta.magnitude - radius;
         }
 
         public bool TryPosition(Collider[] surfaces, Vector3 point, Vector3 center, float referenceHeight,
@@ -44,6 +58,25 @@ namespace TinyWorlds
         {
             grounded = point;
             if (!InsideBoundary(point, center)) { reason = "Exploration boundary"; return false; }
+            return TrySupportedPosition(surfaces, point, referenceHeight, out grounded, out reason);
+        }
+
+        // If a runtime boundary adjustment puts a supported Ladybird outside, allow only steps toward it.
+        // Ordinary movement must remain inside. Recovery never bypasses ground or obstacle checks.
+        public bool TryMovementPosition(Collider[] surfaces, Vector3 from, Vector3 point, Vector3 center,
+            out Vector3 grounded, out string reason)
+        {
+            grounded = point;
+            float oldExcess = BoundaryExcess(from, center), newExcess = BoundaryExcess(point, center);
+            if (newExcess > 0f && !(oldExcess > 0f && newExcess < oldExcess - 0.000001f))
+            { reason = "Exploration boundary"; return false; }
+            return TrySupportedPosition(surfaces, point, from.y, out grounded, out reason);
+        }
+
+        public bool TrySupportedPosition(Collider[] surfaces, Vector3 point, float referenceHeight,
+            out Vector3 grounded, out string reason)
+        {
+            grounded = point;
             if (!TryGround(surfaces, point, referenceHeight, out RaycastHit ground, out reason)) return false;
             // Centre, inner ring and outer ring protect the body rather than only the root pivot.
             for (int ring = 1; ring <= 2; ring++)
@@ -54,10 +87,7 @@ namespace TinyWorlds
                     float angle = i * Mathf.PI * 2f / 16f;
                     Vector3 sample = point + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * radius;
                     if (!TryGround(surfaces, sample, ground.point.y, out _, out string sampleReason))
-                    {
-                        reason = "Unsafe footprint: " + sampleReason;
-                        return false;
-                    }
+                    { reason = "Unsafe footprint: " + sampleReason; return false; }
                 }
             }
             grounded.y = ground.point.y;
@@ -134,7 +164,9 @@ namespace TinyWorlds
                 for (int i = 0; i < samples; i++)
                 {
                     float angle = i * Mathf.PI * 2f / samples;
-                    Vector3 point = ring == 0 ? preferred : center + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * radius;
+                    Vector2 reach = boundaryShape == BoundaryShape.WorldRectangle ?
+                        Vector2.Max(Vector2.zero, boundaryHalfExtents - Vector2.one * bodyRadius) * ring / 8f : Vector2.one * radius;
+                    Vector3 point = ring == 0 ? preferred : center + new Vector3(Mathf.Cos(angle) * reach.x, 0f, Mathf.Sin(angle) * reach.y);
                     if (surfaces == null) continue;
                     foreach (Collider surface in surfaces)
                     {

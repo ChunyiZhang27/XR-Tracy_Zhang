@@ -117,6 +117,43 @@ public sealed class LadybirdMovementSafetyTests
         Assert.That(safety.PathIsClear(owner, start, Vector3.forward, 0f, out reason), Is.True, reason);
     }
 
+    [Test] public void RectangularBoundaryUsesLongSurfaceAxisAndFootprintInset()
+    {
+        safety.boundaryShape=LadybirdMovementSafety.BoundaryShape.WorldRectangle;
+        safety.boundaryHalfExtents=new Vector2(4f,2f);
+        Assert.IsTrue(safety.InsideBoundary(center+Vector3.right*3.8f,center));
+        Assert.IsFalse(safety.InsideBoundary(center+Vector3.right*3.95f,center));
+        Assert.IsFalse(safety.InsideBoundary(center+Vector3.forward*1.95f,center));
+    }
+    [Test] public void RectangularAreaCannotRescueUnsupportedGround()
+    {
+        safety.boundaryShape=LadybirdMovementSafety.BoundaryShape.WorldRectangle;
+        safety.boundaryHalfExtents=new Vector2(4f,2f);
+        Assert.IsFalse(safety.TryPosition(new[]{floor},center+Vector3.right*2.5f,center,center.y,out _,out string reason));
+        StringAssert.Contains("ground",reason);
+    }
+    [Test] public void BoundaryRejectionDoesNotPreventReverseStep()
+    {
+        safety.explorationRadius=1f; var from=center+Vector3.right*.89f;
+        Assert.IsFalse(safety.TryMovementPosition(new[]{floor},from,from+Vector3.right*.02f,center,out _,out _));
+        Assert.IsTrue(safety.TryMovementPosition(new[]{floor},from,from-Vector3.right*.02f,center,out _,out _));
+    }
+    [Test] public void BoundaryShrinkAllowsOnlySupportedInwardRecovery()
+    {
+        safety.explorationRadius=1f; var from=center+Vector3.right*1.1f;
+        Assert.IsTrue(safety.TrySupportedPosition(new[]{floor},from,from.y,out _,out _));
+        Assert.IsTrue(safety.TryMovementPosition(new[]{floor},from,from-Vector3.right*.02f,center,out _,out _));
+        Assert.IsFalse(safety.TryMovementPosition(new[]{floor},from,from+Vector3.right*.02f,center,out _,out _));
+        Assert.IsFalse(safety.TryMovementPosition(new Collider[0],from,from-Vector3.right*.02f,center,out _,out _));
+    }
+    [Test] public void ExpandedRectangleRetainsVerifiedResetStart()
+    {
+        safety.boundaryShape=LadybirdMovementSafety.BoundaryShape.WorldRectangle;
+        safety.boundaryHalfExtents=new Vector2(1.8f,1.5f);
+        Assert.IsTrue(safety.TryFindStart(owner,new[]{floor},center,center,out var start,out string reason),reason);
+        Assert.IsTrue(safety.TryPosition(new[]{floor},start,center,start.y,out _,out reason),reason);
+    }
+
     private GameObject Create(string name) { GameObject item = new GameObject(name); objects.Add(item); return item; }
     private Collider Box(string name, Vector3 position, Vector3 size)
     { GameObject item = Create(name); item.transform.position = position; BoxCollider box = item.AddComponent<BoxCollider>(); box.size = size; return box; }
