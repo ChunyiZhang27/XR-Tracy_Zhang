@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class ExperienceManager : MonoBehaviour
 {
+    [Tooltip("Optional Prototype2b hook; unassigned in Prototype2a.")]
+    public UnityEngine.Events.UnityEvent beforeBackToSelection = new UnityEngine.Events.UnityEvent();
+
     [Header("Experience Zones")]
     [SerializeField]
     private GameObject onboardingZone;
@@ -200,6 +203,7 @@ public class ExperienceManager : MonoBehaviour
     private IEnumerator BackToSelectionRoutine()
     {
         isReturningToSelection = true;
+        beforeBackToSelection.Invoke();
 
 
         // =========================

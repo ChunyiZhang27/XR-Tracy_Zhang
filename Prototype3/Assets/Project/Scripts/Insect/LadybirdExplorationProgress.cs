@@ -1,8 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LadybirdExplorationProgress : MonoBehaviour
 {
+    [Header("Prototype2b opt-in")]
+    public bool verifyTransitionReadiness;
+    public AntennaInteraction antennaInteraction;
+    public WingInteraction wingInteraction;
+    public ElytraInteraction elytraInteraction;
+    public UnityEvent environmentReady = new UnityEvent();
+    public bool EnvironmentReady { get; private set; }
+    public bool BodyPartsComplete => antennaExplored && elytraExplored && wingExplored;
+    private Coroutine completionRoutine;
+
     [Header("Narration")]
     [SerializeField]
     private NarrationManager narrationManager;
@@ -38,6 +49,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkAntennaExplored()
     {
+        if (verifyTransitionReadiness && (antennaInteraction == null || !antennaInteraction.IsAnimating)) return;
         antennaExplored = true;
 
         CheckCompletion();
@@ -50,6 +62,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkElytraExplored()
     {
+        if (verifyTransitionReadiness && (elytraInteraction == null || !elytraInteraction.IsAnimating)) return;
         elytraExplored = true;
 
         CheckCompletion();
@@ -62,6 +75,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
 
     public void MarkWingExplored()
     {
+        if (verifyTransitionReadiness && (wingInteraction == null || !wingInteraction.IsOpen || !wingInteraction.IsAnimating)) return;
         wingExplored = true;
 
         CheckCompletion();
@@ -90,9 +104,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
         {
             completionTriggered = true;
 
-            StartCoroutine(
-                CompletionRoutine()
-            );
+            completionRoutine = StartCoroutine(CompletionRoutine());
         }
     }
 
@@ -109,6 +121,9 @@ public class LadybirdExplorationProgress : MonoBehaviour
         // body-part narration 也会刚刚开始播放。
         yield return null;
 
+
+        if (verifyTransitionReadiness && narrationManager != null)
+            while (!narrationManager.BodyNarrationsComplete) yield return null;
 
         // 等最后一个身体部位的 narration
         // 完整播放结束。
@@ -134,6 +149,25 @@ public class LadybirdExplorationProgress : MonoBehaviour
             narrationManager
                 .PlayLadybirdCompleteNarration();
         }
+        if (verifyTransitionReadiness)
+        {
+            yield return null;
+            if (narrationManager != null)
+                while (!narrationManager.LadybirdCompletionNarrationComplete)
+                {
+                    // If another narration interrupts completion, retry when the source is idle.
+                    if (!narrationManager.IsNarrationPlaying)
+                    {
+                        yield return new WaitForSeconds(0.1f);
+                        if (!narrationManager.LadybirdCompletionNarrationComplete && !narrationManager.IsNarrationPlaying)
+                            narrationManager.PlayLadybirdCompleteNarration();
+                    }
+                    yield return null;
+                }
+            EnvironmentReady = true;
+            environmentReady.Invoke();
+        }
+        completionRoutine = null;
     }
 
 
@@ -141,8 +175,18 @@ public class LadybirdExplorationProgress : MonoBehaviour
     // RESET
     // =========================
 
+    private void OnDisable()
+    {
+        if (!verifyTransitionReadiness) return;
+        if (completionRoutine != null) StopCoroutine(completionRoutine);
+        completionRoutine = null;
+    }
+
     public void ResetProgress()
     {
+        if (verifyTransitionReadiness && completionRoutine != null) StopCoroutine(completionRoutine);
+        completionRoutine = null;
+        EnvironmentReady = false;
         antennaExplored = false;
         elytraExplored = false;
         wingExplored = false;

@@ -1,7 +1,17 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class NarrationManager : MonoBehaviour
 {
+    [Tooltip("Prototype2b opt-in: require uninterrupted playback before counting narration.")]
+    public bool verifyPlaybackCompletion;
+    private readonly HashSet<AudioClip> completedClips = new HashSet<AudioClip>();
+    private Coroutine playbackMonitor;
+    public bool BodyNarrationsComplete => ClipComplete(antennaNarration) && ClipComplete(elytraNarration) && ClipComplete(wingNarration);
+    public bool LadybirdCompletionNarrationComplete => ClipComplete(ladybirdCompleteNarration);
+    private bool ClipComplete(AudioClip clip) => clip == null || completedClips.Contains(clip);
+
     [Header("Audio Source")]
     [SerializeField]
     private AudioSource narrationSource;
@@ -168,7 +178,7 @@ public class NarrationManager : MonoBehaviour
 
     public void PlayAntennaNarration()
     {
-        if (antennaPlayed)
+        if (antennaPlayed && (!verifyPlaybackCompletion || ClipComplete(antennaNarration)))
         {
             return;
         }
@@ -192,7 +202,7 @@ public class NarrationManager : MonoBehaviour
 
     public void PlayElytraNarration()
     {
-        if (elytraPlayed)
+        if (elytraPlayed && (!verifyPlaybackCompletion || ClipComplete(elytraNarration)))
         {
             return;
         }
@@ -216,7 +226,7 @@ public class NarrationManager : MonoBehaviour
 
     public void PlayWingNarration()
     {
-        if (wingPlayed)
+        if (wingPlayed && (!verifyPlaybackCompletion || ClipComplete(wingNarration)))
         {
             return;
         }
@@ -280,6 +290,9 @@ public class NarrationManager : MonoBehaviour
         }
 
 
+        if (verifyPlaybackCompletion && playbackMonitor != null)
+        { StopCoroutine(playbackMonitor); playbackMonitor = null; }
+
         // 如果其他 narration 正在播放，
         // 用户当前主动触发的语音优先。
         if (narrationSource.isPlaying)
@@ -291,6 +304,7 @@ public class NarrationManager : MonoBehaviour
         narrationSource.clip = clip;
 
         narrationSource.Play();
+        if (verifyPlaybackCompletion) playbackMonitor = StartCoroutine(ObservePlayback(clip));
     }
 
 
@@ -298,8 +312,26 @@ public class NarrationManager : MonoBehaviour
     // RESET BODY PART NARRATIONS
     // =========================
 
+    private IEnumerator ObservePlayback(AudioClip clip)
+    {
+        yield return null;
+        // DSP time distinguishes natural playback from an externally stopped AudioSource.
+        double expectedEnd = AudioSettings.dspTime + Mathf.Max(0f, clip.length - narrationSource.time) /
+            Mathf.Max(0.01f, Mathf.Abs(narrationSource.pitch));
+        while (narrationSource != null && narrationSource.clip == clip && narrationSource.isPlaying) yield return null;
+        if (narrationSource != null && narrationSource.clip == clip && AudioSettings.dspTime >= expectedEnd - 0.05)
+            completedClips.Add(clip);
+        playbackMonitor = null;
+    }
+
     public void ResetNarrations()
     {
+        if (verifyPlaybackCompletion)
+        {
+            if (playbackMonitor != null) StopCoroutine(playbackMonitor);
+            playbackMonitor = null;
+            completedClips.Clear();
+        }
         antennaPlayed = false;
         elytraPlayed = false;
         wingPlayed = false;

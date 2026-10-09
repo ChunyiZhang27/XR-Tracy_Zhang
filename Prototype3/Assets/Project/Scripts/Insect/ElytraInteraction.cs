@@ -49,6 +49,8 @@ public class ElytraInteraction : MonoBehaviour
     private bool isAnimating = false;
 
 
+    public bool IsAnimating => isAnimating;
+
     public bool IsOpen
     {
         get

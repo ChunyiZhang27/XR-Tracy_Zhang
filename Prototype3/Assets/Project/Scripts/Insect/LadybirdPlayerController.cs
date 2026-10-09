@@ -34,6 +34,9 @@ public sealed class LadybirdPlayerController : MonoBehaviour
 
     [Header("Body exploration and interaction priority")]
     public bool enterAfterBodyExploration = true;
+    [Tooltip("Prototype2b opt-in: transition UI owns activation and completion tracking.")]
+    public bool externalTransitionControl;
+    public bool EditorTestActive => editorTest;
     [Min(0f)] public float interactionPauseTime = 0.5f;
     public AntennaInteraction antennaInteraction;
     public WingInteraction wingInteraction;
@@ -86,6 +89,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         interactionUntil = Time.time + interactionPauseTime;
         XRBaseInteractable item = args.interactableObject as XRBaseInteractable;
         if (item == null) return;
+        if (externalTransitionControl) return;
         // Observe existing progress events; do not call or change the original progress tracker.
         for (int i = 0; i < item.selectEntered.GetPersistentEventCount(); i++)
         {
@@ -117,7 +121,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     {
         if (!controlActive)
         {
-            if (!enterAfterBodyExploration || editorTest || !antennaExplored || !shellExplored || !wingsExplored) return;
+            if (externalTransitionControl || !enterAfterBodyExploration || editorTest || !antennaExplored || !shellExplored || !wingsExplored) return;
             if (BodyIsBusy(out string busy) || (narrationManager != null && narrationManager.IsNarrationPlaying))
             { readySince = -1f; SetStatus(busy == "Ready" ? "Narration playing" : busy); return; }
             if (readySince < 0f) readySince = Time.time;
@@ -142,7 +146,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     {
         if (!Application.isPlaying || !isActiveAndEnabled) return false;
         if (controlActive) return true;
-        if (!editorTest && enterAfterBodyExploration && (!antennaExplored || !shellExplored || !wingsExplored))
+        if (!externalTransitionControl && !editorTest && enterAfterBodyExploration && (!antennaExplored || !shellExplored || !wingsExplored))
         { SetStatus("Inspect antennae, elytra and flight wings before driving"); return false; }
         if (groundContact == null || !groundContact.IsChildOf(transform) ||
             facingReference == null || !facingReference.IsChildOf(transform) ||
@@ -155,7 +159,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (!safety.TryFindStart(transform, groundSurfaces, startingPoint.position, boundaryCenter,
             out Vector3 start, out string reason))
         { SetStatus("Cannot enter control: " + reason); return false; }
-        if (!initialized)
+        if (!initialized || (externalTransitionControl && !editorTest))
         {
             transform.position += start - groundContact.position;
             initialParentPosition = transform.position;
