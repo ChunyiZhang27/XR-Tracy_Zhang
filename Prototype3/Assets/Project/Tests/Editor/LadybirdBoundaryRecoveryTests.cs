@@ -115,4 +115,10 @@ public class LadybirdBoundaryRecoveryTests
         Obstacle(.1f);Obstacle(.11f);Move(Vector2.up,10);Move(Vector2.down,10);
         Assert.That(owner.transform.position.z,Is.LessThan(start.z-.1f));
     }
+    [Test] public void EditorResetWorksWithoutOnboardingBypass()
+    {
+        Set("editorTest",false);Move(Vector2.up,10);
+        Assert.IsTrue((bool)controller.GetType().GetMethod("ResetToStartingPoint").Invoke(controller,null));
+        Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
+    }
 }

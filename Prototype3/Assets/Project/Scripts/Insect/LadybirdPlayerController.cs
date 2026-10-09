@@ -48,7 +48,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private float currentSpeed;
     [SerializeField] private string movementStatus = "Inspect body parts first";
     [SerializeField] private Vector2 lastMovementInput;
-    [SerializeField] private string recoveryStatus = "Input available; R reset in Editor test mode";
+    [SerializeField] private string recoveryStatus = "Input available; R reset in Editor";
     public Vector2 LastMovementInput => lastMovementInput;
     public string RecoveryStatus => recoveryStatus;
     private void OnDestroy() { safety?.Dispose(); }
@@ -61,6 +61,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private XRBaseInteractable[] interactables = new XRBaseInteractable[0];
     private bool antennaExplored, shellExplored, wingsExplored;
     private bool initialized, ownsMovement, editorTest;
+    private bool pendingEditorReset;
     private Vector3 initialParentPosition;
     private Quaternion initialParentRotation;
     private Vector3 boundaryCenter;
@@ -139,12 +140,13 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             return;
         }
         EnforceExclusiveMovement();
-        if (BodyIsBusy(out string blocked)) { currentSpeed = 0f; SetStatus(blocked); return; }
-
         Vector2 input = ReadDriveInput(out bool stop, out bool reset);
         lastMovementInput = input;
-        if (reset) { ResetToStartingPoint(); return; }
+        if (reset) pendingEditorReset = true;
         if (stop) { currentSpeed = 0f; SetStatus("Stopped (Space)"); return; }
+        if (BodyIsBusy(out string blocked))
+        { currentSpeed = 0f; SetStatus(pendingEditorReset ? "Reset queued: " + blocked : blocked); return; }
+        if (pendingEditorReset) { pendingEditorReset = false; ResetToStartingPoint(); return; }
         SimulateMovement(input, Mathf.Min(Time.deltaTime, 0.1f));
     }
 
@@ -186,6 +188,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public void EndPlayerControl()
     {
         controlActive = false;
+        pendingEditorReset = false;
         currentSpeed = 0f;
         driveAction?.Disable(); driveAction?.Dispose(); driveAction = null;
         // Restore exact enabled states; never enable a provider that was originally disabled.
@@ -260,7 +263,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
                 (keyboard.wKey.isPressed ? 1f : 0f) - (keyboard.sKey.isPressed ? 1f : 0f));
             if (keys != Vector2.zero) input = keys;
             stop = keyboard.spaceKey.isPressed;
-            reset = editorTest && keyboard.rKey.wasPressedThisFrame;
+            reset = keyboard.rKey.wasPressedThisFrame;
         }
 #endif
         return new Vector2(Mathf.Clamp(input.x, -1f, 1f), Mathf.Clamp(input.y, -1f, 1f));
@@ -271,13 +274,13 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     {
         if (!controlActive || !isActiveAndEnabled || deltaTime <= 0f) return;
         lastMovementInput = input;
-        recoveryStatus = "Turning available on supported ground; reverse/slide checked per direction; R reset in Editor test mode";
+        recoveryStatus = "Turning available on supported ground; reverse/slide checked per direction; R reset in Editor";
         EnforceExclusiveMovement();
         if (BodyIsBusy(out string busy)) { currentSpeed = 0f; SetStatus(busy); return; }
         Physics.SyncTransforms();
         Vector3 contact = groundContact.position;
         if (!safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason))
-        { currentSpeed = 0f; recoveryStatus = "Ground unsafe: movement and turning halted; R reset in Editor test mode"; SetStatus(reason); return; }
+        { currentSpeed = 0f; recoveryStatus = "Ground unsafe: movement and turning halted; R reset in Editor"; SetStatus(reason); return; }
         transform.position += ground - contact;
         contact = groundContact.position;
         float targetSpeed = Mathf.Clamp(input.y, -1f, 1f) * movementSpeed;
@@ -322,14 +325,14 @@ public sealed class LadybirdPlayerController : MonoBehaviour
                 groundSurfaces, out Vector3 escape, out _) &&
             safety.TryMovementPosition(groundSurfaces, groundContact.position, groundContact.position + escape,
                 boundaryCenter, out _, out _);
-        recoveryStatus = "Turning available; reverse " + (reverse ? "available" : "blocked in this heading") + "; R reset in Editor test mode";
+        recoveryStatus = "Turning available; reverse " + (reverse ? "available" : "blocked in this heading") + "; R reset in Editor";
         SetStatus(reason);
     }
 
     public bool ResetToStartingPoint()
     {
 #if UNITY_EDITOR
-        if (!editorTest || !controlActive || !initialized) return false;
+        if (!controlActive || !initialized || !editorKeyboardEnabled) return false;
         Physics.SyncTransforms();
         Vector3 resetContact = initialParentPosition + initialParentRotation *
             Quaternion.Inverse(transform.rotation) * (groundContact.position - transform.position);
