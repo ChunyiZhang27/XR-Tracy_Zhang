@@ -142,6 +142,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     {
         if (!Application.isPlaying || !isActiveAndEnabled) return false;
         if (controlActive) return true;
+        if (!editorTest && enterAfterBodyExploration && (!antennaExplored || !shellExplored || !wingsExplored))
+        { SetStatus("Inspect antennae, elytra and flight wings before driving"); return false; }
         if (groundContact == null || !groundContact.IsChildOf(transform) ||
             facingReference == null || !facingReference.IsChildOf(transform) ||
             startingPoint == null || startingPoint.IsChildOf(transform) ||
@@ -240,7 +242,9 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (!actionHasDeadzone) input = LadybirdMovementSafety.ApplyDeadzone(input, inputDeadzone);
 #if UNITY_EDITOR
         Keyboard keyboard = Keyboard.current;
-        if (editorKeyboardEnabled && keyboard != null)
+        bool gameViewFocused = UnityEditor.EditorWindow.focusedWindow != null &&
+            UnityEditor.EditorWindow.focusedWindow.GetType().Name == "GameView";
+        if (editorKeyboardEnabled && keyboard != null && gameViewFocused)
         {
             Vector2 keys = new Vector2((keyboard.dKey.isPressed ? 1f : 0f) - (keyboard.aKey.isPressed ? 1f : 0f),
                 (keyboard.wKey.isPressed ? 1f : 0f) - (keyboard.sKey.isPressed ? 1f : 0f));

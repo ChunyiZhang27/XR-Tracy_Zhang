@@ -17,6 +17,8 @@ namespace TinyWorlds
         [Min(0.01f)] public float obstacleClearance = 0.03f;
         [Min(0.001f)] public float maximumMovementStep = 0.02f;
         public LayerMask obstacleMask = ~0;
+        [Tooltip("Explicit decorative colliders that should not act as solid obstacles. Ground checks remain independent.")]
+        public Collider[] ignoredObstacles = new Collider[0];
 
         private readonly RaycastHit[] hits = new RaycastHit[64];
         private readonly Collider[] overlaps = new Collider[64];
@@ -95,13 +97,13 @@ namespace TinyWorlds
             int count = Physics.OverlapSphereNonAlloc(origin, bodyRadius, overlaps, obstacleMask, QueryTriggerInteraction.Ignore);
             if (count == overlaps.Length) { reason = "Obstacle query buffer full"; return false; }
             for (int i = 0; i < count; i++)
-                if (!IsOwn(owner, overlaps[i])) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
+                if (!IgnoreObstacle(owner, overlaps[i])) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
             if (distance > 0f)
             {
                 count = Physics.SphereCastNonAlloc(origin, bodyRadius, direction, hits, distance, obstacleMask, QueryTriggerInteraction.Ignore);
                 if (count == hits.Length) { reason = "Obstacle query buffer full"; return false; }
                 for (int i = 0; i < count; i++)
-                    if (!IsOwn(owner, hits[i].collider)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
+                    if (!IgnoreObstacle(owner, hits[i].collider)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
             }
             reason = "Ready";
             return true;
@@ -109,6 +111,14 @@ namespace TinyWorlds
 
         private static bool IsOwn(Transform owner, Collider collider) =>
             owner != null && collider != null && collider.transform.IsChildOf(owner);
+
+        private bool IgnoreObstacle(Transform owner, Collider collider)
+        {
+            if (IsOwn(owner, collider)) return true;
+            if (ignoredObstacles != null)
+                foreach (Collider ignored in ignoredObstacles) if (ignored != null && ignored == collider) return true;
+            return false;
+        }
 
         public bool TryFindStart(Transform owner, Collider[] surfaces, Vector3 preferred, Vector3 center,
             out Vector3 start, out string reason)

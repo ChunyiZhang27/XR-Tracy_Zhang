@@ -74,6 +74,15 @@ public static class Prototype2bPlayerSetup
             if (ground == null) ground = Undo.AddComponent<MeshCollider>(leaf.gameObject);
             Undo.RecordObject(ground, "Configure leaf collider");
             ground.sharedMesh = leafMesh.sharedMesh; ground.enabled = true; ground.isTrigger = false; ground.convex = false;
+            // Add scene-instance colliders to real rocks; leave the imported FBX and prefab assets unchanged.
+            foreach (MeshFilter mesh in environment.GetComponentsInChildren<MeshFilter>(true))
+            {
+                string assetPath = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(mesh.gameObject);
+                if (mesh.sharedMesh == null || mesh.GetComponent<Collider>() != null ||
+                    (!assetPath.Contains("/Art/Meshes/Rocks/") && !assetPath.Contains("/Art/Meshes/Rocks_Small/"))) continue;
+                MeshCollider rock = Undo.AddComponent<MeshCollider>(mesh.gameObject);
+                rock.sharedMesh = mesh.sharedMesh; rock.convex = false; rock.isTrigger = false;
+            }
 
             MeshFilter[] legs = model.GetComponentsInChildren<MeshFilter>(true)
                 .Where(x => x.name.StartsWith("legs.", StringComparison.OrdinalIgnoreCase) && x.sharedMesh != null).ToArray();
@@ -117,6 +126,9 @@ public static class Prototype2bPlayerSetup
             controller.movementSpeed = 0.15f; controller.turningSpeed = 60f; controller.acceleration = 0.3f; controller.deceleration = 0.5f;
             controller.inputDeadzone = 0.15f; controller.editorKeyboardEnabled = true; controller.enterAfterBodyExploration = true;
             controller.safety = new LadybirdMovementSafety { bodyRadius = bodyRadius, explorationRadius = areaRadius };
+            controller.safety.ignoredObstacles = environment.GetComponentsInChildren<Collider>(true)
+                .Where(x => PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(x.gameObject) ==
+                    "Assets/FlipGameDev/Terrain&GrassPack/Prefabs/MeshBillboard/Grass_6_Billboard_Mesh.prefab").ToArray();
             controller.antennaInteraction = model.GetComponentInChildren<AntennaInteraction>(true);
             controller.wingInteraction = model.GetComponentInChildren<WingInteraction>(true);
             controller.elytraInteraction = model.GetComponentInChildren<ElytraInteraction>(true);

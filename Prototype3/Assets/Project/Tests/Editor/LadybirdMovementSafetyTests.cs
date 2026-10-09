@@ -99,6 +99,17 @@ public sealed class LadybirdMovementSafetyTests
     }
 
     [Test]
+    public void ExplicitDecorationExclusionDoesNotDisableSolidObstacles()
+    {
+        Collider decoration = Box("Decorative grass", center + Vector3.up * 0.13f, Vector3.one * 0.1f);
+        safety.ignoredObstacles = new[] { decoration }; Physics.SyncTransforms();
+        Assert.That(safety.PathIsClear(owner, center, Vector3.right, 0.2f, out string reason), Is.True, reason);
+        Box("Solid rock", center + new Vector3(0.4f, 0.15f, 0f), Vector3.one * 0.1f); Physics.SyncTransforms();
+        Assert.That(safety.PathIsClear(owner, center, Vector3.right, 0.5f, out reason), Is.False);
+        StringAssert.Contains("Solid rock", reason);
+    }
+
+    [Test]
     public void SafeStartHasFullSupportAndNoObstacleOverlap()
     {
         Assert.That(safety.TryFindStart(owner, new[] { floor }, center, center, out Vector3 start, out string reason), Is.True, reason);
