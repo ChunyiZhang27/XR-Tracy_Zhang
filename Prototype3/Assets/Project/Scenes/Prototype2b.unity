@@ -5230,7 +5230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88711d02a73b43cdb32516c4c9cfcc22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Prototype2bEditorMovementTest
-  runMovementTestOnPlay: 0
+  runMovementTestOnPlay: 1
   controller: {fileID: 1783907482}
   experienceManager: {fileID: 1407051859}
   onboardingZone: {fileID: 2022270763}
