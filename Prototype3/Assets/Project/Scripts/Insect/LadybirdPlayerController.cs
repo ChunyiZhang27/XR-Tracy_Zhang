@@ -52,6 +52,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public Vector2 LastMovementInput => lastMovementInput;
     public string RecoveryStatus => recoveryStatus;
     private void OnDestroy() { safety?.Dispose(); }
+    public int ResetVersion { get; private set; }
     public bool ControlActive => controlActive;
     public string MovementStatus => movementStatus;
 
@@ -340,6 +341,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             !safety.PathIsClear(transform, ground, Vector3.forward, 0f, out reason, groundSurfaces))
         { SetStatus("Reset blocked: " + reason); return false; }
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
+        ResetVersion++;
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;
 #else
         return false;
