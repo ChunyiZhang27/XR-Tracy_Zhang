@@ -148,8 +148,11 @@ namespace TinyWorlds
                 {
                     var go = new GameObject("Ladybird collision query (not a scene asset)");
                     go.hideFlags = HideFlags.HideAndDontSave;
+                    // Unity needs a registered shape for ComputePenetration. A remote trigger is
+                    // excluded from all movement queries and never serialized into the scene.
+                    go.layer = 2; go.transform.position = Vector3.down * 100000f;
                     penetrationProbe = go.AddComponent<SphereCollider>();
-                    penetrationProbe.enabled = false;
+                    penetrationProbe.isTrigger = true;
                 }
                 penetrationProbe.radius = bodyRadius;
                 return penetrationProbe;
