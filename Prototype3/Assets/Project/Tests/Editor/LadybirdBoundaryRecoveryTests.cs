@@ -98,4 +98,21 @@ public class LadybirdBoundaryRecoveryTests
         Physics.SyncTransforms();
         Assert.IsTrue(safety.TryObstacleMotion(owner.transform,start,Vector3.forward*.02f,new Collider[]{ground},out _,out string reason),reason);
     }
+    [Test] public void NonConvexMeshRockOverlapAllowsSafeEscape()
+    {
+        var rock=Obstacle(.1f);
+        var cube=GameObject.CreatePrimitive(PrimitiveType.Cube);
+        var mesh=cube.GetComponent<MeshFilter>().sharedMesh;Object.DestroyImmediate(cube);
+        Object.DestroyImmediate(rock.GetComponent<BoxCollider>());
+        rock.transform.localScale=new Vector3(2f,.6f,.1f);
+        var collider=rock.AddComponent<MeshCollider>();collider.sharedMesh=mesh;collider.convex=false;
+        Physics.SyncTransforms();Move(Vector2.up,10);
+        Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
+        Move(Vector2.down,10);Assert.That(owner.transform.position.z,Is.LessThan(start.z-.1f));
+    }
+    [Test] public void DuplicateRockCollidersDoNotPreventOverlapEscape()
+    {
+        Obstacle(.1f);Obstacle(.11f);Move(Vector2.up,10);Move(Vector2.down,10);
+        Assert.That(owner.transform.position.z,Is.LessThan(start.z-.1f));
+    }
 }
