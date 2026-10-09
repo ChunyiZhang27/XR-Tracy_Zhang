@@ -88,9 +88,11 @@ public static class Prototype2bPlayerSetup
             Vector3 footCenter = new Vector3(footprint.center.x, footprint.min.y, footprint.center.z);
             // Conservative radius covers every leg mesh bound, not just the body mesh.
             float bodyRadius = new Vector2(footprint.extents.x, footprint.extents.z).magnitude + 0.02f;
-            float areaRadius = Mathf.Min(1.25f, Mathf.Min(ground.bounds.extents.x, ground.bounds.extents.z) * 0.95f);
+            float leafRadius = Mathf.Min(ground.bounds.extents.x, ground.bounds.extents.z) * 0.95f;
+            float areaRadius = Mathf.Min(Mathf.Max(1.25f, bodyRadius + 0.35f), leafRadius);
             if (bodyRadius >= areaRadius - 0.05f)
-                throw new InvalidOperationException("Measured Ladybird footprint cannot fit safely in the leaf exploration area.");
+                throw new InvalidOperationException($"Measured footprint radius {bodyRadius:F3}m cannot fit safely in the leaf area " +
+                    $"(available radius {leafRadius:F3}m). Model and leaf scales were left unchanged.");
 
             Transform contact = owner.Find("GroundContact");
             if (contact == null) contact = CreateMarker("GroundContact", owner);
