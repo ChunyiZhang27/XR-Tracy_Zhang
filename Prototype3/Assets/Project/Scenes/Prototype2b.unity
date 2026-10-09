@@ -8705,6 +8705,7 @@ GameObject:
   - component: {fileID: 1783907481}
   - component: {fileID: 1783907482}
   - component: {fileID: 1783907483}
+  - component: {fileID: 1783907484}
   m_Layer: 0
   m_Name: LadybirdExploreModel_OLD
   m_TagString: Untagged
@@ -8908,6 +8909,8 @@ MonoBehaviour:
   elytraInteraction: {fileID: 503336398}
   narrationManager: {fileID: 1831991277}
   movementStatus: Inspect body parts first
+  lastMovementInput: {x: 0, y: 0}
+  recoveryStatus: Input available; R reset in Editor
 --- !u!114 &1783907483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8941,6 +8944,100 @@ MonoBehaviour:
   - {fileID: 6724846705895963393}
   - {fileID: 7115960937410624237}
   - {fileID: 7967258626423896789}
+--- !u!114 &1783907484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783907479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a6ebd084174915a0c7705faf4c9c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadybirdWalkingAnimator
+  controller: {fileID: 1783907482}
+  visualModel: {fileID: 6606117979619911688}
+  legs:
+  - label: Left Front
+    tripodA: 1
+    segments:
+    - {fileID: 247855017062953799}
+    - {fileID: 228914798031445400}
+    - {fileID: 748255998136391939}
+    - {fileID: 3379719712273594989}
+    root: {x: -0.0024320155, y: 0.01592831, z: 0.018758886}
+    hip: {x: -0.004716758, y: 0.0118319625, z: 0.022348944}
+    knee: {x: -0.015682045, y: 0.012227686, z: 0.023080194}
+    ankle: {x: -0.020202275, y: 0.004497006, z: 0.023870574}
+    foot: {x: -0.03184954, y: -0.00004629092, z: 0.024899902}
+  - label: Right Middle
+    tripodA: 1
+    segments:
+    - {fileID: 14645723134958823}
+    - {fileID: 7401414719728526137}
+    - {fileID: 9214979963626308756}
+    - {fileID: 3416798379537931543}
+    root: {x: 0.0027388725, y: 0.016436031, z: 0.011147536}
+    hip: {x: 0.0070146583, y: 0.011596847, z: 0.014025304}
+    knee: {x: 0.020757813, y: 0.013963646, z: 0.016840369}
+    ankle: {x: 0.025212964, y: 0.004505942, z: 0.018665602}
+    foot: {x: 0.0400598, y: -0.00019435953, z: 0.01808366}
+  - label: Left Rear
+    tripodA: 1
+    segments:
+    - {fileID: 6098019006781803230}
+    - {fileID: 3368910114927421300}
+    - {fileID: 5672683736416860319}
+    - {fileID: 9108238242817078855}
+    root: {x: -0.0075034536, y: 0.012292394, z: -0.0037264957}
+    hip: {x: -0.010226638, y: 0.0064059133, z: -0.0078070075}
+    knee: {x: -0.02538699, y: 0.010438465, z: -0.010059433}
+    ankle: {x: -0.026890397, y: 0.008053869, z: -0.021878522}
+    foot: {x: -0.021179188, y: -0.00049026386, z: -0.035903625}
+  - label: Right Front
+    tripodA: 0
+    segments:
+    - {fileID: 6664010874104245108}
+    - {fileID: 449690743768223854}
+    - {fileID: 2599907629073272574}
+    - {fileID: 711582761516776016}
+    root: {x: 0.002425049, y: 0.015930079, z: 0.018761307}
+    hip: {x: 0.0047094836, y: 0.011833053, z: 0.022349985}
+    knee: {x: 0.015675228, y: 0.012228698, z: 0.02308217}
+    ankle: {x: 0.02019552, y: 0.004498186, z: 0.023873312}
+    foot: {x: 0.031842086, y: -0.000045550092, z: 0.024901094}
+  - label: Left Middle
+    tripodA: 0
+    segments:
+    - {fileID: 1417021770533023640}
+    - {fileID: 9191281260090566378}
+    - {fileID: 8288996251765716834}
+    - {fileID: 5997124058550282117}
+    root: {x: -0.0027451261, y: 0.016432986, z: 0.01114451}
+    hip: {x: -0.0070214495, y: 0.01159495, z: 0.014024703}
+    knee: {x: -0.020764554, y: 0.013962584, z: 0.016839178}
+    ankle: {x: -0.025218135, y: 0.0045047575, z: 0.018648664}
+    foot: {x: -0.040067103, y: -0.00019515333, z: 0.018081756}
+  - label: Right Rear
+    tripodA: 0
+    segments:
+    - {fileID: 1727019084463430778}
+    - {fileID: 9124928417867811312}
+    - {fileID: 1622417712167835168}
+    - {fileID: 4723759460750203146}
+    root: {x: 0.0075037936, y: 0.012293078, z: -0.0037189368}
+    hip: {x: 0.010223142, y: 0.006405346, z: -0.0078036226}
+    knee: {x: 0.025376415, y: 0.010441225, z: -0.010047135}
+    ankle: {x: 0.026893925, y: 0.008047771, z: -0.021877144}
+    foot: {x: 0.02118098, y: -0.0004976289, z: -0.035903387}
+  gaitFrequency: 2
+  referenceSpeed: 0.35
+  strideAmplitude: 0.07
+  legLift: 0.035
+  transitionSmoothing: 0.18
+  bodyBobHeight: 0
+  gaitStatus: Standing
 --- !u!1 &1799302719
 GameObject:
   m_ObjectHideFlags: 0
