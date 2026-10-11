@@ -24,6 +24,8 @@ public static class Prototype2bHabitatSetup
     static bool FindDestination(LadybirdPlayerController c,out Vector3 target)
     {
         target=default;var start=c.startingPoint.position;
+        if(!c.safety.TryFindStart(c.transform,c.groundSurfaces,start,start,out var safeStart,out var startReason)) { Debug.Log("HABITAT start failed: "+startReason); return false; }
+        Debug.Log("HABITAT safe start="+safeStart); start=safeStart;
         // Search straight routes across the existing leaf; every step uses the actual footprint, ground, boundary and obstacle checks.
         for(float distance=3f;distance>=2f;distance-=.25f)for(int direction=0;direction<16;direction++)
         {
@@ -31,10 +33,10 @@ public static class Prototype2bHabitatSetup
             for(float travelled=0;travelled<distance;travelled+=c.safety.maximumMovementStep)
             {
                 var next=from+heading*Mathf.Min(c.safety.maximumMovementStep,distance-travelled);
-                if(!c.safety.TryMovementPosition(c.groundSurfaces,from,next,start,out var ground,out _) ||
-                    !c.safety.PathIsClear(c.transform,ground,heading,0f,out _,c.groundSurfaces) ||
+                if(!c.safety.TryMovementPosition(c.groundSurfaces,from,next,start,out var ground,out var reason) ||
+                    !c.safety.PathIsClear(c.transform,ground,heading,0f,out reason,c.groundSurfaces) ||
                     !c.safety.TryObstacleMotion(c.transform,from,ground-from,c.groundSurfaces,out var motion,out _) ||
-                    (motion-(ground-from)).sqrMagnitude>.000001f){safe=false;break;}
+                    (motion-(ground-from)).sqrMagnitude>.000001f){Debug.Log("HABITAT route "+direction+" failed at "+from+": "+reason);safe=false;break;}
                 from=ground;
             }
             if(!safe)continue;
