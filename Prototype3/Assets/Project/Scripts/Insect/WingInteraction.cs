@@ -65,6 +65,8 @@ public class WingInteraction : MonoBehaviour
     private bool isOpen = false;
     private bool isAnimating = false;
     public bool LastInteractionAccepted { get; private set; }
+    // Runtime-only, opt-in lock. Original scenes leave this false.
+    public bool MovementInteractionLocked { get; set; }
 
 
     // =========================
@@ -96,6 +98,7 @@ public class WingInteraction : MonoBehaviour
 
     public void OpenWings()
     {
+        if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
         if (isAnimating)
         {
             return;
@@ -152,6 +155,7 @@ public class WingInteraction : MonoBehaviour
 
     public void FlapWings()
     {
+        if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
         LastInteractionAccepted = false;
         // Wings 必须已经展开
         if (!isOpen)

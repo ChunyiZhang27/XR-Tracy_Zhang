@@ -5880,6 +5880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prototype2bEditorMovementTest
   runMovementTestOnPlay: 0
   controller: {fileID: 1783907482}
+  movementWings: {fileID: 1783907485}
   experienceManager: {fileID: 1407051859}
   onboardingZone: {fileID: 2022270763}
   selectionZone: {fileID: 739848556}
@@ -8706,6 +8707,7 @@ GameObject:
   - component: {fileID: 1783907482}
   - component: {fileID: 1783907483}
   - component: {fileID: 1783907484}
+  - component: {fileID: 1783907485}
   m_Layer: 0
   m_Name: LadybirdExploreModel_OLD
   m_TagString: Untagged
@@ -8923,6 +8925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272aa1be1ce44466918460e9f114a083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LadybirdEnvironmentTransition
+  movementWings: {fileID: 1783907485}
   progress: {fileID: 503336401}
   controller: {fileID: 1783907482}
   antenna: {fileID: 503336400}
@@ -9038,6 +9041,34 @@ MonoBehaviour:
   transitionSmoothing: 0.18
   bodyBobHeight: 0
   gaitStatus: Standing
+--- !u!114 &1783907485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783907479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9912d79aa61340e1951e35af7770d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LadybirdMovementWingVisibility
+  wings: {fileID: 503336399}
+  elytra: {fileID: 503336398}
+  walking: {fileID: 1783907484}
+  flightWingRenderers:
+  - {fileID: 64392017049630546}
+  - {fileID: 7094008350848803277}
+  wingShellInteractables:
+  - {fileID: 385770268}
+  - {fileID: 8748145709231724760}
+  - {fileID: 4891374978688830130}
+  - {fileID: 6140479039646111462}
+  - {fileID: 8642272511255314732}
+  - {fileID: 8197492812862982157}
+  - {fileID: 6724846705895963393}
+  - {fileID: 7115960937410624237}
+  - {fileID: 7967258626423896789}
 --- !u!1 &1799302719
 GameObject:
   m_ObjectHideFlags: 0

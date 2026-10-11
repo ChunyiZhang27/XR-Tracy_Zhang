@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 /// <summary>Prototype2b-only coordinator. Progress remains owned by LadybirdExplorationProgress.</summary>
 public sealed class LadybirdEnvironmentTransition : MonoBehaviour
 {
+    public LadybirdMovementWingVisibility movementWings;
     public LadybirdExplorationProgress progress;
     public LadybirdPlayerController controller;
     public AntennaInteraction antenna;
@@ -77,6 +78,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         if (elytra.IsOpen) elytra.ToggleElytra();
         while (Busy()) yield return null;
         if (wings.IsOpen) { wings.CloseWings(); while (wings.IsAnimating) yield return null; }
+        if (movementWings != null) yield return movementWings.Prepare();
         if (!controller.BeginPlayerControl())
         {
             Status("Cannot explore safely: " + controller.MovementStatus);
@@ -102,6 +104,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     private IEnumerator RestoreBody()
     {
         if (controller != null) controller.EndPlayerControl();
+        if (movementWings != null) movementWings.Restore();
         RestoreParent();
         if (shellWasOpen && elytra != null && !elytra.IsOpen)
         { elytra.ToggleElytra(); while (elytra.IsAnimating || (wings != null && wings.IsAnimating)) yield return null; }
@@ -128,6 +131,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         if (transition != null) StopCoroutine(transition);
         transition = null;
         if (!DebugBypass && controller != null) controller.EndPlayerControl();
+        if (movementWings != null && !DebugBypass) movementWings.Restore();
         RestoreParent(); RestoreInteractions(); poseSaved = false;
         CurrentMode = Mode.Body; RefreshUI();
     }

@@ -36,6 +36,24 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
     private sealed class Copy {public MeshRenderer source,copy; public bool wasEnabled;}
     private readonly List<Copy> copies=new List<Copy>();
     private readonly List<Copy> bodyCopies=new List<Copy>();
+    private readonly HashSet<MeshRenderer> suppressed = new HashSet<MeshRenderer>();
+    private readonly Dictionary<MeshRenderer,bool> suppressedStates = new Dictionary<MeshRenderer,bool>();
+    public bool RendererEnabledBeforeOverride(MeshRenderer renderer)
+    {
+        foreach (var copy in bodyCopies) if (copy.source == renderer) return copy.wasEnabled;
+        return renderer.enabled;
+    }
+    public void SuppressRenderer(MeshRenderer renderer, bool hide, bool restoredEnabled)
+    {
+        if (hide) { suppressed.Add(renderer); suppressedStates[renderer] = restoredEnabled; }
+        else { suppressed.Remove(renderer); suppressedStates.Remove(renderer); }
+        foreach (var copy in bodyCopies) if (copy.source == renderer)
+        {
+            if (!hide) copy.wasEnabled = restoredEnabled;
+            copy.copy.enabled = !hide && driving && bodyBobHeight > 0f && copy.wasEnabled;
+        }
+        renderer.enabled = !hide && restoredEnabled;
+    }
     private RuntimeLeg[] runtime;
     private GameObject rig;
     private Vector3 lastPosition;
@@ -80,7 +98,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         var renderer=go.GetComponent<MeshRenderer>();renderer.sharedMaterials=source.sharedMaterials;
         renderer.shadowCastingMode=source.shadowCastingMode;renderer.receiveShadows=source.receiveShadows;
         renderer.lightProbeUsage=source.lightProbeUsage;renderer.reflectionProbeUsage=source.reflectionProbeUsage;
-        var copy=new Copy{source=source,copy=renderer,wasEnabled=source.enabled};return copy;
+        var copy=new Copy{source=source,copy=renderer,wasEnabled=suppressedStates.TryGetValue(source,out bool originalEnabled)?originalEnabled:source.enabled};return copy;
     }
     private bool Build()
     {
@@ -132,7 +150,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
     {
         foreach(var copy in copies) if(copy.source!=null){copy.source.enabled=active?false:copy.wasEnabled;copy.copy.enabled=active&&copy.wasEnabled&&copy.source.gameObject.activeInHierarchy;}
         bool bob=active&&bodyBobHeight>0f;
-        foreach(var copy in bodyCopies) if(copy.source!=null){copy.source.enabled=bob?false:copy.wasEnabled;copy.copy.enabled=bob&&copy.wasEnabled&&copy.source.gameObject.activeInHierarchy;}
+        foreach(var copy in bodyCopies) if(copy.source!=null){copy.source.enabled=!suppressed.Contains(copy.source)&&!bob&&copy.wasEnabled;copy.copy.enabled=!suppressed.Contains(copy.source)&&bob&&copy.wasEnabled&&copy.source.gameObject.activeInHierarchy;}
         rig.SetActive(active);
     }
     private void LateUpdate()
@@ -225,7 +243,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
     {
         if(rig!=null)Show(false);
         foreach(var copy in copies)if(copy.source!=null)copy.source.enabled=copy.wasEnabled;
-        foreach(var copy in bodyCopies)if(copy.source!=null)copy.source.enabled=copy.wasEnabled;
+        foreach(var copy in bodyCopies)if(copy.source!=null)copy.source.enabled=!suppressed.Contains(copy.source)&&copy.wasEnabled;
         if(rig!=null){if(Application.isPlaying)Destroy(rig);else DestroyImmediate(rig);}
         rig=null;runtime=null;copies.Clear();bodyCopies.Clear();driving=false;
     }

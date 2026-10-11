@@ -48,6 +48,8 @@ public class ElytraInteraction : MonoBehaviour
     private bool isOpen = false;
     private bool isAnimating = false;
     public bool LastInteractionAccepted { get; private set; }
+    // Runtime-only, opt-in lock. Original scenes leave this false.
+    public bool MovementInteractionLocked { get; set; }
 
 
     public bool IsAnimating => isAnimating;
@@ -77,6 +79,7 @@ public class ElytraInteraction : MonoBehaviour
 
     public void ToggleElytra()
     {
+        if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
         LastInteractionAccepted = false;
         if (isAnimating)
         {

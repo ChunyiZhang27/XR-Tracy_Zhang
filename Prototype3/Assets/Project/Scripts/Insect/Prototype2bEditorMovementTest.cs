@@ -8,6 +8,7 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
     [Tooltip("Temporary Play-mode bypass. Has no effect in Quest/player builds.")]
     public bool runMovementTestOnPlay;
     public LadybirdPlayerController controller;
+    public LadybirdMovementWingVisibility movementWings;
     public ExperienceManager experienceManager;
     public GameObject onboardingZone;
     public GameObject selectionZone;
@@ -31,15 +32,21 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
         running = true;
     }
 
-    private void Start()
+    private System.Collections.IEnumerator Start()
     {
-        if (!running) return;
+        if (!running) yield break;
         onboardingZone.SetActive(false);
         selectionZone.SetActive(false);
         insectExploreZone.SetActive(true);
         controller.SetEditorTestMode(true);
+        // Let interaction Start methods cache their authored resting poses first.
+        yield return null;
+        if (movementWings != null) yield return movementWings.Prepare();
         if (!controller.BeginPlayerControl())
+        {
+            if (movementWings != null) movementWings.Restore();
             Debug.LogError("Movement test could not start: " + controller.MovementStatus, controller);
+        }
         else
             Debug.Log("Prototype2b movement test active. Focus Game view: W/S drive, A/D turn, Space stop, R reset. " +
                 "Select LadybirdExploreModel_OLD to inspect Movement Status. XR viewpoint is not repositioned.", this);
@@ -48,7 +55,9 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
     private void OnDisable()
     {
         if (!running) return;
+        StopAllCoroutines();
         if (controller != null) { controller.EndPlayerControl(); controller.SetEditorTestMode(false); }
+        if (movementWings != null) movementWings.Restore();
         if (onboardingZone != null) onboardingZone.SetActive(onboardingWasActive);
         if (selectionZone != null) selectionZone.SetActive(selectionWasActive);
         if (insectExploreZone != null) insectExploreZone.SetActive(exploreWasActive);

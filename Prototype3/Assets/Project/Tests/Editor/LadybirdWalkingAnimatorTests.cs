@@ -10,6 +10,7 @@ public class LadybirdWalkingAnimatorTests
  GameObject owner;Component animator,controller;Transform model;
  readonly List<Transform> original=new List<Transform>();
  readonly List<Matrix4x4> poses=new List<Matrix4x4>();
+ MeshRenderer wing, shell;
  Type Runtime(string name)=>Assembly.Load("Assembly-CSharp").GetType(name,true);
  void Set(object target,string field,object value)=>target.GetType().GetField(field,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic).SetValue(target,value);
  object Call(string name,params object[] args)=>animator.GetType().GetMethod(name,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic).Invoke(animator,args);
@@ -36,6 +37,12 @@ public class LadybirdWalkingAnimatorTests
     original.Add(mesh.transform);poses.Add(mesh.transform.localToWorldMatrix);meshes[k]=mesh.GetComponent<MeshRenderer>();
    }
    Set(leg,"segments",meshes);array.SetValue(leg,i);
+  }
+  foreach(var name in new[]{"LeftWing","shell.L"})
+  {
+   var body=GameObject.CreatePrimitive(PrimitiveType.Cube);UnityEngine.Object.DestroyImmediate(body.GetComponent<Collider>());
+   body.name=name;body.transform.SetParent(model,false);
+   if(name=="LeftWing")wing=body.GetComponent<MeshRenderer>();else shell=body.GetComponent<MeshRenderer>();
   }
   Set(animator,"legs",array);Assert.IsTrue((bool)Call("Build"));Call("ResetPose");
  }
@@ -86,5 +93,57 @@ public class LadybirdWalkingAnimatorTests
   Animate(Vector3.forward*.35f,5);Call("ResetPose");
   Assert.AreEqual(0f,animator.GetType().GetField("phase",BindingFlags.NonPublic|BindingFlags.Instance).GetValue(animator));
   Assert.AreEqual(0f,animator.GetType().GetField("blend",BindingFlags.NonPublic|BindingFlags.Instance).GetValue(animator));
+ }
+ [TestCase(0f)] [TestCase(.01f)] public void WingSuppressionSurvivesGaitAndRestoresRepeatedly(float bob)
+ {
+  Set(animator,"bodyBobHeight",bob);
+  for(int cycle=0;cycle<3;cycle++)
+  {
+   Call("SuppressRenderer",wing,true,true);Animate(Vector3.forward*.35f,3);
+   Assert.IsFalse(wing.enabled);
+   var body=(IEnumerable)animator.GetType().GetField("bodyCopies",BindingFlags.NonPublic|BindingFlags.Instance).GetValue(animator);
+   foreach(var copy in body)
+   {
+    var source=(MeshRenderer)copy.GetType().GetField("source").GetValue(copy);
+    var visual=(MeshRenderer)copy.GetType().GetField("copy").GetValue(copy);
+    if(source==wing)Assert.IsFalse(visual.enabled);
+    if(source==shell)Assert.IsTrue(bob>0f?visual.enabled:source.enabled);
+   }
+   Call("Show",false);Call("SuppressRenderer",wing,false,true);Assert.IsTrue(wing.enabled);
+  }
+ }
+ [Test] public void PreviouslyHiddenWingStaysHiddenAfterRestore()
+ {
+  Call("SuppressRenderer",wing,true,false);Animate(Vector3.forward*.35f,3);
+  Call("SuppressRenderer",wing,false,false);Call("Show",false);Assert.IsFalse(wing.enabled);
+ }
+ [Test] public void MovementLockRejectsDirectWingAndShellRequestsWithoutStartingAnimation()
+ {
+  var wings=owner.AddComponent(Runtime("WingInteraction"));var shells=owner.AddComponent(Runtime("ElytraInteraction"));
+  foreach(var component in new[]{wings,shells})component.GetType().GetProperty("MovementInteractionLocked").SetValue(component,true);
+  foreach(var method in new[]{"OpenWings","FlapWings"})wings.GetType().GetMethod(method).Invoke(wings,null);
+  shells.GetType().GetMethod("ToggleElytra").Invoke(shells,null);
+  Assert.IsFalse((bool)wings.GetType().GetProperty("IsAnimating").GetValue(wings));
+  Assert.IsFalse((bool)shells.GetType().GetProperty("IsAnimating").GetValue(shells));
+  Assert.IsFalse((bool)shells.GetType().GetProperty("LastInteractionAccepted").GetValue(shells));
+ }
+ [Test] public void MovementPostureRestoresMixedWingStatesAndLocksAcrossRepeatedEntries()
+ {
+  var wings=owner.AddComponent(Runtime("WingInteraction"));var shells=owner.AddComponent(Runtime("ElytraInteraction"));
+  var helper=owner.AddComponent(Runtime("LadybirdMovementWingVisibility"));
+  Set(helper,"wings",wings);Set(helper,"elytra",shells);Set(helper,"walking",animator);
+  var second=GameObject.CreatePrimitive(PrimitiveType.Cube);second.transform.SetParent(model,false);
+  var hidden=second.GetComponent<MeshRenderer>();hidden.enabled=false;
+  Set(helper,"flightWingRenderers",new[]{wing,hidden});
+  for(int i=0;i<3;i++)
+  {
+   var prepare=(IEnumerator)helper.GetType().GetMethod("Prepare").Invoke(helper,null);
+   Assert.IsFalse(prepare.MoveNext()); // Closed, idle pose requires no animation wait.
+   Animate(Vector3.forward*.35f,2);Assert.IsFalse(wing.enabled);Assert.IsFalse(hidden.enabled);
+   Assert.IsTrue((bool)wings.GetType().GetProperty("MovementInteractionLocked").GetValue(wings));
+   helper.GetType().GetMethod("Restore").Invoke(helper,null);Call("Show",false);
+   Assert.IsTrue(wing.enabled);Assert.IsFalse(hidden.enabled);
+   Assert.IsFalse((bool)wings.GetType().GetProperty("MovementInteractionLocked").GetValue(wings));
+  }
  }
 }
