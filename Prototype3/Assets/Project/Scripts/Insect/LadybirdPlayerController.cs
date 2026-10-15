@@ -54,6 +54,13 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private void OnDestroy() { safety?.Dispose(); }
     public int ResetVersion { get; private set; }
     public bool ControlActive => controlActive;
+    public bool HabitatStopped { get; private set; }
+    // Optional objective hold: keep environment ownership, XR locomotion suspension and reset input alive.
+    public void SetHabitatStopped(bool stopped)
+    {
+        HabitatStopped = stopped;
+        if (stopped) currentSpeed = 0f;
+    }
     public string MovementStatus => movementStatus;
 
     private InputAction driveAction;
@@ -152,6 +159,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (BodyIsBusy(out string blocked))
         { currentSpeed = 0f; SetStatus(pendingEditorReset ? "Reset queued: " + blocked : blocked); return; }
         if (pendingEditorReset) { pendingEditorReset = false; ResetToStartingPoint(); return; }
+        if (HabitatStopped) { currentSpeed = 0f; SetStatus("Habitat found: movement stopped; R to replay in Editor"); return; }
         SimulateMovement(input, Mathf.Min(Time.deltaTime, 0.1f));
     }
 
@@ -194,6 +202,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public void EndPlayerControl()
     {
         controlActive = false;
+        HabitatStopped = false;
         pendingEditorReset = false;
         currentSpeed = 0f;
         driveAction?.Disable(); driveAction?.Dispose(); driveAction = null;
@@ -278,7 +287,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     // Public for deterministic movement checks; ordinary gameplay calls this only from Update.
     public void SimulateMovement(Vector2 input, float deltaTime)
     {
-        if (!controlActive || !isActiveAndEnabled || deltaTime <= 0f) return;
+        if (!controlActive || HabitatStopped || !isActiveAndEnabled || deltaTime <= 0f) return;
         lastMovementInput = input;
         recoveryStatus = "Turning available on supported ground; reverse/slide checked per direction; R reset in Editor";
         EnforceExclusiveMovement();
@@ -389,6 +398,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         { SetStatus("Reset blocked: " + reason); return false; }
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
         RememberSafeContact(groundContact.position); edgeRecoveryActive = false;
+        HabitatStopped = false;
         ResetVersion++;
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;
 #else
