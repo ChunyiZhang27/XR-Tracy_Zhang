@@ -146,4 +146,15 @@ public class LadybirdWalkingAnimatorTests
    Assert.IsFalse((bool)wings.GetType().GetProperty("MovementInteractionLocked").GetValue(wings));
   }
  }
+ [Test] public void HalfMetrePerSecondUsesTunedCadenceAndSettlesWithoutMovingOriginalMeshes()
+ {
+  Set(controller,"movementSpeed",.5f);Set(animator,"referenceSpeed",.5f);
+  Set(animator,"gaitFrequency",2.5f);Set(animator,"strideAmplitude",.08f);
+  Animate(Vector3.forward*.5f,1);
+  Assert.That((float)animator.GetType().GetField("phase",BindingFlags.NonPublic|BindingFlags.Instance).GetValue(animator),Is.EqualTo(.25f).Within(.0001f));
+  Animate(Vector3.back*.5f,15);Animate(Vector3.zero,40);
+  Assert.AreEqual("Standing",animator.GetType().GetProperty("GaitStatus").GetValue(animator));
+  for(int i=0;i<original.Count;i++)Assert.AreEqual(poses[i],original[i].localToWorldMatrix);
+  Assert.AreEqual(Vector3.zero,owner.transform.position);
+ }
 }

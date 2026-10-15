@@ -121,4 +121,22 @@ public class LadybirdBoundaryRecoveryTests
         Assert.IsTrue((bool)controller.GetType().GetMethod("ResetToStartingPoint").Invoke(controller,null));
         Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
     }
+    [Test] public void HalfMetreSpeedPreservesBoundaryRockRecoveryAndReset()
+    {
+        Set("movementSpeed",.5f);Set("acceleration",1f);Set("deceleration",2f);
+        safety.boundaryShape=LadybirdMovementSafety.BoundaryShape.WorldRectangle;
+        safety.boundaryHalfExtents=new Vector2(2f,1.1f);
+        Move(Vector2.up,100);var edge=owner.transform.position;
+        Assert.That(edge.z-start.z,Is.GreaterThan(.9f).And.LessThanOrEqualTo(1.001f));
+        Move(Vector2.right,5);Move(Vector2.down,10);
+        Assert.That(owner.transform.position.z,Is.LessThan(edge.z-.1f));
+        Assert.IsTrue((bool)controller.GetType().GetMethod("ResetToStartingPoint").Invoke(controller,null));
+        Obstacle(.3f);Move(Vector2.up,100);var blocked=owner.transform.position;
+        Assert.That(blocked.z-start.z,Is.LessThan(.16f));
+        Move(Vector2.down,10);Assert.That(owner.transform.position.z,Is.LessThan(blocked.z-.1f));
+        Move(Vector2.right,5);
+        Assert.That(Quaternion.Angle(Quaternion.identity,owner.transform.rotation),Is.GreaterThan(20f));
+        Assert.IsTrue((bool)controller.GetType().GetMethod("ResetToStartingPoint").Invoke(controller,null));
+        Assert.That(Vector3.Distance(start,owner.transform.position),Is.LessThan(.001f));
+    }
 }
