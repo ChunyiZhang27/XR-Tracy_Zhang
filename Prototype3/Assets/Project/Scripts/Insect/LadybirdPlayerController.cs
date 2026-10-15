@@ -63,6 +63,10 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private bool antennaExplored, shellExplored, wingsExplored;
     private bool initialized, ownsMovement, editorTest;
     private bool pendingEditorReset;
+    [SerializeField] private Vector3 lastVerifiedSafeContact;
+    [SerializeField] private Vector3 currentGroundContact;
+    [SerializeField] private bool edgeRecoveryActive;
+    private bool hasVerifiedSafeContact;
     private Vector3 initialParentPosition;
     private Quaternion initialParentRotation;
     private Vector3 boundaryCenter;
@@ -178,6 +182,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         else if (!safety.TryPosition(groundSurfaces, groundContact.position, boundaryCenter, groundContact.position.y,
             out _, out reason)) { SetStatus(reason); return false; }
 
+        RememberSafeContact(groundContact.position);
         SuspendMovement();
         CreateDriveAction();
         currentSpeed = 0f;
@@ -280,15 +285,37 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (BodyIsBusy(out string busy)) { currentSpeed = 0f; SetStatus(busy); return; }
         Physics.SyncTransforms();
         Vector3 contact = groundContact.position;
-        if (!safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason))
-        { currentSpeed = 0f; recoveryStatus = "Ground unsafe: movement and turning halted; R reset in Editor"; SetStatus(reason); return; }
+        currentGroundContact = contact; edgeRecoveryActive = false;
+        bool supported = safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason);
+        if (!supported || !safety.InsideBoundary(contact, boundaryCenter))
+        {
+            currentSpeed = 0f;
+            // A steering or drive request authorizes only bounded inward recovery, never outward motion.
+            if (hasVerifiedSafeContact && input.sqrMagnitude > .0001f &&
+                safety.TryEdgeRecovery(groundSurfaces, contact, lastVerifiedSafeContact, boundaryCenter,
+                    movementSpeed * deltaTime, out var recovery, out _) &&
+                safety.TryObstacleMotion(transform, contact, recovery-contact, groundSurfaces, out var verifiedRecovery, out _) &&
+                (verifiedRecovery-(recovery-contact)).sqrMagnitude < .00000001f)
+            {
+                transform.position += recovery-contact; edgeRecoveryActive = true;
+                currentGroundContact = groundContact.position;
+                ReportEdge("Recovering inward; rotation deferred until fully supported", input, false);
+                return;
+            }
+            if (!supported) { ReportEdge(reason, input, false); return; }
+            // A supported out-of-bounds pose can still drive inward via ordinary directional checks.
+        }
         transform.position += ground - contact;
         contact = groundContact.position;
+        if (safety.InsideBoundary(contact, boundaryCenter)) RememberSafeContact(contact);
         float targetSpeed = Mathf.Clamp(input.y, -1f, 1f) * movementSpeed;
+        // Opposite input must never spend a frame continuing toward the blocked edge.
+        if (currentSpeed * targetSpeed < 0f) currentSpeed = 0f;
         bool slowing = Mathf.Abs(targetSpeed) < Mathf.Abs(currentSpeed) || currentSpeed * targetSpeed < 0f;
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, (slowing ? deceleration : acceleration) * deltaTime);
         // The footprint is a conservative circle, so yaw cannot expand it beyond a checked boundary.
-        transform.RotateAround(contact, Vector3.up, Mathf.Clamp(input.x, -1f, 1f) * turningSpeed * deltaTime);
+        bool rotationSafe = safety.InsideBoundary(contact, boundaryCenter);
+        if (rotationSafe) transform.RotateAround(contact, Vector3.up, Mathf.Clamp(input.x, -1f, 1f) * turningSpeed * deltaTime);
         Vector3 heading = facingReference.forward;
         heading.y = 0f;
         if (heading.sqrMagnitude < 0.0001f) { currentSpeed = 0f; SetStatus("Facing reference is vertical"); return; }
@@ -310,11 +337,30 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             if (!safety.TryMovementPosition(groundSurfaces, contact, target, boundaryCenter, out Vector3 next, out reason) ||
                 !safety.TryObstacleMotion(transform, contact, next-contact, groundSurfaces, out Vector3 verified, out reason) ||
                 (verified-(next-contact)).sqrMagnitude > 0.00000001f)
-            { currentSpeed = 0f; SetStatus(reason == "Ready" ? "Obstacle at grounded destination" : reason); return; }
+            { currentSpeed = 0f; ReportEdge(reason == "Ready" ? "Obstacle at grounded destination" : reason, input, rotationSafe); return; }
             transform.position += next - contact;
+            if (safety.InsideBoundary(next, boundaryCenter)) RememberSafeContact(next);
             distance -= step;
         }
+        if (!rotationSafe) { ReportEdge("Outside boundary: drive inward before turning", input, false); return; }
         SetStatus(Mathf.Abs(currentSpeed) > 0.0001f ? motionStatus : "Stopped (turning available)");
+    }
+
+    private void RememberSafeContact(Vector3 contact)
+    { lastVerifiedSafeContact = contact; currentGroundContact = contact; hasVerifiedSafeContact = true; }
+
+    private void ReportEdge(string reason, Vector2 input, bool rotationSafe)
+    {
+        Vector3 contact = groundContact.position; currentGroundContact = contact;
+        Vector3 backward = -facingReference.forward; backward.y = 0f;
+        bool reverse = backward.sqrMagnitude > .0001f &&
+            safety.TryMovementPosition(groundSurfaces, contact, contact + backward.normalized * safety.maximumMovementStep,
+                boundaryCenter, out var destination, out _) &&
+            safety.TryObstacleMotion(transform, contact, destination-contact, groundSurfaces, out var motion, out _) &&
+            (motion-(destination-contact)).sqrMagnitude < .00000001f;
+        recoveryStatus = $"Edge input={input}; backward={(reverse ? "safe" : "not fully supported/clear")}; rotation={(rotationSafe ? "safe" : "blocked")}; " +
+            $"current={contact:F3}; last safe={(hasVerifiedSafeContact ? lastVerifiedSafeContact.ToString("F3") : "unavailable")}; recovery={edgeRecoveryActive}; R reset available";
+        SetStatus("Edge: " + reason);
     }
 
     private void ReportObstacleBlock(string reason)
@@ -341,6 +387,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             !safety.PathIsClear(transform, ground, Vector3.forward, 0f, out reason, groundSurfaces))
         { SetStatus("Reset blocked: " + reason); return false; }
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
+        RememberSafeContact(groundContact.position); edgeRecoveryActive = false;
         ResetVersion++;
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;
 #else
@@ -360,7 +407,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (movementStatus == value) return;
         movementStatus = value;
         if (editorTest && Time.unscaledTime - lastDiagnosticTime >= 0.5f)
-        { Debug.Log("Ladybird: " + value, this); lastDiagnosticTime = Time.unscaledTime; }
+        { Debug.Log("Ladybird: " + value + (value.StartsWith("Edge:") ? " | " + recoveryStatus : ""), this); lastDiagnosticTime = Time.unscaledTime; }
     }
 
     private void OnValidate()

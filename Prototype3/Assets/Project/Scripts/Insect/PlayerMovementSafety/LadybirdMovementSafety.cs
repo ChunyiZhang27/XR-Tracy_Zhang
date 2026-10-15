@@ -95,6 +95,34 @@ namespace TinyWorlds
             return true;
         }
 
+        // Bounded rollback of a slightly displaced footprint, never a general unsupported-ground move.
+        // The centre stays grounded, all previously supported samples stay supported, and the saved
+        // destination must still pass the complete footprint/boundary test. Obstacles are checked by caller.
+        public bool TryEdgeRecovery(Collider[] surfaces, Vector3 from, Vector3 saved, Vector3 center,
+            float distance, out Vector3 next, out string reason)
+        {
+            next = from;
+            Vector3 delta = saved - from; delta.y = 0f;
+            if (distance <= 0f || delta.magnitude > .10f || delta.sqrMagnitude < .00000001f)
+            { reason = "No nearby verified recovery pose (maximum 0.10m)"; return false; }
+            if (!TryPosition(surfaces, saved, center, from.y, out var safe, out reason) ||
+                !TryGround(surfaces, from, from.y, out var oldGround, out reason)) return false;
+            var candidate = from + delta.normalized * Mathf.Min(delta.magnitude, Mathf.Min(distance, maximumMovementStep));
+            if (!TryGround(surfaces, candidate, oldGround.point.y, out var ground, out reason)) return false;
+            // A recovery cannot deepen an out-of-bounds condition.
+            if (BoundaryExcess(candidate, center) > Mathf.Max(0f, BoundaryExcess(from, center)))
+            { reason = "Recovery points outside boundary"; return false; }
+            for (int ring = 1; ring <= 2; ring++) for (int i = 0; i < 16; i++)
+            {
+                float angle = i * Mathf.PI * 2f / 16f;
+                var offset = new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * (bodyRadius * ring * .5f);
+                if (TryGround(surfaces, from + offset, oldGround.point.y, out _, out _) &&
+                    !TryGround(surfaces, candidate + offset, ground.point.y, out _, out reason))
+                { reason = "Recovery would lose additional footprint support"; return false; }
+            }
+            next = ground.point; reason = "Controlled edge recovery toward verified pose"; return true;
+        }
+
         private bool TryGround(Collider[] surfaces, Vector3 point, float referenceHeight,
             out RaycastHit ground, out string reason)
         {
