@@ -334,10 +334,11 @@ public sealed class LadybirdPlayerController : MonoBehaviour
             { ReportObstacleBlock(reason); return; }
             if (reason.StartsWith("Sliding")) motionStatus = reason;
             Vector3 target = contact + motion;
-            if (!safety.TryMovementPosition(groundSurfaces, contact, target, boundaryCenter, out Vector3 next, out reason) ||
-                !safety.TryObstacleMotion(transform, contact, next-contact, groundSurfaces, out Vector3 verified, out reason) ||
+            if (!safety.TryMovementPosition(groundSurfaces, contact, target, boundaryCenter, out Vector3 next, out reason))
+            { currentSpeed = 0f; ReportEdge(reason, input, rotationSafe); return; }
+            if (!safety.TryObstacleMotion(transform, contact, next-contact, groundSurfaces, out Vector3 verified, out reason) ||
                 (verified-(next-contact)).sqrMagnitude > 0.00000001f)
-            { currentSpeed = 0f; ReportEdge(reason == "Ready" ? "Obstacle at grounded destination" : reason, input, rotationSafe); return; }
+            { ReportObstacleBlock(reason == "Ready" ? "Obstacle at grounded destination" : reason); return; }
             transform.position += next - contact;
             if (safety.InsideBoundary(next, boundaryCenter)) RememberSafeContact(next);
             distance -= step;
@@ -358,7 +359,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
                 boundaryCenter, out var destination, out _) &&
             safety.TryObstacleMotion(transform, contact, destination-contact, groundSurfaces, out var motion, out _) &&
             (motion-(destination-contact)).sqrMagnitude < .00000001f;
-        recoveryStatus = $"Edge input={input}; backward={(reverse ? "safe" : "not fully supported/clear")}; rotation={(rotationSafe ? "safe" : "blocked")}; " +
+        recoveryStatus = $"Edge input={input}; direction={Vector3.ProjectOnPlane(facingReference.forward, Vector3.up).normalized * Mathf.Sign(input.y):F3}; backward={(reverse ? "safe" : "not fully supported/clear")}; rotation={(rotationSafe ? "safe" : "blocked")}; " +
             $"current={contact:F3}; last safe={(hasVerifiedSafeContact ? lastVerifiedSafeContact.ToString("F3") : "unavailable")}; recovery={edgeRecoveryActive}; R reset available";
         SetStatus("Edge: " + reason);
     }
