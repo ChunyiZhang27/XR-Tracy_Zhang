@@ -70,11 +70,43 @@ public class LadybirdHabitatObjectiveTests
     }
     [Test] public void RepeatedArrivalAndContinueRequestsAreIdempotent()
     {
-        Evaluate();Call(objective,"ContinueToFoodDiscovery");Assert.AreNotEqual("Food discovery is coming next.",TextValue);
+        Evaluate();Call(objective,"ContinueToFoodDiscovery");Assert.AreNotEqual("Let's discover what ladybirds eat!",TextValue);
         Arrive();for(int i=0;i<10;i++)Evaluate();
         for(int i=0;i<3;i++)Call(objective,"ContinueToFoodDiscovery");
-        Assert.AreEqual("Food discovery is coming next.",TextValue);Assert.IsTrue(Property(controller,"HabitatStopped"));
+        Assert.AreEqual("Let's discover what ladybirds eat!",TextValue);Assert.IsTrue(Property(controller,"HabitatStopped"));
         Call(objective,"OnDisable");Assert.IsFalse(Property(controller,"HabitatStopped"));Assert.IsFalse(panel.activeSelf);
+    }
+    [Test] public void ArrivalCardIsOneShotAndContinueEmitsOncePerAttempt()
+    {
+        var card=Object("Arrival card");card.SetActive(false);button.transform.SetParent(card.transform,false);
+        Set(objective,"arrivalCard",card);
+        var click=button.AddComponent(Assembly.Load("UnityEngine.UI").GetType("UnityEngine.UI.Button",true));
+        var onClick=(UnityEngine.Events.UnityEvent)click.GetType().GetProperty("onClick").GetValue(click);
+        onClick.AddListener(()=>Call(objective,"ContinueToFoodDiscovery"));
+        int events=0;
+        ((UnityEngine.Events.UnityEvent)objective.GetType().GetField("foodDiscoveryStarted").GetValue(objective)).AddListener(()=>events++);
+        Evaluate();Assert.IsFalse(card.activeSelf);onClick.Invoke();Assert.AreEqual(0,events);
+        Arrive();Assert.IsTrue(card.activeSelf);Assert.IsFalse(panel.activeSelf);
+        onClick.Invoke();onClick.Invoke();Evaluate();
+        Assert.AreEqual(1,events);Assert.IsTrue(Property(objective,"FoodDiscoveryStarted"));
+        Assert.IsFalse(card.activeSelf);Assert.IsFalse(button.activeSelf);Assert.IsTrue(panel.activeSelf);
+        Assert.AreEqual("Let's discover what ladybirds eat!",TextValue);Assert.IsTrue(Property(controller,"HabitatStopped"));
+        Call(controller,"ResetToStartingPoint");Evaluate();
+        Assert.IsFalse(card.activeSelf);Assert.IsFalse(Property(objective,"FoodDiscoveryStarted"));
+        Arrive();Assert.IsTrue(card.activeSelf);onClick.Invoke();Assert.AreEqual(2,events);
+        Call(controller,"EndPlayerControl");Evaluate();
+        Assert.IsFalse(card.activeSelf);Assert.IsFalse(panel.activeSelf);
+    }
+    [Test] public void ReturningToBodyHidesUnclickedArrivalCard()
+    {
+        var card=Object("Arrival card");card.SetActive(false);Set(objective,"arrivalCard",card);
+        Set(controller,"editorTest",false);
+        var transition=owner.AddComponent(Runtime("LadybirdEnvironmentTransition"));Set(objective,"transition",transition);
+        var modeType=Runtime("LadybirdEnvironmentTransition").GetNestedType("Mode");
+        Set(transition,"<CurrentMode>k__BackingField",Enum.Parse(modeType,"Environment"));
+        Evaluate();Arrive();Assert.IsTrue(card.activeSelf);
+        Set(transition,"<CurrentMode>k__BackingField",Enum.Parse(modeType,"Body"));Evaluate();
+        Assert.IsFalse(card.activeSelf);Assert.IsFalse(Property(controller,"HabitatStopped"));
     }
     [Test] public void UnsupportedOrObstructedDestinationCannotComplete()
     {
