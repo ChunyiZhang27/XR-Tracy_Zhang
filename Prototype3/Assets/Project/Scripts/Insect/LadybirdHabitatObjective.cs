@@ -14,7 +14,13 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public bool enableInEditorMovementTest;
     public GameObject objectivePanel, continueButton, destinationMarker;
     public TMP_Text objectiveText;
+    [Header("Optional Prototype2b arrival card")]
+    public GameObject arrivalCard;
+    public UnityEngine.Events.UnityEvent foodDiscoveryStarted = new UnityEngine.Events.UnityEvent();
+    public bool FoodDiscoveryStarted { get; private set; }
     public bool Arrived { get; private set; }
+    public const string FoodDiscoveryMessage = "Let's discover what ladybirds eat!";
+    private void Awake() { if (arrivalCard != null) arrivalCard.SetActive(false); }
     public bool AttemptActive => attemptActive;
     private bool attemptActive;
     private int resetVersion;
@@ -48,6 +54,11 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
             !controller.safety.PathIsClear(controller.transform, ground, Vector3.forward, 0f, out _, controller.groundSurfaces)) return;
         Arrived = true;
         controller.SetHabitatStopped(true);
+        if (arrivalCard != null)
+        {
+            if (objectivePanel != null) objectivePanel.SetActive(false);
+            arrivalCard.SetActive(true);
+        }
         if (objectiveText != null) objectiveText.text = ArrivalMessage;
         if (continueButton != null) continueButton.SetActive(true);
         if (destinationMarker != null) destinationMarker.SetActive(false);
@@ -60,7 +71,8 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     }
     private void BeginAttempt()
     {
-        attemptActive = true; Arrived = false; resetVersion = controller.ResetVersion;
+        attemptActive = true; Arrived = false; FoodDiscoveryStarted = false; resetVersion = controller.ResetVersion;
+        if (arrivalCard != null) arrivalCard.SetActive(false);
         controller.SetHabitatStopped(false);
         if (objectivePanel != null) objectivePanel.SetActive(true);
         if (continueButton != null) continueButton.SetActive(false);
@@ -69,13 +81,19 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     }
     public void ContinueToFoodDiscovery()
     {
-        if (attemptActive && Arrived && Eligible() && objectiveText != null)
-            objectiveText.text = "Food discovery is coming next.";
+        if (!attemptActive || !Arrived || !Eligible() || FoodDiscoveryStarted) return;
+        FoodDiscoveryStarted = true;
+        if (arrivalCard != null) arrivalCard.SetActive(false);
+        if (continueButton != null) continueButton.SetActive(false);
+        if (objectivePanel != null) objectivePanel.SetActive(true);
+        if (objectiveText != null) objectiveText.text = FoodDiscoveryMessage;
+        foodDiscoveryStarted.Invoke();
     }
     private void EndAttempt()
     {
         if (attemptActive && controller != null) controller.SetHabitatStopped(false);
-        attemptActive = false; Arrived = false;
+        attemptActive = false; Arrived = false; FoodDiscoveryStarted = false;
+        if (arrivalCard != null) arrivalCard.SetActive(false);
         if (objectivePanel != null) objectivePanel.SetActive(false);
         if (continueButton != null) continueButton.SetActive(false);
         if (destinationMarker != null) destinationMarker.SetActive(false);
