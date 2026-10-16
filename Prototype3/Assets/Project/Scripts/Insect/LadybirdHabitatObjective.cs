@@ -20,7 +20,34 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public bool FoodDiscoveryStarted { get; private set; }
     public bool Arrived { get; private set; }
     public const string FoodDiscoveryMessage = "Let's discover what ladybirds eat!";
-    private void Awake() { if (arrivalCard != null) arrivalCard.SetActive(false); }
+    [Tooltip("Temporary click diagnostics; disable after verifying mouse and XR interaction.")]
+    public bool logArrivalInteraction = true;
+    private void Awake()
+    {
+        if (arrivalCard == null) return;
+        // TrackedDeviceGraphicRaycaster accepts XR event data only. Mouse pointers need this too.
+        var canvas = arrivalCard.GetComponentInParent<Canvas>(true);
+        if (canvas != null && canvas.GetComponent<UnityEngine.UI.GraphicRaycaster>() == null)
+            canvas.gameObject.AddComponent<UnityEngine.UI.GraphicRaycaster>();
+        if (continueButton != null && logArrivalInteraction)
+        {
+            var trigger = continueButton.GetComponent<UnityEngine.EventSystems.EventTrigger>();
+            if (trigger == null) trigger = continueButton.AddComponent<UnityEngine.EventSystems.EventTrigger>();
+            AddPointerDiagnostic(trigger, UnityEngine.EventSystems.EventTriggerType.PointerDown);
+            AddPointerDiagnostic(trigger, UnityEngine.EventSystems.EventTriggerType.PointerClick);
+        }
+        arrivalCard.SetActive(false);
+    }
+    private void AddPointerDiagnostic(UnityEngine.EventSystems.EventTrigger trigger, UnityEngine.EventSystems.EventTriggerType type)
+    {
+        var entry = new UnityEngine.EventSystems.EventTrigger.Entry { eventID = type };
+        entry.callback.AddListener(_ => LogArrival("Button received " + type + " input."));
+        trigger.triggers.Add(entry);
+    }
+    private void LogArrival(string message)
+    {
+        if (logArrivalInteraction) Debug.Log("[Habitat Arrival] " + message, this);
+    }
     public bool AttemptActive => attemptActive;
     private bool attemptActive;
     private int resetVersion;
@@ -81,12 +108,20 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     }
     public void ContinueToFoodDiscovery()
     {
-        if (!attemptActive || !Arrived || !Eligible() || FoodDiscoveryStarted) return;
+        LogArrival("Button OnClick callback invoked.");
+        if (!attemptActive || !Arrived || !Eligible() || FoodDiscoveryStarted)
+        {
+            LogArrival($"Food Discovery rejected: attempt={attemptActive}, arrived={Arrived}, eligible={Eligible()}, alreadyStarted={FoodDiscoveryStarted}.");
+            return;
+        }
+        LogArrival("Food Discovery accepted.");
         FoodDiscoveryStarted = true;
+        controller.SetHabitatStopped(true);
         if (arrivalCard != null) arrivalCard.SetActive(false);
         if (continueButton != null) continueButton.SetActive(false);
         if (objectivePanel != null) objectivePanel.SetActive(true);
         if (objectiveText != null) objectiveText.text = FoodDiscoveryMessage;
+        LogArrival("Placeholder UI shown: " + FoodDiscoveryMessage);
         foodDiscoveryStarted.Invoke();
     }
     private void EndAttempt()

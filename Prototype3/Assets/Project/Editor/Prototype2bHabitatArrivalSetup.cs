@@ -40,7 +40,7 @@ public static class Prototype2bHabitatArrivalSetup
         // Sibling of the stationary navigation canvas, outside the moving Ladybird.
         canvasObject.transform.SetParent(sourceCanvas.transform.parent, false);
         foreach (var component in sourceCanvas.GetComponents<Component>())
-            if (component is Canvas || component is CanvasScaler || component is TrackedDeviceGraphicRaycaster)
+            if (component is Canvas || component is CanvasScaler || component is TrackedDeviceGraphicRaycaster || component is UnityEngine.UI.GraphicRaycaster)
                 EditorUtility.CopySerialized(component, canvasObject.AddComponent(component.GetType()));
         var rect = (RectTransform)canvasObject.transform;
         rect.sizeDelta = new Vector2(700, 360);
@@ -97,7 +97,7 @@ public static class Prototype2bHabitatArrivalSetup
         var canvas = o.arrivalCard.GetComponentInParent<Canvas>(true);
         var button = o.continueButton.GetComponent<UnityEngine.UI.Button>();
         if (scene.path != ScenePath || o.arrivalCard.activeSelf || canvas.renderMode != RenderMode.WorldSpace ||
-            canvas.GetComponent<TrackedDeviceGraphicRaycaster>() == null || canvas.worldCamera == null ||
+            canvas.GetComponent<TrackedDeviceGraphicRaycaster>() == null || canvas.GetComponent<UnityEngine.UI.GraphicRaycaster>() == null || canvas.worldCamera == null ||
             canvas.transform.IsChildOf(o.controller.transform) || button.onClick.GetPersistentEventCount() != 1 ||
             button.onClick.GetPersistentTarget(0) != o || button.onClick.GetPersistentMethodName(0) != "ContinueToFoodDiscovery" ||
             !button.targetGraphic.raycastTarget || all.Count(x => x.GetComponent<EventSystem>() != null) != 1 ||

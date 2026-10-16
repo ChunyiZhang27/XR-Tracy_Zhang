@@ -97,6 +97,28 @@ public class LadybirdHabitatObjectiveTests
         Call(controller,"EndPlayerControl");Evaluate();
         Assert.IsFalse(card.activeSelf);Assert.IsFalse(panel.activeSelf);
     }
+    [Test] public void ArrivalAwakeAddsMouseRaycasterWithoutReplacingXRRaycasterOrCallback()
+    {
+        var canvasObject=new GameObject("Arrival canvas",typeof(RectTransform),typeof(Canvas));
+        canvasObject.transform.SetParent(fixture.transform,false);
+        canvasObject.GetComponent<Canvas>().renderMode=RenderMode.WorldSpace;
+        var trackedType=Assembly.Load("Unity.XR.Interaction.Toolkit").GetType("UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster",true);
+        var tracked=canvasObject.AddComponent(trackedType);
+        var card=Object("Arrival card");card.transform.SetParent(canvasObject.transform,false);
+        button.transform.SetParent(card.transform,false);Set(objective,"arrivalCard",card);
+        var buttonType=Assembly.Load("UnityEngine.UI").GetType("UnityEngine.UI.Button",true);
+        var click=button.AddComponent(buttonType);
+        var onClick=(UnityEngine.Events.UnityEvent)buttonType.GetProperty("onClick").GetValue(click);
+        onClick.AddListener(()=>Call(objective,"ContinueToFoodDiscovery"));
+        var graphicType=Assembly.Load("UnityEngine.UI").GetType("UnityEngine.UI.GraphicRaycaster",true);
+        Assert.IsNull(canvasObject.GetComponent(graphicType));
+        Call(objective,"Awake");
+        Assert.IsNotNull(canvasObject.GetComponent(graphicType));Assert.AreSame(tracked,canvasObject.GetComponent(trackedType));
+        Assert.IsFalse(card.activeSelf);
+        Evaluate();Arrive();onClick.Invoke();
+        Assert.IsTrue(Property(objective,"FoodDiscoveryStarted"));Assert.IsFalse(card.activeSelf);
+        Assert.AreEqual("Let's discover what ladybirds eat!",TextValue);Assert.IsTrue(Property(controller,"HabitatStopped"));
+    }
     [Test] public void ReturningToBodyHidesUnclickedArrivalCard()
     {
         var card=Object("Arrival card");card.SetActive(false);Set(objective,"arrivalCard",card);
