@@ -2587,7 +2587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimulatedHandExpression__ctor_mCEACA467F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86609
+// Method Definition Index: 86817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t9846C5210571395221E90B01278D8F52412F4C9B UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m9BEC3FB6803F48D2B21D6986179A04E1EC6FF7A2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2601,7 +2601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t9846C5210571395221E90B01278D8
 	MonoScriptData_t9846C5210571395221E90B01278D8F52412F4C9B V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:45>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:45>
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t9846C5210571395221E90B01278D8F52412F4C9B));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)249));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
@@ -2622,7 +2622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t9846C5210571395221E90B01278D8
 		return L_6;
 	}
 }
-// Method Definition Index: 86610
+// Method Definition Index: 86818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m8FBBD252A41DC3429C6720B8E0BB4D629F8FD795 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tFAF92F2D3A6775CCFD860CE2305E48D80433AAD8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2709,7 +2709,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t9846C5210571395221E90B01278D8F52412F4C9B_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86611
+// Method Definition Index: 86819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Start_m39778FFE429CE0BADF7527864F56F62263C6D9C8 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2727,7 +2727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_St
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:235>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:235>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6** L_0 = (XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6**)(&__this->___m_Simulator);
 		il2cpp_codegen_runtime_class_init_inline(ComponentLocatorUtility_1_t7C9173616F975D8503CAA7CDBD527B3C7294D732_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2738,21 +2738,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_St
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:237>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:237>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral9B01F97DD9ACC81F94C626F0F771121D300FB271, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:238>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:238>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:239>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:239>
 		return;
 	}
 
 IL_0025:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:242>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:242>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_3 = __this->___m_Simulator;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
@@ -2767,7 +2767,7 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:244>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:244>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_7 = __this->___m_Simulator;
 		NullCheck(L_7);
 		String_t* L_8;
@@ -2776,18 +2776,18 @@ IL_0025:
 		L_9 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral8933E7F915DF694EE650FD6F0BE2A9AE67C4FDBB, L_8, _stringLiteral424E983F11783F6F3AEB2D3431DD3213232D553D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(L_9, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:245>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:245>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:246>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:246>
 		return;
 	}
 
 IL_006a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:249>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:249>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_11 = __this->___m_Simulator;
 		NullCheck(L_11);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
@@ -2802,7 +2802,7 @@ IL_006a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:251>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:251>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
 		String_t* L_16;
@@ -2811,38 +2811,38 @@ IL_006a:
 		L_17 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralB674AB529D287B8E2560026EDC20B58E939F12C2, L_16, _stringLiteral424E983F11783F6F3AEB2D3431DD3213232D553D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(L_17, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:252>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:252>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
 		L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:253>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:253>
 		return;
 	}
 
 IL_00af:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:256>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:256>
 		XRInteractionSimulatorInputFeedbackUI_InitializeUIDictionaries_m46351CBD9DC7494C9D4953676F654DBEC49C223F(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:257>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:257>
 		XRInteractionSimulatorInputFeedbackUI_ActivateControllerPanels_m5470C95D664B17809CD4FD4D7DF784B14DC6C07E(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:258>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:258>
 		XRInteractionSimulatorInputFeedbackUI_ActivateHandPanels_mEE962ACC10B840E1F0C5250870B86EE6DA18C5E9(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:259>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:259>
 		return;
 	}
 }
-// Method Definition Index: 86612
+// Method Definition Index: 86820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Update_m5A4610CA21C72CB0B3687C32F62D5482ABB6E033 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:266>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:266>
 		XRInteractionSimulatorInputFeedbackUI_HandleActiveDeviceModePanels_m9F8C60FC5E7D7D3FB3A53DC713698B455CF6ED5C(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:267>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:267>
 		XRInteractionSimulatorInputFeedbackUI_HandleGeneralInputFeedback_mB55A8F82763885D74C4FA8867ABF2780BE4F430D(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:268>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:268>
 		XRInteractionSimulatorInputFeedbackUI_HandleActiveInputModePanels_mC03B16F87F58AAF5AAA15E8C125120130448F135(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:270>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:270>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_0 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -2853,14 +2853,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Up
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:271>
 		XRInteractionSimulatorInputFeedbackUI_HandleDeviceHotkeyPanels_mA749DE2F71DFF96621590DBB8874EE6C82C05C90(__this, NULL);
 		return;
 	}
 
 IL_0026:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:272>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:272>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_2 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -2871,21 +2871,21 @@ IL_0026:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:273>
 		XRInteractionSimulatorInputFeedbackUI_HandleHandHotkeyPanels_m43C1C9B3EF2496EC92AF2E35B884CF8F3D6D2051(__this, NULL);
 	}
 
 IL_003a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:274>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:274>
 		return;
 	}
 }
-// Method Definition Index: 86613
+// Method Definition Index: 86821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleGeneralInputFeedback_mB55A8F82763885D74C4FA8867ABF2780BE4F430D (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:278>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:278>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1;
@@ -2899,13 +2899,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:279>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:279>
 		__this->___m_ToggleMousePressed = (bool)0;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:281>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:281>
 		bool L_3 = __this->___m_ToggleMousePressed;
 		if (L_3)
 		{
@@ -2913,21 +2913,21 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:282>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:282>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveGeneralInputPanels_mEF545232F561C5B6701CA7AB0753F6F5152FCE19(__this, NULL);
 	}
 
 IL_0027:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:284>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:284>
 		XRInteractionSimulatorInputFeedbackUI_HandleKeyboardInputFeedback_m2FAEE6E2F8CF7830228190A96DEB9BF0788F6A3F(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:285>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:285>
 		XRInteractionSimulatorInputFeedbackUI_HandleMouseInputFeedback_m2D95F955E498206484DEBD770194E5B62C350128(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:286>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:286>
 		return;
 	}
 }
-// Method Definition Index: 86614
+// Method Definition Index: 86822
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleKeyboardInputFeedback_m2FAEE6E2F8CF7830228190A96DEB9BF0788F6A3F (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2943,7 +2943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:290>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:290>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_1;
@@ -2957,9 +2957,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:292>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:292>
 		__this->___m_ToggleMousePressed = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:294>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:294>
 		float L_3 = V_0;
 		if ((!(((float)L_3) >= ((float)(0.0f)))))
 		{
@@ -2967,7 +2967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:295>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:295>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_TranslateRightPanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
@@ -2976,7 +2976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 
 IL_0031:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:297>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:297>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_TranslateLeftPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
@@ -2984,7 +2984,7 @@ IL_0031:
 
 IL_003d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:300>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:300>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_6 = __this->___m_Simulator;
 		NullCheck(L_6);
 		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_7;
@@ -2998,9 +2998,9 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:302>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:302>
 		__this->___m_ToggleMousePressed = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:304>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:304>
 		float L_9 = V_1;
 		if ((!(((float)L_9) >= ((float)(0.0f)))))
 		{
@@ -3008,7 +3008,7 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:305>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:305>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___m_TranslateUpPanel;
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
@@ -3017,7 +3017,7 @@ IL_003d:
 
 IL_006e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:307>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:307>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_TranslateDownPanel;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
@@ -3025,7 +3025,7 @@ IL_006e:
 
 IL_007a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:310>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:310>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_12 = __this->___m_Simulator;
 		NullCheck(L_12);
 		XRInputValueReader_1_t7482F990F323B5D373DF221174629A7C3EB97BC5* L_13;
@@ -3039,9 +3039,9 @@ IL_007a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:312>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:312>
 		__this->___m_ToggleMousePressed = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:314>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:314>
 		float L_15 = V_2;
 		if ((!(((float)L_15) >= ((float)(0.0f)))))
 		{
@@ -3049,7 +3049,7 @@ IL_007a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:315>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:315>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___m_TranslateForwardPanel;
 		NullCheck(L_16);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)1, NULL);
@@ -3058,7 +3058,7 @@ IL_007a:
 
 IL_00ab:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:317>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:317>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___m_TranslateBackwardPanel;
 		NullCheck(L_17);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)1, NULL);
@@ -3066,7 +3066,7 @@ IL_00ab:
 
 IL_00b7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:320>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:320>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_18 = __this->___m_Simulator;
 		NullCheck(L_18);
 		XRInputValueReader_1_t6B311BAB920F92BC851C1CD180A8555021DE8FC0* L_19;
@@ -3080,9 +3080,9 @@ IL_00b7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:322>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:322>
 		__this->___m_ToggleMousePressed = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:324>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:324>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21 = V_3;
 		float L_22 = L_21.___x;
 		if ((!(((float)L_22) > ((float)(0.0f)))))
@@ -3091,7 +3091,7 @@ IL_00b7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:325>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:325>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___m_RotateRightPanel;
 		NullCheck(L_23);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)1, NULL);
@@ -3100,7 +3100,7 @@ IL_00b7:
 
 IL_00ed:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:326>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:326>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24 = V_3;
 		float L_25 = L_24.___x;
 		if ((!(((float)L_25) < ((float)(0.0f)))))
@@ -3109,7 +3109,7 @@ IL_00ed:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:327>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:327>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___m_RotateLeftPanel;
 		NullCheck(L_26);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)1, NULL);
@@ -3117,7 +3117,7 @@ IL_00ed:
 
 IL_0106:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:329>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:329>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27 = V_3;
 		float L_28 = L_27.___y;
 		if ((!(((float)L_28) > ((float)(0.0f)))))
@@ -3126,7 +3126,7 @@ IL_0106:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:330>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:330>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___m_RotateUpPanel;
 		NullCheck(L_29);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_29, (bool)1, NULL);
@@ -3135,7 +3135,7 @@ IL_0106:
 
 IL_0120:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:331>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:331>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30 = V_3;
 		float L_31 = L_30.___y;
 		if ((!(((float)L_31) < ((float)(0.0f)))))
@@ -3144,7 +3144,7 @@ IL_0120:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:332>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:332>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___m_RotateDownPanel;
 		NullCheck(L_32);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_32, (bool)1, NULL);
@@ -3152,11 +3152,11 @@ IL_0120:
 
 IL_0139:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:334>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:334>
 		return;
 	}
 }
-// Method Definition Index: 86615
+// Method Definition Index: 86823
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleMouseInputFeedback_m2D95F955E498206484DEBD770194E5B62C350128 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3170,7 +3170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:338>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:338>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1;
@@ -3197,33 +3197,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:340>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:340>
 		__this->___m_ToggleMousePressed = (bool)1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:342>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:342>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_TranslateBackwardPanel;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:343>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:343>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___m_TranslateForwardPanel;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:344>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:344>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___m_TranslateUpPanel;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:345>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:345>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___m_TranslateDownPanel;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:346>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:346>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___m_TranslateRightPanel;
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:347>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:347>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_TranslateLeftPanel;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:349>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:349>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12 = V_0;
 		float L_13 = L_12.___x;
 		if ((!(((float)L_13) > ((float)(0.0f)))))
@@ -3232,11 +3232,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:351>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:351>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___m_RotateLeftPanel;
 		NullCheck(L_14);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:352>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:352>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___m_RotateRightPanel;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
@@ -3245,7 +3245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 
 IL_00a2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:354>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:354>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16 = V_0;
 		float L_17 = L_16.___x;
 		if ((!(((float)L_17) < ((float)(0.0f)))))
@@ -3254,11 +3254,11 @@ IL_00a2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:356>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:356>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___m_RotateRightPanel;
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:357>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:357>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_RotateLeftPanel;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
@@ -3266,7 +3266,7 @@ IL_00a2:
 
 IL_00c7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:360>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:360>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_20 = V_0;
 		float L_21 = L_20.___y;
 		if ((!(((float)L_21) > ((float)(0.0f)))))
@@ -3275,11 +3275,11 @@ IL_00c7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:362>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:362>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___m_RotateDownPanel;
 		NullCheck(L_22);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:363>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:363>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___m_RotateUpPanel;
 		NullCheck(L_23);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)1, NULL);
@@ -3288,7 +3288,7 @@ IL_00c7:
 
 IL_00ee:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:365>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:365>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24 = V_0;
 		float L_25 = L_24.___y;
 		if ((!(((float)L_25) < ((float)(0.0f)))))
@@ -3297,11 +3297,11 @@ IL_00ee:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:367>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:367>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___m_RotateUpPanel;
 		NullCheck(L_26);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:368>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:368>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___m_RotateDownPanel;
 		NullCheck(L_27);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)1, NULL);
@@ -3309,7 +3309,7 @@ IL_00ee:
 
 IL_0113:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:372>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:372>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_28 = __this->___m_Simulator;
 		NullCheck(L_28);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_29;
@@ -3336,25 +3336,25 @@ IL_0113:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:374>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:374>
 		__this->___m_ToggleMousePressed = (bool)1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:376>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:376>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = __this->___m_RotateLeftPanel;
 		NullCheck(L_34);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_34, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:377>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:377>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = __this->___m_RotateRightPanel;
 		NullCheck(L_35);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_35, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:378>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:378>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = __this->___m_RotateDownPanel;
 		NullCheck(L_36);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:379>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:379>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = __this->___m_RotateUpPanel;
 		NullCheck(L_37);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_37, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:381>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:381>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_38 = V_1;
 		float L_39 = L_38.___y;
 		if ((!(((float)L_39) >= ((float)(0.0f)))))
@@ -3363,11 +3363,11 @@ IL_0113:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:383>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:383>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = __this->___m_TranslateBackwardPanel;
 		NullCheck(L_40);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_40, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:384>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:384>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41 = __this->___m_TranslateForwardPanel;
 		NullCheck(L_41);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_41, (bool)1, NULL);
@@ -3376,11 +3376,11 @@ IL_0113:
 
 IL_0199:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:388>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:388>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = __this->___m_TranslateForwardPanel;
 		NullCheck(L_42);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_42, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:389>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:389>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43 = __this->___m_TranslateBackwardPanel;
 		NullCheck(L_43);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_43, (bool)1, NULL);
@@ -3388,15 +3388,15 @@ IL_0199:
 
 IL_01b1:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:392>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:392>
 		return;
 	}
 }
-// Method Definition Index: 86616
+// Method Definition Index: 86824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleActiveDeviceModePanels_m9F8C60FC5E7D7D3FB3A53DC713698B455CF6ED5C (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:396>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:396>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		bool L_1;
@@ -3419,7 +3419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:398>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:398>
 		int32_t L_4 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_4) == ((uint32_t)6))))
 		{
@@ -3427,26 +3427,26 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:399>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:399>
 		return;
 	}
 
 IL_0024:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:401>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:401>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:402>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:402>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_HMDPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:403>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:403>
 		__this->___m_ActiveDeviceMode = 6;
 		return;
 	}
 
 IL_003e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:405>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:405>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_6 = __this->___m_Simulator;
 		NullCheck(L_6);
 		bool L_7;
@@ -3467,7 +3467,7 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:407>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:407>
 		int32_t L_10 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_10) == ((uint32_t)2))))
 		{
@@ -3475,26 +3475,26 @@ IL_003e:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:408>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:408>
 		return;
 	}
 
 IL_0062:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:410>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:410>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:411>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:411>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_BothControllersPanel;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:412>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:412>
 		__this->___m_ActiveDeviceMode = 2;
 		return;
 	}
 
 IL_007c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:414>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:414>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_12 = __this->___m_Simulator;
 		NullCheck(L_12);
 		bool L_13;
@@ -3505,7 +3505,7 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:416>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:416>
 		int32_t L_14 = __this->___m_ActiveDeviceMode;
 		if (L_14)
 		{
@@ -3513,26 +3513,26 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:417>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:417>
 		return;
 	}
 
 IL_0092:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:419>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:419>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:420>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:420>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___m_LeftControllerPanel;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:421>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:421>
 		__this->___m_ActiveDeviceMode = 0;
 		return;
 	}
 
 IL_00ac:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:423>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:423>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_16 = __this->___m_Simulator;
 		NullCheck(L_16);
 		bool L_17;
@@ -3543,7 +3543,7 @@ IL_00ac:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:425>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:425>
 		int32_t L_18 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_18) == ((uint32_t)1))))
 		{
@@ -3551,26 +3551,26 @@ IL_00ac:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:426>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:426>
 		return;
 	}
 
 IL_00c3:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:428>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:428>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:429>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:429>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_RightControllerPanel;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:430>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:430>
 		__this->___m_ActiveDeviceMode = 1;
 		return;
 	}
 
 IL_00dd:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:432>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:432>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_20 = __this->___m_Simulator;
 		NullCheck(L_20);
 		bool L_21;
@@ -3591,7 +3591,7 @@ IL_00dd:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:434>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:434>
 		int32_t L_24 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_24) == ((uint32_t)5))))
 		{
@@ -3599,26 +3599,26 @@ IL_00dd:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:435>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:435>
 		return;
 	}
 
 IL_0101:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:437>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:437>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:438>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:438>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_BothHandsPanel;
 		NullCheck(L_25);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:439>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:439>
 		__this->___m_ActiveDeviceMode = 5;
 		return;
 	}
 
 IL_011b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:441>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:441>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_26 = __this->___m_Simulator;
 		NullCheck(L_26);
 		bool L_27;
@@ -3629,7 +3629,7 @@ IL_011b:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:443>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:443>
 		int32_t L_28 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_28) == ((uint32_t)3))))
 		{
@@ -3637,26 +3637,26 @@ IL_011b:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:444>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:444>
 		return;
 	}
 
 IL_0132:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:446>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:446>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:447>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:447>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___m_LeftHandPanel;
 		NullCheck(L_29);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_29, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:448>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:448>
 		__this->___m_ActiveDeviceMode = 3;
 		return;
 	}
 
 IL_014c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:450>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:450>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_30 = __this->___m_Simulator;
 		NullCheck(L_30);
 		bool L_31;
@@ -3667,7 +3667,7 @@ IL_014c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:452>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:452>
 		int32_t L_32 = __this->___m_ActiveDeviceMode;
 		if ((!(((uint32_t)L_32) == ((uint32_t)4))))
 		{
@@ -3675,29 +3675,29 @@ IL_014c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:453>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:453>
 		return;
 	}
 
 IL_0163:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:455>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:455>
 		XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:456>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:456>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = __this->___m_RightHandPanel;
 		NullCheck(L_33);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_33, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:457>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:457>
 		__this->___m_ActiveDeviceMode = 4;
 	}
 
 IL_017c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:459>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:459>
 		return;
 	}
 }
-// Method Definition Index: 86617
+// Method Definition Index: 86825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleActiveInputModePanels_mC03B16F87F58AAF5AAA15E8C125120130448F135 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3707,7 +3707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:463>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:463>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		bool L_1;
@@ -3730,21 +3730,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:465>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:465>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_ControllerInputRow;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:466>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:466>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_HandInputRow;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:467>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:467>
 		return;
 	}
 
 IL_0033:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:470>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:470>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_ControllerInputRow;
 		NullCheck(L_6);
 		bool L_7;
@@ -3765,7 +3765,7 @@ IL_0033:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:471>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:471>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___m_ControllerInputRow;
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
@@ -3773,7 +3773,7 @@ IL_0033:
 
 IL_0059:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:473>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:473>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_HandInputRow;
 		NullCheck(L_11);
 		bool L_12;
@@ -3794,7 +3794,7 @@ IL_0059:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:474>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:474>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___m_HandInputRow;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
@@ -3802,7 +3802,7 @@ IL_0059:
 
 IL_0080:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:476>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:476>
 		bool L_16 = __this->___m_IsPerformingInput;
 		if (L_16)
 		{
@@ -3810,7 +3810,7 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:478>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:478>
 		int32_t L_17 = __this->___m_PreviousDeviceMode;
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_18 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_18);
@@ -3822,15 +3822,15 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:480>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:480>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_ControllerInputRow;
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:481>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:481>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___m_HandInputRow;
 		NullCheck(L_21);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:483>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:483>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_22 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_22);
 		int32_t L_23;
@@ -3841,11 +3841,11 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:485>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:485>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = __this->___m_ControllerInputRow;
 		NullCheck(L_24);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_24, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:486>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:486>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveControllerInputMode_m44F9F81382A250B7E484E4B3DEFA3A198D0F30CE(__this, L_25, NULL);
@@ -3854,7 +3854,7 @@ IL_0080:
 
 IL_00dc:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:488>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:488>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_26 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_26);
 		int32_t L_27;
@@ -3865,11 +3865,11 @@ IL_00dc:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:490>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:490>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___m_HandInputRow;
 		NullCheck(L_28);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_28, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:491>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:491>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveHandInputMode_mD49B014E60AAA0AD14E299E3C170E61DF7E82858(__this, L_29, NULL);
@@ -3877,7 +3877,7 @@ IL_00dc:
 
 IL_0101:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:494>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:494>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_30 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_30);
 		int32_t L_31;
@@ -3888,7 +3888,7 @@ IL_0101:
 
 IL_0114:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:496>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:496>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_32 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_32);
 		int32_t L_33;
@@ -3910,7 +3910,7 @@ IL_0114:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:498>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:498>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_37 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveControllerInputMode_m44F9F81382A250B7E484E4B3DEFA3A198D0F30CE(__this, L_37, NULL);
@@ -3919,7 +3919,7 @@ IL_0114:
 
 IL_0141:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:500>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:500>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_38 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_38);
 		int32_t L_39;
@@ -3941,7 +3941,7 @@ IL_0141:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:502>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:502>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_43 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveHandInputMode_mD49B014E60AAA0AD14E299E3C170E61DF7E82858(__this, L_43, NULL);
@@ -3949,7 +3949,7 @@ IL_0141:
 
 IL_016d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:506>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:506>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_44 = __this->___m_Simulator;
 		NullCheck(L_44);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_45;
@@ -3963,10 +3963,10 @@ IL_016d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:508>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:508>
 		bool L_47 = __this->___m_IsPerformingInput;
 		__this->___m_IsPerformingInput = (bool)((((int32_t)L_47) == ((int32_t)0))? 1 : 0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:510>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:510>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_48 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_48);
 		int32_t L_49;
@@ -3977,7 +3977,7 @@ IL_016d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:512>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:512>
 		bool L_50 = __this->___m_IsPerformingInput;
 		if (!L_50)
 		{
@@ -3985,7 +3985,7 @@ IL_016d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:513>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:513>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_51 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_EnabledColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveControllerInputMode_m44F9F81382A250B7E484E4B3DEFA3A198D0F30CE(__this, L_51, NULL);
@@ -3994,7 +3994,7 @@ IL_016d:
 
 IL_01b0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:515>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:515>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_52 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveControllerInputMode_m44F9F81382A250B7E484E4B3DEFA3A198D0F30CE(__this, L_52, NULL);
@@ -4003,7 +4003,7 @@ IL_01b0:
 
 IL_01bd:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:517>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:517>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_53 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_53);
 		int32_t L_54;
@@ -4014,7 +4014,7 @@ IL_01bd:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:519>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:519>
 		bool L_55 = __this->___m_IsPerformingInput;
 		if (!L_55)
 		{
@@ -4022,7 +4022,7 @@ IL_01bd:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:520>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:520>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_56 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_EnabledColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveHandInputMode_mD49B014E60AAA0AD14E299E3C170E61DF7E82858(__this, L_56, NULL);
@@ -4031,7 +4031,7 @@ IL_01bd:
 
 IL_01e0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:522>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:522>
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_57 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor;
 		XRInteractionSimulatorInputFeedbackUI_HighlightActiveHandInputMode_mD49B014E60AAA0AD14E299E3C170E61DF7E82858(__this, L_57, NULL);
@@ -4039,7 +4039,7 @@ IL_01e0:
 
 IL_01eb:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:526>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:526>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_58 = __this->___m_Simulator;
 		NullCheck(L_58);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_59;
@@ -4053,21 +4053,21 @@ IL_01eb:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:528>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:528>
 		__this->___m_IsPerformingInput = (bool)0;
 	}
 
 IL_0204:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:530>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:530>
 		return;
 	}
 }
-// Method Definition Index: 86618
+// Method Definition Index: 86826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleDeviceHotkeyPanels_mA749DE2F71DFF96621590DBB8874EE6C82C05C90 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:534>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:534>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_1;
@@ -4081,13 +4081,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:536>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:536>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_3 = __this->___m_Simulator;
 		NullCheck(L_3);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_4;
 		L_4 = XRInteractionSimulator_get_gripInput_m0B61567D62CBAD704CF6294C5532DE53D4B8370F_inline(L_3, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_4, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:537>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:537>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
@@ -4096,7 +4096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 
 IL_0032:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:539>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:539>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_6 = __this->___m_Simulator;
 		NullCheck(L_6);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_7;
@@ -4110,7 +4110,7 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:541>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:541>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
@@ -4118,7 +4118,7 @@ IL_0032:
 
 IL_0050:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:544>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:544>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_10 = __this->___m_Simulator;
 		NullCheck(L_10);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_11;
@@ -4132,13 +4132,13 @@ IL_0050:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:546>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:546>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_13 = __this->___m_Simulator;
 		NullCheck(L_13);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_14;
 		L_14 = XRInteractionSimulator_get_triggerInput_mDDD941B1135E1617AF9FDF4123C3122F4DF4EC61_inline(L_13, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_14, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:547>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:547>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
@@ -4147,7 +4147,7 @@ IL_0050:
 
 IL_0082:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:549>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:549>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_16 = __this->___m_Simulator;
 		NullCheck(L_16);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_17;
@@ -4161,7 +4161,7 @@ IL_0082:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:551>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:551>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
@@ -4169,7 +4169,7 @@ IL_0082:
 
 IL_00a0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:554>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:554>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_20 = __this->___m_Simulator;
 		NullCheck(L_20);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_21;
@@ -4183,13 +4183,13 @@ IL_00a0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:556>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:556>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_23 = __this->___m_Simulator;
 		NullCheck(L_23);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_24;
 		L_24 = XRInteractionSimulator_get_primaryButtonInput_m888BC37EE782D5B81C4418B0A91C2CA46676CC1C_inline(L_23, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_24, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:557>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:557>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_25);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)1, NULL);
@@ -4198,7 +4198,7 @@ IL_00a0:
 
 IL_00d2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:559>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:559>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_26 = __this->___m_Simulator;
 		NullCheck(L_26);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_27;
@@ -4212,7 +4212,7 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:561>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:561>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_29);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_29, (bool)0, NULL);
@@ -4220,7 +4220,7 @@ IL_00d2:
 
 IL_00f0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:564>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:564>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_30 = __this->___m_Simulator;
 		NullCheck(L_30);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_31;
@@ -4234,13 +4234,13 @@ IL_00f0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:566>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:566>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_33 = __this->___m_Simulator;
 		NullCheck(L_33);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_34;
 		L_34 = XRInteractionSimulator_get_secondaryButtonInput_mEDE5093D0E853559F4C40472AEB4B9D55B8E910C_inline(L_33, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_34, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:567>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:567>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_35);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_35, (bool)1, NULL);
@@ -4249,7 +4249,7 @@ IL_00f0:
 
 IL_0122:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:569>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:569>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_36 = __this->___m_Simulator;
 		NullCheck(L_36);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_37;
@@ -4263,7 +4263,7 @@ IL_0122:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:571>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:571>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_39);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_39, (bool)0, NULL);
@@ -4271,7 +4271,7 @@ IL_0122:
 
 IL_0140:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:574>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:574>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_40 = __this->___m_Simulator;
 		NullCheck(L_40);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_41;
@@ -4285,13 +4285,13 @@ IL_0140:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:576>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:576>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_43 = __this->___m_Simulator;
 		NullCheck(L_43);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_44;
 		L_44 = XRInteractionSimulator_get_menuInput_m84C9A16C0D5A7BCD241B8F27E93DB501C9462110_inline(L_43, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_44, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:577>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:577>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_45 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_45);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_45, (bool)1, NULL);
@@ -4300,7 +4300,7 @@ IL_0140:
 
 IL_0172:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:579>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:579>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_46 = __this->___m_Simulator;
 		NullCheck(L_46);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_47;
@@ -4314,7 +4314,7 @@ IL_0172:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:581>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:581>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_49 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_49);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_49, (bool)0, NULL);
@@ -4322,7 +4322,7 @@ IL_0172:
 
 IL_0190:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:584>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:584>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_50 = __this->___m_Simulator;
 		NullCheck(L_50);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_51;
@@ -4336,13 +4336,13 @@ IL_0190:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:586>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:586>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_53 = __this->___m_Simulator;
 		NullCheck(L_53);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_54;
 		L_54 = XRInteractionSimulator_get_primary2DAxisClickInput_mFD83EAEDE0665CBDA9C5AA082102845E99D0A82F_inline(L_53, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_54, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:587>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:587>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_55 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_55);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_55, (bool)1, NULL);
@@ -4351,7 +4351,7 @@ IL_0190:
 
 IL_01c2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:589>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:589>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_56 = __this->___m_Simulator;
 		NullCheck(L_56);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_57;
@@ -4365,7 +4365,7 @@ IL_01c2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:591>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:591>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_59 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_59);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_59, (bool)0, NULL);
@@ -4373,7 +4373,7 @@ IL_01c2:
 
 IL_01e0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:594>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:594>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_60 = __this->___m_Simulator;
 		NullCheck(L_60);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_61;
@@ -4387,13 +4387,13 @@ IL_01e0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:596>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:596>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_63 = __this->___m_Simulator;
 		NullCheck(L_63);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_64;
 		L_64 = XRInteractionSimulator_get_secondary2DAxisClickInput_m524E294AB96C3A999582475309DF62B2799CD64B_inline(L_63, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_64, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:597>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:597>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_65 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_65);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_65, (bool)1, NULL);
@@ -4402,7 +4402,7 @@ IL_01e0:
 
 IL_0212:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:599>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:599>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_66 = __this->___m_Simulator;
 		NullCheck(L_66);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_67;
@@ -4416,7 +4416,7 @@ IL_0212:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:601>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:601>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_69 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_69);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_69, (bool)0, NULL);
@@ -4424,7 +4424,7 @@ IL_0212:
 
 IL_0230:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:604>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:604>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_70 = __this->___m_Simulator;
 		NullCheck(L_70);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_71;
@@ -4438,13 +4438,13 @@ IL_0230:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:606>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:606>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_73 = __this->___m_Simulator;
 		NullCheck(L_73);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_74;
 		L_74 = XRInteractionSimulator_get_primary2DAxisTouchInput_m75D8BAD5A09A5C7B1BDD1040E32A8CD6B6D5DA4A_inline(L_73, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_74, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:607>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:607>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_75 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_75);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_75, (bool)1, NULL);
@@ -4453,7 +4453,7 @@ IL_0230:
 
 IL_0262:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:609>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:609>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_76 = __this->___m_Simulator;
 		NullCheck(L_76);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_77;
@@ -4467,7 +4467,7 @@ IL_0262:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:611>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:611>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_79 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_79);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_79, (bool)0, NULL);
@@ -4475,7 +4475,7 @@ IL_0262:
 
 IL_0280:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:614>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:614>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_80 = __this->___m_Simulator;
 		NullCheck(L_80);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_81;
@@ -4489,13 +4489,13 @@ IL_0280:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:616>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:616>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_83 = __this->___m_Simulator;
 		NullCheck(L_83);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_84;
 		L_84 = XRInteractionSimulator_get_secondary2DAxisTouchInput_m510BA4AD356D1F4B1CCA38FE8CD01AD0CDB67E93_inline(L_83, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_84, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:617>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:617>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_85 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_85);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_85, (bool)1, NULL);
@@ -4504,7 +4504,7 @@ IL_0280:
 
 IL_02b2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:619>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:619>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_86 = __this->___m_Simulator;
 		NullCheck(L_86);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_87;
@@ -4518,7 +4518,7 @@ IL_02b2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:621>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:621>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_89 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_89);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_89, (bool)0, NULL);
@@ -4526,7 +4526,7 @@ IL_02b2:
 
 IL_02d0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:624>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:624>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_90 = __this->___m_Simulator;
 		NullCheck(L_90);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_91;
@@ -4540,13 +4540,13 @@ IL_02d0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:626>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:626>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_93 = __this->___m_Simulator;
 		NullCheck(L_93);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_94;
 		L_94 = XRInteractionSimulator_get_primaryTouchInput_m4A2DB06C2088902E437C0DBCE0C04A9C578514F9_inline(L_93, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_94, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:627>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:627>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_95 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_95);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_95, (bool)1, NULL);
@@ -4555,7 +4555,7 @@ IL_02d0:
 
 IL_0302:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:629>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:629>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_96 = __this->___m_Simulator;
 		NullCheck(L_96);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_97;
@@ -4569,7 +4569,7 @@ IL_0302:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:631>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:631>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_99 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_99);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_99, (bool)0, NULL);
@@ -4577,7 +4577,7 @@ IL_0302:
 
 IL_0320:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:634>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:634>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_100 = __this->___m_Simulator;
 		NullCheck(L_100);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_101;
@@ -4591,13 +4591,13 @@ IL_0320:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:636>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:636>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_103 = __this->___m_Simulator;
 		NullCheck(L_103);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_104;
 		L_104 = XRInteractionSimulator_get_secondaryTouchInput_m98FBE1F8591F31F54F616ED5BD6D8FC7D9FDB4A7_inline(L_103, NULL);
 		XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_104, 0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:637>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:637>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_105 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_105);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_105, (bool)1, NULL);
@@ -4606,7 +4606,7 @@ IL_0320:
 
 IL_0351:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:639>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:639>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_106 = __this->___m_Simulator;
 		NullCheck(L_106);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_107;
@@ -4620,7 +4620,7 @@ IL_0351:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:641>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:641>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_109 = __this->___m_ControllerHotkeyPanel;
 		NullCheck(L_109);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_109, (bool)0, NULL);
@@ -4628,11 +4628,11 @@ IL_0351:
 
 IL_036f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:643>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:643>
 		return;
 	}
 }
-// Method Definition Index: 86619
+// Method Definition Index: 86827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HandleHandHotkeyPanels_m43C1C9B3EF2496EC92AF2E35B884CF8F3D6D2051 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4648,7 +4648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ha
 	memset((&V_0), 0, sizeof(V_0));
 	SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* V_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_0 = __this->___m_HandExpressionManager;
 		NullCheck(L_0);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_1;
@@ -4676,11 +4676,11 @@ FINALLY_0067:
 
 IL_0013_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_3;
 				L_3 = Enumerator_get_Current_m4A65B43BF22E381A31A06C1AA297355AFC0E45E3_inline((&V_0), Enumerator_get_Current_m4A65B43BF22E381A31A06C1AA297355AFC0E45E3_RuntimeMethod_var);
 				V_1 = L_3;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:649>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:649>
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_4 = V_1;
 				NullCheck(L_4);
 				XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_5;
@@ -4694,13 +4694,13 @@ IL_0013_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:651>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:651>
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_7 = V_1;
 				NullCheck(L_7);
 				XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_8;
 				L_8 = SimulatedHandExpression_get_toggleInput_m16D8F8CDD24C1B3BE3B3FA26297FD684417B3F0C_inline(L_7, NULL);
 				XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614(__this, L_8, 1, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:652>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:652>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___m_HandHotkeyPanel;
 				NullCheck(L_9);
 				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
@@ -4709,7 +4709,7 @@ IL_0013_1:
 
 IL_0043_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:654>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:654>
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_10 = V_1;
 				NullCheck(L_10);
 				XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_11;
@@ -4723,7 +4723,7 @@ IL_0043_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:656>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:656>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___m_HandHotkeyPanel;
 				NullCheck(L_13);
 				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)0, NULL);
@@ -4731,7 +4731,7 @@ IL_0043_1:
 
 IL_005c_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:647>
 				bool L_14;
 				L_14 = Enumerator_MoveNext_m07FA9DF005D9AB0160CD2DC95CD471A0B00148C3((&V_0), Enumerator_MoveNext_m07FA9DF005D9AB0160CD2DC95CD471A0B00148C3_RuntimeMethod_var);
 				if (L_14)
@@ -4751,11 +4751,11 @@ IL_005c_1:
 
 IL_0075:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:659>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:659>
 		return;
 	}
 }
-// Method Definition Index: 86620
+// Method Definition Index: 86828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ApplyHotkeyText_mC00CCC6F0E86B4FCB97D706D32AB0CC512659614 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ___0_inputReader, int32_t ___1_mode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4774,7 +4774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ap
 	String_t* G_B12_0 = NULL;
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* G_B12_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:663>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:663>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = ___0_inputReader;
 		NullCheck(L_0);
 		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1;
@@ -4785,7 +4785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ap
 		String_t* L_3;
 		L_3 = InputActionRebindingExtensions_GetBindingDisplayString_m316A3C960D797985D089B8BB435E668ACAA4DC2F(L_2, 0, 0, NULL);
 		V_0 = L_3;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:665>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:665>
 		int32_t L_4 = ___1_mode;
 		if (L_4)
 		{
@@ -4793,7 +4793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ap
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:667>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:667>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_5 = __this->___m_Simulator;
 		NullCheck(L_5);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_6;
@@ -4807,7 +4807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ap
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:668>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:668>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_8 = __this->___m_ControllerHotkeyIcon;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_9 = __this->___m_LeftControllerSprite;
 		NullCheck(L_8);
@@ -4817,7 +4817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ap
 
 IL_003b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:670>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:670>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_10 = __this->___m_ControllerHotkeyIcon;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_11 = __this->___m_RightControllerSprite;
 		NullCheck(L_10);
@@ -4826,7 +4826,7 @@ IL_003b:
 
 IL_004c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:672>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:672>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_12 = __this->___m_ControllerHotkeyText;
 		String_t* L_13 = V_0;
 		String_t* L_14 = L_13;
@@ -4853,7 +4853,7 @@ IL_005c:
 
 IL_0062:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:674>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:674>
 		int32_t L_15 = ___1_mode;
 		if ((!(((uint32_t)L_15) == ((uint32_t)1))))
 		{
@@ -4861,7 +4861,7 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:676>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:676>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_16 = __this->___m_Simulator;
 		NullCheck(L_16);
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_17;
@@ -4875,7 +4875,7 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:677>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:677>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_19 = __this->___m_HandHotkeyIcon;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_20 = __this->___m_LeftHandSprite;
 		NullCheck(L_19);
@@ -4885,7 +4885,7 @@ IL_0062:
 
 IL_008b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:679>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:679>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21 = __this->___m_HandHotkeyIcon;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_22 = __this->___m_RightHandSprite;
 		NullCheck(L_21);
@@ -4894,7 +4894,7 @@ IL_008b:
 
 IL_009c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:681>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:681>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_23 = __this->___m_HandHotkeyText;
 		String_t* L_24 = V_0;
 		String_t* L_25 = L_24;
@@ -4920,11 +4920,11 @@ IL_00ac:
 
 IL_00b1:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:683>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:683>
 		return;
 	}
 }
-// Method Definition Index: 86621
+// Method Definition Index: 86829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ActivateControllerPanels_m5470C95D664B17809CD4FD4D7DF784B14DC6C07E (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4944,14 +4944,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ac
 	String_t* V_1 = NULL;
 	int32_t V_2 = 0;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
 		V_0 = 0;
 		goto IL_008d;
 	}
 
 IL_0007:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:689>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:689>
 		Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1* L_0 = __this->___m_ControllerInputPanels;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_1 = __this->___m_Simulator;
 		NullCheck(L_1);
@@ -4970,7 +4970,7 @@ IL_0007:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:691>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:691>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_6 = __this->___m_Simulator;
 		NullCheck(L_6);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_7;
@@ -4984,7 +4984,7 @@ IL_0007:
 		String_t* L_11;
 		L_11 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_10), NULL);
 		V_1 = L_11;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:692>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:692>
 		String_t* L_12 = V_1;
 		String_t* L_13;
 		L_13 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralBB98523776617D55526B05EA8A133E8678AAB489, L_12, _stringLiteralAF9DA912DC3C077F0657D5120AC08832986289D1, NULL);
@@ -4994,7 +4994,7 @@ IL_0007:
 
 IL_005b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:695>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:695>
 		Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1* L_14 = __this->___m_ControllerInputPanels;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
@@ -5007,25 +5007,25 @@ IL_005b:
 		NullCheck(L_14);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
 		L_19 = Dictionary_2_get_Item_m6B4B9792BC5ACD5D9587DEC6B69EABE2FB668E4B(L_14, L_18, Dictionary_2_get_Item_m6B4B9792BC5ACD5D9587DEC6B69EABE2FB668E4B_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:696>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:696>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = L_19;
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:697>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:697>
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
 		L_21 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_20, NULL);
 		int32_t L_22 = V_0;
 		NullCheck(L_21);
 		Transform_SetSiblingIndex_m8A3B81F08B93991C05BFA89ADA2146836C4FC4B2(L_21, L_22, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
 		int32_t L_23 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_23, 1));
 	}
 
 IL_008d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:687>
 		int32_t L_24 = V_0;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_25 = __this->___m_Simulator;
 		NullCheck(L_25);
@@ -5040,11 +5040,11 @@ IL_008d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:699>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:699>
 		return;
 	}
 }
-// Method Definition Index: 86622
+// Method Definition Index: 86830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ActivateHandPanels_mEE962ACC10B840E1F0C5250870B86EE6DA18C5E9 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5062,14 +5062,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Ac
 	int32_t V_0 = 0;
 	String_t* V_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
 		V_0 = 0;
 		goto IL_0079;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:705>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:705>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_0 = __this->___m_HandExpressionManager;
 		NullCheck(L_0);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_1;
@@ -5087,7 +5087,7 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:707>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:707>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_5 = __this->___m_HandExpressionManager;
 		NullCheck(L_5);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_6;
@@ -5100,7 +5100,7 @@ IL_0004:
 		String_t* L_9;
 		L_9 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_8, NULL);
 		V_1 = L_9;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:709>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:709>
 		Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_10 = __this->___m_HandExpressionPanels;
 		String_t* L_11 = V_1;
 		NullCheck(L_10);
@@ -5112,7 +5112,7 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:711>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:711>
 		String_t* L_13 = V_1;
 		String_t* L_14;
 		L_14 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralBB98523776617D55526B05EA8A133E8678AAB489, L_13, _stringLiteral7B259D4E1F882969C812706070AD1BE2C4E459E4, NULL);
@@ -5122,17 +5122,17 @@ IL_0004:
 
 IL_0057:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:714>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:714>
 		Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_15 = __this->___m_HandExpressionPanels;
 		String_t* L_16 = V_1;
 		NullCheck(L_15);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
 		L_17 = Dictionary_2_get_Item_m5A8F8BCAC50C5D5AB2722BBD41A340E4F6E47586(L_15, L_16, Dictionary_2_get_Item_m5A8F8BCAC50C5D5AB2722BBD41A340E4F6E47586_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:715>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:715>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = L_17;
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:716>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:716>
 		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_18, NULL);
@@ -5143,14 +5143,14 @@ IL_0057:
 
 IL_0075:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
 		int32_t L_21 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_21, 1));
 	}
 
 IL_0079:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:703>
 		int32_t L_22 = V_0;
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_23 = __this->___m_HandExpressionManager;
 		NullCheck(L_23);
@@ -5165,11 +5165,11 @@ IL_0079:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:719>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:719>
 		return;
 	}
 }
-// Method Definition Index: 86623
+// Method Definition Index: 86831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_InitializeUIDictionaries_m46351CBD9DC7494C9D4953676F654DBEC49C223F (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5196,20 +5196,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:723>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:724>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:725>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:726>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:727>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:728>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:729>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:730>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:731>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:732>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:733>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:734>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:735>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:736>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:723>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:724>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:725>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:726>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:727>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:728>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:729>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:730>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:731>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:732>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:733>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:734>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:735>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:736>
 		Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1* L_0 = (Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1*)il2cpp_codegen_object_new(Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m7133B945DB5B9ACBAD1E86254A93A822E2C66432(L_0, Dictionary_2__ctor_m7133B945DB5B9ACBAD1E86254A93A822E2C66432_RuntimeMethod_var);
 		Dictionary_2_tFD04A4218F0512A1E9CA34BADFF3A9EB998328A1* L_1 = L_0;
@@ -5258,20 +5258,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 		Dictionary_2_Add_m567754FA78B93567B86F0D1DA224968ED3118CA1(L_21, ((int32_t)11), L_22, Dictionary_2_Add_m567754FA78B93567B86F0D1DA224968ED3118CA1_RuntimeMethod_var);
 		__this->___m_ControllerInputPanels = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ControllerInputPanels), (void*)L_21);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:738>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:739>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:740>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:741>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:742>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:743>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:744>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:745>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:746>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:747>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:748>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:749>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:750>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:751>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:738>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:739>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:740>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:741>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:742>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:743>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:744>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:745>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:746>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:747>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:748>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:749>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:750>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:751>
 		Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924* L_23 = (Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924*)il2cpp_codegen_object_new(Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mEB408C1D9A7F1045E8BC2FA3C1B2DDA5A15FB5E9(L_23, Dictionary_2__ctor_mEB408C1D9A7F1045E8BC2FA3C1B2DDA5A15FB5E9_RuntimeMethod_var);
 		Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924* L_24 = L_23;
@@ -5320,15 +5320,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 		Dictionary_2_Add_m7DD16E93AFD7BC49F4D42A0117001A126AE17C43(L_44, ((int32_t)11), L_45, Dictionary_2_Add_m7DD16E93AFD7BC49F4D42A0117001A126AE17C43_RuntimeMethod_var);
 		__this->___m_ControllerInputBgs = L_44;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ControllerInputBgs), (void*)L_44);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:753>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:754>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:755>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:756>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:757>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:758>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:759>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:760>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:761>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:753>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:754>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:755>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:756>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:757>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:758>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:759>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:760>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:761>
 		Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_46 = (Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE*)il2cpp_codegen_object_new(Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m85AB837A51705B9DF96923F388345B9461B9882B(L_46, Dictionary_2__ctor_m85AB837A51705B9DF96923F388345B9461B9882B_RuntimeMethod_var);
 		Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_47 = L_46;
@@ -5357,15 +5357,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 		Dictionary_2_Add_mE5ED48EAB67073C645CD87B5E6ACA2E6BF7975AF(L_57, _stringLiteralEC74D85CC69F7521EAB11B127EDC39B9628CD501, L_58, Dictionary_2_Add_mE5ED48EAB67073C645CD87B5E6ACA2E6BF7975AF_RuntimeMethod_var);
 		__this->___m_HandExpressionPanels = L_57;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HandExpressionPanels), (void*)L_57);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:763>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:764>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:765>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:766>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:767>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:768>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:769>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:770>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:771>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:763>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:764>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:765>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:766>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:767>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:768>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:769>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:770>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:771>
 		Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_59 = (Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4*)il2cpp_codegen_object_new(Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mD044D66214789EE5BE5C3724C1B0DACABA31715E(L_59, Dictionary_2__ctor_mD044D66214789EE5BE5C3724C1B0DACABA31715E_RuntimeMethod_var);
 		Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_60 = L_59;
@@ -5394,13 +5394,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 		Dictionary_2_Add_mA7C7B4674FC5708B41BB6436F46D25D95613C029(L_70, _stringLiteralEC74D85CC69F7521EAB11B127EDC39B9628CD501, L_71, Dictionary_2_Add_mA7C7B4674FC5708B41BB6436F46D25D95613C029_RuntimeMethod_var);
 		__this->___m_HandExpressionBgs = L_70;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HandExpressionBgs), (void*)L_70);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:773>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:773>
 		XRInteractionSimulatorInputFeedbackUI_InitializeCustomHandExpressionPanels_mFD0E7902A649802FBBE47106F8BF1D279B43D794(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:774>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:774>
 		return;
 	}
 }
-// Method Definition Index: 86624
+// Method Definition Index: 86832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_InitializeCustomHandExpressionPanels_mFD0E7902A649802FBBE47106F8BF1D279B43D794 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5432,7 +5432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_In
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* V_3 = NULL;
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* V_4 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_0 = __this->___m_HandExpressionManager;
 		NullCheck(L_0);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_1;
@@ -5460,11 +5460,11 @@ FINALLY_011d:
 
 IL_0016_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_3;
 				L_3 = Enumerator_get_Current_m4A65B43BF22E381A31A06C1AA297355AFC0E45E3_inline((&V_0), Enumerator_get_Current_m4A65B43BF22E381A31A06C1AA297355AFC0E45E3_RuntimeMethod_var);
 				V_1 = L_3;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:780>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:780>
 				Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_4 = __this->___m_HandExpressionPanels;
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_5 = V_1;
 				NullCheck(L_5);
@@ -5489,7 +5489,7 @@ IL_0016_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:782>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:782>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___m_CustomPanel;
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_CustomPanel;
 				NullCheck(L_11);
@@ -5502,7 +5502,7 @@ IL_0016_1:
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14;
 				L_14 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_10, L_13, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
 				V_2 = L_14;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:783>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:783>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = V_2;
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_16 = V_1;
 				NullCheck(L_16);
@@ -5512,13 +5512,13 @@ IL_0016_1:
 				L_18 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_17, _stringLiteralA2474EB85E7EEF13C75BB9EE2A361443B79F99AC, NULL);
 				NullCheck(L_15);
 				Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_15, L_18, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:785>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:785>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_2;
 				NullCheck(L_19);
 				Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_20;
 				L_20 = GameObject_GetComponentInChildren_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_m768372D99692DF7D0AC1318EE6ABCCDB2A885C92(L_19, GameObject_GetComponentInChildren_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_m768372D99692DF7D0AC1318EE6ABCCDB2A885C92_RuntimeMethod_var);
 				V_3 = L_20;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:786>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:786>
 				Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21 = V_3;
 				bool L_22;
 				L_22 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -5528,7 +5528,7 @@ IL_0016_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:788>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:788>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 				GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_23, NULL);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24 = V_2;
@@ -5538,11 +5538,11 @@ IL_0016_1:
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26;
 				L_26 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_23, L_25, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:789>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:789>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = L_26;
 				NullCheck(L_27);
 				Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_27, _stringLiteralBA54E9D992F03ED29AD46BA3E6D5F9C1FC0A2AF6, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:790>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:790>
 				NullCheck(L_27);
 				Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_28;
 				L_28 = GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0(L_27, GameObject_AddComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mA327C9E1CA12BC531D587E7567F2067B96E6B6A0_RuntimeMethod_var);
@@ -5551,13 +5551,13 @@ IL_0016_1:
 
 IL_00a2_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:793>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:793>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = V_2;
 				NullCheck(L_29);
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_30;
 				L_30 = GameObject_GetComponentInChildren_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_m4883A479F4252D21D45D5AD3140CB42598C48A13(L_29, GameObject_GetComponentInChildren_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_m4883A479F4252D21D45D5AD3140CB42598C48A13_RuntimeMethod_var);
 				V_4 = L_30;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:794>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:794>
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_31 = V_4;
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				bool L_32;
@@ -5568,7 +5568,7 @@ IL_00a2_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:796>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:796>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 				GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_33, NULL);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = V_2;
@@ -5578,16 +5578,16 @@ IL_00a2_1:
 				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36;
 				L_36 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_33, L_35, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:797>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:797>
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = L_36;
 				NullCheck(L_37);
 				Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_37, _stringLiteral1A82671F2C34BEA09C35354DDB899812746CBCF9, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:798>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:798>
 				NullCheck(L_37);
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_38;
 				L_38 = GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9(L_37, GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9_RuntimeMethod_var);
 				V_4 = L_38;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:799>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:799>
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_39 = V_4;
 				NullCheck(L_39);
 				Text_set_fontStyle_m5ABEF66BFC88E7E0A950E2817E4978FF472F6C1D(L_39, 1, NULL);
@@ -5595,7 +5595,7 @@ IL_00a2_1:
 
 IL_00de_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:801>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:801>
 				Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_40 = V_4;
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_41 = V_1;
 				NullCheck(L_41);
@@ -5603,7 +5603,7 @@ IL_00de_1:
 				L_42 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_41, NULL);
 				NullCheck(L_40);
 				VirtualActionInvoker1< String_t* >::Invoke(75, L_40, L_42);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:803>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:803>
 				Dictionary_2_t0B15A60B00EC883D4249611C6C641C7BED5A71CE* L_43 = __this->___m_HandExpressionPanels;
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_44 = V_1;
 				NullCheck(L_44);
@@ -5612,7 +5612,7 @@ IL_00de_1:
 				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_46 = V_2;
 				NullCheck(L_43);
 				Dictionary_2_set_Item_mE6554D0475579971087BB5735888B85A85EDD562(L_43, L_45, L_46, Dictionary_2_set_Item_mE6554D0475579971087BB5735888B85A85EDD562_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:804>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:804>
 				Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_47 = __this->___m_HandExpressionBgs;
 				SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_48 = V_1;
 				NullCheck(L_48);
@@ -5625,7 +5625,7 @@ IL_00de_1:
 
 IL_010f_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:778>
 				bool L_51;
 				L_51 = Enumerator_MoveNext_m07FA9DF005D9AB0160CD2DC95CD471A0B00148C3((&V_0), Enumerator_MoveNext_m07FA9DF005D9AB0160CD2DC95CD471A0B00148C3_RuntimeMethod_var);
 				if (L_51)
@@ -5645,11 +5645,11 @@ IL_010f_1:
 
 IL_012b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:807>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:807>
 		return;
 	}
 }
-// Method Definition Index: 86625
+// Method Definition Index: 86833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HighlightActiveControllerInputMode_m44F9F81382A250B7E484E4B3DEFA3A198D0F30CE (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_highlightColor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5666,9 +5666,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 	String_t* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:811>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:811>
 		XRInteractionSimulatorInputFeedbackUI_ClearHighlightedControllerPanels_m7A9D219B476663D77DD7094B33671FBC07149B41(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:813>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:813>
 		Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924* L_0 = __this->___m_ControllerInputBgs;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_1 = __this->___m_Simulator;
 		NullCheck(L_1);
@@ -5683,7 +5683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:815>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:815>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_4 = __this->___m_Simulator;
 		NullCheck(L_4);
 		int32_t L_5;
@@ -5693,7 +5693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 		String_t* L_7;
 		L_7 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_6), NULL);
 		V_0 = L_7;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:816>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:816>
 		String_t* L_8 = V_0;
 		String_t* L_9;
 		L_9 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral7C33C5B9E69D83A52F4A12D9F90B169F959F12F3, L_8, _stringLiteral7A1DAE5E910FABCC1A858A6B94A58B139012C8B5, NULL);
@@ -5703,7 +5703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 
 IL_004e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:819>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:819>
 		Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924* L_10 = __this->___m_ControllerInputBgs;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_11 = __this->___m_Simulator;
 		NullCheck(L_11);
@@ -5715,17 +5715,17 @@ IL_004e:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_14 = ___0_highlightColor;
 		NullCheck(L_13);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_13, L_14);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:820>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:820>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
 		int32_t L_16;
 		L_16 = XRInteractionSimulator_get_controllerInputMode_mEF64338BB1B9A81284FFE653E8DF025A44711E85_inline(L_15, NULL);
 		__this->___m_PreviousControllerInputMode = L_16;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:821>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:821>
 		return;
 	}
 }
-// Method Definition Index: 86626
+// Method Definition Index: 86834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_HighlightActiveHandInputMode_mD49B014E60AAA0AD14E299E3C170E61DF7E82858 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_highlightColor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5740,9 +5740,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:825>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:825>
 		XRInteractionSimulatorInputFeedbackUI_ClearHighlightedHandPanels_m6A68BD8769D8F397A024E4B3FBAC2C93AC3D3637(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:827>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:827>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_1;
@@ -5751,7 +5751,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 		String_t* L_2;
 		L_2 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_1, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:828>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:828>
 		String_t* L_3 = V_0;
 		bool L_4;
 		L_4 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_3, NULL);
@@ -5761,13 +5761,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Hi
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:829>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:829>
 		return;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:831>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:831>
 		Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_5 = __this->___m_HandExpressionBgs;
 		String_t* L_6 = V_0;
 		NullCheck(L_5);
@@ -5779,7 +5779,7 @@ IL_0020:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:833>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:833>
 		String_t* L_8 = V_0;
 		String_t* L_9;
 		L_9 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral7C33C5B9E69D83A52F4A12D9F90B169F959F12F3, L_8, _stringLiteral984698CE256D6E878C92C50047E8264D7AF62834, NULL);
@@ -5789,7 +5789,7 @@ IL_0020:
 
 IL_0044:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:836>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:836>
 		Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_10 = __this->___m_HandExpressionBgs;
 		String_t* L_11 = V_0;
 		NullCheck(L_10);
@@ -5798,95 +5798,95 @@ IL_0044:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = ___0_highlightColor;
 		NullCheck(L_12);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_12, L_13);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:837>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:837>
 		return;
 	}
 }
-// Method Definition Index: 86627
+// Method Definition Index: 86835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ClearActiveInputModePanels_m7393E32A93B8A3F582DAD0E191005F5BB634FBDA (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:841>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:841>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_BothControllersPanel;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:842>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:842>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_LeftControllerPanel;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:843>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:843>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_RightControllerPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:844>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:844>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_BothHandsPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:845>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:845>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_LeftHandPanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:846>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:846>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_RightHandPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:847>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:847>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_HMDPanel;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:848>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:848>
 		return;
 	}
 }
-// Method Definition Index: 86628
+// Method Definition Index: 86836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ClearActiveGeneralInputPanels_mEF545232F561C5B6701CA7AB0753F6F5152FCE19 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:852>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:852>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_TranslateForwardPanel;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:853>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:853>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_TranslateBackwardPanel;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:854>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:854>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_TranslateUpPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:855>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:855>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_TranslateDownPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:856>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:856>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_TranslateLeftPanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:857>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:857>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_TranslateRightPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:858>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:858>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_RotateUpPanel;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:859>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:859>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___m_RotateDownPanel;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:860>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:860>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___m_RotateLeftPanel;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:861>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:861>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___m_RotateRightPanel;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:862>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:862>
 		return;
 	}
 }
-// Method Definition Index: 86629
+// Method Definition Index: 86837
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ClearHighlightedHandPanels_m6A68BD8769D8F397A024E4B3FBAC2C93AC3D3637 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5903,7 +5903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Cl
 	Enumerator_t0A931753744D828BD1228C8F750806E07203CCC1 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
 		Dictionary_2_tE26C5FF539AE0A1A9C8E93A9CCB271AD9393E4F4* L_0 = __this->___m_HandExpressionBgs;
 		NullCheck(L_0);
 		ValueCollection_tE1549C5B4300ACB34C5DD96AE0AA30DA6775290F* L_1;
@@ -5931,10 +5931,10 @@ FINALLY_002f:
 
 IL_0013_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
 				Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3;
 				L_3 = Enumerator_get_Current_m48A40A69DBFACC803599C22E7CE1D2AD4FCABF19_inline((&V_0), Enumerator_get_Current_m48A40A69DBFACC803599C22E7CE1D2AD4FCABF19_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:868>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:868>
 				il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 				Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_DefaultPanelColor;
 				NullCheck(L_3);
@@ -5943,7 +5943,7 @@ IL_0013_1:
 
 IL_0024_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:866>
 				bool L_5;
 				L_5 = Enumerator_MoveNext_mDD55A50B8787B45E0B64C668ACF4A3C5855A3F7E((&V_0), Enumerator_MoveNext_mDD55A50B8787B45E0B64C668ACF4A3C5855A3F7E_RuntimeMethod_var);
 				if (L_5)
@@ -5963,11 +5963,11 @@ IL_0024_1:
 
 IL_003d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:870>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:870>
 		return;
 	}
 }
-// Method Definition Index: 86630
+// Method Definition Index: 86838
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_ClearHighlightedControllerPanels_m7A9D219B476663D77DD7094B33671FBC07149B41 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5984,7 +5984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI_Cl
 	Enumerator_t267897DE1640B8848C0F742736F126CCBEE7DFFD V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
 		Dictionary_2_t2763C88487A42081551B2236DA81D137F431A924* L_0 = __this->___m_ControllerInputBgs;
 		NullCheck(L_0);
 		ValueCollection_t59D6C549BE94E24C5411C8EB13AF38FC8152DB24* L_1;
@@ -6012,10 +6012,10 @@ FINALLY_002f:
 
 IL_0013_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
 				Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3;
 				L_3 = Enumerator_get_Current_m00C7464FDCAB2413EC07E130F2F10BFC87669B96_inline((&V_0), Enumerator_get_Current_m00C7464FDCAB2413EC07E130F2F10BFC87669B96_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:876>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:876>
 				il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var);
 				Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_DefaultPanelColor;
 				NullCheck(L_3);
@@ -6024,7 +6024,7 @@ IL_0013_1:
 
 IL_0024_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:874>
 				bool L_5;
 				L_5 = Enumerator_MoveNext_m773ABBB02CDE3AE8AD2C4839DF832A1C96C9FFA5((&V_0), Enumerator_MoveNext_m773ABBB02CDE3AE8AD2C4839DF832A1C96C9FFA5_RuntimeMethod_var);
 				if (L_5)
@@ -6044,23 +6044,23 @@ IL_0024_1:
 
 IL_003d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:878>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:878>
 		return;
 	}
 }
-// Method Definition Index: 86631
+// Method Definition Index: 86839
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI__ctor_mE50D4F39784B6F6D83B1345730B433137957E637 (XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:208>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:208>
 		__this->___m_ActiveDeviceMode = 7;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:209>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:209>
 		__this->___m_PreviousDeviceMode = 2;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// Method Definition Index: 86632
+// Method Definition Index: 86840
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI__cctor_m10AE547EE4B8369881A6A2CBE761BFC82DF74270 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6070,17 +6070,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI__c
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:225>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:225>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_0), (0.333333343f), (0.333333343f), (0.333333343f), NULL);
 		((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_DefaultPanelColor = L_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:226>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:226>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		memset((&L_1), 0, sizeof(L_1));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_1), (0.309803933f), (0.396078438f), (0.498039216f), NULL);
 		((XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorInputFeedbackUI_tFC599F5EBD7CBFDD65D4D357E99A25FAF6DB8649_il2cpp_TypeInfo_var))->___k_SelectedColor = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:227>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs:227>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_2), (0.533333361f), (0.533333361f), (0.533333361f), NULL);
@@ -6104,7 +6104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorInputFeedbackUI__c
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86633
+// Method Definition Index: 86841
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Start_mB748D5E22A312AD164FFF992BAED833351FD87B2 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6122,7 +6122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Start
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:188>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:188>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6** L_0 = (XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6**)(&__this->___m_Simulator);
 		il2cpp_codegen_runtime_class_init_inline(ComponentLocatorUtility_1_t7C9173616F975D8503CAA7CDBD527B3C7294D732_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -6133,21 +6133,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Start
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:190>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:190>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(_stringLiteral9B01F97DD9ACC81F94C626F0F771121D300FB271, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:191>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:191>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:192>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:192>
 		return;
 	}
 
 IL_0025:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:195>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:195>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_3 = __this->___m_Simulator;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
@@ -6162,7 +6162,7 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:197>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:197>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_7 = __this->___m_Simulator;
 		NullCheck(L_7);
 		String_t* L_8;
@@ -6171,18 +6171,18 @@ IL_0025:
 		L_9 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral8933E7F915DF694EE650FD6F0BE2A9AE67C4FDBB, L_8, _stringLiteral424E983F11783F6F3AEB2D3431DD3213232D553D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(L_9, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:198>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:198>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:199>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:199>
 		return;
 	}
 
 IL_006a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:202>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_11 = __this->___m_Simulator;
 		NullCheck(L_11);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
@@ -6197,7 +6197,7 @@ IL_006a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:204>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:204>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
 		String_t* L_16;
@@ -6206,22 +6206,22 @@ IL_006a:
 		L_17 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralB674AB529D287B8E2560026EDC20B58E939F12C2, L_16, _stringLiteral424E983F11783F6F3AEB2D3431DD3213232D553D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(L_17, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:205>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:205>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
 		L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_18);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_18, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:206>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:206>
 		return;
 	}
 
 IL_00af:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:209>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:209>
 		XRInteractionSimulatorPlayModeMenu_InitializeQuickActionPanels_mD8CBE8EEDA390B8D3A71B7E426E09E1D90567603(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:212>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:212>
 		XRInteractionSimulatorPlayModeMenu_CheckInputModalityManager_mE7E9221255226F7280FDC3D515CDEF08F127CC23(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:220>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:220>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___m_HandPackageWarningPanel;
 		NullCheck(L_19);
 		bool L_20;
@@ -6242,17 +6242,17 @@ IL_00af:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:221>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:221>
 		XRInteractionSimulatorPlayModeMenu_CheckHandVisualizer_mAA7F7989D66CDD888DE4F1947480DDA75D3B84A9(__this, NULL);
 	}
 
 IL_00db:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:223>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:223>
 		return;
 	}
 }
-// Method Definition Index: 86634
+// Method Definition Index: 86842
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_CheckInputModalityManager_mE7E9221255226F7280FDC3D515CDEF08F127CC23 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6266,8 +6266,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 	}
 	XRInputModalityManager_tF0478EEA921FE18830A3B2C01AB9AF15A0FEEAAA* V_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:227>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:228>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:227>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:228>
 		il2cpp_codegen_runtime_class_init_inline(ComponentLocatorUtility_1_t223E729C926C47834DFBE6DFF75E2E1D372BCF3F_il2cpp_TypeInfo_var);
 		bool L_0;
 		L_0 = ComponentLocatorUtility_1_TryFindComponent_mD6D892BE1901AFB33B918B273D6F6AACE890104C((&V_0), ComponentLocatorUtility_1_TryFindComponent_mD6D892BE1901AFB33B918B273D6F6AACE890104C_RuntimeMethod_var);
@@ -6303,17 +6303,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:230>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:230>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___m_InputModalityManagerWarningPanel;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:231>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:231>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_8 = __this->___m_LeftHandIcon;
 		il2cpp_codegen_runtime_class_init_inline(XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ((XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8_il2cpp_TypeInfo_var))->___k_DisabledColor;
 		NullCheck(L_8);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_8, L_9);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:232>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:232>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_10 = __this->___m_RightHandIcon;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ((XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8_StaticFields*)il2cpp_codegen_static_fields_for(XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8_il2cpp_TypeInfo_var))->___k_DisabledColor;
 		NullCheck(L_10);
@@ -6322,11 +6322,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 
 IL_0051:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:234>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:234>
 		return;
 	}
 }
-// Method Definition Index: 86635
+// Method Definition Index: 86843
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_CheckHandVisualizer_mAA7F7989D66CDD888DE4F1947480DDA75D3B84A9 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6340,7 +6340,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 	}
 	XRInputModalityManager_tF0478EEA921FE18830A3B2C01AB9AF15A0FEEAAA* V_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:239>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:239>
 		il2cpp_codegen_runtime_class_init_inline(ComponentLocatorUtility_1_t223E729C926C47834DFBE6DFF75E2E1D372BCF3F_il2cpp_TypeInfo_var);
 		bool L_0;
 		L_0 = ComponentLocatorUtility_1_TryFindComponent_mD6D892BE1901AFB33B918B273D6F6AACE890104C((&V_0), ComponentLocatorUtility_1_TryFindComponent_mD6D892BE1901AFB33B918B273D6F6AACE890104C_RuntimeMethod_var);
@@ -6350,7 +6350,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:241>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:241>
 		XRInputModalityManager_tF0478EEA921FE18830A3B2C01AB9AF15A0FEEAAA* L_1 = V_0;
 		NullCheck(L_1);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
@@ -6377,16 +6377,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Check
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:242>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:242>
 		return;
 	}
 
 IL_0026:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:244>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:245>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:246>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:244>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:245>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:246>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:247>
 		XRInputModalityManager_tF0478EEA921FE18830A3B2C01AB9AF15A0FEEAAA* L_7 = V_0;
 		NullCheck(L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
@@ -6449,17 +6449,17 @@ IL_0047:
 
 IL_0068:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:249>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:249>
 		return;
 	}
 
 IL_0069:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:252>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:252>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___m_InputMenuHandVisualizerWarningPanel;
 		NullCheck(L_21);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:253>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:253>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___m_HandMenuHandVisualizerWarningPanel;
 		NullCheck(L_22);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)1, NULL);
@@ -6467,23 +6467,23 @@ IL_0069:
 
 IL_0081:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:255>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:255>
 		return;
 	}
 }
-// Method Definition Index: 86636
+// Method Definition Index: 86844
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_InitializeQuickActionPanels_mD8CBE8EEDA390B8D3A71B7E426E09E1D90567603 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:260>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:260>
 		XRInteractionSimulatorPlayModeMenu_InitializeControllerQuickActionPanels_m6748EFB8D63669A0F1FB08D0FE24EC4438E1B19F(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:261>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:261>
 		XRInteractionSimulatorPlayModeMenu_InitializeHandQuickActionPanels_m10F9019295D101833F531A58FFB51BCA4AD0FABF(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:262>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:262>
 		return;
 	}
 }
-// Method Definition Index: 86637
+// Method Definition Index: 86845
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_InitializeControllerQuickActionPanels_m6748EFB8D63669A0F1FB08D0FE24EC4438E1B19F (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6503,7 +6503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Initi
 	int32_t G_B7_0 = 0;
 	int32_t G_B9_0 = 0;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:266>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:266>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_1;
@@ -6511,7 +6511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Initi
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = List_1_get_Count_m6559586E0523BD01B7C361F7EB014142140D43D1_inline(L_1, List_1_get_Count_m6559586E0523BD01B7C361F7EB014142140D43D1_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:267>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:267>
 		int32_t L_3 = L_2;
 		if ((((int32_t)L_3) <= ((int32_t)0)))
 		{
@@ -6521,7 +6521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Initi
 		G_B1_0 = L_3;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:269>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:269>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_4 = __this->___m_Simulator;
 		NullCheck(L_4);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_5;
@@ -6538,14 +6538,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Initi
 
 IL_0039:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:273>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_9 = __this->___m_FirstControllerActionText;
 		NullCheck(L_9);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:274>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:274>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_FirstControllerBindingGO;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
@@ -6554,7 +6554,7 @@ IL_0039:
 
 IL_0056:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:277>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:277>
 		int32_t L_12 = G_B3_0;
 		if ((((int32_t)L_12) <= ((int32_t)1)))
 		{
@@ -6564,7 +6564,7 @@ IL_0056:
 		G_B4_0 = L_12;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:279>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:279>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_13 = __this->___m_Simulator;
 		NullCheck(L_13);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_14;
@@ -6581,14 +6581,14 @@ IL_0056:
 
 IL_007f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:283>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:283>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_18 = __this->___m_SecondControllerActionText;
 		NullCheck(L_18);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
 		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_18, NULL);
 		NullCheck(L_19);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:284>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:284>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_SecondControllerBindingGO;
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
@@ -6597,7 +6597,7 @@ IL_007f:
 
 IL_009c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:287>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:287>
 		int32_t L_21 = G_B6_0;
 		if ((((int32_t)L_21) <= ((int32_t)2)))
 		{
@@ -6607,7 +6607,7 @@ IL_009c:
 		G_B7_0 = L_21;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:289>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:289>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_22 = __this->___m_Simulator;
 		NullCheck(L_22);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_23;
@@ -6624,14 +6624,14 @@ IL_009c:
 
 IL_00c5:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:293>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:293>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_27 = __this->___m_ThirdControllerActionText;
 		NullCheck(L_27);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
 		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_27, NULL);
 		NullCheck(L_28);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_28, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:294>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:294>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___m_ThirdControllerBindingGO;
 		NullCheck(L_29);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_29, (bool)0, NULL);
@@ -6640,14 +6640,14 @@ IL_00c5:
 
 IL_00e2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:297>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:297>
 		if ((((int32_t)G_B9_0) <= ((int32_t)3)))
 		{
 			goto IL_0109;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:299>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:299>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_30 = __this->___m_Simulator;
 		NullCheck(L_30);
 		List_1_t5BCA510C4E28F6EFCDC1E17AEDBCF0B465C5D98A* L_31;
@@ -6663,22 +6663,22 @@ IL_00e2:
 
 IL_0109:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:303>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:303>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_35 = __this->___m_FourthControllerActionText;
 		NullCheck(L_35);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36;
 		L_36 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_35, NULL);
 		NullCheck(L_36);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:304>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:304>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = __this->___m_FourthControllerBindingGO;
 		NullCheck(L_37);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_37, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:306>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:306>
 		return;
 	}
 }
-// Method Definition Index: 86638
+// Method Definition Index: 86846
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_InitializeHandQuickActionPanels_m10F9019295D101833F531A58FFB51BCA4AD0FABF (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6695,14 +6695,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Initi
 	SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* V_3 = NULL;
 	SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* V_4 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
 		V_0 = 0;
 		goto IL_0045;
 	}
 
 IL_0004:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:312>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:312>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_0 = __this->___m_HandExpressionManager;
 		NullCheck(L_0);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_1;
@@ -6720,7 +6720,7 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:314>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:314>
 		int32_t L_5 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_5) >= ((int32_t)4)))
 		{
@@ -6728,7 +6728,7 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:315>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:315>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_6 = __this->___m_HandExpressionIndices;
 		int32_t L_7 = __this->___m_QuickActionHandExpressionLength;
 		int32_t L_8 = V_0;
@@ -6738,21 +6738,21 @@ IL_0004:
 
 IL_0033:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:317>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:317>
 		int32_t L_9 = __this->___m_QuickActionHandExpressionLength;
 		__this->___m_QuickActionHandExpressionLength = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
 
 IL_0041:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
 		int32_t L_10 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
 IL_0045:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:310>
 		int32_t L_11 = V_0;
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_12 = __this->___m_HandExpressionManager;
 		NullCheck(L_12);
@@ -6767,7 +6767,7 @@ IL_0045:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:321>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:321>
 		int32_t L_15 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_15) <= ((int32_t)0)))
 		{
@@ -6775,7 +6775,7 @@ IL_0045:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:323>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:323>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_16 = __this->___m_HandExpressionManager;
 		NullCheck(L_16);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_17;
@@ -6788,7 +6788,7 @@ IL_0045:
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_21;
 		L_21 = List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218(L_17, L_20, List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218_RuntimeMethod_var);
 		V_1 = L_21;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:324>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:324>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_22 = __this->___m_FirstHandActionText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_23 = V_1;
 		NullCheck(L_23);
@@ -6796,7 +6796,7 @@ IL_0045:
 		L_24 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_23, NULL);
 		NullCheck(L_22);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_22, L_24);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:325>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:325>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_25 = __this->___m_FirstHandBindingText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_26 = V_1;
 		NullCheck(L_26);
@@ -6812,14 +6812,14 @@ IL_0045:
 
 IL_00a3:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:329>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:329>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_29 = __this->___m_FirstHandActionText;
 		NullCheck(L_29);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30;
 		L_30 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_29, NULL);
 		NullCheck(L_30);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_30, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:330>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:330>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___m_FirstHandBindingGO;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
@@ -6827,7 +6827,7 @@ IL_00a3:
 
 IL_00c0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:333>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:333>
 		int32_t L_32 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_32) <= ((int32_t)1)))
 		{
@@ -6835,7 +6835,7 @@ IL_00c0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:335>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:335>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_33 = __this->___m_HandExpressionManager;
 		NullCheck(L_33);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_34;
@@ -6848,7 +6848,7 @@ IL_00c0:
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_38;
 		L_38 = List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218(L_34, L_37, List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218_RuntimeMethod_var);
 		V_2 = L_38;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:336>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:336>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_39 = __this->___m_SecondHandActionText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_40 = V_2;
 		NullCheck(L_40);
@@ -6856,7 +6856,7 @@ IL_00c0:
 		L_41 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_40, NULL);
 		NullCheck(L_39);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_39, L_41);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:337>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:337>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_42 = __this->___m_SecondHandBindingText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_43 = V_2;
 		NullCheck(L_43);
@@ -6872,14 +6872,14 @@ IL_00c0:
 
 IL_010b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:341>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:341>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_46 = __this->___m_SecondHandActionText;
 		NullCheck(L_46);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_47;
 		L_47 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_46, NULL);
 		NullCheck(L_47);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_47, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:342>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:342>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_48 = __this->___m_SecondHandBindingGO;
 		NullCheck(L_48);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_48, (bool)0, NULL);
@@ -6887,7 +6887,7 @@ IL_010b:
 
 IL_0128:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:345>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:345>
 		int32_t L_49 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_49) <= ((int32_t)2)))
 		{
@@ -6895,7 +6895,7 @@ IL_0128:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:347>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:347>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_50 = __this->___m_HandExpressionManager;
 		NullCheck(L_50);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_51;
@@ -6908,7 +6908,7 @@ IL_0128:
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_55;
 		L_55 = List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218(L_51, L_54, List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218_RuntimeMethod_var);
 		V_3 = L_55;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:348>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:348>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_56 = __this->___m_ThirdHandActionText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_57 = V_3;
 		NullCheck(L_57);
@@ -6916,7 +6916,7 @@ IL_0128:
 		L_58 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_57, NULL);
 		NullCheck(L_56);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_56, L_58);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:349>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:349>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_59 = __this->___m_ThirdHandBindingText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_60 = V_3;
 		NullCheck(L_60);
@@ -6932,14 +6932,14 @@ IL_0128:
 
 IL_0173:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:353>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:353>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_63 = __this->___m_ThirdHandActionText;
 		NullCheck(L_63);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_64;
 		L_64 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_63, NULL);
 		NullCheck(L_64);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_64, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:354>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:354>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_65 = __this->___m_ThirdHandBindingGO;
 		NullCheck(L_65);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_65, (bool)0, NULL);
@@ -6947,7 +6947,7 @@ IL_0173:
 
 IL_0190:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:357>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:357>
 		int32_t L_66 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_66) <= ((int32_t)3)))
 		{
@@ -6955,7 +6955,7 @@ IL_0190:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:359>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:359>
 		SimulatedHandExpressionManager_t36B4B67C8EE0BBCCD4589B5390E3777A468F6869* L_67 = __this->___m_HandExpressionManager;
 		NullCheck(L_67);
 		List_1_t88DD50E9DA0F4B9CEC9D65166A934529071DEFFB* L_68;
@@ -6968,7 +6968,7 @@ IL_0190:
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_72;
 		L_72 = List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218(L_68, L_71, List_1_get_Item_mC8E2B526617E102413524B974CA6F8CD43BDE218_RuntimeMethod_var);
 		V_4 = L_72;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:360>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:360>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_73 = __this->___m_FourthHandActionText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_74 = V_4;
 		NullCheck(L_74);
@@ -6976,7 +6976,7 @@ IL_0190:
 		L_75 = SimulatedHandExpression_get_name_m279D799ACC79B6AED59153B6DFBB07E3DEEBFB25(L_74, NULL);
 		NullCheck(L_73);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_73, L_75);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:361>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:361>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_76 = __this->___m_FourthHandBindingText;
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_77 = V_4;
 		NullCheck(L_77);
@@ -6992,22 +6992,22 @@ IL_0190:
 
 IL_01dd:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:365>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:365>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_80 = __this->___m_FourthHandActionText;
 		NullCheck(L_80);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_81;
 		L_81 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_80, NULL);
 		NullCheck(L_81);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_81, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:366>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:366>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_82 = __this->___m_FourthHandBindingGO;
 		NullCheck(L_82);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_82, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:368>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:368>
 		return;
 	}
 }
-// Method Definition Index: 86639
+// Method Definition Index: 86847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_GetControllerQuickActionNames_mB5CFD66AA45C5DAB88B8B940AA05F266C38DD189 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, int32_t ___0_inputMode, Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___1_actionText, Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___2_bindingText, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7089,25 +7089,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_GetCo
 
 IL_0037:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:375>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:375>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = ___1_actionText;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_1, _stringLiteral548D93DDB2AC6B24373148B19D9A625571AB2318);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:376>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:376>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = ___2_bindingText;
 		NullCheck(L_2);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_2, _stringLiteral738F291E53E97C08DAE378C71EF70A60E31AE900);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:377>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:377>
 		return;
 	}
 
 IL_004e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:379>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:379>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = ___1_actionText;
 		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_3, _stringLiteralB85E78C75EF1A6F636689BD88A9D6C2A3B2B0A1B);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:380>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:380>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_4 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_5 = __this->___m_Simulator;
 		NullCheck(L_5);
@@ -7118,17 +7118,17 @@ IL_004e:
 		L_7 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_6, NULL);
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_4, L_7);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:381>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:381>
 		return;
 	}
 
 IL_0070:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:383>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:383>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_8 = ___1_actionText;
 		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_8, _stringLiteralB4FE860573CD6E03F0D1A4378C1F330A3820D8C9);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:384>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:384>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_9 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_10 = __this->___m_Simulator;
 		NullCheck(L_10);
@@ -7139,17 +7139,17 @@ IL_0070:
 		L_12 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_11, NULL);
 		NullCheck(L_9);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_9, L_12);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:385>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:385>
 		return;
 	}
 
 IL_0092:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:387>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:387>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_13 = ___1_actionText;
 		NullCheck(L_13);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_13, _stringLiteralFD54C90B5A6D47F6579672102C3331CD0652644E);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:388>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:388>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_14 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
@@ -7160,17 +7160,17 @@ IL_0092:
 		L_17 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_16, NULL);
 		NullCheck(L_14);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_14, L_17);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:389>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:389>
 		return;
 	}
 
 IL_00b4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:391>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:391>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_18 = ___1_actionText;
 		NullCheck(L_18);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_18, _stringLiteral771164B92ED409CF835FF6B84C4E6F812CBC1E80);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:392>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:392>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_19 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_20 = __this->___m_Simulator;
 		NullCheck(L_20);
@@ -7181,17 +7181,17 @@ IL_00b4:
 		L_22 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_21, NULL);
 		NullCheck(L_19);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_19, L_22);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:393>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:393>
 		return;
 	}
 
 IL_00d6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:395>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:395>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_23 = ___1_actionText;
 		NullCheck(L_23);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_23, _stringLiteral0C10E47675493434D04CD8025C8303AF94F7BA5A);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:396>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:396>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_24 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_25 = __this->___m_Simulator;
 		NullCheck(L_25);
@@ -7202,17 +7202,17 @@ IL_00d6:
 		L_27 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_26, NULL);
 		NullCheck(L_24);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_24, L_27);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:397>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:397>
 		return;
 	}
 
 IL_00f8:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:399>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:399>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_28 = ___1_actionText;
 		NullCheck(L_28);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_28, _stringLiteral3684ADE2EBE44A6703D093C6C0CA1269732F2A2A);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:400>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:400>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_29 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_30 = __this->___m_Simulator;
 		NullCheck(L_30);
@@ -7223,17 +7223,17 @@ IL_00f8:
 		L_32 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_31, NULL);
 		NullCheck(L_29);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_29, L_32);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:401>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:401>
 		return;
 	}
 
 IL_011a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:403>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:403>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_33 = ___1_actionText;
 		NullCheck(L_33);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_33, _stringLiteral8EB708D108C7B62CE04DC0BA4842EEB0B619DBB6);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:404>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:404>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_34 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_35 = __this->___m_Simulator;
 		NullCheck(L_35);
@@ -7244,17 +7244,17 @@ IL_011a:
 		L_37 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_36, NULL);
 		NullCheck(L_34);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_34, L_37);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:405>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:405>
 		return;
 	}
 
 IL_013c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:407>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:407>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_38 = ___1_actionText;
 		NullCheck(L_38);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_38, _stringLiteralB8B6946864938B469F6FE8B7D06E359A80AD980F);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:408>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:408>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_39 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_40 = __this->___m_Simulator;
 		NullCheck(L_40);
@@ -7265,17 +7265,17 @@ IL_013c:
 		L_42 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_41, NULL);
 		NullCheck(L_39);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_39, L_42);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:409>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:409>
 		return;
 	}
 
 IL_015e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:411>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:411>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_43 = ___1_actionText;
 		NullCheck(L_43);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_43, _stringLiteralA885C2D1E637D04BB43B8E224604BC0613A6F590);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:412>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:412>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_44 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_45 = __this->___m_Simulator;
 		NullCheck(L_45);
@@ -7286,17 +7286,17 @@ IL_015e:
 		L_47 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_46, NULL);
 		NullCheck(L_44);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_44, L_47);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:413>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:413>
 		return;
 	}
 
 IL_0180:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:415>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:415>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_48 = ___1_actionText;
 		NullCheck(L_48);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_48, _stringLiteral43D7320EE62A97791EB076D31E576CD4476FECC5);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:416>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:416>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_49 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_50 = __this->___m_Simulator;
 		NullCheck(L_50);
@@ -7307,17 +7307,17 @@ IL_0180:
 		L_52 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_51, NULL);
 		NullCheck(L_49);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_49, L_52);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:417>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:417>
 		return;
 	}
 
 IL_01a2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:419>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:419>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_53 = ___1_actionText;
 		NullCheck(L_53);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_53, _stringLiteral89D87E1E07C139494154DAE8FB018F9C11DF3C94);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:420>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:420>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_54 = ___2_bindingText;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_55 = __this->___m_Simulator;
 		NullCheck(L_55);
@@ -7328,11 +7328,11 @@ IL_01a2:
 		L_57 = XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599(L_56, NULL);
 		NullCheck(L_54);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_54, L_57);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:426>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:426>
 		return;
 	}
 }
-// Method Definition Index: 86640
+// Method Definition Index: 86848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRInteractionSimulatorPlayModeMenu_GetBindingString_m333F43F8997AF28F62A3E3424479EB5DCD989599 (XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* ___0_reader, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7345,7 +7345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRInteractionSimulatorPlayModeMenu_
 	int32_t V_1 = 0;
 	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* G_B7_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:430>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:430>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_0 = ___0_reader;
 		if (L_0)
 		{
@@ -7353,14 +7353,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRInteractionSimulatorPlayModeMenu_
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:431>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:431>
 		String_t* L_1 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
 		return L_1;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:434>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:434>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_2 = ___0_reader;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -7380,7 +7380,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:437>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:437>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_6 = ___0_reader;
 		NullCheck(L_6);
 		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_7;
@@ -7413,31 +7413,31 @@ IL_0029:
 IL_0034:
 	{
 		V_0 = G_B7_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:438>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:438>
 		goto IL_0042;
 	}
 
 IL_0037:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:440>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:440>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_12 = ___0_reader;
 		NullCheck(L_12);
 		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_13;
 		L_13 = XRInputButtonReader_get_inputActionPerformed_m669E42BD3FAAEA4A7C7549A31CACEC9489242A42_inline(L_12, NULL);
 		V_0 = L_13;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:441>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:441>
 		goto IL_0042;
 	}
 
 IL_0040:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:443>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:443>
 		V_0 = (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL;
 	}
 
 IL_0042:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:447>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:447>
 		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_14 = V_0;
 		if (L_14)
 		{
@@ -7457,27 +7457,27 @@ IL_004b:
 		return L_17;
 	}
 }
-// Method Definition Index: 86641
+// Method Definition Index: 86849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Update_m5296B2AD64704D604B01CCF1E82143ADA380E5C6 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:455>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:455>
 		XRInteractionSimulatorPlayModeMenu_HandleHighlightedDevicePanels_m2DF45DF95E4D9F46FEF6E6B7D8B7AEE43BE2A534(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:456>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:456>
 		XRInteractionSimulatorPlayModeMenu_HandleHighlightedControllerActionPanels_m4E76328FDA07F841307C6569D8FC4EDC01A5C47F(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:457>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:457>
 		XRInteractionSimulatorPlayModeMenu_HandleHighlightedHandActionPanels_m89AD3CD4BA3077B038BA5595030245E377D5D288(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:458>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:458>
 		XRInteractionSimulatorPlayModeMenu_HandleActiveMenus_m8AC9C23C8537EECE5B76EC74A1BCE6F2AEE3A366(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:459>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:459>
 		return;
 	}
 }
-// Method Definition Index: 86642
+// Method Definition Index: 86850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenCloseInputSelectionMenu_m1266CDBD993FBBDF3371BF192801A4E375DB254A (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:466>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:466>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_InputSelectionMenu;
 		NullCheck(L_0);
 		bool L_1;
@@ -7488,11 +7488,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:468>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:468>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_ClosedInputSelectionMenu;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:469>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:469>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_InputSelectionMenu;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
@@ -7501,23 +7501,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 
 IL_0026:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:473>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:473>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_ClosedInputSelectionMenu;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:474>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:474>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_InputSelectionMenu;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:476>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:476>
 		return;
 	}
 }
-// Method Definition Index: 86643
+// Method Definition Index: 86851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenCloseControllerActionsMenu_m49732ECEB875246EF31C69887EE4BC9988F97899 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:483>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:483>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_0);
 		bool L_1;
@@ -7528,11 +7528,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:485>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:485>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_ClosedControllerActionsMenu;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:486>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:486>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
@@ -7541,23 +7541,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 
 IL_0026:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:490>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:490>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_ClosedControllerActionsMenu;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:491>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:491>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:493>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:493>
 		return;
 	}
 }
-// Method Definition Index: 86644
+// Method Definition Index: 86852
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenCloseHandActionsMenu_m742765217774D37018C6F5B6FC9D0B0CC98D60B1 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:500>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:500>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_HandActionsMenu;
 		NullCheck(L_0);
 		bool L_1;
@@ -7568,11 +7568,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:502>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:502>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_ClosedHandActionsMenu;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:503>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:503>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_HandActionsMenu;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
@@ -7581,23 +7581,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_OpenC
 
 IL_0026:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:507>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:507>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_ClosedHandActionsMenu;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:508>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:508>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_HandActionsMenu;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:510>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:510>
 		return;
 	}
 }
-// Method Definition Index: 86645
+// Method Definition Index: 86853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_HandleActiveMenus_m8AC9C23C8537EECE5B76EC74A1BCE6F2AEE3A366 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:514>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:514>
 		int32_t L_0 = __this->___m_PreviousDeviceMode;
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_1 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_1);
@@ -7619,7 +7619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:516>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:516>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_5 = __this->___m_Simulator;
 		NullCheck(L_5);
 		bool L_6;
@@ -7642,21 +7642,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 
 IL_0040:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:518>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:518>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___m_HandActionsMenu;
 		NullCheck(L_9);
 		bool L_10;
 		L_10 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_9, NULL);
 		__this->___m_PreviousHandMenuState = L_10;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:519>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:519>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_HandActionsMenu;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:520>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:520>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___m_ClosedHandActionsMenu;
 		NullCheck(L_12);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:522>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:522>
 		bool L_13 = __this->___m_PreviousControllerMenuState;
 		if (!L_13)
 		{
@@ -7664,7 +7664,7 @@ IL_0040:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:523>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:523>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_14);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)1, NULL);
@@ -7673,7 +7673,7 @@ IL_0040:
 
 IL_007f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:525>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:525>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___m_ClosedControllerActionsMenu;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
@@ -7682,7 +7682,7 @@ IL_007f:
 
 IL_008d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:527>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:527>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_16 = __this->___m_Simulator;
 		NullCheck(L_16);
 		bool L_17;
@@ -7705,21 +7705,21 @@ IL_008d:
 
 IL_00a7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:529>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:529>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_20);
 		bool L_21;
 		L_21 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_20, NULL);
 		__this->___m_PreviousControllerMenuState = L_21;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:530>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:530>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_22);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:531>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:531>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___m_ClosedControllerActionsMenu;
 		NullCheck(L_23);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:533>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:533>
 		bool L_24 = __this->___m_PreviousHandMenuState;
 		if (!L_24)
 		{
@@ -7727,7 +7727,7 @@ IL_00a7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:534>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:534>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___m_HandActionsMenu;
 		NullCheck(L_25);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)1, NULL);
@@ -7736,7 +7736,7 @@ IL_00a7:
 
 IL_00e6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:536>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:536>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___m_ClosedHandActionsMenu;
 		NullCheck(L_26);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)1, NULL);
@@ -7744,7 +7744,7 @@ IL_00e6:
 
 IL_00f2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:539>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:539>
 		SimulatedDeviceLifecycleManager_tA9A19F0465A60403F4F454705C79D91A90AF448F* L_27 = __this->___m_DeviceLifecycleManager;
 		NullCheck(L_27);
 		int32_t L_28;
@@ -7754,7 +7754,7 @@ IL_00f2:
 
 IL_0103:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:542>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:542>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_29 = __this->___m_Simulator;
 		NullCheck(L_29);
 		bool L_30;
@@ -7772,7 +7772,7 @@ IL_0103:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:544>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:544>
 		int32_t L_32 = __this->___m_PreviousDeviceMode;
 		if (L_32)
 		{
@@ -7780,7 +7780,7 @@ IL_0103:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:545>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:545>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_33);
 		bool L_34;
@@ -7791,7 +7791,7 @@ IL_0103:
 
 IL_0134:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:546>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:546>
 		int32_t L_35 = __this->___m_PreviousDeviceMode;
 		if ((!(((uint32_t)L_35) == ((uint32_t)1))))
 		{
@@ -7799,7 +7799,7 @@ IL_0134:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:547>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:547>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = __this->___m_HandActionsMenu;
 		NullCheck(L_36);
 		bool L_37;
@@ -7809,29 +7809,29 @@ IL_0134:
 
 IL_014e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:549>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:549>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38 = __this->___m_HandActionsMenu;
 		NullCheck(L_38);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_38, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:550>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:550>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39 = __this->___m_ClosedHandActionsMenu;
 		NullCheck(L_39);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_39, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:551>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:551>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = __this->___m_ControllerActionsMenu;
 		NullCheck(L_40);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_40, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:552>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:552>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_41 = __this->___m_ClosedControllerActionsMenu;
 		NullCheck(L_41);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_41, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:554>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:554>
 		__this->___m_PreviousDeviceMode = 2;
 	}
 
 IL_0185:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:557>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:557>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_42 = __this->___m_ToggleActionMenu;
 		NullCheck(L_42);
 		bool L_43;
@@ -7842,7 +7842,7 @@ IL_0185:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:559>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:559>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_44 = __this->___m_Simulator;
 		NullCheck(L_44);
 		bool L_45;
@@ -7865,14 +7865,14 @@ IL_0185:
 
 IL_01ac:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:560>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:560>
 		XRInteractionSimulatorPlayModeMenu_OpenCloseControllerActionsMenu_m49732ECEB875246EF31C69887EE4BC9988F97899(__this, NULL);
 		goto IL_01d4;
 	}
 
 IL_01b4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:561>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:561>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_48 = __this->___m_Simulator;
 		NullCheck(L_48);
 		bool L_49;
@@ -7895,13 +7895,13 @@ IL_01b4:
 
 IL_01ce:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:562>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:562>
 		XRInteractionSimulatorPlayModeMenu_OpenCloseHandActionsMenu_m742765217774D37018C6F5B6FC9D0B0CC98D60B1(__this, NULL);
 	}
 
 IL_01d4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:565>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:565>
 		XRInputButtonReader_t0727CFE55AD1B8ECEFCD382660D9AC0DA1639515* L_52 = __this->___m_ToggleInputSelectionMenu;
 		NullCheck(L_52);
 		bool L_53;
@@ -7912,21 +7912,21 @@ IL_01d4:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:566>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:566>
 		XRInteractionSimulatorPlayModeMenu_OpenCloseInputSelectionMenu_m1266CDBD993FBBDF3371BF192801A4E375DB254A(__this, NULL);
 	}
 
 IL_01e7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:567>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:567>
 		return;
 	}
 }
-// Method Definition Index: 86646
+// Method Definition Index: 86854
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_HandleHighlightedDevicePanels_m2DF45DF95E4D9F46FEF6E6B7D8B7AEE43BE2A534 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:571>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:571>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -7951,9 +7951,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 
 IL_0029:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:573>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:573>
 		XRInteractionSimulatorPlayModeMenu_ClearHighlightedDevicePanels_m71FC44914FB0FEADCFD97154508307CDA3B832F2(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:575>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:575>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_6 = __this->___m_Simulator;
 		NullCheck(L_6);
 		bool L_7;
@@ -7964,17 +7964,17 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:577>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:577>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___m_HighlightFullBodyPanel;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:578>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:578>
 		return;
 	}
 
 IL_0049:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:581>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:581>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_9 = __this->___m_Simulator;
 		NullCheck(L_9);
 		bool L_10;
@@ -7985,7 +7985,7 @@ IL_0049:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:583>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:583>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___m_HighlightLeftControllerPanel;
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)1, NULL);
@@ -7993,7 +7993,7 @@ IL_0049:
 
 IL_0062:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:586>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:586>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_12 = __this->___m_Simulator;
 		NullCheck(L_12);
 		bool L_13;
@@ -8004,7 +8004,7 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:588>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:588>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___m_HighlightRightControllerPanel;
 		NullCheck(L_14);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, (bool)1, NULL);
@@ -8012,7 +8012,7 @@ IL_0062:
 
 IL_007b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:591>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:591>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_15 = __this->___m_Simulator;
 		NullCheck(L_15);
 		bool L_16;
@@ -8023,7 +8023,7 @@ IL_007b:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:593>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:593>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___m_HighlightLeftHandPanel;
 		NullCheck(L_17);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)1, NULL);
@@ -8031,7 +8031,7 @@ IL_007b:
 
 IL_0094:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:596>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:596>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_18 = __this->___m_Simulator;
 		NullCheck(L_18);
 		bool L_19;
@@ -8042,7 +8042,7 @@ IL_0094:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:598>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:598>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_HighlightRightHandPanel;
 		NullCheck(L_20);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)1, NULL);
@@ -8050,7 +8050,7 @@ IL_0094:
 
 IL_00ad:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:601>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:601>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_21 = __this->___m_Simulator;
 		NullCheck(L_21);
 		bool L_22;
@@ -8061,7 +8061,7 @@ IL_00ad:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:603>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:603>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___m_HighlightHeadPanel;
 		NullCheck(L_23);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)1, NULL);
@@ -8069,7 +8069,7 @@ IL_00ad:
 
 IL_00c6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:606>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:606>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_24 = __this->___m_Simulator;
 		NullCheck(L_24);
 		int32_t L_25;
@@ -8079,11 +8079,11 @@ IL_00c6:
 
 IL_00d7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:608>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:608>
 		return;
 	}
 }
-// Method Definition Index: 86647
+// Method Definition Index: 86855
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_HandleHighlightedControllerActionPanels_m4E76328FDA07F841307C6569D8FC4EDC01A5C47F (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8097,7 +8097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 	int32_t G_B4_0 = 0;
 	XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* G_B4_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:612>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:612>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -8109,7 +8109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:614>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:614>
 		int32_t L_3 = __this->___m_ControllerActionIndex;
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_4 = __this->___m_Simulator;
 		NullCheck(L_4);
@@ -8142,11 +8142,11 @@ IL_003c:
 	{
 		NullCheck(G_B4_1);
 		G_B4_1->___m_ControllerActionIndex = G_B4_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:615>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:615>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:617>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:617>
 		int32_t L_9 = __this->___m_ControllerActionIndex;
 		if (L_9)
 		{
@@ -8154,7 +8154,7 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:619>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:619>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_10);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
@@ -8173,7 +8173,7 @@ IL_003c:
 
 IL_007a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:621>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:621>
 		int32_t L_15 = __this->___m_ControllerActionIndex;
 		if ((!(((uint32_t)L_15) == ((uint32_t)1))))
 		{
@@ -8181,7 +8181,7 @@ IL_007a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:623>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:623>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_16);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
@@ -8200,7 +8200,7 @@ IL_007a:
 
 IL_00a5:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:625>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:625>
 		int32_t L_21 = __this->___m_ControllerActionIndex;
 		if ((!(((uint32_t)L_21) == ((uint32_t)2))))
 		{
@@ -8208,7 +8208,7 @@ IL_00a5:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:627>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:627>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_22);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
@@ -8227,7 +8227,7 @@ IL_00a5:
 
 IL_00d0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:629>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:629>
 		int32_t L_27 = __this->___m_ControllerActionIndex;
 		if ((!(((uint32_t)L_27) == ((uint32_t)3))))
 		{
@@ -8235,7 +8235,7 @@ IL_00d0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:631>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:631>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_28);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
@@ -8254,7 +8254,7 @@ IL_00d0:
 
 IL_00fb:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:635>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:635>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = __this->___m_ControllerActionHighlightPanel;
 		NullCheck(L_33);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_33, (bool)0, NULL);
@@ -8262,7 +8262,7 @@ IL_00fb:
 
 IL_0107:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:638>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:638>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_34 = __this->___m_Simulator;
 		NullCheck(L_34);
 		int32_t L_35;
@@ -8272,11 +8272,11 @@ IL_0107:
 
 IL_0118:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:640>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:640>
 		return;
 	}
 }
-// Method Definition Index: 86648
+// Method Definition Index: 86856
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_HandleHighlightedHandActionPanels_m89AD3CD4BA3077B038BA5595030245E377D5D288 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* G_B3_0 = NULL;
@@ -8284,7 +8284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 	int32_t G_B4_0 = 0;
 	XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* G_B4_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:644>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:644>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_0 = __this->___m_Simulator;
 		NullCheck(L_0);
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_1;
@@ -8296,7 +8296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_Handl
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:646>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:646>
 		int32_t L_3 = __this->___m_HandActionIndex;
 		int32_t L_4 = __this->___m_QuickActionHandExpressionLength;
 		if ((((int32_t)L_3) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_4, 1)))))
@@ -8323,11 +8323,11 @@ IL_0032:
 	{
 		NullCheck(G_B4_1);
 		G_B4_1->___m_HandActionIndex = G_B4_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:647>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:647>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:649>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:649>
 		int32_t L_7 = __this->___m_HandActionIndex;
 		if (L_7)
 		{
@@ -8335,7 +8335,7 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:651>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:651>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
@@ -8354,7 +8354,7 @@ IL_0032:
 
 IL_0070:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:653>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:653>
 		int32_t L_13 = __this->___m_HandActionIndex;
 		if ((!(((uint32_t)L_13) == ((uint32_t)1))))
 		{
@@ -8362,7 +8362,7 @@ IL_0070:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:655>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:655>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_14);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
@@ -8381,7 +8381,7 @@ IL_0070:
 
 IL_009b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:657>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:657>
 		int32_t L_19 = __this->___m_HandActionIndex;
 		if ((!(((uint32_t)L_19) == ((uint32_t)2))))
 		{
@@ -8389,7 +8389,7 @@ IL_009b:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:659>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:659>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_20);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
@@ -8408,7 +8408,7 @@ IL_009b:
 
 IL_00c6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:661>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:661>
 		int32_t L_25 = __this->___m_HandActionIndex;
 		if ((!(((uint32_t)L_25) == ((uint32_t)3))))
 		{
@@ -8416,7 +8416,7 @@ IL_00c6:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:663>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:663>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_26);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
@@ -8435,7 +8435,7 @@ IL_00c6:
 
 IL_00f1:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:667>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:667>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___m_HandActionHighlightPanel;
 		NullCheck(L_31);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_31, (bool)0, NULL);
@@ -8443,7 +8443,7 @@ IL_00f1:
 
 IL_00fd:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:670>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:670>
 		XRInteractionSimulator_tEC53D78982DE62BF122F170BF4E961C054819FD6* L_32 = __this->___m_Simulator;
 		NullCheck(L_32);
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_33;
@@ -8454,43 +8454,43 @@ IL_00fd:
 
 IL_010e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:672>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:672>
 		return;
 	}
 }
-// Method Definition Index: 86649
+// Method Definition Index: 86857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu_ClearHighlightedDevicePanels_m71FC44914FB0FEADCFD97154508307CDA3B832F2 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:676>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:676>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___m_HighlightFullBodyPanel;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:677>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:677>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___m_HighlightLeftControllerPanel;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:678>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:678>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___m_HighlightRightControllerPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:679>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:679>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___m_HighlightLeftHandPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:680>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:680>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___m_HighlightRightHandPanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:681>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:681>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___m_HighlightHeadPanel;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:682>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:682>
 		return;
 	}
 }
-// Method Definition Index: 86650
+// Method Definition Index: 86858
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu__ctor_m6AE36B240C61DBCD5C555848D9AD5D709B11BE83 (XRInteractionSimulatorPlayModeMenu_t26A46A6D30CB06A7D7F59BA73A86D216EF6482D8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8502,18 +8502,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu__ctor
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:169>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:169>
 		__this->___m_PreviousDeviceMode = 2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:172>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:172>
 		SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B* L_0 = (SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B*)il2cpp_codegen_object_new(SimulatedHandExpression_tBA4D65D32580EECD62C6571E039188133339097B_il2cpp_TypeInfo_var);
 		SimulatedHandExpression__ctor_mCEACA467F776861BAA7C14C29F325967F013B4B4(L_0, NULL);
 		__this->___m_PreviousHandExpression = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PreviousHandExpression), (void*)L_0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:174>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:174>
 		__this->___m_ControllerActionIndex = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:175>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:175>
 		__this->___m_HandActionIndex = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:177>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:177>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)4);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = L_1;
 		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_3 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tE6A0E4C267E1EEF46B0F64A95A740B4FA941F611____5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B_FieldInfo_var) };
@@ -8524,7 +8524,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu__ctor
 		return;
 	}
 }
-// Method Definition Index: 86651
+// Method Definition Index: 86859
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu__cctor_mF85BEFD0A8F5A57E82182C2048F9B928C8864365 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8534,7 +8534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInteractionSimulatorPlayModeMenu__ccto
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype1/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:181>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Samples/XR Interaction Toolkit/3.4.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorPlayModeMenu.cs:181>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_0), (0.43921569f), (0.43921569f), (0.43921569f), NULL);
@@ -8838,7 +8838,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SimulatedHandExpression_get_
 		return L_0;
 	}
 }
-// Method Definition Index: 43463
+// Method Definition Index: 43477
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{

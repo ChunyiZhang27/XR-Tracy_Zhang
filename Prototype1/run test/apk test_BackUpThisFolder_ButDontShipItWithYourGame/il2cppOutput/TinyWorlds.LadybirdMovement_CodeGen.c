@@ -1,0 +1,96 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E (void);
+extern void LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A (void);
+extern void LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5 (void);
+extern void LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115 (void);
+extern void LadybirdMovementSafety_TryPosition_m6EAB75F901483A1A0D0D774353A28326BE50A254 (void);
+extern void LadybirdMovementSafety_TryMovementPosition_m3AF28FE0FF623E0D5803589B874962E28A95400C (void);
+extern void LadybirdMovementSafety_TrySupportedPosition_m84E815D60048F8DF5F2B740D4C0A5F28B8F9DD4F (void);
+extern void LadybirdMovementSafety_TryEdgeRecovery_m2D08F82D23883933D2AAA7F645CFC30300EA9714 (void);
+extern void LadybirdMovementSafety_TryGround_m43B5648601108C7FA00DAF74627FD508877D6B5D (void);
+extern void LadybirdMovementSafety_PathIsClear_mF4385BD43BEC524A02DBFB75D049167BDB70F6D0 (void);
+extern void LadybirdMovementSafety_get_Probe_mE8342C87883DD169EF4D5A30C38788235B6F5C9D (void);
+extern void LadybirdMovementSafety_Dispose_mF6CD0BCB71775925D0CF830D34FE19F5F9AA10F0 (void);
+extern void LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD (void);
+extern void LadybirdMovementSafety_TryObstacleMotion_mA40396BB0928B54BC4B0119B392C18251EDEDEE3 (void);
+extern void LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A (void);
+extern void LadybirdMovementSafety_IsOwn_mA41D7503472CD086AD55C25B7BED0985C9E1979B (void);
+extern void LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15 (void);
+extern void LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B (void);
+extern void LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95 (void);
+static Il2CppMethodPointer s_methodPointers[20] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E,
+	LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A,
+	LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5,
+	LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115,
+	LadybirdMovementSafety_TryPosition_m6EAB75F901483A1A0D0D774353A28326BE50A254,
+	LadybirdMovementSafety_TryMovementPosition_m3AF28FE0FF623E0D5803589B874962E28A95400C,
+	LadybirdMovementSafety_TrySupportedPosition_m84E815D60048F8DF5F2B740D4C0A5F28B8F9DD4F,
+	LadybirdMovementSafety_TryEdgeRecovery_m2D08F82D23883933D2AAA7F645CFC30300EA9714,
+	LadybirdMovementSafety_TryGround_m43B5648601108C7FA00DAF74627FD508877D6B5D,
+	LadybirdMovementSafety_PathIsClear_mF4385BD43BEC524A02DBFB75D049167BDB70F6D0,
+	LadybirdMovementSafety_get_Probe_mE8342C87883DD169EF4D5A30C38788235B6F5C9D,
+	LadybirdMovementSafety_Dispose_mF6CD0BCB71775925D0CF830D34FE19F5F9AA10F0,
+	LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD,
+	LadybirdMovementSafety_TryObstacleMotion_mA40396BB0928B54BC4B0119B392C18251EDEDEE3,
+	LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A,
+	LadybirdMovementSafety_IsOwn_mA41D7503472CD086AD55C25B7BED0985C9E1979B,
+	LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15,
+	LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B,
+	LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95,
+};
+static const int32_t s_InvokerIndices[20] = 
+{
+	30497,
+	17695,
+	25025,
+	4308,
+	5134,
+	439,
+	441,
+	634,
+	289,
+	634,
+	440,
+	17480,
+	17695,
+	1148,
+	438,
+	438,
+	24186,
+	2324,
+	435,
+	17695,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_TinyWorlds_LadybirdMovement_CodeGenModule;
+const Il2CppCodeGenModule g_TinyWorlds_LadybirdMovement_CodeGenModule = 
+{
+	"TinyWorlds.LadybirdMovement.dll",
+	20,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
