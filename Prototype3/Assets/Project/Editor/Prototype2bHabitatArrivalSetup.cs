@@ -45,11 +45,12 @@ public static class Prototype2bHabitatArrivalSetup
         var rect = (RectTransform)canvasObject.transform;
         rect.sizeDelta = new Vector2(700, 360);
         rect.localScale = Vector3.one;
-        // 1.4m wide, 0.72m high; compensate for the stationary parent scale.
+        // 2.8m wide, 1.44m high; compensate for the stationary parent scale.
         var parentScale = rect.parent == null ? Vector3.one : rect.parent.lossyScale;
-        rect.localScale = new Vector3(.002f / parentScale.x, .002f / parentScale.y, .002f / parentScale.z);
-        rect.position = originalTarget + Vector3.up * 1.15f;
+        rect.localScale = new Vector3(.004f / parentScale.x, .004f / parentScale.y, .004f / parentScale.z);
         var camera = objective.controller.xrOrigin.Camera;
+        var towardsPlayer = Vector3.ProjectOnPlane(camera.transform.position - originalTarget, Vector3.up).normalized;
+        rect.position = originalTarget + Vector3.up * 1.95f + towardsPlayer * .8f;
         rect.rotation = Quaternion.LookRotation(rect.position - camera.transform.position, Vector3.up);
         canvasObject.GetComponent<Canvas>().worldCamera = camera;
         var card = UnityEngine.Object.Instantiate(source, rect, false);
