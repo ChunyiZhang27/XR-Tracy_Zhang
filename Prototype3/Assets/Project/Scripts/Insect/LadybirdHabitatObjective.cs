@@ -17,6 +17,10 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     [Header("Optional Prototype2b arrival card")]
     public GameObject arrivalCard;
     public UnityEngine.Events.UnityEvent foodDiscoveryStarted = new UnityEngine.Events.UnityEvent();
+    [Header("Optional Food Discovery learning cards")]
+    public GameObject foodLearningCard1, foodLearningCard2, foodSearchReadyPanel;
+    public enum FoodStage { Inactive, Card1, Card2, FoodSearchReady }
+    public FoodStage CurrentFoodStage { get; private set; }
     public bool FoodDiscoveryStarted { get; private set; }
     public bool Arrived { get; private set; }
     public const string FoodDiscoveryMessage = "Let's discover what ladybirds eat!";
@@ -24,6 +28,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public bool logArrivalInteraction = true;
     private void Awake()
     {
+        HideFoodLearning();
         if (arrivalCard == null) return;
         // TrackedDeviceGraphicRaycaster accepts XR event data only. Mouse pointers need this too.
         var canvas = arrivalCard.GetComponentInParent<Canvas>(true);
@@ -101,6 +106,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         attemptActive = true; Arrived = false; FoodDiscoveryStarted = false; resetVersion = controller.ResetVersion;
         if (arrivalCard != null) arrivalCard.SetActive(false);
         controller.SetHabitatStopped(false);
+        HideFoodLearning();
         if (objectivePanel != null) objectivePanel.SetActive(true);
         if (continueButton != null) continueButton.SetActive(false);
         if (destinationMarker != null) destinationMarker.SetActive(true);
@@ -121,13 +127,53 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         if (continueButton != null) continueButton.SetActive(false);
         if (objectivePanel != null) objectivePanel.SetActive(true);
         if (objectiveText != null) objectiveText.text = FoodDiscoveryMessage;
-        LogArrival("Placeholder UI shown: " + FoodDiscoveryMessage);
+        if (foodLearningCard1 != null) ShowFoodStage(FoodStage.Card1);
+        else LogArrival("Placeholder UI shown: " + FoodDiscoveryMessage);
         foodDiscoveryStarted.Invoke();
+    }
+    private bool FoodNavigationAllowed => attemptActive && Arrived && FoodDiscoveryStarted && Eligible();
+    public void NextFoodLearningCard()
+    {
+        if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card1)
+            ShowFoodStage(FoodStage.Card2);
+    }
+    public void BackToFirstFoodLearningCard()
+    {
+        if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card2)
+            ShowFoodStage(FoodStage.Card1);
+    }
+    public void StartFoodSearch()
+    {
+        if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card2)
+            ShowFoodStage(FoodStage.FoodSearchReady);
+    }
+    // Explicit restart hook for replay UI or a future lesson coordinator; does not reset body progress.
+    public void RestartFoodDiscovery()
+    {
+        if (FoodNavigationAllowed && foodLearningCard1 != null) ShowFoodStage(FoodStage.Card1);
+    }
+    private void ShowFoodStage(FoodStage stage)
+    {
+        controller.SetHabitatStopped(true);
+        CurrentFoodStage = stage;
+        if (arrivalCard != null) arrivalCard.SetActive(false);
+        if (objectivePanel != null) objectivePanel.SetActive(false);
+        if (foodLearningCard1 != null) foodLearningCard1.SetActive(stage == FoodStage.Card1);
+        if (foodLearningCard2 != null) foodLearningCard2.SetActive(stage == FoodStage.Card2);
+        if (foodSearchReadyPanel != null) foodSearchReadyPanel.SetActive(stage == FoodStage.FoodSearchReady);
+    }
+    private void HideFoodLearning()
+    {
+        CurrentFoodStage = FoodStage.Inactive;
+        if (foodLearningCard1 != null) foodLearningCard1.SetActive(false);
+        if (foodLearningCard2 != null) foodLearningCard2.SetActive(false);
+        if (foodSearchReadyPanel != null) foodSearchReadyPanel.SetActive(false);
     }
     private void EndAttempt()
     {
         if (attemptActive && controller != null) controller.SetHabitatStopped(false);
         attemptActive = false; Arrived = false; FoodDiscoveryStarted = false;
+        HideFoodLearning();
         if (arrivalCard != null) arrivalCard.SetActive(false);
         if (objectivePanel != null) objectivePanel.SetActive(false);
         if (continueButton != null) continueButton.SetActive(false);

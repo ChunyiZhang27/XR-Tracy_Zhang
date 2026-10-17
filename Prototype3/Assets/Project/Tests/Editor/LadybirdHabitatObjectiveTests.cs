@@ -119,6 +119,32 @@ public class LadybirdHabitatObjectiveTests
         Assert.IsTrue(Property(objective,"FoodDiscoveryStarted"));Assert.IsFalse(card.activeSelf);
         Assert.AreEqual("Let's discover what ladybirds eat!",TextValue);Assert.IsTrue(Property(controller,"HabitatStopped"));
     }
+    [Test] public void FoodLearningNavigationIsExclusiveAndDuplicateRequestsCannotSkipCards()
+    {
+        var first=Object("Card 1");var second=Object("Card 2");var ready=Object("Search ready");
+        Set(objective,"foodLearningCard1",first);Set(objective,"foodLearningCard2",second);Set(objective,"foodSearchReadyPanel",ready);
+        Evaluate();Assert.IsFalse(first.activeSelf);Assert.IsFalse(second.activeSelf);Assert.IsFalse(ready.activeSelf);
+        Call(objective,"NextFoodLearningCard");Assert.IsFalse(first.activeSelf);
+        int events=0;((UnityEngine.Events.UnityEvent)objective.GetType().GetField("foodDiscoveryStarted").GetValue(objective)).AddListener(()=>events++);
+        Arrive();Call(objective,"ContinueToFoodDiscovery");Call(objective,"ContinueToFoodDiscovery");
+        Assert.IsTrue(first.activeSelf);Assert.IsFalse(second.activeSelf);Assert.IsFalse(panel.activeSelf);Assert.AreEqual(1,events);
+        Call(objective,"StartFoodSearch");Assert.IsTrue(first.activeSelf);
+        Call(objective,"NextFoodLearningCard");Call(objective,"NextFoodLearningCard");
+        Assert.IsFalse(first.activeSelf);Assert.IsTrue(second.activeSelf);Assert.IsFalse(ready.activeSelf);
+        Call(objective,"BackToFirstFoodLearningCard");Call(objective,"BackToFirstFoodLearningCard");
+        Assert.IsTrue(first.activeSelf);Assert.IsFalse(second.activeSelf);
+        Call(objective,"NextFoodLearningCard");Call(objective,"StartFoodSearch");Call(objective,"StartFoodSearch");
+        Assert.IsFalse(first.activeSelf);Assert.IsFalse(second.activeSelf);Assert.IsTrue(ready.activeSelf);
+        Assert.AreEqual("FoodSearchReady",objective.GetType().GetProperty("CurrentFoodStage").GetValue(objective).ToString());
+        Assert.IsTrue(Property(controller,"HabitatStopped"));Assert.AreEqual(1,events);
+        Call(objective,"RestartFoodDiscovery");Assert.IsTrue(first.activeSelf);Assert.IsFalse(ready.activeSelf);Assert.AreEqual(1,events);
+        Call(controller,"ResetToStartingPoint");Evaluate();
+        Assert.IsFalse(first.activeSelf);Assert.IsFalse(second.activeSelf);Assert.IsFalse(ready.activeSelf);
+        Arrive();Call(objective,"ContinueToFoodDiscovery");Assert.IsTrue(first.activeSelf);Assert.AreEqual(2,events);
+        Call(controller,"EndPlayerControl");Evaluate();
+        Assert.IsFalse(first.activeSelf);Assert.IsFalse(second.activeSelf);Assert.IsFalse(ready.activeSelf);
+        Call(objective,"RestartFoodDiscovery");Assert.IsFalse(first.activeSelf);
+    }
     [Test] public void ReturningToBodyHidesUnclickedArrivalCard()
     {
         var card=Object("Arrival card");card.SetActive(false);Set(objective,"arrivalCard",card);
