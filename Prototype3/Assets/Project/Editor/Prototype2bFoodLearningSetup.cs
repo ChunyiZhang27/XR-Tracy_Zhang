@@ -50,11 +50,15 @@ public static class Prototype2bFoodLearningSetup
         objective.foodLearningCard1 = first; objective.foodLearningCard2 = second; objective.foodSearchReadyPanel = ready;
         EditorUtility.SetDirty(objective); EditorSceneManager.MarkSceneDirty(scene);
         if (!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Save failed.");
-        Debug.Log("FOOD LEARNING configured: shared arrival canvas, unchanged placement/style, hidden cards, four persistent navigation callbacks.");
+        Debug.Log("FOOD LEARNING configured: shared arrival canvas, original arrival placement preserved; reused style, hidden cards, four persistent navigation callbacks.");
     }
     static GameObject Copy(GameObject source, string name, string title, string body)
     {
         var card = UnityEngine.Object.Instantiate(source, source.transform.parent, false); card.name = name;
+        // Clear the central vegetation without moving the existing arrival canvas/card or VR camera.
+        card.transform.position = source.transform.position + Vector3.back * 3f + Vector3.up * .5f;
+        var camera = source.GetComponentInParent<Canvas>(true).worldCamera;
+        card.transform.rotation = Quaternion.LookRotation(card.transform.position - camera.transform.position, Vector3.up);
         card.transform.Find("Title").GetComponent<TMP_Text>().text = title;
         card.transform.Find("Description").GetComponent<TMP_Text>().text = body;
         card.SetActive(false); return card;
