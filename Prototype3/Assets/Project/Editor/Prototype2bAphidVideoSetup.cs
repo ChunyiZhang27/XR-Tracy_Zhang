@@ -69,6 +69,38 @@ public static class Prototype2bAphidVideoSetup
         if(!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Save failed.");
         Debug.Log("APHID VIDEO configured: existing Card 2, 16:9, Replay callback, assignable clip="+(video.clip==null?"missing (educational fallback)":video.clip.name));
     }
+    public static void IntegrateFinishedBatch()
+    {
+        if (!Application.isBatchMode) throw new InvalidOperationException("Batch only.");
+        var scene = EditorSceneManager.OpenScene(ScenePath);
+        var objective = scene.GetRootGameObjects().SelectMany(x => x.GetComponentsInChildren<LadybirdHabitatObjective>(true)).Single();
+        var card = objective.foodLearningCard2;
+        var video = card.GetComponent<AphidLearningVideo>();
+        var clip = AssetDatabase.LoadAssetAtPath<VideoClip>("Assets/Project/Videos/AphidIntroduction.mp4");
+        if (clip == null || clip.audioTrackCount == 0 || video == null || video.player == null || video.renderTexture == null)
+            throw new InvalidOperationException("Expected the imported narrated clip and existing video UI.");
+        if (card.GetComponents<VideoPlayer>().Length != 1 || card.GetComponents<AudioSource>().Length > 1)
+            throw new InvalidOperationException("Inspect duplicate media components before proceeding.");
+        var source = card.GetComponent<AudioSource>();
+        if (source == null) source = card.AddComponent<AudioSource>();
+        source.playOnAwake = false; source.loop = false; source.spatialBlend = 0;
+        source.volume = 1; source.mute = false; source.clip = null;
+        video.clip = clip; video.narrationAudioSource = source;
+        video.showSubtitles = false; // The finished video already contains English captions.
+        var player = video.player;
+        player.clip = clip; player.playOnAwake = false; player.isLooping = false;
+        player.audioOutputMode = VideoAudioOutputMode.AudioSource; player.controlledAudioTrackCount = 1;
+        player.EnableAudioTrack(0, true); player.SetTargetAudioSource(0, source);
+        player.aspectRatio = VideoAspectRatio.FitInside;
+        // Native 720p preserves the finished video's fine details with a single small render target.
+        video.renderTexture.Release(); video.renderTexture.width = 1280; video.renderTexture.height = 720;
+        video.renderTexture.useMipMap = false; video.renderTexture.autoGenerateMips = false;
+        video.videoImage.raycastTarget = false;
+        EditorUtility.SetDirty(video.renderTexture); EditorSceneManager.MarkSceneDirty(scene);
+        AssetDatabase.SaveAssets();
+        if (!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Save failed.");
+        Debug.Log($"FINISHED APHID VIDEO: {AssetDatabase.GetAssetPath(clip)}, {clip.width}x{clip.height}, {clip.frameRate}fps, {clip.length:F3}s, audioTracks={clip.audioTrackCount}, channels={clip.GetAudioChannelCount(0)}, sampleRate={clip.GetAudioSampleRate(0)}; one 2D AudioSource, non-looping, native 16:9 texture.");
+    }
     static RectTransform NewRect(string name,Transform parent,float x,float y,float width,float height)
     {
         var go = new GameObject(name,typeof(RectTransform)); go.layer = parent.gameObject.layer; go.transform.SetParent(parent,false);

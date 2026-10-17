@@ -10,6 +10,8 @@ public sealed class AphidLearningVideo : MonoBehaviour
     [Tooltip("Assign the imported H.264 AphidIntroduction.mp4 VideoClip here. Optional.")]
     public VideoClip clip;
     public VideoPlayer player;
+    [Tooltip("Dedicated 2D source for the embedded narration; never play it independently.")]
+    public AudioSource narrationAudioSource;
     public RenderTexture renderTexture;
     public UnityEngine.UI.RawImage videoImage;
     public TMP_Text fallbackText, subtitles;
@@ -43,6 +45,7 @@ public sealed class AphidLearningVideo : MonoBehaviour
             player.loopPointReached -= Finished;
             player.Stop();
         }
+        if (narrationAudioSource != null) narrationAudioSource.Stop();
         State = PlaybackState.Hidden;
         ShowVideo(false);
     }
@@ -51,6 +54,7 @@ public sealed class AphidLearningVideo : MonoBehaviour
         if (!isActiveAndEnabled) return;
         CancelTimeout();
         if (player != null) player.Stop();
+        if (narrationAudioSource != null) narrationAudioSource.Stop();
         ShowVideo(false);
         if (clip == null) { Fallback(PlaybackState.MissingMedia, MissingMediaMessage); return; }
         if (player == null || renderTexture == null || videoImage == null)
@@ -59,13 +63,41 @@ public sealed class AphidLearningVideo : MonoBehaviour
         player.source = VideoSource.VideoClip; player.clip = clip;
         player.renderMode = VideoRenderMode.RenderTexture; player.targetTexture = renderTexture;
         player.aspectRatio = VideoAspectRatio.FitInside;
-        player.audioOutputMode = VideoAudioOutputMode.None;
+        ConfigureNarration();
         player.sendFrameReadyEvents = true; player.waitForFirstFrame = true;
         videoImage.texture = renderTexture;
         Fallback(PlaybackState.Preparing, "Preparing aphid video…\n\nYou can start Food Search at any time.");
         player.Prepare();
         // Preparation and first-frame decode must both finish; a decoder failure never blocks navigation.
         if (State == PlaybackState.Preparing) timeout = StartCoroutine(WaitForPreparation());
+    }
+    void ConfigureNarration()
+    {
+        // Only the first embedded track is audible; VideoPlayer owns its playback clock.
+        player.controlledAudioTrackCount = (ushort)(clip.audioTrackCount > 0 ? 1 : 0);
+        if (narrationAudioSource != null)
+        {
+            narrationAudioSource.playOnAwake = false;
+            narrationAudioSource.loop = false;
+            narrationAudioSource.spatialBlend = 0f;
+            narrationAudioSource.clip = null;
+            player.audioOutputMode = VideoAudioOutputMode.AudioSource;
+            if (clip.audioTrackCount > 0)
+            {
+                player.EnableAudioTrack(0, true);
+                player.SetTargetAudioSource(0, narrationAudioSource);
+            }
+        }
+        else
+        {
+            player.audioOutputMode = VideoAudioOutputMode.Direct;
+            if (clip.audioTrackCount > 0)
+            {
+                player.EnableAudioTrack(0, true);
+                player.SetDirectAudioMute(0, false);
+                player.SetDirectAudioVolume(0, 1f);
+            }
+        }
     }
     IEnumerator WaitForPreparation()
     {
@@ -74,6 +106,7 @@ public sealed class AphidLearningVideo : MonoBehaviour
         if (State == PlaybackState.Preparing)
         {
             player.Stop();
+            if (narrationAudioSource != null) narrationAudioSource.Stop();
             Fallback(PlaybackState.Unavailable, "Video could not load. Select Replay to retry, or start Food Search.\n\nLook for a pear-shaped body, six legs and antennae.");
         }
     }
@@ -90,6 +123,7 @@ public sealed class AphidLearningVideo : MonoBehaviour
     {
         if (!Accept(source)) return;
         CancelTimeout(); source.Stop();
+        if (narrationAudioSource != null) narrationAudioSource.Stop();
         Fallback(PlaybackState.Unavailable, "Video unavailable. Select Replay to retry, or start Food Search.\n\nLook for a pear-shaped body, six legs and antennae.");
         Debug.LogWarning("[Aphid Learning Video] " + message, this);
     }

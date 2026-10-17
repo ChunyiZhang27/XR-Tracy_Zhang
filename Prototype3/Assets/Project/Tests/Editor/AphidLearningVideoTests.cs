@@ -39,6 +39,22 @@ public class AphidLearningVideoTests
         Assert.IsFalse((bool)player.GetType().GetProperty("isPlaying").GetValue(player));
         root.SetActive(true); Call("OnEnable"); Assert.AreEqual("MissingMedia",State);
     }
+    [Test] public void FinishedClipRoutesOneEmbeddedTrackToOneNarrationSource()
+    {
+        var clipType = Assembly.Load("UnityEngine.VideoModule").GetType("UnityEngine.Video.VideoClip",true);
+        var clip = UnityEditor.AssetDatabase.LoadAssetAtPath("Assets/Project/Videos/AphidIntroduction.mp4",clipType);
+        Assert.IsNotNull(clip,"Finished imported video missing");
+        var audio = root.AddComponent<AudioSource>();
+        Set("clip",clip); Set("narrationAudioSource",audio);
+        player.GetType().GetProperty("clip").SetValue(player,clip);
+        Call("ConfigureNarration");
+        Assert.AreEqual("AudioSource",player.GetType().GetProperty("audioOutputMode").GetValue(player).ToString());
+        Assert.AreEqual((ushort)1,player.GetType().GetProperty("controlledAudioTrackCount").GetValue(player));
+        Assert.AreSame(audio,player.GetType().GetMethod("GetTargetAudioSource").Invoke(player,new object[]{(ushort)0}));
+        Assert.IsFalse(audio.playOnAwake); Assert.IsFalse(audio.loop); Assert.AreEqual(0,audio.spatialBlend); Assert.IsNull(audio.clip);
+        Assert.AreEqual(1,root.GetComponents<AudioSource>().Length);
+        Call("OnDisable"); Assert.IsFalse(audio.isPlaying);
+    }
     [TestCase(0,"Aphids are tiny insects that feed on plant sap.")]
     [TestCase(3.99,"Aphids are tiny insects that feed on plant sap.")]
     [TestCase(4,"Look for a pear-shaped body, six legs and antennae.")]
