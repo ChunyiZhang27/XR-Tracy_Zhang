@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-[RequireComponent(typeof(XRSimpleInteractable), typeof(SphereCollider))]
+[RequireComponent(typeof(SphereCollider))]
 public sealed class FoodSearchTarget : MonoBehaviour
 {
     public enum IdentificationCategory { Aphid, Ant }
@@ -10,12 +10,15 @@ public sealed class FoodSearchTarget : MonoBehaviour
     public FoodSearchActivity activity;
     public Renderer[] visuals;
     public bool Found { get; private set; }
-    private XRSimpleInteractable interactable;
+    private XRBaseInteractable interactable;
+    public bool RequiresGrab => GetComponent<XRGrabInteractable>() != null;
     private bool xrHover, mouseHover;
     private MaterialPropertyBlock block;
     private void OnEnable()
     {
-        interactable = GetComponent<XRSimpleInteractable>();
+        interactable = GetComponent<XRGrabInteractable>();
+        if (interactable == null) interactable = GetComponent<XRSimpleInteractable>();
+        if (interactable == null) { Refresh(); return; }
         interactable.selectEntered.AddListener(Selected);
         interactable.firstHoverEntered.AddListener(HoverEntered);
         interactable.lastHoverExited.AddListener(HoverExited);
@@ -31,10 +34,20 @@ public sealed class FoodSearchTarget : MonoBehaviour
         }
         xrHover = mouseHover = false;
     }
-    private void Selected(SelectEnterEventArgs _) { SelectTarget(); }
+    private void Selected(SelectEnterEventArgs args)
+    {
+        if (RequiresGrab)
+        {
+            var grab = interactable as XRGrabInteractable;
+            if (grab == null || !grab.isSelected || args.interactorObject == null) return;
+            Debug.Log("[Food Search Step A] XR grab confirmed: " + name, this);
+            if (activity != null) activity.Identify(this);
+        }
+        else SelectTarget();
+    }
     private void HoverEntered(HoverEnterEventArgs _) { xrHover = true; Refresh(); }
     private void HoverExited(HoverExitEventArgs _) { xrHover = false; Refresh(); }
-    public void SelectTarget() { if (activity != null) activity.Identify(this); }
+    public void SelectTarget() { if (!RequiresGrab && activity != null) activity.Identify(this); }
     public void SetMouseHover(bool value) { if (mouseHover == value) return; mouseHover = value; Refresh(); }
     public void SetFound(bool value) { Found = value; Refresh(); }
     private void Refresh()

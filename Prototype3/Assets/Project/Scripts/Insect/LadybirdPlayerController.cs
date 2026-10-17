@@ -55,11 +55,22 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public int ResetVersion { get; private set; }
     public bool ControlActive => controlActive;
     public bool HabitatStopped { get; private set; }
+    [Tooltip("Prototype2b: release drive input and restore controller simulation at Habitat, keeping locomotion suspended.")]
+    public bool habitatControllerHandover;
     // Optional objective hold: keep environment ownership, XR locomotion suspension and reset input alive.
     public void SetHabitatStopped(bool stopped)
     {
         HabitatStopped = stopped;
         if (stopped) currentSpeed = 0f;
+        if (!habitatControllerHandover) return;
+        if (stopped) driveAction?.Disable();
+        else if (controlActive) driveAction?.Enable();
+#if UNITY_EDITOR
+        // Restore controller simulation only. Locomotion providers/mediators remain suspended.
+        foreach (var item in suspended)
+            if (item.Key is XRInteractionSimulator && item.Key != null)
+                item.Key.enabled = stopped && item.Value;
+#endif
     }
     public string MovementStatus => movementStatus;
 
@@ -235,7 +246,13 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private void EnforceExclusiveMovement()
     {
         if (!ownsMovement) return;
-        foreach (Behaviour item in suspended.Keys) if (item != null && item.enabled) item.enabled = false;
+        foreach (Behaviour item in suspended.Keys)
+        {
+#if UNITY_EDITOR
+            if (habitatControllerHandover && HabitatStopped && item is XRInteractionSimulator) continue;
+#endif
+            if (item != null && item.enabled) item.enabled = false;
+        }
     }
 
     private void CreateDriveAction()
@@ -398,7 +415,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         { SetStatus("Reset blocked: " + reason); return false; }
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
         RememberSafeContact(groundContact.position); edgeRecoveryActive = false;
-        HabitatStopped = false;
+        SetHabitatStopped(false);
         ResetVersion++;
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;
 #else
