@@ -55,13 +55,41 @@ public static class Prototype2bFoodLearningSetup
     static GameObject Copy(GameObject source, string name, string title, string body)
     {
         var card = UnityEngine.Object.Instantiate(source, source.transform.parent, false); card.name = name;
-        // Clear the central vegetation without moving the existing arrival canvas/card or VR camera.
-        card.transform.position = source.transform.position + Vector3.back * 3f + Vector3.up * .5f;
-        var camera = source.GetComponentInParent<Canvas>(true).worldCamera;
-        card.transform.rotation = Quaternion.LookRotation(card.transform.position - camera.transform.position, Vector3.up);
+        AlignCard(source.GetComponentInParent<Canvas>(true).GetComponent<RectTransform>(), card);
         card.transform.Find("Title").GetComponent<TMP_Text>().text = title;
         card.transform.Find("Description").GetComponent<TMP_Text>().text = body;
         card.SetActive(false); return card;
+    }
+    public static void AlignBatch()
+    {
+        if (!Application.isBatchMode) throw new InvalidOperationException("Batch only.");
+        EditorSceneManager.OpenScene(ScenePath);
+        AlignExistingCards();
+    }
+    [MenuItem("Tools/Tiny Worlds/Align Food Cards To Habitat Canvas")]
+    public static void AlignExistingCards()
+    {
+        var scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+        if (Application.isPlaying || scene.path != ScenePath || scene.isDirty)
+            throw new InvalidOperationException("Open saved Prototype2b outside Play mode.");
+        var objective = scene.GetRootGameObjects().SelectMany(x => x.GetComponentsInChildren<LadybirdHabitatObjective>(true)).Single();
+        var reference = objective.arrivalCard.GetComponentInParent<Canvas>(true).GetComponent<RectTransform>();
+        var cards = new[] { objective.arrivalCard, objective.foodLearningCard1, objective.foodLearningCard2, objective.foodSearchReadyPanel };
+        if (cards.Any(x => x == null)) throw new InvalidOperationException("Missing card references.");
+        foreach (var card in cards) AlignCard(reference, card);
+        EditorSceneManager.MarkSceneDirty(scene);
+        if (!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Save failed.");
+        Debug.Log($"FOOD ALIGNMENT reference={reference.name}, parent={reference.parent.name}, localPosition={reference.localPosition:F6}, localRotation={reference.localEulerAngles:F6}, worldPosition={reference.position:F6}, worldRotation={reference.eulerAngles:F6}, worldScale={reference.lossyScale:F6}, size={reference.rect.size:F6}; all four card roots share its pose and scale.");
+    }
+    static void AlignCard(RectTransform reference, GameObject card)
+    {
+        var rect = card.GetComponent<RectTransform>();
+        rect.SetParent(reference, false);
+        rect.anchorMin = rect.anchorMax = rect.pivot = reference.pivot;
+        rect.anchoredPosition3D = Vector3.zero;
+        rect.localRotation = Quaternion.identity;
+        rect.localScale = Vector3.one;
+        rect.sizeDelta = reference.rect.size;
     }
     static void Wire(UnityEngine.UI.Button button, string name, string label, UnityAction action)
     {
