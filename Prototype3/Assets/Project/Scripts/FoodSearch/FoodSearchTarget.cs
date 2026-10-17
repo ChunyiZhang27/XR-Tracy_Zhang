@@ -43,11 +43,24 @@ public sealed class FoodSearchTarget : MonoBehaviour
         if (block == null) block = new MaterialPropertyBlock();
         foreach (var visual in visuals)
         {
-            if (visual == null || visual.sharedMaterial == null) continue;
-            var color = visual.sharedMaterial.GetColor("_BaseColor");
-            if (Found) color = Color.Lerp(color, new Color(.65f, .85f, .35f), .6f);
-            else if (xrHover || mouseHover) color = Color.Lerp(color, Color.white, .28f);
-            visual.GetPropertyBlock(block); block.SetColor("_BaseColor", color); visual.SetPropertyBlock(block);
+            if (visual == null) continue;
+            var materials = visual.sharedMaterials;
+            for (int slot = 0; slot < materials.Length; slot++)
+            {
+                var material = materials[slot];
+                if (material == null) continue;
+                // glTFast uses baseColorFactor; URP/Lit and legacy materials use different names.
+                var property = material.HasProperty("_BaseColor") ? "_BaseColor" :
+                    material.HasProperty("baseColorFactor") ? "baseColorFactor" :
+                    material.HasProperty("_Color") ? "_Color" : null;
+                if (property == null) continue;
+                var color = material.GetColor(property);
+                if (Found) color = Color.Lerp(color, new Color(.65f, .85f, .35f), .6f);
+                else if (xrHover || mouseHover) color = Color.Lerp(color, Color.white, .28f);
+                visual.GetPropertyBlock(block, slot);
+                block.SetColor(property, color);
+                visual.SetPropertyBlock(block, slot);
+            }
         }
     }
 }

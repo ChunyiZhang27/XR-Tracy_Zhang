@@ -50,7 +50,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (feedbackText != null) feedbackText.text = Completed ? CompletionFeedback : CorrectFeedback;
         if (tryAgainButton != null) tryAgainButton.SetActive(Completed);
     }
-    public void TryAgain() { if (Running && Eligible) BeginSearch(); }
+    public void TryAgain() { if (Running && Completed && Eligible) BeginSearch(); }
     public void EndSearch()
     {
         Running = Completed = false; found.Clear();

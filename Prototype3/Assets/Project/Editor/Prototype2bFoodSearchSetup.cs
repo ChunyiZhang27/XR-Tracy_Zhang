@@ -73,11 +73,11 @@ public static class Prototype2bFoodSearchSetup
         }
         var panel = o.foodSearchReadyPanel.transform;
         var title = panel.Find("Title").GetComponent<TMP_Text>(); title.text = "Food Search"; Layout(title,145,45,30);
-        var instruction = panel.Find("Description").GetComponent<TMP_Text>(); instruction.text = FoodSearchActivity.Instruction; Layout(instruction,95,55,28);
+        var instruction = panel.Find("Description").GetComponent<TMP_Text>(); instruction.text = FoodSearchActivity.Instruction; Layout(instruction,87,70,26);
         activity.progressText = UnityEngine.Object.Instantiate(instruction, panel, false); activity.progressText.name = "AphidProgress";
-        activity.progressText.text = "Aphids found: 0 / 2"; Layout(activity.progressText,45,40,28);
+        activity.progressText.text = "Aphids found: 0 / 2"; Layout(activity.progressText,30,35,26);
         activity.feedbackText = UnityEngine.Object.Instantiate(instruction, panel, false); activity.feedbackText.name = "IdentificationFeedback";
-        activity.feedbackText.text = ""; Layout(activity.feedbackText,-30,100,25);
+        activity.feedbackText.text = ""; Layout(activity.feedbackText,-37.5f,95,24);
         var button = UnityEngine.Object.Instantiate(o.continueButton, panel, false); button.name = "TryAgainButton";
         var rect = (RectTransform)button.transform; rect.anchoredPosition = new Vector2(0,-130); rect.sizeDelta = new Vector2(570,60);
         var click = button.GetComponent<UnityEngine.UI.Button>();

@@ -56,7 +56,7 @@ public sealed class FoodSearchActivityTests
         Call(activity,"BeginSearch");Call(activity,"Identify",targets[0]);Call(activity,"Identify",targets[1]);Call(activity,"TryAgain");
         Assert.AreEqual(0,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"Completed"));Assert.IsFalse(replay.activeSelf);
         Assert.AreEqual("",Get<string>(feedback,"text"));Assert.IsFalse(Get<bool>(targets[0],"Found"));
-        Call(activity,"Identify",targets[0]);Assert.AreEqual(1,Get<int>(activity,"FoundCount"));
+        Call(activity,"Identify",targets[0]);Call(activity,"TryAgain");Assert.AreEqual(1,Get<int>(activity,"FoundCount"));
         Call(activity,"EndSearch");Assert.IsFalse(area.activeSelf);Assert.IsFalse(Get<bool>(activity,"Running"));
         Call(activity,"TryAgain");Call(activity,"Identify",targets[1]);Assert.IsFalse(area.activeSelf);Assert.AreEqual(0,Get<int>(activity,"FoundCount"));
     }
