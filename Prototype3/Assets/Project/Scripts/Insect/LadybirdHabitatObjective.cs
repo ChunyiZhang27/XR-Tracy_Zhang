@@ -19,6 +19,8 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public UnityEngine.Events.UnityEvent foodDiscoveryStarted = new UnityEngine.Events.UnityEvent();
     [Header("Optional Food Discovery learning cards")]
     public GameObject foodLearningCard1, foodLearningCard2, foodSearchReadyPanel;
+    public FoodSearchActivity foodSearch;
+    public bool FoodSearchActive => FoodNavigationAllowed && CurrentFoodStage == FoodStage.FoodSearchReady;
     public enum FoodStage { Inactive, Card1, Card2, FoodSearchReady }
     public FoodStage CurrentFoodStage { get; private set; }
     public bool FoodDiscoveryStarted { get; private set; }
@@ -161,14 +163,30 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         if (foodLearningCard1 != null) foodLearningCard1.SetActive(stage == FoodStage.Card1);
         if (foodLearningCard2 != null) foodLearningCard2.SetActive(stage == FoodStage.Card2);
         if (foodSearchReadyPanel != null) foodSearchReadyPanel.SetActive(stage == FoodStage.FoodSearchReady);
+        if (foodSearch != null)
+        {
+            if (stage == FoodStage.FoodSearchReady) foodSearch.BeginSearch();
+            else foodSearch.EndSearch();
+        }
     }
     private void HideFoodLearning()
     {
         CurrentFoodStage = FoodStage.Inactive;
+        if (foodSearch != null) foodSearch.EndSearch();
         if (foodLearningCard1 != null) foodLearningCard1.SetActive(false);
         if (foodLearningCard2 != null) foodLearningCard2.SetActive(false);
         if (foodSearchReadyPanel != null) foodSearchReadyPanel.SetActive(false);
     }
+#if UNITY_EDITOR
+    // Test-only shortcut after the existing movement bootstrap has safely closed wings and initialized control.
+    public void StartFoodSearchEditorTest()
+    {
+        if (gameObject.scene.path != "Assets/Project/Scenes/Prototype2b.unity" || controller == null ||
+            !controller.EditorTestActive || !controller.ControlActive || !enableInEditorMovementTest) return;
+        attemptActive = Arrived = FoodDiscoveryStarted = true; resetVersion = controller.ResetVersion;
+        ShowFoodStage(FoodStage.FoodSearchReady);
+    }
+#endif
     private void EndAttempt()
     {
         if (attemptActive && controller != null) controller.SetHabitatStopped(false);
