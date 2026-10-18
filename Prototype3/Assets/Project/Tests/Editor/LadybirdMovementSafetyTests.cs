@@ -29,6 +29,35 @@ public sealed class LadybirdMovementSafetyTests
         objects.Clear(); Physics.SyncTransforms();
     }
 
+    [Test] public void DecorativeIgnoreDoesNotSuppressSolidRockAndDiagnosticsUseActualSweep()
+    {
+        var grass = Box("Transparent grass card", center + Vector3.right * .15f, new Vector3(.02f, 1f, 2f));
+        var rock = Box("Solid rock", center + Vector3.right * .45f, new Vector3(.2f, 1f, 1f));
+        Physics.SyncTransforms();
+        Assert.IsFalse(safety.TryObstacleMotion(owner,center,Vector3.right * .1f,new[]{floor},out _,out _));
+        Assert.AreSame(grass,safety.LastBlockingCollider);
+        safety.ignoredObstacles = new[]{grass};
+        Assert.IsTrue(safety.TryObstacleMotion(owner,center,Vector3.right * .1f,new[]{floor},out var motion,out var reason),reason);
+        Assert.That(motion,Is.EqualTo(Vector3.right * .1f));
+        Assert.IsNull(safety.LastBlockingCollider);
+        Assert.IsFalse(safety.TryObstacleMotion(owner,center,Vector3.right * .5f,new[]{floor},out _,out _));
+        Assert.AreSame(rock,safety.LastBlockingCollider);
+        Assert.That(safety.LastObstacleEnd-safety.LastObstacleOrigin,Is.EqualTo(Vector3.right * .5f));
+        Assert.IsTrue(safety.TryObstacleMotion(owner,center,Vector3.left * .02f,new[]{floor},out _,out reason),reason);
+        Assert.IsNull(safety.LastBlockingCollider);
+    }
+
+    [Test] public void RockOverlapCanStillReverseButCannotDeepen()
+    {
+        var rock = Box("Solid rock", center + Vector3.right * .45f, new Vector3(.2f, 1f, 1f));
+        Physics.SyncTransforms();
+        var touching = center + Vector3.right * .35f;
+        Assert.IsFalse(safety.TryObstacleMotion(owner,touching,Vector3.right * .02f,new[]{floor},out _,out _));
+        Assert.AreSame(rock,safety.LastBlockingCollider);
+        Assert.IsTrue(safety.TryObstacleMotion(owner,touching,Vector3.left * .02f,new[]{floor},out var motion,out var reason),reason);
+        Assert.That(motion,Is.EqualTo(Vector3.left * .02f));
+    }
+
     [TestCase(0f)] [TestCase(0.1f)] [TestCase(0.15f)]
     public void DeadzoneSuppressesSmallInput(float input)
     { Assert.That(LadybirdMovementSafety.ApplyDeadzone(new Vector2(input, 0f), 0.15f), Is.EqualTo(Vector2.zero)); }

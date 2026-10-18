@@ -81,6 +81,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private bool antennaExplored, shellExplored, wingsExplored;
     private bool initialized, ownsMovement, editorTest;
     private bool pendingEditorReset;
+    private Collider lastMovementBlocker;
+    private Vector3 blockedSweepOrigin, blockedSweepEnd;
     [SerializeField] private Vector3 lastVerifiedSafeContact;
     [SerializeField] private Vector3 currentGroundContact;
     [SerializeField] private bool edgeRecoveryActive;
@@ -213,6 +215,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     public void EndPlayerControl()
     {
         controlActive = false;
+        lastMovementBlocker = null;
         HabitatStopped = false;
         pendingEditorReset = false;
         currentSpeed = 0f;
@@ -366,6 +369,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
                 (verified-(next-contact)).sqrMagnitude > 0.00000001f)
             { ReportObstacleBlock(reason == "Ready" ? "Obstacle at grounded destination" : reason); return; }
             transform.position += next - contact;
+            lastMovementBlocker = null;
             if (safety.InsideBoundary(next, boundaryCenter)) RememberSafeContact(next);
             distance -= step;
         }
@@ -392,6 +396,9 @@ public sealed class LadybirdPlayerController : MonoBehaviour
 
     private void ReportObstacleBlock(string reason)
     {
+        // Keep the rejected forward query visible while the separate reverse-safety probe runs.
+        lastMovementBlocker = safety.LastBlockingCollider;
+        blockedSweepOrigin = safety.LastObstacleOrigin; blockedSweepEnd = safety.LastObstacleEnd;
         currentSpeed = 0f;
         Vector3 backward = -facingReference.forward; backward.y = 0f;
         bool reverse = backward.sqrMagnitude > 0.0001f &&
@@ -416,6 +423,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         transform.SetPositionAndRotation(initialParentPosition + ground - resetContact, initialParentRotation);
         RememberSafeContact(groundContact.position); edgeRecoveryActive = false;
         SetHabitatStopped(false);
+        lastMovementBlocker = null;
         ResetVersion++;
         currentSpeed = 0f; SetStatus("Reset to verified start"); return true;
 #else
@@ -481,5 +489,43 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundContact.position + Vector3.up * (safety.bodyRadius + safety.obstacleClearance), safety.bodyRadius);
         if (facingReference != null) Gizmos.DrawRay(groundContact.position, facingReference.forward * safety.bodyRadius);
+        // Ground-support footprint, distinct from the elevated obstacle-query sphere.
+        Gizmos.color = Color.cyan;
+        for (int i = 0; i < 64; i++)
+        {
+            float a = i * Mathf.PI * 2f / 64f, b = (i + 1) * Mathf.PI * 2f / 64f;
+            Gizmos.DrawLine(groundContact.position + new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * safety.bodyRadius,
+                groundContact.position + new Vector3(Mathf.Cos(b), 0, Mathf.Sin(b)) * safety.bodyRadius);
+        }
+        if (safety.HasObstacleQuery)
+        {
+            var blocker = lastMovementBlocker != null ? lastMovementBlocker : safety.LastBlockingCollider;
+            var origin = lastMovementBlocker != null ? blockedSweepOrigin : safety.LastObstacleOrigin;
+            var end = lastMovementBlocker != null ? blockedSweepEnd : safety.LastObstacleEnd;
+            Gizmos.color = blocker != null ? Color.red : Color.green;
+            Gizmos.DrawLine(origin, end);
+            Gizmos.DrawWireSphere(end, safety.bodyRadius);
+#if UNITY_EDITOR
+            UnityEditor.Handles.Label(end + Vector3.up * safety.bodyRadius,
+                $"Obstacle sweep: {Vector3.Distance(origin, end):F3} m; radius {safety.bodyRadius:F3} m");
+#endif
+            if (blocker != null)
+            {
+                Gizmos.color = Color.red;
+                if (blocker is MeshCollider mesh && mesh.sharedMesh != null)
+                    Gizmos.DrawWireMesh(mesh.sharedMesh, blocker.transform.position, blocker.transform.rotation, blocker.transform.lossyScale);
+                else
+                {
+                    var matrix = Gizmos.matrix;
+                    if (blocker is BoxCollider box)
+                    { Gizmos.matrix = box.transform.localToWorldMatrix; Gizmos.DrawWireCube(box.center, box.size); }
+                    else Gizmos.DrawWireCube(blocker.bounds.center, blocker.bounds.size);
+                    Gizmos.matrix = matrix;
+                }
+#if UNITY_EDITOR
+                UnityEditor.Handles.Label(blocker.bounds.center, $"Blocking: {blocker.name} ({blocker.GetType().Name})");
+#endif
+            }
+        }
     }
 }

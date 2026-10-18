@@ -24,6 +24,19 @@ namespace TinyWorlds
         [Tooltip("Explicit decorative colliders that should not act as solid obstacles. Ground checks remain independent.")]
         public Collider[] ignoredObstacles = new Collider[0];
 
+        // Runtime diagnostics only; no effect on query sizes, collision response or serialization.
+        public bool HasObstacleQuery { get; private set; }
+        public Vector3 LastObstacleOrigin { get; private set; }
+        public Vector3 LastObstacleEnd { get; private set; }
+        public Collider LastBlockingCollider { get; private set; }
+        private void BeginObstacleQuery(Vector3 contact, Vector3 movement)
+        {
+            HasObstacleQuery = true;
+            LastObstacleOrigin = contact + Vector3.up * (bodyRadius + obstacleClearance);
+            LastObstacleEnd = LastObstacleOrigin + movement;
+            LastBlockingCollider = null;
+        }
+
         private readonly RaycastHit[] hits = new RaycastHit[256];
         private readonly Collider[] overlaps = new Collider[256];
 
@@ -151,17 +164,18 @@ namespace TinyWorlds
 
         public bool PathIsClear(Transform owner, Vector3 contact, Vector3 direction, float distance, out string reason, Collider[] groundSurfaces = null)
         {
+            BeginObstacleQuery(contact, direction.normalized * distance);
             Vector3 origin = contact + Vector3.up * (bodyRadius + obstacleClearance);
             int count = Physics.OverlapSphereNonAlloc(origin, bodyRadius, overlaps, obstacleMask, QueryTriggerInteraction.Ignore);
             if (count == overlaps.Length) { reason = "Obstacle query buffer full"; return false; }
             for (int i = 0; i < count; i++)
-                if (!IgnoreObstacle(owner, overlaps[i], groundSurfaces)) { reason = "Obstacle overlap: " + overlaps[i].name; return false; }
+                if (!IgnoreObstacle(owner, overlaps[i], groundSurfaces)) { LastBlockingCollider = overlaps[i]; reason = "Obstacle overlap: " + overlaps[i].name; return false; }
             if (distance > 0f)
             {
                 count = Physics.SphereCastNonAlloc(origin, bodyRadius, direction, hits, distance, obstacleMask, QueryTriggerInteraction.Ignore);
                 if (count == hits.Length) { reason = "Obstacle query buffer full"; return false; }
                 for (int i = 0; i < count; i++)
-                    if (!IgnoreObstacle(owner, hits[i].collider, groundSurfaces)) { reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
+                    if (!IgnoreObstacle(owner, hits[i].collider, groundSurfaces)) { LastBlockingCollider = hits[i].collider; reason = "Obstacle ahead: " + hits[i].collider.name; return false; }
             }
             reason = "Ready";
             return true;
@@ -200,6 +214,7 @@ namespace TinyWorlds
         public bool TryObstacleMotion(Transform owner, Vector3 contact, Vector3 desired, Collider[] surfaces,
             out Vector3 movement, out string reason)
         {
+            BeginObstacleQuery(contact, desired);
             movement = desired;
             if (MotionClear(owner, contact, desired, surfaces, out Vector3 normal, out reason)) return true;
             string blocked = reason;
@@ -228,7 +243,7 @@ namespace TinyWorlds
                 if (!Penetration(item,origin,out Vector3 normal,out float oldDepth)) continue;
                 bool remains = Penetration(item,origin+movement,out _,out float newDepth);
                 if (remains && (newDepth > oldDepth + 0.000001f || Vector3.Dot(movement,normal) < -0.000001f))
-                { blockingNormal=normal; reason="Obstacle overlap: "+item.name; return false; }
+                { LastBlockingCollider=item; blockingNormal=normal; reason="Obstacle overlap: "+item.name; return false; }
                 // The initial overlap is recoverable; continue checking all other colliders.
             }
             if (movement.sqrMagnitude > 0.000000001f)
@@ -245,7 +260,7 @@ namespace TinyWorlds
                     if(Vector3.Dot(movement,normal)>=-0.000001f)continue;
                     if(hits[i].distance<nearest){nearest=hits[i].distance;blocked=item;blockingNormal=normal;}
                 }
-                if(blocked!=null){reason="Obstacle ahead: "+blocked.name;return false;}
+                if(blocked!=null){LastBlockingCollider=blocked;reason="Obstacle ahead: "+blocked.name;return false;}
             }
             // Validate the endpoint against all obstacles, including new overlaps missed by a sweep at contact.
             count=Physics.OverlapSphereNonAlloc(origin+movement,bodyRadius,overlaps,obstacleMask,QueryTriggerInteraction.Ignore);
@@ -256,7 +271,7 @@ namespace TinyWorlds
                 if(!Penetration(item,origin+movement,out Vector3 normal,out float depth))continue;
                 bool wasOverlapping=Penetration(item,origin,out _,out float oldDepth);
                 if(!wasOverlapping || depth>oldDepth+0.000001f)
-                {blockingNormal=normal;reason="Obstacle overlap: "+item.name;return false;}
+                {LastBlockingCollider=item;blockingNormal=normal;reason="Obstacle overlap: "+item.name;return false;}
             }
             return true;
         }
