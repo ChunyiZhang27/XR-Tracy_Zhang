@@ -18,6 +18,9 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public TMP_Text progressText, feedbackText;
     public GameObject tryAgainButton;
     public GameObject searchPanel, completionPanel;
+    public TMP_Text completionTitle;
+    public UnityEngine.UI.Button finishExplorationButton;
+    public bool Finished { get; private set; }
     public bool CompletionVisible { get; private set; }
     Coroutine completionRoutine;
     [Min(1)] public int requiredAphids = 5;
@@ -26,7 +29,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public int FoundCount => found.Count;
     public const string Instruction = "Find and catch five aphids hiding among the insects!";
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
-    public const string IncorrectFeedback = "Not quite! Look for tiny, soft-bodied insects with pear-shaped bodies and antennae.";
+    public const string IncorrectFeedback = "Not quite! Look for tiny, soft-bodied insects with pear-shaped bodies.";
     public const string CompletionFeedback = "You found five aphids! Ladybirds help protect plants by feeding on aphids.";
     private readonly HashSet<FoodSearchTarget> found = new HashSet<FoodSearchTarget>();
     private bool Eligible => objective == null || objective.FoodSearchActive;
@@ -35,7 +38,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
     {
         if (!Eligible || AnySelected()) return;
         CancelCompletion();
-        found.Clear(); Completed = CompletionVisible = false; Running = true;
+        found.Clear(); Completed = CompletionVisible = Finished = false; Running = true;
+        RefreshCompletionState();
         if (completionPanel != null) completionPanel.SetActive(false);
         if (searchPanel != null) searchPanel.SetActive(true);
         if (targets != null) foreach (var target in targets) if (target != null)
@@ -94,26 +98,33 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (tryAgainButton != null) tryAgainButton.SetActive(true);
     }
     void CancelCompletion() { if (completionRoutine != null) StopCoroutine(completionRoutine); completionRoutine = null; }
-    public void TryAgain() { if (Running && Completed && CompletionVisible && Eligible) BeginSearch(); }
+    public void TryAgain() { if ((Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch(); }
     public void FinishExploration()
     {
-        if (!Running || !Completed || !CompletionVisible || !Eligible) return;
-        EndSearch();
+        if (!Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
+        // Remain at the final Habitat card. Explicit Try Again restarts only this mission.
+        Finished = true;
+        Running = false;
         if (searchPanel != null) searchPanel.SetActive(false);
-        if (objective == null || objective.transition == null) return;
-#if UNITY_EDITOR
-        if (objective.controller.EditorTestActive)
+        if (insectArea != null) insectArea.SetActive(false);
+        if (objective != null && objective.controller != null) objective.controller.SetHabitatStopped(true);
+        RefreshCompletionState();
+    }
+    void RefreshCompletionState()
+    {
+        if (completionTitle != null) completionTitle.text = Finished ? "Exploration Complete!" : "Well Done!";
+        if (finishExplorationButton != null)
         {
-            objective.controller.EndPlayerControl(); objective.controller.SetEditorTestMode(false);
-            objective.transition.ExitImmediately(); objective.Evaluate(); return;
+            finishExplorationButton.interactable = !Finished;
+            var label = finishExplorationButton.GetComponentInChildren<TMP_Text>(true);
+            if (label != null) label.text = Finished ? "Finished" : "Finish Exploration";
         }
-#endif
-        objective.transition.ReturnToBodyExploration();
     }
     public void EndSearch()
     {
         CancelCompletion();
-        Running = Completed = CompletionVisible = false; found.Clear();
+        Running = Completed = CompletionVisible = Finished = false; found.Clear();
+        RefreshCompletionState();
         if (completionPanel != null) completionPanel.SetActive(false);
         if (targets != null) foreach (var target in targets) if (target != null) target.SetFound(false);
         if (insectArea != null) insectArea.SetActive(false);

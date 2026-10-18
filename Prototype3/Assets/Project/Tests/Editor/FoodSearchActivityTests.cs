@@ -76,7 +76,7 @@ public sealed class FoodSearchActivityTests
     {
         Catch(0);Catch(5);Catch(5);Catch(6);
         Assert.AreEqual(1,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(targets[5],"Found"));Assert.IsTrue(targets[5].gameObject.activeSelf);
-        Assert.AreEqual("Not quite! Look for tiny, soft-bodied insects with pear-shaped bodies and antennae.",Get<string>(feedback,"text"));
+        Assert.AreEqual("Not quite! Look for tiny, soft-bodied insects with pear-shaped bodies.",Get<string>(feedback,"text"));
     }
     [Test] public void CompletionWaitsForReleaseAndReplayClearsAllUniqueScores()
     {
@@ -90,6 +90,23 @@ public sealed class FoodSearchActivityTests
         foreach(var target in targets)Assert.IsFalse(Get<bool>(target,"Found"));
         Catch(0);Assert.AreEqual(1,Get<int>(activity,"FoundCount"));
         Call(activity,"EndSearch");Catch(1);Assert.AreEqual(0,Get<int>(activity,"FoundCount"));Assert.IsFalse(area.activeSelf);
+    }
+    [Test] public void FinishKeepsFinalCardAndScoresUntilExplicitMissionReplay()
+    {
+        var title=Text("Completion title"); Set(activity,"completionTitle",title);
+        var finishObject=new GameObject("Finish",typeof(RectTransform));finishObject.transform.SetParent(completion.transform,false);
+        var button=finishObject.AddComponent(Assembly.Load("UnityEngine.UI").GetType("UnityEngine.UI.Button",true));
+        Set(activity,"finishExplorationButton",button);
+        for(int i=0;i<5;i++)Catch(i);ShowCompletion();
+        Call(activity,"FinishExploration");Call(activity,"FinishExploration");
+        Assert.IsTrue(Get<bool>(activity,"Finished"));Assert.IsFalse(Get<bool>(activity,"Running"));
+        Assert.IsTrue(completion.activeSelf);Assert.IsFalse(panel.activeSelf);Assert.IsFalse(area.activeSelf);
+        Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.AreEqual("Aphids caught: 5 / 5",Get<string>(progress,"text"));
+        Assert.AreEqual("Exploration Complete!",Get<string>(title,"text"));Assert.IsFalse(Get<bool>(button,"interactable"));
+        Catch(0);Assert.AreEqual(5,Get<int>(activity,"FoundCount"));
+        Call(activity,"TryAgain");Assert.IsFalse(Get<bool>(activity,"Finished"));Assert.IsTrue(Get<bool>(activity,"Running"));
+        Assert.IsFalse(completion.activeSelf);Assert.IsTrue(panel.activeSelf);Assert.AreEqual(0,Get<int>(activity,"FoundCount"));
+        Assert.IsTrue(Get<bool>(button,"interactable"));Assert.AreEqual("Well Done!",Get<string>(title,"text"));
     }
     [Test] public void MismatchedEventDoesNotScoreAnotherTarget()
     {

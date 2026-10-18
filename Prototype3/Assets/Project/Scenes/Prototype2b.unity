@@ -28087,6 +28087,8 @@ MonoBehaviour:
   tryAgainButton: {fileID: 2087341056}
   searchPanel: {fileID: 1192334634}
   completionPanel: {fileID: 1180847504}
+  completionTitle: {fileID: 488938303}
+  finishExplorationButton: {fileID: 21649875}
   requiredAphids: 5
   startFoodSearchInEditorTest: 0
 --- !u!1 &1788636437

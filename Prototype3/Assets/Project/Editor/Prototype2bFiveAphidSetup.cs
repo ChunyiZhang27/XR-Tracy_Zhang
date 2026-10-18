@@ -95,10 +95,41 @@ public static class Prototype2bFiveAphidSetup
         foreach(var text in completion.GetComponentsInChildren<TMP_Text>(true))text.raycastTarget=false;
         activity.tryAgainButton.SetActive(false); // Retain the previous UI object, without a duplicate replay surface.
         activity.tryAgainButton=retry.gameObject; activity.completionPanel=completion;
+        activity.completionTitle=completion.transform.Find("Title").GetComponent<TMP_Text>(); activity.finishExplorationButton=finish;
         completion.SetActive(false);
         EditorUtility.SetDirty(activity);EditorSceneManager.MarkSceneDirty(scene);
         if(!EditorSceneManager.SaveScene(scene))throw new InvalidOperationException("Save failed.");
         Debug.Log("FIVE APHIDS configured: 5 imported visual copies, 2 existing ant placeholders, shared XR manager and completion card anchor.");
+    }
+    public static void VerifyAndWireFinalStateBatch()
+    {
+        if (!Application.isBatchMode) throw new InvalidOperationException("Batch only.");
+        var scene = EditorSceneManager.OpenScene(ScenePath);
+        var all = scene.GetRootGameObjects().SelectMany(x=>x.GetComponentsInChildren<Transform>(true)).ToArray();
+        var activity = all.Select(x=>x.GetComponent<FoodSearchActivity>()).Single(x=>x!=null);
+        var aphids = activity.targets.Where(x=>x.category==FoodSearchTarget.IdentificationCategory.Aphid).ToArray();
+        if (aphids.Length!=5 || activity.requiredAphids!=5 || activity.targets.Length!=7) throw new InvalidOperationException("Expected existing five-aphid mission and two distractors.");
+        var reference = aphids.Single(x=>x.name=="Aphid_01").GetComponent<XRGrabInteractable>();
+        foreach(var target in activity.targets)
+        {
+            var grab = target.GetComponent<XRGrabInteractable>();
+            var body = target.GetComponent<Rigidbody>();
+            if (grab==null || body==null || target.GetComponent<XRSimpleInteractable>()!=null ||
+                grab.interactionManager!=reference.interactionManager || grab.interactionLayers.value!=reference.interactionLayers.value ||
+                grab.movementType!=reference.movementType || grab.farAttachMode!=reference.farAttachMode ||
+                grab.throwOnDetach || body.useGravity || !body.isKinematic || grab.colliders.Count!=1 ||
+                target.GetComponent<FoodSearchGrabReturn>()==null || target.activity!=activity)
+                throw new InvalidOperationException("Grab configuration mismatch: "+target.name);
+            Debug.Log($"CHECKPOINT A existing target {target.name}: category={target.category}, position={target.transform.position:F4}, manager={grab.interactionManager.name}, attach={grab.farAttachMode}, kinematic={body.isKinematic}");
+        }
+        var card = activity.completionPanel;
+        if (card==null)throw new InvalidOperationException("Existing completion card missing.");
+        activity.completionTitle=card.transform.Find("Title").GetComponent<TMP_Text>();
+        activity.finishExplorationButton=card.transform.Find("FinishExplorationButton").GetComponent<UnityEngine.UI.Button>();
+        activity.completionTitle.text="Well Done!";
+        EditorUtility.SetDirty(activity);EditorSceneManager.MarkSceneDirty(scene);
+        if(!EditorSceneManager.SaveScene(scene))throw new InvalidOperationException("Save failed.");
+        Debug.Log("CHECKPOINT A verified existing five grab targets; CHECKPOINT B final UI references wired without moving or duplicating objects.");
     }
     static bool ValidPosition(LadybirdHabitatObjective objective,FoodSearchTarget target,Vector3 candidate,List<Vector3> placed,out Vector3 position)
     {
