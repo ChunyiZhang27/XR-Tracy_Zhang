@@ -36,18 +36,12 @@ public sealed class FoodSearchTarget : MonoBehaviour
     }
     private void Selected(SelectEnterEventArgs args)
     {
-        if (RequiresGrab)
-        {
-            var grab = interactable as XRGrabInteractable;
-            if (grab == null || !grab.isSelected || args.interactorObject == null) return;
-            Debug.Log("[Food Search Step A] XR grab confirmed: " + name, this);
-            if (activity != null) activity.Identify(this);
-        }
-        else SelectTarget();
+        var grab = interactable as XRGrabInteractable;
+        if (grab != null && activity != null) activity.ConfirmGrab(this, args);
     }
     private void HoverEntered(HoverEnterEventArgs _) { xrHover = true; Refresh(); }
     private void HoverExited(HoverExitEventArgs _) { xrHover = false; Refresh(); }
-    public void SelectTarget() { if (!RequiresGrab && activity != null) activity.Identify(this); }
+    public void SelectTarget() { /* Mouse/ray clicks are not catches. */ }
     public void SetMouseHover(bool value) { if (mouseHover == value) return; mouseHover = value; Refresh(); }
     public void SetFound(bool value) { Found = value; Refresh(); }
     private void Refresh()
