@@ -20,6 +20,11 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public GameObject searchPanel, completionPanel;
     public TMP_Text completionTitle;
     public UnityEngine.UI.Button finishExplorationButton;
+    public GameObject backToInsectsPanel;
+    public UnityEngine.UI.Button backToInsectsButton, existingBackToInsectsAction;
+    [Min(0f)] public float incorrectFeedbackCooldown = 2f;
+    float nextIncorrectFeedbackTime = float.NegativeInfinity;
+    bool returningToInsects;
     public bool Finished { get; private set; }
     public bool CompletionVisible { get; private set; }
     Coroutine completionRoutine;
@@ -29,16 +34,17 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public int FoundCount => found.Count;
     public const string Instruction = "Find and catch five aphids hiding among the insects!";
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
-    public const string IncorrectFeedback = "Not quite! Look for tiny, soft-bodied insects with pear-shaped bodies.";
-    public const string CompletionFeedback = "You found five aphids! Ladybirds help protect plants by feeding on aphids.";
+    public const string IncorrectFeedback = "Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.";
+    public const string CompletionFeedback = "You've caught five aphids! Ladybirds help protect plants by feeding on aphids.";
     private readonly HashSet<FoodSearchTarget> found = new HashSet<FoodSearchTarget>();
     private bool Eligible => objective == null || objective.FoodSearchActive;
     private void Awake() { EndSearch(); }
     public void BeginSearch()
     {
-        if (!Eligible || AnySelected()) return;
+        if (!Eligible || AnySelected() || returningToInsects) return;
         CancelCompletion();
         found.Clear(); Completed = CompletionVisible = Finished = false; Running = true;
+        nextIncorrectFeedbackTime = float.NegativeInfinity;
         RefreshCompletionState();
         if (completionPanel != null) completionPanel.SetActive(false);
         if (searchPanel != null) searchPanel.SetActive(true);
@@ -65,7 +71,11 @@ public sealed class FoodSearchActivity : MonoBehaviour
             args.interactorObject == null || !grab.interactorsSelecting.Contains(args.interactorObject)) return;
         if (target.category != FoodSearchTarget.IdentificationCategory.Aphid)
         {
-            if (feedbackText != null) feedbackText.text = IncorrectFeedback;
+            if (Time.unscaledTime >= nextIncorrectFeedbackTime)
+            {
+                if (feedbackText != null) feedbackText.text = IncorrectFeedback;
+                nextIncorrectFeedbackTime = Time.unscaledTime + incorrectFeedbackCooldown;
+            }
             return;
         }
         found.Add(target); target.SetFound(true); RefreshProgress();
@@ -98,7 +108,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (tryAgainButton != null) tryAgainButton.SetActive(true);
     }
     void CancelCompletion() { if (completionRoutine != null) StopCoroutine(completionRoutine); completionRoutine = null; }
-    public void TryAgain() { if ((Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch(); }
+    public void TryAgain() { if (!returningToInsects && (Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch(); }
     public void FinishExploration()
     {
         if (!Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
@@ -112,6 +122,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     void RefreshCompletionState()
     {
+        if (backToInsectsPanel != null) backToInsectsPanel.SetActive(Finished && !returningToInsects);
+        if (backToInsectsButton != null) backToInsectsButton.interactable = !returningToInsects;
         if (completionTitle != null) completionTitle.text = Finished ? "Exploration Complete!" : "Well Done!";
         if (finishExplorationButton != null)
         {
@@ -120,10 +132,48 @@ public sealed class FoodSearchActivity : MonoBehaviour
             if (label != null) label.text = Finished ? "Finished" : "Finish Exploration";
         }
     }
+    public void BackToInsects()
+    {
+        if (!Finished || !CompletionVisible || returningToInsects || existingBackToInsectsAction == null) return;
+        returningToInsects = true;
+        if (backToInsectsButton != null) backToInsectsButton.interactable = false;
+        StartCoroutine(ReturnToInsectsRoutine());
+    }
+    IEnumerator ReturnToInsectsRoutine()
+    {
+        yield return null; // Leave the UI/XR event stack before cancelling any remaining selections.
+        if (targets != null) foreach (var target in targets)
+        {
+            if (target == null) continue;
+            var grab = target.GetComponent<XRGrabInteractable>();
+            if (grab != null && grab.isSelected && grab.interactionManager != null)
+                grab.interactionManager.CancelInteractableSelection((IXRSelectInteractable)grab);
+        }
+        yield return null;
+        EndSearch();
+        if (searchPanel != null) searchPanel.SetActive(false);
+        if (objective != null)
+        {
+            if (objective.arrivalCard != null) objective.arrivalCard.SetActive(false);
+            if (objective.foodLearningCard1 != null) objective.foodLearningCard1.SetActive(false);
+            if (objective.foodLearningCard2 != null) objective.foodLearningCard2.SetActive(false);
+            if (objective.controller != null)
+            {
+                objective.controller.EndPlayerControl();
+#if UNITY_EDITOR
+                objective.controller.SetEditorTestMode(false);
+#endif
+            }
+        }
+        // Invoke the saved original navigation action, including its existing transition cleanup
+        // and scene-reload/session-progress rules. No alternative selection system is introduced.
+        existingBackToInsectsAction.onClick.Invoke();
+    }
     public void EndSearch()
     {
         CancelCompletion();
         Running = Completed = CompletionVisible = Finished = false; found.Clear();
+        nextIncorrectFeedbackTime = float.NegativeInfinity;
         RefreshCompletionState();
         if (completionPanel != null) completionPanel.SetActive(false);
         if (targets != null) foreach (var target in targets) if (target != null) target.SetFound(false);
