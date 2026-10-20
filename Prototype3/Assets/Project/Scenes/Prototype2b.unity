@@ -26830,11 +26830,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4a6df925ad442ba95b2077f693a4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Prototype2bVoiceGuidance
-  voiceStartExploration: {fileID: 0}
-  voiceHabitatFound: {fileID: 0}
-  voiceStartFoodSearch: {fileID: 0}
-  voiceWrongInsect: {fileID: 0}
-  voiceMissionComplete: {fileID: 0}
+  voiceStartExploration: {fileID: 8300000, guid: f16ec1a0d5e6d46f99ca30db4fb890e6, type: 3}
+  voiceHabitatFound: {fileID: 8300000, guid: 83016f2cc1ce84580b6a9600f858db8d, type: 3}
+  voiceStartFoodSearch: {fileID: 8300000, guid: 444604b7cca1e4b5b97ec135fee112ae, type: 3}
+  voiceWrongInsect: {fileID: 8300000, guid: 501152202c27b40d5bb269b3eaca3eee, type: 3}
+  voiceMissionComplete: {fileID: 8300000, guid: 4de18a4bbc0d541f592442991fa3d8fa, type: 3}
   existingNarration: {fileID: 1831991277}
   videoCard: {fileID: 1391001757}
   volume: 1
