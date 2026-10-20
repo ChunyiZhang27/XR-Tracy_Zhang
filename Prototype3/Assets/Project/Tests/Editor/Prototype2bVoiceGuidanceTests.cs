@@ -44,7 +44,7 @@ public class Prototype2bVoiceGuidanceTests
     {
         Call("StartFoodSearch");Call("MissionComplete");Call("Silence");
         Assert.AreEqual("Silent",Stage);Assert.IsEmpty(Guidance);
-        Call("StartFoodSearch");StringAssert.Contains("grab five aphids",Guidance);
+        Call("StartFoodSearch");StringAssert.Contains("grab ten aphids",Guidance);
     }
     [Test] public void VideoReplayCancelsGuidanceEvenWhenMediaMissing()
     {
@@ -52,6 +52,18 @@ public class Prototype2bVoiceGuidanceTests
         var v=video.AddComponent(Assembly.Load("Assembly-CSharp").GetType("AphidLearningVideo",true));
         v.GetType().GetField("voiceGuidance").SetValue(v,voice);
         video.SetActive(true);v.GetType().GetMethod("Replay").Invoke(v,null);Assert.AreEqual("Silent",Stage);Assert.IsEmpty(Guidance);
+    }
+    [Test] public void LegacyCountRecordingsAreSuppressedButGuidanceRemainsAvailable()
+    {
+        var clip=AudioClip.Create("In-memory test only",4410,1,44100,false);
+        try {
+            type.GetField("voiceStartFoodSearch").SetValue(voice,clip);
+            type.GetField("voiceMissionComplete").SetValue(voice,clip);
+            Call("StartFoodSearch");Assert.IsNull(root.GetComponent<AudioSource>().clip);
+            StringAssert.Contains("ten aphids",Guidance);
+            Call("MissionComplete");Assert.IsNull(root.GetComponent<AudioSource>().clip);
+            StringAssert.Contains("ten aphids",Guidance);
+        } finally { UnityEngine.Object.DestroyImmediate(clip); }
     }
     [Test] public void SourceIsTwoDimensionalAndDoesNotAutoplay()
     {

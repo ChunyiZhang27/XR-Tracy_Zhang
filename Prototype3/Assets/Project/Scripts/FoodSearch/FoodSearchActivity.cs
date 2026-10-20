@@ -33,14 +33,14 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public bool Finished { get; private set; }
     public bool CompletionVisible { get; private set; }
     Coroutine completionRoutine;
-    [Min(1)] public int requiredAphids = 5;
+    [Min(1)] public int requiredAphids = 10;
     public bool Running { get; private set; }
     public bool Completed { get; private set; }
     public int FoundCount => found.Count;
-    public const string Instruction = "Find and catch five aphids hiding among the insects!";
+    public const string Instruction = "Find and catch ten aphids hiding among the insects!";
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
     public const string IncorrectFeedback = "Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.";
-    public const string CompletionFeedback = "You've caught five aphids! Ladybirds help protect plants by feeding on aphids.";
+    public const string CompletionFeedback = "You've caught ten aphids! Ladybirds help protect plants by feeding on aphids.";
     private readonly HashSet<FoodSearchTarget> found = new HashSet<FoodSearchTarget>();
     private bool Eligible => objective == null || objective.FoodSearchActive;
     private void Awake() { EndSearch(); }
@@ -90,7 +90,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (correctCatchClip != null && correctCatchSource != null && correctCatchSource.isActiveAndEnabled)
             correctCatchSource.PlayOneShot(correctCatchClip, correctCatchVolume);
         Completed = found.Count >= requiredAphids;
-        if (feedbackText != null) feedbackText.text = Completed ? "Five aphids caught! Release held insects to continue." : CorrectFeedback;
+        if (feedbackText != null) feedbackText.text = Completed ? "Ten aphids caught! Release held insects to continue." : CorrectFeedback;
         if (Completed)
         {
             if (voiceGuidance != null) voiceGuidance.MissionComplete();

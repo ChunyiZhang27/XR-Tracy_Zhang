@@ -22,7 +22,7 @@ public sealed class FoodSearchActivityTests
     }
     [SetUp] public void Setup()
     {
-        fixture=new GameObject("Five-catch fixture");fixture.SetActive(false);
+        fixture=new GameObject("Ten-catch fixture");fixture.SetActive(false);
         fixture.AddComponent(XR("XRInteractionManager"));
         area=new GameObject("Area");area.transform.SetParent(fixture.transform,false);
         panel=new GameObject("Search");panel.transform.SetParent(fixture.transform,false);
@@ -37,14 +37,14 @@ public sealed class FoodSearchActivityTests
         returnButton=new GameObject("Back",typeof(RectTransform)).AddComponent(uiButton);returnButton.transform.SetParent(returnPanel.transform,false);
         originalBackAction=new GameObject("Original back action",typeof(RectTransform)).AddComponent(uiButton);originalBackAction.transform.SetParent(fixture.transform,false);
         Set(activity,"backToInsectsPanel",returnPanel);Set(activity,"backToInsectsButton",returnButton);Set(activity,"existingBackToInsectsAction",originalBackAction);
-        targets=new Component[7];grabs=new Component[7];var typed=Array.CreateInstance(Runtime("FoodSearchTarget"),7);
+        targets=new Component[12];grabs=new Component[12];var typed=Array.CreateInstance(Runtime("FoodSearchTarget"),12);
         var category=Runtime("FoodSearchTarget").GetNestedType("IdentificationCategory");
-        for(int i=0;i<7;i++)
+        for(int i=0;i<12;i++)
         {
             var go=new GameObject("Name does not determine category "+i);go.transform.SetParent(area.transform,false);
             grabs[i]=go.AddComponent(XR("Interactables.XRGrabInteractable"));
             targets[i]=go.AddComponent(Runtime("FoodSearchTarget"));Set(targets[i],"activity",activity);
-            Set(targets[i],"category",Enum.Parse(category,i<5?"Aphid":"Ant"));typed.SetValue(targets[i],i);
+            Set(targets[i],"category",Enum.Parse(category,i<10?"Aphid":"Ant"));typed.SetValue(targets[i],i);
         }
         Set(activity,"targets",typed);fixture.SetActive(true);
         Call(activity,"EndSearch");Call(activity,"BeginSearch");
@@ -66,30 +66,32 @@ public sealed class FoodSearchActivityTests
         var routine=(IEnumerator)Call(activity,"CompleteAfterRelease");
         for(int i=0;i<5&&routine.MoveNext();i++) { }
     }
-    [Test] public void RequiresFiveUniqueConfirmedGrabsAndRejectsClicksOrInvalidEvents()
+    [Test] public void RequiresTenUniqueConfirmedGrabsAndRejectsClicksOrInvalidEvents()
     {
-        Assert.AreEqual("Aphids caught: 0 / 5",Get<string>(progress,"text"));
+        Assert.AreEqual("Aphids caught: 0 / 10",Get<string>(progress,"text"));
         Call(targets[0],"SelectTarget");Call(activity,"Identify",targets[0]);Call(activity,"ConfirmGrab",targets[0],Args(0,false));
         Assert.AreEqual(0,Get<int>(activity,"FoundCount"));
-        for(int i=0;i<4;i++)Catch(i);
-        Assert.AreEqual(4,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"Completed"));
-        Catch(0);Assert.AreEqual(4,Get<int>(activity,"FoundCount"));Catch(4);
-        Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.IsTrue(Get<bool>(activity,"Completed"));
-        Assert.AreEqual("Aphids caught: 5 / 5",Get<string>(progress,"text"));
+        for(int i=0;i<5;i++)Catch(i);
+        Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"Completed"));
+        for(int i=5;i<9;i++)Catch(i);
+        Assert.AreEqual(9,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"Completed"));
+        Catch(0);Assert.AreEqual(9,Get<int>(activity,"FoundCount"));Catch(9);
+        Assert.AreEqual(10,Get<int>(activity,"FoundCount"));Assert.IsTrue(Get<bool>(activity,"Completed"));
+        Assert.AreEqual("Aphids caught: 10 / 10",Get<string>(progress,"text"));
         ShowCompletion();Assert.IsTrue(completion.activeSelf);Assert.IsFalse(panel.activeSelf);Assert.IsFalse(area.activeSelf);
     }
     [Test] public void IncorrectGrabsRemainAvailableAndDoNotReduceProgress()
     {
-        Catch(0);Catch(5);Catch(5);Catch(6);
-        Assert.AreEqual(1,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(targets[5],"Found"));Assert.IsTrue(targets[5].gameObject.activeSelf);
+        Catch(0);Catch(10);Catch(10);Catch(11);
+        Assert.AreEqual(1,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(targets[10],"Found"));Assert.IsTrue(targets[10].gameObject.activeSelf);
         Assert.AreEqual("Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.",Get<string>(feedback,"text"));
     }
     [Test] public void CompletionWaitsForReleaseAndReplayClearsAllUniqueScores()
     {
-        for(int i=0;i<4;i++)Catch(i);
-        Call(activity,"ConfirmGrab",targets[4],Args(4,true));
-        Call(activity,"TryAgain");Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"CompletionVisible"));
-        Args(4,false);ShowCompletion();Call(activity,"TryAgain");Call(activity,"TryAgain");
+        for(int i=0;i<9;i++)Catch(i);
+        Call(activity,"ConfirmGrab",targets[9],Args(9,true));
+        Call(activity,"TryAgain");Assert.AreEqual(10,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"CompletionVisible"));
+        Args(9,false);ShowCompletion();Call(activity,"TryAgain");Call(activity,"TryAgain");
         Assert.AreEqual(0,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(activity,"Completed"));
         Assert.IsFalse(completion.activeSelf);Assert.IsTrue(area.activeSelf);Assert.IsTrue(panel.activeSelf);
         Assert.AreEqual("",Get<string>(feedback,"text"));
@@ -103,24 +105,24 @@ public sealed class FoodSearchActivityTests
         var finishObject=new GameObject("Finish",typeof(RectTransform));finishObject.transform.SetParent(completion.transform,false);
         var button=finishObject.AddComponent(Assembly.Load("UnityEngine.UI").GetType("UnityEngine.UI.Button",true));
         Set(activity,"finishExplorationButton",button);
-        for(int i=0;i<5;i++)Catch(i);ShowCompletion();
+        for(int i=0;i<10;i++)Catch(i);ShowCompletion();
         Call(activity,"FinishExploration");Call(activity,"FinishExploration");
         Assert.IsTrue(Get<bool>(activity,"Finished"));Assert.IsFalse(Get<bool>(activity,"Running"));
         Assert.IsTrue(completion.activeSelf);Assert.IsTrue(returnPanel.activeSelf);Assert.IsFalse(panel.activeSelf);Assert.IsFalse(area.activeSelf);
-        Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.AreEqual("Aphids caught: 5 / 5",Get<string>(progress,"text"));
+        Assert.AreEqual(10,Get<int>(activity,"FoundCount"));Assert.AreEqual("Aphids caught: 10 / 10",Get<string>(progress,"text"));
         Assert.AreEqual("Exploration Complete!",Get<string>(title,"text"));Assert.IsFalse(Get<bool>(button,"interactable"));
-        Catch(0);Assert.AreEqual(5,Get<int>(activity,"FoundCount"));
+        Catch(0);Assert.AreEqual(10,Get<int>(activity,"FoundCount"));
         Call(activity,"TryAgain");Assert.IsFalse(Get<bool>(activity,"Finished"));Assert.IsTrue(Get<bool>(activity,"Running"));
         Assert.IsFalse(completion.activeSelf);Assert.IsFalse(returnPanel.activeSelf);Assert.IsTrue(panel.activeSelf);Assert.AreEqual(0,Get<int>(activity,"FoundCount"));
         Assert.IsTrue(Get<bool>(button,"interactable"));Assert.AreEqual("Well Done!",Get<string>(title,"text"));
     }
     [Test] public void IncorrectFeedbackIsThrottledAndReplayClearsCooldown()
     {
-        Catch(5);Assert.AreEqual(Runtime("FoodSearchActivity").GetField("IncorrectFeedback").GetRawConstantValue(),Get<string>(feedback,"text"));
+        Catch(10);Assert.AreEqual(Runtime("FoodSearchActivity").GetField("IncorrectFeedback").GetRawConstantValue(),Get<string>(feedback,"text"));
         feedback.GetType().GetProperty("text").SetValue(feedback,"Keep current feedback");
-        Catch(5);Catch(6);Assert.AreEqual("Keep current feedback",Get<string>(feedback,"text"));
+        Catch(10);Catch(11);Assert.AreEqual("Keep current feedback",Get<string>(feedback,"text"));
         Assert.AreEqual(0,Get<int>(activity,"FoundCount"));
-        Call(activity,"EndSearch");Call(activity,"BeginSearch");Catch(6);
+        Call(activity,"EndSearch");Call(activity,"BeginSearch");Catch(11);
         Assert.AreEqual(Runtime("FoodSearchActivity").GetField("IncorrectFeedback").GetRawConstantValue(),Get<string>(feedback,"text"));
     }
     [Test] public void ReturnIsExplicitOneShotAndInvokesTheExistingActionAfterCleanup()
@@ -130,10 +132,10 @@ public sealed class FoodSearchActivityTests
         UnityEngine.Events.UnityAction listener=()=>calls++;
         click.GetType().GetMethod("AddListener").Invoke(click,new object[]{listener});
         Call(activity,"BackToInsects");Assert.AreEqual(0,calls);Assert.IsFalse(returnPanel.activeSelf);
-        for(int i=0;i<5;i++)Catch(i);ShowCompletion();Assert.IsFalse(returnPanel.activeSelf);
+        for(int i=0;i<10;i++)Catch(i);ShowCompletion();Assert.IsFalse(returnPanel.activeSelf);
         Call(activity,"FinishExploration");Assert.IsTrue(returnPanel.activeSelf);
         Call(activity,"BackToInsects");Call(activity,"BackToInsects");Call(activity,"TryAgain");
-        Assert.AreEqual(5,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(returnButton,"interactable"));
+        Assert.AreEqual(10,Get<int>(activity,"FoundCount"));Assert.IsFalse(Get<bool>(returnButton,"interactable"));
         Call(activity,"StopAllCoroutines");
         var routine=(IEnumerator)Call(activity,"ReturnToInsectsRoutine");for(int i=0;i<5&&routine.MoveNext();i++){}
         Assert.AreEqual(1,calls);Assert.IsFalse(completion.activeSelf);Assert.IsFalse(returnPanel.activeSelf);Assert.IsFalse(area.activeSelf);Assert.IsFalse(panel.activeSelf);

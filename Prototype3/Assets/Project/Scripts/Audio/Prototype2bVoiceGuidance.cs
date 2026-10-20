@@ -7,6 +7,10 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
 {
     public AudioClip voiceStartExploration, voiceHabitatFound, voiceStartFoodSearch,
         voiceWrongInsect, voiceMissionComplete;
+    [Tooltip("Catch count spoken in both assigned Food Search and Mission Complete clips. Set to 10 only after replacing the legacy five-aphid recordings.")]
+    [Min(1)] public int recordedFoodMissionAphidCount = 5;
+    [Tooltip("Must match this scene's FoodSearchActivity.Required Aphids. Mismatched count-specific recordings are suppressed.")]
+    [Min(1)] public int foodMissionAphidCount = 10;
     public NarrationManager existingNarration;
     public GameObject videoCard;
     [Tooltip("Optional dedicated catch SFX source. Completion narration waits for its final one-shot to finish.")]
@@ -21,9 +25,9 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
     float nextIncorrectTime = float.NegativeInfinity;
     public const string StartExplorationText = "Great job! Now it's time to explore! Use your left thumbstick to guide your ladybird towards its habitat.";
     public const string HabitatFoundText = "You've found the habitat! Well done! Let's discover what ladybirds eat. Select Continue to learn more.";
-    public const string StartFoodSearchText = "Now it's your turn! Use your controller to grab five aphids. Look carefully! Other insects are hiding here too.";
+    public const string StartFoodSearchText = "Now it's your turn! Use your controller to grab ten aphids. Look carefully! Other insects are hiding here too.";
     public const string WrongInsectText = "Oops! That's an ant, not an aphid. Look for the tiny insects with soft, pear-shaped bodies. Try again!";
-    public const string MissionCompleteText = "Amazing! You've caught all five aphids! Ladybirds help protect plants by eating aphids. Great work!";
+    public const string MissionCompleteText = "Amazing! You've caught all ten aphids! Ladybirds help protect plants by eating aphids. Great work!";
     void Awake() { ConfigureSource(); }
     void ConfigureSource()
     {
@@ -33,8 +37,8 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
     }
     public void EnterExploration() { Enter(Stage.Exploring, voiceStartExploration, StartExplorationText); }
     public void HabitatFound() { Enter(Stage.Habitat, voiceHabitatFound, HabitatFoundText); }
-    public void StartFoodSearch() { Enter(Stage.FoodSearch, voiceStartFoodSearch, StartFoodSearchText); }
-    public void MissionComplete() { Enter(Stage.Complete, voiceMissionComplete, MissionCompleteText); }
+    public void StartFoodSearch() { Enter(Stage.FoodSearch, recordedFoodMissionAphidCount == foodMissionAphidCount ? voiceStartFoodSearch : null, StartFoodSearchText); }
+    public void MissionComplete() { Enter(Stage.Complete, recordedFoodMissionAphidCount == foodMissionAphidCount ? voiceMissionComplete : null, MissionCompleteText); }
     void Enter(Stage stage, AudioClip clip, string text)
     {
         if (CurrentStage == stage) return;

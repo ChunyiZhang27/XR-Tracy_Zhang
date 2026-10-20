@@ -59,8 +59,8 @@ public class AphidLearningVideoTests
     [TestCase(3.99,"Aphids are tiny insects that feed on plant sap.")]
     [TestCase(4,"Look for a pear-shaped body, six legs and antennae.")]
     [TestCase(8.99,"Look for a pear-shaped body, six legs and antennae.")]
-    [TestCase(9,"Can you recognise and find five aphids?")]
-    [TestCase(15,"Can you recognise and find five aphids?")]
+    [TestCase(9,"Can you recognise and find ten aphids?")]
+    [TestCase(15,"Can you recognise and find ten aphids?")]
     public void SubtitlesFollowStoryboard(double seconds,string expected)
     { Assert.AreEqual(expected,Runtime.GetMethod("SubtitleAt").Invoke(null,new object[]{seconds})); }
 }

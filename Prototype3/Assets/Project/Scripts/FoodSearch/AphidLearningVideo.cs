@@ -157,6 +157,6 @@ public sealed class AphidLearningVideo : MonoBehaviour
     {
         if (seconds < 4) return "Aphids are tiny insects that feed on plant sap.";
         if (seconds < 9) return "Look for a pear-shaped body, six legs and antennae.";
-        return "Can you recognise and find five aphids?";
+        return "Can you recognise and find ten aphids?";
     }
 }
