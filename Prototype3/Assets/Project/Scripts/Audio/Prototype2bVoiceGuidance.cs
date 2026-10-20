@@ -9,6 +9,8 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
         voiceWrongInsect, voiceMissionComplete;
     public NarrationManager existingNarration;
     public GameObject videoCard;
+    [Tooltip("Optional dedicated catch SFX source. Completion narration waits for its final one-shot to finish.")]
+    public AudioSource completionFeedbackSource;
     [Range(0f, 1f)] public float volume = 1f;
     [Min(0f)] public float incorrectGrabCooldown = 4f;
     public enum Stage { Silent, Exploring, Habitat, FoodSearch, Complete }
@@ -67,7 +69,8 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
     IEnumerator PlayWhenAvailable(AudioClip clip)
     {
         // The existing body/return narrator has priority. Stage changes cancel this wait.
-        while (existingNarration != null && existingNarration.IsNarrationPlaying)
+        while ((existingNarration != null && existingNarration.IsNarrationPlaying) ||
+            (CurrentStage == Stage.Complete && completionFeedbackSource != null && completionFeedbackSource.isPlaying))
         { if (VideoVisible) yield break; yield return null; }
         if (VideoVisible) yield break;
         source.clip = clip; source.volume = volume; source.Play();

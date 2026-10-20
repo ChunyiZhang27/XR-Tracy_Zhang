@@ -13,6 +13,10 @@ using UnityEngine.EventSystems;
 public sealed class FoodSearchActivity : MonoBehaviour
 {
     public Prototype2bVoiceGuidance voiceGuidance;
+    [Header("Correct catch sound (optional)")]
+    public AudioClip correctCatchClip;
+    public AudioSource correctCatchSource;
+    [Range(0f, 1f)] public float correctCatchVolume = .6f;
     public LadybirdHabitatObjective objective;
     public GameObject insectArea;
     public FoodSearchTarget[] targets;
@@ -44,6 +48,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     {
         if (!Eligible || AnySelected() || returningToInsects) return;
         CancelCompletion();
+        if (correctCatchSource != null) correctCatchSource.Stop();
         found.Clear(); Completed = CompletionVisible = Finished = false; Running = true;
         nextIncorrectFeedbackTime = float.NegativeInfinity;
         RefreshCompletionState();
@@ -82,6 +87,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
             return;
         }
         found.Add(target); target.SetFound(true); RefreshProgress();
+        if (correctCatchClip != null && correctCatchSource != null && correctCatchSource.isActiveAndEnabled)
+            correctCatchSource.PlayOneShot(correctCatchClip, correctCatchVolume);
         Completed = found.Count >= requiredAphids;
         if (feedbackText != null) feedbackText.text = Completed ? "Five aphids caught! Release held insects to continue." : CorrectFeedback;
         if (Completed)
@@ -180,6 +187,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     public void EndSearch()
     {
+        if (correctCatchSource != null) correctCatchSource.Stop();
         if ((Running || Finished) && voiceGuidance != null) voiceGuidance.Silence();
         CancelCompletion();
         Running = Completed = CompletionVisible = Finished = false; found.Clear();
