@@ -12,6 +12,7 @@ using UnityEngine.EventSystems;
 /// <summary>Prototype2b grab-only food mission. Never drives or reparents the Ladybird or camera.</summary>
 public sealed class FoodSearchActivity : MonoBehaviour
 {
+    public Prototype2bVoiceGuidance voiceGuidance;
     public LadybirdHabitatObjective objective;
     public GameObject insectArea;
     public FoodSearchTarget[] targets;
@@ -59,6 +60,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (tryAgainButton != null) tryAgainButton.SetActive(false);
         if (insectArea != null) insectArea.SetActive(true);
         RefreshProgress();
+        if (voiceGuidance != null) voiceGuidance.StartFoodSearch();
     }
     // Kept for old scene/editor tooling: selection alone must never award a catch.
     public void Identify(FoodSearchTarget target) { }
@@ -71,6 +73,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
             args.interactorObject == null || !grab.interactorsSelecting.Contains(args.interactorObject)) return;
         if (target.category != FoodSearchTarget.IdentificationCategory.Aphid)
         {
+            if (voiceGuidance != null) voiceGuidance.IncorrectGrab();
             if (Time.unscaledTime >= nextIncorrectFeedbackTime)
             {
                 if (feedbackText != null) feedbackText.text = IncorrectFeedback;
@@ -81,7 +84,11 @@ public sealed class FoodSearchActivity : MonoBehaviour
         found.Add(target); target.SetFound(true); RefreshProgress();
         Completed = found.Count >= requiredAphids;
         if (feedbackText != null) feedbackText.text = Completed ? "Five aphids caught! Release held insects to continue." : CorrectFeedback;
-        if (Completed) completionRoutine = StartCoroutine(CompleteAfterRelease());
+        if (Completed)
+        {
+            if (voiceGuidance != null) voiceGuidance.MissionComplete();
+            completionRoutine = StartCoroutine(CompleteAfterRelease());
+        }
     }
     bool AnySelected()
     {
@@ -113,6 +120,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     {
         if (!Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
         // Remain at the final Habitat card. Explicit Try Again restarts only this mission.
+        if (voiceGuidance != null) voiceGuidance.Silence();
         Finished = true;
         Running = false;
         if (searchPanel != null) searchPanel.SetActive(false);
@@ -135,6 +143,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public void BackToInsects()
     {
         if (!Finished || !CompletionVisible || returningToInsects || existingBackToInsectsAction == null) return;
+        if (voiceGuidance != null) voiceGuidance.Silence();
         returningToInsects = true;
         if (backToInsectsButton != null) backToInsectsButton.interactable = false;
         StartCoroutine(ReturnToInsectsRoutine());
@@ -171,6 +180,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     public void EndSearch()
     {
+        if ((Running || Finished) && voiceGuidance != null) voiceGuidance.Silence();
         CancelCompletion();
         Running = Completed = CompletionVisible = Finished = false; found.Clear();
         nextIncorrectFeedbackTime = float.NegativeInfinity;

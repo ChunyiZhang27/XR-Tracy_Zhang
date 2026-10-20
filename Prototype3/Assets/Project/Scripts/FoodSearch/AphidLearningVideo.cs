@@ -8,6 +8,7 @@ using UnityEngine.Video;
 public sealed class AphidLearningVideo : MonoBehaviour
 {
     [Tooltip("Assign the imported H.264 AphidIntroduction.mp4 VideoClip here. Optional.")]
+    public Prototype2bVoiceGuidance voiceGuidance;
     public VideoClip clip;
     public VideoPlayer player;
     [Tooltip("Dedicated 2D source for the embedded narration; never play it independently.")]
@@ -52,6 +53,7 @@ public sealed class AphidLearningVideo : MonoBehaviour
     public void Replay()
     {
         if (!isActiveAndEnabled) return;
+        if (voiceGuidance != null) voiceGuidance.Silence();
         CancelTimeout();
         if (player != null) player.Stop();
         if (narrationAudioSource != null) narrationAudioSource.Stop();

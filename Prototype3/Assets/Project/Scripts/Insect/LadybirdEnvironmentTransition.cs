@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 /// <summary>Prototype2b-only coordinator. Progress remains owned by LadybirdExplorationProgress.</summary>
 public sealed class LadybirdEnvironmentTransition : MonoBehaviour
 {
+    public Prototype2bVoiceGuidance voiceGuidance;
     public LadybirdMovementWingVisibility movementWings;
     public LadybirdExplorationProgress progress;
     public LadybirdPlayerController controller;
@@ -92,6 +93,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     public void ReturnToBodyExploration()
     {
         if (CurrentMode != Mode.Environment || DebugBypass) return;
+        if (voiceGuidance != null) voiceGuidance.Silence();
         CurrentMode = Mode.Returning; RefreshUI();
         transition = StartCoroutine(ReturnRoutine());
     }
@@ -128,6 +130,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     }
     public void ExitImmediately()
     {
+        if (voiceGuidance != null) voiceGuidance.Silence();
         if (transition != null) StopCoroutine(transition);
         transition = null;
         if (!DebugBypass && controller != null) controller.EndPlayerControl();

@@ -5,6 +5,7 @@ using UnityEngine;
 [DefaultExecutionOrder(500)]
 public sealed class LadybirdHabitatObjective : MonoBehaviour
 {
+    public Prototype2bVoiceGuidance voiceGuidance;
     public LadybirdPlayerController controller;
     public LadybirdEnvironmentTransition transition;
     public Transform habitatTarget;
@@ -87,6 +88,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
                 controller.startingPoint.position, controller.groundContact.position.y, out var ground, out _) ||
             !controller.safety.PathIsClear(controller.transform, ground, Vector3.forward, 0f, out _, controller.groundSurfaces)) return;
         Arrived = true;
+        if (voiceGuidance != null) voiceGuidance.HabitatFound();
         controller.SetHabitatStopped(true);
         if (arrivalCard != null)
         {
@@ -113,6 +115,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         if (continueButton != null) continueButton.SetActive(false);
         if (destinationMarker != null) destinationMarker.SetActive(true);
         if (objectiveText != null) objectiveText.text = NavigationPrompt;
+        if (voiceGuidance != null) { voiceGuidance.Silence(); voiceGuidance.EnterExploration(); }
     }
     public void ContinueToFoodDiscovery()
     {
@@ -156,6 +159,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     }
     private void ShowFoodStage(FoodStage stage)
     {
+        if (voiceGuidance != null) voiceGuidance.Silence();
         controller.SetHabitatStopped(true);
         CurrentFoodStage = stage;
         if (arrivalCard != null) arrivalCard.SetActive(false);
@@ -189,6 +193,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
 #endif
     private void EndAttempt()
     {
+        if (attemptActive && voiceGuidance != null) voiceGuidance.Silence();
         if (attemptActive && controller != null) controller.SetHabitatStopped(false);
         attemptActive = false; Arrived = false; FoodDiscoveryStarted = false;
         HideFoodLearning();

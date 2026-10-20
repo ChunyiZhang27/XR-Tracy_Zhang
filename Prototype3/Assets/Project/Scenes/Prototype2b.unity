@@ -21396,6 +21396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03bc1c08b6664a00b8e636c6fe52978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AphidLearningVideo
+  voiceGuidance: {fileID: 1753460646}
   clip: {fileID: 32900000, guid: 6e7133edd111843409c5db867827f885, type: 3}
   player: {fileID: 1391001761}
   narrationAudioSource: {fileID: 1391001763}
@@ -26799,6 +26800,157 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5067539795320273359, guid: b38a1186047983d4c983d8d9d7a77f0b, type: 3}
+--- !u!1 &1753460645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753460648}
+  - component: {fileID: 1753460647}
+  - component: {fileID: 1753460646}
+  m_Layer: 0
+  m_Name: Prototype2bVoiceGuidance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1753460646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753460645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4a6df925ad442ba95b2077f693a4ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prototype2bVoiceGuidance
+  voiceStartExploration: {fileID: 0}
+  voiceHabitatFound: {fileID: 0}
+  voiceStartFoodSearch: {fileID: 0}
+  voiceWrongInsect: {fileID: 0}
+  voiceMissionComplete: {fileID: 0}
+  existingNarration: {fileID: 1831991277}
+  videoCard: {fileID: 1391001757}
+  volume: 1
+  incorrectGrabCooldown: 4
+--- !u!82 &1753460647
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753460645}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1753460648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753460645}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753566590
 GameObject:
   m_ObjectHideFlags: 0
@@ -28271,6 +28423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272aa1be1ce44466918460e9f114a083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LadybirdEnvironmentTransition
+  voiceGuidance: {fileID: 1753460646}
   movementWings: {fileID: 1783907485}
   progress: {fileID: 503336401}
   controller: {fileID: 1783907482}
@@ -28427,6 +28580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04c52dad9e374a0cbf6757c34cbcc9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LadybirdHabitatObjective
+  voiceGuidance: {fileID: 1753460646}
   controller: {fileID: 1783907482}
   transition: {fileID: 1783907483}
   habitatTarget: {fileID: 98581409}
@@ -28458,6 +28612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5f35a1472f946d2bf1ab4b3f80c25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSearchActivity
+  voiceGuidance: {fileID: 1753460646}
   objective: {fileID: 1783907486}
   insectArea: {fileID: 906309149}
   targets:
@@ -39179,3 +39334,4 @@ SceneRoots:
   - {fileID: 1831991276}
   - {fileID: 1179817013}
   - {fileID: 480437693}
+  - {fileID: 1753460648}
