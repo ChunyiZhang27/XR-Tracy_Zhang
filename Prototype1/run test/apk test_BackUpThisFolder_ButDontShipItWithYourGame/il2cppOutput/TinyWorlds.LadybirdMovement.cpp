@@ -296,6 +296,10 @@ struct LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409  : publi
 	float ___maximumMovementStep;
 	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___obstacleMask;
 	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___ignoredObstacles;
+	bool ___U3CHasObstacleQueryU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CLastObstacleOriginU3Ek__BackingField;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CLastObstacleEndU3Ek__BackingField;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___U3CLastBlockingColliderU3Ek__BackingField;
 	RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* ___hits;
 	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___overlaps;
 	SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* ___penetrationProbe;
@@ -466,6 +470,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRun
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
@@ -482,8 +494,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_InsideBoundary_m4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TrySupportedPosition_m84E815D60048F8DF5F2B740D4C0A5F28B8F9DD4F (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_grounded, String_t** ___4_reason, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B5648601108C7FA00DAF74627FD508877D6B5D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___3_ground, String_t** ___4_reason, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
@@ -501,8 +511,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Collider_Raycast_mD7683E94051173B3FFC086
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsPositiveInfinity_mB6DA4AAB74012F1BD90C90121090ED87A5782FA7_inline (float ___0_f, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_movement, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D (LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_mask, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, float ___1_radius, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___2_results, int32_t ___3_layerMask, int32_t ___4_queryTriggerInteraction, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___2_groundSurfaces, const RuntimeMethod* method) ;
@@ -563,7 +573,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 87587
+// Method Definition Index: 87669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t59C97FEDCA83F368A884EB244A508D302932F5BE UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -598,7 +608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t59C97FEDCA83F368A884EB244A508
 		return L_6;
 	}
 }
-// Method Definition Index: 87588
+// Method Definition Index: 87670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t233E109E5C3CF029410B8C54B1DDBB801C97AD1E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -685,21 +695,128 @@ IL2CPP_EXTERN_C void MonoScriptData_t59C97FEDCA83F368A884EB244A508D302932F5BE_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 87589
+// Method Definition Index: 87671
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_get_HasObstacleQuery_m2FD9B49D7A56D42FDD964DA5EC98344CD9E61998 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:28>
+		bool L_0 = __this->___U3CHasObstacleQueryU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 87672
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:28>
+		bool L_0 = ___0_value;
+		__this->___U3CHasObstacleQueryU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 87673
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:29>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___U3CLastObstacleOriginU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 87674
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:29>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_value;
+		__this->___U3CLastObstacleOriginU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 87675
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleEnd_mE4D0FA3056C3052B0BC9DD974ABAD3EE1BBEE048 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:30>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___U3CLastObstacleEndU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 87676
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:30>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_value;
+		__this->___U3CLastObstacleEndU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 87677
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* LadybirdMovementSafety_get_LastBlockingCollider_mB72BD644BA206796601F6367EC8F48CCEA0F09B7 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:31>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = __this->___U3CLastBlockingColliderU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 87678
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:31>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_value;
+		__this->___U3CLastBlockingColliderU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLastBlockingColliderU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 87679
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_movement, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:34>
+		LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D_inline(__this, (bool)1, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:35>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_contact;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		float L_2 = __this->___bodyRadius;
+		float L_3 = __this->___obstacleClearance;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, ((float)il2cpp_codegen_add(L_2, L_3)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_0, L_4, NULL);
+		LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1_inline(__this, L_5, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:36>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D_inline(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___1_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_6, L_7, NULL);
+		LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD_inline(__this, L_8, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:37>
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76*)NULL, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:38>
+		return;
+	}
+}
+// Method Definition Index: 87680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_input, float ___1_deadzone, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:32>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:45>
 		float L_0 = ___1_deadzone;
 		float L_1;
 		L_1 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_0, (0.0f), (0.949999988f), NULL);
 		___1_deadzone = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:33>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:46>
 		float L_2;
 		L_2 = Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline((&___0_input), NULL);
 		V_0 = L_2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:34>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:47>
 		float L_3 = V_0;
 		float L_4 = ___1_deadzone;
 		if ((!(((float)L_3) <= ((float)L_4))))
@@ -708,7 +825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:34>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:47>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
 		L_5 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
 		return L_5;
@@ -716,7 +833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 
 IL_0024:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:35>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:48>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
 		L_6 = Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline((&___0_input), NULL);
 		float L_7 = V_0;
@@ -729,11 +846,11 @@ IL_0024:
 		return L_11;
 	}
 }
-// Method Definition Index: 87590
+// Method Definition Index: 87681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:40>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:53>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_center;
 		float L_2;
@@ -741,7 +858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_InsideBoundary_m4
 		return (bool)((((int32_t)((!(((float)L_2) <= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 87591
+// Method Definition Index: 87682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -750,15 +867,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:45>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:58>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_center;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_0, L_1, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:45>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:58>
 		(&V_0)->___y = (0.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:46>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:59>
 		int32_t L_3 = __this->___boundaryShape;
 		if ((!(((uint32_t)L_3) == ((uint32_t)1))))
 		{
@@ -766,7 +883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:48>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:61>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = __this->___boundaryHalfExtents;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
 		L_5 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
@@ -776,7 +893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
 		L_8 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_4, L_7, NULL);
 		V_2 = L_8;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:62>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = V_2;
 		float L_10 = L_9.___x;
 		if ((((float)L_10) < ((float)(0.0f))))
@@ -795,13 +912,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m
 
 IL_0053:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:62>
 		return (std::numeric_limits<float>::infinity());
 	}
 
 IL_0059:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:50>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:63>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
 		float L_14 = L_13.___x;
 		float L_15;
@@ -821,11 +938,11 @@ IL_0059:
 
 IL_0083:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:52>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:65>
 		float L_24 = __this->___explorationRadius;
 		float L_25 = __this->___bodyRadius;
 		V_1 = ((float)il2cpp_codegen_subtract(L_24, L_25));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:53>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:66>
 		float L_26 = V_1;
 		if ((((float)L_26) < ((float)(0.0f))))
 		{
@@ -844,7 +961,7 @@ IL_00a3:
 		return (std::numeric_limits<float>::infinity());
 	}
 }
-// Method Definition Index: 87592
+// Method Definition Index: 87683
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryPosition_m6EAB75F901483A1A0D0D774353A28326BE50A254 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_center, float ___3_referenceHeight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_grounded, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -854,11 +971,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryPosition_m6EAB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:59>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:72>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___4_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_point;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:60>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:73>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___2_center;
 		bool L_4;
@@ -869,17 +986,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryPosition_m6EAB
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:60>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:73>
 		String_t** L_5 = ___5_reason;
 		*((String_t**)L_5) = (String_t*)_stringLiteral218C6804A86ED8BCF1A959906865E5CCC9CC8A24;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_5, (void*)(String_t*)_stringLiteral218C6804A86ED8BCF1A959906865E5CCC9CC8A24);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:60>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:73>
 		return (bool)0;
 	}
 
 IL_001c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:61>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:74>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_6 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___1_point;
 		float L_8 = ___3_referenceHeight;
@@ -890,7 +1007,7 @@ IL_001c:
 		return L_11;
 	}
 }
-// Method Definition Index: 87593
+// Method Definition Index: 87684
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryMovementPosition_m3AF28FE0FF623E0D5803589B874962E28A95400C (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_grounded, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -902,23 +1019,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryMovementPositi
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:69>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:82>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___4_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___2_point;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:70>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:83>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_from;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___3_center;
 		float L_4;
 		L_4 = LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115(__this, L_2, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:70>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:83>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___2_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___3_center;
 		float L_7;
 		L_7 = LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115(__this, L_5, L_6, NULL);
 		V_1 = L_7;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:71>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:84>
 		float L_8 = V_1;
 		if ((!(((float)L_8) > ((float)(0.0f)))))
 		{
@@ -943,17 +1060,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryMovementPositi
 
 IL_0036:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:72>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:85>
 		String_t** L_12 = ___5_reason;
 		*((String_t**)L_12) = (String_t*)_stringLiteral218C6804A86ED8BCF1A959906865E5CCC9CC8A24;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_12, (void*)(String_t*)_stringLiteral218C6804A86ED8BCF1A959906865E5CCC9CC8A24);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:72>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:85>
 		return (bool)0;
 	}
 
 IL_0040:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:86>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_13 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___2_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___1_from;
@@ -965,7 +1082,7 @@ IL_0040:
 		return L_19;
 	}
 }
-// Method Definition Index: 87594
+// Method Definition Index: 87685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TrySupportedPosition_m84E815D60048F8DF5F2B740D4C0A5F28B8F9DD4F (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_grounded, String_t** ___4_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -987,11 +1104,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TrySupportedPosit
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_7;
 	memset((&V_7), 0, sizeof(V_7));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:92>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___3_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_point;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:80>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:93>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_2 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_point;
 		float L_4 = ___2_referenceHeight;
@@ -1004,34 +1121,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TrySupportedPosit
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:80>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:93>
 		return (bool)0;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:95>
 		V_1 = 1;
 		goto IL_00a9;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:84>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:97>
 		float L_7 = __this->___bodyRadius;
 		int32_t L_8 = V_1;
 		V_2 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_7, ((float)L_8))), (0.5f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:85>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:98>
 		V_3 = 0;
 		goto IL_00a0;
 	}
 
 IL_0034:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:87>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:100>
 		int32_t L_9 = V_3;
 		V_4 = ((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)L_9), (3.14159274f))), (2.0f)))/(16.0f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:101>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_point;
 		float L_11 = V_4;
 		float L_12;
@@ -1048,7 +1165,7 @@ IL_0034:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 		L_18 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_10, L_17, NULL);
 		V_5 = L_18;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:89>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:102>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_19 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_5;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
@@ -1062,27 +1179,27 @@ IL_0034:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:90>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:103>
 		String_t** L_24 = ___4_reason;
 		String_t* L_25 = V_6;
 		String_t* L_26;
 		L_26 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral2D28FD49CBC80F8EA6E485A2A7002F1B5F576278, L_25, NULL);
 		*((String_t**)L_24) = (String_t*)L_26;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_24, (void*)(String_t*)L_26);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:90>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:103>
 		return (bool)0;
 	}
 
 IL_009c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:85>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:98>
 		int32_t L_27 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_00a0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:85>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:98>
 		int32_t L_28 = V_3;
 		if ((((int32_t)L_28) < ((int32_t)((int32_t)16))))
 		{
@@ -1090,14 +1207,14 @@ IL_00a0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:95>
 		int32_t L_29 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_29, 1));
 	}
 
 IL_00a9:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:95>
 		int32_t L_30 = V_1;
 		if ((((int32_t)L_30) <= ((int32_t)2)))
 		{
@@ -1105,21 +1222,21 @@ IL_00a9:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:93>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:106>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_31 = ___3_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
 		L_32 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_0), NULL);
 		float L_33 = L_32.___y;
 		L_31->___y = L_33;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:94>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:107>
 		String_t** L_34 = ___4_reason;
 		*((String_t**)L_34) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_34, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:108>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87595
+// Method Definition Index: 87686
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryEdgeRecovery_m2D08F82D23883933D2AAA7F645CFC30300EA9714 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_saved, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, float ___4_distance, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___5_next, String_t** ___6_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1150,19 +1267,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryEdgeRecovery_m
 	memset((&V_9), 0, sizeof(V_9));
 	String_t* V_10 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:104>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:117>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___5_next;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_from;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:118>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___2_saved;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_from;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_2, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:118>
 		(&V_0)->___y = (0.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:106>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:119>
 		float L_5 = ___4_distance;
 		if ((((float)L_5) <= ((float)(0.0f))))
 		{
@@ -1188,18 +1305,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryEdgeRecovery_m
 
 IL_0041:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:107>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:120>
 		String_t** L_8 = ___6_reason;
 		*((String_t**)L_8) = (String_t*)_stringLiteral04DCF4AD12441ECF2DDD371A0952CC2751508C63;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_8, (void*)(String_t*)_stringLiteral04DCF4AD12441ECF2DDD371A0952CC2751508C63);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:107>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:120>
 		return (bool)0;
 	}
 
 IL_004b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:108>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:109>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:121>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:122>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_9 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___2_saved;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___3_center;
@@ -1229,13 +1346,13 @@ IL_004b:
 
 IL_0075:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:109>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:122>
 		return (bool)0;
 	}
 
 IL_0077:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:110>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:123>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = ___1_from;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		L_23 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&V_0), NULL);
@@ -1252,7 +1369,7 @@ IL_0077:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
 		L_30 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_22, L_29, NULL);
 		V_3 = L_30;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:111>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:124>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_31 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
@@ -1267,13 +1384,13 @@ IL_0077:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:111>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:124>
 		return (bool)0;
 	}
 
 IL_00bf:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:113>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:126>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ___3_center;
 		float L_39;
@@ -1290,34 +1407,34 @@ IL_00bf:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:127>
 		String_t** L_44 = ___6_reason;
 		*((String_t**)L_44) = (String_t*)_stringLiteral9DD37912ED8127D14D7B77A0A21765D2798B6F39;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_44, (void*)(String_t*)_stringLiteral9DD37912ED8127D14D7B77A0A21765D2798B6F39);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:127>
 		return (bool)0;
 	}
 
 IL_00e7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		V_5 = 1;
 		goto IL_019e;
 	}
 
 IL_00ef:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		V_6 = 0;
 		goto IL_018f;
 	}
 
 IL_00f7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:117>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:130>
 		int32_t L_45 = V_6;
 		V_7 = ((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)L_45), (3.14159274f))), (2.0f)))/(16.0f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:118>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:131>
 		float L_46 = V_7;
 		float L_47;
 		L_47 = cosf(L_46);
@@ -1332,8 +1449,8 @@ IL_00f7:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53;
 		L_53 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_50, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_51, ((float)L_52))), (0.5f))), NULL);
 		V_8 = L_53;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:119>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:120>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:132>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:133>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_54 = ___0_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = ___1_from;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_8;
@@ -1367,24 +1484,24 @@ IL_00f7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:121>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:134>
 		String_t** L_69 = ___6_reason;
 		*((String_t**)L_69) = (String_t*)_stringLiteral80D94ACA6CFC9CD3E51F016D54C77D9645D04982;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_69, (void*)(String_t*)_stringLiteral80D94ACA6CFC9CD3E51F016D54C77D9645D04982);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:121>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:134>
 		return (bool)0;
 	}
 
 IL_0189:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		int32_t L_70 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_70, 1));
 	}
 
 IL_018f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		int32_t L_71 = V_6;
 		if ((((int32_t)L_71) < ((int32_t)((int32_t)16))))
 		{
@@ -1392,14 +1509,14 @@ IL_018f:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		int32_t L_72 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_72, 1));
 	}
 
 IL_019e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:128>
 		int32_t L_73 = V_5;
 		if ((((int32_t)L_73) <= ((int32_t)2)))
 		{
@@ -1407,20 +1524,20 @@ IL_019e:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:123>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:136>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_74 = ___5_next;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75;
 		L_75 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_4), NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_74 = L_75;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:123>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:136>
 		String_t** L_76 = ___6_reason;
 		*((String_t**)L_76) = (String_t*)_stringLiteral988C3D1E3DEB5D07710D73214F1CFF0E5F4FFEC2;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_76, (void*)(String_t*)_stringLiteral988C3D1E3DEB5D07710D73214F1CFF0E5F4FFEC2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:123>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:136>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87596
+// Method Definition Index: 87687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B5648601108C7FA00DAF74627FD508877D6B5D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___3_ground, String_t** ___4_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1444,12 +1561,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B564
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:129>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:142>
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* L_0 = ___3_ground;
 		il2cpp_codegen_initobj(L_0, sizeof(RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:130>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:143>
 		V_0 = (std::numeric_limits<float>::infinity());
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:131>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:144>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_point;
 		float L_2 = L_1.___x;
 		float L_3 = ___2_referenceHeight;
@@ -1462,7 +1579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B564
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline(NULL);
 		Ray__ctor_mE298992FD10A3894C38373198385F345C58BD64C_inline((&V_1), L_7, L_8, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:132>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:145>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_9 = ___0_surfaces;
 		if (!L_9)
 		{
@@ -1470,7 +1587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B564
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:134>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:147>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_10 = ___0_surfaces;
 		V_3 = L_10;
 		V_4 = 0;
@@ -1479,14 +1596,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B564
 
 IL_003d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:134>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:147>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_11 = V_3;
 		int32_t L_12 = V_4;
 		NullCheck(L_11);
 		int32_t L_13 = L_12;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		V_5 = L_14;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:136>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:149>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_15 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_16;
@@ -1530,7 +1647,7 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:138>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:151>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_24 = V_5;
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_25 = V_1;
 		float L_26 = __this->___probeHeight;
@@ -1553,11 +1670,11 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:139>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:152>
 		float L_31;
 		L_31 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78((&V_6), NULL);
 		V_0 = L_31;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:139>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:152>
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* L_32 = ___3_ground;
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 L_33 = V_6;
 		*(RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5*)L_32 = L_33;
@@ -1571,7 +1688,7 @@ IL_00a1:
 
 IL_00a7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:134>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:147>
 		int32_t L_35 = V_4;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_36 = V_3;
 		NullCheck(L_36);
@@ -1583,7 +1700,7 @@ IL_00a7:
 
 IL_00ae:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:142>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:155>
 		float L_37 = V_0;
 		bool L_38;
 		L_38 = Single_IsPositiveInfinity_mB6DA4AAB74012F1BD90C90121090ED87A5782FA7_inline(L_37, NULL);
@@ -1593,24 +1710,24 @@ IL_00ae:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:142>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:155>
 		String_t** L_39 = ___4_reason;
 		*((String_t**)L_39) = (String_t*)_stringLiteral304222F0305AAC54FD039FD21D5FAB6B9B74DA98;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_39, (void*)(String_t*)_stringLiteral304222F0305AAC54FD039FD21D5FAB6B9B74DA98);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:142>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:155>
 		return (bool)0;
 	}
 
 IL_00c0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:143>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:156>
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* L_40 = ___3_ground;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
 		L_41 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39(L_40, NULL);
 		float L_42 = L_41.___y;
 		float L_43 = ___2_referenceHeight;
 		V_2 = ((float)il2cpp_codegen_subtract(L_42, L_43));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:144>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
 		float L_44 = V_2;
 		float L_45 = __this->___maximumStepHeight;
 		if ((!(((float)L_44) > ((float)L_45))))
@@ -1619,17 +1736,17 @@ IL_00c0:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:144>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
 		String_t** L_46 = ___4_reason;
 		*((String_t**)L_46) = (String_t*)_stringLiteral6B205EC9BE89EFFF7D40E3727F681B3CE52D542C;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_46, (void*)(String_t*)_stringLiteral6B205EC9BE89EFFF7D40E3727F681B3CE52D542C);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:144>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
 		return (bool)0;
 	}
 
 IL_00e2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:145>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
 		float L_47 = V_2;
 		float L_48 = __this->___maximumDrop;
 		if ((!(((float)L_47) < ((float)((-L_48))))))
@@ -1638,17 +1755,17 @@ IL_00e2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:145>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
 		String_t** L_49 = ___4_reason;
 		*((String_t**)L_49) = (String_t*)_stringLiteralBE182B49A8D3278E086BBBC07ADC684521882820;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_49, (void*)(String_t*)_stringLiteralBE182B49A8D3278E086BBBC07ADC684521882820);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:145>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
 		return (bool)0;
 	}
 
 IL_00f6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:146>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:159>
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* L_50 = ___3_ground;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
 		L_51 = RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5(L_50, NULL);
@@ -1663,25 +1780,25 @@ IL_00f6:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:160>
 		String_t** L_55 = ___4_reason;
 		*((String_t**)L_55) = (String_t*)_stringLiteral479B5C89BEA6BE264BEBBAF35353D6DE3FD82270;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_55, (void*)(String_t*)_stringLiteral479B5C89BEA6BE264BEBBAF35353D6DE3FD82270);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:160>
 		return (bool)0;
 	}
 
 IL_0119:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:148>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:161>
 		String_t** L_56 = ___4_reason;
 		*((String_t**)L_56) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_56, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:149>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:162>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87597
+// Method Definition Index: 87688
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_PathIsClear_mF4385BD43BEC524A02DBFB75D049167BDB70F6D0 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_direction, float ___3_distance, String_t** ___4_reason, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___5_groundSurfaces, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1700,218 +1817,240 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_PathIsClear_mF438
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:154>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:167>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_contact;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
-		L_1 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
-		float L_2 = __this->___bodyRadius;
-		float L_3 = __this->___obstacleClearance;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
-		L_4 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, ((float)il2cpp_codegen_add(L_2, L_3)), NULL);
+		L_1 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&___2_direction), NULL);
+		float L_2 = ___3_distance;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, L_2, NULL);
+		LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8(__this, L_0, L_3, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:168>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___1_contact;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
-		L_5 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_0, L_4, NULL);
-		V_0 = L_5;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:155>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
-		float L_7 = __this->___bodyRadius;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_8 = __this->___overlaps;
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_9 = __this->___obstacleMask;
-		int32_t L_10;
-		L_10 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_9, NULL);
+		L_5 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		float L_6 = __this->___bodyRadius;
+		float L_7 = __this->___obstacleClearance;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, ((float)il2cpp_codegen_add(L_6, L_7)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_4, L_8, NULL);
+		V_0 = L_9;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:169>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_0;
+		float L_11 = __this->___bodyRadius;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_12 = __this->___overlaps;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_13 = __this->___obstacleMask;
+		int32_t L_14;
+		L_14 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_13, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
-		int32_t L_11;
-		L_11 = Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83(L_6, L_7, L_8, L_10, 1, NULL);
-		V_1 = L_11;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:156>
-		int32_t L_12 = V_1;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_13 = __this->___overlaps;
-		NullCheck(L_13);
-		if ((!(((uint32_t)L_12) == ((uint32_t)((int32_t)(((RuntimeArray*)L_13)->max_length))))))
+		int32_t L_15;
+		L_15 = Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83(L_10, L_11, L_12, L_14, 1, NULL);
+		V_1 = L_15;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:170>
+		int32_t L_16 = V_1;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_17 = __this->___overlaps;
+		NullCheck(L_17);
+		if ((!(((uint32_t)L_16) == ((uint32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))))))
 		{
-			goto IL_0052;
+			goto IL_0067;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:156>
-		String_t** L_14 = ___4_reason;
-		*((String_t**)L_14) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_14, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:156>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:170>
+		String_t** L_18 = ___4_reason;
+		*((String_t**)L_18) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_18, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:170>
 		return (bool)0;
 	}
 
-IL_0052:
+IL_0067:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:171>
 		V_2 = 0;
-		goto IL_0089;
+		goto IL_00ac;
 	}
 
-IL_0056:
+IL_006b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = ___0_owner;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_16 = __this->___overlaps;
-		int32_t L_17 = V_2;
-		NullCheck(L_16);
-		int32_t L_18 = L_17;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_20 = ___5_groundSurfaces;
-		bool L_21;
-		L_21 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_15, L_19, L_20, NULL);
-		if (L_21)
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:172>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = ___0_owner;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_20 = __this->___overlaps;
+		int32_t L_21 = V_2;
+		NullCheck(L_20);
+		int32_t L_22 = L_21;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_24 = ___5_groundSurfaces;
+		bool L_25;
+		L_25 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_19, L_23, L_24, NULL);
+		if (L_25)
 		{
-			goto IL_0085;
+			goto IL_00a8;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
-		String_t** L_22 = ___4_reason;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_23 = __this->___overlaps;
-		int32_t L_24 = V_2;
-		NullCheck(L_23);
-		int32_t L_25 = L_24;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:172>
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_26 = __this->___overlaps;
+		int32_t L_27 = V_2;
 		NullCheck(L_26);
-		String_t* L_27;
-		L_27 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_26, NULL);
-		String_t* L_28;
-		L_28 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_27, NULL);
-		*((String_t**)L_22) = (String_t*)L_28;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_22, (void*)(String_t*)L_28);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:158>
+		int32_t L_28 = L_27;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_29 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, L_29, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:172>
+		String_t** L_30 = ___4_reason;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_31 = __this->___overlaps;
+		int32_t L_32 = V_2;
+		NullCheck(L_31);
+		int32_t L_33 = L_32;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
+		NullCheck(L_34);
+		String_t* L_35;
+		L_35 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_34, NULL);
+		String_t* L_36;
+		L_36 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_35, NULL);
+		*((String_t**)L_30) = (String_t*)L_36;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_30, (void*)(String_t*)L_36);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:172>
 		return (bool)0;
 	}
 
-IL_0085:
+IL_00a8:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
-		int32_t L_29 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_29, 1));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:171>
+		int32_t L_37 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_37, 1));
 	}
 
-IL_0089:
+IL_00ac:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:157>
-		int32_t L_30 = V_2;
-		int32_t L_31 = V_1;
-		if ((((int32_t)L_30) < ((int32_t)L_31)))
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:171>
+		int32_t L_38 = V_2;
+		int32_t L_39 = V_1;
+		if ((((int32_t)L_38) < ((int32_t)L_39)))
 		{
-			goto IL_0056;
+			goto IL_006b;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:159>
-		float L_32 = ___3_distance;
-		if ((!(((float)L_32) > ((float)(0.0f)))))
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:173>
+		float L_40 = ___3_distance;
+		if ((!(((float)L_40) > ((float)(0.0f)))))
 		{
-			goto IL_011d;
+			goto IL_0157;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:161>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_0;
-		float L_34 = __this->___bodyRadius;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = ___2_direction;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_36 = __this->___hits;
-		float L_37 = ___3_distance;
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_38 = __this->___obstacleMask;
-		int32_t L_39;
-		L_39 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_38, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:175>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_0;
+		float L_42 = __this->___bodyRadius;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = ___2_direction;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_44 = __this->___hits;
+		float L_45 = ___3_distance;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_46 = __this->___obstacleMask;
+		int32_t L_47;
+		L_47 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_46, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
-		int32_t L_40;
-		L_40 = Physics_SphereCastNonAlloc_m21B951284ED5217AB1395B08B963C4C9661F928C(L_33, L_34, L_35, L_36, L_37, L_39, 1, NULL);
-		V_1 = L_40;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:162>
-		int32_t L_41 = V_1;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_42 = __this->___hits;
-		NullCheck(L_42);
-		if ((!(((uint32_t)L_41) == ((uint32_t)((int32_t)(((RuntimeArray*)L_42)->max_length))))))
+		int32_t L_48;
+		L_48 = Physics_SphereCastNonAlloc_m21B951284ED5217AB1395B08B963C4C9661F928C(L_41, L_42, L_43, L_44, L_45, L_47, 1, NULL);
+		V_1 = L_48;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:176>
+		int32_t L_49 = V_1;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_50 = __this->___hits;
+		NullCheck(L_50);
+		if ((!(((uint32_t)L_49) == ((uint32_t)((int32_t)(((RuntimeArray*)L_50)->max_length))))))
 		{
-			goto IL_00d0;
+			goto IL_00f3;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:162>
-		String_t** L_43 = ___4_reason;
-		*((String_t**)L_43) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_43, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:162>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:176>
+		String_t** L_51 = ___4_reason;
+		*((String_t**)L_51) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_51, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:176>
 		return (bool)0;
 	}
 
-IL_00d0:
+IL_00f3:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:177>
 		V_3 = 0;
-		goto IL_0119;
+		goto IL_0153;
 	}
 
-IL_00d4:
+IL_00f7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:164>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44 = ___0_owner;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_45 = __this->___hits;
-		int32_t L_46 = V_3;
-		NullCheck(L_45);
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_47;
-		L_47 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_45)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_46))), NULL);
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_48 = ___5_groundSurfaces;
-		bool L_49;
-		L_49 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_44, L_47, L_48, NULL);
-		if (L_49)
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:178>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52 = ___0_owner;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_53 = __this->___hits;
+		int32_t L_54 = V_3;
+		NullCheck(L_53);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_55;
+		L_55 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_53)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_54))), NULL);
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_56 = ___5_groundSurfaces;
+		bool L_57;
+		L_57 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_52, L_55, L_56, NULL);
+		if (L_57)
 		{
-			goto IL_0115;
+			goto IL_014f;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:164>
-		String_t** L_50 = ___4_reason;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_51 = __this->___hits;
-		int32_t L_52 = V_3;
-		NullCheck(L_51);
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_53;
-		L_53 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_51)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_52))), NULL);
-		NullCheck(L_53);
-		String_t* L_54;
-		L_54 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_53, NULL);
-		String_t* L_55;
-		L_55 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralBC92FFEA3B9E9332FD45FEBB9B481AA4DAFB1F0B, L_54, NULL);
-		*((String_t**)L_50) = (String_t*)L_55;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_50, (void*)(String_t*)L_55);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:164>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:178>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_58 = __this->___hits;
+		int32_t L_59 = V_3;
+		NullCheck(L_58);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_60;
+		L_60 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_58)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_59))), NULL);
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, L_60, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:178>
+		String_t** L_61 = ___4_reason;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_62 = __this->___hits;
+		int32_t L_63 = V_3;
+		NullCheck(L_62);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_64;
+		L_64 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_62)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_63))), NULL);
+		NullCheck(L_64);
+		String_t* L_65;
+		L_65 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_64, NULL);
+		String_t* L_66;
+		L_66 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralBC92FFEA3B9E9332FD45FEBB9B481AA4DAFB1F0B, L_65, NULL);
+		*((String_t**)L_61) = (String_t*)L_66;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_61, (void*)(String_t*)L_66);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:178>
 		return (bool)0;
 	}
 
-IL_0115:
+IL_014f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:163>
-		int32_t L_56 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_56, 1));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:177>
+		int32_t L_67 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_67, 1));
 	}
 
-IL_0119:
+IL_0153:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:163>
-		int32_t L_57 = V_3;
-		int32_t L_58 = V_1;
-		if ((((int32_t)L_57) < ((int32_t)L_58)))
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:177>
+		int32_t L_68 = V_3;
+		int32_t L_69 = V_1;
+		if ((((int32_t)L_68) < ((int32_t)L_69)))
 		{
-			goto IL_00d4;
+			goto IL_00f7;
 		}
 	}
 
-IL_011d:
+IL_0157:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:166>
-		String_t** L_59 = ___4_reason;
-		*((String_t**)L_59) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_59, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:167>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:180>
+		String_t** L_70 = ___4_reason;
+		*((String_t**)L_70) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_70, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:181>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87598
+// Method Definition Index: 87689
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* LadybirdMovementSafety_get_Probe_mE8342C87883DD169EF4D5A30C38788235B6F5C9D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1925,7 +2064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:175>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:189>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_0 = __this->___penetrationProbe;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1936,19 +2075,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:177>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:191>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_2, _stringLiteral8858EE84DE46C58E0B3F20620D802EEB4ADB112D, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:178>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:192>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = V_0;
 		NullCheck(L_3);
 		Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4(L_3, ((int32_t)61), NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:181>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:195>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = V_0;
 		NullCheck(L_4);
 		GameObject_set_layer_m6E1AF478A2CC86BD222B96317BEB78B7D89B18D0(L_4, 2, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:181>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:195>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_0;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
@@ -1959,14 +2098,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213
 		L_8 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_7, (100000.0f), NULL);
 		NullCheck(L_6);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_6, L_8, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:182>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:196>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
 		NullCheck(L_9);
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_10;
 		L_10 = GameObject_AddComponent_TisSphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275_m3D05F19667844A2949840753F7A3287115BE029E(L_9, GameObject_AddComponent_TisSphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275_m3D05F19667844A2949840753F7A3287115BE029E_RuntimeMethod_var);
 		__this->___penetrationProbe = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___penetrationProbe), (void*)L_10);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:183>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:197>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_11 = __this->___penetrationProbe;
 		NullCheck(L_11);
 		Collider_set_isTrigger_mFCD22F3EB5E28C97863956AB725D53F7F4B7CA78(L_11, (bool)1, NULL);
@@ -1974,17 +2113,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213
 
 IL_005a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:185>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:199>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_12 = __this->___penetrationProbe;
 		float L_13 = __this->___bodyRadius;
 		NullCheck(L_12);
 		SphereCollider_set_radius_m6119FE18C6739B077AB17334B1B53984911017FF(L_12, L_13, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:186>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:200>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_14 = __this->___penetrationProbe;
 		return L_14;
 	}
 }
-// Method Definition Index: 87599
+// Method Definition Index: 87690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_Dispose_mF6CD0BCB71775925D0CF830D34FE19F5F9AA10F0 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1995,7 +2134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_Dispose_mF6CD0BCB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:191>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:205>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_0 = __this->___penetrationProbe;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2006,13 +2145,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_Dispose_mF6CD0BCB
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:191>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:205>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:192>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:206>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
@@ -2022,7 +2161,7 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:192>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:206>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_3 = __this->___penetrationProbe;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
@@ -2034,7 +2173,7 @@ IL_000f:
 
 IL_0028:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:193>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:207>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_5 = __this->___penetrationProbe;
 		NullCheck(L_5);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
@@ -2045,14 +2184,14 @@ IL_0028:
 
 IL_0038:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:194>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:208>
 		__this->___penetrationProbe = (SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___penetrationProbe), (void*)(SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275*)NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:195>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:209>
 		return;
 	}
 }
-// Method Definition Index: 87600
+// Method Definition Index: 87691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_normal, float* ___3_depth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2062,8 +2201,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_Penetration_mEA72
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:197>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:198>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:211>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:212>
 		SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* L_0;
 		L_0 = LadybirdMovementSafety_get_Probe_mE8342C87883DD169EF4D5A30C38788235B6F5C9D(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_origin;
@@ -2092,7 +2231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_Penetration_mEA72
 		return L_12;
 	}
 }
-// Method Definition Index: 87601
+// Method Definition Index: 87692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryObstacleMotion_mA40396BB0928B54BC4B0119B392C18251EDEDEE3 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_desired, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___3_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_movement, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2110,119 +2249,123 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryObstacleMotion
 	memset((&V_3), 0, sizeof(V_3));
 	String_t* V_4 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:203>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___4_movement;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:217>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_contact;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___2_desired;
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:204>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ___0_owner;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_contact;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___2_desired;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_5 = ___3_surfaces;
-		String_t** L_6 = ___5_reason;
-		bool L_7;
-		L_7 = LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A(__this, L_2, L_3, L_4, L_5, (&V_0), L_6, NULL);
-		if (!L_7)
-		{
-			goto IL_001b;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:204>
-		return (bool)1;
-	}
-
-IL_001b:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:205>
+		LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8(__this, L_0, L_1, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:218>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = ___4_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___2_desired;
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_2 = L_3;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:219>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = ___0_owner;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___1_contact;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___2_desired;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_7 = ___3_surfaces;
 		String_t** L_8 = ___5_reason;
-		String_t* L_9 = *((String_t**)L_8);
-		V_1 = L_9;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:206>
-		(&V_0)->___y = (0.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:207>
-		float L_10;
-		L_10 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
-		if ((!(((float)L_10) > ((float)(9.99999975E-05f)))))
+		bool L_9;
+		L_9 = LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A(__this, L_4, L_5, L_6, L_7, (&V_0), L_8, NULL);
+		if (!L_9)
 		{
-			goto IL_0099;
+			goto IL_0023;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:209>
-		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_0), NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:210>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___2_desired;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
-		L_13 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_11, L_12, NULL);
-		V_2 = L_13;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:210>
-		(&V_2)->___y = (0.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:212>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:213>
-		float L_14;
-		L_14 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_2), NULL);
-		if ((!(((float)L_14) > ((float)(9.99999994E-09f)))))
-		{
-			goto IL_0099;
-		}
-	}
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___2_desired;
-		float L_17;
-		L_17 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_15, L_16, NULL);
-		if ((!(((float)L_17) > ((float)(0.0f)))))
-		{
-			goto IL_0099;
-		}
-	}
-	{
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = ___0_owner;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___1_contact;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_2;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_21 = ___3_surfaces;
-		bool L_22;
-		L_22 = LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A(__this, L_18, L_19, L_20, L_21, (&V_3), (&V_4), NULL);
-		if (!L_22)
-		{
-			goto IL_0099;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:214>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_23 = ___4_movement;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_2;
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_23 = L_24;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:214>
-		String_t** L_25 = ___5_reason;
-		String_t* L_26 = V_1;
-		String_t* L_27;
-		L_27 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral389847565E71D0E3416249AA28B35F9CE050E867, L_26, NULL);
-		*((String_t**)L_25) = (String_t*)L_27;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_25, (void*)(String_t*)L_27);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:214>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:219>
 		return (bool)1;
 	}
 
-IL_0099:
+IL_0023:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:216>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_28 = ___4_movement;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
-		L_29 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_28 = L_29;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:216>
-		String_t** L_30 = ___5_reason;
-		String_t* L_31 = V_1;
-		*((String_t**)L_30) = (String_t*)L_31;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_30, (void*)(String_t*)L_31);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:216>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:220>
+		String_t** L_10 = ___5_reason;
+		String_t* L_11 = *((String_t**)L_10);
+		V_1 = L_11;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:221>
+		(&V_0)->___y = (0.0f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:222>
+		float L_12;
+		L_12 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_0), NULL);
+		if ((!(((float)L_12) > ((float)(9.99999975E-05f)))))
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:224>
+		Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline((&V_0), NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:225>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___2_desired;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_13, L_14, NULL);
+		V_2 = L_15;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:225>
+		(&V_2)->___y = (0.0f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:227>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:228>
+		float L_16;
+		L_16 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_2), NULL);
+		if ((!(((float)L_16) > ((float)(9.99999994E-09f)))))
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___2_desired;
+		float L_19;
+		L_19 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_17, L_18, NULL);
+		if ((!(((float)L_19) > ((float)(0.0f)))))
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = ___0_owner;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = ___1_contact;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_2;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_23 = ___3_surfaces;
+		bool L_24;
+		L_24 = LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A(__this, L_20, L_21, L_22, L_23, (&V_3), (&V_4), NULL);
+		if (!L_24)
+		{
+			goto IL_00a1;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:229>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_25 = ___4_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_2;
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_25 = L_26;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:229>
+		String_t** L_27 = ___5_reason;
+		String_t* L_28 = V_1;
+		String_t* L_29;
+		L_29 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral389847565E71D0E3416249AA28B35F9CE050E867, L_28, NULL);
+		*((String_t**)L_27) = (String_t*)L_29;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_27, (void*)(String_t*)L_29);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:229>
+		return (bool)1;
+	}
+
+IL_00a1:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_30 = ___4_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
+		L_31 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_30 = L_31;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
+		String_t** L_32 = ___5_reason;
+		String_t* L_33 = V_1;
+		*((String_t**)L_32) = (String_t*)L_33;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_32, (void*)(String_t*)L_33);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87602
+// Method Definition Index: 87693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_movement, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___3_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_blockingNormal, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2261,16 +2404,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m6242
 	float V_17 = 0.0f;
 	float V_18 = 0.0f;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:221>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:236>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___4_blockingNormal;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:221>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:236>
 		String_t** L_2 = ___5_reason;
 		*((String_t**)L_2) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_2, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:222>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:237>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_contact;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
@@ -2281,7 +2424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m6242
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3, L_7, NULL);
 		V_0 = L_8;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:223>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:238>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
 		float L_10 = __this->___bodyRadius;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_11 = __this->___overlaps;
@@ -2292,7 +2435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m6242
 		int32_t L_14;
 		L_14 = Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83(L_9, L_10, L_11, L_13, 1, NULL);
 		V_1 = L_14;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:224>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
 		int32_t L_15 = V_1;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_16 = __this->___overlaps;
 		NullCheck(L_16);
@@ -2302,31 +2445,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m6242
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:224>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
 		String_t** L_17 = ___5_reason;
 		*((String_t**)L_17) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_17, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:224>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
 		return (bool)0;
 	}
 
 IL_0066:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:225>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:240>
 		V_2 = 0;
-		goto IL_00de;
+		goto IL_00e5;
 	}
 
 IL_006a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:227>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:242>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_18 = __this->___overlaps;
 		int32_t L_19 = V_2;
 		NullCheck(L_18);
 		int32_t L_20 = L_19;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_21 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
 		V_3 = L_21;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:227>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:242>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = ___0_owner;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_23 = V_3;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_24 = ___3_surfaces;
@@ -2334,22 +2477,22 @@ IL_006a:
 		L_25 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_22, L_23, L_24, NULL);
 		if (L_25)
 		{
-			goto IL_00da;
+			goto IL_00e1;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:228>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:243>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_26 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = V_0;
 		bool L_28;
 		L_28 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_26, L_27, (&V_4), (&V_5), NULL);
 		if (!L_28)
 		{
-			goto IL_00da;
+			goto IL_00e1;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:229>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:244>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_29 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = ___2_movement;
@@ -2357,10 +2500,10 @@ IL_006a:
 		L_32 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_30, L_31, NULL);
 		bool L_33;
 		L_33 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_29, L_32, (&V_7), (&V_6), NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:230>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:245>
 		if (!L_33)
 		{
-			goto IL_00da;
+			goto IL_00e1;
 		}
 	}
 	{
@@ -2378,362 +2521,371 @@ IL_006a:
 		L_38 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_36, L_37, NULL);
 		if ((!(((float)L_38) < ((float)(-9.99999997E-07f)))))
 		{
-			goto IL_00da;
+			goto IL_00e1;
 		}
 	}
 
 IL_00bc:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_39 = ___4_blockingNormal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_4;
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_39 = L_40;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
-		String_t** L_41 = ___5_reason;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_42 = V_3;
-		NullCheck(L_42);
-		String_t* L_43;
-		L_43 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_42, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_39 = V_3;
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, L_39, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_40 = ___4_blockingNormal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_4;
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_40 = L_41;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
+		String_t** L_42 = ___5_reason;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_43 = V_3;
+		NullCheck(L_43);
 		String_t* L_44;
-		L_44 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_43, NULL);
-		*((String_t**)L_41) = (String_t*)L_44;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_41, (void*)(String_t*)L_44);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:231>
+		L_44 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_43, NULL);
+		String_t* L_45;
+		L_45 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_44, NULL);
+		*((String_t**)L_42) = (String_t*)L_45;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_42, (void*)(String_t*)L_45);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
 		return (bool)0;
 	}
 
-IL_00da:
+IL_00e1:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:225>
-		int32_t L_45 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_45, 1));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:240>
+		int32_t L_46 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_46, 1));
 	}
 
-IL_00de:
+IL_00e5:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:225>
-		int32_t L_46 = V_2;
-		int32_t L_47 = V_1;
-		if ((((int32_t)L_46) < ((int32_t)L_47)))
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:240>
+		int32_t L_47 = V_2;
+		int32_t L_48 = V_1;
+		if ((((int32_t)L_47) < ((int32_t)L_48)))
 		{
 			goto IL_006a;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:234>
-		float L_48;
-		L_48 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___2_movement), NULL);
-		if ((!(((float)L_48) > ((float)(9.99999972E-10f)))))
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:249>
+		float L_49;
+		L_49 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___2_movement), NULL);
+		if ((!(((float)L_49) > ((float)(9.99999972E-10f)))))
 		{
-			goto IL_01ff;
+			goto IL_020e;
 		}
 	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:236>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49 = V_0;
-		float L_50 = __this->___bodyRadius;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
-		L_51 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&___2_movement), NULL);
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_52 = __this->___hits;
-		float L_53;
-		L_53 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___2_movement), NULL);
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_54 = __this->___obstacleMask;
-		int32_t L_55;
-		L_55 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_54, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
-		int32_t L_56;
-		L_56 = Physics_SphereCastNonAlloc_m21B951284ED5217AB1395B08B963C4C9661F928C(L_49, L_50, L_51, L_52, L_53, L_55, 1, NULL);
-		V_1 = L_56;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:237>
-		int32_t L_57 = V_1;
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_58 = __this->___hits;
-		NullCheck(L_58);
-		if ((!(((uint32_t)L_57) == ((uint32_t)((int32_t)(((RuntimeArray*)L_58)->max_length))))))
-		{
-			goto IL_0135;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:237>
-		String_t** L_59 = ___5_reason;
-		*((String_t**)L_59) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_59, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:237>
-		return (bool)0;
-	}
-
-IL_0135:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:238>
-		V_8 = (std::numeric_limits<float>::infinity());
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:238>
-		V_9 = (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76*)NULL;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
-		V_10 = 0;
-		goto IL_01d7;
-	}
-
-IL_0147:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:241>
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_60 = __this->___hits;
-		int32_t L_61 = V_10;
-		NullCheck(L_60);
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_62;
-		L_62 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_60)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_61))), NULL);
-		V_11 = L_62;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:241>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_63 = ___0_owner;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_64 = V_11;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_65 = ___3_surfaces;
-		bool L_66;
-		L_66 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_63, L_64, L_65, NULL);
-		if (L_66)
-		{
-			goto IL_01d1;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:242>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_67 = V_11;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_0;
-		bool L_69;
-		L_69 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_67, L_68, (&V_7), (&V_13), NULL);
-		if (L_69)
-		{
-			goto IL_01d1;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:243>
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_70 = __this->___hits;
-		int32_t L_71 = V_10;
-		NullCheck(L_70);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
-		L_72 = RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5(((L_70)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_71))), NULL);
-		V_12 = L_72;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:245>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = ___2_movement;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = V_12;
-		float L_75;
-		L_75 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_73, L_74, NULL);
-		if ((((float)L_75) >= ((float)(-9.99999997E-07f))))
-		{
-			goto IL_01d1;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_76 = __this->___hits;
-		int32_t L_77 = V_10;
-		NullCheck(L_76);
-		float L_78;
-		L_78 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78(((L_76)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_77))), NULL);
-		float L_79 = V_8;
-		if ((!(((float)L_78) < ((float)L_79))))
-		{
-			goto IL_01d1;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
-		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_80 = __this->___hits;
-		int32_t L_81 = V_10;
-		NullCheck(L_80);
-		float L_82;
-		L_82 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78(((L_80)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_81))), NULL);
-		V_8 = L_82;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_83 = V_11;
-		V_9 = L_83;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:246>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_84 = ___4_blockingNormal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85 = V_12;
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_84 = L_85;
-	}
-
-IL_01d1:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
-		int32_t L_86 = V_10;
-		V_10 = ((int32_t)il2cpp_codegen_add(L_86, 1));
-	}
-
-IL_01d7:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:239>
-		int32_t L_87 = V_10;
-		int32_t L_88 = V_1;
-		if ((((int32_t)L_87) < ((int32_t)L_88)))
-		{
-			goto IL_0147;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:248>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_89 = V_9;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_90;
-		L_90 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_89, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_90)
-		{
-			goto IL_01ff;
-		}
-	}
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:248>
-		String_t** L_91 = ___5_reason;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_92 = V_9;
-		NullCheck(L_92);
-		String_t* L_93;
-		L_93 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_92, NULL);
-		String_t* L_94;
-		L_94 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralBC92FFEA3B9E9332FD45FEBB9B481AA4DAFB1F0B, L_93, NULL);
-		*((String_t**)L_91) = (String_t*)L_94;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_91, (void*)(String_t*)L_94);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:248>
-		return (bool)0;
-	}
-
-IL_01ff:
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:251>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = ___2_movement;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
-		L_97 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_95, L_96, NULL);
-		float L_98 = __this->___bodyRadius;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_99 = __this->___overlaps;
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_100 = __this->___obstacleMask;
-		int32_t L_101;
-		L_101 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_100, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_0;
+		float L_51 = __this->___bodyRadius;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
+		L_52 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline((&___2_movement), NULL);
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_53 = __this->___hits;
+		float L_54;
+		L_54 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___2_movement), NULL);
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_55 = __this->___obstacleMask;
+		int32_t L_56;
+		L_56 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_55, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
-		int32_t L_102;
-		L_102 = Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83(L_97, L_98, L_99, L_101, 1, NULL);
-		V_1 = L_102;
+		int32_t L_57;
+		L_57 = Physics_SphereCastNonAlloc_m21B951284ED5217AB1395B08B963C4C9661F928C(L_50, L_51, L_52, L_53, L_54, L_56, 1, NULL);
+		V_1 = L_57;
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:252>
-		int32_t L_103 = V_1;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_104 = __this->___overlaps;
-		NullCheck(L_104);
-		if ((!(((uint32_t)L_103) == ((uint32_t)((int32_t)(((RuntimeArray*)L_104)->max_length))))))
+		int32_t L_58 = V_1;
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_59 = __this->___hits;
+		NullCheck(L_59);
+		if ((!(((uint32_t)L_58) == ((uint32_t)((int32_t)(((RuntimeArray*)L_59)->max_length))))))
 		{
-			goto IL_0239;
+			goto IL_013c;
 		}
 	}
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:252>
-		String_t** L_105 = ___5_reason;
-		*((String_t**)L_105) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_105, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
+		String_t** L_60 = ___5_reason;
+		*((String_t**)L_60) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_60, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:252>
 		return (bool)0;
 	}
 
-IL_0239:
+IL_013c:
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:253>
-		V_14 = 0;
-		goto IL_02ab;
+		V_8 = (std::numeric_limits<float>::infinity());
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:253>
+		V_9 = (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76*)NULL;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:254>
+		V_10 = 0;
+		goto IL_01de;
 	}
 
-IL_023e:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:255>
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_106 = __this->___overlaps;
-		int32_t L_107 = V_14;
-		NullCheck(L_106);
-		int32_t L_108 = L_107;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_109 = (L_106)->GetAt(static_cast<il2cpp_array_size_t>(L_108));
-		V_15 = L_109;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:255>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_110 = ___0_owner;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_111 = V_15;
-		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_112 = ___3_surfaces;
-		bool L_113;
-		L_113 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_110, L_111, L_112, NULL);
-		if (L_113)
-		{
-			goto IL_02a5;
-		}
-	}
+IL_014e:
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:256>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_114 = V_15;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_115 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_116 = ___2_movement;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117;
-		L_117 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_115, L_116, NULL);
-		bool L_118;
-		L_118 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_114, L_117, (&V_16), (&V_17), NULL);
-		if (!L_118)
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_61 = __this->___hits;
+		int32_t L_62 = V_10;
+		NullCheck(L_61);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_63;
+		L_63 = RaycastHit_get_collider_m84B160439BBEAB6D9E94B799F720E25C9E2D444D(((L_61)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_62))), NULL);
+		V_11 = L_63;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:256>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_64 = ___0_owner;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_65 = V_11;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_66 = ___3_surfaces;
+		bool L_67;
+		L_67 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_64, L_65, L_66, NULL);
+		if (L_67)
 		{
-			goto IL_02a5;
+			goto IL_01d8;
 		}
 	}
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:257>
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_119 = V_15;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_120 = V_0;
-		bool L_121;
-		L_121 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_119, L_120, (&V_7), (&V_18), NULL);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_68 = V_11;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = V_0;
+		bool L_70;
+		L_70 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_68, L_69, (&V_7), (&V_13), NULL);
+		if (L_70)
+		{
+			goto IL_01d8;
+		}
+	}
+	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:258>
-		if (!L_121)
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_71 = __this->___hits;
+		int32_t L_72 = V_10;
+		NullCheck(L_71);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73;
+		L_73 = RaycastHit_get_normal_mD8741B70D2039C5CAFC4368D4CE59D89562040B5(((L_71)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_72))), NULL);
+		V_12 = L_73;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:260>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74 = ___2_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_12;
+		float L_76;
+		L_76 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_74, L_75, NULL);
+		if ((((float)L_76) >= ((float)(-9.99999997E-07f))))
 		{
-			goto IL_0286;
-		}
-	}
-	{
-		float L_122 = V_17;
-		float L_123 = V_18;
-		if ((!(((float)L_122) > ((float)((float)il2cpp_codegen_add(L_123, (9.99999997E-07f)))))))
-		{
-			goto IL_02a5;
-		}
-	}
-
-IL_0286:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:259>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_124 = ___4_blockingNormal;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_125 = V_16;
-		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_124 = L_125;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:259>
-		String_t** L_126 = ___5_reason;
-		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_127 = V_15;
-		NullCheck(L_127);
-		String_t* L_128;
-		L_128 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_127, NULL);
-		String_t* L_129;
-		L_129 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_128, NULL);
-		*((String_t**)L_126) = (String_t*)L_129;
-		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_126, (void*)(String_t*)L_129);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:259>
-		return (bool)0;
-	}
-
-IL_02a5:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:253>
-		int32_t L_130 = V_14;
-		V_14 = ((int32_t)il2cpp_codegen_add(L_130, 1));
-	}
-
-IL_02ab:
-	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:253>
-		int32_t L_131 = V_14;
-		int32_t L_132 = V_1;
-		if ((((int32_t)L_131) < ((int32_t)L_132)))
-		{
-			goto IL_023e;
+			goto IL_01d8;
 		}
 	}
 	{
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:261>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_77 = __this->___hits;
+		int32_t L_78 = V_10;
+		NullCheck(L_77);
+		float L_79;
+		L_79 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78(((L_77)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_78))), NULL);
+		float L_80 = V_8;
+		if ((!(((float)L_79) < ((float)L_80))))
+		{
+			goto IL_01d8;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:261>
+		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_81 = __this->___hits;
+		int32_t L_82 = V_10;
+		NullCheck(L_81);
+		float L_83;
+		L_83 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78(((L_81)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_82))), NULL);
+		V_8 = L_83;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:261>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_84 = V_11;
+		V_9 = L_84;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:261>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_85 = ___4_blockingNormal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86 = V_12;
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_85 = L_86;
+	}
+
+IL_01d8:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:254>
+		int32_t L_87 = V_10;
+		V_10 = ((int32_t)il2cpp_codegen_add(L_87, 1));
+	}
+
+IL_01de:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:254>
+		int32_t L_88 = V_10;
+		int32_t L_89 = V_1;
+		if ((((int32_t)L_88) < ((int32_t)L_89)))
+		{
+			goto IL_014e;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:263>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_90 = V_9;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_91;
+		L_91 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_90, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_91)
+		{
+			goto IL_020e;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:263>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_92 = V_9;
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, L_92, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:263>
+		String_t** L_93 = ___5_reason;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_94 = V_9;
+		NullCheck(L_94);
+		String_t* L_95;
+		L_95 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_94, NULL);
+		String_t* L_96;
+		L_96 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralBC92FFEA3B9E9332FD45FEBB9B481AA4DAFB1F0B, L_95, NULL);
+		*((String_t**)L_93) = (String_t*)L_96;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_93, (void*)(String_t*)L_96);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:263>
+		return (bool)0;
+	}
+
+IL_020e:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:266>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98 = ___2_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_99;
+		L_99 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_97, L_98, NULL);
+		float L_100 = __this->___bodyRadius;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_101 = __this->___overlaps;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_102 = __this->___obstacleMask;
+		int32_t L_103;
+		L_103 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_102, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		int32_t L_104;
+		L_104 = Physics_OverlapSphereNonAlloc_mED890C8454FCC0354A94F97453707FA01B27AE83(L_99, L_100, L_101, L_103, 1, NULL);
+		V_1 = L_104;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:267>
+		int32_t L_105 = V_1;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_106 = __this->___overlaps;
+		NullCheck(L_106);
+		if ((!(((uint32_t)L_105) == ((uint32_t)((int32_t)(((RuntimeArray*)L_106)->max_length))))))
+		{
+			goto IL_0248;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:267>
+		String_t** L_107 = ___5_reason;
+		*((String_t**)L_107) = (String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_107, (void*)(String_t*)_stringLiteral843D486FAE4088AE31751D402CB24E5FF9EA8B0E);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:267>
+		return (bool)0;
+	}
+
+IL_0248:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:268>
+		V_14 = 0;
+		goto IL_02c2;
+	}
+
+IL_024d:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:270>
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_108 = __this->___overlaps;
+		int32_t L_109 = V_14;
+		NullCheck(L_108);
+		int32_t L_110 = L_109;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_111 = (L_108)->GetAt(static_cast<il2cpp_array_size_t>(L_110));
+		V_15 = L_111;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:270>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_112 = ___0_owner;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_113 = V_15;
+		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_114 = ___3_surfaces;
+		bool L_115;
+		L_115 = LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15(__this, L_112, L_113, L_114, NULL);
+		if (L_115)
+		{
+			goto IL_02bc;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_116 = V_15;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118 = ___2_movement;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_119;
+		L_119 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_117, L_118, NULL);
+		bool L_120;
+		L_120 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_116, L_119, (&V_16), (&V_17), NULL);
+		if (!L_120)
+		{
+			goto IL_02bc;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:272>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_121 = V_15;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_122 = V_0;
+		bool L_123;
+		L_123 = LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD(__this, L_121, L_122, (&V_7), (&V_18), NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		if (!L_123)
+		{
+			goto IL_0295;
+		}
+	}
+	{
+		float L_124 = V_17;
+		float L_125 = V_18;
+		if ((!(((float)L_124) > ((float)((float)il2cpp_codegen_add(L_125, (9.99999997E-07f)))))))
+		{
+			goto IL_02bc;
+		}
+	}
+
+IL_0295:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:274>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_126 = V_15;
+		LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline(__this, L_126, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:274>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_127 = ___4_blockingNormal;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_128 = V_16;
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_127 = L_128;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:274>
+		String_t** L_129 = ___5_reason;
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_130 = V_15;
+		NullCheck(L_130);
+		String_t* L_131;
+		L_131 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_130, NULL);
+		String_t* L_132;
+		L_132 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9381773ABF80252E96131584CA49B722E6EECF6B, L_131, NULL);
+		*((String_t**)L_129) = (String_t*)L_132;
+		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_129, (void*)(String_t*)L_132);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:274>
+		return (bool)0;
+	}
+
+IL_02bc:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:268>
+		int32_t L_133 = V_14;
+		V_14 = ((int32_t)il2cpp_codegen_add(L_133, 1));
+	}
+
+IL_02c2:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:268>
+		int32_t L_134 = V_14;
+		int32_t L_135 = V_1;
+		if ((((int32_t)L_134) < ((int32_t)L_135)))
+		{
+			goto IL_024d;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:276>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87603
+// Method Definition Index: 87694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IsOwn_mA41D7503472CD086AD55C25B7BED0985C9E1979B (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2743,7 +2895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IsOwn_mA41D750347
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:265>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:280>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_owner;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -2780,7 +2932,7 @@ IL_001f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87604
+// Method Definition Index: 87695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___2_groundSurfaces, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2794,7 +2946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IgnoreObstacle_m8
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* V_2 = NULL;
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* V_3 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:269>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:284>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_owner;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_1 = ___1_collider;
 		bool L_2;
@@ -2805,13 +2957,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IgnoreObstacle_m8
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:269>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:284>
 		return (bool)1;
 	}
 
 IL_000b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:270>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:285>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_3 = ___2_groundSurfaces;
 		if (!L_3)
 		{
@@ -2819,7 +2971,7 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_4 = ___2_groundSurfaces;
 		V_0 = L_4;
 		V_1 = 0;
@@ -2828,14 +2980,14 @@ IL_000b:
 
 IL_0014:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_5 = V_0;
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		V_2 = L_8;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_9 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -2857,7 +3009,7 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
 		return (bool)1;
 	}
 
@@ -2869,7 +3021,7 @@ IL_002c:
 
 IL_0030:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
 		int32_t L_15 = V_1;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_16 = V_0;
 		NullCheck(L_16);
@@ -2881,7 +3033,7 @@ IL_0030:
 
 IL_0036:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:272>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:287>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_17 = __this->___ignoredObstacles;
 		if (!L_17)
 		{
@@ -2889,7 +3041,7 @@ IL_0036:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_18 = __this->___ignoredObstacles;
 		V_0 = L_18;
 		V_1 = 0;
@@ -2898,14 +3050,14 @@ IL_0036:
 
 IL_0049:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_19 = V_0;
 		int32_t L_20 = V_1;
 		NullCheck(L_19);
 		int32_t L_21 = L_20;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_22 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
 		V_3 = L_22;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_23 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_24;
@@ -2927,7 +3079,7 @@ IL_0049:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
 		return (bool)1;
 	}
 
@@ -2939,7 +3091,7 @@ IL_0061:
 
 IL_0065:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:273>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
 		int32_t L_29 = V_1;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_30 = V_0;
 		NullCheck(L_30);
@@ -2951,11 +3103,11 @@ IL_0065:
 
 IL_006b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:274>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:289>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87605
+// Method Definition Index: 87696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___1_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_preferred, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_start, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2997,24 +3149,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryFindStart_mBB8
 	String_t* G_B30_0 = NULL;
 	String_t** G_B30_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:280>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:295>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___4_start;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___2_preferred;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:281>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:296>
 		String_t** L_2 = ___5_reason;
 		*((String_t**)L_2) = (String_t*)_stringLiteralB6F3715A7E46AF36E9BE496A295B48812F76FBC3;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_2, (void*)(String_t*)_stringLiteralB6F3715A7E46AF36E9BE496A295B48812F76FBC3);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:282>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:297>
 		V_0 = (String_t*)NULL;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:284>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:299>
 		V_1 = 0;
 		goto IL_021d;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:286>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:301>
 		int32_t L_3 = V_1;
 		if (!L_3)
 		{
@@ -3034,26 +3186,26 @@ IL_0020:
 IL_0021:
 	{
 		V_2 = G_B4_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:287>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:302>
 		float L_4 = __this->___explorationRadius;
 		float L_5 = __this->___bodyRadius;
 		float L_6;
 		L_6 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), ((float)il2cpp_codegen_subtract(L_4, L_5)), NULL);
 		int32_t L_7 = V_1;
 		V_3 = ((float)(((float)il2cpp_codegen_multiply(L_6, ((float)L_7)))/(8.0f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
 		V_4 = 0;
 		goto IL_0211;
 	}
 
 IL_004b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:290>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:305>
 		int32_t L_8 = V_4;
 		int32_t L_9 = V_2;
 		V_5 = ((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)L_8), (3.14159274f))), (2.0f)))/((float)L_9)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:291>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:292>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:306>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:307>
 		int32_t L_10 = __this->___boundaryShape;
 		if ((((int32_t)L_10) == ((int32_t)1)))
 		{
@@ -3095,7 +3247,7 @@ IL_0075:
 IL_00ab:
 	{
 		V_6 = G_B8_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:293>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:308>
 		int32_t L_24 = V_1;
 		if (!L_24)
 		{
@@ -3132,7 +3284,7 @@ IL_00e1:
 IL_00e2:
 	{
 		V_7 = G_B11_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:294>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:309>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_37 = ___1_surfaces;
 		if (!L_37)
 		{
@@ -3140,7 +3292,7 @@ IL_00e2:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:295>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:310>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_38 = ___1_surfaces;
 		V_8 = L_38;
 		V_9 = 0;
@@ -3149,14 +3301,14 @@ IL_00e2:
 
 IL_00f5:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:295>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:310>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_39 = V_8;
 		int32_t L_40 = V_9;
 		NullCheck(L_39);
 		int32_t L_41 = L_40;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_42 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_41));
 		V_10 = L_42;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:297>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:312>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_43 = V_10;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_44;
@@ -3200,7 +3352,7 @@ IL_00f5:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:298>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:313>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_7;
 		float L_53 = L_52.___x;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_54 = V_10;
@@ -3220,7 +3372,7 @@ IL_00f5:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
 		L_62 = Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline(NULL);
 		Ray__ctor_mE298992FD10A3894C38373198385F345C58BD64C_inline((&V_11), L_61, L_62, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:299>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:314>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_63 = V_10;
 		Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 L_64 = V_11;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_65 = V_10;
@@ -3242,13 +3394,13 @@ IL_00f5:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:300>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:315>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
 		L_72 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_12), NULL);
 		float L_73 = L_72.___y;
 		(&V_7)->___y = L_73;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:301>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:302>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:316>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:317>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_74 = ___1_surfaces;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_75 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76 = ___3_center;
@@ -3277,21 +3429,21 @@ IL_00f5:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:318>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_87 = ___4_start;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88 = V_13;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_87 = L_88;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:318>
 		String_t** L_89 = ___5_reason;
 		*((String_t**)L_89) = (String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_89, (void*)(String_t*)_stringLiteralC9DED19749A48661A81474DE4485C2452F386245);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:318>
 		return (bool)1;
 	}
 
 IL_01f3:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:304>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:319>
 		String_t* L_90 = V_0;
 		if (L_90)
 		{
@@ -3299,7 +3451,7 @@ IL_01f3:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:304>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:319>
 		String_t** L_91 = ___5_reason;
 		String_t* L_92 = *((String_t**)L_91);
 		V_0 = L_92;
@@ -3313,7 +3465,7 @@ IL_01fa:
 
 IL_0200:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:295>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:310>
 		int32_t L_94 = V_9;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_95 = V_8;
 		NullCheck(L_95);
@@ -3325,14 +3477,14 @@ IL_0200:
 
 IL_020b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
 		int32_t L_96 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_96, 1));
 	}
 
 IL_0211:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:288>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:303>
 		int32_t L_97 = V_4;
 		int32_t L_98 = V_2;
 		if ((((int32_t)L_97) < ((int32_t)L_98)))
@@ -3341,14 +3493,14 @@ IL_0211:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:284>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:299>
 		int32_t L_99 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_99, 1));
 	}
 
 IL_021d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:284>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:299>
 		int32_t L_100 = V_1;
 		if ((((int32_t)L_100) <= ((int32_t)8)))
 		{
@@ -3356,7 +3508,7 @@ IL_021d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:308>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:323>
 		String_t** L_101 = ___5_reason;
 		String_t* L_102 = V_0;
 		String_t* L_103 = L_102;
@@ -3380,11 +3532,11 @@ IL_022e:
 	{
 		*((String_t**)G_B31_1) = (String_t*)G_B31_0;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)G_B31_1, (void*)(String_t*)G_B31_0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:309>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:324>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87606
+// Method Definition Index: 87697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3426,11 +3578,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety__ctor_mF89D9DAE7D
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_2 = (ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787*)(ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787*)SZArrayNew(ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787_il2cpp_TypeInfo_var, (uint32_t)0);
 		__this->___ignoredObstacles = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ignoredObstacles), (void*)L_2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:27>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:40>
 		RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8* L_3 = (RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8*)(RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8*)SZArrayNew(RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		__this->___hits = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hits), (void*)L_3);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:28>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:41>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_4 = (ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787*)(ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787*)SZArrayNew(ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787_il2cpp_TypeInfo_var, (uint32_t)((int32_t)256));
 		__this->___overlaps = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___overlaps), (void*)L_4);
@@ -3473,7 +3625,123 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety__ctor_mF89D9DAE7D
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 43770
+// Method Definition Index: 87672
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:28>
+		bool L_0 = ___0_value;
+		__this->___U3CHasObstacleQueryU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 43672
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:744>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 43679
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:786>
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 43676
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:777>
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 87674
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:29>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_value;
+		__this->___U3CLastObstacleOriginU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 87673
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:29>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___U3CLastObstacleOriginU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 87676
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:30>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_value;
+		__this->___U3CLastObstacleEndU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 87678
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/PlayerMovementSafety/LadybirdMovementSafety.cs:31>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_value;
+		__this->___U3CLastBlockingColliderU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLastBlockingColliderU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 43775
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -3530,7 +3798,7 @@ IL_001d:
 		return L_9;
 	}
 }
-// Method Definition Index: 43810
+// Method Definition Index: 43815
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3551,7 +3819,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59
 		return ((float)L_4);
 	}
 }
-// Method Definition Index: 43828
+// Method Definition Index: 43833
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3566,7 +3834,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-// Method Definition Index: 43800
+// Method Definition Index: 43805
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_normalized_mF6722883AEFB5027690A778DF8ACC20F0FA65297_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3576,7 +3844,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-// Method Definition Index: 43772
+// Method Definition Index: 43777
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -3630,7 +3898,7 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 43821
+// Method Definition Index: 43826
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -3650,7 +3918,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_6;
 	}
 }
-// Method Definition Index: 43672
+// Method Definition Index: 43677
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -3677,7 +3945,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 43829
+// Method Definition Index: 43834
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3692,7 +3960,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-// Method Definition Index: 43817
+// Method Definition Index: 43822
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -3714,7 +3982,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_8;
 	}
 }
-// Method Definition Index: 43755
+// Method Definition Index: 43760
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3753,7 +4021,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 43656
+// Method Definition Index: 43661
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3776,7 +4044,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6
 		return ((float)L_6);
 	}
 }
-// Method Definition Index: 43633
+// Method Definition Index: 43638
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -3793,58 +4061,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 43674
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:786>
-		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
-		float L_1 = L_0.___x;
-		float L_2 = ___1_d;
-		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
-		float L_4 = L_3.___y;
-		float L_5 = ___1_d;
-		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
-		float L_7 = L_6.___z;
-		float L_8 = ___1_d;
-		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
-		return L_9;
-	}
-}
-// Method Definition Index: 43671
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:777>
-		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
-		float L_1 = L_0.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
-		float L_3 = L_2.___x;
-		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
-		float L_5 = L_4.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
-		float L_7 = L_6.___y;
-		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
-		float L_9 = L_8.___z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
-		float L_11 = L_10.___z;
-		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
-		return L_12;
-	}
-}
-// Method Definition Index: 43658
+// Method Definition Index: 43663
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3858,7 +4075,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m4
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))));
 	}
 }
-// Method Definition Index: 43646
+// Method Definition Index: 43651
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3868,7 +4085,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43752
+// Method Definition Index: 43757
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -3907,7 +4124,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 43668
+// Method Definition Index: 43673
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3948,22 +4165,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsPositiveInfinity_mB
 		return (bool)((((float)L_0) == ((float)(std::numeric_limits<float>::infinity())))? 1 : 0);
 	}
 }
-// Method Definition Index: 43667
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Vector3.cs:744>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
-		return L_0;
-	}
-}
-// Method Definition Index: 43651
+// Method Definition Index: 43656
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4026,7 +4228,7 @@ IL_0058:
 		return L_10;
 	}
 }
-// Method Definition Index: 43703
+// Method Definition Index: 43708
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4041,7 +4243,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 43645
+// Method Definition Index: 43650
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -4092,7 +4294,7 @@ IL_0065:
 		return;
 	}
 }
-// Method Definition Index: 43650
+// Method Definition Index: 43655
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_planeNormal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4171,7 +4373,7 @@ IL_006f:
 		return L_23;
 	}
 }
-// Method Definition Index: 43647
+// Method Definition Index: 43652
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -4191,7 +4393,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A3
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 	}
 }
-// Method Definition Index: 43663
+// Method Definition Index: 43668
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4206,7 +4408,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43815
+// Method Definition Index: 43820
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_Max_m1E906743ECA6478A2EDCCFECD9D509898F66152B_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_lhs, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_rhs, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -4232,7 +4434,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_10;
 	}
 }
-// Method Definition Index: 43823
+// Method Definition Index: 43828
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -4300,7 +4502,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_6;
 	}
 }
-// Method Definition Index: 43665
+// Method Definition Index: 43670
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4315,7 +4517,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43795
+// Method Definition Index: 43800
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -4329,7 +4531,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 43644
+// Method Definition Index: 43649
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4396,7 +4598,7 @@ IL_0050:
 		return L_14;
 	}
 }
-// Method Definition Index: 43648
+// Method Definition Index: 43653
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_rhs, const RuntimeMethod* method) 
 {
 	{

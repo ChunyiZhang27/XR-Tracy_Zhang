@@ -405,7 +405,9 @@
           },
           {
             "name": "RenderTexture",
-            "scenes": [],
+            "scenes": [
+              "Assets/Project/Scenes/Prototype2b.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1036,7 +1038,9 @@
           },
           {
             "name": "Rigidbody",
-            "scenes": [],
+            "scenes": [
+              "Assets/Project/Scenes/Prototype2b.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1705,8 +1709,18 @@
         "name": "Video",
         "dependencies": [
           {
+            "name": "VideoClip",
+            "scenes": [
+              "Assets/Project/Scenes/Prototype2b.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "VideoPlayer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Project/Scenes/Prototype2b.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           }

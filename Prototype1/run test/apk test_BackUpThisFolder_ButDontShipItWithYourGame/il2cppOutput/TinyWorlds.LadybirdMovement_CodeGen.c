@@ -9,6 +9,15 @@
 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E (void);
+extern void LadybirdMovementSafety_get_HasObstacleQuery_m2FD9B49D7A56D42FDD964DA5EC98344CD9E61998 (void);
+extern void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D (void);
+extern void LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D (void);
+extern void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1 (void);
+extern void LadybirdMovementSafety_get_LastObstacleEnd_mE4D0FA3056C3052B0BC9DD974ABAD3EE1BBEE048 (void);
+extern void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD (void);
+extern void LadybirdMovementSafety_get_LastBlockingCollider_mB72BD644BA206796601F6367EC8F48CCEA0F09B7 (void);
+extern void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E (void);
+extern void LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8 (void);
 extern void LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A (void);
 extern void LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5 (void);
 extern void LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115 (void);
@@ -27,10 +36,19 @@ extern void LadybirdMovementSafety_IsOwn_mA41D7503472CD086AD55C25B7BED0985C9E197
 extern void LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15 (void);
 extern void LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B (void);
 extern void LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95 (void);
-static Il2CppMethodPointer s_methodPointers[20] = 
+static Il2CppMethodPointer s_methodPointers[29] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E,
+	LadybirdMovementSafety_get_HasObstacleQuery_m2FD9B49D7A56D42FDD964DA5EC98344CD9E61998,
+	LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D,
+	LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D,
+	LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1,
+	LadybirdMovementSafety_get_LastObstacleEnd_mE4D0FA3056C3052B0BC9DD974ABAD3EE1BBEE048,
+	LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD,
+	LadybirdMovementSafety_get_LastBlockingCollider_mB72BD644BA206796601F6367EC8F48CCEA0F09B7,
+	LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E,
+	LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8,
 	LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A,
 	LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5,
 	LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115,
@@ -50,11 +68,20 @@ static Il2CppMethodPointer s_methodPointers[20] =
 	LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B,
 	LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95,
 };
-static const int32_t s_InvokerIndices[20] = 
+static const int32_t s_InvokerIndices[29] = 
 {
-	30497,
-	17695,
-	25025,
+	30506,
+	17698,
+	17270,
+	13182,
+	17687,
+	13585,
+	17687,
+	13585,
+	17483,
+	13394,
+	6944,
+	25033,
 	4308,
 	5134,
 	439,
@@ -63,21 +90,21 @@ static const int32_t s_InvokerIndices[20] =
 	289,
 	634,
 	440,
-	17480,
-	17695,
+	17483,
+	17698,
 	1148,
 	438,
 	438,
-	24186,
+	24194,
 	2324,
 	435,
-	17695,
+	17698,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_TinyWorlds_LadybirdMovement_CodeGenModule;
 const Il2CppCodeGenModule g_TinyWorlds_LadybirdMovement_CodeGenModule = 
 {
 	"TinyWorlds.LadybirdMovement.dll",
-	20,
+	29,
 	s_methodPointers,
 	0,
 	NULL,
