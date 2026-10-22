@@ -2,6 +2,7 @@ using System;
 using System.Reflection;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.TestTools;
 
 public class Prototype2bVoiceGuidanceTests
 {
@@ -54,7 +55,7 @@ public class Prototype2bVoiceGuidanceTests
         v.GetType().GetField("voiceGuidance").SetValue(v,voice);
         video.SetActive(true);v.GetType().GetMethod("Replay").Invoke(v,null);Assert.AreEqual("Silent",Stage);Assert.IsEmpty(Guidance);
     }
-    [Test] public void LegacyCountRecordingsAreSuppressedButGuidanceRemainsAvailable()
+    [Test] public void LegacyStartRecordingIsSuppressedButDoesNotGateCompletion()
     {
         type.GetField("recordedStartFoodSearchAphidCount").SetValue(voice,5);
         var clip=AudioClip.Create("In-memory test only",4410,1,44100,false);
@@ -63,9 +64,22 @@ public class Prototype2bVoiceGuidanceTests
             type.GetField("voiceMissionComplete").SetValue(voice,clip);
             Call("StartFoodSearch");Assert.IsNull(root.GetComponent<AudioSource>().clip);
             StringAssert.Contains("ten aphids",Guidance);
-            Call("MissionComplete");Assert.IsNull(root.GetComponent<AudioSource>().clip);
+            // Inspect the queued request without starting Edit Mode audio/coroutines.
+            root.GetComponent<AudioSource>().enabled=false;
+            LogAssert.Expect(LogType.Log,"[Mission Complete Voice] Requested clip: In-memory test only.");
+            LogAssert.Expect(LogType.Log,"[Mission Complete Voice] Playback rejected: voice AudioSource missing or inactive.");
+            Call("MissionComplete");Assert.AreEqual("Complete",Stage);
+            Assert.AreEqual(clip,type.GetField("voiceMissionComplete").GetValue(voice));
             StringAssert.Contains("ten aphids",Guidance);
         } finally { UnityEngine.Object.DestroyImmediate(clip); }
+    }
+    [Test] public void MissingCompletionClipAndDuplicateRequestsHaveExplicitDiagnostics()
+    {
+        LogAssert.Expect(LogType.Log,"[Mission Complete Voice] Requested clip: MISSING.");
+        LogAssert.Expect(LogType.Log,"[Mission Complete Voice] Playback rejected: AudioClip missing.");
+        Call("MissionComplete");
+        LogAssert.Expect(LogType.Log,"[Mission Complete Voice] Rejected duplicate request; completion already entered.");
+        Call("MissionComplete");
     }
     [Test] public void FirstLearningCardCanBeReenteredAfterVideoStage()
     {

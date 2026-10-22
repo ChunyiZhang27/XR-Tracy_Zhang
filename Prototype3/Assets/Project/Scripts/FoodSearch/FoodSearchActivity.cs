@@ -94,6 +94,9 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (feedbackText != null) feedbackText.text = Completed ? "Ten aphids caught! Release held insects to continue." : CorrectFeedback;
         if (Completed)
         {
+            if (voiceGuidance == null || voiceGuidance.logCompletionNarration)
+                Debug.Log($"[Food Search] Mission complete at {found.Count}/{requiredAphids} unique aphids; requesting completion narration" +
+                    (voiceGuidance == null ? " (voice manager missing)." : "."), this);
             if (voiceGuidance != null) voiceGuidance.MissionComplete();
             completionRoutine = StartCoroutine(ShowCompletionAfterGrab());
         }
