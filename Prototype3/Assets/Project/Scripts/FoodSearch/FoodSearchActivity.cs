@@ -33,11 +33,12 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public bool Finished { get; private set; }
     public bool CompletionVisible { get; private set; }
     Coroutine completionRoutine;
+    Coroutine replayRoutine;
     [Min(1)] public int requiredAphids = 10;
     public bool Running { get; private set; }
     public bool Completed { get; private set; }
     public int FoundCount => found.Count;
-    public const string Instruction = "Catch 10 aphids to feed your hungry ladybird!\nHold Grip to grab. Release to let go.";
+    public const string Instruction = "Find any 10 aphids to feed your hungry ladybird!\nHold Grip to grab. Release to let go.";
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
     public const string IncorrectFeedback = "Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.";
     public const string CompletionFeedback = "You've caught ten aphids! Ladybirds help protect plants by feeding on aphids.";
@@ -94,7 +95,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (Completed)
         {
             if (voiceGuidance != null) voiceGuidance.MissionComplete();
-            completionRoutine = StartCoroutine(CompleteAfterRelease());
+            completionRoutine = StartCoroutine(ShowCompletionAfterGrab());
         }
     }
     bool AnySelected()
@@ -107,25 +108,45 @@ public sealed class FoodSearchActivity : MonoBehaviour
         }
         return false;
     }
-    IEnumerator CompleteAfterRelease()
+    IEnumerator ShowCompletionAfterGrab()
     {
-        // Never hide a target or show replay from inside selectEntered/selectExited callbacks.
-        do { yield return null; } while (AnySelected());
-        yield return new WaitForFixedUpdate();
-        while (AnySelected()) yield return null;
+        // Count/voice complete in ConfirmGrab; show UI just outside the XR callback stack.
+        // Targets remain active, so holding an optional insect cannot delay completion.
+        yield return null;
         completionRoutine = null;
         if (!Running || !Completed || !Eligible) yield break;
         CompletionVisible = true;
-        if (insectArea != null) insectArea.SetActive(false);
+        // Uncaught insects remain optional. ConfirmGrab rejects all scoring after Completed.
+        // Finish Exploration still hides the area; Try Again restores every target.
         if (searchPanel != null) searchPanel.SetActive(false);
         if (completionPanel != null) completionPanel.SetActive(true);
         if (tryAgainButton != null) tryAgainButton.SetActive(true);
     }
     void CancelCompletion() { if (completionRoutine != null) StopCoroutine(completionRoutine); completionRoutine = null; }
-    public void TryAgain() { if (!returningToInsects && (Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch(); }
+    public void TryAgain()
+    {
+        if (returningToInsects || replayRoutine != null || !(Running || Finished) || !Completed || !CompletionVisible || !Eligible) return;
+        if (!AnySelected()) BeginSearch();
+        else replayRoutine = StartCoroutine(ReplayAfterSelectionCleanup());
+    }
+    IEnumerator ReplayAfterSelectionCleanup()
+    {
+        yield return null; // Leave the UI/XR callback stack before cancelling optional grabs.
+        if (targets != null) foreach (var target in targets)
+        {
+            if (target == null) continue;
+            var grab = target.GetComponent<XRGrabInteractable>();
+            if (grab != null && grab.isSelected && grab.interactionManager != null)
+                grab.interactionManager.CancelInteractableSelection((IXRSelectInteractable)grab);
+        }
+        yield return null;
+        while (AnySelected()) yield return null;
+        replayRoutine = null;
+        if (!returningToInsects && (Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch();
+    }
     public void FinishExploration()
     {
-        if (!Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
+        if (replayRoutine != null || !Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
         // Remain at the final Habitat card. Explicit Try Again restarts only this mission.
         if (voiceGuidance != null) voiceGuidance.Silence();
         Finished = true;
@@ -149,7 +170,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     public void BackToInsects()
     {
-        if (!Finished || !CompletionVisible || returningToInsects || existingBackToInsectsAction == null) return;
+        if (replayRoutine != null || !Finished || !CompletionVisible || returningToInsects || existingBackToInsectsAction == null) return;
         if (voiceGuidance != null) voiceGuidance.Silence();
         returningToInsects = true;
         if (backToInsectsButton != null) backToInsectsButton.interactable = false;
@@ -187,6 +208,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     public void EndSearch()
     {
+        if (replayRoutine != null) StopCoroutine(replayRoutine);
+        replayRoutine = null;
         if (correctCatchSource != null) correctCatchSource.Stop();
         if ((Running || Finished) && voiceGuidance != null) voiceGuidance.Silence();
         CancelCompletion();
