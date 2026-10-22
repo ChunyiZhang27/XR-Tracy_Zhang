@@ -37,6 +37,7 @@ public static class Prototype2bVoiceClipAssignment
                 throw new InvalidOperationException("Missing imported AudioClip: " + Folder + Names[i] + ".wav. Nothing was changed.");
         // Validate every asset before changing anything. Undo and normal scene saving remain available.
         Undo.RecordObject(voice, "Assign Prototype2b voice clips");
+        voice.voiceFoodLearning1 = AssetDatabase.LoadAssetAtPath<AudioClip>(Folder + "Voice_FoodLearning1.wav");
         voice.voiceStartExploration = clips[0];
         voice.voiceHabitatFound = clips[1];
         voice.voiceStartFoodSearch = clips[2];

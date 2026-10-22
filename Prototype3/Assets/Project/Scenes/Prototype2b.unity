@@ -9954,7 +9954,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Find and catch ten aphids hiding among the insects!
+  m_text: 'Catch 10 aphids to feed your hungry ladybird!
+
+    Hold Grip to grab.
+    Release to let go.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16818,8 +16821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Many ladybird species eat aphids. Aphids are tiny insects that feed on
-    plant sap. Ladybirds help keep aphid populations under control.
+  m_text: Ladybirds eat aphids and help protect plants.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -36407,6 +36409,8 @@ MonoBehaviour:
   voiceStartFoodSearch: {fileID: 8300000, guid: 444604b7cca1e4b5b97ec135fee112ae, type: 3}
   voiceWrongInsect: {fileID: 8300000, guid: 501152202c27b40d5bb269b3eaca3eee, type: 3}
   voiceMissionComplete: {fileID: 8300000, guid: 4de18a4bbc0d541f592442991fa3d8fa, type: 3}
+  voiceFoodLearning1: {fileID: 8300000, guid: d1be6181c4d9f4818aafa2c9115a7a5a, type: 3}
+  recordedStartFoodSearchAphidCount: 10
   recordedFoodMissionAphidCount: 5
   foodMissionAphidCount: 10
   existingNarration: {fileID: 1831991277}
@@ -44162,7 +44166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Catch Ten Aphids
+  m_text: Feed Your Ladybird!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

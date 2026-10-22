@@ -23,6 +23,7 @@ public class Prototype2bVoiceGuidanceTests
     [TestCase("HabitatFound","Habitat")]
     [TestCase("StartFoodSearch","FoodSearch")]
     [TestCase("MissionComplete","Complete")]
+    [TestCase("FoodLearning1","FoodLearning1")]
     public void MissingClipsAreSafeAndSetReadableGuidance(string method,string stage)
     { Call(method);Assert.AreEqual(stage,Stage);Assert.IsNotEmpty(Guidance);Assert.IsFalse(root.GetComponent<AudioSource>().isPlaying); }
     [Test] public void RepeatedStageEntryDoesNotReplaceCurrentWrongGrabGuidance()
@@ -44,7 +45,7 @@ public class Prototype2bVoiceGuidanceTests
     {
         Call("StartFoodSearch");Call("MissionComplete");Call("Silence");
         Assert.AreEqual("Silent",Stage);Assert.IsEmpty(Guidance);
-        Call("StartFoodSearch");StringAssert.Contains("grab ten aphids",Guidance);
+        Call("StartFoodSearch");StringAssert.Contains("find ten aphids",Guidance);
     }
     [Test] public void VideoReplayCancelsGuidanceEvenWhenMediaMissing()
     {
@@ -55,6 +56,7 @@ public class Prototype2bVoiceGuidanceTests
     }
     [Test] public void LegacyCountRecordingsAreSuppressedButGuidanceRemainsAvailable()
     {
+        type.GetField("recordedStartFoodSearchAphidCount").SetValue(voice,5);
         var clip=AudioClip.Create("In-memory test only",4410,1,44100,false);
         try {
             type.GetField("voiceStartFoodSearch").SetValue(voice,clip);
@@ -64,6 +66,13 @@ public class Prototype2bVoiceGuidanceTests
             Call("MissionComplete");Assert.IsNull(root.GetComponent<AudioSource>().clip);
             StringAssert.Contains("ten aphids",Guidance);
         } finally { UnityEngine.Object.DestroyImmediate(clip); }
+    }
+    [Test] public void FirstLearningCardCanBeReenteredAfterVideoStage()
+    {
+        Call("FoodLearning1");StringAssert.Contains("Many ladybirds eat aphids",Guidance);
+        Call("Silence");Assert.IsEmpty(Guidance);
+        Call("FoodLearning1");Assert.AreEqual("FoodLearning1",Stage);
+        Call("StartFoodSearch");StringAssert.Contains("hungry",Guidance);
     }
     [Test] public void SourceIsTwoDimensionalAndDoesNotAutoplay()
     {

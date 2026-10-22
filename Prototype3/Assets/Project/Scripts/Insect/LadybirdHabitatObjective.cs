@@ -172,6 +172,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
             if (stage == FoodStage.FoodSearchReady) foodSearch.BeginSearch();
             else foodSearch.EndSearch();
         }
+        if (stage == FoodStage.Card1 && voiceGuidance != null) voiceGuidance.FoodLearning1();
     }
     private void HideFoodLearning()
     {

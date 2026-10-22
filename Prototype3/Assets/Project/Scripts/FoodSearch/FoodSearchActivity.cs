@@ -37,7 +37,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public bool Running { get; private set; }
     public bool Completed { get; private set; }
     public int FoundCount => found.Count;
-    public const string Instruction = "Find and catch ten aphids hiding among the insects!";
+    public const string Instruction = "Catch 10 aphids to feed your hungry ladybird!\nHold Grip to grab. Release to let go.";
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
     public const string IncorrectFeedback = "Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.";
     public const string CompletionFeedback = "You've caught ten aphids! Ladybirds help protect plants by feeding on aphids.";
