@@ -5,6 +5,7 @@ using System.Reflection;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEngine;
 
 /// <summary>Scene-only population expansion using the existing aphid and ant wrappers.</summary>
 public static class Prototype2bPopulationSetup
