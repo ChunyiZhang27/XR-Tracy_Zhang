@@ -40,6 +40,8 @@ namespace TinyWorlds
         private readonly RaycastHit[] hits = new RaycastHit[256];
         private readonly Collider[] overlaps = new Collider[256];
 
+        // ===== 1. 摇杆死区与边界 =====
+        // 过滤小幅摇杆漂移，并把死区之外的幅度重新映射到 0～1。
         public static Vector2 ApplyDeadzone(Vector2 input, float deadzone)
         {
             deadzone = Mathf.Clamp(deadzone, 0f, 0.95f);
@@ -53,6 +55,7 @@ namespace TinyWorlds
             return BoundaryExcess(point, center) <= 0f;
         }
 
+        // 从边界扣除身体半径，限制的是整只瓢虫的覆盖范围，而不只是中心点。
         private float BoundaryExcess(Vector3 point, Vector3 center)
         {
             Vector3 delta = point - center; delta.y = 0f;
@@ -76,6 +79,7 @@ namespace TinyWorlds
 
         // If a runtime boundary adjustment puts a supported Ladybird outside, allow only steps toward it.
         // Ordinary movement must remain inside. Recovery never bypasses ground or obstacle checks.
+        // 正常移动必须在边界内；若已在界外，只接受更靠近允许区域的安全位置。
         public bool TryMovementPosition(Collider[] surfaces, Vector3 from, Vector3 point, Vector3 center,
             out Vector3 grounded, out string reason)
         {
@@ -86,6 +90,8 @@ namespace TinyWorlds
             return TrySupportedPosition(surfaces, point, from.y, out grounded, out reason);
         }
 
+        // ===== 2. 地面支撑检查 =====
+        // 检查中心及内外两圈各 16 个点，防止中心有地面但腿部已经跨出叶片。
         public bool TrySupportedPosition(Collider[] surfaces, Vector3 point, float referenceHeight,
             out Vector3 grounded, out string reason)
         {
@@ -111,6 +117,7 @@ namespace TinyWorlds
         // Bounded rollback of a slightly displaced footprint, never a general unsupported-ground move.
         // The centre stays grounded, all previously supported samples stay supported, and the saved
         // destination must still pass the complete footprint/boundary test. Obstacles are checked by caller.
+        // 只允许从轻微偏移处向已验证位置有限回退，并确保不丢失更多地面支撑。
         public bool TryEdgeRecovery(Collider[] surfaces, Vector3 from, Vector3 saved, Vector3 center,
             float distance, out Vector3 next, out string reason)
         {
@@ -136,6 +143,7 @@ namespace TinyWorlds
             next = ground.point; reason = "Controlled edge recovery toward verified pose"; return true;
         }
 
+        // 仅向配置的地面 Collider 探测；台阶、落差或坡度超过限制时拒绝通过。
         private bool TryGround(Collider[] surfaces, Vector3 point, float referenceHeight,
             out RaycastHit ground, out string reason)
         {
@@ -162,6 +170,8 @@ namespace TinyWorlds
             return true;
         }
 
+        // ===== 3. 障碍检查 =====
+        // 使用球形重叠和扫掠判断空间是否空闲；查询缓存满时保守拒绝，避免漏掉障碍。
         public bool PathIsClear(Transform owner, Vector3 contact, Vector3 direction, float distance, out string reason, Collider[] groundSurfaces = null)
         {
             BeginObstacleQuery(contact, direction.normalized * distance);
@@ -182,6 +192,7 @@ namespace TinyWorlds
         }
 
         private SphereCollider penetrationProbe;
+        // 临时球形查询体只供穿透深度计算，不保存到场景；Dispose 负责释放它。
         private SphereCollider Probe
         {
             get
@@ -211,6 +222,7 @@ namespace TinyWorlds
             Physics.ComputePenetration(Probe, origin, Quaternion.identity, other, other.transform.position,
                 other.transform.rotation, out normal, out depth);
 
+        // 先检查期望位移；被挡时把位移投影到障碍切平面，再验证是否能安全贴边滑动。
         public bool TryObstacleMotion(Transform owner, Vector3 contact, Vector3 desired, Collider[] surfaces,
             out Vector3 movement, out string reason)
         {
@@ -230,6 +242,7 @@ namespace TinyWorlds
             }
             movement = Vector3.zero; reason = blocked; return false;
         }
+        // 检查起点重叠、移动扫掠和终点；已有重叠可向外脱离，但不能越陷越深。
         private bool MotionClear(Transform owner, Vector3 contact, Vector3 movement, Collider[] surfaces,
             out Vector3 blockingNormal, out string reason)
         {
@@ -279,6 +292,7 @@ namespace TinyWorlds
         private static bool IsOwn(Transform owner, Collider collider) =>
             owner != null && collider != null && collider.transform.IsChildOf(owner);
 
+        // 排除自身、指定地面和明确忽略的装饰 Collider；地面支撑由另一套检查负责。
         private bool IgnoreObstacle(Transform owner, Collider collider, Collider[] groundSurfaces = null)
         {
             if (IsOwn(owner, collider)) return true;
@@ -289,6 +303,8 @@ namespace TinyWorlds
             return false;
         }
 
+        // ===== 4. 安全起点搜索 =====
+        // 先尝试指定起点，再在有限圈层中采样；候选位置必须同时通过支撑、边界和障碍检查。
         public bool TryFindStart(Transform owner, Collider[] surfaces, Vector3 preferred, Vector3 center,
             out Vector3 start, out string reason)
         {

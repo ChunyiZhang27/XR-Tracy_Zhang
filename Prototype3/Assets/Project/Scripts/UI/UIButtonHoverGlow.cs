@@ -60,6 +60,7 @@ public class UIButtonHoverGlow :
     // RAY ENTER
     // =========================
 
+    // EventSystem 的指针进入回调，鼠标或 XR UI 射线可触发按钮描边与色彩反馈。
     public void OnPointerEnter(
         PointerEventData eventData
     )
@@ -95,6 +96,7 @@ public class UIButtonHoverGlow :
     }
 
 
+    // 指针离开或按钮禁用时恢复缓存颜色，避免切换卡片后残留悬停样式。
     private void ResetVisual()
     {
         if (hoverOutline != null)

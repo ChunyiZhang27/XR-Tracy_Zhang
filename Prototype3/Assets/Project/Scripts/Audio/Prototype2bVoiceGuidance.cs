@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public sealed class Prototype2bVoiceGuidance : MonoBehaviour
 {
+    // ===== 1. Inspector 音频引用 =====
+    // AudioClip 保存录音内容；同物体 AudioSource 负责播放，本组件只协调时机，不推进游戏。
     public AudioClip voiceStartExploration, voiceHabitatFound, voiceStartFoodSearch,
         voiceWrongInsect, voiceMissionComplete;
     public AudioClip voiceFoodLearning1;
@@ -34,6 +36,7 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
     public const string WrongInsectText = "Oops! That's an ant, not an aphid. Look for the tiny insects with soft, pear-shaped bodies. Try again!";
     public const string MissionCompleteText = "Amazing! You've caught all ten aphids! Ladybirds help protect plants by eating aphids. Great work!";
     void Awake() { ConfigureSource(); }
+    // 复用已有 AudioSource，关闭自动播放和循环，使用 2D 旁白避免距离衰减。
     void ConfigureSource()
     {
         if (source == null) source = GetComponent<AudioSource>();
@@ -41,10 +44,13 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
         source.playOnAwake = false; source.loop = false; source.spatialBlend = 0f;
         source.volume = volume;
     }
+    // ===== 2. 游戏阶段入口 =====
+    // 由过渡、学习卡或任务脚本直接调用；食物开始录音还检查其口述数量是否匹配任务。
     public void EnterExploration() { Enter(Stage.Exploring, voiceStartExploration, StartExplorationText); }
     public void HabitatFound() { Enter(Stage.Habitat, voiceHabitatFound, HabitatFoundText); }
     public void FoodLearning1() { Enter(Stage.FoodLearning1, voiceFoodLearning1, FoodLearning1Text); }
     public void StartFoodSearch() { Enter(Stage.FoodSearch, recordedStartFoodSearchAphidCount == foodMissionAphidCount ? voiceStartFoodSearch : null, StartFoodSearchText); }
+    // 完成请求只接受一次；旧数量元数据不再阻止已分配的完成录音。
     public void MissionComplete()
     {
         if (CurrentStage == Stage.Complete) { CompletionLog("Rejected duplicate request; completion already entered."); return; }
@@ -55,6 +61,7 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
     {
         if (logCompletionNarration) Debug.Log("[Mission Complete Voice] " + message, this);
     }
+    // 重复进入同一阶段不重播；切换阶段先清理旧声音与等待协程，并重置错误语音冷却。
     void Enter(Stage stage, AudioClip clip, string text)
     {
         if (CurrentStage == stage) return;
@@ -62,12 +69,15 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
         nextIncorrectTime = float.NegativeInfinity;
         Request(clip, text);
     }
+    // 任务验证真实错误抓取后调用；仅在 FoodSearch 阶段接受，并用实时冷却限制重复旁白。
     public void IncorrectGrab()
     {
         if (CurrentStage != Stage.FoodSearch || Time.unscaledTime < nextIncorrectTime) return;
         nextIncorrectTime = Time.unscaledTime + incorrectGrabCooldown;
         Request(voiceWrongInsect, WrongInsectText);
     }
+    // ===== 3. 播放生命周期 =====
+    // 导航、视频 Replay 或离开任务时调用，取消等待并停止过时旁白。
     public void Silence()
     {
         StopPlayback(); CurrentStage = Stage.Silent; CurrentGuidance = "";
@@ -78,6 +88,7 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
         playback = null;
         if (source != null) { source.Stop(); source.clip = null; }
     }
+    // 新请求先替换旧 guidance；缺少录音、组件禁用或视频卡可见时不播放。
     void Request(AudioClip clip, string text)
     {
         StopPlayback(); CurrentGuidance = text;
@@ -96,6 +107,7 @@ public sealed class Prototype2bVoiceGuidance : MonoBehaviour
         playback = StartCoroutine(PlayWhenAvailable(clip));
     }
     bool VideoVisible => videoCard != null && videoCard.activeInHierarchy;
+    // 原身体/返回旁白优先；完成语音还等待最后的成功音效结束，避免不必要的音频重叠。
     IEnumerator PlayWhenAvailable(AudioClip clip)
     {
         // The existing body/return narrator has priority. Stage changes cancel this wait.

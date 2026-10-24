@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// 负责引导、昆虫选择和身体探索区域切换；返回选择沿用旁白结束后重载当前场景的流程。
 public class ExperienceManager : MonoBehaviour
 {
     [Tooltip("Optional Prototype2b hook; unassigned in Prototype2a.")]
@@ -158,6 +159,7 @@ public class ExperienceManager : MonoBehaviour
     // LADYBIRD EXPLORATION
     // =========================
 
+    // 确认昆虫后进入身体探索，重置原身体旁白状态；食物任务重玩不调用此入口。
     public void StartInsectExploration()
     {
         onboardingZone.SetActive(false);
@@ -200,6 +202,7 @@ public class ExperienceManager : MonoBehaviour
     }
 
 
+    // 先广播返回前清理事件，让 Prototype2b 停止驾驶和媒体，再播放原有返回旁白。
     private IEnumerator BackToSelectionRoutine()
     {
         isReturningToSelection = true;
@@ -259,6 +262,7 @@ public class ExperienceManager : MonoBehaviour
     // SCENE RELOAD
     // =========================
 
+    // 通过加载当前场景建立新一轮对象；静态跳过标记决定下次显示引导还是昆虫选择。
     private void ReloadCurrentScene()
     {
         Scene currentScene =

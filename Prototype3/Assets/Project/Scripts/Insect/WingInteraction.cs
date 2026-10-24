@@ -96,6 +96,7 @@ public class WingInteraction : MonoBehaviour
     // ElytraInteraction 调用
     // =========================
 
+    // 鞘翅打开流程调用；移动锁生效、正在动画或已经展开时不重复打开。
     public void OpenWings()
     {
         if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
@@ -125,6 +126,7 @@ public class WingInteraction : MonoBehaviour
     // ElytraInteraction 调用
     // =========================
 
+    // 收翼入口供鞘翅关闭和环境过渡使用；当前动画忙碌时返回，由调用方安排等待。
     public void CloseWings()
     {
         if (isAnimating)
@@ -153,6 +155,7 @@ public class WingInteraction : MonoBehaviour
     // 用户点击 Wing 时调用
     // =========================
 
+    // 只有已展开且空闲时才接受拍翅；接受后播放音效，接受标记供进度组件检查。
     public void FlapWings()
     {
         if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
@@ -190,6 +193,7 @@ public class WingInteraction : MonoBehaviour
     // OPEN / CLOSE ANIMATION
     // =========================
 
+    // SmoothStep 配合四元数插值，把两侧翼枢轴平滑过渡到目标姿态。
     private IEnumerator AnimateWings(
         Vector3 leftTargetEuler,
         Vector3 rightTargetEuler,
@@ -277,6 +281,7 @@ public class WingInteraction : MonoBehaviour
     // Wings 围绕 Z 轴拍动
     // =========================
 
+    // 正弦波驱动左右相反方向的 Z 轴拍动，结束后回到展开姿态。
     private IEnumerator FlapRoutine()
     {
         isAnimating = true;

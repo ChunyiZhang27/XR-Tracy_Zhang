@@ -6,6 +6,9 @@ using UnityEngine;
 [DefaultExecutionOrder(1000)]
 public sealed class LadybirdWalkingAnimator : MonoBehaviour
 {
+    // ===== 1. 六足绑定 =====
+    // 每腿绑定四段网格及模型局部关节点，不在运行时自动识别解剖结构。
+    // 场景 A 组为左前、右中、左后；B 组为右前、左中、右后，交替支撑和摆动。
     [Serializable] public sealed class LegBinding
     {
         public string label;
@@ -62,6 +65,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
     private int resetVersion;
     private float phase,blend,blendVelocity;
 
+    // 检查六腿、每腿四段、网格唯一及正的统一缩放；不满足时拒绝建立视觉腿架。
     public bool ValidateBindings(out string reason)
     {
         if(controller==null || visualModel==null || !visualModel.IsChildOf(controller.transform) || legs==null || legs.Length!=6)
@@ -83,10 +87,13 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         }
         reason=a==3?"Ready":"Each tripod needs three legs";return a==3;
     }
+    // ===== 2. 运行时视觉腿架 =====
+    // 把控制节点放到实测关节位置，避免直接绕导入网格原点旋转。
     private Transform Pivot(string name,Transform parent,Vector3 world)
     {
         var pivot=new GameObject(name).transform;pivot.SetParent(parent,false);pivot.position=world;pivot.rotation=visualModel.rotation;return pivot;
     }
+    // 复制共享网格和材质，重新挂到控制节点时保留世界姿态；不移动原模型或交互 Collider。
     private Copy Clone(MeshRenderer source,Transform parent)
     {
         var go=new GameObject(source.name+"_WalkingVisual",typeof(MeshFilter),typeof(MeshRenderer));
@@ -100,6 +107,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         renderer.lightProbeUsage=source.lightProbeUsage;renderer.reflectionProbeUsage=source.reflectionProbeUsage;
         var copy=new Copy{source=source,copy=renderer,wasEnabled=suppressedStates.TryGetValue(source,out bool originalEnabled)?originalEnabled:source.enabled};return copy;
     }
+    // 为每条腿建立 Root→Hip→Knee→Ankle 链；身体副本只用于可选起伏，排除交互光效。
     private bool Build()
     {
         if(!ValidateBindings(out string reason)){gaitStatus="Setup required: "+reason;Debug.LogError(gaitStatus,this);enabled=false;return false;}
@@ -123,6 +131,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
     }
     private bool HasGlowAncestor(Transform item)
     {while(item!=null && item!=visualModel){if(item.name.IndexOf("glow",StringComparison.OrdinalIgnoreCase)>=0)return true;item=item.parent;}return false;}
+    // 向已配置表面向下探测落脚点；未命中时由调用方保留原落脚位置。
     private bool Ground(Vector3 point,out Vector3 grounded)
     {
         grounded=point;float nearest=float.PositiveInfinity;
@@ -133,6 +142,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
             {nearest=hit.distance;grounded=hit.point;}
         return !float.IsPositiveInfinity(nearest);
     }
+    // 回到原始腿姿态并重建脚点；同时清除历史位置，避免把重置跳转当成行走速度。
     private void ResetPose()
     {
         phase=blend=blendVelocity=0f;
@@ -153,6 +163,8 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         foreach(var copy in bodyCopies) if(copy.source!=null){copy.source.enabled=!suppressed.Contains(copy.source)&&!bob&&copy.wasEnabled;copy.copy.enabled=!suppressed.Contains(copy.source)&&bob&&copy.wasEnabled&&copy.source.gameObject.activeInHierarchy;}
         rig.SetActive(active);
     }
+    // ===== 3. 根据实际移动驱动步态 =====
+    // 根移动完成后测量水平位移和偏航速度；被石头挡住时不会只因按键而原地走路。
     private void LateUpdate()
     {
         if(!Application.isPlaying || controller==null)return;
@@ -169,6 +181,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         if(velocity.magnitude>Mathf.Max(2f,controller.movementSpeed*4f)){ResetPose();return;}
         AnimateMotion(velocity,yaw,dt);
     }
+    // 直线速度与转向等效速度决定步频；SmoothDamp 让起步和静止之间平滑过渡。
     private void AnimateMotion(Vector3 velocity,float yaw,float dt)
     {
         float effective=Mathf.Max(velocity.magnitude,Mathf.Abs(yaw)*controller.safety.bodyRadius*.6f);
@@ -179,7 +192,9 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         foreach(var leg in runtime)
         {
             var rest=visualModel.TransformPoint(leg.binding.foot);
+            // 叉积计算转向对各脚的影响；倒退时实际速度反向，落脚方向也随之改变。
             Vector3 footVelocity=velocity+Vector3.Cross(Vector3.up*yaw,rest-controller.groundContact.position);
+            // 两组三足相差半个周期；后半周期抬脚摆动，前半周期保留世界空间支撑点。
             float legPhase=Mathf.Repeat(phase+(leg.binding.tripodA?0f:.5f),1f);bool swing=legPhase>=.5f;
             if(swing && !leg.wasSwing)
             {
@@ -190,12 +205,14 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
             if(!swing && leg.wasSwing)leg.planted=leg.swingEnd;
             leg.wasSwing=swing;
             var goal=leg.planted;
+            // SmoothStep 平滑前后轨迹，sin(πt) 让脚在两端落地、中间抬高。
             if(swing)
             {float t=(legPhase-.5f)*2f;goal=Vector3.Lerp(leg.swingStart,leg.swingEnd,Mathf.SmoothStep(0f,1f,t))+Vector3.up*Mathf.Sin(t*Mathf.PI)*legLift;}
             leg.goal=Vector3.Lerp(rest,goal,blend);
             Solve(leg,leg.goal);
         }
         // Never let visual leg bounds expand beyond the movement system's conservative footprint.
+        // 腿超出安全身体半径时逐次缩小动作；仍超出就恢复原关节旋转。
         for(int attempt=0;attempt<5 && !WithinFootprint();attempt++)
             foreach(var leg in runtime)
             {var rest=visualModel.TransformPoint(leg.binding.foot);leg.goal=Vector3.Lerp(rest,leg.goal,.5f);Solve(leg,leg.goal);}
@@ -223,6 +240,8 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         }
         return true;
     }
+    // ===== 4. 简化两段逆向运动学 =====
+    // 限制可达距离，用余弦定理求膝盖位置，再旋转髋和膝；保留原弯曲方向，避免累积旋转。
     private void Solve(RuntimeLeg leg,Vector3 footGoal)
     {
         var b=leg.binding;leg.hip.localRotation=leg.knee.localRotation=leg.ankle.localRotation=Quaternion.identity;
@@ -239,6 +258,7 @@ public sealed class LadybirdWalkingAnimator : MonoBehaviour
         leg.knee.rotation=Quaternion.FromToRotation(restAnkle-restKnee,target-knee)*visualModel.rotation;
         leg.ankle.rotation=visualModel.rotation;
     }
+    // 组件禁用时恢复原 Renderer 状态，并移除运行时视觉副本。
     private void OnDisable()
     {
         if(rig!=null)Show(false);

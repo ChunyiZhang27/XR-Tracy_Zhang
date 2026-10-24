@@ -573,7 +573,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 87669
+// Method Definition Index: 87678
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t59C97FEDCA83F368A884EB244A508D302932F5BE UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mEC56EC175D55BA7E61EA357194AFBA385B1CE9A5 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -608,7 +608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t59C97FEDCA83F368A884EB244A508
 		return L_6;
 	}
 }
-// Method Definition Index: 87670
+// Method Definition Index: 87679
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m6F05F059875627EF20DA5EB922A1C79C4D2E494E (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t233E109E5C3CF029410B8C54B1DDBB801C97AD1E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -695,7 +695,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t59C97FEDCA83F368A884EB244A508D302932F5BE_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 87671
+// Method Definition Index: 87680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_get_HasObstacleQuery_m2FD9B49D7A56D42FDD964DA5EC98344CD9E61998 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	{
@@ -704,7 +704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_get_HasObstacleQu
 		return L_0;
 	}
 }
-// Method Definition Index: 87672
+// Method Definition Index: 87681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -714,7 +714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQu
 		return;
 	}
 }
-// Method Definition Index: 87673
+// Method Definition Index: 87682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	{
@@ -723,7 +723,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 87674
+// Method Definition Index: 87683
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -733,7 +733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleO
 		return;
 	}
 }
-// Method Definition Index: 87675
+// Method Definition Index: 87684
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleEnd_mE4D0FA3056C3052B0BC9DD974ABAD3EE1BBEE048 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	{
@@ -742,7 +742,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 87676
+// Method Definition Index: 87685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -752,7 +752,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleE
 		return;
 	}
 }
-// Method Definition Index: 87677
+// Method Definition Index: 87686
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* LadybirdMovementSafety_get_LastBlockingCollider_mB72BD644BA206796601F6367EC8F48CCEA0F09B7 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	{
@@ -761,7 +761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D
 		return L_0;
 	}
 }
-// Method Definition Index: 87678
+// Method Definition Index: 87687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -772,7 +772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingC
 		return;
 	}
 }
-// Method Definition Index: 87679
+// Method Definition Index: 87688
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_BeginObstacleQuery_mEE8B71D91D9FA610C76A5FE8275D29E3FE3029F8 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_movement, const RuntimeMethod* method) 
 {
 	{
@@ -802,7 +802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_BeginObstacleQuer
 		return;
 	}
 }
-// Method Definition Index: 87680
+// Method Definition Index: 87689
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 LadybirdMovementSafety_ApplyDeadzone_m1402110F610624D98DA2185C1DFAC4B6C575936A (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_input, float ___1_deadzone, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -846,7 +846,7 @@ IL_0024:
 		return L_11;
 	}
 }
-// Method Definition Index: 87681
+// Method Definition Index: 87690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_InsideBoundary_m44A9FABAD480E5AEBA55940680A80A7DF64193F5 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, const RuntimeMethod* method) 
 {
 	{
@@ -858,7 +858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_InsideBoundary_m4
 		return (bool)((((int32_t)((!(((float)L_2) <= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 87682
+// Method Definition Index: 87691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LadybirdMovementSafety_BoundaryExcess_m27D5A6BA2E77C356CFBE21C676DE16285C1DB115 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_center, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -961,7 +961,7 @@ IL_00a3:
 		return (std::numeric_limits<float>::infinity());
 	}
 }
-// Method Definition Index: 87683
+// Method Definition Index: 87692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryPosition_m6EAB75F901483A1A0D0D774353A28326BE50A254 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_center, float ___3_referenceHeight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_grounded, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1007,7 +1007,7 @@ IL_001c:
 		return L_11;
 	}
 }
-// Method Definition Index: 87684
+// Method Definition Index: 87693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryMovementPosition_m3AF28FE0FF623E0D5803589B874962E28A95400C (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_grounded, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1082,7 +1082,7 @@ IL_0040:
 		return L_19;
 	}
 }
-// Method Definition Index: 87685
+// Method Definition Index: 87694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TrySupportedPosition_m84E815D60048F8DF5F2B740D4C0A5F28B8F9DD4F (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___3_grounded, String_t** ___4_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1236,7 +1236,7 @@ IL_00a9:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87686
+// Method Definition Index: 87695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryEdgeRecovery_m2D08F82D23883933D2AAA7F645CFC30300EA9714 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_saved, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, float ___4_distance, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___5_next, String_t** ___6_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1537,7 +1537,7 @@ IL_019e:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87687
+// Method Definition Index: 87696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryGround_m43B5648601108C7FA00DAF74627FD508877D6B5D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___0_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, float ___2_referenceHeight, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___3_ground, String_t** ___4_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1798,7 +1798,7 @@ IL_0119:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87688
+// Method Definition Index: 87697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_PathIsClear_mF4385BD43BEC524A02DBFB75D049167BDB70F6D0 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_direction, float ___3_distance, String_t** ___4_reason, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___5_groundSurfaces, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2050,7 +2050,7 @@ IL_0157:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87689
+// Method Definition Index: 87698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SphereCollider_tBA111C542CE97F6873DE742757213D6265C7D275* LadybirdMovementSafety_get_Probe_mE8342C87883DD169EF4D5A30C38788235B6F5C9D (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2123,7 +2123,7 @@ IL_005a:
 		return L_14;
 	}
 }
-// Method Definition Index: 87690
+// Method Definition Index: 87699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety_Dispose_mF6CD0BCB71775925D0CF830D34FE19F5F9AA10F0 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2191,7 +2191,7 @@ IL_0038:
 		return;
 	}
 }
-// Method Definition Index: 87691
+// Method Definition Index: 87700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_Penetration_mEA72F049D251A730D1E3AE96A3A8F6EB788C32AD (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_normal, float* ___3_depth, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2231,7 +2231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_Penetration_mEA72
 		return L_12;
 	}
 }
-// Method Definition Index: 87692
+// Method Definition Index: 87701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryObstacleMotion_mA40396BB0928B54BC4B0119B392C18251EDEDEE3 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_desired, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___3_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_movement, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2365,7 +2365,7 @@ IL_00a1:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87693
+// Method Definition Index: 87702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_MotionClear_m62428AD4D09A88D66F5098A617E4321C5706D01A (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_contact, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_movement, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___3_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_blockingNormal, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2885,7 +2885,7 @@ IL_02c2:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 87694
+// Method Definition Index: 87703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IsOwn_mA41D7503472CD086AD55C25B7BED0985C9E1979B (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2932,7 +2932,7 @@ IL_001f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87695
+// Method Definition Index: 87704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_IgnoreObstacle_m83409906475A63242AEBE38581303E35FEBC8C15 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___1_collider, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___2_groundSurfaces, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3107,7 +3107,7 @@ IL_006b:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87696
+// Method Definition Index: 87705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdMovementSafety_TryFindStart_mBB881943842ED461B02CFE25E6A963A80F80497B (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_owner, ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___1_surfaces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_preferred, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_center, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___4_start, String_t** ___5_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3536,7 +3536,7 @@ IL_022e:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 87697
+// Method Definition Index: 87706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety__ctor_mF89D9DAE7DF924249E3FE613C4AA122C54585E95 (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3625,7 +3625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdMovementSafety__ctor_mF89D9DAE7D
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 87672
+// Method Definition Index: 87681
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_HasObstacleQuery_m23E02B7968E5ED5D5F80F748DAF32E236F2E798D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3701,7 +3701,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 87674
+// Method Definition Index: 87683
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleOrigin_mD57CF60D05F24047A277014A215017A2C723B5D1_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3711,7 +3711,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_L
 		return;
 	}
 }
-// Method Definition Index: 87673
+// Method Definition Index: 87682
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 LadybirdMovementSafety_get_LastObstacleOrigin_mC75D7DF2B4033F7FABFDDCC4041AED401748203D_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3720,7 +3720,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 87676
+// Method Definition Index: 87685
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastObstacleEnd_m2A723F849B2C0FE6A9EE7CFF0CBFC2DFAB81BABD_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3730,7 +3730,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_L
 		return;
 	}
 }
-// Method Definition Index: 87678
+// Method Definition Index: 87687
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LadybirdMovementSafety_set_LastBlockingCollider_mBDB715A9708A5879BE8E3EC327D0FEA3B01D078E_inline (LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_value, const RuntimeMethod* method) 
 {
 	{

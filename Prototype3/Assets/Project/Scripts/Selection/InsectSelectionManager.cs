@@ -13,6 +13,7 @@ public class InsectSelectionManager : MonoBehaviour
     // SELECT INSECT
     // =========================
 
+    // 统一维护单个选中昆虫并刷新选择 UI；实际可探索与否由昆虫配置决定。
     public void SelectInsect(HoverScaleFeedback insect)
     {
         if (insect == null)
@@ -62,6 +63,7 @@ public class InsectSelectionManager : MonoBehaviour
     // CLEAR SELECTION
     // =========================
 
+    // 取消高亮选中状态并清空确认 UI，不直接切换到其他体验区域。
     public void ClearSelection()
     {
         if (currentSelection != null)

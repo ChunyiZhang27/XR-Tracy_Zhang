@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
+// 身体交互共用的信息面板；新提示会取消待执行的隐藏，减少射线切换时闪烁。
 public class InsectInfoPanel : MonoBehaviour
 {
     [Header("UI References")]
@@ -78,6 +79,7 @@ public class InsectInfoPanel : MonoBehaviour
     // DELAYED HIDE
     // =========================
 
+    // 悬停离开后延迟隐藏；若期间进入另一个部位，新提示可取消这次等待。
     public void HideInfoDelayed()
     {
         if (hideCoroutine != null)

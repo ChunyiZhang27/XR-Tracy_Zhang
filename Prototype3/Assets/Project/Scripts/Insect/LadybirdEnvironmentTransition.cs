@@ -27,6 +27,8 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
     private Quaternion bodyRotation;
     private bool shellWasOpen, poseSaved, leavingSelection;
 
+    // ===== 1. 身体与环境模式 =====
+    // 监听进度组件的就绪事件来显示入口；禁用时解除监听并清理过渡。
     private void OnEnable()
     {
         CurrentMode = Mode.Body; leavingSelection = false;
@@ -50,6 +52,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         if (statusText != null) statusText.text = message;
         if (statusBackground != null) statusBackground.SetActive(!string.IsNullOrEmpty(message));
     }
+    // 身体动画或 XR 选择仍在进行时，先等待，避免切换中途修改相同枢轴。
     private bool Busy()
     {
         if ((antenna != null && antenna.IsAnimating) || (wings != null && wings.IsAnimating) || (elytra != null && elytra.IsAnimating)) return true;
@@ -57,6 +60,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
             if (item != null && item.isActiveAndEnabled && item.isSelected) return true;
         return false;
     }
+    // Explore 按钮入口；只有身体学习就绪且处于身体模式才开始过渡，阻止重复点击。
     public void ExploreEnvironment()
     {
         if (leavingSelection || DebugBypass || CurrentMode != Mode.Body || progress == null || !progress.EnvironmentReady) return;
@@ -64,6 +68,8 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         RefreshUI();
         transition = StartCoroutine(EnterRoutine());
     }
+    // ===== 2. 进入环境探索 =====
+    // 保存原姿态、暂停身体选择、收翅关壳，再交给玩家控制器验证安全起点。
     private IEnumerator EnterRoutine()
     {
         Status("Preparing Ladybird… Release any selected body part.");
@@ -103,6 +109,8 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         yield return RestoreBody();
         CurrentMode = Mode.Body; Status(""); RefreshUI(); transition = null;
     }
+    // ===== 3. 返回与恢复 =====
+    // 结束驾驶并恢复原位置、翼显示和交互状态；不在这里重置已完成的身体学习。
     private IEnumerator RestoreBody()
     {
         if (controller != null) controller.EndPlayerControl();
@@ -128,6 +136,7 @@ public sealed class LadybirdEnvironmentTransition : MonoBehaviour
         leavingSelection = true;
         Status(""); RefreshUI();
     }
+    // 返回选择或对象禁用时取消过渡，停止旧旁白并恢复记录的组件状态。
     public void ExitImmediately()
     {
         if (voiceGuidance != null) voiceGuidance.Silence();

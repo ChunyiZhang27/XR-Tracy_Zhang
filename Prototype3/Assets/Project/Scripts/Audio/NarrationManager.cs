@@ -2,9 +2,11 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+// 原有引导、身体学习与返回旁白播放器；Prototype2b guidance 会读取其播放状态来让出优先权。
 public class NarrationManager : MonoBehaviour
 {
     [Tooltip("Prototype2b opt-in: require uninterrupted playback before counting narration.")]
+    // 严格模式不仅记录请求过的录音，还验证它是否自然播完，供环境过渡判断就绪。
     public bool verifyPlaybackCompletion;
     private readonly HashSet<AudioClip> completedClips = new HashSet<AudioClip>();
     private Coroutine playbackMonitor;
@@ -176,6 +178,7 @@ public class NarrationManager : MonoBehaviour
     // ANTENNAE
     // =========================
 
+    // 身体部位旁白通常只播放一次；严格模式下被中断的录音仍可再次请求。
     public void PlayAntennaNarration()
     {
         if (antennaPlayed && (!verifyPlaybackCompletion || ClipComplete(antennaNarration)))
@@ -312,6 +315,7 @@ public class NarrationManager : MonoBehaviour
     // RESET BODY PART NARRATIONS
     // =========================
 
+    // 用 DSP 时间和当前 clip 判断自然结束；外部 Stop 不应误记为已完成学习旁白。
     private IEnumerator ObservePlayback(AudioClip clip)
     {
         yield return null;
@@ -324,6 +328,7 @@ public class NarrationManager : MonoBehaviour
         playbackMonitor = null;
     }
 
+    // 新一轮身体探索清空播放标记并停止当前旁白；不负责 Food Search 的唯一计分。
     public void ResetNarrations()
     {
         if (verifyPlaybackCompletion)

@@ -10,6 +10,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 [DefaultExecutionOrder(100)]
 public sealed class LadybirdAutonomousExplorer : MonoBehaviour
 {
+    // 这是已有自动漫游组件，不是玩家驾驶输入；玩家控制器接管时会暂停它。
     public enum ExplorationState { WaitingForGround, Inspecting, Walking, Interacting }
 
     [Header("References")]
@@ -142,6 +143,7 @@ public sealed class LadybirdAutonomousExplorer : MonoBehaviour
     private void OnSelected(SelectEnterEventArgs args) => PauseForInteraction();
     private void OnActivated(ActivateEventArgs args) => PauseForInteraction();
 
+    // 身体部位被选择、悬停或动画进行时优先让玩家检查模型，暂不自动行走。
     private bool InteractionHasPriority()
     {
         if (manualPause) return true;
@@ -156,6 +158,7 @@ public sealed class LadybirdAutonomousExplorer : MonoBehaviour
                (elytraInteraction != null && elytraInteraction.IsOpen);
     }
 
+    // 自动模式在等待地面、观察、行走和交互间切换；只移动模型父物体，不改变相机。
     private void Update()
     {
         if (!configurationValid) return;
@@ -244,6 +247,7 @@ public sealed class LadybirdAutonomousExplorer : MonoBehaviour
         pauseUntil = Time.time + Random.Range(minimumPauseTime, maximumPauseTime);
     }
 
+    // 有限次随机采样目标；先检查目标支撑和起步走廊，每次实际移动仍重新验证安全。
     private void ChooseDestination()
     {
         Vector3 contact = ContactPosition;
@@ -278,6 +282,7 @@ public sealed class LadybirdAutonomousExplorer : MonoBehaviour
         return allowedRadius >= 0f && offset.sqrMagnitude <= allowedRadius * allowedRadius;
     }
 
+    // 自动模式检查中心及八个外围点，与玩家驾驶使用的独立安全类采样方式不同。
     private bool TrySupportedPosition(Vector3 point, float referenceHeight, out Vector3 grounded)
     {
         grounded = point;
@@ -323,6 +328,7 @@ public sealed class LadybirdAutonomousExplorer : MonoBehaviour
     private bool IsOwnCollider(Collider candidate) =>
         candidate != null && candidate.transform.IsChildOf(transform);
 
+    // 用重叠球和球扫掠保守阻挡障碍；查询缓存满时拒绝移动，不承担玩家模式的贴边恢复。
     private bool PathIsClear(Vector3 contact, Vector3 direction, float distance)
     {
         Vector3 origin = contact + Vector3.up * (bodyRadius + obstacleClearance);

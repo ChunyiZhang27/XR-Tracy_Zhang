@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class LadybirdExplorationProgress : MonoBehaviour
 {
     [Header("Prototype2b opt-in")]
+    // Prototype2b 可选的严格完成检查：互动被接受且相关旁白完整结束后，才开放环境探索。
     public bool verifyTransitionReadiness;
     public AntennaInteraction antennaInteraction;
     public WingInteraction wingInteraction;
@@ -47,6 +48,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
     // ANTENNAE
     // =========================
 
+    // 由身体部位事件调用；严格模式下先确认触角动画真正接受了这次交互。
     public void MarkAntennaExplored()
     {
         if (verifyTransitionReadiness && (antennaInteraction == null || !antennaInteraction.LastInteractionAccepted)) return;
@@ -60,6 +62,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
     // ELYTRA
     // =========================
 
+    // 记录有效鞘翅交互，再检查三个部位是否全部完成。
     public void MarkElytraExplored()
     {
         if (verifyTransitionReadiness && (elytraInteraction == null || !elytraInteraction.LastInteractionAccepted)) return;
@@ -73,6 +76,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
     // FLIGHT WINGS
     // =========================
 
+    // 记录有效飞行翼交互；重复标记不会重复启动完成流程。
     public void MarkWingExplored()
     {
         if (verifyTransitionReadiness && (wingInteraction == null || !wingInteraction.LastInteractionAccepted)) return;
@@ -113,6 +117,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
     // COMPLETION SEQUENCE
     // =========================
 
+    // 等同帧的部位旁白启动并完成；严格模式还确认完成旁白结束，再发出 environmentReady。
     private IEnumerator CompletionRoutine()
     {
         // 等一帧。
@@ -182,6 +187,7 @@ public class LadybirdExplorationProgress : MonoBehaviour
         completionRoutine = null;
     }
 
+    // 对象重新启用时清除本轮身体进度和等待协程；普通食物任务重玩不调用此方法。
     public void ResetProgress()
     {
         if (verifyTransitionReadiness && completionRoutine != null) StopCoroutine(completionRoutine);

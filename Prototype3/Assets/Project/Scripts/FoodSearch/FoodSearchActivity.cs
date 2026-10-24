@@ -19,6 +19,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
     [Range(0f, 1f)] public float correctCatchVolume = .6f;
     public LadybirdHabitatObjective objective;
     public GameObject insectArea;
+    // ===== 1. 任务注册与状态 =====
+    // 数组保存全部正确和错误目标；完成数量由 requiredAphids 决定，不等于可用 aphid 总数。
     public FoodSearchTarget[] targets;
     public TMP_Text progressText, feedbackText;
     public GameObject tryAgainButton;
@@ -42,9 +44,12 @@ public sealed class FoodSearchActivity : MonoBehaviour
     public const string CorrectFeedback = "Correct! You've caught an aphid. Many ladybirds feed on aphids.";
     public const string IncorrectFeedback = "Not quite! That's an ant. Look for small, soft-bodied aphids with pear-shaped bodies.";
     public const string CompletionFeedback = "You've caught ten aphids! Ladybirds help protect plants by feeding on aphids.";
+    // 用目标组件引用记录唯一捕获，不靠名字；同一个目标在本轮只可贡献一次。
     private readonly HashSet<FoodSearchTarget> found = new HashSet<FoodSearchTarget>();
     private bool Eligible => objective == null || objective.FoodSearchActive;
     private void Awake() { EndSearch(); }
+    // ===== 2. 开始与重玩共用初始化 =====
+    // 清空计分和反馈，恢复所有目标姿态/可见性；只重启任务说明，不重播教学视频。
     public void BeginSearch()
     {
         if (!Eligible || AnySelected() || returningToInsects) return;
@@ -70,6 +75,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
     }
     // Kept for old scene/editor tooling: selection alone must never award a catch.
     public void Identify(FoodSearchTarget target) { }
+    // ===== 3. 抓取验证与计分 =====
+    // 必须是已注册、未计分且正被事件中 Interactor 选择的 Grab 对象；Hover 和点击不计分。
     public void ConfirmGrab(FoodSearchTarget target, SelectEnterEventArgs args)
     {
         if (!Running || Completed || !Eligible || target == null || target.activity != this || targets == null ||
@@ -77,6 +84,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         var grab = target.GetComponent<XRGrabInteractable>();
         if (grab == null || !grab.isActiveAndEnabled || !grab.isSelected || args.interactableObject != grab ||
             args.interactorObject == null || !grab.interactorsSelecting.Contains(args.interactorObject)) return;
+        // Ant 在加入计分集合之前返回；文字提示和语音分别使用自己的冷却。
         if (target.category != FoodSearchTarget.IdentificationCategory.Aphid)
         {
             if (voiceGuidance != null) voiceGuidance.IncorrectGrab();
@@ -87,6 +95,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
             }
             return;
         }
+        // 抓住时立即登记、更新进度和音效；真正隐藏由释放生命周期脚本在松手后处理。
         found.Add(target); target.SetFound(true); RefreshProgress();
         if (correctCatchClip != null && correctCatchSource != null && correctCatchSource.isActiveAndEnabled)
             correctCatchSource.PlayOneShot(correctCatchClip, correctCatchVolume);
@@ -111,6 +120,8 @@ public sealed class FoodSearchActivity : MonoBehaviour
         }
         return false;
     }
+    // ===== 4. 完成 UI =====
+    // 第十个唯一正确捕获后，下一帧显示完成卡；不要求捕获剩余目标，也不等待所有目标松手。
     IEnumerator ShowCompletionAfterGrab()
     {
         // Count/voice complete in ConfirmGrab; show UI just outside the XR callback stack.
@@ -126,12 +137,15 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (tryAgainButton != null) tryAgainButton.SetActive(true);
     }
     void CancelCompletion() { if (completionRoutine != null) StopCoroutine(completionRoutine); completionRoutine = null; }
+    // ===== 5. 重玩与返回 =====
+    // 若还有目标被持有，先请求 XR Manager 取消选择，清理结束后再重新初始化。
     public void TryAgain()
     {
         if (returningToInsects || replayRoutine != null || !(Running || Finished) || !Completed || !CompletionVisible || !Eligible) return;
         if (!AnySelected()) BeginSearch();
         else replayRoutine = StartCoroutine(ReplayAfterSelectionCleanup());
     }
+    // 离开 UI/XR 回调栈后取消选择，等待 XRI 更新完毕，避免重置仍被手持的刚体。
     IEnumerator ReplayAfterSelectionCleanup()
     {
         yield return null; // Leave the UI/XR callback stack before cancelling optional grabs.
@@ -147,6 +161,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         replayRoutine = null;
         if (!returningToInsects && (Running || Finished) && Completed && CompletionVisible && Eligible) BeginSearch();
     }
+    // 结束抓取并隐藏昆虫区域，保持瓢虫停止；显示最终摘要，等待玩家明确选择返回。
     public void FinishExploration()
     {
         if (replayRoutine != null || !Running || Finished || !Completed || !CompletionVisible || !Eligible) return;
@@ -179,6 +194,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         if (backToInsectsButton != null) backToInsectsButton.interactable = false;
         StartCoroutine(ReturnToInsectsRoutine());
     }
+    // 清理剩余选择和食物 UI，再调用原 Back 按钮事件，复用既有返回旁白与场景重载。
     IEnumerator ReturnToInsectsRoutine()
     {
         yield return null; // Leave the UI/XR event stack before cancelling any remaining selections.
@@ -209,6 +225,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         // and scene-reload/session-progress rules. No alternative selection system is introduced.
         existingBackToInsectsAction.onClick.Invoke();
     }
+    // 离开任务时清除计分、完成状态、音效和提示；目标姿态在下次 BeginSearch 中恢复。
     public void EndSearch()
     {
         if (replayRoutine != null) StopCoroutine(replayRoutine);
@@ -229,6 +246,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         SetMouseTarget(null);
 #endif
     }
+    // 进度分母读取任务阈值，所以有 15 个正确目标时仍可只要求任意 10 个。
     private void RefreshProgress() { if (progressText != null) progressText.text = $"Aphids caught: {found.Count} / {requiredAphids}"; }
     private void OnDisable() { EndSearch(); }
 #if UNITY_EDITOR
@@ -241,6 +259,7 @@ public sealed class FoodSearchActivity : MonoBehaviour
         while (!objective.controller.ControlActive) yield return null;
         objective.StartFoodSearchEditorTest();
     }
+    // Editor 鼠标路径只提供悬停反馈；SelectTarget 是空操作，不能替代真实 XR 抓取。
     private void Update()
     {
         if (!Running || Completed || !Eligible || Mouse.current == null || objective == null || objective.controller.xrOrigin == null)

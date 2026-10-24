@@ -15,6 +15,7 @@ public sealed class LadybirdMovementWingVisibility : MonoBehaviour
     private readonly Dictionary<XRBaseInteractable,bool> interactionStates = new Dictionary<XRBaseInteractable,bool>();
     private bool captured, wingLock, shellLock;
 
+    // 进入移动前缓存显示和交互状态；等待动画结束、收翅关壳，再隐藏两片飞行翼。
     public IEnumerator Prepare()
     {
         if (captured) yield break;
@@ -39,6 +40,7 @@ public sealed class LadybirdMovementWingVisibility : MonoBehaviour
             else renderer.enabled = false;
         }
     }
+    // 按缓存恢复原状态，并同步通知步行视觉副本；不强行激活原本隐藏的翼。
     public void Restore()
     {
         if (!captured) return;

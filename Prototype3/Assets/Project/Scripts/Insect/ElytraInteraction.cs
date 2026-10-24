@@ -63,6 +63,7 @@ public class ElytraInteraction : MonoBehaviour
     }
 
 
+    // 缓存场景原有闭合旋转，之后关闭鞘翅时回到这个姿态。
     private void Start()
     {
         leftClosedRotation =
@@ -77,6 +78,7 @@ public class ElytraInteraction : MonoBehaviour
     // TOGGLE ELYTRA
     // =========================
 
+    // 身体交互入口；移动锁或动画忙碌时拒绝请求，避免重复启动开合流程。
     public void ToggleElytra()
     {
         if (MovementInteractionLocked) { LastInteractionAccepted = false; return; }
@@ -112,6 +114,7 @@ public class ElytraInteraction : MonoBehaviour
     // 4. Wings unfold
     // =========================
 
+    // 先抬鞘翅，再延迟展开飞行翼，减少两者视觉穿插。
     private IEnumerator OpenSequence()
     {
         isAnimating = true;
@@ -169,6 +172,7 @@ public class ElytraInteraction : MonoBehaviour
     // 4. Elytra close + Close SFX
     // =========================
 
+    // 等待拍翅结束，先收飞行翼再关鞘翅；音效在真正关闭时播放。
     private IEnumerator CloseSequence()
     {
         isAnimating = true;
@@ -217,6 +221,7 @@ public class ElytraInteraction : MonoBehaviour
     // OPEN ELYTRA ANIMATION
     // =========================
 
+    // 用平滑时间参数插值两侧局部旋转，不修改导入网格本身。
     private IEnumerator AnimateElytra(
         Vector3 leftTargetEuler,
         Vector3 rightTargetEuler

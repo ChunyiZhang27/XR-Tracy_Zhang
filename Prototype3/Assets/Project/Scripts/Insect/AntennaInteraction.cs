@@ -57,6 +57,7 @@ public class AntennaInteraction : MonoBehaviour
     // XR Select Entered 调用
     // =========================
 
+    // XR 选择触角时调用；动画进行中不重复启动，接受状态供探索进度组件检查。
     public void WiggleAntennae()
     {
         LastInteractionAccepted = false;
@@ -77,6 +78,7 @@ public class AntennaInteraction : MonoBehaviour
     // 现在只有 X 轴运动
     // =========================
 
+    // 正弦波映射到 X 轴角度范围，左右 Y 保持固定；结束后恢复安全静止姿态。
     private IEnumerator WiggleRoutine()
     {
         isAnimating = true;

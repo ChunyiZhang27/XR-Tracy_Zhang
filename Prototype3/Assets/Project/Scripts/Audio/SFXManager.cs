@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// 共用短音效播放器，使用 PlayOneShot；正确捕获音效由 FoodSearchActivity 的独立引用管理。
 public class SFXManager : MonoBehaviour
 {
     [Header("Audio Source")]
@@ -47,6 +48,7 @@ public class SFXManager : MonoBehaviour
     // SELECTION HOVER
     // =========================
 
+    // 以下入口由选择与身体交互调用；未配置音源或音效时安全跳过，不阻止交互。
     public void PlaySelectionHover()
     {
         if (sfxSource == null ||

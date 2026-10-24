@@ -16,6 +16,8 @@ public sealed class FoodSearchGrabReturn : MonoBehaviour
     bool initialized;
     Coroutine pending;
     void Awake() { Initialize(); }
+    // ===== 1. 保存初始姿态 =====
+    // 首次初始化缓存父物体和世界位置/旋转，供错误目标归位和任务重玩使用。
     void Initialize()
     {
         if (initialized) return;
@@ -23,6 +25,7 @@ public sealed class FoodSearchGrabReturn : MonoBehaviour
         homeParent = transform.parent; homePosition = transform.position; homeRotation = transform.rotation;
         initialized = true;
     }
+    // 监听 XR 松手；禁用时解除监听，避免同一释放事件重复处理。
     void OnEnable() { Initialize(); grab.selectExited.AddListener(Released); }
     void OnDisable()
     {
@@ -38,6 +41,8 @@ public sealed class FoodSearchGrabReturn : MonoBehaviour
         if (pending != null) StopCoroutine(pending);
         pending = StartCoroutine(ReturnAfterRelease());
     }
+    // ===== 2. 安全释放与收藏 =====
+    // 离开 XR 回调并等物理更新，确认无人持有后归位；已计分 aphid 隐藏，ant 保留。
     IEnumerator ReturnAfterRelease()
     {
         yield return null;
@@ -48,6 +53,7 @@ public sealed class FoodSearchGrabReturn : MonoBehaviour
         if (target != null && target.Found && target.activity != null && target.activity.Running)
             gameObject.SetActive(false); // Collected, never destroyed, and no interactor is holding it.
     }
+    // 任务重玩前恢复姿态；调用方必须先通过 XRI 清理仍在持有的选择。
     public void ResetForSearch()
     {
         Initialize();
@@ -57,6 +63,7 @@ public sealed class FoodSearchGrabReturn : MonoBehaviour
         if (grab.isSelected) throw new System.InvalidOperationException("Release selected insects before restarting Food Search.");
         RestorePose();
     }
+    // 恢复父级、位置和旋转，同步刚体；动态刚体额外清零速度，不恢复缩放。
     void RestorePose()
     {
         if (transform.parent != homeParent) transform.SetParent(homeParent, true);

@@ -17,6 +17,7 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
     private bool running;
     private bool managerWasEnabled, onboardingWasActive, selectionWasActive, exploreWasActive;
 
+    // 仅在 Editor 且显式勾选测试时跳过引导；先缓存场景区域和管理器状态。
     private void Awake()
     {
         if (!runMovementTestOnPlay || gameObject.scene.path != "Assets/Project/Scenes/Prototype2b.unity") return;
@@ -32,6 +33,7 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
         running = true;
     }
 
+    // 等原交互组件缓存静止姿态后，再收翅并启动安全驾驶；不移动 XR 视点。
     private System.Collections.IEnumerator Start()
     {
         if (!running) yield break;
@@ -52,6 +54,7 @@ public sealed class Prototype2bEditorMovementTest : MonoBehaviour
                 "Select LadybirdExploreModel_OLD to inspect Movement Status. XR viewpoint is not repositioned.", this);
     }
 
+    // 关闭测试时结束驾驶，并恢复测试前的区域和组件状态。
     private void OnDisable()
     {
         if (!running) return;

@@ -13,6 +13,8 @@ using UnityEngine.XR.Interaction.Toolkit.Locomotion;
 [DefaultExecutionOrder(-2000)]
 public sealed class LadybirdPlayerController : MonoBehaviour
 {
+    // ===== 1. 场景引用与移动参数 =====
+    // 只移动瓢虫的非 FBX 父物体；地面接触点和朝向标记随它移动，XR 相机保持独立。
     [Header("Scene references")]
     public Transform groundContact;
     public Transform facingReference;
@@ -58,6 +60,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     [Tooltip("Prototype2b: release drive input and restore controller simulation at Habitat, keeping locomotion suspended.")]
     public bool habitatControllerHandover;
     // Optional objective hold: keep environment ownership, XR locomotion suspension and reset input alive.
+    // 到达 Habitat 后清零速度并释放驾驶输入；保留环境模式，方便 UI 和抓取继续工作。
     public void SetHabitatStopped(bool stopped)
     {
         HabitatStopped = stopped;
@@ -94,6 +97,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
 
     private void Awake() { initialParentPosition = transform.position; initialParentRotation = transform.rotation; }
 
+    // 启用时监听身体部位选择；禁用时移除同一批监听器，避免反复进入后重复回调。
     private void OnEnable()
     {
         controlActive = false;
@@ -132,6 +136,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         }
     }
 
+    // 身体部位仍被选择、触角或翼仍在动画、鞘翅未关时，暂停驾驶，避免交互和移动冲突。
     private bool BodyIsBusy(out string reason)
     {
         foreach (XRBaseInteractable item in interactables)
@@ -148,6 +153,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         return false;
     }
 
+    // ===== 2. 每帧输入与模式检查 =====
+    // 外部过渡模式由协调器启动驾驶；驾驶中优先处理停止、重置和 Habitat 停车。
     private void Update()
     {
         if (!controlActive)
@@ -176,6 +183,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         SimulateMovement(input, Mathf.Min(Time.deltaTime, 0.1f));
     }
 
+    // 进入驾驶前验证引用和安全起点，再暂停 XR 位移功能并启用瓢虫专用输入。
     public bool BeginPlayerControl()
     {
         if (!Application.isPlaying || !isActiveAndEnabled) return false;
@@ -212,6 +220,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         return true;
     }
 
+    // 离开驾驶时释放专用 Action，按记录恢复原组件状态，不强行开启原本关闭的功能。
     public void EndPlayerControl()
     {
         controlActive = false;
@@ -226,6 +235,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         suspended.Clear(); ownsMovement = false;
     }
 
+    // 暂停自动漫游和 XR locomotion，避免同一摇杆同时移动瓢虫与玩家视点。
     private void SuspendMovement()
     {
         RememberAndDisable(autonomousExplorer);
@@ -258,6 +268,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         }
     }
 
+    // ===== 3. 输入读取 =====
+    // 复制已配置的左摇杆 Action，避免改动共享输入；未配置时使用左手 primary2DAxis。
     private void CreateDriveAction()
     {
         actionHasDeadzone = false;
@@ -283,6 +295,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         driveAction.Enable();
     }
 
+    // 优先读取手柄；Editor 的 Game View 获得焦点后，WASD 可覆盖移动输入，Space 停止、R 重置。
     private Vector2 ReadDriveInput(out bool stop, out bool reset)
     {
         stop = reset = false;
@@ -305,6 +318,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     }
 
     // Public for deterministic movement checks; ordinary gameplay calls this only from Update.
+    // ===== 4. 安全移动 =====
+    // 纵向输入控制前后速度，横向输入绕接触点转向；每个移动子步都检查地面和障碍。
     public void SimulateMovement(Vector2 input, float deltaTime)
     {
         if (!controlActive || HabitatStopped || !isActiveAndEnabled || deltaTime <= 0f) return;
@@ -316,6 +331,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         Vector3 contact = groundContact.position;
         currentGroundContact = contact; edgeRecoveryActive = false;
         bool supported = safety.TrySupportedPosition(groundSurfaces, contact, contact.y, out Vector3 ground, out string reason);
+        // 边缘异常时只尝试朝最近已验证位置小步恢复；恢复仍须通过障碍检查。
         if (!supported || !safety.InsideBoundary(contact, boundaryCenter))
         {
             currentSpeed = 0f;
@@ -337,6 +353,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         transform.position += ground - contact;
         contact = groundContact.position;
         if (safety.InsideBoundary(contact, boundaryCenter)) RememberSafeContact(contact);
+        // 用加减速平滑接近目标速度；反向输入先清零，避免继续朝危险方向滑行。
         float targetSpeed = Mathf.Clamp(input.y, -1f, 1f) * movementSpeed;
         // Opposite input must never spend a frame continuing toward the blocked edge.
         if (currentSpeed * targetSpeed < 0f) currentSpeed = 0f;
@@ -355,6 +372,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (stepLimit <= 0f || distance > stepLimit * 128f)
         { currentSpeed = 0f; SetStatus("Movement sampling limit exceeded"); return; }
         string motionStatus = "Moving";
+        // 分段移动避免慢帧跨过缝隙；落地修正后再次验证障碍，最后才提交根物体位移。
         while (distance > 0.000001f)
         {
             float step = Mathf.Min(distance, stepLimit);
@@ -410,6 +428,8 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         SetStatus(reason);
     }
 
+    // ===== 5. 重置与调试 =====
+    // Editor 的 R 键只回到再次通过安全检查的起点；版本号通知腿动画清除旧步态。
     public bool ResetToStartingPoint()
     {
 #if UNITY_EDITOR
@@ -467,6 +487,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         safety.maximumMovementStep = Mathf.Max(0.001f, safety.maximumMovementStep);
     }
 
+    // 显示边界、身体覆盖范围、障碍查询路径和阻挡 Collider，帮助定位过早停车。
     private void OnDrawGizmosSelected()
     {
         if (groundContact == null || safety == null) return;

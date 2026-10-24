@@ -5,6 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 [RequireComponent(typeof(SphereCollider))]
 public sealed class FoodSearchTarget : MonoBehaviour
 {
+    // ===== 1. 目标身份与分类 =====
+    // 用 Inspector 枚举判断 Aphid 或 Ant，不依赖物体名称；activity 指向本轮任务管理器。
     public enum IdentificationCategory { Aphid, Ant }
     public IdentificationCategory category;
     public FoodSearchActivity activity;
@@ -14,6 +16,7 @@ public sealed class FoodSearchTarget : MonoBehaviour
     public bool RequiresGrab => GetComponent<XRGrabInteractable>() != null;
     private bool xrHover, mouseHover;
     private MaterialPropertyBlock block;
+    // 启用时订阅 XR 选择和悬停事件；禁用时配对移除，避免重玩后重复回调。
     private void OnEnable()
     {
         interactable = GetComponent<XRGrabInteractable>();
@@ -34,6 +37,8 @@ public sealed class FoodSearchTarget : MonoBehaviour
         }
         xrHover = mouseHover = false;
     }
+    // ===== 2. 真实抓取入口 =====
+    // 只把 XRGrabInteractable 的 Select 事件转交任务；普通鼠标点击不计作捕获。
     private void Selected(SelectEnterEventArgs args)
     {
         var grab = interactable as XRGrabInteractable;
@@ -44,6 +49,8 @@ public sealed class FoodSearchTarget : MonoBehaviour
     public void SelectTarget() { /* Mouse/ray clicks are not catches. */ }
     public void SetMouseHover(bool value) { if (mouseHover == value) return; mouseHover = value; Refresh(); }
     public void SetFound(bool value) { Found = value; Refresh(); }
+    // ===== 3. 视觉反馈 =====
+    // 悬停变亮、计分后偏绿；使用属性块覆盖颜色，保留导入模型的共享材质。
     private void Refresh()
     {
         if (visuals == null) return;

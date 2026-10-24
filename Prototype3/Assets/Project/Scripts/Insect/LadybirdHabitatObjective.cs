@@ -22,6 +22,8 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public GameObject foodLearningCard1, foodLearningCard2, foodSearchReadyPanel;
     public FoodSearchActivity foodSearch;
     public bool FoodSearchActive => FoodNavigationAllowed && CurrentFoodStage == FoodStage.FoodSearchReady;
+    // ===== 1. Habitat 与学习阶段 =====
+    // 到达状态和学习卡阶段分别记录，只有有效环境任务才能导航食物学习。
     public enum FoodStage { Inactive, Card1, Card2, FoodSearchReady }
     public FoodStage CurrentFoodStage { get; private set; }
     public bool FoodDiscoveryStarted { get; private set; }
@@ -29,6 +31,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     public const string FoodDiscoveryMessage = "Let's discover what ladybirds eat!";
     [Tooltip("Temporary click diagnostics; disable after verifying mouse and XR interaction.")]
     public bool logArrivalInteraction = true;
+    // 初始化隐藏食物 UI；保留 XR raycaster，并补普通 GraphicRaycaster 支持 Editor 鼠标。
     private void Awake()
     {
         HideFoodLearning();
@@ -71,6 +74,8 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         return transition != null && transition.CurrentMode == LadybirdEnvironmentTransition.Mode.Environment;
     }
     private void LateUpdate() { Evaluate(); }
+    // ===== 2. 到达检测 =====
+    // 每帧检查接触点是否进入目标范围，且再次通过地面和障碍验证；成功只触发一次。
     public void Evaluate()
     {
         if (!Eligible()) { EndAttempt(); return; }
@@ -105,6 +110,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         var delta = contact - habitatTarget.position;
         return Mathf.Abs(delta.y) <= arrivalHeightTolerance && new Vector2(delta.x, delta.z).sqrMagnitude <= destinationRadius * destinationRadius;
     }
+    // 新导航任务或 R 重置后清除到达与食物阶段，恢复目标提示并请求探索语音。
     private void BeginAttempt()
     {
         attemptActive = true; Arrived = false; FoodDiscoveryStarted = false; resetVersion = controller.ResetVersion;
@@ -117,6 +123,8 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         if (objectiveText != null) objectiveText.text = NavigationPrompt;
         if (voiceGuidance != null) { voiceGuidance.Silence(); voiceGuidance.EnterExploration(); }
     }
+    // ===== 3. 学习卡导航 =====
+    // Continue 按钮只接受首次有效到达，隐藏到达卡并进入第一张学习卡。
     public void ContinueToFoodDiscovery()
     {
         LogArrival("Button OnClick callback invoked.");
@@ -137,16 +145,19 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         foodDiscoveryStarted.Invoke();
     }
     private bool FoodNavigationAllowed => attemptActive && Arrived && FoodDiscoveryStarted && Eligible();
+    // Next 只从第一张卡进入第二张；阶段检查避免同一按钮重复推进。
     public void NextFoodLearningCard()
     {
         if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card1)
             ShowFoodStage(FoodStage.Card2);
     }
+    // Back 返回第一张卡；第二张卡失活时，其视频脚本会停止播放。
     public void BackToFirstFoodLearningCard()
     {
         if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card2)
             ShowFoodStage(FoodStage.Card1);
     }
+    // Start 只从第二张卡进入任务阶段，不要求视频必须看完。
     public void StartFoodSearch()
     {
         if (FoodNavigationAllowed && CurrentFoodStage == FoodStage.Card2)
@@ -157,6 +168,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
     {
         if (FoodNavigationAllowed && foodLearningCard1 != null) ShowFoodStage(FoodStage.Card1);
     }
+    // 统一停止旧旁白并互斥显示卡片；第一张请求语音，第二张由 OnEnable 播视频，任务阶段启动抓取。
     private void ShowFoodStage(FoodStage stage)
     {
         if (voiceGuidance != null) voiceGuidance.Silence();
@@ -192,6 +204,7 @@ public sealed class LadybirdHabitatObjective : MonoBehaviour
         ShowFoodStage(FoodStage.FoodSearchReady);
     }
 #endif
+    // 离开环境或禁用时隐藏所有相关 UI、结束抓取并清除本轮到达状态。
     private void EndAttempt()
     {
         if (attemptActive && voiceGuidance != null) voiceGuidance.Silence();

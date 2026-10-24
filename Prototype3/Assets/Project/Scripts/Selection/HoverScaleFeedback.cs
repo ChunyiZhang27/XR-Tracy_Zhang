@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// 选择区的视觉与反馈桥接：悬停放大，选择后交给 SelectionManager，并按可用性播放提示。
 public class HoverScaleFeedback : MonoBehaviour
 {
     [Header("Insect Information")]
@@ -150,6 +151,7 @@ public class HoverScaleFeedback : MonoBehaviour
     // SELECT
     // =========================
 
+    // XR 选择回调；不可用昆虫仍更新选择 UI，但显示 Coming Soon 而不开放确认按钮。
     public void OnSelected()
     {
         if (selectionManager == null)
@@ -235,6 +237,7 @@ public class HoverScaleFeedback : MonoBehaviour
     // RESET
     // =========================
 
+    // 恢复启动时缓存的缩放；不修改模型材质或身体学习进度。
     public void ResetSelection()
     {
         isSelected = false;
