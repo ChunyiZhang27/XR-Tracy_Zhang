@@ -123,7 +123,9 @@ struct HashSetList_1_t1A0488B6A7A99FC77B3DC8ADC7C241B5B2F21789;
 struct HashSetList_1_t85FA4F6EDCA9A84D235398F53ED390EE2CE4DC98;
 struct HashSetList_1_tC0FA4922B36F37C46BA57A5B55C8B0A1FF78D9A2;
 struct HashSet_1_t17F7D1169D0F2C9E3CF95215BE04E56CB9BC24AC;
+struct HashSet_1_tC9BC5E44D781D9497953318FA6B09EC99D6DB6AF;
 struct HashSet_1_t109CCE87260348881F7ED50EEE3FFD003542DC8B;
+struct HashSet_1_t0BB271F9B57608AF225F572E00EC7EB31BF3FAEA;
 struct HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706;
 struct HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885;
 struct IEqualityComparer_1_t648FF3C648A0BF93D0E51B812C0C798A963C6398;
@@ -178,6 +180,7 @@ struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
+struct FoodSearchTargetU5BU5D_tFD6E59DADDE888DDD6417FF6B64B469C6661D3A4;
 struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E;
 struct GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18;
 struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
@@ -232,6 +235,7 @@ struct BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2;
 struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
 struct BindingsGroup_tD5EC90BB10F9D310FE467A7E3A4CAE2E32D0397A;
 struct BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A;
+struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 struct Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372;
 struct CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
@@ -255,6 +259,8 @@ struct ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27;
 struct FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48;
 struct FocusEnterEvent_tF5369B418FFFBE1C6FDE6EBDDD8B9E412A32CD90;
 struct FocusExitEvent_tFAE8003B7B5A47FB4D9C5BB14D7A3273AF8931AE;
+struct FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770;
+struct FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
@@ -283,6 +289,7 @@ struct InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26;
 struct InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE;
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
 struct LadybirdAutonomousExplorer_t83B6FDA677070F4663DBFE7D847461B30DFDE956;
+struct LadybirdHabitatObjective_tA3C98921E2653E8A08AE94A563552187320A1B93;
 struct LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409;
 struct LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4;
 struct LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA;
@@ -304,6 +311,7 @@ struct Outline_t9CF146E077DC65F441EDEC463AA6710374108084;
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
 struct PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB;
 struct Prototype2bEditorMovementTest_t621EE305300BACB3BA93F8815ABB5492DEB98E86;
+struct Prototype2bVoiceGuidance_tF30C30CF8741ED3B41B2FADFE0921DE987187EE7;
 struct RayAttachModifier_t88195CC1798BFAFE12D5D5944A8B2495041E6818;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
@@ -460,8 +468,8 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRRayInteractor_tDB7FC857A50F0B25DE4CEC0EE930242BB7380649_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____865D666D3110EB05EC107D2F5C4C8908D44755232B3859C11357928826EC93DA_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D416C0EC6FF463ED837B27E0300B634BF30504A07B4C28ED322936AA56255DAA_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____724ABB8BEBB4D7C61227F3285788FEC0E24AB86FDD5FA7E9944BD6C0E9F5828C_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____FFB8FC515C38759C18C372DA6162CDEA450846AE6A87D748D81E4471311B5397_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0979DC37D2EB20FB203AADA727A5D326F2CA6E29;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E0BB750B8A378A6652487C70AB8D92D94C21F03;
 IL2CPP_EXTERN_C String_t* _stringLiteral11F13C12609D890103ACFCAD1CE8D4AD75AB79F2;
@@ -471,6 +479,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1611D4CD3031E13C28DB0D96BB0AC7F145966DF8
 IL2CPP_EXTERN_C String_t* _stringLiteral17C1626958E98A0CF1AF112864325523753D30A1;
 IL2CPP_EXTERN_C String_t* _stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B305299F622849D48E224B47FAD23A15D3267C5;
+IL2CPP_EXTERN_C String_t* _stringLiteral2CE8092EAB7CF171D76B9F39695FBC2391C02587;
 IL2CPP_EXTERN_C String_t* _stringLiteral3278C8BA41861EDD9857A6E1BAAAD16DD7243B34;
 IL2CPP_EXTERN_C String_t* _stringLiteral382C418BD0CFB676D24A7661CF807E294462FA15;
 IL2CPP_EXTERN_C String_t* _stringLiteral4269EF0D25F409E82DB7814704F598C7FE9DEE90;
@@ -490,7 +499,9 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7F8C014BD4810CC276D0F9F81A1E759C7B098B1E
 IL2CPP_EXTERN_C String_t* _stringLiteral84F3F73763978997C65B2536CA5DEDF6275BB550;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AE43F535253735751F9276240FD6E49865DA6D7;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F8BFCFC439A636B20C06C334A493AB7004843ED;
+IL2CPP_EXTERN_C String_t* _stringLiteral97C9888DBEA3E75E07243F31DDA62600C0292D39;
 IL2CPP_EXTERN_C String_t* _stringLiteral981B8FA7B630B76287E789D6B7E3E48C7A0F1000;
+IL2CPP_EXTERN_C String_t* _stringLiteral9C19287AC549CB6686EE9077EE818B67BC9F8AB9;
 IL2CPP_EXTERN_C String_t* _stringLiteral9E3A879CE6B4E148C5D7D0D2A9F9DD9648F00971;
 IL2CPP_EXTERN_C String_t* _stringLiteral9E5D95185183F59853CC30FEEE408FDA1C671B00;
 IL2CPP_EXTERN_C String_t* _stringLiteralA362B19C80FCBAA380756C7A93A8F8B8AF9550FC;
@@ -1195,7 +1206,7 @@ struct float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E
 	float ___z;
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D2001_tCCD66D22CBD759E562BF53EA8BA03C76322A7735 
+struct __StaticArrayInitTypeSizeU3D2061_t5AE9E8F2026DE3A0CE42A478A3AE4428DEE84EFE 
 {
 	union
 	{
@@ -1205,12 +1216,12 @@ struct __StaticArrayInitTypeSizeU3D2001_tCCD66D22CBD759E562BF53EA8BA03C76322A773
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D2001_tCCD66D22CBD759E562BF53EA8BA03C76322A7735__padding[2001];
+		uint8_t __StaticArrayInitTypeSizeU3D2061_t5AE9E8F2026DE3A0CE42A478A3AE4428DEE84EFE__padding[2061];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D3113_t2BF4F51D617DFC5D32331116904EA25D0244B1B2 
+struct __StaticArrayInitTypeSizeU3D3245_tA044F286205C0B29430C558992343E93F08681F5 
 {
 	union
 	{
@@ -1220,7 +1231,7 @@ struct __StaticArrayInitTypeSizeU3D3113_t2BF4F51D617DFC5D32331116904EA25D0244B1B
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D3113_t2BF4F51D617DFC5D32331116904EA25D0244B1B2__padding[3113];
+		uint8_t __StaticArrayInitTypeSizeU3D3245_tA044F286205C0B29430C558992343E93F08681F5__padding[3245];
 	};
 };
 #pragma pack(pop, tp)
@@ -2656,6 +2667,53 @@ struct ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27  : public Mon
 struct FloatTweenableVariable_t19D1F16FBA79A41A8234F4F6C1D7DB51EAC07D48  : public TweenableVariableAsyncBase_1_tF183EC63E8112FA406C601A7E49A5AC36036F088
 {
 };
+struct FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Prototype2bVoiceGuidance_tF30C30CF8741ED3B41B2FADFE0921DE987187EE7* ___voiceGuidance;
+	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___correctCatchClip;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___correctCatchSource;
+	float ___correctCatchVolume;
+	LadybirdHabitatObjective_tA3C98921E2653E8A08AE94A563552187320A1B93* ___objective;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___insectArea;
+	FoodSearchTargetU5BU5D_tFD6E59DADDE888DDD6417FF6B64B469C6661D3A4* ___targets;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___progressText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___feedbackText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___tryAgainButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___searchPanel;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___completionPanel;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___completionTitle;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___finishExplorationButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___backToInsectsPanel;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___backToInsectsButton;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___existingBackToInsectsAction;
+	float ___incorrectFeedbackCooldown;
+	float ___nextIncorrectFeedbackTime;
+	bool ___returningToInsects;
+	bool ___U3CFinishedU3Ek__BackingField;
+	bool ___U3CCompletionVisibleU3Ek__BackingField;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___completionRoutine;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___replayRoutine;
+	int32_t ___requiredAphids;
+	bool ___U3CRunningU3Ek__BackingField;
+	bool ___U3CCompletedU3Ek__BackingField;
+	HashSet_1_t0BB271F9B57608AF225F572E00EC7EB31BF3FAEA* ___found;
+};
+struct FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* ___activity;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___countText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___completionText;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___fill;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___collectingColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___completedColor;
+	float ___fillDuration;
+	int32_t ___previousCount;
+	int32_t ___previousRequired;
+	bool ___previousCompleted;
+	float ___startFill;
+	float ___targetFill;
+	float ___elapsed;
+};
 struct HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___m_HandSubsystem;
@@ -2723,6 +2781,7 @@ struct LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4  : pub
 	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___driveAction;
 	bool ___actionHasDeadzone;
 	Dictionary_2_tA18F5771BE9AC1FFF4758245F7C397653C908F90* ___suspended;
+	HashSet_1_tC9BC5E44D781D9497953318FA6B09EC99D6DB6AF* ___foodLocomotion;
 	XRBaseInteractableU5BU5D_t6040A72F05BAF4285B7C4B70646708F9C2579ECD* ___interactables;
 	bool ___antennaExplored;
 	bool ___shellExplored;
@@ -3566,8 +3625,8 @@ struct List_1_tB19FD8CEC30120912170CCE24F470CF5A1F13A3C_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D3113_t2BF4F51D617DFC5D32331116904EA25D0244B1B2 ___865D666D3110EB05EC107D2F5C4C8908D44755232B3859C11357928826EC93DA;
-	__StaticArrayInitTypeSizeU3D2001_tCCD66D22CBD759E562BF53EA8BA03C76322A7735 ___D416C0EC6FF463ED837B27E0300B634BF30504A07B4C28ED322936AA56255DAA;
+	__StaticArrayInitTypeSizeU3D3245_tA044F286205C0B29430C558992343E93F08681F5 ___724ABB8BEBB4D7C61227F3285788FEC0E24AB86FDD5FA7E9944BD6C0E9F5828C;
+	__StaticArrayInitTypeSizeU3D2061_t5AE9E8F2026DE3A0CE42A478A3AE4428DEE84EFE ___FFB8FC515C38759C18C372DA6162CDEA450846AE6A87D748D81E4471311B5397;
 };
 struct String_t_StaticFields
 {
@@ -4447,6 +4506,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ClearSelection_m84B1645C56D1EFE275B589F3FE96C5B15F131E6B (SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_ResetGuidance_m97F8850F45D1FB82E63CE627F0AA6144BD9F311F (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_UpdateGuidance_m4D93C4FECE941389DAA12143D518E46504F67B4B (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FoodSearchProgressView_Refresh_m0AD11C9FE76FDED73A3B825C5172CA385D27DA56 (FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* __this, float ___0_deltaTime, bool ___1_immediate, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FoodSearchActivity_get_FoundCount_m589AA14B98018C765BA627039B2506631EC901B9 (FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FoodSearchActivity_get_Completed_mA4B0DBCB4DDEE881C1C0A0DE67592DBC6392467B_inline (FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Image_get_fillAmount_mDEE52490D07124E21E7CB36718A5E3714D8B9788_inline (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ColorUtility_ToHtmlStringRGB_m50D59301FF2736B78C95C1FD5619D429358B7433_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_color, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7 (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___0_r, uint8_t ___1_g, uint8_t ___2_b, uint8_t ___3_a, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_c, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InsectInfoPanel_HideAfterDelay_mC8B15AAC5CAFA23563DBF9E8E6332DEEEF7A5E16 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) ;
@@ -4509,7 +4581,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GradientAlphaKey__ctor_m62D622565E6C8BF9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gradient_SetKeys_mE03CE269C19C4F08F1ED57F7151082304DDBB5D8 (Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* __this, GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18* ___0_colorKeys, GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E* ___1_alphaKeys, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gradient_set_mode_m4C84E6ABEFA6C11EE08E07A3969F9DC0AC579210 (Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_set_colorGradient_mD2CB3340AC9467782331011754187A2862216183 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) ;
 inline Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* GameObject_GetComponent_TisToggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F_m4EE154BD6B3D051BADD8CC7F7C28CF20349ABD17 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -4678,7 +4749,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedRotation_SetBaseFromVector_m0CAD6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7 (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8 (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localEulerAngles_m0458551662A1A51FDCA4C0417282B25D391661DF (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline (float ___0_a, float ___1_b, float ___2_value, const RuntimeMethod* method) ;
 inline void UnityEvent_1_Invoke_mABC41DCEDDFA68F8F39C0DFC1CF55B7C1B70A805 (UnityEvent_1_tDD811EB8F49CEE97BA6DF59344DFE6C6F42553D4* __this, float ___0_arg0, const RuntimeMethod* method)
 {
@@ -4791,6 +4861,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromToRotation_m4A801EE9080CD4CBCB9319FF12EB7934E885932F (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_toDirection, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_euler, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_Slerp_mDD63B8384FB0F0AAD4B59635B1D66D6ECB49E763 (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___0_a, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___1_b, float ___2_t, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ColorUtility_ToHtmlStringRGB_m71F205AB043ADF2F702D4493780372A1B94C7D3D (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___0_color, const RuntimeMethod* method) ;
 inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
@@ -4801,16 +4872,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79747
+// Method Definition Index: 78930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LadybirdWalkingAnimator_get_GaitStatus_mC703CDC9306E06F475DEBFC0E52E61618F9F29ED (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:28>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:31>
 		String_t* L_0 = __this->___gaitStatus;
 		return L_0;
 	}
 }
-// Method Definition Index: 79748
+// Method Definition Index: 78931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_RendererEnabledBeforeOverride_m517A4014E42E8339FCA32F3215E08A3D1BD701A3 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___0_renderer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4828,7 +4899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_RendererEnabledB
 	Copy_t898E538A30119FC672C94808197E0A8533C87B9A* V_1 = NULL;
 	bool V_2 = false;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:46>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_0 = __this->___bodyCopies;
 		NullCheck(L_0);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_1;
@@ -4853,11 +4924,11 @@ FINALLY_0038:
 
 IL_000e_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:46>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_2;
 				L_2 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_0), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_1 = L_2;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:46>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_3 = V_1;
 				NullCheck(L_3);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_4 = L_3->___source;
@@ -4871,7 +4942,7 @@ IL_000e_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:46>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_7 = V_1;
 				NullCheck(L_7);
 				bool L_8 = L_7->___wasEnabled;
@@ -4881,7 +4952,7 @@ IL_000e_1:
 
 IL_002d_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:46>
 				bool L_9;
 				L_9 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_0), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_9)
@@ -4901,7 +4972,7 @@ IL_002d_1:
 
 IL_0046:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:44>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:47>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_10 = ___0_renderer;
 		NullCheck(L_10);
 		bool L_11;
@@ -4911,12 +4982,12 @@ IL_0046:
 
 IL_004d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:45>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:48>
 		bool L_12 = V_2;
 		return L_12;
 	}
 }
-// Method Definition Index: 79749
+// Method Definition Index: 78932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_SuppressRenderer_mF083961985A45DFEB535CC9B2058DB6E55A982D3 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___0_renderer, bool ___1_hide, bool ___2_restoredEnabled, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4943,7 +5014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_SuppressRenderer
 	int32_t G_B13_0 = 0;
 	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* G_B13_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:48>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:51>
 		bool L_0 = ___1_hide;
 		if (!L_0)
 		{
@@ -4951,13 +5022,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_SuppressRenderer
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:48>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:51>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_1 = __this->___suppressed;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_2 = ___0_renderer;
 		NullCheck(L_1);
 		bool L_3;
 		L_3 = HashSet_1_Add_mA29292A881967D1CE17F7F7C411A5123FE4F772C(L_1, L_2, HashSet_1_Add_mA29292A881967D1CE17F7F7C411A5123FE4F772C_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:48>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:51>
 		Dictionary_2_tDE87BD94907AE5F7874D334EB40E0876B04FBFFF* L_4 = __this->___suppressedStates;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_5 = ___0_renderer;
 		bool L_6 = ___2_restoredEnabled;
@@ -4968,13 +5039,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_SuppressRenderer
 
 IL_001f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:52>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_7 = __this->___suppressed;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_8 = ___0_renderer;
 		NullCheck(L_7);
 		bool L_9;
 		L_9 = HashSet_1_Remove_m381E5C932680FC7795231072A89ABB1CEEC69EB7(L_7, L_8, HashSet_1_Remove_m381E5C932680FC7795231072A89ABB1CEEC69EB7_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:52>
 		Dictionary_2_tDE87BD94907AE5F7874D334EB40E0876B04FBFFF* L_10 = __this->___suppressedStates;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_11 = ___0_renderer;
 		NullCheck(L_10);
@@ -4984,7 +5055,7 @@ IL_001f:
 
 IL_0039:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:50>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:53>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_13 = __this->___bodyCopies;
 		NullCheck(L_13);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_14;
@@ -5009,11 +5080,11 @@ FINALLY_009e:
 
 IL_0047_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:50>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:53>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_15;
 				L_15 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_0), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_1 = L_15;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:50>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:53>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_16 = V_1;
 				NullCheck(L_16);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_17 = L_16->___source;
@@ -5027,7 +5098,7 @@ IL_0047_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:52>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:55>
 				bool L_20 = ___1_hide;
 				if (L_20)
 				{
@@ -5035,7 +5106,7 @@ IL_0047_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:52>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:55>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_21 = V_1;
 				bool L_22 = ___2_restoredEnabled;
 				NullCheck(L_21);
@@ -5044,7 +5115,7 @@ IL_0047_1:
 
 IL_0067_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:53>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:56>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_23 = V_1;
 				NullCheck(L_23);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_24 = L_23->___copy;
@@ -5097,7 +5168,7 @@ IL_008e_1:
 
 IL_0093_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:50>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:53>
 				bool L_30;
 				L_30 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_0), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_30)
@@ -5117,17 +5188,17 @@ IL_0093_1:
 
 IL_00ac:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:55>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:58>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_31 = ___0_renderer;
 		bool L_32 = ___1_hide;
 		bool L_33 = ___2_restoredEnabled;
 		NullCheck(L_31);
 		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_31, (bool)((int32_t)(((((int32_t)L_32) == ((int32_t)0))? 1 : 0)&(int32_t)L_33)), NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:56>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:59>
 		return;
 	}
 }
-// Method Definition Index: 79750
+// Method Definition Index: 78933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_ValidateBindings_m73544008DCC2190C78A625A534F3798F525FFA23 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, String_t** ___0_reason, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5166,7 +5237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_ValidateBindings
 	String_t* G_B36_0 = NULL;
 	String_t** G_B36_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:67>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:71>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_0 = __this->___controller;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -5218,23 +5289,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_ValidateBindings
 
 IL_0047:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:68>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:72>
 		String_t** L_10 = ___0_reason;
 		*((String_t**)L_10) = (String_t*)_stringLiteralC8984B81EB0B6F5A84B4365301CEE4E87F02C237;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_10, (void*)(String_t*)_stringLiteralC8984B81EB0B6F5A84B4365301CEE4E87F02C237);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:68>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:72>
 		return (bool)0;
 	}
 
 IL_0050:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:69>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:73>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = __this->___visualModel;
 		NullCheck(L_11);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Transform_get_lossyScale_mFF740DA4BE1489C6882CD2F3A37B7321176E5D07(L_11, NULL);
 		V_0 = L_12;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:70>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:74>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
 		float L_14 = L_13.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = V_0;
@@ -5269,23 +5340,23 @@ IL_0050:
 
 IL_009b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:71>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:75>
 		String_t** L_25 = ___0_reason;
 		*((String_t**)L_25) = (String_t*)_stringLiteral6B2EFFF4E8A57B14FB832985B9A31AE9954A717A;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_25, (void*)(String_t*)_stringLiteral6B2EFFF4E8A57B14FB832985B9A31AE9954A717A);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:71>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:75>
 		return (bool)0;
 	}
 
 IL_00a4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:72>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:76>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_26 = (HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706*)il2cpp_codegen_object_new(HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8(L_26, HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8_RuntimeMethod_var);
 		V_1 = L_26;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:72>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:76>
 		V_2 = 0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:77>
 		LegBindingU5BU5D_t389ED50B83D88A65B7681653754BB0EFAB4F9EEC* L_27 = __this->___legs;
 		V_3 = L_27;
 		V_4 = 0;
@@ -5294,15 +5365,15 @@ IL_00a4:
 
 IL_00bb:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:77>
 		LegBindingU5BU5D_t389ED50B83D88A65B7681653754BB0EFAB4F9EEC* L_28 = V_3;
 		int32_t L_29 = V_4;
 		NullCheck(L_28);
 		int32_t L_30 = L_29;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_31 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
 		V_5 = L_31;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:75>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:76>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:80>
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_32 = V_5;
 		if (!L_32)
 		{
@@ -5365,17 +5436,17 @@ IL_00bb:
 
 IL_0120:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:77>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:81>
 		String_t** L_49 = ___0_reason;
 		*((String_t**)L_49) = (String_t*)_stringLiteralBC14497CE2DABAC035EC0E7D3D17B118FD4E8AA6;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_49, (void*)(String_t*)_stringLiteralBC14497CE2DABAC035EC0E7D3D17B118FD4E8AA6);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:77>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:81>
 		return (bool)0;
 	}
 
 IL_0129:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:78>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:82>
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_50 = V_5;
 		NullCheck(L_50);
 		bool L_51 = L_50->___tripodA;
@@ -5385,14 +5456,14 @@ IL_0129:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:78>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:82>
 		int32_t L_52 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_52, 1));
 	}
 
 IL_0136:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:83>
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_53 = V_5;
 		NullCheck(L_53);
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_54 = L_53->___segments;
@@ -5403,15 +5474,15 @@ IL_0136:
 
 IL_0144:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:83>
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_55 = V_7;
 		int32_t L_56 = V_8;
 		NullCheck(L_55);
 		int32_t L_57 = L_56;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_58 = (L_55)->GetAt(static_cast<il2cpp_array_size_t>(L_57));
 		V_9 = L_58;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:80>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:81>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:84>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:85>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_59 = V_9;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_60;
@@ -5501,11 +5572,11 @@ IL_0186:
 
 IL_01a1:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:86>
 		String_t** L_77 = ___0_reason;
 		*((String_t**)L_77) = (String_t*)_stringLiteralC800B2EFB930756AD4D0163A7D7A2DB7E9D20619;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)L_77, (void*)(String_t*)_stringLiteralC800B2EFB930756AD4D0163A7D7A2DB7E9D20619);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:86>
 		return (bool)0;
 	}
 
@@ -5517,7 +5588,7 @@ IL_01aa:
 
 IL_01b0:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:83>
 		int32_t L_79 = V_8;
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_80 = V_7;
 		NullCheck(L_80);
@@ -5533,7 +5604,7 @@ IL_01b0:
 
 IL_01be:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:77>
 		int32_t L_82 = V_4;
 		LegBindingU5BU5D_t389ED50B83D88A65B7681653754BB0EFAB4F9EEC* L_83 = V_3;
 		NullCheck(L_83);
@@ -5543,7 +5614,7 @@ IL_01be:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:84>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
 		String_t** L_84 = ___0_reason;
 		int32_t L_85 = V_2;
 		if ((((int32_t)L_85) == ((int32_t)3)))
@@ -5569,12 +5640,12 @@ IL_01d9:
 	{
 		*((String_t**)G_B36_1) = (String_t*)G_B36_0;
 		Il2CppCodeGenWriteBarrier((void**)(String_t**)G_B36_1, (void*)(String_t*)G_B36_0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:84>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
 		int32_t L_86 = V_2;
 		return (bool)((((int32_t)L_86) == ((int32_t)3))? 1 : 0);
 	}
 }
-// Method Definition Index: 79751
+// Method Definition Index: 78934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* LadybirdWalkingAnimator_Pivot_mA0AAFBC32DA96FA1C290325D5FB20F16DE8A28BC (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, String_t* ___0_name, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_world, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5584,24 +5655,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
 		String_t* L_0 = ___0_name;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_1, L_0, NULL);
 		NullCheck(L_1);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = L_2;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = ___1_parent;
 		NullCheck(L_3);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_3, L_4, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = L_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___2_world;
 		NullCheck(L_5);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_5, L_6, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = L_5;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___visualModel;
 		NullCheck(L_8);
@@ -5609,11 +5680,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		L_9 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_8, NULL);
 		NullCheck(L_7);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_7, L_9, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:88>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
 		return L_7;
 	}
 }
-// Method Definition Index: 79752
+// Method Definition Index: 78935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9A* LadybirdWalkingAnimator_Clone_m86D6FA27BDC48520604D16D211C3C5571A811B71 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___0_source, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5641,7 +5712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 	Copy_t898E538A30119FC672C94808197E0A8533C87B9A* G_B3_1 = NULL;
 	Copy_t898E538A30119FC672C94808197E0A8533C87B9A* G_B3_2 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:92>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:99>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_0 = ___0_source;
 		NullCheck(L_0);
 		String_t* L_1;
@@ -5666,7 +5737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t*)L_9);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m721D643351E55308EA4F5F41B67D5446D11C61F0(L_10, L_2, L_7, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:94>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:101>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10;
 		NullCheck(L_11);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
@@ -5680,7 +5751,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_15 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_14, NULL);
 		NullCheck(L_12);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_12, L_15, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:102>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = L_11;
 		NullCheck(L_16);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
@@ -5694,7 +5765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_20 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_19, NULL);
 		NullCheck(L_17);
 		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_17, L_20, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:102>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_16;
 		NullCheck(L_21);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
@@ -5708,7 +5779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_25 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_24, NULL);
 		NullCheck(L_22);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_22, L_25, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:102>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = L_21;
 		NullCheck(L_26);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
@@ -5722,7 +5793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_30 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_29, NULL);
 		NullCheck(L_27);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_27, L_30, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:96>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:103>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = L_26;
 		NullCheck(L_31);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32;
@@ -5730,7 +5801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = ___1_parent;
 		NullCheck(L_32);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_32, L_33, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:97>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:104>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = L_31;
 		NullCheck(L_34);
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_35;
@@ -5744,12 +5815,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_38 = MeshFilter_get_sharedMesh_mE4ED3E7E31C1DE5097E4980DA996E620F7D7CB8C(L_37, NULL);
 		NullCheck(L_35);
 		MeshFilter_set_sharedMesh_m946F7E3F583761982642BDA4753784AF1DF6E16F(L_35, L_38, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:98>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
 		NullCheck(L_34);
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_39;
 		L_39 = GameObject_GetComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m7FF948365C38BC39333D82B235A7C4EAD219960D(L_34, GameObject_GetComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m7FF948365C38BC39333D82B235A7C4EAD219960D_RuntimeMethod_var);
 		V_0 = L_39;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:98>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_40 = V_0;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_41 = ___0_source;
 		NullCheck(L_41);
@@ -5757,7 +5828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_42 = Renderer_get_sharedMaterials_m0B61AFD8EDA35A70C796FFB2F28BB62380051ABF(L_41, NULL);
 		NullCheck(L_40);
 		Renderer_set_sharedMaterials_m665ADE4190214CC2AC52490B4A7373D7EE75DEB2(L_40, L_42, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:99>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:106>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_43 = V_0;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_44 = ___0_source;
 		NullCheck(L_44);
@@ -5765,7 +5836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_45 = Renderer_get_shadowCastingMode_m15B0BCD8948C2DAFDF58FD8041DB55084AC59FE8(L_44, NULL);
 		NullCheck(L_43);
 		Renderer_set_shadowCastingMode_mB0CD3D153E43044388AEFF7AEFDA93E80EB36D11(L_43, L_45, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:99>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:106>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_46 = V_0;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_47 = ___0_source;
 		NullCheck(L_47);
@@ -5773,7 +5844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_48 = Renderer_get_receiveShadows_m5603F3AD5F1FE03ED0C86585A48614B001C86F60(L_47, NULL);
 		NullCheck(L_46);
 		Renderer_set_receiveShadows_mABEB4C72E96E65117B7FFFD4180247565D0C1A09(L_46, L_48, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:100>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:107>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_49 = V_0;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_50 = ___0_source;
 		NullCheck(L_50);
@@ -5781,7 +5852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_51 = Renderer_get_lightProbeUsage_m38415A732D06320506D1CC89FCA5AA8962866279(L_50, NULL);
 		NullCheck(L_49);
 		Renderer_set_lightProbeUsage_mDCCD970DAC3546B32EF58876BABBD3353624F703(L_49, L_51, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:100>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:107>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_52 = V_0;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_53 = ___0_source;
 		NullCheck(L_53);
@@ -5789,7 +5860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Copy_t898E538A30119FC672C94808197E0A8533C87B9
 		L_54 = Renderer_get_reflectionProbeUsage_mBC73D10C21A5FD752063CA79DF08929A5754F96F(L_53, NULL);
 		NullCheck(L_52);
 		Renderer_set_reflectionProbeUsage_m54A268EACA655AC3C66C4CD7F8C1EF3B41F3E008(L_52, L_54, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:108>
 		Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_55 = (Copy_t898E538A30119FC672C94808197E0A8533C87B9A*)il2cpp_codegen_object_new(Copy_t898E538A30119FC672C94808197E0A8533C87B9A_il2cpp_TypeInfo_var);
 		Copy__ctor_mDFF10D49641DB3B050F824703D8BED885B8BE8DE(L_55, NULL);
 		Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_56 = L_55;
@@ -5840,11 +5911,11 @@ IL_0120:
 	{
 		NullCheck(G_B3_1);
 		G_B3_1->___wasEnabled = G_B3_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:108>
 		return G_B3_2;
 	}
 }
-// Method Definition Index: 79753
+// Method Definition Index: 78936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Build_mA0C9D10E7D93E359B67037BA4FDB9E6C39941277 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5888,7 +5959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Build_mA0C9D10E7
 	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* G_B12_0 = NULL;
 	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* G_B14_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
 		bool L_0;
 		L_0 = LadybirdWalkingAnimator_ValidateBindings_m73544008DCC2190C78A625A534F3798F525FFA23(__this, (&V_0), NULL);
 		if (L_0)
@@ -5897,30 +5968,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Build_mA0C9D10E7
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
 		String_t* L_1 = V_0;
 		String_t* L_2;
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral17C1626958E98A0CF1AF112864325523753D30A1, L_1, NULL);
 		__this->___gaitStatus = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gaitStatus), (void*)L_2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
 		String_t* L_3 = __this->___gaitStatus;
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_m94F967AB31244EACE68C3BE1DD85B69ED3334C0E(L_3, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:105>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
 		return (bool)0;
 	}
 
 IL_0030:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:106>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_4, _stringLiteralDF060FDAEEB8C4026B34CF63FC2A33C5EB9152AF, NULL);
 		__this->___rig = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rig), (void*)L_4);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:106>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___rig;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
@@ -5928,29 +5999,29 @@ IL_0030:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = __this->___visualModel;
 		NullCheck(L_6);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_6, L_7, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:107>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:115>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_8 = (RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002*)(RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002*)SZArrayNew(RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002_il2cpp_TypeInfo_var, (uint32_t)6);
 		__this->___runtime = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___runtime), (void*)L_8);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:107>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:115>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_9 = (HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706*)il2cpp_codegen_object_new(HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8(L_9, HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8_RuntimeMethod_var);
 		V_1 = L_9;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:108>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:116>
 		V_2 = 0;
 		goto IL_0198;
 	}
 
 IL_0070:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:110>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:118>
 		LegBindingU5BU5D_t389ED50B83D88A65B7681653754BB0EFAB4F9EEC* L_10 = __this->___legs;
 		int32_t L_11 = V_2;
 		NullCheck(L_10);
 		int32_t L_12 = L_11;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		V_3 = L_13;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:110>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:118>
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_14 = V_3;
 		NullCheck(L_14);
 		String_t* L_15 = L_14->___label;
@@ -5970,7 +6041,7 @@ IL_0070:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
 		L_23 = LadybirdWalkingAnimator_Pivot_mA0AAFBC32DA96FA1C290325D5FB20F16DE8A28BC(__this, L_16, L_18, L_22, NULL);
 		V_4 = L_23;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:111>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:119>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = V_4;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_26 = V_3;
@@ -5982,7 +6053,7 @@ IL_0070:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
 		L_29 = LadybirdWalkingAnimator_Pivot_mA0AAFBC32DA96FA1C290325D5FB20F16DE8A28BC(__this, _stringLiteral7352A837EB68D96CDBDF07CF242D5726F74DC2A6, L_24, L_28, NULL);
 		V_5 = L_29;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:111>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:119>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30 = V_5;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_32 = V_3;
@@ -5994,7 +6065,7 @@ IL_0070:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
 		L_35 = LadybirdWalkingAnimator_Pivot_mA0AAFBC32DA96FA1C290325D5FB20F16DE8A28BC(__this, _stringLiteral5B57F79A2663AEFB21E5D4242F57ED0347853049, L_30, L_34, NULL);
 		V_6 = L_35;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:112>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:120>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = V_6;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_37 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_38 = V_3;
@@ -6006,7 +6077,7 @@ IL_0070:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
 		L_41 = LadybirdWalkingAnimator_Pivot_mA0AAFBC32DA96FA1C290325D5FB20F16DE8A28BC(__this, _stringLiteral7C931F5FC1AB9A496913978FF01C2C30CDAD024E, L_36, L_40, NULL);
 		V_7 = L_41;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:113>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:121>
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_42 = (TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24*)SZArrayNew(TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24_il2cpp_TypeInfo_var, (uint32_t)4);
 		TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* L_43 = L_42;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44 = V_4;
@@ -6029,14 +6100,14 @@ IL_0070:
 		ArrayElementTypeCheck (L_49, L_50);
 		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(3), (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)L_50);
 		V_8 = L_49;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
 		V_9 = 0;
 		goto IL_0163;
 	}
 
 IL_012e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_51 = __this->___copies;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_52 = V_3;
 		NullCheck(L_52);
@@ -6054,7 +6125,7 @@ IL_012e:
 		L_61 = LadybirdWalkingAnimator_Clone_m86D6FA27BDC48520604D16D211C3C5571A811B71(__this, L_56, L_60, NULL);
 		NullCheck(L_51);
 		List_1_Add_m897475E40773D3A44993DF86153579344B19FBE1_inline(L_51, L_61, List_1_Add_m897475E40773D3A44993DF86153579344B19FBE1_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_62 = V_1;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_63 = V_3;
 		NullCheck(L_63);
@@ -6066,14 +6137,14 @@ IL_012e:
 		NullCheck(L_62);
 		bool L_68;
 		L_68 = HashSet_1_Add_mA29292A881967D1CE17F7F7C411A5123FE4F772C(L_62, L_67, HashSet_1_Add_mA29292A881967D1CE17F7F7C411A5123FE4F772C_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
 		int32_t L_69 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_69, 1));
 	}
 
 IL_0163:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:114>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
 		int32_t L_70 = V_9;
 		if ((((int32_t)L_70) < ((int32_t)4)))
 		{
@@ -6081,7 +6152,7 @@ IL_0163:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:123>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_71 = __this->___runtime;
 		int32_t L_72 = V_2;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_73 = (RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1*)il2cpp_codegen_object_new(RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1_il2cpp_TypeInfo_var);
@@ -6108,14 +6179,14 @@ IL_0163:
 		Il2CppCodeGenWriteBarrier((void**)(&L_80->___ankle), (void*)L_81);
 		NullCheck(L_71);
 		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(L_72), (RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1*)L_80);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:108>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:116>
 		int32_t L_82 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_82, 1));
 	}
 
 IL_0198:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:108>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:116>
 		int32_t L_83 = V_2;
 		if ((((int32_t)L_83) < ((int32_t)6)))
 		{
@@ -6123,7 +6194,7 @@ IL_0198:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:118>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:126>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84 = __this->___visualModel;
 		NullCheck(L_84);
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_85;
@@ -6135,15 +6206,15 @@ IL_0198:
 
 IL_01b2:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:118>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:126>
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_86 = V_10;
 		int32_t L_87 = V_11;
 		NullCheck(L_86);
 		int32_t L_88 = L_87;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_89 = (L_86)->GetAt(static_cast<il2cpp_array_size_t>(L_88));
 		V_12 = L_89;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:119>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:120>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:127>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:128>
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_90 = V_12;
 		NullCheck(L_90);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_91;
@@ -6220,7 +6291,7 @@ IL_01ef:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:121>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:129>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_106 = __this->___bodyCopies;
 		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_107 = V_12;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_108 = __this->___rig;
@@ -6241,7 +6312,7 @@ IL_0224:
 
 IL_022a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:118>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:126>
 		int32_t L_112 = V_11;
 		MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446* L_113 = V_10;
 		NullCheck(L_113);
@@ -6251,15 +6322,15 @@ IL_022a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:130>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_114 = __this->___rig;
 		NullCheck(L_114);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_114, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:122>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:130>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 79754
+// Method Definition Index: 78937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_HasGlowAncestor_mF4A7053B59423006321E18A38C55B68CA7195DD9 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_item, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6275,7 +6346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_HasGlowAncestor_
 
 IL_0002:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:125>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_item;
 		NullCheck(L_0);
 		String_t* L_1;
@@ -6289,13 +6360,13 @@ IL_0002:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:125>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
 		return (bool)1;
 	}
 
 IL_0018:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:125>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = ___0_item;
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
@@ -6305,7 +6376,7 @@ IL_0018:
 
 IL_0020:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:125>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = ___0_item;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -6329,11 +6400,11 @@ IL_0020:
 
 IL_0037:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:125>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79755
+// Method Definition Index: 78938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Ground_mF8EC13C015A1C9608D4B58F0C56AF297E6AEE433 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_point, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_grounded, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6351,13 +6422,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Ground_mF8EC13C0
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_5;
 	memset((&V_5), 0, sizeof(V_5));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:128>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:137>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___1_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_point;
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:128>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:137>
 		V_0 = (std::numeric_limits<float>::infinity());
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:129>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:138>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_point;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
@@ -6373,7 +6444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Ground_mF8EC13C0
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		L_9 = Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline(NULL);
 		Ray__ctor_mE298992FD10A3894C38373198385F345C58BD64C_inline((&V_1), L_8, L_9, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:130>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_10 = __this->___controller;
 		NullCheck(L_10);
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_11 = L_10->___groundSurfaces;
@@ -6384,15 +6455,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_Ground_mF8EC13C0
 
 IL_0049:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:130>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_12 = V_2;
 		int32_t L_13 = V_3;
 		NullCheck(L_12);
 		int32_t L_14 = L_13;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_15 = (L_12)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
 		V_4 = L_15;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:131>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:132>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:140>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:141>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_16 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_17;
@@ -6466,11 +6537,11 @@ IL_0049:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:142>
 		float L_36;
 		L_36 = RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78((&V_5), NULL);
 		V_0 = L_36;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:133>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:142>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_37 = ___1_grounded;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
 		L_38 = RaycastHit_get_point_m02B764612562AFE0F998CC7CFB2EEDE41BA47F39((&V_5), NULL);
@@ -6485,7 +6556,7 @@ IL_00c4:
 
 IL_00c8:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:130>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
 		int32_t L_40 = V_3;
 		ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* L_41 = V_2;
 		NullCheck(L_41);
@@ -6495,14 +6566,14 @@ IL_00c8:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:134>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:143>
 		float L_42 = V_0;
 		bool L_43;
 		L_43 = Single_IsPositiveInfinity_mB6DA4AAB74012F1BD90C90121090ED87A5782FA7_inline(L_42, NULL);
 		return (bool)((((int32_t)L_43) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 79756
+// Method Definition Index: 78939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_ResetPose_m57A115B1A867D225011B1EC00D9F3759620CE14B (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6538,7 +6609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_ResetPose_m57A11
 	memset((&G_B4_0), 0, sizeof(G_B4_0));
 	RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* G_B4_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:138>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:148>
 		float L_0 = (0.0f);
 		V_0 = L_0;
 		__this->___blendVelocity = L_0;
@@ -6548,7 +6619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_ResetPose_m57A11
 		__this->___blend = L_2;
 		float L_3 = V_0;
 		__this->___phase = L_3;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:149>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_4 = __this->___runtime;
 		V_1 = L_4;
 		V_2 = 0;
@@ -6557,14 +6628,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_ResetPose_m57A11
 
 IL_002b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:149>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_5 = V_1;
 		int32_t L_6 = V_2;
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		V_3 = L_8;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:141>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_9 = V_3;
 		NullCheck(L_9);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10 = L_9->___hip;
@@ -6588,7 +6659,7 @@ IL_002b:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_19 = V_6;
 		NullCheck(L_10);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_10, L_19, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:142>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:152>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20 = __this->___visualModel;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_21 = V_3;
 		NullCheck(L_21);
@@ -6599,7 +6670,7 @@ IL_002b:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_20, L_23, NULL);
 		V_4 = L_24;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:142>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:152>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_25 = V_3;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_4;
 		bool L_27;
@@ -6629,7 +6700,7 @@ IL_008a:
 	{
 		NullCheck(G_B4_1);
 		G_B4_1->___planted = G_B4_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:143>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_30 = V_3;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_31 = V_3;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_32 = V_3;
@@ -6648,7 +6719,7 @@ IL_008a:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_8;
 		NullCheck(L_30);
 		L_30->___swingStart = L_38;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:143>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_39 = V_3;
 		NullCheck(L_39);
 		L_39->___wasSwing = (bool)0;
@@ -6658,7 +6729,7 @@ IL_008a:
 
 IL_00bc:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:139>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:149>
 		int32_t L_41 = V_2;
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_42 = V_1;
 		NullCheck(L_42);
@@ -6668,7 +6739,7 @@ IL_00bc:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:145>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:155>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_43 = __this->___bodyCopies;
 		NullCheck(L_43);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_44;
@@ -6693,11 +6764,11 @@ FINALLY_012a:
 
 IL_00d4_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:145>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:155>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_45;
 				L_45 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_9), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_10 = L_45;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:145>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:155>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_46 = V_10;
 				NullCheck(L_46);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_47 = L_46->___source;
@@ -6710,7 +6781,7 @@ IL_00d4_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:146>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:156>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_49 = V_10;
 				NullCheck(L_49);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_50 = L_49->___copy;
@@ -6741,7 +6812,7 @@ IL_00d4_1:
 
 IL_011f_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:145>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:155>
 				bool L_60;
 				L_60 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_9), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_60)
@@ -6761,7 +6832,7 @@ IL_011f_1:
 
 IL_0138:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:157>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_61 = __this->___controller;
 		NullCheck(L_61);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_62;
@@ -6770,7 +6841,7 @@ IL_0138:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
 		L_63 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_62, NULL);
 		__this->___lastPosition = L_63;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:157>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_64 = __this->___controller;
 		NullCheck(L_64);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_65;
@@ -6779,17 +6850,17 @@ IL_0138:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_66;
 		L_66 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_65, NULL);
 		__this->___lastRotation = L_66;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:157>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_67 = __this->___controller;
 		NullCheck(L_67);
 		int32_t L_68;
 		L_68 = LadybirdPlayerController_get_ResetVersion_m664F816B958D95BDAFB83ED613372DEBF575A4F1_inline(L_67, NULL);
 		__this->___resetVersion = L_68;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:148>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:158>
 		return;
 	}
 }
-// Method Definition Index: 79757
+// Method Definition Index: 78940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Show_m64DE8704543234F1C469170CA96BD010C124E235 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, bool ___0_active, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6829,7 +6900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Show_m64DE870454
 	int32_t G_B28_0 = 0;
 	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* G_B28_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_0 = __this->___copies;
 		NullCheck(L_0);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_1;
@@ -6854,11 +6925,11 @@ FINALLY_006f:
 
 IL_000e_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_2;
 				L_2 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_1), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_2 = L_2;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_3 = V_2;
 				NullCheck(L_3);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_4 = L_3->___source;
@@ -6871,7 +6942,7 @@ IL_000e_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_6 = V_2;
 				NullCheck(L_6);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_7 = L_6->___source;
@@ -6902,7 +6973,7 @@ IL_0036_1:
 			{
 				NullCheck(G_B6_1);
 				Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(G_B6_1, (bool)G_B6_0, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_11 = V_2;
 				NullCheck(L_11);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_12 = L_11->___copy;
@@ -6954,7 +7025,7 @@ IL_005f_1:
 
 IL_0064_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:151>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
 				bool L_20;
 				L_20 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_1), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_20)
@@ -6974,7 +7045,7 @@ IL_0064_1:
 
 IL_007d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:152>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:162>
 		bool L_21 = ___0_active;
 		if (!L_21)
 		{
@@ -6995,7 +7066,7 @@ IL_008f:
 IL_0090:
 	{
 		V_0 = (bool)G_B17_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_23 = __this->___bodyCopies;
 		NullCheck(L_23);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_24;
@@ -7020,11 +7091,11 @@ FINALLY_012b:
 
 IL_009f_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_25;
 				L_25 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_1), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_3 = L_25;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_26 = V_3;
 				NullCheck(L_26);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_27 = L_26->___source;
@@ -7037,7 +7108,7 @@ IL_009f_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_29 = V_3;
 				NullCheck(L_29);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_30 = L_29->___source;
@@ -7083,7 +7154,7 @@ IL_00da_1:
 			{
 				NullCheck(G_B24_1);
 				Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(G_B24_1, (bool)G_B24_0, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_38 = V_3;
 				NullCheck(L_38);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_39 = L_38->___copy;
@@ -7142,7 +7213,7 @@ IL_0118_1:
 
 IL_011d_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:153>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
 				bool L_51;
 				L_51 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_1), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_51)
@@ -7162,16 +7233,16 @@ IL_011d_1:
 
 IL_0139:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:154>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:164>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_52 = __this->___rig;
 		bool L_53 = ___0_active;
 		NullCheck(L_52);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_52, L_53, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:155>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:165>
 		return;
 	}
 }
-// Method Definition Index: 79758
+// Method Definition Index: 78941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_LateUpdate_mE4729060F6A6439CA4F0A8559A8E06F7F782AD20 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7192,7 +7263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_LateUpdate_mE472
 	memset((&V_3), 0, sizeof(V_3));
 	float V_4 = 0.0f;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:158>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:170>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		bool L_0;
 		L_0 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
@@ -7214,13 +7285,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_LateUpdate_mE472
 
 IL_0015:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:158>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:170>
 		return;
 	}
 
 IL_0016:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:159>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:171>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___rig;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -7239,25 +7310,25 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:159>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:171>
 		return;
 	}
 
 IL_002d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:160>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:172>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_6 = __this->___controller;
 		NullCheck(L_6);
 		bool L_7;
 		L_7 = LadybirdPlayerController_get_ControlActive_m921C7A74608F8C642395B5A807D7203CB6865143_inline(L_6, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		if (L_7)
 		{
 			goto IL_005c;
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		bool L_8 = __this->___driving;
 		if (!L_8)
 		{
@@ -7265,24 +7336,24 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		LadybirdWalkingAnimator_Show_m64DE8704543234F1C469170CA96BD010C124E235(__this, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		__this->___driving = (bool)0;
 	}
 
 IL_0050:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		__this->___gaitStatus = _stringLiteral11F13C12609D890103ACFCAD1CE8D4AD75AB79F2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gaitStatus), (void*)_stringLiteral11F13C12609D890103ACFCAD1CE8D4AD75AB79F2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:173>
 		return;
 	}
 
 IL_005c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:162>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:174>
 		bool L_9 = __this->___driving;
 		if (L_9)
 		{
@@ -7290,17 +7361,17 @@ IL_005c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:162>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:174>
 		LadybirdWalkingAnimator_ResetPose_m57A115B1A867D225011B1EC00D9F3759620CE14B(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:162>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:174>
 		__this->___driving = (bool)1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:162>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:174>
 		LadybirdWalkingAnimator_Show_m64DE8704543234F1C469170CA96BD010C124E235(__this, (bool)1, NULL);
 	}
 
 IL_0078:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:175>
 		int32_t L_10 = __this->___resetVersion;
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_11 = __this->___controller;
 		NullCheck(L_11);
@@ -7312,22 +7383,22 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:175>
 		LadybirdWalkingAnimator_ResetPose_m57A115B1A867D225011B1EC00D9F3759620CE14B(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:175>
 		__this->___gaitStatus = _stringLiteral482C05CD408A13E9023E082CC7F66E7E7DBDE997;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gaitStatus), (void*)_stringLiteral482C05CD408A13E9023E082CC7F66E7E7DBDE997);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:175>
 		return;
 	}
 
 IL_009d:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:164>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:176>
 		float L_13;
 		L_13 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		V_0 = L_13;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:164>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:176>
 		float L_14 = V_0;
 		if ((!(((float)L_14) <= ((float)(0.0f)))))
 		{
@@ -7335,13 +7406,13 @@ IL_009d:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:164>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:176>
 		return;
 	}
 
 IL_00ac:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:165>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:177>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_15 = __this->___controller;
 		NullCheck(L_15);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
@@ -7350,7 +7421,7 @@ IL_00ac:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
 		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
 		V_1 = L_17;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:165>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:177>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_18 = __this->___controller;
 		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
@@ -7359,7 +7430,7 @@ IL_00ac:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20;
 		L_20 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_19, NULL);
 		V_2 = L_20;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:166>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:178>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = __this->___lastPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
@@ -7368,9 +7439,9 @@ IL_00ac:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
 		L_25 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_23, L_24, NULL);
 		V_3 = L_25;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:166>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:178>
 		(&V_3)->___y = (0.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:167>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:179>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* L_26 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974*)(&__this->___lastRotation);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
 		L_27 = Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline(L_26, NULL);
@@ -7382,13 +7453,13 @@ IL_00ac:
 		L_31 = Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline(L_28, L_30, NULL);
 		float L_32 = V_0;
 		V_4 = ((float)(((float)il2cpp_codegen_multiply(L_31, (0.0174532924f)))/L_32));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:168>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:180>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = V_1;
 		__this->___lastPosition = L_33;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:168>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:180>
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_34 = V_2;
 		__this->___lastRotation = L_34;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:169>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:181>
 		float L_35;
 		L_35 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_3), NULL);
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_36 = __this->___controller;
@@ -7402,24 +7473,24 @@ IL_00ac:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:169>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:181>
 		LadybirdWalkingAnimator_ResetPose_m57A115B1A867D225011B1EC00D9F3759620CE14B(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:169>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:181>
 		return;
 	}
 
 IL_0151:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:170>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:182>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = V_3;
 		float L_40 = V_4;
 		float L_41 = V_0;
 		LadybirdWalkingAnimator_AnimateMotion_m86111D37056620AF4210C2BE6A223B1E06280F91(__this, L_39, L_40, L_41, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:171>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:183>
 		return;
 	}
 }
-// Method Definition Index: 79759
+// Method Definition Index: 78942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_AnimateMotion_m86111D37056620AF4210C2BE6A223B1E06280F91 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_velocity, float ___1_yaw, float ___2_dt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7494,7 +7565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_AnimateMotion_m8
 	LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* G_B46_0 = NULL;
 	LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* G_B45_0 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:174>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:187>
 		float L_0;
 		L_0 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___0_velocity), NULL);
 		float L_1 = ___1_yaw;
@@ -7508,7 +7579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_AnimateMotion_m8
 		float L_6;
 		L_6 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_2, L_5)), (0.600000024f))), NULL);
 		V_0 = L_6;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:175>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:188>
 		float L_7 = V_0;
 		if ((((float)L_7) > ((float)(0.00499999989f))))
 		{
@@ -7528,7 +7599,7 @@ IL_0039:
 IL_003e:
 	{
 		V_1 = G_B3_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:176>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:189>
 		float L_8 = __this->___blend;
 		float L_9 = V_1;
 		float* L_10 = (float*)(&__this->___blendVelocity);
@@ -7537,7 +7608,7 @@ IL_003e:
 		float L_13;
 		L_13 = Mathf_SmoothDamp_mBE7ABB6B59D198BE8ABE42942452CC7B813A5248(L_8, L_9, L_10, L_11, (std::numeric_limits<float>::infinity()), L_12, NULL);
 		__this->___blend = L_13;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:177>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:190>
 		float L_14 = __this->___gaitFrequency;
 		float L_15 = V_0;
 		float L_16 = __this->___referenceSpeed;
@@ -7546,14 +7617,14 @@ IL_003e:
 		float L_18;
 		L_18 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_15/L_17)), (0.0f), (2.0f), NULL);
 		V_2 = ((float)il2cpp_codegen_multiply(L_14, L_18));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:178>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:191>
 		float L_19 = __this->___phase;
 		float L_20 = V_2;
 		float L_21 = ___2_dt;
 		float L_22;
 		L_22 = Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline(((float)il2cpp_codegen_add(L_19, ((float)il2cpp_codegen_multiply(L_20, L_21)))), (1.0f), NULL);
 		__this->___phase = L_22;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:179>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:192>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_23 = __this->___runtime;
 		V_4 = L_23;
 		V_5 = 0;
@@ -7562,14 +7633,14 @@ IL_003e:
 
 IL_00b6:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:179>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:192>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_24 = V_4;
 		int32_t L_25 = V_5;
 		NullCheck(L_24);
 		int32_t L_26 = L_25;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_27 = (L_24)->GetAt(static_cast<il2cpp_array_size_t>(L_26));
 		V_6 = L_27;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:181>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:194>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28 = __this->___visualModel;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_29 = V_6;
 		NullCheck(L_29);
@@ -7580,7 +7651,7 @@ IL_00b6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
 		L_32 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_28, L_31, NULL);
 		V_7 = L_32;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:182>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:196>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = ___0_velocity;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
 		L_34 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
@@ -7601,7 +7672,7 @@ IL_00b6:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
 		L_43 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_33, L_42, NULL);
 		V_8 = L_43;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:183>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:198>
 		float L_44 = __this->___phase;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_45 = V_6;
 		NullCheck(L_45);
@@ -7632,10 +7703,10 @@ IL_0125:
 		float L_48;
 		L_48 = Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline(((float)il2cpp_codegen_add(G_B7_1, G_B7_0)), (1.0f), NULL);
 		V_9 = L_48;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:183>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:198>
 		float L_49 = V_9;
 		V_10 = (bool)((((int32_t)((!(((float)L_49) >= ((float)(0.5f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:184>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:199>
 		bool L_50 = V_10;
 		if (!L_50)
 		{
@@ -7652,14 +7723,14 @@ IL_0125:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:186>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:201>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_53 = V_6;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_54 = V_6;
 		NullCheck(L_54);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = L_54->___planted;
 		NullCheck(L_53);
 		L_53->___swingStart = L_55;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:187>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_7;
 		float L_57;
 		L_57 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_8), NULL);
@@ -7694,7 +7765,7 @@ IL_0179:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
 		L_62 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B12_1, L_61, NULL);
 		V_12 = L_62;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:188>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:203>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_63 = V_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64 = V_12;
 		bool L_65;
@@ -7730,7 +7801,7 @@ IL_01a4:
 
 IL_01a9:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:190>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:205>
 		bool L_69 = V_10;
 		if (L_69)
 		{
@@ -7747,7 +7818,7 @@ IL_01a9:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:190>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:205>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_72 = V_6;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_73 = V_6;
 		NullCheck(L_73);
@@ -7758,17 +7829,17 @@ IL_01a9:
 
 IL_01c4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:191>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:206>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_75 = V_6;
 		bool L_76 = V_10;
 		NullCheck(L_75);
 		L_75->___wasSwing = L_76;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:192>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:207>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_77 = V_6;
 		NullCheck(L_77);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = L_77->___planted;
 		V_11 = L_78;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:193>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:209>
 		bool L_79 = V_10;
 		if (!L_79)
 		{
@@ -7776,10 +7847,10 @@ IL_01c4:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:194>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:210>
 		float L_80 = V_9;
 		V_14 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_80, (0.5f))), (2.0f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:194>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:210>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_81 = V_6;
 		NullCheck(L_81);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82 = L_81->___swingStart;
@@ -7808,7 +7879,7 @@ IL_01c4:
 
 IL_0237:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:195>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:211>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_95 = V_6;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_96 = V_7;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97 = V_11;
@@ -7817,7 +7888,7 @@ IL_0237:
 		L_99 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_96, L_97, L_98, NULL);
 		NullCheck(L_95);
 		L_95->___goal = L_99;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:196>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:212>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_100 = V_6;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_101 = V_6;
 		NullCheck(L_101);
@@ -7829,7 +7900,7 @@ IL_0237:
 
 IL_0262:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:179>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:192>
 		int32_t L_104 = V_5;
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_105 = V_4;
 		NullCheck(L_105);
@@ -7839,14 +7910,14 @@ IL_0262:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:199>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:216>
 		V_15 = 0;
 		goto IL_02dc;
 	}
 
 IL_0272:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:200>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:217>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_106 = __this->___runtime;
 		V_4 = L_106;
 		V_5 = 0;
@@ -7855,14 +7926,14 @@ IL_0272:
 
 IL_027f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:200>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:217>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_107 = V_4;
 		int32_t L_108 = V_5;
 		NullCheck(L_107);
 		int32_t L_109 = L_108;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_110 = (L_107)->GetAt(static_cast<il2cpp_array_size_t>(L_109));
 		V_16 = L_110;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:201>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_111 = __this->___visualModel;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_112 = V_16;
 		NullCheck(L_112);
@@ -7873,7 +7944,7 @@ IL_027f:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_115;
 		L_115 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_111, L_114, NULL);
 		V_17 = L_115;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:201>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_116 = V_16;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117 = V_17;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_118 = V_16;
@@ -7883,7 +7954,7 @@ IL_027f:
 		L_120 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_117, L_119, (0.5f), NULL);
 		NullCheck(L_116);
 		L_116->___goal = L_120;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:201>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_121 = V_16;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_122 = V_16;
 		NullCheck(L_122);
@@ -7895,7 +7966,7 @@ IL_027f:
 
 IL_02ce:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:200>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:217>
 		int32_t L_125 = V_5;
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_126 = V_4;
 		NullCheck(L_126);
@@ -7905,14 +7976,14 @@ IL_02ce:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:199>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:216>
 		int32_t L_127 = V_15;
 		V_15 = ((int32_t)il2cpp_codegen_add(L_127, 1));
 	}
 
 IL_02dc:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:199>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:216>
 		int32_t L_128 = V_15;
 		if ((((int32_t)L_128) >= ((int32_t)5)))
 		{
@@ -7930,7 +8001,7 @@ IL_02dc:
 
 IL_02e9:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:219>
 		bool L_130;
 		L_130 = LadybirdWalkingAnimator_WithinFootprint_m53C52FC08643EBED25592C1D76D291B940973E56(__this, NULL);
 		if (L_130)
@@ -7939,7 +8010,7 @@ IL_02e9:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:219>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_131 = __this->___runtime;
 		V_4 = L_131;
 		V_5 = 0;
@@ -7948,14 +8019,14 @@ IL_02e9:
 
 IL_02fe:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:219>
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_132 = V_4;
 		int32_t L_133 = V_5;
 		NullCheck(L_132);
 		int32_t L_134 = L_133;
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_135 = (L_132)->GetAt(static_cast<il2cpp_array_size_t>(L_134));
 		V_18 = L_135;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:219>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_136 = V_18;
 		NullCheck(L_136);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_137 = L_136->___hip;
@@ -7985,7 +8056,7 @@ IL_02fe:
 
 IL_033e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:202>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:219>
 		int32_t L_148 = V_5;
 		RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002* L_149 = V_4;
 		NullCheck(L_149);
@@ -7997,16 +8068,16 @@ IL_033e:
 
 IL_0346:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:203>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:220>
 		float L_150 = __this->___bodyBobHeight;
 		float L_151 = __this->___blend;
 		float L_152 = __this->___phase;
 		float L_153;
 		L_153 = sinf(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_152, (3.14159274f))), (4.0f))));
 		V_3 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_150, L_151)), L_153));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:204>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:221>
 		LadybirdWalkingAnimator_Show_m64DE8704543234F1C469170CA96BD010C124E235(__this, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:205>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:222>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_154 = __this->___bodyCopies;
 		NullCheck(L_154);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_155;
@@ -8031,10 +8102,10 @@ FINALLY_03fa:
 
 IL_0382_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:205>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:222>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_156;
 				L_156 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_21), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:207>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:224>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_157 = L_156;
 				NullCheck(L_157);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_158 = L_157->___source;
@@ -8042,7 +8113,7 @@ IL_0382_1:
 				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_159;
 				L_159 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_158, NULL);
 				V_22 = L_159;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:207>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:224>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_160 = L_157;
 				NullCheck(L_160);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_161 = L_160->___copy;
@@ -8066,7 +8137,7 @@ IL_0382_1:
 				L_170 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_169, NULL);
 				NullCheck(L_162);
 				Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_162, L_168, L_170, NULL);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:208>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:225>
 				NullCheck(L_160);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_171 = L_160->___copy;
 				NullCheck(L_171);
@@ -8089,7 +8160,7 @@ IL_0382_1:
 
 IL_03ef_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:205>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:222>
 				bool L_179;
 				L_179 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_21), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_179)
@@ -8109,7 +8180,7 @@ IL_03ef_1:
 
 IL_0408:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:210>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:227>
 		float L_180 = V_1;
 		if ((((float)L_180) == ((float)(0.0f))))
 		{
@@ -8168,11 +8239,11 @@ IL_0446:
 		NullCheck(G_B47_1);
 		G_B47_1->___gaitStatus = G_B47_0;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B47_1->___gaitStatus), (void*)G_B47_0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:211>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:228>
 		return;
 	}
 }
-// Method Definition Index: 79760
+// Method Definition Index: 78943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_WithinFootprint_m53C52FC08643EBED25592C1D76D291B940973E56 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8246,7 +8317,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_WithinFootprint_
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B12_4;
 	memset((&G_B12_4), 0, sizeof(G_B12_4));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:214>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:231>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_0 = __this->___controller;
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = L_0->___groundContact;
@@ -8254,14 +8325,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LadybirdWalkingAnimator_WithinFootprint_
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_1, NULL);
 		V_0 = L_2;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:214>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:231>
 		LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* L_3 = __this->___controller;
 		NullCheck(L_3);
 		LadybirdMovementSafety_t895CF6E569EC5F1D5DDAA983634B8F214D90C409* L_4 = L_3->___safety;
 		NullCheck(L_4);
 		float L_5 = L_4->___bodyRadius;
 		V_1 = L_5;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:215>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:232>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_6 = __this->___copies;
 		NullCheck(L_6);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_7;
@@ -8286,24 +8357,24 @@ FINALLY_00cb:
 
 IL_0033_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:215>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:232>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_8;
 				L_8 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_2), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:217>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:234>
 				NullCheck(L_8);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_9 = L_8->___copy;
 				NullCheck(L_9);
 				Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_10;
 				L_10 = Renderer_get_bounds_m390CF334730C3C34E45CE59F1D08C3B9F3109C7C(L_9, NULL);
 				V_3 = L_10;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:235>
 				V_4 = 0;
 				goto IL_00b8_1;
 			}
 
 IL_004a_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:220>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:237>
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 				L_11 = Bounds_get_center_m5B05F81CB835EB6DD8628FDA24B638F477984DC3_inline((&V_3), NULL);
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
@@ -8406,11 +8477,11 @@ IL_0078_1:
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
 				L_18 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(G_B12_4, L_17, NULL);
 				V_5 = L_18;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:221>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:238>
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_0;
 				float L_20 = L_19.___y;
 				(&V_5)->___y = L_20;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:221>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:238>
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_5;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_0;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
@@ -8426,21 +8497,21 @@ IL_0078_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:221>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:238>
 				V_7 = (bool)0;
 				goto IL_00db;
 			}
 
 IL_00b2_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:235>
 				int32_t L_27 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 			}
 
 IL_00b8_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:218>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:235>
 				int32_t L_28 = V_4;
 				if ((((int32_t)L_28) < ((int32_t)8)))
 				{
@@ -8450,7 +8521,7 @@ IL_00b8_1:
 
 IL_00bd_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:215>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:232>
 				bool L_29;
 				L_29 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_2), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_29)
@@ -8470,18 +8541,18 @@ IL_00bd_1:
 
 IL_00d9:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:224>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:241>
 		return (bool)1;
 	}
 
 IL_00db:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:225>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:242>
 		bool L_30 = V_7;
 		return L_30;
 	}
 }
-// Method Definition Index: 79761
+// Method Definition Index: 78944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA929D03B22EB43A6FA33C473C807F0C78 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* ___0_leg, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_footGoal, const RuntimeMethod* method) 
 {
 	LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* V_0 = NULL;
@@ -8514,12 +8585,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B3_0;
 	memset((&G_B3_0), 0, sizeof(G_B3_0));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:228>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_0 = ___0_leg;
 		NullCheck(L_0);
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_1 = L_0->___binding;
 		V_0 = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:228>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_2 = ___0_leg;
 		NullCheck(L_2);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = L_2->___hip;
@@ -8543,7 +8614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12 = V_13;
 		NullCheck(L_3);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_3, L_12, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:229>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_14 = V_0;
 		NullCheck(L_14);
@@ -8552,7 +8623,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
 		L_16 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_13, L_15, NULL);
 		V_1 = L_16;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:229>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_18 = V_0;
 		NullCheck(L_18);
@@ -8561,7 +8632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_17, L_19, NULL);
 		V_2 = L_20;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:229>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_22 = V_0;
 		NullCheck(L_22);
@@ -8570,7 +8641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
 		L_24 = Transform_TransformPoint_m05BFF013DB830D7BFE44A007703694AE1062EE44(L_21, L_23, NULL);
 		V_3 = L_24;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:230>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:249>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___1_footGoal;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26 = __this->___visualModel;
 		LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* L_27 = V_0;
@@ -8587,25 +8658,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
 		L_33 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_25, L_32, NULL);
 		V_4 = L_33;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:231>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:250>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = V_2;
 		float L_36;
 		L_36 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_34, L_35, NULL);
 		V_5 = L_36;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:231>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:250>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = V_3;
 		float L_39;
 		L_39 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_37, L_38, NULL);
 		V_6 = L_39;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:232>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:251>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = V_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
 		L_42 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_40, L_41, NULL);
 		V_7 = L_42;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:232>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:251>
 		float L_43;
 		L_43 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&V_7), NULL);
 		float L_44 = V_5;
@@ -8617,7 +8688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_Solve_m7A272DBA9
 		float L_49;
 		L_49 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_43, ((float)il2cpp_codegen_add(L_46, (9.99999975E-05f))), ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_47, L_48)), (9.99999975E-05f))), NULL);
 		V_8 = L_49;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:233>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:252>
 		float L_50;
 		L_50 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_7), NULL);
 		if ((((float)L_50) > ((float)(9.99999997E-07f))))
@@ -8647,7 +8718,7 @@ IL_00f6:
 IL_00fd:
 	{
 		V_9 = G_B3_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:233>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:252>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_9;
 		float L_58 = V_8;
@@ -8656,7 +8727,7 @@ IL_00fd:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_60;
 		L_60 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_56, L_59, NULL);
 		V_4 = L_60;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:234>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:253>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
@@ -8665,7 +8736,7 @@ IL_00fd:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_65;
 		L_65 = Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline(L_63, L_64, NULL);
 		V_10 = L_65;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:235>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:254>
 		float L_66;
 		L_66 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&V_10), NULL);
 		if ((!(((float)L_66) < ((float)(9.99999997E-07f)))))
@@ -8674,7 +8745,7 @@ IL_00fd:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:235>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:254>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
 		L_67 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_68 = V_9;
@@ -8685,7 +8756,7 @@ IL_00fd:
 
 IL_013c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:236>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:255>
 		float L_70 = V_5;
 		float L_71 = V_5;
 		float L_72 = V_6;
@@ -8694,7 +8765,7 @@ IL_013c:
 		float L_75 = V_8;
 		float L_76 = V_8;
 		V_11 = ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_70, L_71)), ((float)il2cpp_codegen_multiply(L_72, L_73)))), ((float)il2cpp_codegen_multiply(L_74, L_75))))/((float)il2cpp_codegen_multiply((2.0f), L_76))));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:237>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:256>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_9;
 		float L_79 = V_11;
@@ -8717,7 +8788,7 @@ IL_013c:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_90;
 		L_90 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_81, L_89, NULL);
 		V_12 = L_90;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:238>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:257>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_91 = ___0_leg;
 		NullCheck(L_91);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_92 = L_91->___hip;
@@ -8739,7 +8810,7 @@ IL_013c:
 		L_102 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_99, L_101, NULL);
 		NullCheck(L_92);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_92, L_102, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:239>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:258>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_103 = ___0_leg;
 		NullCheck(L_103);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_104 = L_103->___knee;
@@ -8761,7 +8832,7 @@ IL_013c:
 		L_114 = Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline(L_111, L_113, NULL);
 		NullCheck(L_104);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_104, L_114, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:240>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:259>
 		RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* L_115 = ___0_leg;
 		NullCheck(L_115);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_116 = L_115->___ankle;
@@ -8771,11 +8842,11 @@ IL_013c:
 		L_118 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_117, NULL);
 		NullCheck(L_116);
 		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_116, L_118, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:241>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:260>
 		return;
 	}
 }
-// Method Definition Index: 79762
+// Method Definition Index: 78945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_OnDisable_mA09859376572C808EF20B2678C27B977C375AEC0 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8800,7 +8871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_OnDisable_mA0985
 	int32_t G_B15_0 = 0;
 	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* G_B15_1 = NULL;
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:244>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:264>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___rig;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -8811,13 +8882,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator_OnDisable_mA0985
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:244>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:264>
 		LadybirdWalkingAnimator_Show_m64DE8704543234F1C469170CA96BD010C124E235(__this, (bool)0, NULL);
 	}
 
 IL_0015:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:245>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:265>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_2 = __this->___copies;
 		NullCheck(L_2);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_3;
@@ -8842,11 +8913,11 @@ FINALLY_0055:
 
 IL_0023_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:245>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:265>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_4;
 				L_4 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_0), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_1 = L_4;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:245>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:265>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_5 = V_1;
 				NullCheck(L_5);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_6 = L_5->___source;
@@ -8859,7 +8930,7 @@ IL_0023_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:245>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:265>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_8 = V_1;
 				NullCheck(L_8);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_9 = L_8->___source;
@@ -8872,7 +8943,7 @@ IL_0023_1:
 
 IL_004a_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:245>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:265>
 				bool L_12;
 				L_12 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_0), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_12)
@@ -8892,7 +8963,7 @@ IL_004a_1:
 
 IL_0063:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:246>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:266>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_13 = __this->___bodyCopies;
 		NullCheck(L_13);
 		Enumerator_t013F37DAFE0B66F2B3CDA19FA216702B0C4CF605 L_14;
@@ -8917,11 +8988,11 @@ FINALLY_00b9:
 
 IL_0071_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:246>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:266>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_15;
 				L_15 = Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_inline((&V_0), Enumerator_get_Current_m00521E0B97B678AED637DE869DFA1245CBD3CBF1_RuntimeMethod_var);
 				V_2 = L_15;
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:246>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:266>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_16 = V_2;
 				NullCheck(L_16);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_17 = L_16->___source;
@@ -8934,7 +9005,7 @@ IL_0071_1:
 				}
 			}
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:246>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:266>
 				Copy_t898E538A30119FC672C94808197E0A8533C87B9A* L_19 = V_2;
 				NullCheck(L_19);
 				MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_20 = L_19->___source;
@@ -8975,7 +9046,7 @@ IL_00a9_1:
 
 IL_00ae_1:
 			{
-				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:246>
+				//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:266>
 				bool L_27;
 				L_27 = Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923((&V_0), Enumerator_MoveNext_m59693BDBCF9361C2EF3349414643CB4004618923_RuntimeMethod_var);
 				if (L_27)
@@ -8995,7 +9066,7 @@ IL_00ae_1:
 
 IL_00c7:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:267>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___rig;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_29;
@@ -9006,7 +9077,7 @@ IL_00c7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:267>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		bool L_30;
 		L_30 = Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34(NULL);
@@ -9016,7 +9087,7 @@ IL_00c7:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:267>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___rig;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_31, NULL);
@@ -9025,7 +9096,7 @@ IL_00c7:
 
 IL_00e9:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:267>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = __this->___rig;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_DestroyImmediate_m6336EBC83591A5DB64EC70C92132824C6E258705(L_32, NULL);
@@ -9033,27 +9104,27 @@ IL_00e9:
 
 IL_00f4:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:268>
 		__this->___rig = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rig), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:268>
 		__this->___runtime = (RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___runtime), (void*)(RuntimeLegU5BU5D_tAA8A30A9233C05687552F43DB254602F94C90002*)NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:268>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_33 = __this->___copies;
 		NullCheck(L_33);
 		List_1_Clear_m1B93E2B8283F5E936269B721B31B4B869495D738_inline(L_33, List_1_Clear_m1B93E2B8283F5E936269B721B31B4B869495D738_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:268>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_34 = __this->___bodyCopies;
 		NullCheck(L_34);
 		List_1_Clear_m1B93E2B8283F5E936269B721B31B4B869495D738_inline(L_34, List_1_Clear_m1B93E2B8283F5E936269B721B31B4B869495D738_RuntimeMethod_var);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:268>
 		__this->___driving = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:249>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:269>
 		return;
 	}
 }
-// Method Definition Index: 79763
+// Method Definition Index: 78946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator__ctor_m78B18B2DD14E8D4539E500F17397EA317E071193 (LadybirdWalkingAnimator_t813851C43E20EE02C2CC71C0C78D85B4166C4AAA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9069,35 +9140,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator__ctor_m78B18B2DD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:20>
-		__this->___gaitFrequency = (2.0f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:21>
-		__this->___referenceSpeed = (0.349999994f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:22>
-		__this->___strideAmplitude = (0.0700000003f);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:23>
-		__this->___legLift = (0.0350000001f);
+		__this->___gaitFrequency = (2.0f);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:24>
-		__this->___transitionSmoothing = (0.180000007f);
+		__this->___referenceSpeed = (0.349999994f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:25>
+		__this->___strideAmplitude = (0.0700000003f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:26>
+		__this->___legLift = (0.0350000001f);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:27>
+		__this->___transitionSmoothing = (0.180000007f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:30>
 		__this->___gaitStatus = _stringLiteral67F92B3074C698F2665F4ABD311629F01811A5A3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gaitStatus), (void*)_stringLiteral67F92B3074C698F2665F4ABD311629F01811A5A3);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:37>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:40>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_0 = (List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537*)il2cpp_codegen_object_new(List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537_il2cpp_TypeInfo_var);
 		List_1__ctor_m014B49F0BF7021C93B8BDD25DBAA3F0ACCA477AA(L_0, List_1__ctor_m014B49F0BF7021C93B8BDD25DBAA3F0ACCA477AA_RuntimeMethod_var);
 		__this->___copies = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___copies), (void*)L_0);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:38>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:41>
 		List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537* L_1 = (List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537*)il2cpp_codegen_object_new(List_1_t162948A14D6F603AF061DDED502BF8A0E6BFB537_il2cpp_TypeInfo_var);
 		List_1__ctor_m014B49F0BF7021C93B8BDD25DBAA3F0ACCA477AA(L_1, List_1__ctor_m014B49F0BF7021C93B8BDD25DBAA3F0ACCA477AA_RuntimeMethod_var);
 		__this->___bodyCopies = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___bodyCopies), (void*)L_1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:39>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:42>
 		HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706* L_2 = (HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706*)il2cpp_codegen_object_new(HashSet_1_tA132432D5909587DEFE23E0E2FA3374B1C071706_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8(L_2, HashSet_1__ctor_mABF16662C6EA54EF1057F8F99110E9BD14CADDE8_RuntimeMethod_var);
 		__this->___suppressed = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___suppressed), (void*)L_2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:40>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdWalkingAnimator.cs:43>
 		Dictionary_2_tDE87BD94907AE5F7874D334EB40E0876B04FBFFF* L_3 = (Dictionary_2_tDE87BD94907AE5F7874D334EB40E0876B04FBFFF*)il2cpp_codegen_object_new(Dictionary_2_tDE87BD94907AE5F7874D334EB40E0876B04FBFFF_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m626F0DC8F874C2FF118E820CF7544B58FDB984FC(L_3, Dictionary_2__ctor_m626F0DC8F874C2FF118E820CF7544B58FDB984FC_RuntimeMethod_var);
 		__this->___suppressedStates = L_3;
@@ -9114,7 +9185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LadybirdWalkingAnimator__ctor_m78B18B2DD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79764
+// Method Definition Index: 78947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LegBinding__ctor_m8DB2084E16CE9D7C05A505E42FB383A521C02B4B (LegBinding_tF49412DA887543142C0F5B35708608E9543E83E1* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9131,7 +9202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LegBinding__ctor_m8DB2084E16CE9D7C05A505
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79765
+// Method Definition Index: 78948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeLeg__ctor_mD8B32B6BFD876964B91B6584B229F6DCF4A01F06 (RuntimeLeg_t3C2366A89EFC5860C1882A3057CF1433E864EAE1* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9148,7 +9219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeLeg__ctor_mD8B32B6BFD876964B91B65
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79766
+// Method Definition Index: 78949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Copy__ctor_mDFF10D49641DB3B050F824703D8BED885B8BE8DE (Copy_t898E538A30119FC672C94808197E0A8533C87B9A* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9165,7 +9236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Copy__ctor_mDFF10D49641DB3B050F824703D8B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79767
+// Method Definition Index: 78950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Prototype2bEditorMovementTest__ctor_m28F56C206BAC0E3B9D4EBD278EDA4A316446B059 (Prototype2bEditorMovementTest_t621EE305300BACB3BA93F8815ABB5492DEB98E86* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9182,7 +9253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Prototype2bEditorMovementTest__ctor_m28F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79768
+// Method Definition Index: 78951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_LastInteractionAccepted_m9B8DB0617491E9276A3781AB4A88AB8C6535A98D (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9191,7 +9262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_LastInteractionAccep
 		return L_0;
 	}
 }
-// Method Definition Index: 79769
+// Method Definition Index: 78952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9201,7 +9272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_set_LastInteractionAccep
 		return;
 	}
 }
-// Method Definition Index: 79770
+// Method Definition Index: 78953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_MovementInteractionLocked_m0AF0223CFC53BA9534EADFCD857EA44DF196C966 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9210,7 +9281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_MovementInteractionL
 		return L_0;
 	}
 }
-// Method Definition Index: 79771
+// Method Definition Index: 78954
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_set_MovementInteractionLocked_m9233A79DD4229FE9B2CEC0DC6DB9DA7B6BB572E0 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9220,7 +9291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_set_MovementInteractionL
 		return;
 	}
 }
-// Method Definition Index: 79772
+// Method Definition Index: 78955
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_IsOpen_m8DCEB262BD6C5C5CBAC33A315569BF3805A4607D (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9229,7 +9300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_IsOpen_m8DCEB262BD6C
 		return L_0;
 	}
 }
-// Method Definition Index: 79773
+// Method Definition Index: 78956
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_IsAnimating_mBB0FECA1A9397DE46B670BF798B5906DB221C857 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9238,11 +9309,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WingInteraction_get_IsAnimating_mBB0FECA
 		return L_0;
 	}
 }
-// Method Definition Index: 79774
+// Method Definition Index: 78957
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_OpenWings_m9D5A39B5959136D3CD915BB8E45F98F8FA8866F2 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:102>
 		bool L_0;
 		L_0 = WingInteraction_get_MovementInteractionLocked_m0AF0223CFC53BA9534EADFCD857EA44DF196C966_inline(__this, NULL);
 		if (!L_0)
@@ -9251,15 +9322,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_OpenWings_m9D5A39B595913
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:102>
 		WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline(__this, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:102>
 		return;
 	}
 
 IL_0010:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:102>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:103>
 		bool L_1 = __this->___isAnimating;
 		if (!L_1)
 		{
@@ -9267,13 +9338,13 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:104>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:105>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:107>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:108>
 		bool L_2 = __this->___isOpen;
 		if (!L_2)
 		{
@@ -9281,34 +9352,34 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:109>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:110>
 		return;
 	}
 
 IL_0022:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:113>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:114>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:115>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:116>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:117>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:118>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:119>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:120>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->___leftOpenEuler;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->___rightOpenEuler;
 		RuntimeObject* L_5;
 		L_5 = WingInteraction_AnimateWings_mE4C79FFBDF8C3B95B589F8404220EC3441656BFA(__this, L_3, L_4, (bool)1, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6;
 		L_6 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_5, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:120>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:121>
 		return;
 	}
 }
-// Method Definition Index: 79775
+// Method Definition Index: 78958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_CloseWings_mCF59E4562801DBCE629E380FD19F62D7D3A00A59 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:130>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:132>
 		bool L_0 = __this->___isAnimating;
 		if (!L_0)
 		{
@@ -9316,13 +9387,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_CloseWings_mCF59E4562801
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:132>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:134>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:135>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:137>
 		bool L_1 = __this->___isOpen;
 		if (L_1)
 		{
@@ -9330,30 +9401,30 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:137>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:139>
 		return;
 	}
 
 IL_0012:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:141>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:142>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:143>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:144>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:145>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:146>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:147>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:148>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:149>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___leftClosedEuler;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->___rightClosedEuler;
 		RuntimeObject* L_4;
 		L_4 = WingInteraction_AnimateWings_mE4C79FFBDF8C3B95B589F8404220EC3441656BFA(__this, L_2, L_3, (bool)0, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
 		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:148>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:150>
 		return;
 	}
 }
-// Method Definition Index: 79776
+// Method Definition Index: 78959
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_FlapWings_mF262D49021377CAC8E52E7AC0265FAE7ED030381 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9363,7 +9434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_FlapWings_mF262D49021377
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:158>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:161>
 		bool L_0;
 		L_0 = WingInteraction_get_MovementInteractionLocked_m0AF0223CFC53BA9534EADFCD857EA44DF196C966_inline(__this, NULL);
 		if (!L_0)
@@ -9372,17 +9443,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction_FlapWings_mF262D49021377
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:158>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:161>
 		WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline(__this, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:158>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:161>
 		return;
 	}
 
 IL_0010:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:159>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:162>
 		WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline(__this, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:164>
 		bool L_1 = __this->___isOpen;
 		if (L_1)
 		{
@@ -9390,13 +9461,13 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:163>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:166>
 		return;
 	}
 
 IL_0020:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:168>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:171>
 		bool L_2 = __this->___isAnimating;
 		if (!L_2)
 		{
@@ -9404,15 +9475,15 @@ IL_0020:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:170>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:173>
 		return;
 	}
 
 IL_0029:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:174>
-		WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline(__this, (bool)1, NULL);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:177>
+		WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline(__this, (bool)1, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:180>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_3 = __this->___sfxManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -9423,7 +9494,7 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:179>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:182>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_5 = __this->___sfxManager;
 		NullCheck(L_5);
 		SFXManager_PlayWingFlap_m6CBC390118071489AA397B8EC7787BB99A384303(L_5, NULL);
@@ -9431,18 +9502,18 @@ IL_0029:
 
 IL_0049:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:183>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:184>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:185>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:186>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:187>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:188>
 		RuntimeObject* L_6;
 		L_6 = WingInteraction_FlapRoutine_m65CE02E80F3084E7848253548390325BDD76E843(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7;
 		L_7 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_6, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:186>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:189>
 		return;
 	}
 }
-// Method Definition Index: 79777
+// Method Definition Index: 78960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WingInteraction_AnimateWings_mE4C79FFBDF8C3B95B589F8404220EC3441656BFA (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_leftTargetEuler, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rightTargetEuler, bool ___2_opening, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9474,7 +9545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WingInteraction_AnimateWings_m
 		return L_6;
 	}
 }
-// Method Definition Index: 79778
+// Method Definition Index: 78961
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WingInteraction_FlapRoutine_m65CE02E80F3084E7848253548390325BDD76E843 (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9494,7 +9565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WingInteraction_FlapRoutine_m6
 		return L_1;
 	}
 }
-// Method Definition Index: 79779
+// Method Definition Index: 78962
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction__ctor_m64E68C24A87A792F3F51DEB24452DAA3D5DFC73A (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9548,7 +9619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WingInteraction__ctor_m64E68C24A87A792F3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79780
+// Method Definition Index: 78963
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31__ctor_m3A40D228D1F56F8BCF0BC4EA9F01EEB24F1878D4 (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9559,7 +9630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31__ctor_m3A40D228D
 		return;
 	}
 }
-// Method Definition Index: 79781
+// Method Definition Index: 78964
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31_System_IDisposable_Dispose_m945D1BF56070BDCFFA8A6AD2FAEA234B7C6AB36F (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9567,7 +9638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31_System_IDisposab
 		return;
 	}
 }
-// Method Definition Index: 79782
+// Method Definition Index: 78965
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateWingsU3Ed__31_MoveNext_m5739F8C9EF84CCCBC6CA971CC702F7C15680F566 (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -9598,12 +9669,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAnimateWingsU3Ed__31_MoveNext_m5739F8
 IL_001a:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:199>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:203>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___isAnimating = (bool)1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:202>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:203>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:206>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:207>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_5 = V_1;
 		NullCheck(L_5);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = L_5->___leftWingPivot;
@@ -9611,8 +9682,8 @@ IL_001a:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
 		L_7 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_6, NULL);
 		__this->___U3CleftStartU3E5__2 = L_7;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:205>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:206>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:209>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:210>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_8 = V_1;
 		NullCheck(L_8);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = L_8->___rightWingPivot;
@@ -9620,38 +9691,38 @@ IL_001a:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_10;
 		L_10 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_9, NULL);
 		__this->___U3CrightStartU3E5__3 = L_10;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:209>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:210>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:211>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:212>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:213>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:214>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:215>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:216>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = __this->___leftTargetEuler;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12;
 		L_12 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_11, NULL);
 		__this->___U3CleftTargetU3E5__4 = L_12;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:214>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:215>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:216>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:217>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:218>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:219>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:220>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:221>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = __this->___rightTargetEuler;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_14;
 		L_14 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_13, NULL);
 		__this->___U3CrightTargetU3E5__5 = L_14;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:220>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:224>
 		__this->___U3CtimeU3E5__6 = (0.0f);
 		goto IL_0103;
 	}
 
 IL_007c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:225>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:229>
 		float L_15 = __this->___U3CtimeU3E5__6;
 		float L_16;
 		L_16 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___U3CtimeU3E5__6 = ((float)il2cpp_codegen_add(L_15, L_16));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:228>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:229>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:230>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:231>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:232>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:233>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:234>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:235>
 		float L_17 = __this->___U3CtimeU3E5__6;
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_18 = V_1;
 		NullCheck(L_18);
@@ -9659,22 +9730,22 @@ IL_007c:
 		float L_20;
 		L_20 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_17/L_19)), NULL);
 		V_2 = L_20;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:234>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:235>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:236>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:237>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:238>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:239>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:240>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:241>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:242>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:243>
 		float L_21 = V_2;
 		float L_22;
 		L_22 = Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline((0.0f), (1.0f), L_21, NULL);
 		V_2 = L_22;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:242>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:243>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:244>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:245>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:246>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:247>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:248>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:249>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:250>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:251>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_23 = V_1;
 		NullCheck(L_23);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = L_23->___leftWingPivot;
@@ -9685,12 +9756,12 @@ IL_007c:
 		L_28 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15_inline(L_25, L_26, L_27, NULL);
 		NullCheck(L_24);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_24, L_28, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:250>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:251>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:252>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:253>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:254>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:255>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:256>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:257>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:258>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:259>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_29 = V_1;
 		NullCheck(L_29);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30 = L_29->___rightWingPivot;
@@ -9701,7 +9772,7 @@ IL_007c:
 		L_34 = Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15_inline(L_31, L_32, L_33, NULL);
 		NullCheck(L_30);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_30, L_34, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:258>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:262>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -9715,7 +9786,7 @@ IL_00fc:
 
 IL_0103:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:223>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:227>
 		float L_35 = __this->___U3CtimeU3E5__6;
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_36 = V_1;
 		NullCheck(L_36);
@@ -9726,36 +9797,36 @@ IL_0103:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:262>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:263>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:266>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:267>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_38 = V_1;
 		NullCheck(L_38);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_39 = L_38->___leftWingPivot;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_40 = __this->___U3CleftTargetU3E5__4;
 		NullCheck(L_39);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_39, L_40, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:265>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:266>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:269>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:270>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_41 = V_1;
 		NullCheck(L_41);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42 = L_41->___rightWingPivot;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_43 = __this->___U3CrightTargetU3E5__5;
 		NullCheck(L_42);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_42, L_43, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:269>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:273>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_44 = V_1;
 		bool L_45 = __this->___opening;
 		NullCheck(L_44);
 		L_44->___isOpen = L_45;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:271>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:275>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_46 = V_1;
 		NullCheck(L_46);
 		L_46->___isAnimating = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:272>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:276>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79783
+// Method Definition Index: 78966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateWingsU3Ed__31_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC296B74C80EC2572BA7E75F04B3890542B853F39 (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9764,7 +9835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateWingsU3Ed__31_System
 		return L_0;
 	}
 }
-// Method Definition Index: 79784
+// Method Definition Index: 78967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31_System_Collections_IEnumerator_Reset_m183921F334A57A2E1F45087E48E30BBD1B72A157 (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9774,7 +9845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateWingsU3Ed__31_System_Collectio
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAnimateWingsU3Ed__31_System_Collections_IEnumerator_Reset_m183921F334A57A2E1F45087E48E30BBD1B72A157_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79785
+// Method Definition Index: 78968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateWingsU3Ed__31_System_Collections_IEnumerator_get_Current_m01CE8875D32676F6476828660C5C70FB2EA8EEB0 (U3CAnimateWingsU3Ed__31_t1B59F5904946710978D938DD7A2B76E6C79BC7F5* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9791,7 +9862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateWingsU3Ed__31_System
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79786
+// Method Definition Index: 78969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32__ctor_mF1CEF3E79D5655835ACB9E96DD78F806004E0733 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9802,7 +9873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32__ctor_mF1CEF3E79D
 		return;
 	}
 }
-// Method Definition Index: 79787
+// Method Definition Index: 78970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32_System_IDisposable_Dispose_m97C3D64F74E2E34E561D69494264DA19E7D28996 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9810,7 +9881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32_System_IDisposabl
 		return;
 	}
 }
-// Method Definition Index: 79788
+// Method Definition Index: 78971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFlapRoutineU3Ed__32_MoveNext_m919AF9C950F4F542A3D28AF0FE80C9488EC965A3 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -9845,12 +9916,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFlapRoutineU3Ed__32_MoveNext_m919AF9C
 IL_001a:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:282>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:287>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___isAnimating = (bool)1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:285>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:286>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:290>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:291>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_5 = V_1;
 		NullCheck(L_5);
 		float L_6 = L_5->___leftFlapMinZ;
@@ -9858,8 +9929,8 @@ IL_001a:
 		NullCheck(L_7);
 		float L_8 = L_7->___leftFlapMaxZ;
 		__this->___U3CleftCenterZU3E5__2 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_6, L_8)), (0.5f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:288>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:289>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:293>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:294>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_9 = V_1;
 		NullCheck(L_9);
 		float L_10 = L_9->___leftFlapMaxZ;
@@ -9867,8 +9938,8 @@ IL_001a:
 		NullCheck(L_11);
 		float L_12 = L_11->___leftFlapMinZ;
 		__this->___U3CleftAmplitudeU3E5__3 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_10, L_12)), (0.5f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:292>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:293>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:297>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:298>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_13 = V_1;
 		NullCheck(L_13);
 		float L_14 = L_13->___rightFlapMinZ;
@@ -9876,8 +9947,8 @@ IL_001a:
 		NullCheck(L_15);
 		float L_16 = L_15->___rightFlapMaxZ;
 		__this->___U3CrightCenterZU3E5__4 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_14, L_16)), (0.5f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:295>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:296>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:300>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:301>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_17 = V_1;
 		NullCheck(L_17);
 		float L_18 = L_17->___rightFlapMaxZ;
@@ -9885,22 +9956,22 @@ IL_001a:
 		NullCheck(L_19);
 		float L_20 = L_19->___rightFlapMinZ;
 		__this->___U3CrightAmplitudeU3E5__5 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_18, L_20)), (0.5f)));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:299>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:304>
 		__this->___U3CtimeU3E5__6 = (0.0f);
 		goto IL_0136;
 	}
 
 IL_009c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:304>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:309>
 		float L_21 = __this->___U3CtimeU3E5__6;
 		float L_22;
 		L_22 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___U3CtimeU3E5__6 = ((float)il2cpp_codegen_add(L_21, L_22));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:307>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:308>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:309>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:310>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:312>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:313>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:314>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:315>
 		float L_23 = __this->___U3CtimeU3E5__6;
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_24 = V_1;
 		NullCheck(L_24);
@@ -9908,36 +9979,36 @@ IL_009c:
 		float L_26;
 		L_26 = sinf(((float)il2cpp_codegen_multiply(L_23, L_25)));
 		V_2 = L_26;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:313>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:314>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:318>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:319>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_27 = V_1;
 		NullCheck(L_27);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = L_27->___leftOpenEuler;
 		V_3 = L_28;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:316>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:317>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:321>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:322>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_29 = V_1;
 		NullCheck(L_29);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = L_29->___rightOpenEuler;
 		V_4 = L_30;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:320>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:321>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:322>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:325>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:326>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:327>
 		float L_31 = __this->___U3CleftCenterZU3E5__2;
 		float L_32 = V_2;
 		float L_33 = __this->___U3CleftAmplitudeU3E5__3;
 		(&V_3)->___z = ((float)il2cpp_codegen_add(L_31, ((float)il2cpp_codegen_multiply(L_32, L_33))));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:325>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:326>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:327>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:330>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:331>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:332>
 		float L_34 = __this->___U3CrightCenterZU3E5__4;
 		float L_35 = V_2;
 		float L_36 = __this->___U3CrightAmplitudeU3E5__5;
 		(&V_4)->___z = ((float)il2cpp_codegen_subtract(L_34, ((float)il2cpp_codegen_multiply(L_35, L_36))));
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:330>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:331>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:332>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:333>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:335>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:336>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:337>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:338>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_37 = V_1;
 		NullCheck(L_37);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38 = L_37->___leftWingPivot;
@@ -9946,10 +10017,10 @@ IL_009c:
 		L_40 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_39, NULL);
 		NullCheck(L_38);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_38, L_40, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:336>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:337>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:338>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:339>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:341>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:342>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:343>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:344>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_41 = V_1;
 		NullCheck(L_41);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_42 = L_41->___rightWingPivot;
@@ -9958,7 +10029,7 @@ IL_009c:
 		L_44 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_43, NULL);
 		NullCheck(L_42);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_42, L_44, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:342>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:347>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -9972,7 +10043,7 @@ IL_012f:
 
 IL_0136:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:302>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:307>
 		float L_45 = __this->___U3CtimeU3E5__6;
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_46 = V_1;
 		NullCheck(L_46);
@@ -9983,10 +10054,10 @@ IL_0136:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:347>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:348>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:349>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:350>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:352>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:353>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:354>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:355>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_48 = V_1;
 		NullCheck(L_48);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49 = L_48->___leftWingPivot;
@@ -9997,10 +10068,10 @@ IL_0136:
 		L_52 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_51, NULL);
 		NullCheck(L_49);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_49, L_52, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:352>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:353>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:354>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:355>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:357>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:358>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:359>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:360>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_53 = V_1;
 		NullCheck(L_53);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_54 = L_53->___rightWingPivot;
@@ -10011,15 +10082,15 @@ IL_0136:
 		L_57 = Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline(L_56, NULL);
 		NullCheck(L_54);
 		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_54, L_57, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:358>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:363>
 		WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* L_58 = V_1;
 		NullCheck(L_58);
 		L_58->___isAnimating = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:359>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/WingInteraction.cs:364>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79789
+// Method Definition Index: 78972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapRoutineU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCA5793CF15346BDA5FD747F48C7AFAC4C20AEFC2 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10028,7 +10099,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapRoutineU3Ed__32_System_
 		return L_0;
 	}
 }
-// Method Definition Index: 79790
+// Method Definition Index: 78973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32_System_Collections_IEnumerator_Reset_m91CAF72ECFEC251320E8607A1596F3F067CCB779 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10038,7 +10109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFlapRoutineU3Ed__32_System_Collection
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFlapRoutineU3Ed__32_System_Collections_IEnumerator_Reset_m91CAF72ECFEC251320E8607A1596F3F067CCB779_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79791
+// Method Definition Index: 78974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapRoutineU3Ed__32_System_Collections_IEnumerator_get_Current_m9466E96FDCDB34513679AA754FEE8012BB177159 (U3CFlapRoutineU3Ed__32_t2AEBF5D95807709727362B3CE72CD076756C59B6* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10055,25 +10126,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFlapRoutineU3Ed__32_System_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79792
+// Method Definition Index: 78975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HoverScaleFeedback_get_InsectDisplayName_mC286D0DF99332738B1FA565AAD4B5419BA174FCA (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:40>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:41>
 		String_t* L_0 = __this->___insectDisplayName;
 		return L_0;
 	}
 }
-// Method Definition Index: 79793
+// Method Definition Index: 78976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HoverScaleFeedback_get_AvailableInPrototype_mA4ED4E43914ACF7FDAD4A4387FB56D4BC23DF891 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:50>
 		bool L_0 = __this->___availableInPrototype;
 		return L_0;
 	}
 }
-// Method Definition Index: 79794
+// Method Definition Index: 78977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_Start_mCD2A902B71C28F2BED69CCB314F01662A9588F51 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10090,21 +10161,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_Start_mCD2A902B71C28F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:61>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:62>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_0, NULL);
 		__this->___originalScale = L_1;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:65>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:66>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:67>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* L_2;
 		L_2 = Object_FindFirstObjectByType_TisInsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE_m2C59B5E438C538DF0BE9804CA2FAD15CE22CBB31(Object_FindFirstObjectByType_TisInsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE_m2C59B5E438C538DF0BE9804CA2FAD15CE22CBB31_RuntimeMethod_var);
 		__this->___selectionManager = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectionManager), (void*)L_2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:69>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:70>
 		InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* L_3 = __this->___selectionManager;
 		bool L_4;
 		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -10114,23 +10185,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_Start_mCD2A902B71C28F
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:71>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:72>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:74>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteralC97AF066E10D9EA88567E8D52D5738CAB05378C9, NULL);
 	}
 
 IL_0034:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:78>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:80>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_5;
 		L_5 = Object_FindFirstObjectByType_TisSFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_mBA9F6AF0FD19CE9D15D30FDD32695BE5DD4CA31A(Object_FindFirstObjectByType_TisSFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E_mBA9F6AF0FD19CE9D15D30FDD32695BE5DD4CA31A_RuntimeMethod_var);
 		__this->___sfxManager = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___sfxManager), (void*)L_5);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:82>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:83>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_6 = __this->___sfxManager;
 		bool L_7;
 		L_7 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -10140,23 +10211,23 @@ IL_0034:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:84>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:85>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:86>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:87>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral5FC9940D8C7F244C0B46D099D44D25F652EE2FFA, NULL);
 	}
 
 IL_0057:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:91>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:92>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:93>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		NarrationManager_t67953F780AA8940EE7F496532327D3669505F271* L_8;
 		L_8 = Object_FindFirstObjectByType_TisNarrationManager_t67953F780AA8940EE7F496532327D3669505F271_mB74DA4685A3AAA7D36C5A8837114709D9AEA3754(Object_FindFirstObjectByType_TisNarrationManager_t67953F780AA8940EE7F496532327D3669505F271_mB74DA4685A3AAA7D36C5A8837114709D9AEA3754_RuntimeMethod_var);
 		__this->___narrationManager = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___narrationManager), (void*)L_8);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:96>
 		NarrationManager_t67953F780AA8940EE7F496532327D3669505F271* L_9 = __this->___narrationManager;
 		bool L_10;
 		L_10 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -10166,20 +10237,20 @@ IL_0057:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:97>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:98>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:99>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:100>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral2B305299F622849D48E224B47FAD23A15D3267C5, NULL);
 	}
 
 IL_007a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:101>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:102>
 		return;
 	}
 }
-// Method Definition Index: 79795
+// Method Definition Index: 78978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnHoverEntered_m59116ED53261694D4B1011AD503B34C8791FCEF5 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10189,7 +10260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnHoverEntered_m59116
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:113>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:114>
 		bool L_0 = __this->___isSelected;
 		if (!L_0)
 		{
@@ -10197,13 +10268,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnHoverEntered_m59116
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:115>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:116>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:120>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:121>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_1 = __this->___sfxManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -10214,7 +10285,7 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:122>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:123>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_3 = __this->___sfxManager;
 		NullCheck(L_3);
 		SFXManager_PlaySelectionHover_m07AE348F6F823A825B526C0CA356763AB372793C(L_3, NULL);
@@ -10222,8 +10293,8 @@ IL_0009:
 
 IL_0022:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:126>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:127>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:128>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->___originalScale;
@@ -10232,15 +10303,15 @@ IL_0022:
 		L_7 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_5, L_6, NULL);
 		NullCheck(L_4);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_4, L_7, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:128>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:129>
 		return;
 	}
 }
-// Method Definition Index: 79796
+// Method Definition Index: 78979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnHoverExited_m127FCCBBA3FA14B5E3063053125BF634D8B031F8 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:138>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:139>
 		bool L_0 = __this->___isSelected;
 		if (!L_0)
 		{
@@ -10248,24 +10319,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnHoverExited_m127FCC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:140>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:141>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:144>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:145>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:146>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___originalScale;
 		NullCheck(L_1);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_1, L_2, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:146>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:147>
 		return;
 	}
 }
-// Method Definition Index: 79797
+// Method Definition Index: 78980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnSelected_mA7ED43ACA2C4501F474E71B924FF242585546559 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10277,7 +10348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnSelected_mA7ED43ACA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:155>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:157>
 		InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* L_0 = __this->___selectionManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10288,18 +10359,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_OnSelected_mA7ED43ACA
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:157>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:158>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:159>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:160>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:161>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral58F564AAE6DCDEB100CA04FA231280FF52DBBA65, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:161>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:163>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:169>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:171>
 		bool L_2 = __this->___availableInPrototype;
 		if (!L_2)
 		{
@@ -10307,7 +10378,7 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:172>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:174>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_3 = __this->___sfxManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -10318,7 +10389,7 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:174>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:176>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_5 = __this->___sfxManager;
 		NullCheck(L_5);
 		SFXManager_PlaySelectionSelect_mD751F2E6B81C79EF64094900DC3E8EDABA10F91F(L_5, NULL);
@@ -10327,7 +10398,7 @@ IL_0019:
 
 IL_003c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:186>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:188>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_6 = __this->___sfxManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -10338,7 +10409,7 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:188>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:190>
 		SFXManager_tAF63690A185E44F2801326FED0FD58F790B89C4E* L_8 = __this->___sfxManager;
 		NullCheck(L_8);
 		SFXManager_PlaySelectionUnavailable_mB22060D7C31A4E07D9F7A3E0AAE3E3D34DFA23F5(L_8, NULL);
@@ -10346,7 +10417,7 @@ IL_003c:
 
 IL_0055:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:193>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:195>
 		NarrationManager_t67953F780AA8940EE7F496532327D3669505F271* L_9 = __this->___narrationManager;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_10;
@@ -10357,7 +10428,7 @@ IL_0055:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:195>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:197>
 		NarrationManager_t67953F780AA8940EE7F496532327D3669505F271* L_11 = __this->___narrationManager;
 		NullCheck(L_11);
 		NarrationManager_PlayComingSoonNarration_mBC9E9A1DBAD581739EC3A74FE46451DC104316A8(L_11, NULL);
@@ -10365,22 +10436,22 @@ IL_0055:
 
 IL_006e:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:208>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:210>
 		InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* L_12 = __this->___selectionManager;
 		NullCheck(L_12);
 		InsectSelectionManager_SelectInsect_m1079E5F9DF0EBF24BBCF90ECA4210A93A52C1232(L_12, __this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:209>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:211>
 		return;
 	}
 }
-// Method Definition Index: 79798
+// Method Definition Index: 78981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_SetSelected_mCC3811FBCBA1101856A54679510F171595755CB5 (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, bool ___0_selected, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:218>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:220>
 		bool L_0 = ___0_selected;
 		__this->___isSelected = L_0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:221>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:223>
 		bool L_1 = __this->___isSelected;
 		if (!L_1)
 		{
@@ -10388,8 +10459,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_SetSelected_mCC3811FB
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:223>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:224>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:225>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:226>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->___originalScale;
@@ -10403,41 +10474,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_SetSelected_mCC3811FB
 
 IL_002c:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:228>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:229>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:230>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:231>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
 		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->___originalScale;
 		NullCheck(L_6);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_6, L_7, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:231>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:233>
 		return;
 	}
 }
-// Method Definition Index: 79799
+// Method Definition Index: 78982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback_ResetSelection_m2A0B733F4797AF9EF2FE8026660F19B7BF09554A (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:240>
-		__this->___isSelected = (bool)0;
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:242>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:243>
+		__this->___isSelected = (bool)0;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:245>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:246>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___originalScale;
 		NullCheck(L_0);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_0, L_1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:244>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:247>
 		return;
 	}
 }
-// Method Definition Index: 79800
+// Method Definition Index: 78983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback__ctor_mE90818661A23274E6B758CB87D4D309DF737D39B (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:15>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:16>
 		__this->___hoverScaleMultiplier = (1.25f);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:18>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:19>
 		__this->___selectedScaleMultiplier = (1.5f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -10451,7 +10522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverScaleFeedback__ctor_mE90818661A2327
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79801
+// Method Definition Index: 78984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_SelectInsect_m1079E5F9DF0EBF24BBCF90ECA4210A93A52C1232 (InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* __this, HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* ___0_insect, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10464,7 +10535,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_SelectInsect_m107
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:18>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:19>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_0 = ___0_insect;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10475,14 +10546,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_SelectInsect_m107
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:20>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:21>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:25>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:26>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:27>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_2 = __this->___currentSelection;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -10504,7 +10575,7 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:28>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:29>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_7 = __this->___currentSelection;
 		NullCheck(L_7);
 		HoverScaleFeedback_SetSelected_mCC3811FBCBA1101856A54679510F171595755CB5(L_7, (bool)0, NULL);
@@ -10512,18 +10583,18 @@ IL_000a:
 
 IL_0032:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:32>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:33>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_8 = ___0_insect;
 		__this->___currentSelection = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentSelection), (void*)L_8);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:35>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:36>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_9 = __this->___currentSelection;
 		NullCheck(L_9);
 		HoverScaleFeedback_SetSelected_mCC3811FBCBA1101856A54679510F171595755CB5(L_9, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:38>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:39>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:40>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:41>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:42>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_10 = __this->___currentSelection;
 		NullCheck(L_10);
 		String_t* L_11;
@@ -10532,7 +10603,7 @@ IL_0032:
 		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE64809049A2ECBCE5FDAAED8812F4954BDD41424, L_11, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_12, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:45>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:46>
 		SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* L_13 = __this->___selectionUI;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_14;
@@ -10543,10 +10614,10 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:47>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:48>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:49>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:50>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:51>
 		SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* L_15 = __this->___selectionUI;
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_16 = __this->___currentSelection;
 		NullCheck(L_16);
@@ -10563,16 +10634,16 @@ IL_0032:
 
 IL_008f:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:54>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:55>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:56>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:57>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteralEBF3B03FF96108B20FF8514BADF4E2D9CCBD80E1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:58>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:59>
 		return;
 	}
 }
-// Method Definition Index: 79802
+// Method Definition Index: 78985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_ClearSelection_mFFAA8A56D00B224D97214A906B6AA39A40623A74 (InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10582,7 +10653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_ClearSelection_mF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:67>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:69>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_0 = __this->___currentSelection;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10593,18 +10664,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager_ClearSelection_mF
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:69>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:71>
 		HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* L_2 = __this->___currentSelection;
 		NullCheck(L_2);
 		HoverScaleFeedback_SetSelected_mCC3811FBCBA1101856A54679510F171595755CB5(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:71>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:73>
 		__this->___currentSelection = (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentSelection), (void*)(HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140*)NULL);
 	}
 
 IL_0021:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:75>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:77>
 		SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* L_3 = __this->___selectionUI;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -10615,7 +10686,7 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:77>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:79>
 		SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* L_5 = __this->___selectionUI;
 		NullCheck(L_5);
 		SelectionUIController_ClearSelection_m84B1645C56D1EFE275B589F3FE96C5B15F131E6B(L_5, NULL);
@@ -10623,11 +10694,11 @@ IL_0021:
 
 IL_003a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:79>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/InsectSelectionManager.cs:81>
 		return;
 	}
 }
-// Method Definition Index: 79803
+// Method Definition Index: 78986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager__ctor_m9CAA0777C1A8F2CAE15C065CCA1E840A55BB802C (InsectSelectionManager_t1D37A7E4D8EED8D647383810424D282054C5BDAE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10644,7 +10715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectSelectionManager__ctor_m9CAA0777C1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79804
+// Method Definition Index: 78987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_OnEnable_m6CB19D65553EDC925E2D67CB1B26541F98B26D77 (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10654,7 +10725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_OnEnable_m6CB19D65553E
 		return;
 	}
 }
-// Method Definition Index: 79805
+// Method Definition Index: 78988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkAntennaExplored_m2D07EF9B2CE887792CD1573908AEDC5EE9902BE4 (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10666,7 +10737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkAntennaExplored_m2
 		return;
 	}
 }
-// Method Definition Index: 79806
+// Method Definition Index: 78989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkElytraExplored_mACF29D9D612188920068AF28A2F4E9C82CD07C89 (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10678,7 +10749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkElytraExplored_mAC
 		return;
 	}
 }
-// Method Definition Index: 79807
+// Method Definition Index: 78990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkWingExplored_m99259862BFF436C0442C16BB52FA82B9D04CC86F (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10690,7 +10761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_MarkWingExplored_m9925
 		return;
 	}
 }
-// Method Definition Index: 79808
+// Method Definition Index: 78991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_ResetGuidance_m97F8850F45D1FB82E63CE627F0AA6144BD9F311F (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10706,7 +10777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_ResetGuidance_m97F8850
 		return;
 	}
 }
-// Method Definition Index: 79809
+// Method Definition Index: 78992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI_UpdateGuidance_m4D93C4FECE941389DAA12143D518E46504F67B4B (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10803,7 +10874,7 @@ IL_005a:
 		return;
 	}
 }
-// Method Definition Index: 79810
+// Method Definition Index: 78993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI__ctor_m3248411695FCE23BF47BE8BDD8DB24233CEE754B (ExploreGuidanceUI_t5ED4C8E08F52834E563CBA1583A1126D153FAB27* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10820,7 +10891,613 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExploreGuidanceUI__ctor_m3248411695FCE23
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79811
+// Method Definition Index: 78994
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FoodSearchProgressView_OnEnable_m87EA98B6B0E928DA6A4DA4E72F0BFD2B4BD2932E (FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:19>
+		int32_t L_0 = (-1);
+		V_0 = L_0;
+		__this->___previousRequired = L_0;
+		int32_t L_1 = V_0;
+		__this->___previousCount = L_1;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:19>
+		FoodSearchProgressView_Refresh_m0AD11C9FE76FDED73A3B825C5172CA385D27DA56(__this, (0.0f), (bool)1, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:19>
+		return;
+	}
+}
+// Method Definition Index: 78995
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FoodSearchProgressView_LateUpdate_m3D9F6B2B7C489A573572A71620ED116F29726582 (FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B5_0 = 0;
+	int32_t G_B7_0 = 0;
+	int32_t G_B6_0 = 0;
+	int32_t G_B8_0 = 0;
+	int32_t G_B8_1 = 0;
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:22>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_0 = __this->___activity;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:22>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:23>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_2 = __this->___activity;
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = L_2->___searchPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_5 = __this->___activity;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = L_5->___searchPanel;
+		NullCheck(L_6);
+		bool L_7;
+		L_7 = GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109(L_6, NULL);
+		G_B5_0 = ((int32_t)(L_7));
+		goto IL_0035;
+	}
+
+IL_0034:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_0035:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:24>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_8 = __this->___activity;
+		NullCheck(L_8);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___completionPanel;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_10;
+		L_10 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_9, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_10)
+		{
+			G_B7_0 = G_B5_0;
+			goto IL_005a;
+		}
+		G_B6_0 = G_B5_0;
+	}
+	{
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_11 = __this->___activity;
+		NullCheck(L_11);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = L_11->___completionPanel;
+		NullCheck(L_12);
+		bool L_13;
+		L_13 = GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109(L_12, NULL);
+		G_B8_0 = ((int32_t)(L_13));
+		G_B8_1 = G_B6_0;
+		goto IL_005b;
+	}
+
+IL_005a:
+	{
+		G_B8_0 = 0;
+		G_B8_1 = G_B7_0;
+	}
+
+IL_005b:
+	{
+		V_0 = (bool)G_B8_0;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:25>
+		bool L_14 = V_0;
+		if (!((int32_t)(G_B8_1|(int32_t)L_14)))
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:25>
+		float L_15;
+		L_15 = Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5(NULL);
+		FoodSearchProgressView_Refresh_m0AD11C9FE76FDED73A3B825C5172CA385D27DA56(__this, L_15, (bool)0, NULL);
+	}
+
+IL_006c:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:26>
+		return;
+	}
+}
+// Method Definition Index: 78996
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FoodSearchProgressView_Refresh_m0AD11C9FE76FDED73A3B825C5172CA385D27DA56 (FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* __this, float ___0_deltaTime, bool ___1_immediate, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2CE8092EAB7CF171D76B9F39695FBC2391C02587);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral97C9888DBEA3E75E07243F31DDA62600C0292D39);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C19287AC549CB6686EE9077EE818B67BC9F8AB9);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	String_t* V_5 = NULL;
+	int32_t G_B6_0 = 0;
+	int32_t G_B22_0 = 0;
+	int32_t G_B7_0 = 0;
+	bool G_B9_0 = false;
+	int32_t G_B9_1 = 0;
+	bool G_B8_0 = false;
+	int32_t G_B8_1 = 0;
+	int32_t G_B10_0 = 0;
+	bool G_B10_1 = false;
+	int32_t G_B10_2 = 0;
+	FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* G_B12_0 = NULL;
+	int32_t G_B12_1 = 0;
+	FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* G_B11_0 = NULL;
+	int32_t G_B11_1 = 0;
+	float G_B13_0 = 0.0f;
+	FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* G_B13_1 = NULL;
+	int32_t G_B13_2 = 0;
+	int32_t G_B15_0 = 0;
+	int32_t G_B14_0 = 0;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B16_0;
+	memset((&G_B16_0), 0, sizeof(G_B16_0));
+	int32_t G_B16_1 = 0;
+	int32_t G_B18_0 = 0;
+	int32_t G_B17_0 = 0;
+	int32_t G_B20_0 = 0;
+	int32_t G_B19_0 = 0;
+	int32_t G_B21_0 = 0;
+	float G_B32_0 = 0.0f;
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:31>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_0 = __this->___activity;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:31>
+		return;
+	}
+
+IL_000f:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:32>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_2 = __this->___activity;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = FoodSearchActivity_get_FoundCount_m589AA14B98018C765BA627039B2506631EC901B9(L_2, NULL);
+		V_0 = L_3;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:32>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_4 = __this->___activity;
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___requiredAphids;
+		int32_t L_6;
+		L_6 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(1, L_5, NULL);
+		V_1 = L_6;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:33>
+		FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* L_7 = __this->___activity;
+		NullCheck(L_7);
+		bool L_8;
+		L_8 = FoodSearchActivity_get_Completed_mA4B0DBCB4DDEE881C1C0A0DE67592DBC6392467B_inline(L_7, NULL);
+		V_2 = L_8;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:34>
+		int32_t L_9 = V_0;
+		int32_t L_10 = __this->___previousCount;
+		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		int32_t L_11 = V_1;
+		int32_t L_12 = __this->___previousRequired;
+		if ((!(((uint32_t)L_11) == ((uint32_t)L_12))))
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		bool L_13 = V_2;
+		bool L_14 = __this->___previousCompleted;
+		G_B6_0 = ((((int32_t)((((int32_t)L_13) == ((int32_t)L_14))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_005a;
+	}
+
+IL_0059:
+	{
+		G_B6_0 = 1;
+	}
+
+IL_005a:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:35>
+		int32_t L_15 = G_B6_0;
+		if (!L_15)
+		{
+			G_B22_0 = L_15;
+			goto IL_016a;
+		}
+		G_B7_0 = L_15;
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:37>
+		bool L_16 = ___1_immediate;
+		int32_t L_17 = __this->___previousCount;
+		if ((((int32_t)L_17) < ((int32_t)0)))
+		{
+			G_B9_0 = L_16;
+			G_B9_1 = G_B7_0;
+			goto IL_0075;
+		}
+		G_B8_0 = L_16;
+		G_B8_1 = G_B7_0;
+	}
+	{
+		int32_t L_18 = V_0;
+		int32_t L_19 = __this->___previousCount;
+		G_B10_0 = ((((int32_t)L_18) < ((int32_t)L_19))? 1 : 0);
+		G_B10_1 = G_B8_0;
+		G_B10_2 = G_B8_1;
+		goto IL_0076;
+	}
+
+IL_0075:
+	{
+		G_B10_0 = 1;
+		G_B10_1 = G_B9_0;
+		G_B10_2 = G_B9_1;
+	}
+
+IL_0076:
+	{
+		bool L_20 = V_2;
+		___1_immediate = (bool)((int32_t)((int32_t)G_B10_1|((int32_t)(G_B10_0|(int32_t)L_20))));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:38>
+		int32_t L_21 = V_0;
+		__this->___previousCount = L_21;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:38>
+		int32_t L_22 = V_1;
+		__this->___previousRequired = L_22;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:38>
+		bool L_23 = V_2;
+		__this->___previousCompleted = L_23;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:39>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_24 = __this->___fill;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_25;
+		L_25 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_24, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_25)
+		{
+			G_B12_0 = __this;
+			G_B12_1 = G_B10_2;
+			goto IL_00a6;
+		}
+		G_B11_0 = __this;
+		G_B11_1 = G_B10_2;
+	}
+	{
+		G_B13_0 = (0.0f);
+		G_B13_1 = G_B11_0;
+		G_B13_2 = G_B11_1;
+		goto IL_00b1;
+	}
+
+IL_00a6:
+	{
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_26 = __this->___fill;
+		NullCheck(L_26);
+		float L_27;
+		L_27 = Image_get_fillAmount_mDEE52490D07124E21E7CB36718A5E3714D8B9788_inline(L_26, NULL);
+		G_B13_0 = L_27;
+		G_B13_1 = G_B12_0;
+		G_B13_2 = G_B12_1;
+	}
+
+IL_00b1:
+	{
+		NullCheck(G_B13_1);
+		G_B13_1->___startFill = G_B13_0;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:40>
+		int32_t L_28 = V_0;
+		int32_t L_29 = V_1;
+		float L_30;
+		L_30 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(((float)L_28)/((float)L_29))), NULL);
+		__this->___targetFill = L_30;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:41>
+		__this->___elapsed = (0.0f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:42>
+		bool L_31 = V_2;
+		if (L_31)
+		{
+			G_B15_0 = G_B13_2;
+			goto IL_00dc;
+		}
+		G_B14_0 = G_B13_2;
+	}
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_32 = __this->___collectingColor;
+		G_B16_0 = L_32;
+		G_B16_1 = G_B14_0;
+		goto IL_00e2;
+	}
+
+IL_00dc:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_33 = __this->___completedColor;
+		G_B16_0 = L_33;
+		G_B16_1 = G_B15_0;
+	}
+
+IL_00e2:
+	{
+		V_4 = G_B16_0;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:43>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_34 = V_4;
+		String_t* L_35;
+		L_35 = ColorUtility_ToHtmlStringRGB_m50D59301FF2736B78C95C1FD5619D429358B7433_inline(L_34, NULL);
+		V_5 = L_35;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:44>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_36 = __this->___countText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_37;
+		L_37 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_36, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_37)
+		{
+			G_B18_0 = G_B16_1;
+			goto IL_011e;
+		}
+		G_B17_0 = G_B16_1;
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:45>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_38 = __this->___countText;
+		String_t* L_39 = V_5;
+		int32_t L_40 = V_0;
+		int32_t L_41 = L_40;
+		RuntimeObject* L_42 = Box(il2cpp_defaults.int32_class, &L_41);
+		int32_t L_43 = V_1;
+		int32_t L_44 = L_43;
+		RuntimeObject* L_45 = Box(il2cpp_defaults.int32_class, &L_44);
+		String_t* L_46;
+		L_46 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral97C9888DBEA3E75E07243F31DDA62600C0292D39, L_39, L_42, L_45, NULL);
+		NullCheck(L_38);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_38, L_46);
+		G_B18_0 = G_B17_0;
+	}
+
+IL_011e:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:46>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_47 = __this->___completionText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_48;
+		L_48 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_47, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_48)
+		{
+			G_B20_0 = G_B18_0;
+			goto IL_014f;
+		}
+		G_B19_0 = G_B18_0;
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:47>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_49 = __this->___completionText;
+		String_t* L_50 = V_5;
+		int32_t L_51 = V_0;
+		int32_t L_52 = L_51;
+		RuntimeObject* L_53 = Box(il2cpp_defaults.int32_class, &L_52);
+		int32_t L_54 = V_1;
+		int32_t L_55 = L_54;
+		RuntimeObject* L_56 = Box(il2cpp_defaults.int32_class, &L_55);
+		String_t* L_57;
+		L_57 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral9C19287AC549CB6686EE9077EE818B67BC9F8AB9, L_50, L_53, L_56, NULL);
+		NullCheck(L_49);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_49, L_57);
+		G_B20_0 = G_B19_0;
+	}
+
+IL_014f:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:48>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_58 = __this->___fill;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_59;
+		L_59 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_58, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_59)
+		{
+			G_B22_0 = G_B20_0;
+			goto IL_016a;
+		}
+		G_B21_0 = G_B20_0;
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:48>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_60 = __this->___fill;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_61 = V_4;
+		NullCheck(L_60);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_60, L_61);
+		G_B22_0 = G_B21_0;
+	}
+
+IL_016a:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:51>
+		if (G_B22_0)
+		{
+			goto IL_01a1;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_62 = __this->___countText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_63;
+		L_63 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_62, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_63)
+		{
+			goto IL_01a1;
+		}
+	}
+	{
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_64 = __this->___countText;
+		NullCheck(L_64);
+		String_t* L_65;
+		L_65 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_64);
+		NullCheck(L_65);
+		bool L_66;
+		L_66 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_65, _stringLiteral2CE8092EAB7CF171D76B9F39695FBC2391C02587, NULL);
+		if (L_66)
+		{
+			goto IL_01a1;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:53>
+		__this->___previousCount = (-1);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:54>
+		float L_67 = ___0_deltaTime;
+		FoodSearchProgressView_Refresh_m0AD11C9FE76FDED73A3B825C5172CA385D27DA56(__this, L_67, (bool)1, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:55>
+		return;
+	}
+
+IL_01a1:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:57>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_68 = __this->___fill;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_69;
+		L_69 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_68, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_69)
+		{
+			goto IL_01b0;
+		}
+	}
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:57>
+		return;
+	}
+
+IL_01b0:
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:58>
+		float L_70 = __this->___elapsed;
+		float L_71 = ___0_deltaTime;
+		float L_72;
+		L_72 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), L_71, NULL);
+		__this->___elapsed = ((float)il2cpp_codegen_add(L_70, L_72));
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:59>
+		bool L_73 = ___1_immediate;
+		if (L_73)
+		{
+			goto IL_01ec;
+		}
+	}
+	{
+		float L_74 = __this->___fillDuration;
+		if ((((float)L_74) <= ((float)(0.0f))))
+		{
+			goto IL_01ec;
+		}
+	}
+	{
+		float L_75 = __this->___elapsed;
+		float L_76 = __this->___fillDuration;
+		float L_77;
+		L_77 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(L_75/L_76)), NULL);
+		G_B32_0 = L_77;
+		goto IL_01f1;
+	}
+
+IL_01ec:
+	{
+		G_B32_0 = (1.0f);
+	}
+
+IL_01f1:
+	{
+		V_3 = G_B32_0;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:60>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_78 = __this->___fill;
+		float L_79 = __this->___startFill;
+		float L_80 = __this->___targetFill;
+		float L_81 = V_3;
+		float L_82;
+		L_82 = Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline((0.0f), (1.0f), L_81, NULL);
+		float L_83;
+		L_83 = Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline(L_79, L_80, L_82, NULL);
+		NullCheck(L_78);
+		Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7(L_78, L_83, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:61>
+		return;
+	}
+}
+// Method Definition Index: 78997
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FoodSearchProgressView__ctor_mAEC0A238E8272D360D67231B3D87FE0B646D1D49 (FoodSearchProgressView_t654D4F7BB053BFEC7E4C04356A9665002907BF04* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:11>
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_0), (uint8_t)((int32_t)255), (uint8_t)((int32_t)209), (uint8_t)((int32_t)106), (uint8_t)((int32_t)255), NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
+		L_1 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_0, NULL);
+		__this->___collectingColor = L_1;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:12>
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline((&L_2), (uint8_t)((int32_t)156), (uint8_t)((int32_t)240), (uint8_t)((int32_t)176), (uint8_t)((int32_t)255), NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3;
+		L_3 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_2, NULL);
+		__this->___completedColor = L_3;
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:13>
+		__this->___fillDuration = (0.180000007f);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:15>
+		__this->___previousCount = (-1);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/FoodSearchProgressView.cs:15>
+		__this->___previousRequired = (-1);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 78998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_Start_m41606103B1223102DDFDACC00BCB808FD4C85132 (HoverGlow_t502BF3AC635BB0555656F33477E41B9E966CE9D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10830,7 +11507,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_Start_m41606103B1223102DDFDACC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:10>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:11>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___glowObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10841,7 +11518,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_Start_m41606103B1223102DDFDACC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:12>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:13>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___glowObject;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
@@ -10849,11 +11526,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_Start_m41606103B1223102DDFDACC
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:14>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:15>
 		return;
 	}
 }
-// Method Definition Index: 79812
+// Method Definition Index: 78999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_ShowGlow_m094BDB7BBC714938D786A0D97A48ACE01E34BDFA (HoverGlow_t502BF3AC635BB0555656F33477E41B9E966CE9D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10863,7 +11540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_ShowGlow_m094BDB7BBC714938D786
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:18>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:19>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___glowObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10874,7 +11551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_ShowGlow_m094BDB7BBC714938D786
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:20>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:21>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___glowObject;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
@@ -10882,11 +11559,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_ShowGlow_m094BDB7BBC714938D786
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:22>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:23>
 		return;
 	}
 }
-// Method Definition Index: 79813
+// Method Definition Index: 79000
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_HideGlow_m6EC54CA3D719E3E7BFEC893D7EB4C76B69674D27 (HoverGlow_t502BF3AC635BB0555656F33477E41B9E966CE9D0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10896,7 +11573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_HideGlow_m6EC54CA3D719E3E7BFEC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:26>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:27>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___glowObject;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -10907,7 +11584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_HideGlow_m6EC54CA3D719E3E7BFEC
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:28>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:29>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___glowObject;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
@@ -10915,11 +11592,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow_HideGlow_m6EC54CA3D719E3E7BFEC
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:30>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/HoverGlow.cs:31>
 		return;
 	}
 }
-// Method Definition Index: 79814
+// Method Definition Index: 79001
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow__ctor_mB125F7AF93AAFD37BBE619C265CF3858D9123534 (HoverGlow_t502BF3AC635BB0555656F33477E41B9E966CE9D0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10936,7 +11613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoverGlow__ctor_mB125F7AF93AAFD37BBE619C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79815
+// Method Definition Index: 79002
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowAntennaInfo_mB23480768429D38D3CED6B2B37B433FAE73135EC (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10947,26 +11624,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowAntennaInfo_mB234807
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:32>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:33>
 		InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:34>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:35>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___titleText;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, _stringLiteral3278C8BA41861EDD9857A6E1BAAAD16DD7243B34);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:36>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:37>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:38>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___descriptionText;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_1, _stringLiteralDCE91820808BF09450AEDDEC9238ABBF97326F20);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:39>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:40>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___infoPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:40>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:41>
 		return;
 	}
 }
-// Method Definition Index: 79816
+// Method Definition Index: 79003
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowElytraInfo_mA13BB4C5899BF51971ADC7DDBB2C0806F465B211 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10977,26 +11654,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowElytraInfo_mA13BB4C5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:50>
 		InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:51>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:52>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___titleText;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, _stringLiteral9E3A879CE6B4E148C5D7D0D2A9F9DD9648F00971);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:53>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:54>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:55>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___descriptionText;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_1, _stringLiteralBA367F41B85EA1A4229A79FDCA27F7A1A2754677);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:56>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:57>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___infoPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:57>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:58>
 		return;
 	}
 }
-// Method Definition Index: 79817
+// Method Definition Index: 79004
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowWingInfo_m59C5EB476B36FFCF701A826A96EBF7EDBFD3D84E (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11007,30 +11684,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_ShowWingInfo_m59C5EB476B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:66>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:67>
 		InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9(__this, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:68>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:69>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___titleText;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, _stringLiteral84F3F73763978997C65B2536CA5DEDF6275BB550);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:70>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:71>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:72>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___descriptionText;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_1, _stringLiteralFF120C402BD02F558E659C9C7F6E4E778AE887D2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:74>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___infoPanel;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:74>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:75>
 		return;
 	}
 }
-// Method Definition Index: 79818
+// Method Definition Index: 79005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_HideInfoDelayed_m19500359B12C4F8768D15809E8D99339F80A323D (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:83>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:85>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___hideCoroutine;
 		if (!L_0)
 		{
@@ -11038,26 +11715,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_HideInfoDelayed_m1950035
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:85>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:87>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___hideCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
 	}
 
 IL_0014:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:88>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:89>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:90>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:91>
 		RuntimeObject* L_2;
 		L_2 = InsectInfoPanel_HideAfterDelay_mC8B15AAC5CAFA23563DBF9E8E6332DEEEF7A5E16(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
 		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
 		__this->___hideCoroutine = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hideCoroutine), (void*)L_3);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:90>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:92>
 		return;
 	}
 }
-// Method Definition Index: 79819
+// Method Definition Index: 79006
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InsectInfoPanel_HideAfterDelay_mC8B15AAC5CAFA23563DBF9E8E6332DEEEF7A5E16 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11077,25 +11754,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InsectInfoPanel_HideAfterDelay
 		return L_1;
 	}
 }
-// Method Definition Index: 79820
+// Method Definition Index: 79007
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_HideInfo_m73312734547B9A76257AA329B2456AD929296020 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:109>
-		InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9(__this, NULL);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:111>
+		InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9(__this, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:113>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___infoPanel;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:112>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:114>
 		return;
 	}
 }
-// Method Definition Index: 79821
+// Method Definition Index: 79008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_CancelHide_m0298859159DAE0955D40E700BBCC04FDB35445E9 (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:117>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:119>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_0 = __this->___hideCoroutine;
 		if (!L_0)
 		{
@@ -11103,25 +11780,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel_CancelHide_m0298859159DA
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:119>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:121>
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1 = __this->___hideCoroutine;
 		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_1, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:121>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:123>
 		__this->___hideCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hideCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
 	}
 
 IL_001b:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:123>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:125>
 		return;
 	}
 }
-// Method Definition Index: 79822
+// Method Definition Index: 79009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel__ctor_m8C7661C4A5A505623A1B17FAA219AC5BEB57BB1D (InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:20>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:21>
 		__this->___hideDelay = (0.25f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -11135,7 +11812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InsectInfoPanel__ctor_m8C7661C4A5A505623
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79823
+// Method Definition Index: 79010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9__ctor_mAD9D4366BFF8D195B89AEB6DBB1C0280D1BF5A0E (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11146,7 +11823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9__ctor_mAD9D4366
 		return;
 	}
 }
-// Method Definition Index: 79824
+// Method Definition Index: 79011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9_System_IDisposable_Dispose_mA62B078EB48C11A733F54CA087499244D8A76939 (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11154,7 +11831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9_System_IDisposa
 		return;
 	}
 }
-// Method Definition Index: 79825
+// Method Definition Index: 79012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CHideAfterDelayU3Ed__9_MoveNext_m4784052B7E6FC370038B701F48D7C4DEE5442A1D (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11190,7 +11867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CHideAfterDelayU3Ed__9_MoveNext_m47840
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:95>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:97>
 		InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* L_4 = V_1;
 		NullCheck(L_4);
 		float L_5 = L_4->___hideDelay;
@@ -11205,22 +11882,22 @@ IL_0017:
 IL_0038:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:97>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:99>
 		InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* L_7 = V_1;
 		NullCheck(L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___infoPanel;
 		NullCheck(L_8);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:99>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:101>
 		InsectInfoPanel_tFD33FBD969C52A5811213A6380EAE1B366632D26* L_9 = V_1;
 		NullCheck(L_9);
 		L_9->___hideCoroutine = (Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_9->___hideCoroutine), (void*)(Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B*)NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:100>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/InsectInfoPanel.cs:102>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79826
+// Method Definition Index: 79013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideAfterDelayU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE840474C9AEE6CA9C0A86E2A15F3D93117F3AF81 (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11229,7 +11906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideAfterDelayU3Ed__9_Syste
 		return L_0;
 	}
 }
-// Method Definition Index: 79827
+// Method Definition Index: 79014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9_System_Collections_IEnumerator_Reset_m42728FAE59A269BC6B6BDCE284EDD29C2A4C59B2 (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11239,7 +11916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideAfterDelayU3Ed__9_System_Collecti
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CHideAfterDelayU3Ed__9_System_Collections_IEnumerator_Reset_m42728FAE59A269BC6B6BDCE284EDD29C2A4C59B2_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79828
+// Method Definition Index: 79015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideAfterDelayU3Ed__9_System_Collections_IEnumerator_get_Current_m59A7B64CDDA60759D28BD9200E6274D31AAC5204 (U3CHideAfterDelayU3Ed__9_t0E827A76AB29F759B08450F49FEC591ACB2551E9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11256,7 +11933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideAfterDelayU3Ed__9_Syste
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79829
+// Method Definition Index: 79016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_Start_mBB9CD5CCB178B3073EF0C12534A79AB523C4C306 (SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11266,7 +11943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_Start_mBB9CD5CCB17
 		return;
 	}
 }
-// Method Definition Index: 79830
+// Method Definition Index: 79017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CDEF471E3647C6E95A397869D0BF40C700D08F0 (SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* __this, String_t* ___0_insectName, bool ___1_canExplore, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11277,8 +11954,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:30>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:31>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:32>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___selectedInsectName;
 		String_t* L_1 = ___0_insectName;
 		NullCheck(L_1);
@@ -11286,7 +11963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CD
 		L_2 = String_ToUpper_m5F499BC30C2A5F5C96248B4C3D1A3B4694748B49(L_1, NULL);
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, L_2);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:34>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:35>
 		bool L_3 = ___1_canExplore;
 		if (!L_3)
 		{
@@ -11294,12 +11971,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CD
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:36>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:37>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:38>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___selectionHint;
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteralBDA1484EDD8AFF2CF268E487B15C907668E711EA);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:39>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:40>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___confirmButton;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
@@ -11308,20 +11985,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ShowSelection_m3CD
 
 IL_0031:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:43>
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:44>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:45>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectionHint;
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, _stringLiteralC37270ECE0C2585DAF1FC1402EFD684E87FA4D6F);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:46>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:47>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___confirmButton;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:48>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:49>
 		return;
 	}
 }
-// Method Definition Index: 79831
+// Method Definition Index: 79018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ClearSelection_m84B1645C56D1EFE275B589F3FE96C5B15F131E6B (SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11332,25 +12009,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController_ClearSelection_m84
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:53>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:54>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:55>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:56>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___selectedInsectName;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, _stringLiteral13D2CD6D044EE5DBC2139576AF22E6439C5CA759);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:56>
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:57>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:58>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:59>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___selectionHint;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_1, _stringLiteral1611D4CD3031E13C28DB0D96BB0AC7F145966DF8);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:59>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:61>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___confirmButton;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:60>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/SelectionUIController.cs:62>
 		return;
 	}
 }
-// Method Definition Index: 79832
+// Method Definition Index: 79019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController__ctor_m7FB5310952EE9E3301DC1868D4B677F9CE249553 (SelectionUIController_t60BF0FEB552D14E5BD92EE2894EB8D4AFB52625E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11367,7 +12044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionUIController__ctor_m7FB5310952E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79833
+// Method Definition Index: 79020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_Awake_mA264C8147E095D29D87925A1FED7B8A0423FE6F8 (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11463,7 +12140,7 @@ IL_006d:
 		return;
 	}
 }
-// Method Definition Index: 79834
+// Method Definition Index: 79021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnPointerEnter_mF2A7617E8121ED82EB9E3C13EC057C8DA6869E02 (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11473,7 +12150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnPointerEnter_mF2A761
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:67>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:68>
 		Outline_t9CF146E077DC65F441EDEC463AA6710374108084* L_0 = __this->___hoverOutline;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11484,7 +12161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnPointerEnter_mF2A761
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:69>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:70>
 		Outline_t9CF146E077DC65F441EDEC463AA6710374108084* L_2 = __this->___hoverOutline;
 		NullCheck(L_2);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_2, (bool)1, NULL);
@@ -11492,7 +12169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnPointerEnter_mF2A761
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:73>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:74>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3 = __this->___buttonImage;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -11503,7 +12180,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:75>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:76>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_5 = __this->___buttonImage;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6 = __this->___hoverTint;
 		NullCheck(L_5);
@@ -11512,31 +12189,31 @@ IL_001a:
 
 IL_0039:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:77>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:78>
 		return;
 	}
 }
-// Method Definition Index: 79835
+// Method Definition Index: 79022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnPointerExit_m70EAE42F3C2742BBC6E0083E765BAD2156C7ABCF (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:88>
-		UIButtonHoverGlow_ResetVisual_m7B07D939EADF03F8AB143EA45BCACE7E5E3FB739(__this, NULL);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:89>
+		UIButtonHoverGlow_ResetVisual_m7B07D939EADF03F8AB143EA45BCACE7E5E3FB739(__this, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:90>
 		return;
 	}
 }
-// Method Definition Index: 79836
+// Method Definition Index: 79023
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_OnDisable_m5E82E28E9D261168C13FFB1518D07C1A2CEAE91C (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:94>
-		UIButtonHoverGlow_ResetVisual_m7B07D939EADF03F8AB143EA45BCACE7E5E3FB739(__this, NULL);
 		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:95>
+		UIButtonHoverGlow_ResetVisual_m7B07D939EADF03F8AB143EA45BCACE7E5E3FB739(__this, NULL);
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:96>
 		return;
 	}
 }
-// Method Definition Index: 79837
+// Method Definition Index: 79024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_ResetVisual_m7B07D939EADF03F8AB143EA45BCACE7E5E3FB739 (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11546,7 +12223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_ResetVisual_m7B07D939E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:100>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:102>
 		Outline_t9CF146E077DC65F441EDEC463AA6710374108084* L_0 = __this->___hoverOutline;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -11557,7 +12234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_ResetVisual_m7B07D939E
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:102>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:104>
 		Outline_t9CF146E077DC65F441EDEC463AA6710374108084* L_2 = __this->___hoverOutline;
 		NullCheck(L_2);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_2, (bool)0, NULL);
@@ -11565,7 +12242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow_ResetVisual_m7B07D939E
 
 IL_001a:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:106>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:108>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3 = __this->___buttonImage;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -11576,7 +12253,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:108>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:110>
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_5 = __this->___buttonImage;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6 = __this->___originalColor;
 		NullCheck(L_5);
@@ -11585,11 +12262,11 @@ IL_001a:
 
 IL_0039:
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:110>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/UI/UIButtonHoverGlow.cs:112>
 		return;
 	}
 }
-// Method Definition Index: 79838
+// Method Definition Index: 79025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow__ctor_m371CE7E40A58863BA3EDC0D07A8DAA5A1D7D10B8 (UIButtonHoverGlow_t648EEEE72C2C9004314F013CD9F9A75110655AD5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11611,7 +12288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIButtonHoverGlow__ctor_m371CE7E40A58863
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79839
+// Method Definition Index: 79026
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CubeMovement_Update_m76928D14B19A558D40B3479141FBDE2176DAF335 (CubeMovement_t3934879450143859241EC8BD753BF93704668B24* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11655,7 +12332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CubeMovement_Update_m76928D14B19A558D40B
 		return;
 	}
 }
-// Method Definition Index: 79840
+// Method Definition Index: 79027
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CubeMovement__ctor_mD4F968999354D7414E00980B6F0542F2A8E609FC (CubeMovement_t3934879450143859241EC8BD753BF93704668B24* __this, const RuntimeMethod* method) 
 {
 	{
@@ -11673,42 +12350,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CubeMovement__ctor_mD4F968999354D7414E00
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79841
+// Method Definition Index: 79028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____865D666D3110EB05EC107D2F5C4C8908D44755232B3859C11357928826EC93DA_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D416C0EC6FF463ED837B27E0300B634BF30504A07B4C28ED322936AA56255DAA_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____724ABB8BEBB4D7C61227F3285788FEC0E24AB86FDD5FA7E9944BD6C0E9F5828C_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____FFB8FC515C38759C18C372DA6162CDEA450846AE6A87D748D81E4471311B5397_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:192>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Unity.SourceGenerators/Unity.MonoScriptGenerator.MonoScriptInfoGenerator/AssemblyMonoScriptTypes.generated.cs:198>
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)3113));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)3245));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____865D666D3110EB05EC107D2F5C4C8908D44755232B3859C11357928826EC93DA_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____724ABB8BEBB4D7C61227F3285788FEC0E24AB86FDD5FA7E9944BD6C0E9F5828C_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2001));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2061));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D416C0EC6FF463ED837B27E0300B634BF30504A07B4C28ED322936AA56255DAA_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____FFB8FC515C38759C18C372DA6162CDEA450846AE6A87D748D81E4471311B5397_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)49);
-		(&V_0)->___TotalTypes = ((int32_t)55);
+		(&V_0)->___TotalFiles = ((int32_t)51);
+		(&V_0)->___TotalTypes = ((int32_t)57);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 79842
+// Method Definition Index: 79029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11795,7 +12472,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79843
+// Method Definition Index: 79030
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Start_m84A5BBC02FFBE8BF40D0A3E2D7B36D1FD701DED6 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11861,7 +12538,7 @@ IL_0035:
 		return;
 	}
 }
-// Method Definition Index: 79844
+// Method Definition Index: 79031
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Update_mD2CF52D5A41427FB49A899A2478D687B470A7EDE (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11885,7 +12562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_Update_mD2CF52D5A41427FB49
 		return;
 	}
 }
-// Method Definition Index: 79845
+// Method Definition Index: 79032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_OnAnchorEnter_mE9B77E39B80360DFB9B413B1749CF416F2486E3C (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11996,7 +12673,7 @@ IL_0072:
 		return;
 	}
 }
-// Method Definition Index: 79846
+// Method Definition Index: 79033
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_OnAnchorExit_m46DB1144C80EA09930E35E537ADE10D62216F350 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12101,7 +12778,7 @@ IL_0061:
 		return;
 	}
 }
-// Method Definition Index: 79847
+// Method Definition Index: 79034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_HideArrowOnTeleport_mAF2775EAD028A9913AECE46CA85A21020EDB1A9D (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12115,7 +12792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals_HideArrowOnTeleport_mAF277
 		return;
 	}
 }
-// Method Definition Index: 79848
+// Method Definition Index: 79035
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals__ctor_m33BE9FB784CF00841C8359369FF41EC9DD425E67 (AnchorVisuals_t506C676A735B94AD2F7832EDF49F77B8564E573A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12135,7 +12812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorVisuals__ctor_m33BE9FB784CF00841C8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79849
+// Method Definition Index: 79036
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_Awake_mB49A15D7FA935094EF77C19851E57949E800FD32 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12176,7 +12853,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 79850
+// Method Definition Index: 79037
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnEnable_m1D63BC7A9B05274B8FB1442F6F260926976C02F3 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12199,7 +12876,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnEnable_m1D63BC7A9B05274B8F
 		return;
 	}
 }
-// Method Definition Index: 79851
+// Method Definition Index: 79038
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnDisable_m83B0645C14AEF9A8A631192A9DADF9AD9C1613F1 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12220,7 +12897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnDisable_m83B0645C14AEF9A8A
 		return;
 	}
 }
-// Method Definition Index: 79852
+// Method Definition Index: 79039
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_OnBeforeRender_mAC5F36C0A5EA622C0E30384A7ADE90D72BB535F3 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12251,7 +12928,7 @@ IL_0017:
 		return;
 	}
 }
-// Method Definition Index: 79853
+// Method Definition Index: 79040
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_Update_m0D27C858A0CAC12AA9194F35C6524D2CB3EA089C (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12296,7 +12973,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 79854
+// Method Definition Index: 79041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_DrawCurve_mCFB656A65F8002B3B9B9A03791E10C61736E6BEA (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -12496,7 +13173,7 @@ IL_0148:
 		return;
 	}
 }
-// Method Definition Index: 79855
+// Method Definition Index: 79042
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 BezierCurve_CalculateCubicBezierPoint_m9EB641B7C3156DFA8118FB4CF153E9CA01D8FA71 (float ___0_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_p0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___4_p3, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -12553,7 +13230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_24;
 	}
 }
-// Method Definition Index: 79856
+// Method Definition Index: 79043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve_AnimateCurve_m7D19797535EDBC8A51C526C4FFBEB257536309F9 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12646,7 +13323,7 @@ IL_00af:
 		return;
 	}
 }
-// Method Definition Index: 79857
+// Method Definition Index: 79044
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve__ctor_m00317F17289DF5D603287D3292B341A75BAAF214 (BezierCurve_t43BBB6AA7BF6D3B9638D5CBB500FC809A7AF2AC2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12695,7 +13372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BezierCurve__ctor_m00317F17289DF5D603287
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79858
+// Method Definition Index: 79045
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_Awake_m4F1B3C8A10093528C844465D875FF7CCB7C7F2F4 (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12751,7 +13428,7 @@ IL_0051:
 		return;
 	}
 }
-// Method Definition Index: 79859
+// Method Definition Index: 79046
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_OnEnable_mDE6834ED01E1E74C81DAE601F7BD86E59B219F53 (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12765,7 +13442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_OnEnable_
 		return;
 	}
 }
-// Method Definition Index: 79860
+// Method Definition Index: 79047
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_UnityEngine_EventSystems_IPointerEnterHandler_OnPointerEnter_mD62237E80D277FAD98893128EB80C55A68A02BA5 (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -12775,7 +13452,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_UnityEngi
 		return;
 	}
 }
-// Method Definition Index: 79861
+// Method Definition Index: 79048
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_UnityEngine_EventSystems_IPointerExitHandler_OnPointerExit_m2C501951F7A24E9D2C73CD1ED940E3816BFD943A (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -12785,7 +13462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_UnityEngi
 		return;
 	}
 }
-// Method Definition Index: 79862
+// Method Definition Index: 79049
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_ToggleValueChanged_m02974DD38BDC57F1A93AEBD0BEA546C906782E83 (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -12840,7 +13517,7 @@ IL_0039:
 		return;
 	}
 }
-// Method Definition Index: 79863
+// Method Definition Index: 79050
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_PerformEntranceActions_mA002E990ECDF993D9A7C67088996CD17E699AC5C (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12886,7 +13563,7 @@ IL_003a:
 		return;
 	}
 }
-// Method Definition Index: 79864
+// Method Definition Index: 79051
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController_PerformExitActions_m4CB4430EE5B438051BAA5E696DE3798944711E64 (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12937,7 +13614,7 @@ IL_0043:
 		return;
 	}
 }
-// Method Definition Index: 79865
+// Method Definition Index: 79052
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController__ctor_mCBD96DB89405625789DA81BE26FF3B477D84F48D (BooleanToggleVisualsController_t8DA583A8B9BE4C4A10D8386FC016EBC57FCE884A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12955,7 +13632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanToggleVisualsController__ctor_mCB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79866
+// Method Definition Index: 79053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_Start_mEACC5C959F88571725CE1C349CA1811DC6A49506 (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13045,7 +13722,7 @@ IL_0063:
 		return;
 	}
 }
-// Method Definition Index: 79867
+// Method Definition Index: 79054
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_GazeHoverStart_m806285B32FFCF1D60C8DA940734172E5DFA8A52E (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13092,7 +13769,7 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 79868
+// Method Definition Index: 79055
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_GazeHoverEnd_m1B4595520FD77491994CA43F90CA8CCC68B70C22 (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13109,7 +13786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_GazeHoverEnd_m1B4595520FD7749199
 		return;
 	}
 }
-// Method Definition Index: 79869
+// Method Definition Index: 79056
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Callout_StartDelay_m56926DFE72E7D2EBC7966BDD8D3A67D7A7F65C99 (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13129,7 +13806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Callout_StartDelay_m56926DFE72
 		return L_1;
 	}
 }
-// Method Definition Index: 79870
+// Method Definition Index: 79057
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Callout_EndDelay_mABA3318D1B103503DCA7BFD5F597921752D73043 (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13149,7 +13826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Callout_EndDelay_mABA3318D1B10
 		return L_1;
 	}
 }
-// Method Definition Index: 79871
+// Method Definition Index: 79058
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_TurnOnStuff_mCC2C90C0A53E412D584C4CD314B0B2D0D6783E8E (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13204,7 +13881,7 @@ IL_0039:
 		return;
 	}
 }
-// Method Definition Index: 79872
+// Method Definition Index: 79059
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout_TurnOffStuff_mD650E996EB60008ADE3DF7E3269EC13E7C141B87 (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13259,7 +13936,7 @@ IL_0039:
 		return;
 	}
 }
-// Method Definition Index: 79873
+// Method Definition Index: 79060
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout__ctor_mD90AABA0CFEE2717468AB731068AACD0893CB23A (Callout_t77190B04DFF0BAEAB37B7015FEA730514DE0E372* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13281,7 +13958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callout__ctor_mD90AABA0CFEE2717468AB7310
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79874
+// Method Definition Index: 79061
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12__ctor_mD078C8801FF908B299E4A666EC42A3D93F45A77E (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13292,7 +13969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12__ctor_mD078C8801FF90
 		return;
 	}
 }
-// Method Definition Index: 79875
+// Method Definition Index: 79062
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12_System_IDisposable_Dispose_m7D19408B474CA8FCC0F745F3DC4ACF5C942F27B4 (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13300,7 +13977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12_System_IDisposable_D
 		return;
 	}
 }
-// Method Definition Index: 79876
+// Method Definition Index: 79063
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CEndDelayU3Ed__12_MoveNext_mFF9C489050214B1DBB8CB5EFF9CEAAF86B0D899F (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -13362,7 +14039,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79877
+// Method Definition Index: 79064
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CEndDelayU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5CD36CF2E2F230FF37D8D4F05642A93EFD27E4F9 (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13371,7 +14048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CEndDelayU3Ed__12_System_Col
 		return L_0;
 	}
 }
-// Method Definition Index: 79878
+// Method Definition Index: 79065
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12_System_Collections_IEnumerator_Reset_mEE8DB6E6C9FE8F483A6C4D244AD85C52BA1A50F4 (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13381,7 +14058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CEndDelayU3Ed__12_System_Collections_I
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CEndDelayU3Ed__12_System_Collections_IEnumerator_Reset_mEE8DB6E6C9FE8F483A6C4D244AD85C52BA1A50F4_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79879
+// Method Definition Index: 79066
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CEndDelayU3Ed__12_System_Collections_IEnumerator_get_Current_mF80E92E65605EBFEF357DEC4961274489EA55BC2 (U3CEndDelayU3Ed__12_t92A53E7D999E45108A7FDF7BCDB9359191100FE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13398,7 +14075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CEndDelayU3Ed__12_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79880
+// Method Definition Index: 79067
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11__ctor_m9EFC9FB0EDA9852D6DE6575A508A115948C6896A (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13409,7 +14086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11__ctor_m9EFC9FB0EDA
 		return;
 	}
 }
-// Method Definition Index: 79881
+// Method Definition Index: 79068
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11_System_IDisposable_Dispose_m64635132AAF1362E3FFA82C0493D8CFB820F97FC (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13417,7 +14094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11_System_IDisposable
 		return;
 	}
 }
-// Method Definition Index: 79882
+// Method Definition Index: 79069
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartDelayU3Ed__11_MoveNext_m99FA1F366B11C3280E1AE3C6A440B672E98DED41 (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13490,7 +14167,7 @@ IL_004d:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79883
+// Method Definition Index: 79070
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartDelayU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m93CE65392C4F9B7608FB35A2AE61646F420F3B9E (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13499,7 +14176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartDelayU3Ed__11_System_C
 		return L_0;
 	}
 }
-// Method Definition Index: 79884
+// Method Definition Index: 79071
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11_System_Collections_IEnumerator_Reset_mBBF8CBD341002CA190DE75AC4864E0CC1D55D2BD (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13509,7 +14186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartDelayU3Ed__11_System_Collections
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartDelayU3Ed__11_System_Collections_IEnumerator_Reset_mBBF8CBD341002CA190DE75AC4864E0CC1D55D2BD_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79885
+// Method Definition Index: 79072
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartDelayU3Ed__11_System_Collections_IEnumerator_get_Current_m466363DC32A4D8F60A9DBF8F7CFA28D8424413DD (U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13526,7 +14203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartDelayU3Ed__11_System_C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79886
+// Method Definition Index: 79073
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_Update_mB11AABDF1173BEE3047CEB9194586D56CA8E99C4 (CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13644,7 +14321,7 @@ IL_0086:
 		return;
 	}
 }
-// Method Definition Index: 79887
+// Method Definition Index: 79074
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_CheckLargeMovement_mE465FEC854E914F2D5EF069CA237451B98830A88 (CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -13692,7 +14369,7 @@ IL_0036:
 		return;
 	}
 }
-// Method Definition Index: 79888
+// Method Definition Index: 79075
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_FacingEntered_mCC9A11BC641C62813B0582E1F58ACDED4B10BDCA (CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13706,7 +14383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_FacingEntered_mCC9
 		return;
 	}
 }
-// Method Definition Index: 79889
+// Method Definition Index: 79076
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_FacingExited_m82323C19A9ED171306AB17D55428C566A2ED163F (CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13720,7 +14397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController_FacingExited_m8232
 		return;
 	}
 }
-// Method Definition Index: 79890
+// Method Definition Index: 79077
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController__ctor_mDE9F4B268037A129AD50A54EF3ED8B54B7BAD987 (CalloutGazeController_t968951EF07E856BE01FEC52D878133D40F195204* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13742,7 +14419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CalloutGazeController__ctor_mDE9F4B26803
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79891
+// Method Definition Index: 79078
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestroyObject_Start_m319E20DD8EF231C1C9007675B0331C16AA9DE307 (DestroyObject_t90C0CFF019F8BFBA5C4641516631F66056F44012* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13762,7 +14439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestroyObject_Start_m319E20DD8EF231C1C90
 		return;
 	}
 }
-// Method Definition Index: 79892
+// Method Definition Index: 79079
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestroyObject__ctor_m43F2B77F939725CE59E06A3A4F46C846B75F1B34 (DestroyObject_t90C0CFF019F8BFBA5C4641516631F66056F44012* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13780,7 +14457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestroyObject__ctor_m43F2B77F939725CE59E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79893
+// Method Definition Index: 79080
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSubsystemManager_OnEnable_mE8E1E602E773A65E54190630FC7B84A7C4521699 (HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13804,7 +14481,7 @@ IL_0014:
 		return;
 	}
 }
-// Method Definition Index: 79894
+// Method Definition Index: 79081
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSubsystemManager_DisableHandTracking_m3859DB768A40DE23D9A65A72E4B0AD9EB3C670E4 (HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13839,7 +14516,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 79895
+// Method Definition Index: 79082
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSubsystemManager_EnableHandTracking_m3D7BFC2F48D6D1261597B25B61ED71CDF393F61A (HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13874,7 +14551,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 79896
+// Method Definition Index: 79083
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandSubsystemManager_TryGetHandSubsystem_m0C08AB09F9FE978E28514C5794916887350C9C02 (XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C** ___0_handSubsystem, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14010,7 +14687,7 @@ IL_0066:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 79897
+// Method Definition Index: 79084
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSubsystemManager__ctor_m6E3F300853E4D3E34B5F78B595B48E2D0DE6F3DD (HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14027,7 +14704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSubsystemManager__ctor_m6E3F300853E4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79898
+// Method Definition Index: 79085
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchProjectile_Fire_m292E31523C801DE813423E8ABCDC42DA6C79D465 (LaunchProjectile_t61F2C2CE3B019230747AB6448CD41927505B8901* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14074,7 +14751,7 @@ IL_0032:
 		return;
 	}
 }
-// Method Definition Index: 79899
+// Method Definition Index: 79086
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchProjectile_ApplyForce_m1C2732C0FD57EFF9F164EB50E9D7FAFD0A84CCDE (LaunchProjectile_t61F2C2CE3B019230747AB6448CD41927505B8901* __this, Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___0_rigidBody, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -14098,7 +14775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchProjectile_ApplyForce_m1C2732C0FD5
 		return;
 	}
 }
-// Method Definition Index: 79900
+// Method Definition Index: 79087
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchProjectile__ctor_m2F4D6406FD19F17F33912BD35649D8FDA533A140 (LaunchProjectile_t61F2C2CE3B019230747AB6448CD41927505B8901* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14116,7 +14793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchProjectile__ctor_m2F4D6406FD19F17F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79901
+// Method Definition Index: 79088
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayAttachModifier_OnEnable_mD63B36A98A58F87736FEDBDF25C9CB2DB80E3425 (RayAttachModifier_t88195CC1798BFAFE12D5D5944A8B2495041E6818* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14175,7 +14852,7 @@ IL_0036:
 		return;
 	}
 }
-// Method Definition Index: 79902
+// Method Definition Index: 79089
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayAttachModifier_OnDisable_mAE7D174DB48C45BA789C8AD5329780243E872160 (RayAttachModifier_t88195CC1798BFAFE12D5D5944A8B2495041E6818* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14217,7 +14894,7 @@ IL_002f:
 		return;
 	}
 }
-// Method Definition Index: 79903
+// Method Definition Index: 79090
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayAttachModifier_OnSelectEntered_m7B0E3E9CD23AE82AB5769EF0CA6092575BE0C1C8 (RayAttachModifier_t88195CC1798BFAFE12D5D5944A8B2495041E6818* __this, SelectEnterEventArgs_t9220B1E6A9BB5A847C0476949ACE0182430BB938* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14274,7 +14951,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 79904
+// Method Definition Index: 79091
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayAttachModifier__ctor_m23AE7B33182CCD3EA8B9F73C62F52B8699A1F549 (RayAttachModifier_t88195CC1798BFAFE12D5D5944A8B2495041E6818* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14291,7 +14968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayAttachModifier__ctor_m23AE7B33182CCD3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79905
+// Method Definition Index: 79092
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator_Update_mF48BD3CCD47A54DFD9CF9C5F1C7B26D771DACBE7 (Rotator_t318F5CF1D4A0B8C00B5DD6C8891F1E0A99B03F12* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14309,7 +14986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator_Update_mF48BD3CCD47A54DFD9CF9C5F
 		return;
 	}
 }
-// Method Definition Index: 79906
+// Method Definition Index: 79093
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator__ctor_m58BAB97B03C481BAC6A9E3BF6B22BE086F089FBE (Rotator_t318F5CF1D4A0B8C00B5DD6C8891F1E0A99B03F12* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14326,7 +15003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator__ctor_m58BAB97B03C481BAC6A9E3BF6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79907
+// Method Definition Index: 79094
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StepManager_Next_m80CD5377159A0740D6C7D99B2B9A61B353E31321 (StepManager_tF1C63CF67B7BA5D9E721661827AA0CBD14FF022D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14379,7 +15056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StepManager_Next_m80CD5377159A0740D6C7D9
 		return;
 	}
 }
-// Method Definition Index: 79908
+// Method Definition Index: 79095
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StepManager__ctor_mB905C6F3AE65BF3B257BCDFE7E5DA556D8D8C51D (StepManager_tF1C63CF67B7BA5D9E721661827AA0CBD14FF022D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14407,7 +15084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StepManager__ctor_mB905C6F3AE65BF3B257BC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79909
+// Method Definition Index: 79096
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Step__ctor_m715C2D665F72FFD672D9CF5C5F76AF61ABE4BB7B (Step_t2758B5C1956131A187D151FF43843F47B959E8FB* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14424,7 +15101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Step__ctor_m715C2D665F72FFD672D9CF5C5F76
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79910
+// Method Definition Index: 79097
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoPlayerRenderTexture_Start_mA18A541984B6BC0A3CC7B0158A6E2A2799D3E7B2 (VideoPlayerRenderTexture_t2654D5CEBB487845DE50F264CE18F1660702A011* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14477,7 +15154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoPlayerRenderTexture_Start_mA18A5419
 		return;
 	}
 }
-// Method Definition Index: 79911
+// Method Definition Index: 79098
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoPlayerRenderTexture__ctor_mE10538BEF009F9ADC7524E4FA398221774EAEDE8 (VideoPlayerRenderTexture_t2654D5CEBB487845DE50F264CE18F1660702A011* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14497,7 +15174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoPlayerRenderTexture__ctor_mE10538BE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79912
+// Method Definition Index: 79099
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_Start_m26AAAEE24E5DB60A354CFEC9F7B11AE53D55B8F4 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14568,7 +15245,7 @@ IL_0058:
 		return;
 	}
 }
-// Method Definition Index: 79913
+// Method Definition Index: 79100
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnEnable_m0B7FDEF8B490C272A5BCAD8AD7B0A98A04C0EB3A (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14643,7 +15320,7 @@ IL_0078:
 		return;
 	}
 }
-// Method Definition Index: 79914
+// Method Definition Index: 79101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_Update_mA35590D7B4C08A8904A709744D4FF5BD53A62CDB (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14731,7 +15408,7 @@ IL_0078:
 		return;
 	}
 }
-// Method Definition Index: 79915
+// Method Definition Index: 79102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnPointerDown_m07B4125E9C01E293BC30A9051EDE5A36014DBE40 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14745,7 +15422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnPointerDown_m07B
 		return;
 	}
 }
-// Method Definition Index: 79916
+// Method Definition Index: 79103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnRelease_m7720346236454DC89AE2EEEC8D0EE4F66B16BBEC (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14759,7 +15436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnRelease_m7720346
 		return;
 	}
 }
-// Method Definition Index: 79917
+// Method Definition Index: 79104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnSliderValueChange_m796F5BF876926B9569F0BFE285A15CB981EA8933 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, float ___0_sliderValue, const RuntimeMethod* method) 
 {
 	{
@@ -14769,7 +15446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnSliderValueChang
 		return;
 	}
 }
-// Method Definition Index: 79918
+// Method Definition Index: 79105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VideoTimeScrubControl_HideSliderAfterSeconds_mDD8E7A826BA48D3CB7014C57AE5C797231DA3505 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, float ___0_duration, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14793,7 +15470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VideoTimeScrubControl_HideSlid
 		return L_2;
 	}
 }
-// Method Definition Index: 79919
+// Method Definition Index: 79106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnDrag_m07B7D451CA131C021F6E8734BCEB39A632DF24A9 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14805,7 +15482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_OnDrag_m07B7D451CA
 		return;
 	}
 }
-// Method Definition Index: 79920
+// Method Definition Index: 79107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoJump_mA86B391EB54BABEFC2A54422A98F522E548C8E2E (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -14837,7 +15514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoJump_mA86B391
 		return;
 	}
 }
-// Method Definition Index: 79921
+// Method Definition Index: 79108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_PlayOrPauseVideo_mA8EAB86A611B552126CF24FC1F94E5A490AB240E (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14862,7 +15539,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 79922
+// Method Definition Index: 79109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_UpdateVideoTimeText_m7237C62CBC55275085C1E32554328E678ACB9783 (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14965,7 +15642,7 @@ IL_009e:
 		return;
 	}
 }
-// Method Definition Index: 79923
+// Method Definition Index: 79110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoStop_m56221AB51C970FB3C67B496ACFB37A4D3F44653F (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14988,7 +15665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoStop_m56221AB
 		return;
 	}
 }
-// Method Definition Index: 79924
+// Method Definition Index: 79111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoPlay_m60AC85DF6683EEEAE428A63BF32916F18724E4FE (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15011,7 +15688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl_VideoPlay_m60AC85D
 		return;
 	}
 }
-// Method Definition Index: 79925
+// Method Definition Index: 79112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl__ctor_m7520C96E9772C11A494640D97F0E8E1D2836AE0C (VideoTimeScrubControl_t6F17697491BA740A1DFB7EB5A7D879C56AB6D014* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15028,7 +15705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoTimeScrubControl__ctor_m7520C96E977
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79926
+// Method Definition Index: 79113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18__ctor_mA8F79162A4072B6698A78710A23030E4741EE4D9 (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15039,7 +15716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18__ctor_
 		return;
 	}
 }
-// Method Definition Index: 79927
+// Method Definition Index: 79114
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18_System_IDisposable_Dispose_m909F2722DCB1DB63B48E793D9C3755AB6DA3E1E0 (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15047,7 +15724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18_System
 		return;
 	}
 }
-// Method Definition Index: 79928
+// Method Definition Index: 79115
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CHideSliderAfterSecondsU3Ed__18_MoveNext_m3A959896D7AF18D4E8B82A65CF210405F981D72B (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15109,7 +15786,7 @@ IL_0038:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79929
+// Method Definition Index: 79116
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideSliderAfterSecondsU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m34F2B241AEAE18DD279F1562FA579C31569561A2 (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15118,7 +15795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideSliderAfterSecondsU3Ed_
 		return L_0;
 	}
 }
-// Method Definition Index: 79930
+// Method Definition Index: 79117
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18_System_Collections_IEnumerator_Reset_m794091AF7D9CBEB40E940C1AD4F32258A79AFA81 (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15128,7 +15805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CHideSliderAfterSecondsU3Ed__18_System
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CHideSliderAfterSecondsU3Ed__18_System_Collections_IEnumerator_Reset_m794091AF7D9CBEB40E940C1AD4F32258A79AFA81_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79931
+// Method Definition Index: 79118
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideSliderAfterSecondsU3Ed__18_System_Collections_IEnumerator_get_Current_mE0632BC0CC94424530D2C24D927DCA91CCBA1D01 (U3CHideSliderAfterSecondsU3Ed__18_t1F61E8A886E4021E0F4D6B5A76F797BF234188C3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -15145,7 +15822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CHideSliderAfterSecondsU3Ed_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79932
+// Method Definition Index: 79119
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* XRKnob_get_handle_m4DB0EC421586FDB8B43F4FA3EEA314C053CD277F (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15154,7 +15831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 79933
+// Method Definition Index: 79120
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_handle_mDA0942E23FF15E9516C73248B2C22C4241A5F7E7 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15165,7 +15842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_handle_mDA0942E23FF15E9516C73
 		return;
 	}
 }
-// Method Definition Index: 79934
+// Method Definition Index: 79121
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_value_m871691F09960422664943508075B68C7D2E077A3 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15174,7 +15851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_value_m871691F09960422664943
 		return L_0;
 	}
 }
-// Method Definition Index: 79935
+// Method Definition Index: 79122
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_value_m610CAAE2DE540421089B22854755DE775044175C (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15189,7 +15866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_value_m610CAAE2DE540421089B22
 		return;
 	}
 }
-// Method Definition Index: 79936
+// Method Definition Index: 79123
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKnob_get_clampedMotion_m5DB2746BEC0C0700653EC5DFAF2B6AC00DDF3A26 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15198,7 +15875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKnob_get_clampedMotion_m5DB2746BEC0C07
 		return L_0;
 	}
 }
-// Method Definition Index: 79937
+// Method Definition Index: 79124
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_clampedMotion_mBD89B3E17F20DE8E423C50CBA3E18A665C95B610 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15208,7 +15885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_clampedMotion_mBD89B3E17F20DE
 		return;
 	}
 }
-// Method Definition Index: 79938
+// Method Definition Index: 79125
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_maxAngle_mFAA33C0D80821A3AEB5EB18E711ED869ADF5DF30 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15217,7 +15894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_maxAngle_mFAA33C0D80821A3AEB
 		return L_0;
 	}
 }
-// Method Definition Index: 79939
+// Method Definition Index: 79126
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_maxAngle_m037A70365FABB33CB8EB8BF93DE5CC1D073277C6 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15227,7 +15904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_maxAngle_m037A70365FABB33CB8E
 		return;
 	}
 }
-// Method Definition Index: 79940
+// Method Definition Index: 79127
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_minAngle_m4F3F92B9D8AE466F8EBFD0BEB5C4ABF4669CA740 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15236,7 +15913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_minAngle_m4F3F92B9D8AE466F8E
 		return L_0;
 	}
 }
-// Method Definition Index: 79941
+// Method Definition Index: 79128
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_minAngle_m5CFB32E5E454C4CE475006E2F8A359C7C3B3BB41 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15246,7 +15923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_minAngle_m5CFB32E5E454C4CE475
 		return;
 	}
 }
-// Method Definition Index: 79942
+// Method Definition Index: 79129
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_positionTrackedRadius_m26AADB4C4BD1A6BB89F977F8D21F2539EE68300F (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15255,7 +15932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_get_positionTrackedRadius_m26AAD
 		return L_0;
 	}
 }
-// Method Definition Index: 79943
+// Method Definition Index: 79130
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_positionTrackedRadius_mF2763612C44379CE5E4026063FE0E91F468FFCA4 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -15265,7 +15942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_set_positionTrackedRadius_mF27636
 		return;
 	}
 }
-// Method Definition Index: 79944
+// Method Definition Index: 79131
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueChangeEvent_tDC3EC514DD9CBF92A2A1BCB2F7323B43F276C790* XRKnob_get_onValueChange_m9F7D297F4577EC0119DB51EDB26ADC0F0818F097 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15274,7 +15951,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueChangeEvent_tDC3EC514DD9CBF92A2A1BCB2F73
 		return L_0;
 	}
 }
-// Method Definition Index: 79945
+// Method Definition Index: 79132
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_Start_m4A0C36DA7DAC0EB2B73FE2CFC6F61E67A144378C (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15289,7 +15966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_Start_m4A0C36DA7DAC0EB2B73FE2CFC6
 		return;
 	}
 }
-// Method Definition Index: 79946
+// Method Definition Index: 79133
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnEnable_m4B97A09EBF9EF3113C59765E6F4BE0C585BEDE2A (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15324,7 +16001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnEnable_m4B97A09EBF9EF3113C59765
 		return;
 	}
 }
-// Method Definition Index: 79947
+// Method Definition Index: 79134
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnDisable_m56FA39BFC512D958C3BCE40DBB77DD1F44C4B20C (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15359,7 +16036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnDisable_m56FA39BFC512D958C3BCE4
 		return;
 	}
 }
-// Method Definition Index: 79948
+// Method Definition Index: 79135
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_StartGrab_m244CA4EE7849A5A9CA06CB9F1B9D8371430322C5 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, SelectEnterEventArgs_t9220B1E6A9BB5A847C0476949ACE0182430BB938* ___0_args, const RuntimeMethod* method) 
 {
 	{
@@ -15387,7 +16064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_StartGrab_m244CA4EE7849A5A9CA06CB
 		return;
 	}
 }
-// Method Definition Index: 79949
+// Method Definition Index: 79136
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_EndGrab_m14B48AEB8BE11EBF9104AB7F45701FD365ADA9CB (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, SelectExitEventArgs_t56125CE0360D37AC0B50EB6066B5AB5957EF559A* ___0_args, const RuntimeMethod* method) 
 {
 	{
@@ -15398,7 +16075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_EndGrab_m14B48AEB8BE11EBF9104AB7F
 		return;
 	}
 }
-// Method Definition Index: 79950
+// Method Definition Index: 79137
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_ProcessInteractable_mC26ED35447DA6BE9C1DB98B6525C573927F76BE4 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, int32_t ___0_updatePhase, const RuntimeMethod* method) 
 {
 	{
@@ -15432,7 +16109,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 79951
+// Method Definition Index: 79138
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* XRKnob_GetAttachTransform_m8739B8D7ABFCD8DA105C8ACABFB1992F289FED37 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, RuntimeObject* ___0_interactor, const RuntimeMethod* method) 
 {
 	{
@@ -15441,7 +16118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 79952
+// Method Definition Index: 79139
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_UpdateRotation_m8275F0B105A0212A38A82EB5DEB82CC84B1DF988 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, bool ___0_freshCheck, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15764,7 +16441,7 @@ IL_01e6:
 		return;
 	}
 }
-// Method Definition Index: 79953
+// Method Definition Index: 79140
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_SetKnobRotation_mE5C60A01E5C905B92F65C40359DC9ADF9631323D (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15823,7 +16500,7 @@ IL_005a:
 		return;
 	}
 }
-// Method Definition Index: 79954
+// Method Definition Index: 79141
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_SetValue_m53E00D21FDA4D8474898BF7896E63552EE3EEDEF (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, float ___0_newValue, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15899,7 +16576,7 @@ IL_005b:
 		return;
 	}
 }
-// Method Definition Index: 79955
+// Method Definition Index: 79142
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_ValueToRotation_m6065E89A6B78C19020D82B3DEBC0A7A1326AABEB (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15929,7 +16606,7 @@ IL_0020:
 		return L_8;
 	}
 }
-// Method Definition Index: 79956
+// Method Definition Index: 79143
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_UpdateBaseKnobRotation_m208E73D86BC72E32BB48010B0C4D2F0E60AFBC5D (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15944,7 +16621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_UpdateBaseKnobRotation_m208E73D86
 		return;
 	}
 }
-// Method Definition Index: 79957
+// Method Definition Index: 79144
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKnob_ShortestAngleDistance_m6AB1DF4D33A4508734C12C44510F31CB7B8D3D6A (float ___0_start, float ___1_end, float ___2_max, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15995,7 +16672,7 @@ IL_0023:
 		return ((float)il2cpp_codegen_multiply(L_11, L_12));
 	}
 }
-// Method Definition Index: 79958
+// Method Definition Index: 79145
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnDrawGizmosSelected_mEAB89BA48F79DE369C5C8E9311E39529D0FD87DE (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16155,7 +16832,7 @@ IL_00e8:
 		return;
 	}
 }
-// Method Definition Index: 79959
+// Method Definition Index: 79146
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob_OnValidate_m9C606602BA8E46564CBDBF6FC7BBD8365915CC73 (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16200,7 +16877,7 @@ IL_0033:
 		return;
 	}
 }
-// Method Definition Index: 79960
+// Method Definition Index: 79147
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob__ctor_m3D14A80FBFE19153DE3149ADC3C042B38FC19D3D (XRKnob_t9F8C8CDD1A1F06D3AC23491C8C18C3C5E417F084* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16241,7 +16918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKnob__ctor_m3D14A80FBFE19153DE3149ADC3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79961
+// Method Definition Index: 79148
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8 (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16260,7 +16937,7 @@ IL2CPP_EXTERN_C  float TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030
 	_returnValue = TrackedRotation_get_totalOffset_mC129829FFE6CDD96C8885030BDAEF40D569F06C8(_thisAdjusted, method);
 	return _returnValue;
 }
-// Method Definition Index: 79962
+// Method Definition Index: 79149
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425 (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16281,7 +16958,7 @@ IL2CPP_EXTERN_C  void TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB
 	_thisAdjusted = reinterpret_cast<TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6*>(__this + _offset);
 	TrackedRotation_Reset_m54545DE2D01827833956AEC4324C136A0CB72425(_thisAdjusted, method);
 }
-// Method Definition Index: 79963
+// Method Definition Index: 79150
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, const RuntimeMethod* method) 
 {
 	{
@@ -16310,7 +16987,7 @@ IL2CPP_EXTERN_C  void TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE0
 	_thisAdjusted = reinterpret_cast<TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6*>(__this + _offset);
 	TrackedRotation_SetBaseFromVector_m0CAD68507FD5C7AA3C7CAE09720645F033F1D26E(_thisAdjusted, ___0_direction, method);
 }
-// Method Definition Index: 79964
+// Method Definition Index: 79151
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB628220D326B1572BB8F80D7 (TrackedRotation_tD8471EB48358A40B287C82447C84D3145E2646D6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -16371,7 +17048,7 @@ IL2CPP_EXTERN_C  void TrackedRotation_SetTargetFromVector_m42F1586C38A41E0FB6282
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79965
+// Method Definition Index: 79152
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueChangeEvent__ctor_mCCCA33ED18E2321FE5A48CD3F9C26F8F495EBFF9 (ValueChangeEvent_tDC3EC514DD9CBF92A2A1BCB2F7323B43F276C790* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16394,7 +17071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueChangeEvent__ctor_mCCCA33ED18E2321F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79966
+// Method Definition Index: 79153
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* XRPokeFollowAffordanceFill_get_pokeFollowTransform_mA18683B54491DD130C9E93333A30C7F43C2BA0AA (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16403,7 +17080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 79967
+// Method Definition Index: 79154
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_pokeFollowTransform_m33F04BF935477A78330C4F6121ABAAF3A206B858 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16414,7 +17091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_pokeFollo
 		return;
 	}
 }
-// Method Definition Index: 79968
+// Method Definition Index: 79155
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_smoothingSpeed_m98E23346A7AAFA6C5D68D8E725027C87FAFA52A2 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16423,7 +17100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_smoothin
 		return L_0;
 	}
 }
-// Method Definition Index: 79969
+// Method Definition Index: 79156
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_smoothingSpeed_m312BD715366B958A111321464AFCADB6B373EDD9 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16433,7 +17110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_smoothing
 		return;
 	}
 }
-// Method Definition Index: 79970
+// Method Definition Index: 79157
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_returnToInitialPosition_m87F7F5F90CA304C638B88C06B65D86CA35F65241 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16442,7 +17119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_returnToI
 		return L_0;
 	}
 }
-// Method Definition Index: 79971
+// Method Definition Index: 79158
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_returnToInitialPosition_m868A0561ED6C3FAD501AE2AA7C3997320856CEEE (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16452,7 +17129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_returnToI
 		return;
 	}
 }
-// Method Definition Index: 79972
+// Method Definition Index: 79159
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_applyIfChildIsTarget_m4A0A527EECAD7D6E2A65996DD999E3CE959D71A3 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16461,7 +17138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_applyIfCh
 		return L_0;
 	}
 }
-// Method Definition Index: 79973
+// Method Definition Index: 79160
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_applyIfChildIsTarget_mC8B47504169FB4FACD6531E0036E22FD94364409 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16471,7 +17148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_applyIfCh
 		return;
 	}
 }
-// Method Definition Index: 79974
+// Method Definition Index: 79161
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_clampToMinDistance_m6B7AFB7126681D68F43CFC2FCF4FEB2419EAA6CA (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16480,7 +17157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_clampToMi
 		return L_0;
 	}
 }
-// Method Definition Index: 79975
+// Method Definition Index: 79162
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_clampToMinDistance_mFA7AFAF7CCE6EEE21F7D9539C9C2E27B37695BA1 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16490,7 +17167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_clampToMi
 		return;
 	}
 }
-// Method Definition Index: 79976
+// Method Definition Index: 79163
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_minDistance_m0CAD10513BA6CB74DE17DDEF0BD66D9BA58060F9 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16499,7 +17176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_minDista
 		return L_0;
 	}
 }
-// Method Definition Index: 79977
+// Method Definition Index: 79164
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_minDistance_m881360B97C6C6F32E06AA1F204B89D466C956EB4 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16509,7 +17186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_minDistan
 		return;
 	}
 }
-// Method Definition Index: 79978
+// Method Definition Index: 79165
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_clampToMaxDistance_mD4E7631383744FA3DFD2321BDE4C59550B41095E (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16518,7 +17195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRPokeFollowAffordanceFill_get_clampToMa
 		return L_0;
 	}
 }
-// Method Definition Index: 79979
+// Method Definition Index: 79166
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_clampToMaxDistance_m442E7DEE73F4418015D25EDEFB42257C6796C93E (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16528,7 +17205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_clampToMa
 		return;
 	}
 }
-// Method Definition Index: 79980
+// Method Definition Index: 79167
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_maxDistance_m17ECF6517008678651ADD0BC321AF0E3884C343C (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16537,7 +17214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRPokeFollowAffordanceFill_get_maxDista
 		return L_0;
 	}
 }
-// Method Definition Index: 79981
+// Method Definition Index: 79168
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_maxDistance_m25BFEEAAA9E1A0AD1B5CB4184E3F1BE821E6AB8E (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -16547,7 +17224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_set_maxDistan
 		return;
 	}
 }
-// Method Definition Index: 79982
+// Method Definition Index: 79169
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_Awake_m294E6AD9AFB8A1CED7B21D7E20D7DB46B1179757 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16566,7 +17243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_Awake_m294E6A
 		return;
 	}
 }
-// Method Definition Index: 79983
+// Method Definition Index: 79170
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_Start_m13AE5697CCE114BC676D4962236298443E66677E (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16692,7 +17369,7 @@ IL_00c4:
 		return;
 	}
 }
-// Method Definition Index: 79984
+// Method Definition Index: 79171
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnDestroy_m3B59A37F2D0CD85CC3F8D9920CA6B43C681B43AA (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16730,7 +17407,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 79985
+// Method Definition Index: 79172
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_LateUpdate_mF925AFFD4B877F2642AD5693E268234A3C8D0925 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16809,7 +17486,7 @@ IL_0060:
 		return;
 	}
 }
-// Method Definition Index: 79986
+// Method Definition Index: 79173
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnTransformTweenableVariableUpdated_m8B3C3889CA30F6DE7412981B594DE13AE26B1CAF (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_position, const RuntimeMethod* method) 
 {
 	{
@@ -16824,7 +17501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnTransformTw
 		return;
 	}
 }
-// Method Definition Index: 79987
+// Method Definition Index: 79174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnPokeStrengthChanged_m480B681A9BE7B6C71724392FC3368A029EA4CED6 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, float ___0_newStrength, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -16851,7 +17528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnPokeStrengt
 		return;
 	}
 }
-// Method Definition Index: 79988
+// Method Definition Index: 79175
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill_OnPokeStateDataUpdated_m6233708D9CEEA9A7920B821FDBD306F4D7CBFAE6 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___0_data, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17038,7 +17715,7 @@ IL_00f6:
 		return;
 	}
 }
-// Method Definition Index: 79989
+// Method Definition Index: 79176
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill__ctor_mAED1746F6E90C5676967671BFBB11E3B7C6B1E98 (XRPokeFollowAffordanceFill_tFE5D1D7BCFD7B83B71C669393AA47EE9804D9599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17083,7 +17760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill__ctor_mAED174
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79990
+// Method Definition Index: 79177
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightBrain_Awake_mD9C79B8EB689ED98484765D1A2964DB3E161035A (DayNightBrain_tCC839448D3310017A7B1BB1BC55C727B69682E82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17140,7 +17817,7 @@ IL_0029:
 		return;
 	}
 }
-// Method Definition Index: 79991
+// Method Definition Index: 79178
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightBrain_Update_mCD8397EDF6A9334C2AB7C2463D90E7FB2B294CEF (DayNightBrain_tCC839448D3310017A7B1BB1BC55C727B69682E82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17197,7 +17874,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 79992
+// Method Definition Index: 79179
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightBrain_OnDestroy_mDB35AF8E0AA80C6E3681594DEF5DB0AB35188710 (DayNightBrain_tCC839448D3310017A7B1BB1BC55C727B69682E82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17261,7 +17938,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 79993
+// Method Definition Index: 79180
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightBrain__ctor_m4D6D1034C052BA34A29E18441FBE8BEE090FB002 (DayNightBrain_tCC839448D3310017A7B1BB1BC55C727B69682E82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17288,7 +17965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightBrain__ctor_m4D6D1034C052BA34A29
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79994
+// Method Definition Index: 79181
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DayNightState_get_NormalizedTime_m7BAB67A53A6ED12107A4D32115D270E693199F6A (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17297,7 +17974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DayNightState_get_NormalizedTime_m7BAB6
 		return ((float)(L_0/(360.0f)));
 	}
 }
-// Method Definition Index: 79995
+// Method Definition Index: 79182
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DayNightState_get_IsDaytime_mC461FED14EE8E692681AB2390D395B62461837E5 (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17306,7 +17983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DayNightState_get_IsDaytime_mC461FED14EE
 		return L_0;
 	}
 }
-// Method Definition Index: 79996
+// Method Definition Index: 79183
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightState_set_IsDaytime_m0776AF81F66144A863CE2ECC42D9FA48FB87FEEC (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -17316,7 +17993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightState_set_IsDaytime_m0776AF81F66
 		return;
 	}
 }
-// Method Definition Index: 79997
+// Method Definition Index: 79184
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightState__ctor_mC489A2286C4A7583FFDF74EF31B89A0F40CA3052 (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17334,7 +18011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DayNightState__ctor_mC489A2286C4A7583FFD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80001
+// Method Definition Index: 79188
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule_Initialize_m911D68245231EC72D0D3CAE828EB169131D4DCCF (CelestialRotationModule_tC249DF3E12F13B6871C94352DCB42780D9ED489E* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17372,7 +18049,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 80002
+// Method Definition Index: 79189
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule_Tick_m5D975F74101B874B5ABDE086BE2722AE56E04405 (CelestialRotationModule_tC249DF3E12F13B6871C94352DCB42780D9ED489E* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17437,7 +18114,7 @@ IL_0071:
 		return;
 	}
 }
-// Method Definition Index: 80003
+// Method Definition Index: 79190
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule_Dispose_m23D345678CE5B903C03CC1476BED2412B04780F5 (CelestialRotationModule_tC249DF3E12F13B6871C94352DCB42780D9ED489E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -17445,7 +18122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule_Dispose_m23D3456
 		return;
 	}
 }
-// Method Definition Index: 80004
+// Method Definition Index: 79191
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule__ctor_m27807122F5271524940C28C65B91D7913D8EE497 (CelestialRotationModule_tC249DF3E12F13B6871C94352DCB42780D9ED489E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17462,7 +18139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialRotationModule__ctor_m27807122F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80005
+// Method Definition Index: 79192
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialVisualsModule_Initialize_m2ABF9231BBC05F88FFE2B347A898DC3CE6663BAE (CelestialVisualsModule_t02A726D354050C3BA3300503F237365357E15A9A* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17593,7 +18270,7 @@ IL_00b6:
 		return;
 	}
 }
-// Method Definition Index: 80006
+// Method Definition Index: 79193
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialVisualsModule_Tick_mA0409F43D91B04439F83E0EC64A1F4C6FC0BEF1A (CelestialVisualsModule_t02A726D354050C3BA3300503F237365357E15A9A* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17861,7 +18538,7 @@ IL_01a0:
 		return;
 	}
 }
-// Method Definition Index: 80007
+// Method Definition Index: 79194
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialVisualsModule_Dispose_mC1E4A75485F59F5BB710959512EEA4FFA702F3E2 (CelestialVisualsModule_t02A726D354050C3BA3300503F237365357E15A9A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17932,7 +18609,7 @@ IL_004b:
 		return;
 	}
 }
-// Method Definition Index: 80008
+// Method Definition Index: 79195
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CelestialVisualsModule_IsAngleInRange_m33067DC74D35A5BEEF28A32AD1C13029A033E1C0 (CelestialVisualsModule_t02A726D354050C3BA3300503F237365357E15A9A* __this, float ___0_angle, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_range, const RuntimeMethod* method) 
 {
 	{
@@ -17991,7 +18668,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80009
+// Method Definition Index: 79196
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialVisualsModule__ctor_m4A5338F025AD8349EE90FD96A6235FCBD11FD366 (CelestialVisualsModule_t02A726D354050C3BA3300503F237365357E15A9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18028,7 +18705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CelestialVisualsModule__ctor_m4A5338F025
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80010
+// Method Definition Index: 79197
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule_Initialize_mB94C79A965379AB9840A0F9CC13CCAE063B9D99B (EnvironmentLightingModule_t6933F6A5EDADFB0322361C9B484102EE0925F798* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, const RuntimeMethod* method) 
 {
 	{
@@ -18050,7 +18727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule_Initialize_mB9
 		return;
 	}
 }
-// Method Definition Index: 80011
+// Method Definition Index: 79198
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule_Tick_mDA9CD0D595A13F17D304F1F0CAA83C7784CE218A (EnvironmentLightingModule_t6933F6A5EDADFB0322361C9B484102EE0925F798* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18135,7 +18812,7 @@ IL_0078:
 		return;
 	}
 }
-// Method Definition Index: 80012
+// Method Definition Index: 79199
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule_Dispose_m416D60995BC63752867F8E892886B6BED7246728 (EnvironmentLightingModule_t6933F6A5EDADFB0322361C9B484102EE0925F798* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18143,7 +18820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule_Dispose_m416D6
 		return;
 	}
 }
-// Method Definition Index: 80013
+// Method Definition Index: 79200
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule__ctor_mE191D6C46BD6A3FD49FAE3AFD78722921EA49B2F (EnvironmentLightingModule_t6933F6A5EDADFB0322361C9B484102EE0925F798* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18161,7 +18838,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentLightingModule__ctor_mE191D6C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80014
+// Method Definition Index: 79201
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule_Initialize_mFE2FFE52A242BDD16D97504D670809FB3741C6B6 (TimeProgressionModule_t7E53757CC528808825DC8A68D5E2AF9EB46AEF01* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, const RuntimeMethod* method) 
 {
 	{
@@ -18169,7 +18846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule_Initialize_mFE2FFE
 		return;
 	}
 }
-// Method Definition Index: 80015
+// Method Definition Index: 79202
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule_Tick_m289329D7AEE0A6C9D2E8FD0DBD3D899A01B78D90 (TimeProgressionModule_t7E53757CC528808825DC8A68D5E2AF9EB46AEF01* __this, DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* ___0_state, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18282,7 +18959,7 @@ IL_0086:
 		return;
 	}
 }
-// Method Definition Index: 80016
+// Method Definition Index: 79203
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule_Dispose_m1577DDBD33E4F0FFB7F9A22D48343B8F31FC2AB0 (TimeProgressionModule_t7E53757CC528808825DC8A68D5E2AF9EB46AEF01* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18290,7 +18967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule_Dispose_m1577DDBD3
 		return;
 	}
 }
-// Method Definition Index: 80017
+// Method Definition Index: 79204
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule__ctor_m047459F5F847BE188B815C63ABA540BA9F0F0542 (TimeProgressionModule_t7E53757CC528808825DC8A68D5E2AF9EB46AEF01* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -18326,7 +19003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeProgressionModule__ctor_m047459F5F84
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 43677
+// Method Definition Index: 43680
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18353,7 +19030,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 43663
+// Method Definition Index: 43666
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18367,7 +19044,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m4
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_0, L_1)), ((float)il2cpp_codegen_multiply(L_2, L_3)))), ((float)il2cpp_codegen_multiply(L_4, L_5))));
 	}
 }
-// Method Definition Index: 43672
+// Method Definition Index: 43675
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18382,7 +19059,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43679
+// Method Definition Index: 43682
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18406,7 +19083,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 43676
+// Method Definition Index: 43679
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18433,7 +19110,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 43673
+// Method Definition Index: 43676
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18448,7 +19125,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 42018
+// Method Definition Index: 42019
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Ray__ctor_mE298992FD10A3894C38373198385F345C58BD64C_inline (Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_direction, const RuntimeMethod* method) 
 {
 	{
@@ -18474,7 +19151,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsPositiveInfinity_mB
 		return (bool)((((float)L_0) == ((float)(std::numeric_limits<float>::infinity())))? 1 : 0);
 	}
 }
-// Method Definition Index: 43708
+// Method Definition Index: 43711
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18489,25 +19166,25 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 79717
+// Method Definition Index: 78899
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LadybirdPlayerController_get_ResetVersion_m664F816B958D95BDAFB83ED613372DEBF575A4F1_inline (LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdPlayerController.cs:55>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdPlayerController.cs:57>
 		int32_t L_0 = __this->___U3CResetVersionU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 79719
+// Method Definition Index: 78901
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool LadybirdPlayerController_get_ControlActive_m921C7A74608F8C642395B5A807D7203CB6865143_inline (LadybirdPlayerController_t79EF38781DA23C609FDCE9BF44627897D5558AB4* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdPlayerController.cs:56>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Insect/LadybirdPlayerController.cs:58>
 		bool L_0 = __this->___controlActive;
 		return L_0;
 	}
 }
-// Method Definition Index: 43681
+// Method Definition Index: 43684
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18531,7 +19208,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 43718
+// Method Definition Index: 43721
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18545,7 +19222,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_2;
 	}
 }
-// Method Definition Index: 43787
+// Method Definition Index: 43790
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_DeltaAngle_mCBA858CE5C1BEEBE375812325A50E434FF66D6D4_inline (float ___0_current, float ___1_target, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18588,7 +19265,7 @@ IL_0027:
 		return L_7;
 	}
 }
-// Method Definition Index: 43661
+// Method Definition Index: 43664
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18611,7 +19288,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6
 		return ((float)L_6);
 	}
 }
-// Method Definition Index: 43760
+// Method Definition Index: 43763
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18650,7 +19327,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 43775
+// Method Definition Index: 43778
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -18707,7 +19384,7 @@ IL_001d:
 		return L_9;
 	}
 }
-// Method Definition Index: 43784
+// Method Definition Index: 43787
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m6F1560A163481BB311D685294E1B463C3E4EB3BA_inline (float ___0_t, float ___1_length, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18733,7 +19410,7 @@ IL_001b:
 		return L_7;
 	}
 }
-// Method Definition Index: 43642
+// Method Definition Index: 43645
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Cross_mF93A280558BCE756D13B6CC5DCD7DE8A43148987_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18772,7 +19449,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_24;
 	}
 }
-// Method Definition Index: 43668
+// Method Definition Index: 43671
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18787,7 +19464,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43651
+// Method Definition Index: 43654
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18797,7 +19474,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43781
+// Method Definition Index: 43784
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_SmoothStep_mEFDC738EB0AA162D71013BDBBDD157B080A8E524_inline (float ___0_from, float ___1_to, float ___2_t, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18830,7 +19507,7 @@ IL_0030:
 		return L_11;
 	}
 }
-// Method Definition Index: 43631
+// Method Definition Index: 43634
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18901,7 +19578,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43638
+// Method Definition Index: 43641
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -18918,7 +19595,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 43640
+// Method Definition Index: 43643
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Scale_m7C3CD199271902D5C00CBF35CD230DEB62B68CAE_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -18945,7 +19622,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 43659
+// Method Definition Index: 43662
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18998,7 +19675,7 @@ IL_0040:
 		return L_19;
 	}
 }
-// Method Definition Index: 43655
+// Method Definition Index: 43658
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_ProjectOnPlane_m68FB895F6E9FCC45676BB8B95857D091C0D78794_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_planeNormal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19077,7 +19754,7 @@ IL_006f:
 		return L_23;
 	}
 }
-// Method Definition Index: 43690
+// Method Definition Index: 43693
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_toDirection, const RuntimeMethod* method) 
 {
 	{
@@ -19087,7 +19764,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 43709
+// Method Definition Index: 43712
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_op_Multiply_mCB375FCCC12A2EC8F9EB824A1BFB4453B58C2012_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_lhs, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_rhs, const RuntimeMethod* method) 
 {
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
@@ -19167,7 +19844,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_64;
 	}
 }
-// Method Definition Index: 79770
+// Method Definition Index: 78953
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WingInteraction_get_MovementInteractionLocked_m0AF0223CFC53BA9534EADFCD857EA44DF196C966_inline (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19176,7 +19853,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool WingInteraction_get_Movement
 		return L_0;
 	}
 }
-// Method Definition Index: 79769
+// Method Definition Index: 78952
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WingInteraction_set_LastInteractionAccepted_m7FDAA25D45F20034E5DDE72AC5C0CAAD4877A7F1_inline (WingInteraction_t7AD56F842534C536C0BBBF8B1E36D4D7CAD1D187* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -19186,7 +19863,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WingInteraction_set_LastInte
 		return;
 	}
 }
-// Method Definition Index: 43720
+// Method Definition Index: 43723
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m5BCCC19216CFAD2426F15BC51A30421880D27B73_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19202,7 +19879,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_2;
 	}
 }
-// Method Definition Index: 43777
+// Method Definition Index: 43780
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -19256,7 +19933,7 @@ IL_002d:
 		return L_5;
 	}
 }
-// Method Definition Index: 43696
+// Method Definition Index: 43699
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Slerp_m0A9969F500E7716EA4F6BC4E7D5464372D8E9E15_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_a, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	{
@@ -19267,25 +19944,161 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_1;
 	}
 }
-// Method Definition Index: 79792
+// Method Definition Index: 78975
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HoverScaleFeedback_get_InsectDisplayName_mC286D0DF99332738B1FA565AAD4B5419BA174FCA_inline (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:40>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:41>
 		String_t* L_0 = __this->___insectDisplayName;
 		return L_0;
 	}
 }
-// Method Definition Index: 79793
+// Method Definition Index: 78976
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HoverScaleFeedback_get_AvailableInPrototype_mA4ED4E43914ACF7FDAD4A4387FB56D4BC23DF891_inline (HoverScaleFeedback_t34CD13A6DCA0C9A418877406E47CF52826857140* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:49>
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/Selection/HoverScaleFeedback.cs:50>
 		bool L_0 = __this->___availableInPrototype;
 		return L_0;
 	}
 }
-// Method Definition Index: 43481
+// Method Definition Index: 43765
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline (int32_t ___0_a, int32_t ___1_b, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:171>
+		int32_t L_0 = ___0_a;
+		int32_t L_1 = ___1_b;
+		if ((((int32_t)L_0) > ((int32_t)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		int32_t L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
+	}
+
+IL_0008:
+	{
+		int32_t L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:171>
+		int32_t L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 78638
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool FoodSearchActivity_get_Completed_mA4B0DBCB4DDEE881C1C0A0DE67592DBC6392467B_inline (FoodSearchActivity_tFE59D34E697FA5E3FE6334CBA0E0A4ADE68B1770* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/Users/tracyzhang/Documents/GitHub/XR-Tracy_Zhang/Prototype3/Assets/Project/Scripts/FoodSearch/FoodSearchActivity.cs:41>
+		bool L_0 = __this->___U3CCompletedU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 71574
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Image_get_fillAmount_mDEE52490D07124E21E7CB36718A5E3714D8B9788_inline (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.ugui@e20f1880fa04/Runtime/UGUI/UI/Core/Image.cs:502>
+		float L_0 = __this->___m_FillAmount;
+		return L_0;
+	}
+}
+// Method Definition Index: 43529
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ColorUtility_ToHtmlStringRGB_m50D59301FF2736B78C95C1FD5619D429358B7433_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_color, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/ColorUtility.cs:73>
+		String_t* L_0;
+		L_0 = ColorUtility_ToHtmlStringRGB_m71F205AB043ADF2F702D4493780372A1B94C7D3D((&___0_color), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 43781
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:332>
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		float L_2 = ___0_a;
+		float L_3 = ___2_t;
+		float L_4;
+		L_4 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_3, NULL);
+		V_0 = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), L_4))));
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:333>
+		float L_5 = V_0;
+		return L_5;
+	}
+}
+// Method Definition Index: 43518
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___0_r, uint8_t ___1_g, uint8_t ___2_b, uint8_t ___3_a, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:39>
+		__this->___rgba = 0;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:39>
+		uint8_t L_0 = ___0_r;
+		__this->___r = L_0;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:39>
+		uint8_t L_1 = ___1_g;
+		__this->___g = L_1;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:39>
+		uint8_t L_2 = ___2_b;
+		__this->___b = L_2;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:39>
+		uint8_t L_3 = ___3_a;
+		__this->___a = L_3;
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:40>
+		return;
+	}
+}
+// Method Definition Index: 43520
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_c, const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Color32.cs:57>
+		il2cpp_codegen_initobj((&V_0), sizeof(Color_tD001788D726C3A7F1379BEED0260B9591F440C1F));
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_0 = ___0_c;
+		uint8_t L_1 = L_0.___r;
+		(&V_0)->___r = ((float)(((float)L_1)/(255.0f)));
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_2 = ___0_c;
+		uint8_t L_3 = L_2.___g;
+		(&V_0)->___g = ((float)(((float)L_3)/(255.0f)));
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4 = ___0_c;
+		uint8_t L_5 = L_4.___b;
+		(&V_0)->___b = ((float)(((float)L_5)/(255.0f)));
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_6 = ___0_c;
+		uint8_t L_7 = L_6.___a;
+		(&V_0)->___a = ((float)(((float)L_7)/(255.0f)));
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8 = V_0;
+		return L_8;
+	}
+}
+// Method Definition Index: 43482
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -19305,7 +20118,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 		return;
 	}
 }
-// Method Definition Index: 54533
+// Method Definition Index: 54536
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -19322,7 +20135,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D
 		return;
 	}
 }
-// Method Definition Index: 43682
+// Method Definition Index: 43685
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19370,7 +20183,7 @@ IL_0043:
 		return L_19;
 	}
 }
-// Method Definition Index: 43680
+// Method Definition Index: 43683
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19394,7 +20207,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 43482
+// Method Definition Index: 43483
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{
@@ -19413,7 +20226,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		return;
 	}
 }
-// Method Definition Index: 72493
+// Method Definition Index: 72496
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Toggle_get_isOn_m89A609E936CD67F460E336CA8E03C4047BFB6619_inline (Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19422,7 +20235,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Toggle_get_isOn_m89A609E936C
 		return L_0;
 	}
 }
-// Method Definition Index: 43669
+// Method Definition Index: 43672
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19437,7 +20250,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43652
+// Method Definition Index: 43655
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -19457,7 +20270,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A3
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 	}
 }
-// Method Definition Index: 87111
+// Method Definition Index: 87143
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline (SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19466,7 +20279,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_ru
 		return L_0;
 	}
 }
-// Method Definition Index: 72385
+// Method Definition Index: 72388
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555* Slider_get_onValueChanged_m4DA3FD0F8D7BB838F442C07F7796EEE584D0D4F6_inline (Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19502,7 +20315,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRBaseInteractable_get_isSel
 		return L_0;
 	}
 }
-// Method Definition Index: 43650
+// Method Definition Index: 43653
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19553,30 +20366,7 @@ IL_0065:
 		return;
 	}
 }
-// Method Definition Index: 43778
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:332>
-		float L_0 = ___0_a;
-		float L_1 = ___1_b;
-		float L_2 = ___0_a;
-		float L_3 = ___2_t;
-		float L_4;
-		L_4 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_3, NULL);
-		V_0 = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), L_4))));
-		goto IL_0010;
-	}
-
-IL_0010:
-	{
-		//<source_info:/home/bokken/build/output/unity/unity/Runtime/Export/Math/Mathf.cs:333>
-		float L_5 = V_0;
-		return L_5;
-	}
-}
-// Method Definition Index: 43786
+// Method Definition Index: 43789
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline (float ___0_a, float ___1_b, float ___2_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -19618,7 +20408,7 @@ IL_0023:
 		return L_8;
 	}
 }
-// Method Definition Index: 43779
+// Method Definition Index: 43782
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_LerpUnclamped_mF35042F9D25A221BDD4B3FD6251224610AFC1F35_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19639,7 +20429,7 @@ IL_000b:
 		return L_4;
 	}
 }
-// Method Definition Index: 43774
+// Method Definition Index: 43777
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline (float ___0_f, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19675,7 +20465,7 @@ IL_0018:
 		return L_1;
 	}
 }
-// Method Definition Index: 43512
+// Method Definition Index: 43513
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) 
 {
 	{
@@ -19686,7 +20476,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 43757
+// Method Definition Index: 43760
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -19725,7 +20515,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// Method Definition Index: 43800
+// Method Definition Index: 43803
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -19757,7 +20547,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 43660
+// Method Definition Index: 43663
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_ClampMagnitude_mF83675F19744F58E97CF24D8359A810634DC031F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, float ___1_maxLength, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19856,7 +20646,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PokeStateData_get_interacti
 		return L_0;
 	}
 }
-// Method Definition Index: 43719
+// Method Definition Index: 43722
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -19875,7 +20665,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_3;
 	}
 }
-// Method Definition Index: 43780
+// Method Definition Index: 43783
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_MoveTowards_m69751B5EC50D8E7127D4BB2C8D908E38808AF45D_inline (float ___0_current, float ___1_target, float ___2_maxDelta, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -19921,7 +20711,7 @@ IL_0026:
 		return L_11;
 	}
 }
-// Method Definition Index: 79996
+// Method Definition Index: 79183
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DayNightState_set_IsDaytime_m0776AF81F66144A863CE2ECC42D9FA48FB87FEEC_inline (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -19931,7 +20721,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DayNightState_set_IsDaytime_
 		return;
 	}
 }
-// Method Definition Index: 79995
+// Method Definition Index: 79182
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DayNightState_get_IsDaytime_mC461FED14EE8E692681AB2390D395B62461837E5_inline (DayNightState_t055253BCD5E75974A372875F5DC4AE8D6140C393* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20028,7 +20818,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 		return L_0;
 	}
 }
-// Method Definition Index: 43649
+// Method Definition Index: 43652
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20095,7 +20885,7 @@ IL_0050:
 		return L_14;
 	}
 }
-// Method Definition Index: 43653
+// Method Definition Index: 43656
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_m9B5EBE36643126708DB3F444C59C11FA30803DBB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_rhs, const RuntimeMethod* method) 
 {
 	{

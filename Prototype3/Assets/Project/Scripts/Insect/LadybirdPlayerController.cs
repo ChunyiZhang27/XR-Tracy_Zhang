@@ -80,6 +80,21 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     private InputAction driveAction;
     private bool actionHasDeadzone;
     private readonly Dictionary<Behaviour, bool> suspended = new Dictionary<Behaviour, bool>();
+    // 仅 Prototype2b 食物任务可临时借用已暂停的移动组件；仍保留最初状态用于退出恢复。
+    private readonly HashSet<Behaviour> foodLocomotion = new HashSet<Behaviour>();
+    public void SetFoodLocomotion(Behaviour provider, Behaviour mediator, bool active)
+    {
+        foodLocomotion.Clear();
+        if (active && controlActive && HabitatStopped)
+        {
+            driveAction?.Disable();
+            if (provider != null) foodLocomotion.Add(provider);
+            if (mediator != null) foodLocomotion.Add(mediator);
+        }
+        foreach (var item in suspended)
+            if (item.Key != null && (item.Key == provider || item.Key == mediator))
+                item.Key.enabled = foodLocomotion.Contains(item.Key);
+    }
     private XRBaseInteractable[] interactables = new XRBaseInteractable[0];
     private bool antennaExplored, shellExplored, wingsExplored;
     private bool initialized, ownsMovement, editorTest;
@@ -223,6 +238,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
     // 离开驾驶时释放专用 Action，按记录恢复原组件状态，不强行开启原本关闭的功能。
     public void EndPlayerControl()
     {
+        foodLocomotion.Clear();
         controlActive = false;
         lastMovementBlocker = null;
         HabitatStopped = false;
@@ -261,6 +277,7 @@ public sealed class LadybirdPlayerController : MonoBehaviour
         if (!ownsMovement) return;
         foreach (Behaviour item in suspended.Keys)
         {
+            if (HabitatStopped && foodLocomotion.Contains(item)) continue;
 #if UNITY_EDITOR
             if (habitatControllerHandover && HabitatStopped && item is XRInteractionSimulator) continue;
 #endif
